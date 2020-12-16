@@ -1,0 +1,19 @@
+{
+  "name": "crust-wiki",
+  "version": "1.0.0",
+  "description": "The source of truth for Crust",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crustio/crust-wiki.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crustio/crust-wiki/issues"
+  },
+  "homepage": "https://github.com/crustio/crust-wiki#readme"
+}
