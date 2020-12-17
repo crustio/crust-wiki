@@ -5,6 +5,18 @@
     "previous": "Previous",
     "tagline": "wiki for crust network",
     "docs": {
+      "arkGuide": {
+        "title": "Profit Ark Guideline",
+        "sidebar_label": "Profit Ark Guideline"
+      },
+      "contributing": {
+        "title": "Contributing",
+        "sidebar_label": "Contributing"
+      },
+      "crustAccount": {
+        "title": "Crust Account",
+        "sidebar_label": "Crust Account"
+      },
       "doc1": {
         "title": "Latin-ish",
         "sidebar_label": "Example Page"
@@ -20,18 +32,51 @@
       },
       "doc5": {
         "title": "Fifth Document"
+      },
+      "frequentlyAskedQuestions": {
+        "title": "Editing How to submit bugs & feedbacks",
+        "sidebar_label": "Editing How to submit bugs & feedbacks"
+      },
+      "gettingStarted": {
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
+      },
+      "gPoSGuaranteeProcess": {
+        "title": "GPoS Guarantee Process",
+        "sidebar_label": "GPoS Guarantee Process"
+      },
+      "learnCrust": {
+        "title": "What is Crust",
+        "sidebar_label": "What is crust"
+      },
+      "setupArkNode": {
+        "title": "Guide for Single Nodes in first-Stage “Profit Ark”",
+        "sidebar_label": "Guide for Single Nodes in first-Stage “Profit Ark”"
+      },
+      "nodeSpec": {
+        "title": "Node spec",
+        "sidebar_label": "Node Spec"
+      },
+      "setOnChainIdentity": {
+        "title": "Set OnChain Identity",
+        "sidebar_label": "Set OnChain Identity"
+      },
+      "sWorkerGuide": {
+        "title": "Guide for sWorker",
+        "sidebar_label": "Guide For SWorker"
       }
     },
     "links": {
       "Docs": "Docs",
-      "API": "API",
-      "Help": "Help",
-      "Blog": "Blog"
+      "Ark": "Ark",
+      "Blog": "Blog",
+      "Contribute": "Contribute"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "General": "General",
+      "Learn": "Learn",
+      "Build": "Build",
+      "First Category": "First Category"
     }
   },
   "pages-strings": {
