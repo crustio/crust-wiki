@@ -38,26 +38,33 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
+    {doc: 'gettingStarted', label: 'Docs'},
+    {doc: 'arkGuide', label: 'Ark'},
     {blog: true, label: 'Blog'},
-    { languages: true },
+    {search: true},
+    {doc: "contributing", label: "Contribute"},
+    {languages: true},
   ],
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
+  headerIcon: "img/logo_crust_wiki.svg",
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#7e78a6',
+    primaryColor: '#ff8812',
     secondaryColor: '#585474',
   },
 
+  algolia: {
+    // apiKey: "",
+    // indexName: "",
+    algoliaOptions: {
+      facetFilters: ["language:LANGUAGE"],
+    }, // Optional, if provided by Algolia
+  },
+
   /* Custom fonts for website */
-  /*
   fonts: {
     myFont: [
       "Times New Roman",
@@ -68,7 +75,24 @@ const siteConfig = {
       "system-ui"
     ]
   },
-  */
+
+  onPageNav: "separate",
+
+  stylesheets: [
+    "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",
+    "https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap",
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
+    "https://unpkg.com/aos@next/dist/aos.css",
+    "https://fonts.googleapis.com/icon?family=Material+Icons",
+    "/css/klaro.css",
+    "/css/copycode.css",
+  ],
+
+  editUrl: "https://github.com/crustio/crust-wiki/edit/main/docs/",
+
+  translationRecruitingLink: "https://crowdin.com/project/Crust-Wiki",
+
+  docsSideNavCollapsible: true,
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Crust Network`,
