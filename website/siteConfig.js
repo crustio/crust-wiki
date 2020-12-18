@@ -100,8 +100,6 @@ const siteConfig = {
     "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js",
     "https://unpkg.com/aos@next/dist/aos.js",
     "/js/custom.js",
-    "/js/klaro-config.js",
-    "/js/klaro.js",
     '/js/packaged/addressChanger.js',
     "/js/clipboard.min.js",
     "/js/copycode.js",
