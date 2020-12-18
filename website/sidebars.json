@@ -25,7 +25,7 @@
         ]
       }, "setupArkNode"
     ],
-    "Build": [{
+    "Maintain": [{
       "type": "subcategory",
       "label": "Ark Guide",
       "ids": [
