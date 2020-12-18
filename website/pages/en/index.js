@@ -1,210 +1,151 @@
 /**
- * Copyright (c) Facebook, Inc. and its affiliates.
+ * Copyright (c) 2017-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require('react');
+const React = require("react");
 
-const CompLibrary = require('../../core/CompLibrary.js');
+const Container = require("react-bootstrap/Container");
+const Row = require("react-bootstrap/Row");
+const Col = require("react-bootstrap/Col");
 
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
+class HomeNav extends React.Component {
+    render() {
+        // const {siteConfig, language = ''} = this.props;
 
-class HomeSplash extends React.Component {
-  render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
-    const docUrl = (doc) => `${baseUrl}${docsPart}${langPart}${doc}`;
+        const NavContainer = (props) => (
+            <section className="homeNavContainer">
+                <Container className="h-100">
+                    <Row className="h-100 d-flex align-items-center">{props.children}</Row>
+                </Container>
+            </section>
+        );
 
-    const SplashContainer = (props) => (
-      <div className="homeContainer">
-        <div className="homeSplashFade">
-          <div className="wrapper homeWrapper">{props.children}</div>
-        </div>
-      </div>
-    );
+        const NavItem = (props) => (
+            <Col xs={12} md={12} lg={4} className="homeNavItem rounded-lg">
+                <a
+                    href={props.href}
+                    className="h-100 d-flex align-items-center"
+                    data-aos="fade-up"
+                    data-aos-delay={props.aosDelay}
+                >
+                    <div className="mx-auto">
+                        <h2 className="display-4 mt-0 text-dark font-weight-bold text-center">{props.title}</h2>
+                        <p className="small text-secondary px-4">{props.content}</p>
+                    </div>
+                </a>
+            </Col>
+        );
 
-    const Logo = (props) => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
-      </div>
-    );
+        return (
+            <NavContainer>
+                <NavItem
+                    href={this.props.docUrl("gettingStarted.html")}
+                    title="Ark"
+                    content="The test net of crust network"
+                    aosDelay="0"
+                />
+                <NavItem
+                    href={this.props.docUrl("nodeSpec.html")}
+                    content="Crust implements the incentive layer protocol for decentralized storage."
+                    title="Learn"
+                    aosDelay="300"
+                />
+                <NavItem
+                    href={this.props.docUrl("arkGuide.html")}
+                    title="Maintain"
+                    content="Information and guides on how to deploy a node and run the network."
+                    aosDelay="600"
+                />
+            </NavContainer>
+        );
+    }
+}
 
-    const ProjectTitle = (props) => (
-      <h2 className="projectTitle">
-        {props.title}
-        <small>{props.tagline}</small>
-      </h2>
-    );
+class HomeFooter extends React.Component {
+    render() {
+        const FooterContainer = (props) => (
+            <section className="homeFooterContainer text-white text-left">
+                <Container>
+                    <Row className="pb-5">{props.children}</Row>
+                </Container>
+            </section>
+        );
 
-    const PromoSection = (props) => (
-      <div className="section promoSection">
-        <div className="promoRow">
-          <div className="pluginRowBlock">{props.children}</div>
-        </div>
-      </div>
-    );
+        const LearnKusama = () => (
+            <Col lg={6} className="d-flex align-items-end flex-column pb-5 mb-5 mb-lg-0">
+                <Col xs={12}>
+                    <img src="/img/kusama_canary_white.svg" height={41} />
+                    <h3 className="h2 font-weight-bold mt-2">Learn about Polkadot’s canary network Kusama</h3>
+                    <p className="mb-5">
+                        Kusama is Polkadot’s “canary network”, a scalable, multi-chain network for radical
+                        innovation and early stage Polkadot deployments. For developers, Kusama is a proving
+                        ground for all things Polkadot I.e runtime upgrades, on-chain governance, parachains,
+                        parathreads, etc.
+                    </p>
+                </Col>
+                <Col>
+                    <a href="https://guide.kusama.network">
+                        <button className="btn btn-lg btn-primary btn-bg-primary">Discover Kusama</button>
+                    </a>
+                </Col>
+            </Col>
+        );
 
-    const Button = (props) => (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
-          {props.children}
-        </a>
-      </div>
-    );
+        const ImproveWiki = () => (
+            <Col lg={6} className="d-flex align-items-end flex-column pb-5">
+                <Col xs={12}>
+          <span className="material-icons" style={{ fontSize: 50 + "px" }}>
+            language
+          </span>
+                    <h3 className="h2 font-weight-bold">Help improve this wiki</h3>
+                    <p className="mb-5">
+                        This wiki was started by and is maintained by Web3 Foundation. It is an open-source-ish
+                        project and aims to be the most extensive resource of knowledge on Polkadot and the
+                        Polkadot ecosystem.
+                    </p>
+                </Col>
+                <Col>
+                    <a href={this.props.docUrl("contributing")}>
+                        <button className="btn btn-lg btn-primary btn-bg-primary mr-3">Contribute</button>
+                    </a>
+                    <a
+                        href={this.props.siteConfig.translationRecruitingLink}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <button className="btn btn-lg btn-primary btn-bg-primary">Help Translate</button>
+                    </a>
+                </Col>
+            </Col>
+        );
 
-    return (
-      <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
-        <div className="inner">
-          <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-          <PromoSection>
-            {/*<Button href="#try">Try It Out</Button>*/}
-            <Button href={docUrl('gettingStarted.html')}>Getting Started</Button>
-            <Button href={docUrl('arkGuide.html')}>Join Profit Ark</Button>
-          </PromoSection>
-        </div>
-      </SplashContainer>
-    );
-  }
+        return (
+            <FooterContainer>
+                <LearnKusama />
+                <ImproveWiki />
+            </FooterContainer>
+        );
+    }
 }
 
 class Index extends React.Component {
-  render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    render() {
+        const { config: siteConfig, language = "" } = this.props;
+        const { baseUrl, docsUrl } = siteConfig;
+        const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
+        const langPart = `${language ? `${language}/` : ""}`;
+        const docUrl = (doc) => `${baseUrl}${docsPart}${langPart}${doc}`;
 
-    const Block = (props) => (
-      <Container
-        padding={['bottom', 'top']}
-        id={props.id}
-        background={props.background}>
-        <GridBlock
-          align="center"
-          contents={props.children}
-          layout={props.layout}
-        />
-      </Container>
-    );
-
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
-            imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
-          },
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
-
-    const LearnHow = () => (
-      <Block background="light">
-        {[
-          {
-            content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
-            imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
-          },
-        ]}
-      </Block>
-    );
-
-    const Features = () => (
-      <Block layout="fourColumn">
-        {[
-          {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
-          },
-          {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
-          },
-        ]}
-      </Block>
-    );
-
-    const Showcase = () => {
-      if ((siteConfig.users || []).length === 0) {
-        return null;
-      }
-
-      const showcase = siteConfig.users
-        .filter((user) => user.pinned)
-        .map((user) => (
-          <a href={user.infoLink} key={user.infoLink}>
-            <img src={user.image} alt={user.caption} title={user.caption} />
-          </a>
-        ));
-
-      const pageUrl = (page) =>
-        baseUrl + (language ? `${language}/` : '') + page;
-
-      return (
-        <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
-        </div>
-      );
-    };
-
-    return (
-      <div>
-        <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer">
-          {/*<LearnHow />*/}
-          {/*<Description />*/}
-          {/*<Showcase />*/}
-        </div>
-      </div>
-    );
-  }
+        return (
+            <div className="homeContainer">
+                <HomeNav siteConfig={siteConfig} docUrl={docUrl} />
+                {/*<HomeFooter siteConfig={siteConfig} docUrl={docUrl} />*/}
+            </div>
+        );
+    }
 }
 
 module.exports = Index;

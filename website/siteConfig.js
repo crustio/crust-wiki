@@ -23,23 +23,14 @@ const users = [
 const siteConfig = {
   title: ' Crust Wiki', // Title for your website.
   tagline: 'wiki for crust network',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  url: 'https://wiki.crust.network', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
-
   // Used for publishing and more
-  projectName: 'Crust-Wiki',
-  organizationName: 'Crust Network',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
-
-  // For no header links in the top nav bar -> headerLinks: [],
+  projectName: 'crust-wiki',
+  organizationName: 'crust network',
   headerLinks: [
     {doc: 'gettingStarted', label: 'Docs'},
-    {doc: 'arkGuide', label: 'Ark'},
     {blog: true, label: 'Blog'},
     {search: true},
     {doc: "contributing", label: "Contribute"},
@@ -99,11 +90,21 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    theme: "default",
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  // Add custom scripts here that would be placed in <script> tags.
+  scripts: [
+    "https://buttons.github.io/buttons.js",
+    "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js",
+    "https://unpkg.com/aos@next/dist/aos.js",
+    "/js/custom.js",
+    '/js/packaged/addressChanger.js',
+    "/js/clipboard.min.js",
+    "/js/copycode.js",
+
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

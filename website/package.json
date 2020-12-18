@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.6"
+  },
+  "dependencies": {
+    "react-bootstrap": "^1.4.0"
   }
 }

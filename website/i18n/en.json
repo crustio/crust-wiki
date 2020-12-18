@@ -68,14 +68,13 @@
     },
     "links": {
       "Docs": "Docs",
-      "Ark": "Ark",
       "Blog": "Blog",
       "Contribute": "Contribute"
     },
     "categories": {
       "General": "General",
       "Learn": "Learn",
-      "Build": "Build",
+      "Maintain": "Maintain",
       "First Category": "First Category"
     }
   },
