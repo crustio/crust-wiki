@@ -42,7 +42,7 @@ class HomeNav extends React.Component {
         return (
             <NavContainer>
                 <NavItem
-                    href={this.props.docUrl("gettingStarted.html")}
+                    href={this.props.docUrl("arkGuide.html")}
                     title="Ark"
                     content="The test net of crust network"
                     aosDelay="0"
