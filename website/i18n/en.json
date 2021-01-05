@@ -5,9 +5,25 @@
     "previous": "Previous",
     "tagline": "wiki for crust network",
     "docs": {
+      "architecture": {
+        "title": "Architecture",
+        "sidebar_label": "Architecture"
+      },
       "arkGuide": {
         "title": "Profit Ark Guideline",
         "sidebar_label": "Profit Ark Guideline"
+      },
+      "bitSwap": {
+        "title": "BitSwap",
+        "sidebar_label": "BitSwap"
+      },
+      "claim": {
+        "title": "Claim",
+        "sidebar_label": "Claim"
+      },
+      "community": {
+        "title": "Community",
+        "sidebar_label": "Community"
       },
       "contributing": {
         "title": "Contributing",
@@ -16,6 +32,18 @@
       "crustAccount": {
         "title": "Crust Account",
         "sidebar_label": "Crust Account"
+      },
+      "crustBuilderGuide": {
+        "title": "Crust builders starter’s guide",
+        "sidebar_label": "Crust builders starter’s guide"
+      },
+      "crustConsensus": {
+        "title": "Crust Consensus",
+        "sidebar_label": "Crust Consensus"
+      },
+      "crustIntegrationGuide": {
+        "title": "Crust Integration guide",
+        "sidebar_label": "Crust Integration guide"
       },
       "doc1": {
         "title": "Latin-ish",
@@ -26,6 +54,10 @@
       },
       "doc3": {
         "title": "This is document number 3"
+      },
+      "DSM": {
+        "title": "DSM",
+        "sidebar_label": "DSM"
       },
       "doc4": {
         "title": "Other Document"
@@ -41,13 +73,37 @@
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
       },
+      "glossary": {
+        "title": "Glossary",
+        "sidebar_label": "Glossary"
+      },
+      "governanceGuides": {
+        "title": "Governance Guides",
+        "sidebar_label": "Governance Guides"
+      },
       "gPoSGuaranteeProcess": {
         "title": "GPoS Guarantee Process",
         "sidebar_label": "GPoS Guarantee Process"
       },
+      "guarantor": {
+        "title": "Guarantor",
+        "sidebar_label": "Guarantor"
+      },
+      "identity": {
+        "title": "Identity",
+        "sidebar_label": "Identity"
+      },
       "learnCrust": {
         "title": "What is Crust",
         "sidebar_label": "What is crust"
+      },
+      "merchant": {
+        "title": "Merchant",
+        "sidebar_label": "Merchant"
+      },
+      "networkSecurity": {
+        "title": "Security of the network",
+        "sidebar_label": "Security of the network"
       },
       "setupArkNode": {
         "title": "Guide for Single Nodes in first-Stage “Profit Ark”",
@@ -57,13 +113,49 @@
         "title": "Node spec",
         "sidebar_label": "Node Spec"
       },
+      "nodesDapps": {
+        "title": "Nodes and Dapps",
+        "sidebar_label": "Nodes and Dapps"
+      },
+      "parachain": {
+        "title": "Parachain",
+        "sidebar_label": "Parachain"
+      },
+      "parameters": {
+        "title": "Parameters",
+        "sidebar_label": "Parameters"
+      },
       "setOnChainIdentity": {
         "title": "Set OnChain Identity",
         "sidebar_label": "Set OnChain Identity"
       },
+      "staking": {
+        "title": "Staking",
+        "sidebar_label": "Staking"
+      },
+      "storageProve": {
+        "title": "Storage Prove",
+        "sidebar_label": "Storage Prove"
+      },
       "sWorkerGuide": {
         "title": "Guide for sWorker",
         "sidebar_label": "Guide For SWorker"
+      },
+      "teeTechnology": {
+        "title": "TEE Technology",
+        "sidebar_label": "TEE Technology"
+      },
+      "timeStone": {
+        "title": "Time Stone",
+        "sidebar_label": "Time Stone"
+      },
+      "validatorGuides": {
+        "title": "Validator Guides",
+        "sidebar_label": "Validator Guides"
+      },
+      "validator": {
+        "title": "validator",
+        "sidebar_label": "Validator"
       }
     },
     "links": {
@@ -74,6 +166,7 @@
     "categories": {
       "General": "General",
       "Learn": "Learn",
+      "Build": "Build",
       "Maintain": "Maintain",
       "First Category": "First Category"
     }

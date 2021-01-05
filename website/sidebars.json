@@ -1,7 +1,49 @@
 {
   "docs": {
-    "General": ["gettingStarted", "contributing", "arkGuide", "frequentlyAskedQuestions"],
-    "Learn": ["nodeSpec",
+    "General": [
+      "gettingStarted",
+      "claim",
+      {
+        "type": "subcategory",
+        "label": "Research Pages",
+        "ids": [
+
+        ]
+      },
+      "community",
+      "contributing",
+      "frequentlyAskedQuestions",
+      "glossary"
+    ],
+    "Learn": [
+      "timeStone",
+      {
+        "type": "subcategory",
+        "label": "Basic",
+        "ids": [
+          "crustAccount",
+          "architecture",
+          "networkSecurity",
+          "crustConsensus",
+          "guarantor",
+          "validator",
+          "merchant",
+          "storageProve",
+          "teeTechnology",
+          "identity",
+          "parachain"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Advanced",
+        "ids": [
+          "staking",
+          "DSM",
+          "bitSwap"
+        ]
+      },
+      "nodeSpec",
       {
         "type": "subcategory",
         "label": "GPoS",
@@ -25,12 +67,23 @@
         ]
       }, "setupArkNode"
     ],
-    "Maintain": [{
-      "type": "subcategory",
-      "label": "Ark Guide",
-      "ids": [
-        "arkGuide"
-      ]}
+    "Build": [
+      "crustBuilderGuide",
+      "crustIntegrationGuide"
+    ],
+    "Maintain": [
+      {
+        "type": "subcategory",
+        "label": "Network Maintainers",
+        "ids": [
+          "arkGuide"
+        ]
+      },
+      "parameters",
+      "nodesDapps",
+      "gPoSGuaranteeProcess",
+      "validatorGuides",
+      "governanceGuides"
     ]
   },
   "docs-other": {
