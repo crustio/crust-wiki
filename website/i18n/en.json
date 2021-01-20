@@ -105,6 +105,9 @@
         "title": "Security of the network",
         "sidebar_label": "Security of the network"
       },
+      "new-bond": {
+        "title": "new-bond"
+      },
       "setupArkNode": {
         "title": "Guide for Single Nodes in first-Stage “Profit Ark”",
         "sidebar_label": "Guide for Single Nodes in first-Stage “Profit Ark”"
@@ -139,7 +142,7 @@
       },
       "sWorkerGuide": {
         "title": "Guide for sWorker",
-        "sidebar_label": "Guide For SWorker"
+        "sidebar_label": "sWorker"
       },
       "teeTechnology": {
         "title": "TEE Technology",
@@ -160,7 +163,6 @@
     },
     "links": {
       "Docs": "Docs",
-      "Blog": "Blog",
       "Contribute": "Contribute"
     },
     "categories": {

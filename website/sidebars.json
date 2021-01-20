@@ -16,56 +16,27 @@
       "glossary"
     ],
     "Learn": [
-      "timeStone",
-      {
-        "type": "subcategory",
-        "label": "Basic",
-        "ids": [
-          "crustAccount",
-          "architecture",
-          "networkSecurity",
-          "crustConsensus",
-          "guarantor",
-          "validator",
-          "merchant",
-          "storageProve",
-          "teeTechnology",
-          "identity",
-          "parachain"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Advanced",
-        "ids": [
-          "staking",
-          "DSM",
-          "bitSwap"
-        ]
-      },
+      "crustAccount",
+      "newBond",
+      "guarantor",
+      "validator",
+      "sWorkerGuide",
+      "merchant",
+      "GPoS",
+      "architecture",
+      "networkSecurity",
+      "crustConsensus",
+      "storageProve",
+      "teeTechnology",
+      "identity",
+      "parachain",
+      "staking",
+      "DSM",
+      "bitSwap",
       "nodeSpec",
-      {
-        "type": "subcategory",
-        "label": "GPoS",
-        "ids": [
-          "gPoSGuaranteeProcess"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "MPoW",
-        "ids": [
-          "sWorkerGuide"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Account",
-        "ids": [
-          "crustAccount",
-          "setOnChainIdentity"
-        ]
-      }, "setupArkNode"
+      "gPoSGuaranteeProcess",
+      "setOnChainIdentity",
+      "setupArkNode"
     ],
     "Build": [
       "crustBuilderGuide",

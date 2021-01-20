@@ -31,7 +31,7 @@ const siteConfig = {
   organizationName: 'crust network',
   headerLinks: [
     {doc: 'gettingStarted', label: 'Docs'},
-    {blog: true, label: 'Blog'},
+    // {blog: true, label: 'Blog'},
     {search: true},
     {doc: "contributing", label: "Contribute"},
     {languages: true},
@@ -91,6 +91,11 @@ const siteConfig = {
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: "default",
+  },
+
+  scrollToTop: true,
+  scrollToTopOptions: {
+    zIndex: 100,
   },
 
   // Add custom scripts here that would be placed in <script> tags.
