@@ -17,9 +17,9 @@
         "title": "BitSwap",
         "sidebar_label": "BitSwap"
       },
-      "claim": {
-        "title": "Claim",
-        "sidebar_label": "Claim"
+      "claims": {
+        "title": "Crust Claims",
+        "sidebar_label": "Crust Claims"
       },
       "community": {
         "title": "Community",
