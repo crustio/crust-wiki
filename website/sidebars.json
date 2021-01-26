@@ -3,6 +3,7 @@
     "General": [
       "gettingStarted",
       "claims",
+      "previewNetworkMaxwell",
       {
         "type": "subcategory",
         "label": "Research Pages",
@@ -11,9 +12,7 @@
         ]
       },
       "community",
-      "contributing",
-      "frequentlyAskedQuestions",
-      "glossary"
+      "contributing"
     ],
     "Learn": [
       "crustAccount",
@@ -23,41 +22,44 @@
       "sWorkerGuide",
       "merchant",
       "GPoS",
-      "architecture",
-      "networkSecurity",
-      "crustConsensus",
-      "storageProve",
-      "teeTechnology",
-      "identity",
-      "parachain",
-      "staking",
       "DSM",
-      "bitSwap",
-      "nodeSpec",
-      "gPoSGuaranteeProcess",
-      "setOnChainIdentity",
-      "setupArkNode"
+      "bitSwap"
     ],
     "Build": [
       "crustBuilderGuide",
       "crustIntegrationGuide"
     ],
-    "Maintain": [
+    "Mining": [
       {
         "type": "subcategory",
-        "label": "Network Maintainers",
+        "label": "Network Parameters",
         "ids": [
-          "arkGuide"
+          "maxwellParameters",
+          "mainNetworkParameters"
         ]
       },
-      "parameters",
+      "nodeHardwareSpec",
+      {
+        "type": "subcategory",
+        "label": "Crust Preview Network Maxwell Nodes",
+        "ids": [
+          "nodeOverview",
+          "ownerNode",
+          "memberNode",
+          "isolationNode"
+        ]
+      },
       "nodesDapps",
       "gPoSGuaranteeProcess",
       "validatorGuides",
-      "governanceGuides"
+      "Q&AForMining"
+    ],
+    "Storage": [
+      "storeFilesInJS-APPS",
+      "manageFilesInJS-APPS",
+      "crustStorageExplorer",
+      "storageCollateral",
+      "Q&AForStorage"
     ]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
   }
 }

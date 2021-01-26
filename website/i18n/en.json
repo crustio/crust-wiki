@@ -41,29 +41,17 @@
         "title": "Crust Consensus",
         "sidebar_label": "Crust Consensus"
       },
+      "crustStorageExplorer": {
+        "title": "Crust Storage Explorer",
+        "sidebar_label": "Crust Storage Explorer"
+      },
       "crustIntegrationGuide": {
         "title": "Crust Integration guide",
         "sidebar_label": "Crust Integration guide"
       },
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
-      },
-      "doc2": {
-        "title": "document number 2"
-      },
-      "doc3": {
-        "title": "This is document number 3"
-      },
       "DSM": {
         "title": "DSM",
         "sidebar_label": "DSM"
-      },
-      "doc4": {
-        "title": "Other Document"
-      },
-      "doc5": {
-        "title": "Fifth Document"
       },
       "frequentlyAskedQuestions": {
         "title": "Editing How to submit bugs & feedbacks",
@@ -93,9 +81,27 @@
         "title": "Identity",
         "sidebar_label": "Identity"
       },
+      "isolation-Node": {
+        "title": "isolation-Node"
+      },
       "learnCrust": {
         "title": "What is Crust",
         "sidebar_label": "What is crust"
+      },
+      "mainNetworkParameters": {
+        "title": "Main Network Parameters",
+        "sidebar_label": "Main Network Parameters"
+      },
+      "manage-files-in-JS-APPS": {
+        "title": "manage-files-in-JS-APPS"
+      },
+      "maxwellParameters": {
+        "title": "Maxwell Parameters",
+        "sidebar_label": "Maxwell Parameters"
+      },
+      "memberNode": {
+        "title": "Member Node",
+        "sidebar_label": "Member Node"
       },
       "merchant": {
         "title": "Merchant",
@@ -107,6 +113,14 @@
       },
       "new-bond": {
         "title": "new-bond"
+      },
+      "nodeHardwareSpec": {
+        "title": "Node Hardware Spec",
+        "sidebar_label": "Node Hardware Spec"
+      },
+      "nodeOverview": {
+        "title": "Node Overview",
+        "sidebar_label": "Node Overview"
       },
       "setupArkNode": {
         "title": "Guide for Single Nodes in first-Stage “Profit Ark”",
@@ -120,6 +134,10 @@
         "title": "Nodes and Dapps",
         "sidebar_label": "Nodes and Dapps"
       },
+      "ownerNode": {
+        "title": "Owner Node",
+        "sidebar_label": "Owner Node"
+      },
       "parachain": {
         "title": "Parachain",
         "sidebar_label": "Parachain"
@@ -127,6 +145,18 @@
       "parameters": {
         "title": "Parameters",
         "sidebar_label": "Parameters"
+      },
+      "previewNetworkMaxwell": {
+        "title": "Preview Network Maxwell",
+        "sidebar_label": "Preview Network Maxwell"
+      },
+      "Q&AForMining": {
+        "title": "Q&A",
+        "sidebar_label": "Q&A"
+      },
+      "Q&AForStorage": {
+        "title": "Q&A forStorage",
+        "sidebar_label": "Q&A for Storage"
       },
       "setOnChainIdentity": {
         "title": "Set OnChain Identity",
@@ -139,6 +169,14 @@
       "storageProve": {
         "title": "Storage Prove",
         "sidebar_label": "Storage Prove"
+      },
+      "storageCollateral": {
+        "title": "Storage Collateral",
+        "sidebar_label": "Storage Collateral"
+      },
+      "storeFilesInJS-APPS": {
+        "title": "Store Files in JS-APPS",
+        "sidebar_label": "Store Files in JS-APPS"
       },
       "sWorkerGuide": {
         "title": "Guide for sWorker",
@@ -169,8 +207,8 @@
       "General": "General",
       "Learn": "Learn",
       "Build": "Build",
-      "Maintain": "Maintain",
-      "First Category": "First Category"
+      "Mining": "Mining",
+      "Storage": "Storage"
     }
   },
   "pages-strings": {
