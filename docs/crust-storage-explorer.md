@@ -4,4 +4,4 @@ title: Crust Storage Explorer
 sidebar_label: Crust Storage Explorer
 ---
 
-crustStorageExplorer
+Coming soon

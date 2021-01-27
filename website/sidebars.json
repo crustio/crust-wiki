@@ -17,10 +17,10 @@
     "Learn": [
       "crustAccount",
       "newBond",
+      "sWorkerGuide",
       "guarantor",
       "validator",
-      "sWorkerGuide",
-      "merchant",
+      "storage",
       "GPoS",
       "DSM",
       "bitSwap"
@@ -30,14 +30,7 @@
       "crustIntegrationGuide"
     ],
     "Mining": [
-      {
-        "type": "subcategory",
-        "label": "Network Parameters",
-        "ids": [
-          "maxwellParameters",
-          "mainNetworkParameters"
-        ]
-      },
+      "parameters",
       "nodeHardwareSpec",
       {
         "type": "subcategory",
@@ -49,9 +42,7 @@
           "isolationNode"
         ]
       },
-      "nodesDapps",
       "gPoSGuaranteeProcess",
-      "validatorGuides",
       "Q&AForMining"
     ],
     "Storage": [

@@ -4,4 +4,4 @@ title: Member Node
 sidebar_label: Member Node
 ---
 
-coming soon
+Coming soon

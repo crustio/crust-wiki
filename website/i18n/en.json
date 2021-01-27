@@ -69,9 +69,13 @@
         "title": "Governance Guides",
         "sidebar_label": "Governance Guides"
       },
+      "GPoS": {
+        "title": "GPoS",
+        "sidebar_label": "GPoS"
+      },
       "gPoSGuaranteeProcess": {
-        "title": "GPoS Guarantee Process",
-        "sidebar_label": "GPoS Guarantee Process"
+        "title": "Guarantor Guidance",
+        "sidebar_label": "Guarantor Guidance"
       },
       "guarantor": {
         "title": "Guarantor",
@@ -81,8 +85,9 @@
         "title": "Identity",
         "sidebar_label": "Identity"
       },
-      "isolation-Node": {
-        "title": "isolation-Node"
+      "isolationNode": {
+        "title": "Isolation Node",
+        "sidebar_label": "Isolation Node"
       },
       "learnCrust": {
         "title": "What is Crust",
@@ -95,24 +100,17 @@
       "manage-files-in-JS-APPS": {
         "title": "manage-files-in-JS-APPS"
       },
-      "maxwellParameters": {
-        "title": "Maxwell Parameters",
-        "sidebar_label": "Maxwell Parameters"
-      },
       "memberNode": {
         "title": "Member Node",
         "sidebar_label": "Member Node"
-      },
-      "merchant": {
-        "title": "Merchant",
-        "sidebar_label": "Merchant"
       },
       "networkSecurity": {
         "title": "Security of the network",
         "sidebar_label": "Security of the network"
       },
-      "new-bond": {
-        "title": "new-bond"
+      "newBond": {
+        "title": "New Bond",
+        "sidebar_label": "New Bond"
       },
       "nodeHardwareSpec": {
         "title": "Node Hardware Spec",
@@ -155,7 +153,7 @@
         "sidebar_label": "Q&A"
       },
       "Q&AForStorage": {
-        "title": "Q&A forStorage",
+        "title": "Q&A for Storage",
         "sidebar_label": "Q&A for Storage"
       },
       "setOnChainIdentity": {
@@ -165,6 +163,10 @@
       "staking": {
         "title": "Staking",
         "sidebar_label": "Staking"
+      },
+      "storage": {
+        "title": "Storage",
+        "sidebar_label": "Storage"
       },
       "storageProve": {
         "title": "Storage Prove",

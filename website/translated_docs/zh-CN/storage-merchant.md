@@ -1,8 +1,9 @@
 ---
-id: merchant
-title: 存储商户
-sidebar_label: 存储商户
+id: storage
+title: Storage
+sidebar_label: Storage
 ---
+
 ## 存储商户
 
 存储商户是Crust网络中，提供存储服务的节点。存储商户包含了进行工作量共识的sWorker模块、存储阵列（硬盘等存储单元）以及网络服务等模块，支持了存储证明、存储服务和检索服务。

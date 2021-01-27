@@ -1,7 +1,7 @@
 ---
-id: q&AForMining
-title: Q&A For Mining
-sidebar_label: Q&A For Mining
+id: Q&AForMining
+title: Q&A
+sidebar_label: Q&A
 ---
 
-q&AForMining
+即将到来

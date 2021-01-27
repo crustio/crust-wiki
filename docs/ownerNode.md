@@ -4,4 +4,4 @@ title: Owner Node
 sidebar_label: Owner Node
 ---
 
-coming soon
+Coming soon

@@ -1,7 +1,7 @@
 ---
 id: Q&AForStorage
-title: Q&A forStorage
+title: Q&A for Storage
 sidebar_label: Q&A for Storage
 ---
 
-coming soon
+Coming soon
