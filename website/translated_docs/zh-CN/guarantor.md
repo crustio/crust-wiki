@@ -10,4 +10,4 @@ sidebar_label: Guarantor
 
 ### 如何进行担保
 
-参考[如何进行担保](gPoS-guarantee-process.md)
+参考[如何进行担保](guarantor-guidance.md)

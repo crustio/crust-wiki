@@ -75,7 +75,7 @@ sidebar_label: Crust Claims
 
 2. 在MyEtherWallet界面，如下图所示点击左侧的**Message选项**，选择**Sign Message**，并将灰色框中文字粘贴到对话框中, 点击**Sign**
 
-![Sign Msg2](assets/claims/sign_msg2.jpg)
+![Sign Msg2](assets/claims/sign_msg2.png)
 
 3. 此时会在ImToken钱包端弹出**授权签名**的提示，请点击“确认”, **⚠️ 请注意，这一步有可能出现MyEtherWallet和ImToken通讯中断导致没有弹出授权信息，此时请重新执行**[步骤三](#三-登陆myetherwallet连接钱包)
 

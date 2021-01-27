@@ -57,17 +57,24 @@ const siteConfig = {
 
   /* Custom fonts for website */
   fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
+    myFont: ["Work Sans", "sans-serif"],
   },
 
   onPageNav: "separate",
+
+  // Add custom scripts here that would be placed in <script> tags.
+  scripts: [
+    "https://buttons.github.io/buttons.js",
+    "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js",
+    "https://unpkg.com/aos@next/dist/aos.js",
+    "/js/custom.js",
+    "/js/klaro-config.js",
+    "/js/klaro.js",
+    '/js/packaged/addressChanger.js',
+    "/js/clipboard.min.js",
+    "/js/copycode.js",
+
+  ],
 
   stylesheets: [
     "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",
@@ -111,6 +118,12 @@ const siteConfig = {
 
   ],
 
+  markdownPlugins: [
+    (md) => {
+      md.use(require("remarkable-katex"));
+    },
+  ],
+
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.
@@ -132,7 +145,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  // repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: 'https://github.com/crustio',
 };
 
 module.exports = siteConfig;

@@ -41,29 +41,17 @@
         "title": "Crust Consensus",
         "sidebar_label": "Crust Consensus"
       },
+      "crustStorageExplorer": {
+        "title": "Crust Storage Explorer",
+        "sidebar_label": "Crust Storage Explorer"
+      },
       "crustIntegrationGuide": {
         "title": "Crust Integration guide",
         "sidebar_label": "Crust Integration guide"
       },
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
-      },
-      "doc2": {
-        "title": "document number 2"
-      },
-      "doc3": {
-        "title": "This is document number 3"
-      },
       "DSM": {
         "title": "DSM",
         "sidebar_label": "DSM"
-      },
-      "doc4": {
-        "title": "Other Document"
-      },
-      "doc5": {
-        "title": "Fifth Document"
       },
       "frequentlyAskedQuestions": {
         "title": "Editing How to submit bugs & feedbacks",
@@ -81,9 +69,13 @@
         "title": "Governance Guides",
         "sidebar_label": "Governance Guides"
       },
-      "gPoSGuaranteeProcess": {
-        "title": "GPoS Guarantee Process",
-        "sidebar_label": "GPoS Guarantee Process"
+      "GPoS": {
+        "title": "GPoS",
+        "sidebar_label": "GPoS"
+      },
+      "guarantorGuidance": {
+        "title": "Guarantor Guidance",
+        "sidebar_label": "Guarantor Guidance"
       },
       "guarantor": {
         "title": "Guarantor",
@@ -93,20 +85,40 @@
         "title": "Identity",
         "sidebar_label": "Identity"
       },
+      "isolationNode": {
+        "title": "Isolation Node",
+        "sidebar_label": "Isolation Node"
+      },
       "learnCrust": {
         "title": "What is Crust",
         "sidebar_label": "What is crust"
       },
-      "merchant": {
-        "title": "Merchant",
-        "sidebar_label": "Merchant"
+      "mainNetworkParameters": {
+        "title": "Main Network Parameters",
+        "sidebar_label": "Main Network Parameters"
+      },
+      "manage-files-in-JS-APPS": {
+        "title": "manage-files-in-JS-APPS"
+      },
+      "memberNode": {
+        "title": "Member Node",
+        "sidebar_label": "Member Node"
       },
       "networkSecurity": {
         "title": "Security of the network",
         "sidebar_label": "Security of the network"
       },
-      "new-bond": {
-        "title": "new-bond"
+      "newBond": {
+        "title": "New Bond",
+        "sidebar_label": "New Bond"
+      },
+      "nodeHardwareSpec": {
+        "title": "Node Hardware Spec",
+        "sidebar_label": "Node Hardware Spec"
+      },
+      "nodeOverview": {
+        "title": "Node Overview",
+        "sidebar_label": "Node Overview"
       },
       "setupArkNode": {
         "title": "Guide for Single Nodes in first-Stage “Profit Ark”",
@@ -120,6 +132,10 @@
         "title": "Nodes and Dapps",
         "sidebar_label": "Nodes and Dapps"
       },
+      "ownerNode": {
+        "title": "Owner Node",
+        "sidebar_label": "Owner Node"
+      },
       "parachain": {
         "title": "Parachain",
         "sidebar_label": "Parachain"
@@ -127,6 +143,18 @@
       "parameters": {
         "title": "Parameters",
         "sidebar_label": "Parameters"
+      },
+      "previewNetworkMaxwell": {
+        "title": "Preview Network Maxwell",
+        "sidebar_label": "Preview Network Maxwell"
+      },
+      "Q&AForMining": {
+        "title": "Q&A",
+        "sidebar_label": "Q&A"
+      },
+      "Q&AForStorage": {
+        "title": "Q&A for Storage",
+        "sidebar_label": "Q&A for Storage"
       },
       "setOnChainIdentity": {
         "title": "Set OnChain Identity",
@@ -136,9 +164,21 @@
         "title": "Staking",
         "sidebar_label": "Staking"
       },
+      "storage": {
+        "title": "Storage",
+        "sidebar_label": "Storage"
+      },
       "storageProve": {
         "title": "Storage Prove",
         "sidebar_label": "Storage Prove"
+      },
+      "storageCollateral": {
+        "title": "Storage Collateral",
+        "sidebar_label": "Storage Collateral"
+      },
+      "storeFilesInJS-APPS": {
+        "title": "Store Files in JS-APPS",
+        "sidebar_label": "Store Files in JS-APPS"
       },
       "sWorkerGuide": {
         "title": "Guide for sWorker",
@@ -169,8 +209,8 @@
       "General": "General",
       "Learn": "Learn",
       "Build": "Build",
-      "Maintain": "Maintain",
-      "First Category": "First Category"
+      "Mining": "Mining",
+      "Storage": "Storage"
     }
   },
   "pages-strings": {

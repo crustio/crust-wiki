@@ -10,7 +10,7 @@ sidebar_label: Profit Ark Guideline
 
 2. [Get test coin](https://github.com/decloudf/faucet-bot/issues/new/choose)
 
-3. [Guarantee](gPoS-guarantee-process.md) a node to help it be a validator
+3. [Guarantee](guarantor-guidance.md) a node to help it be a validator
 
 4. Set [on-chain identity](set-onchain-identity.md) to get your name shown
 
