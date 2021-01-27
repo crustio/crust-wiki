@@ -55,7 +55,7 @@ class HomeNav extends React.Component {
                 />
                 <NavItem
                     href={this.props.docUrl("parameters.html")}
-                    title="Maining"
+                    title="Mining"
                     content="Information and guides on how to deploy a node and run the network."
                     aosDelay="600"
                 />
