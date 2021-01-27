@@ -48,14 +48,14 @@ class HomeNav extends React.Component {
                     aosDelay="0"
                 />
                 <NavItem
-                    href={this.props.docUrl("nodeSpec.html")}
+                    href={this.props.docUrl("crustAccount.html")}
                     content="Crust implements the incentive layer protocol for decentralized storage."
                     title="Learn"
                     aosDelay="300"
                 />
                 <NavItem
-                    href={this.props.docUrl("arkGuide.html")}
-                    title="Maintain"
+                    href={this.props.docUrl("parameters.html")}
+                    title="Maining"
                     content="Information and guides on how to deploy a node and run the network."
                     aosDelay="600"
                 />
