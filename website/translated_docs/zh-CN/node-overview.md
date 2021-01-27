@@ -33,7 +33,7 @@ sidebar_label: Node Overview
 
 参考这个链接
 
-## **2.5********构建Member****节点**
+## **2.5 构建Member节点**
 
 参考这个链接
 
