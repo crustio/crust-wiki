@@ -6,16 +6,16 @@ sidebar_label: Preview Network Maxwell
 
 # 预览网
 
-Maxwell作为Crust主网的预览网，集成了Crust的所有核心功能，包括代币质押、去中心化存储市场DSM、以及文件检索机制等。预览网Maxwell是一个真实的经济系统，参与者们可以一比一的[映射 CRU-ERC20]() 进入Mexwell进行质押挖矿或体验存储服务，而其中产生的收益也可以一比一的映射到CRU-ERC20作为参与者的奖励。
+Maxwell作为Crust主网的预览网，集成了Crust的所有核心功能，包括代币质押、去中心化存储市场DSM、以及文件检索机制等。预览网Maxwell是一个真实的经济系统，参与者们可以一比一的[映射 CRU-ERC20](claims.md) 进入Mexwell进行质押挖矿或体验存储服务，而其中产生的收益也可以一比一的映射到CRU-ERC20作为参与者的奖励。
 
 ## 如何参与Maxwell预览网
 
-您可以作为矿工加入，提供存储服务来进行挖矿，也可以作为持币用户参与质押挖矿，挖矿奖励规则见[GPoS]()共识算法。
+您可以作为矿工加入，提供存储服务来进行挖矿，也可以作为持币用户参与质押挖矿，挖矿奖励规则见[GPoS](GPoS.md)共识算法。
 您也可以单纯的作为用户使用Crust网络的存储。
 
 ### 矿工
 
-矿工需要根据自己的需求来部署节点。Maxwell网络中的节点分为：[独立节点](isolationNode.md)、[Group Owner](ownerNode.md)以及[Group Member](memberNode.md)。
+矿工需要根据自己的需求来部署节点。Maxwell网络中的节点分为：[Isolation Node](isolationNode.md)、[Group Owner](ownerNode.md)以及[Group Member](memberNode.md)。
 
 
 独立节点是一个物理节点，这个节点需要在提供存储和检索服务的同时，承担Crust网络验证人的工作。这也意味着，这个验证人的质押上限受到这个节点存储量的制约。
