@@ -1,11 +1,11 @@
 ---
-id: gPoSGuaranteeProcess
+id: guarantorGuidance
 title: Guarantor Guidance
 sidebar_label: Guarantor Guidance
 ---
 
 ### 配置绑定关系
-确保你已经完成了[账户配置](https://github.com/crustio/crust/wiki/Crust%E8%B4%A6%E6%88%B7)，并且已经绑定了你的stash和controller账户。
+确保你已经完成了[账户配置](new-bond.md)，并且已经绑定了你的stash和controller账户。
 
 ### 浏览可被担保的节点列表
 

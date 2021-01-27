@@ -1,5 +1,5 @@
 ---
-id: gPoSGuaranteeProcess
+id: guarantorGuidance
 title: Guarantor Guidance
 sidebar_label: Guarantor Guidance
 ---

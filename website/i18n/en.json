@@ -73,7 +73,7 @@
         "title": "GPoS",
         "sidebar_label": "GPoS"
       },
-      "gPoSGuaranteeProcess": {
+      "guarantorGuidance": {
         "title": "Guarantor Guidance",
         "sidebar_label": "Guarantor Guidance"
       },

@@ -18,4 +18,4 @@ sidebar_label: Validator
 
 ### 如何成为验证人
 
-要成为Crust网络的验证人，您需要准备一定的存储资源、优质的网络并部署节点。节点部署指南见：[Isolation Node]()、[Group Owner]()、[Group Member]()
+要成为Crust网络的验证人，您需要准备一定的存储资源、优质的网络并部署节点。节点部署指南见：[Isolation Node](isolationNode.md)、[Group Owner](ownerNode.md)、[Group Member](memberNode.md)

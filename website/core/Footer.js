@@ -35,8 +35,8 @@ class Footer extends React.Component {
             <a href={this.docUrl('gettingStarted.html')}>
               Getting Started (or other categories)
             </a>
-            <a href={this.docUrl('arkGuide.html')}>Ark GUide (or other categories)</a>
-            <a href={this.docUrl('gPoSGuaranteeProcess.html')}>
+            <a href={this.docUrl('claims.html')}>CRU Claims (or other categories)</a>
+            <a href={this.docUrl('GPoS.html')}>
               GPoS (or other categories)
             </a>
           </div>
@@ -50,22 +50,34 @@ class Footer extends React.Component {
             {/*  Stack Overflow*/}
             {/*</a>*/}
             {/*<a href="https://discordapp.com/">Project Chat</a>*/}
-            {/*<a*/}
-            {/*  href="https://twitter.com/"*/}
-            {/*  target="_blank"*/}
-            {/*  rel="noreferrer noopener">*/}
-            {/*  Twitter*/}
-            {/*</a>*/}
+            <a
+              href="https://twitter.com/CrustNetwork"
+              target="_blank"
+              rel="noreferrer noopener">
+              Twitter
+            </a>
+            <a
+                href="https://t.me/CrustNetwork"
+                target="_blank"
+                rel="noreferrer noopener">
+              Telegram
+            </a>
           </div>
           <div>
             <h5>More</h5>
+            <a
+                href="https://crust.network/cooperation"
+                target="_blank"
+                rel="noreferrer noopener">
+              Cooperation
+            </a>
             {/*<a href={`${this.props.config.baseUrl}blog`}>Blog</a>*/}
-            {/*<a href="https://github.com/">GitHub</a>*/}
+            <a href="https://github.com/crustio">GitHub</a>
             {/*<a*/}
             {/*  className="github-button"*/}
             {/*  href={this.props.config.repoUrl}*/}
             {/*  data-icon="octicon-star"*/}
-            {/*  data-count-href="/facebook/docusaurus/stargazers"*/}
+            {/*  data-count-href="/crust"*/}
             {/*  data-show-count="true"*/}
             {/*  data-count-aria-label="# stargazers on GitHub"*/}
             {/*  aria-label="Star this project on GitHub">*/}

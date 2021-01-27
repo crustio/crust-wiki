@@ -21,9 +21,9 @@ GPoS基于Substrate框架的[BABE/GRANDPA](https://wiki.polkadot.network/docs/en
 Crust中提供Group的概念。存储节点可以加入某个Group中，将自己的存储工作量带来的质押额度贡献给这个Group，使得Group Owner可以拥有更大的质押额度来竞争成为验证人。
 
 因此Crust网络中的节点有两种角色：
-* [存储节点]()
-* [Group Owner]()
+* [存储节点](isolationNode.md)
+* [Group Owner](ownerNode.md)
 
 
 ### 作为担保人参与GPoS
-持币用户可以通过[担保]()节点来分享Crust网络的质押收益。用户可以浏览网络中的验证人并进行担保，从而增加该验证人的有效质押（最终验证人的总有效质押量不会超过其质押额度）
+持币用户可以通过[担保](guarantor-guidance.md)节点来分享Crust网络的质押收益。用户可以浏览网络中的验证人并进行担保，从而增加该验证人的有效质押（最终验证人的总有效质押量不会超过其质押额度）

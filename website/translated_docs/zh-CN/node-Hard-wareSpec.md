@@ -19,7 +19,7 @@ sidebar_label: Node Hardware Spec
 
 ## Isolation节点形态硬件Spec
 
-Isolation节点安装流程请查看[这里](https://github.com/crustio/crust/wiki/Crust-%E6%BF%80%E5%8A%B1%E6%B5%8B%E8%AF%95%E7%BD%91%E5%8D%95%E8%8A%82%E7%82%B9%E6%89%8B%E5%86%8C)
+Isolation节点安装流程请查看[这里](isolationNode.md)
 
 
 | **** | **CPU**                                                      | **主板**                                                    | **内存**            | **固态硬盘**                                                 | **机械硬盘**                                                 | **网络环境**                                                 | **操作系统**       |
@@ -44,7 +44,7 @@ Isolation节点安装流程请查看[这里](https://github.com/crustio/crust/wi
 
 多节点形态下，网络需要一个维护Crust链的出块的Owner节点，以及多个Member节点。
 
-多节点安装流程请查看[这里](https://github.com/crustio/crust/wiki/Crust-%E6%BF%80%E5%8A%B1%E6%B5%8B%E8%AF%95%E7%BD%91%E5%A4%9A%E8%8A%82%E7%82%B9%E6%89%8B%E5%86%8C)
+多节点安装流程请查看[这里](ownerNode.md)
 
 ### Owner节点
 
