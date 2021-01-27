@@ -1,6 +1,6 @@
 ---
 id: sWorkerGuide
-title: Guide for sWorker
+title: sWorker
 sidebar_label: sWorker
 ---
 
