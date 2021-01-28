@@ -1064,6 +1064,7 @@ footer .list-social-links a {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.7);
   transform: translateY(-1rem);
 }
+/* todo: last homeNavItem will disappeared after resizing window */
 .homeNavContainer {
   background: url('/img/bg.png');
 }
