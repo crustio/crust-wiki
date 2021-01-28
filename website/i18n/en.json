@@ -26,8 +26,8 @@
         "sidebar_label": "Contributing"
       },
       "crustAccount": {
-        "title": "Crust Account",
-        "sidebar_label": "Crust Account"
+        "title": "Account",
+        "sidebar_label": "Account"
       },
       "crustBuilderGuide": {
         "title": "Crust builders starter’s guide",
@@ -81,6 +81,9 @@
         "title": "Isolation Node",
         "sidebar_label": "Isolation Node"
       },
+      "manage-files-in-JS-APPS": {
+        "title": "manage-files-in-JS-APPS"
+      },
       "memberNode": {
         "title": "Member Node",
         "sidebar_label": "Member Node"
@@ -118,8 +121,8 @@
         "sidebar_label": "Q&A"
       },
       "Q&AForStorage": {
-        "title": "Q&A",
-        "sidebar_label": "Q&A"
+        "title": "Q&A for Storage",
+        "sidebar_label": "Q&A for Storage"
       },
       "setOnChainIdentity": {
         "title": "Set OnChain Identity",
@@ -134,8 +137,8 @@
         "sidebar_label": "Storage Collateral"
       },
       "storeFilesInAPPS": {
-        "title": "Store Files in JS-APPS",
-        "sidebar_label": "Store Files in JS-APPS"
+        "title": "Store Files in APPS",
+        "sidebar_label": "Store Files in APPS"
       },
       "sWorkerGuide": {
         "title": "sWorker",
@@ -144,10 +147,6 @@
       "teeTechnology": {
         "title": "TEE Technology",
         "sidebar_label": "TEE Technology"
-      },
-      "validatorGuides": {
-        "title": "Validator Guides",
-        "sidebar_label": "Validator Guides"
       },
       "validator": {
         "title": "validator",

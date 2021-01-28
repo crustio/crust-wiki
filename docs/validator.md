@@ -21,5 +21,5 @@ As a storage merchant, a validator can also provide storage services to earn sto
 
 ### How to become a validator
 
-To become a validator you need to prepare storage resources, a high-quality network, and deploy your nodes. See the node deployment guides:[Isolation Node](isolationNode.md)、[Group Owner](ownerNode.md)、[Group Member](memberNode.md)
+To become a validator you need to prepare storage resources, a high-quality network, and deploy your nodes. See the node deployment guides: [Node overview](node-overview.md)
 

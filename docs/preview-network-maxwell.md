@@ -4,8 +4,6 @@ title: Preview Network Maxwell
 sidebar_label: Preview Network Maxwell
 ---
 
-## Maxwell Preview Network
-
 Maxwell, as the preview network of the Crust mainnet, implements all the core mechanisms of Crust, including token staking, decentralized storage market(DSM), and file retrieval. Maxwell runs in a real economic system, participants can lock and [claim](claims.md) thier CRU-ERC20 token to the Mexwell CRU token for staking, use the storage services and retrieval files from Maxwell. The mining revenue in Maxwell are real CRU tokens that can be claimed back to CRU-ERC20 as a rewards for participant.
 
 ## How to Join Maxwell Preview Network
@@ -16,7 +14,7 @@ You can also use Crust network as a storage user, the storage market is coming s
 
 ### Miners
 
-Miners need to setup nodes according to their roles. The nodes in the Maxwell network are divided into: [Independent Node](isolationNode.md), [Group Owner](ownerNode.md) and [Group Member](memberNode.md).
+Miners need to setup nodes according to their roles. The nodes in the Maxwell network are divided into: Independent Node, Group Owner and Group Member. For node details, please refer to [node overview](node-overview.md)
 
 An independent node is a physical node. This node serves as a network validator of Maxwell network while providing storage and retrieval services. This means that the stake limit of this validator is restricted by the limit of storage capacity of one single node.
 

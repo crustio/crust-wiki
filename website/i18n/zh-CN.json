@@ -26,8 +26,8 @@
         "sidebar_label": "贡献"
       },
       "crustAccount": {
-        "title": "Crust 账户",
-        "sidebar_label": "Crust 账户"
+        "title": "账户",
+        "sidebar_label": "账户"
       },
       "crustBuilderGuide": {
         "title": "Crust 开发者文档",
@@ -54,8 +54,8 @@
         "sidebar_label": "Editing How to submit bugs & feedbacks"
       },
       "gettingStarted": {
-        "title": "了解 Crust",
-        "sidebar_label": "了解 Crust"
+        "title": "开始",
+        "sidebar_label": "开始"
       },
       "glossary": {
         "title": "术语表",
@@ -145,7 +145,7 @@
         "title": "TEE 技术",
         "sidebar_label": "TEE 技术"
       },
-      "validatorGuides": {
+      "validatorGuidance": {
         "title": "验证人指南",
         "sidebar_label": "验证人指南"
       },
@@ -155,15 +155,15 @@
       }
     },
     "links": {
-      "Docs": "Docs",
-      "Contribute": "Contribute"
+      "Docs": "文档",
+      "Contribute": "贡献"
     },
     "categories": {
-      "General": "General",
-      "Learn": "Learn",
-      "Build": "Build",
-      "Mining": "Mining",
-      "Storage": "Storage"
+      "General": "概览",
+      "Learn": "学习",
+      "Build": "构建",
+      "Mining": "节点",
+      "Storage": "存储"
     }
   },
   "pages-strings": {

@@ -2,15 +2,8 @@
   "docs": {
     "General": [
       "gettingStarted",
-      "claims",
       "previewNetworkMaxwell",
-      {
-        "type": "subcategory",
-        "label": "Research Pages",
-        "ids": [
-
-        ]
-      },
+      "claims",
       "glossary",
       "community",
       "contributing"
@@ -31,20 +24,14 @@
       "crustIntegrationGuide"
     ],
     "Mining": [
-      "parameters",
-      "validatorGuidance",
+      "nodeOverview",
       "nodeHardwareSpec",
-      {
-        "type": "subcategory",
-        "label": "Crust Preview Network Maxwell Nodes",
-        "ids": [
-          "nodeOverview",
-          "ownerNode",
-          "memberNode",
-          "isolationNode"
-        ]
-      },
+      "ownerNode",
+      "memberNode",
+      "isolationNode",
+      "validatorGuidance",
       "guarantorGuidance",
+      "parameters",
       "Q&AForMining"
     ],
     "Storage": [

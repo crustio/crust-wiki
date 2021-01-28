@@ -43,20 +43,20 @@ class HomeNav extends React.Component {
             <NavContainer>
                 <NavItem
                     href={this.props.docUrl("crustBuilderGuide.html")}
-                    title="Build"
-                    content="Most up-to-date information on the status of the development tools in the Crust ecosystem."
+                    title="构建"
+                    content="Crust 生态中最新的开发者工具。"
                     aosDelay="0"
                 />
                 <NavItem
                     href={this.props.docUrl("crustAccount.html")}
-                    content="Crust provides a decentralized storage network of Web3 ecosystem."
-                    title="Learn"
+                    content="Crust 提供了Web3⽣态系统的去中⼼化存储⽹络。"
+                    title="学习"
                     aosDelay="300"
                 />
                 <NavItem
                     href={this.props.docUrl("parameters.html")}
-                    title="Mining"
-                    content="Information and guides on how to deploy a node and run the network."
+                    title="节点"
+                    content="如何在Crust网络中部署节点。"
                     aosDelay="600"
                 />
             </NavContainer>
