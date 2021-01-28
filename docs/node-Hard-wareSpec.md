@@ -4,8 +4,6 @@ title: Node Hardware Spec
 sidebar_label: Node Hardware Spec
 ---
 
-
-
 Note: For storage nodes in single-node and multi-node form, the CPU needs to support SGX:
 
 * Before starting, please use the following methods to detect whether your CPU supports SGX.

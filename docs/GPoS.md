@@ -4,7 +4,6 @@ title: GPoS
 sidebar_label: GPoS
 ---
 
-# GPoS
 ## What is GPoS
 
 There are multiple participants in Crust Network, they are: validator, candidate, guarantor, and user. The users mentioned here are mainly refers to cloud storage users.

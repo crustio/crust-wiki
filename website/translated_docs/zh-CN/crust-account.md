@@ -1,7 +1,7 @@
 ---
 id: crustAccount
-title: Crust Account
-sidebar_label: Crust Account
+title: Account
+sidebar_label: Account
 ---
 
 ## 生成Crust账户

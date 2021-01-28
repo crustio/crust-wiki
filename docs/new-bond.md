@@ -4,10 +4,9 @@ title: New Bond
 sidebar_label: New Bond
 ---
 
-## Bond Accounts
 Crust account, featuring a standard dual account (Controller/Stash) model, needs to go through a set of account bonding procedures. This section will illustrate how to create accounts and bond account relationships through actions in Crust APPs.
 
-### Create a stash account
+## Create a stash account
 Click "Accounts" in the navigation bar at the top of the window, and click "Add account", as shown below.
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/cloud_docImage/maxwell/en/3.1/3.1.1.png)
@@ -26,7 +25,7 @@ Click "Save" the account will be backed up on your device by default.
 
 We will use the first created account as a Stash account. Stash account is a user's asset account, which is often used to manage the user's assets. It should be noted that a certain number of CRUs are required of the Stash account for subsequent actions such as transactions and asset staking.
 
-###  Create a Controller account
+##  Create a Controller account
 Repeat the above steps to create another account.
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/cloud_docImage/maxwell/en/3.1/3.1.1.1.png)
@@ -38,7 +37,7 @@ Repeat the above steps to create another account.
 This time we name the newly created account as CONTROLLER, a reminder that this account will be used as a controller to control assets. Also, a certain number of CRUs are required of the account to pay subsequent transaction fees.
 
 
-### Bond Controller to Stash
+## Bond Controller to Stash
 Click "Staking" from the "Network" column in the navigation bar, and select "Account actions".
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/cloud_docImage/maxwell/en/3.3/3.3.1.png)
