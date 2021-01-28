@@ -15,14 +15,10 @@ Crust网络使用的是GPoS（Guaranteed Proof of Stake）共识机制，是一�
 GPoS基于Substrate框架的[BABE/GRANDPA](https://wiki.polkadot.network/docs/en/learn-consensus#what-is-grandpababe)算法进行最终出块。如果想从共识上攻击Crust网络，除了需要拥有大比例的CRU通证，还需要控制足够多的存储资源，这样的设计会让攻击难度变得相对更高。
 
 ### 如何参与GPoS
-用户可以作为节点参与，或者作为担保人参与。
+用户可以作为验证人参与，或者作为担保人参与。
 
-### 作为节点参与GPoS
-Crust中提供Group的概念。存储节点可以加入某个Group中，将自己的存储工作量带来的质押额度贡献给这个Group，使得Group Owner可以拥有更大的质押额度来竞争成为验证人。
-
-因此Crust网络中的节点有两种角色：
-* [存储节点](isolationNode.md)
-* [Group Owner](ownerNode.md)
+### 作为验证人参与GPoS
+作为验证人参与网络请参考[验证人指南](validatorGuidance.md)
 
 
 ### 作为担保人参与GPoS

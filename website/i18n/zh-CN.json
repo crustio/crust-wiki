@@ -6,12 +6,8 @@
     "tagline": "wiki for crust network",
     "docs": {
       "architecture": {
-        "title": "Architecture",
-        "sidebar_label": "Architecture"
-      },
-      "arkGuide": {
-        "title": "Profit Ark Guideline",
-        "sidebar_label": "Profit Ark Guideline"
+        "title": "架构",
+        "sidebar_label": "架构"
       },
       "bitSwap": {
         "title": "BitSwap",
@@ -22,52 +18,48 @@
         "sidebar_label": "CRU 认领"
       },
       "community": {
-        "title": "Community",
-        "sidebar_label": "Community"
+        "title": "社区",
+        "sidebar_label": "社区"
       },
       "contributing": {
-        "title": "Contributing",
-        "sidebar_label": "Contributing"
+        "title": "贡献",
+        "sidebar_label": "贡献"
       },
       "crustAccount": {
         "title": "Crust 账户",
         "sidebar_label": "Crust 账户"
       },
       "crustBuilderGuide": {
-        "title": "Crust builders starter’s guide",
-        "sidebar_label": "Crust builders starter’s guide"
+        "title": "Crust 开发者文档",
+        "sidebar_label": "Crust 开发者文档"
       },
       "crustConsensus": {
-        "title": "Crust Consensus",
-        "sidebar_label": "Crust Consensus"
+        "title": "Crust 共识算法",
+        "sidebar_label": "Crust 共识算法"
       },
       "crustStorageExplorer": {
-        "title": "Crust存储浏览器",
-        "sidebar_label": "Crust存储浏览器"
+        "title": "Crust 存储浏览器",
+        "sidebar_label": "Crust 存储浏览器"
       },
       "crustIntegrationGuide": {
-        "title": "Crust Integration guide",
-        "sidebar_label": "Crust Integration guide"
+        "title": "Crust 集成指南",
+        "sidebar_label": "Crust 集成指南"
       },
       "DSM": {
-        "title": "DSM",
-        "sidebar_label": "DSM"
+        "title": "去中心化存储市场",
+        "sidebar_label": "去中心化存储市场"
       },
       "frequentlyAskedQuestions": {
         "title": "Editing How to submit bugs & feedbacks",
         "sidebar_label": "Editing How to submit bugs & feedbacks"
       },
       "gettingStarted": {
-        "title": "开始",
-        "sidebar_label": "开始"
+        "title": "了解 Crust",
+        "sidebar_label": "了解 Crust"
       },
       "glossary": {
-        "title": "Glossary",
-        "sidebar_label": "Glossary"
-      },
-      "governanceGuides": {
-        "title": "Governance Guides",
-        "sidebar_label": "Governance Guides"
+        "title": "术语表",
+        "sidebar_label": "术语表"
       },
       "GPoS": {
         "title": "GPoS",
@@ -86,119 +78,80 @@
         "sidebar_label": "Identity"
       },
       "isolationNode": {
-        "title": "Isolation Node",
-        "sidebar_label": "Isolation Node"
-      },
-      "learnCrust": {
-        "title": "What is Crust",
-        "sidebar_label": "What is crust"
-      },
-      "mainNetworkParameters": {
-        "title": "Main Network Parameters",
-        "sidebar_label": "Main Network Parameters"
-      },
-      "manage-files-in-JS-APPS": {
-        "title": "manage-files-in-JS-APPS"
+        "title": "Isolation 节点",
+        "sidebar_label": "Isolation 节点"
       },
       "memberNode": {
-        "title": "Member Node",
-        "sidebar_label": "Member Node"
-      },
-      "networkSecurity": {
-        "title": "Security of the network",
-        "sidebar_label": "Security of the network"
+        "title": "Member 节点",
+        "sidebar_label": "Member 节点"
       },
       "newBond": {
-        "title": "New Bond",
-        "sidebar_label": "New Bond"
+        "title": "新增绑定",
+        "sidebar_label": "新增绑定"
       },
       "nodeHardwareSpec": {
-        "title": "Node Hardware Spec",
-        "sidebar_label": "Node Hardware Spec"
+        "title": "节点硬件指南",
+        "sidebar_label": "节点硬件指南"
       },
       "nodeOverview": {
-        "title": "Node Overview",
-        "sidebar_label": "Node Overview"
-      },
-      "setupArkNode": {
-        "title": "Guide for Single Nodes in first-Stage “Profit Ark”",
-        "sidebar_label": "Guide for Single Nodes in first-Stage “Profit Ark”"
-      },
-      "nodeSpec": {
-        "title": "Node spec",
-        "sidebar_label": "Node Spec"
-      },
-      "nodesDapps": {
-        "title": "Nodes and Dapps",
-        "sidebar_label": "Nodes and Dapps"
+        "title": "节点概要",
+        "sidebar_label": "节点概要"
       },
       "ownerNode": {
-        "title": "Owner Node",
-        "sidebar_label": "Owner Node"
+        "title": "Owner 节点",
+        "sidebar_label": "Owner 节点"
       },
       "parachain": {
         "title": "Parachain",
         "sidebar_label": "Parachain"
       },
       "parameters": {
-        "title": "Parameters",
-        "sidebar_label": "Parameters"
+        "title": "参数表",
+        "sidebar_label": "参数表"
       },
       "previewNetworkMaxwell": {
-        "title": "Preview Network Maxwell",
-        "sidebar_label": "Preview Network Maxwell"
+        "title": "预览网 Maxwell",
+        "sidebar_label": "预览网 Maxwell"
       },
       "Q&AForMining": {
         "title": "Q&A",
         "sidebar_label": "Q&A"
       },
       "Q&AForStorage": {
-        "title": "Q&A for Storage",
-        "sidebar_label": "Q&A for Storage"
+        "title": "Q&A",
+        "sidebar_label": "Q&A"
       },
       "setOnChainIdentity": {
-        "title": "Set OnChain Identity",
-        "sidebar_label": "Set OnChain Identity"
+        "title": "设置链上身份",
+        "sidebar_label": "设置链上身份"
       },
-      "staking": {
-        "title": "Staking",
-        "sidebar_label": "Staking"
-      },
-      "storage": {
-        "title": "Storage",
-        "sidebar_label": "Storage"
-      },
-      "storageProve": {
-        "title": "Storage Prove",
-        "sidebar_label": "Storage Prove"
+      "storageMerchant": {
+        "title": "存储商户",
+        "sidebar_label": "存储商户"
       },
       "storageCollateral": {
-        "title": "Storage Collateral",
-        "sidebar_label": "Storage Collateral"
+        "title": "存储保证金",
+        "sidebar_label": "存储保证金"
       },
-      "storeFilesInJS-APPS": {
-        "title": "Store Files in JS-APPS",
-        "sidebar_label": "Store Files in JS-APPS"
+      "storeFilesInAPPS": {
+        "title": "使用Crust APPs存储文件",
+        "sidebar_label": "使用Crust APPs存储文件"
       },
       "sWorkerGuide": {
         "title": "sWorker",
         "sidebar_label": "sWorker"
       },
       "teeTechnology": {
-        "title": "TEE Technology",
-        "sidebar_label": "TEE Technology"
-      },
-      "timeStone": {
-        "title": "Time Stone",
-        "sidebar_label": "Time Stone"
+        "title": "TEE 技术",
+        "sidebar_label": "TEE 技术"
       },
       "validatorGuides": {
-        "title": "Validator Guides",
-        "sidebar_label": "Validator Guides"
+        "title": "验证人指南",
+        "sidebar_label": "验证人指南"
       },
       "validator": {
-        "title": "validator",
-        "sidebar_label": "Validator"
+        "title": "验证人",
+        "sidebar_label": "验证人"
       }
     },
     "links": {

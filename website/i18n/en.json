@@ -9,10 +9,6 @@
         "title": "Architecture",
         "sidebar_label": "Architecture"
       },
-      "arkGuide": {
-        "title": "Profit Ark Guideline",
-        "sidebar_label": "Profit Ark Guideline"
-      },
       "bitSwap": {
         "title": "BitSwap",
         "sidebar_label": "BitSwap"
@@ -65,10 +61,6 @@
         "title": "Glossary",
         "sidebar_label": "Glossary"
       },
-      "governanceGuides": {
-        "title": "Governance Guides",
-        "sidebar_label": "Governance Guides"
-      },
       "GPoS": {
         "title": "GPoS",
         "sidebar_label": "GPoS"
@@ -89,24 +81,9 @@
         "title": "Isolation Node",
         "sidebar_label": "Isolation Node"
       },
-      "learnCrust": {
-        "title": "What is Crust",
-        "sidebar_label": "What is crust"
-      },
-      "mainNetworkParameters": {
-        "title": "Main Network Parameters",
-        "sidebar_label": "Main Network Parameters"
-      },
-      "manage-files-in-JS-APPS": {
-        "title": "manage-files-in-JS-APPS"
-      },
       "memberNode": {
         "title": "Member Node",
         "sidebar_label": "Member Node"
-      },
-      "networkSecurity": {
-        "title": "Security of the network",
-        "sidebar_label": "Security of the network"
       },
       "newBond": {
         "title": "New Bond",
@@ -119,18 +96,6 @@
       "nodeOverview": {
         "title": "Node Overview",
         "sidebar_label": "Node Overview"
-      },
-      "setupArkNode": {
-        "title": "Guide for Single Nodes in first-Stage “Profit Ark”",
-        "sidebar_label": "Guide for Single Nodes in first-Stage “Profit Ark”"
-      },
-      "nodeSpec": {
-        "title": "Node spec",
-        "sidebar_label": "Node Spec"
-      },
-      "nodesDapps": {
-        "title": "Nodes and Dapps",
-        "sidebar_label": "Nodes and Dapps"
       },
       "ownerNode": {
         "title": "Owner Node",
@@ -153,30 +118,22 @@
         "sidebar_label": "Q&A"
       },
       "Q&AForStorage": {
-        "title": "Q&A for Storage",
-        "sidebar_label": "Q&A for Storage"
+        "title": "Q&A",
+        "sidebar_label": "Q&A"
       },
       "setOnChainIdentity": {
         "title": "Set OnChain Identity",
         "sidebar_label": "Set OnChain Identity"
       },
-      "staking": {
-        "title": "Staking",
-        "sidebar_label": "Staking"
-      },
-      "storage": {
-        "title": "Storage",
-        "sidebar_label": "Storage"
-      },
-      "storageProve": {
-        "title": "Storage Prove",
-        "sidebar_label": "Storage Prove"
+      "storageMerchant": {
+        "title": "Storage Merchant",
+        "sidebar_label": "Storage Merchant"
       },
       "storageCollateral": {
         "title": "Storage Collateral",
         "sidebar_label": "Storage Collateral"
       },
-      "storeFilesInJS-APPS": {
+      "storeFilesInAPPS": {
         "title": "Store Files in JS-APPS",
         "sidebar_label": "Store Files in JS-APPS"
       },
@@ -188,10 +145,6 @@
         "title": "TEE Technology",
         "sidebar_label": "TEE Technology"
       },
-      "timeStone": {
-        "title": "Time Stone",
-        "sidebar_label": "Time Stone"
-      },
       "validatorGuides": {
         "title": "Validator Guides",
         "sidebar_label": "Validator Guides"
@@ -199,6 +152,10 @@
       "validator": {
         "title": "validator",
         "sidebar_label": "Validator"
+      },
+      "validatorGuidance": {
+        "title": "Validator Guidance",
+        "sidebar_label": "Validator Guidance"
       }
     },
     "links": {

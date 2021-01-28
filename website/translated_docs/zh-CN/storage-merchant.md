@@ -1,7 +1,7 @@
 ---
-id: storage
-title: Storage
-sidebar_label: Storage
+id: storageMerchant
+title: Storage Merchant
+sidebar_label: Storage Merchant
 ---
 
 ## 存储商户

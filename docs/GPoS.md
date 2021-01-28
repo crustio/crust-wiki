@@ -21,15 +21,10 @@ GPoS is based on Substrate framework, the block generation algorithm is [BABE/GR
 
 
 ## How to Join GPoS
-Users can join in as network nodes or as guarantors.
+Users can join in as validator or as guarantors.
 
-### Join as Network Node
-Crust provides a concept of 'group'. A storage node can join a group and contribute its' stake limit to this group, so that the group owner can have a larger stake limit to compete to become a validator.
-
-So that the nodes in Crust network have 3 different roles：
-* [Isolation Node](isolationNode.md)
-* [Group Owner](ownerNode.md)
-* [Group Member](memberNode.md)
+### Join GPoS as a validator
+To join Crust Network as a validator, You can check [validator guidance](validatorGuidance.md).
 
 ### Join GPoS as Guarantor
 

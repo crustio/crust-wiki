@@ -11,6 +11,7 @@
 
         ]
       },
+      "glossary",
       "community",
       "contributing"
     ],
@@ -20,7 +21,7 @@
       "sWorkerGuide",
       "guarantor",
       "validator",
-      "storage",
+      "storageMerchant",
       "GPoS",
       "DSM",
       "bitSwap"
@@ -31,6 +32,7 @@
     ],
     "Mining": [
       "parameters",
+      "validatorGuidance",
       "nodeHardwareSpec",
       {
         "type": "subcategory",
@@ -46,8 +48,7 @@
       "Q&AForMining"
     ],
     "Storage": [
-      "storeFilesInJS-APPS",
-      "manageFilesInJS-APPS",
+      "storeFilesInAPPS",
       "crustStorageExplorer",
       "storageCollateral",
       "Q&AForStorage"

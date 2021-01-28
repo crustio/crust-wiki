@@ -4,4 +4,4 @@ title: Glossary
 sidebar_label: Glossary
 ---
 
-glossary
+Coming soon

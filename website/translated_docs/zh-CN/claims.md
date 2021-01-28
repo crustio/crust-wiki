@@ -4,7 +4,7 @@ title: Crust Claims
 sidebar_label: Crust Claims
 ---
 
-如果您想将**ERC20的CRU映射到Maxwell预览网**，参与体验预览网的各个功能，您可以通过本教程一步一步学习到如何进行Maxwell CRU的认领。
+如果您想将**ERC20的CRU映射到 Crust 预览网 Maxwell**，参与体验预览网的各个功能，您可以通过本教程一步一步学习到如何进行Maxwell CRU的认领。
 
 ## 准备工作
 

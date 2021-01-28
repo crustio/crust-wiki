@@ -4,7 +4,7 @@ title: Crust Claims
 sidebar_label: Crust Claims
 ---
 
-If you want to **map ERC20 CRU to Maxwell Preview Network** and participate in the preview network, you follow this tutorial step by step to claim Maxwell CRU.
+If you want to **map ERC20 CRU to Crust Preview Network Maxwell** and participate in the preview network, you follow this tutorial step by step to claim Maxwell CRU.
 
 ## Preparation
 
