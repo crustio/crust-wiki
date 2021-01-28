@@ -4,4 +4,4 @@ title: Community
 sidebar_label: Community
 ---
 
-community
+即将开放
