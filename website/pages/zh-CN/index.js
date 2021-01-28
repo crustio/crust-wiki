@@ -29,7 +29,6 @@ class HomeNav extends React.Component {
                     href={props.href}
                     className="h-100 d-flex align-items-center"
                     data-aos="fade-up"
-                    data-aos-delay={props.aosDelay}
                 >
                     <div className="mx-auto">
                         <h2 className="display-4 mt-0 text-dark font-weight-bold text-center">{props.title}</h2>
