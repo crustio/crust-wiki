@@ -42,21 +42,21 @@ class HomeNav extends React.Component {
         return (
             <NavContainer>
                 <NavItem
-                    href={this.props.docUrl("crustBuilderGuide.html")}
-                    title="构建"
-                    content="Crust 生态中最新的开发者工具。"
+                    href={this.props.docUrl("gettingStarted.html")}
+                    title="概览"
+                    content="Crust 提供了Web3⽣态系统的去中⼼化存储⽹络"
                     aosDelay="0"
                 />
                 <NavItem
-                    href={this.props.docUrl("crustAccount.html")}
-                    content="Crust 提供了Web3⽣态系统的去中⼼化存储⽹络。"
-                    title="学习"
+                    href={this.props.docUrl("nodeOverview.html")}
+                    title="节点"
+                    content="参与并维护Crust网络"
                     aosDelay="300"
                 />
                 <NavItem
-                    href={this.props.docUrl("parameters.html")}
-                    title="节点"
-                    content="如何在Crust网络中部署节点。"
+                    href={this.props.docUrl("storeFilesInAPPS.html")}
+                    title="存储"
+                    content="使用Crust网络存储文件"
                     aosDelay="600"
                 />
             </NavContainer>

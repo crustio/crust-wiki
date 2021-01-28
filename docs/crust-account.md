@@ -1,7 +1,7 @@
 ---
 id: crustAccount
-title: Crust Account
-sidebar_label: Crust Account
+title: Account
+sidebar_label: Account
 ---
 
 As the center of all transactions, Crust account represents your on-chain identity. Additionally, a node needs a corresponding account, to which it bonds itself to obtain block rewards. Crust account, featuring a standard dual account (Controller/Stash) model, needs to go through a set of account bonding procedures. This section will illustrate how to create accounts and bond account relationships through actions in Crust APPs.
