@@ -11,7 +11,7 @@ sidebar_label: Parameters
 | :----------------------------------- | :----------------------------------------------------------- | :------------- | :----------- |
 | **AuthoringRewardsInEra**            | 初始出块奖励（cru/era）                                      | 150            |              |
 | **StakingRewardsInRra**              | 初始质押奖励（cru/era）                                      | 600            |              |
-| **HalvePeriod**                      | 奖励减半周期                                                 | 90             | 365.25       |
+| **DecreasePeriod**                      | 奖励衰减周期                                                 | 90             | 365.25       |
 | **SessiongDuration**                 | Session时长(min)                                             | 10             |              |
 | **SessionsPerEra**                   | 每个Era由多少个Session组成                                   | 36             | 36           |
 | **BondingDuration**                  | 资金解绑周期(era)                                            | 28             | 28           |
@@ -28,8 +28,8 @@ sidebar_label: Parameters
 | **变量名**          | **解释**                                 | **预览网参数** | **主网参数** |
 | :------------------ | :--------------------------------------- | :------------- | :----------- |
 | **REPORT_SLOT**     | Work report 上报周期（block）            | 300            | <br>         |
-| **PunishmentSlots** | Work report漏报的惩罚长度(REPORT_SLOT)   | 60             | <br>         |
-| **sWorkerReLoad**   | sWorker 重启的惩罚时间长度 (REPORT_SLOT) | 4              | <br>         |
+| **PunishmentSlots** | Work report漏报的惩罚长度(REPORT_SLOT)   | 24             | <br>         |
+| **sWorkerReLoad**   | sWorker 重启的惩罚时间长度 (REPORT_SLOT) | 1              | <br>         |
 
 ## Storage Market
 
@@ -37,8 +37,8 @@ sidebar_label: Parameters
 | :------------------------ | :------------------------------------------------------- | :------------- | :----------- |
 | **FileDuration**          | 文件有效期 (块)                                          | 216000         | <br>         |
 | **InitialReplica**        | 能直接获得文件存储奖励的副本节点数                       | 4              | <br>         |
-| **FileBaseFee**           | 15天存储的基础费 （cru）                                 | 0.0005         | <br>         |
-| **FileInitPrice**         | 初始每MB大小 （cru）                                     | 0.0001         | <br>         |
+| **FileBaseFee**           | 15天存储的基础费 （cru）                                 | 0.002         | <br>         |
+| **FileInitPrice**         | 初始每MB大小 （cru）                                     | 0.000001         | <br>         |
 | **StorageReferenceRatio** | 供需基准线：有效存储量超过这个值，价格会上升，反之会下降 | 25%            | <br>         |
 | **StorageIncreaseRatio**  | 存储价格上升速率（cru/order）                            | 0.00001        | <br>         |
 | **StorageDecreaseRatio**  | 存储价格下降速率(cru/order)                              | 0.00005        | <br>         |

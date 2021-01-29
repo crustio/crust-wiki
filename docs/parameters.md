@@ -10,7 +10,7 @@ sidebar_label: Parameters
 | :----------------------------------- | :----------------------------------------------------------- | :------------------ | :---------- |
 | **AuthoringRewardsInEra**            | Initial block reward(cru/era)                                | 150                 |             |
 | **StakingRewardsInRra**              | Initial staking reward(cru/era)                              | 600                 |             |
-| **HalvePeriod**                      | The period to halve reward                                   | 90                  | 365.25      |
+| **DecreasePeriod**                      | The period to decrease reward                                   | 90                  | 365.25      |
 | **SessionDuration**                  | Duration of one session (min)                                | 10                  |             |
 | **SessionsPerEra**                   | Sessions in one era                                          | 36                  | 36          |
 | **BondingDuration**                  | Unbonding duration (era)                                     | 28                  | 28          |
@@ -27,8 +27,8 @@ sidebar_label: Parameters
 | **Parameters**      | **Details**                                                  | **Preview Network** | **Mainnet** |
 | :------------------ | :----------------------------------------------------------- | :------------------ | :---------- |
 | **REPORT_SLOT**     | Work report cycle（block）                                   | 300                 | <br>        |
-| **PunishmentSlots** | Penalty for loss of stake limit caused by work report missing (REPORT_SLOT) | 60                  | <br>        |
-| **sWorkerReLoad**   | Penalty for loss of stake limit caused by reload sWorker (REPORT_SLOT) | 4                   | <br>        |
+| **PunishmentSlots** | Penalty for loss of stake limit caused by work report missing (REPORT_SLOT) | 24                  | <br>        |
+| **sWorkerReLoad**   | Penalty for loss of stake limit caused by reload sWorker (REPORT_SLOT) | 1                   | <br>        |
 
 ## Storage Market
 
@@ -36,8 +36,8 @@ sidebar_label: Parameters
 | :------------------------ | :----------------------------------------------------------- | :------------------ | :---------- |
 | **FileDuration**          | File validity period  (blocks)                               | 216000              | <br>        |
 | **InitialReplica**        | Replica nodes that can directly receive file storage rewards | 4                   | <br>        |
-| **FileBaseFee**           | Basic storage fee (cru)                                      | 0.0005              | <br>        |
-| **FileInitPrice**         | Initial cost per MB (cru)                                    | 0.0001              | <br>        |
+| **FileBaseFee**           | Basic storage fee (cru)                                      | 0.002              | <br>        |
+| **FileInitPrice**         | Initial cost per MB (cru)                                    | 0.000001              | <br>        |
 | **StorageReferenceRatio** | Storage supply and demand baseline: If the percentage of storage exceeds this value, the price will rise, otherwise it will fall | 25%                 | <br>        |
 | **StorageIncreaseRatio**  | Storage price rise speed (cru/order)                         | 0.00001             | <br>        |
 | **StorageDecreaseRatio**  | Storage price fall speed (cru/order)                         | 0.00005             | <br>        |
