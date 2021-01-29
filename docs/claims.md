@@ -44,8 +44,7 @@ Go to the Claims page of [Crust Apps](https://apps.crust.network/#/claims)
 
 1. Open [MyEtherWallet](https://www.myetherwallet.com/access-my-wallet):
     - Click 'MEW wallet'
-    - Click 'WalletCoAn
-    - A QR code will apear
+    - Connect the wallet which you **transfer ERC20 CRU**(The following process will use 'ImToken' as example)
 
 **⚠️ Pay Attention, please ensure that the connected wallet address is same as the address where the transaction was successfully sent in [step 1](#1-send-erc20-claim-transaction)**(We need to sign the message with the private key of this address)
 
@@ -55,7 +54,7 @@ Go to the Claims page of [Crust Apps](https://apps.crust.network/#/claims)
 
 ![Connect Wallet3](assets/claims/connect_wallet3.png)
 
-2. On the ImToken mobile client, click the *scan icon* in the upper right corner, scan the QR code displayed by MyEtherWallet and authorize
+1. On the ImToken mobile client, click the *scan icon* in the upper right corner, scan the QR code displayed by MyEtherWallet and authorize
 
 ![Connect Wallet4](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/main.jpeg)
 
@@ -106,8 +105,6 @@ Go back to **Crust Apps Claims** page, with the **Signed Message** copied in [st
 ![Claim Done3](assets/claims/claim_done3.jpg)
 
 ## References
-
-Crust Claims is a **centralized service, but all the codes and rules are open source and traceable**. Only the legal interpretation of centralized CRU claim address and the CRU claim transactions on Ethereum  belong to the Crust team.
 
 The code involved in claim process has been open source:
 

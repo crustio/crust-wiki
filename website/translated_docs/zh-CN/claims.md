@@ -44,8 +44,7 @@ sidebar_label: Crust Claims
 
 1. 打开[MyEtherWallet](https://www.myetherwallet.com/access-my-wallet):
     - 点击MEW wallet
-    - 在弹窗里点击WalletConnect
-    - 此时会出现一个二维码
+    - 连接你**发送交易的钱包**（下列流程以ImToken举例）
 
 **⚠️ 这一步必须特别注意，确保连接的钱包地址和[步骤一](#一-发送erc20认领交易)中成功发送交易的地址相同**（我们需要用这个地址的私钥进行消息签名）
 
@@ -55,7 +54,7 @@ sidebar_label: Crust Claims
 
 ![Connect Wallet3](assets/claims/connect_wallet3.png)
 
-2. 在ImToken的手机端，点击右上角扫码图标，扫描MyEtherWallet显示的二维码并授权MyEtherWallet
+1. 在ImToken的手机端，点击右上角扫码图标，扫描MyEtherWallet显示的二维码并授权MyEtherWallet
 
 ![Connect Wallet4](assets/claims/connect_wallet4.jpg)
 
@@ -108,9 +107,7 @@ sidebar_label: Crust Claims
 
 ## 参考
 
-Crust Claims是一个**中心化的服务，但所有代码和规则都是开源和可溯源的**，只有中心化的以太坊Claim地址和对以太坊Claim交易的合法性解释权归Crust团队所有。
-
-Claims涉及到的代码均已开源：
+Claims涉及到的代码均**已开源**：
 
 1. [Crust Bridge](https://github.com/decloudf/crust-bridge)
 2. [Crust Claims](https://github.com/crustio/crust/tree/master/cstrml/claims)
