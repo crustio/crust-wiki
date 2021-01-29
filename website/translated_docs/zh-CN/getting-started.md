@@ -29,12 +29,19 @@ Crust通过去中心化存储市场DSM调度Crust网络的存储资源，满足�
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/mpow.png)
 
 ### GPoS
-传统的PoS共识算法中，节点通过质押币来维护网络安全并出块。[Polkadot](https://wiki.polkadot.network/docs/en/getting-started)网络的[NPoS](https://wiki.polkadot.network/docs/en/learn-consensus)，则是在PoS的基础上，加入了提名人机制。验证人节点可以接受持币者的提名，从而获得更高的质押量。
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/gpos.png)
 
-Crust网络的GPoS共识，节点也需要质押通证。但与NPoS不同之处在于，Crust节点的存储工作量，将会在链上被换算成一个质押上限（Staking Limit）。节点的最终有效质押将不会大于自己的质押上限。
+Crust 网络中的区块链共识是 GPoS（Guaranteed Proof of Stake）共识，称为有担保的
+权益证明。GPoS 是一种混合了 PoW 的 PoS 共识，机制上结合了 PoW 的资源公平性和
+PoS 链的高性能。和现有的 PoS 项目类似，节点需要将 CRU 通证 Stake 来竞争生成区块的
+权利，不一样的是节点还需要有存储资源和工作量作为担保，在其担保额度内其 Stake 的
+CRU 通证才有效。在这个机制下需要有存储资源和 CRU 通证两类资产才可以成为节点，将
+资源型（如比特币）和通证型（如 Cosmos）共识机制的优点结合起来，更有效的保证网
+络安全性。
+[Polkadot](https://wiki.polkadot.network/docs/en/getting-started)网络的[NPoS](https://wiki.polkadot.network/docs/en/learn-consensus)，则是在PoS的基础上，加入了提名人机制。验证人节点可以接受持币者的提名，从而获得更高的质押量。
 
-在GPoS机制下，节点单独垄断任一种资源，比如垄断币或垄断存储算力将不会带来巨额收益，同时也不会影响网络安全。
+![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/gpos.png)
+
+
 
 ### DSM
 Crust的DSM（Decentralized Storage Market，存储市场）旨在为基于Crust网络的应用和平台提供优质的存储服务。其中，Crust的存储服务，主要包括基于IPFS网络的存储订单机制和检索机制。
