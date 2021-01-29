@@ -34,12 +34,19 @@ Based on the Trusted Execution Environment(TEE) technology, nodes in Crust netwo
 
 ### GPoS
 
-In the traditional PoS consensus algorithm, nodes maintain network security and generate blocks by staking coins. The NPoS of the Polkadot network is based on PoS and adds a nominator mechanism. The validator node can accept the nomination of the token holder, thereby obtaining a higher stake amount.
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/gpos.png)
 
-In the GPoS consensus of the Crust network, nodes also need to stake tokens. But the difference from NPoS is that the storage workload of the Crust node will be converted into an on-chain stake limit. The final effective staking of one node will not be greater than its own stake limit.
+The blockchain consensus in the Crust network is GPoS consensus, which is called
+Guaranteed Proof of Stake. GPoS is a kind of PoS consensus mixed with PoW. The
+mechanism combines PoW resource fairness and the high performance of the PoS chain.
+Similar to the existing PoS project, the node needs to use the CRU token for staking to
+compete for the right to generate blocks. The difference is that the node also needs to have storage resources or workload as a guarantee. Only with the guarantee amount can the
+corresponding number of CRUs be effectively staked. Under this mechanism, two types of
+assets, storage resources, and CRU tokens are required to become a node, combining the
+advantages of a resource-based (such as Bitcoin) and a token-based (such as Cosmos)
+consensus mechanism can more effectively ensure the security of the network. 
 
-Under the effect of GPoS mechanism, nodes monopolize any kind of resource, such as monopolizing a large number of tokens or monopolizing storage, will not bring additional benefits, nor will it cause network centralization problems.
+![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/gpos.png)
+
 
 ### DSM
 Crust's DSM (Decentralized Storage Market) aims to provide high-quality storage services for applications and platforms based on Crust network. Among them, Crust's storage services mainly include the storage service and retrieval service based on IPFS network.
