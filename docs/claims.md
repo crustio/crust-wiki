@@ -20,11 +20,11 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 
 ### 1. Send ERC20 Claim Transaction
 
-First of all, you need to transfer CRUs to *Crust Official Claim Account* on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
+First of all, you need to transfer CRUs to ***Crust Official Claim Account*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
 
 1. **⚠️ Make sure you have the authority to make signature with the private key of the account (all accounts created by exchanges are not applicable, please use the wallet with private key stored to perform following steps)**
 2. **The transfer contract address is: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)**
-3. **The destination address of contract transfer is: [0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A](https://etherscan.io/address/0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A)** (Case insensitive)
+3. ***Crust Official Claim Account***: [0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A](https://etherscan.io/address/0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A) (Case insensitive)
 
 Please confirm your transfering is successful and make sure it has **at least 6 confirmations**, **copy the hash value of this successful transaction** and do to the following steps.
 
