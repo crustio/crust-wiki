@@ -3,20 +3,20 @@ id: isolationNode
 title: Isolation Node
 sidebar_label: Isolation Node
 ---
-# 1. Overview
+## 1. Overview
 
 
-## 1.1 Node Responsibility
+### 1.1 Node Responsibility
 
 The Isolation node is a full-featured node of Crust Network, which undertakes core functions such as block generation, storage, and file transfer on a device. Therefore, support for SGX is necessary. The Isolation node account is connected to chain through the session key and the report of storage information works with configuring backup files. 
 
-## 1.2 Hardware Spec
+### 1.2 Hardware Spec
 
 For an isolation node, you need to run both chain module and storage module on your device, so your device needs to support SGX. Additionally, since the block generation process and the storage proving process both have high demands for network stability, similar to projects in Polkadot ecology, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to any unstable block generation. For detailed configuration requirements and recommendations, please refer to the official [hardware spec](node-Hard-wareSpec.md).
 
-# 2. Ready to Deploy
+## 2. Ready to Deploy
 
-## 2.1 Create your Accounts
+### 2.1 Create your Accounts
 
 Refer to [bond accounts](new-bond.md) to create your stash and controller accounts.
 
@@ -25,12 +25,12 @@ Notices:
 * Reserve 5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
 * Make sure that the account is unique, and that one machine corresponds only to one group of Controller&Stash accounts.
 
-## 2.2 Setup BIOS
+### 2.2 Setup BIOS
 
 The SGX (Software Guard Extensions) module of the machine is closed by default. In the BIOS settings of your machine, you can set SGX to 'enable' and turn off Secure Boot (some types of motherboard do not support this setting). If your SGX only supports software enabled, please refer to this link [https://github.com/intel/sgx-software-enable](https://github.com/intel/sgx-software-enable).
 
 
-## 2.3 Download Crust Node Package
+### 2.3 Download Crust Node Package
 
 a. Download
 
@@ -45,7 +45,7 @@ c. Go to package directory
 ```plain
 cd crust-node-0.8.0
 ```
-## 2.4 Install Crust Service
+### 2.4 Install Crust Service
 
 Notices:
 
@@ -59,36 +59,36 @@ Installation:
 ```plain
 sudo ./install.sh
 ```
-# 3. Node Configuration
+## 3. Node Configuration
 
-## 3.1 Edit Config File
+### 3.1 Edit Config File
 
 Execute the following command to edit the node configuration file:
 ```plain
 sudo crust config set
 ```
-## 3.2 Change Node Name
+### 3.2 Change Node Name
 
 Follow the prompts to enter the name of your node, and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/g5Ic9oTje9lN5hqp.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/isolation_name.png)
 
-## 3.3 Choose Mode
+### 3.3 Choose Mode
 
 Follow the prompts to enter a node mode, and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/8WPlNNZto5afJnLY.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/isolation_mode.png)
 
-## 3.4 Config Controller Account
+### 3.4 Config Controller Account
 
 Enter the backup of the controller account as prompted and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/vk81y6dqNiGMxBL8.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/backup_config.png)
 Enter the password for the controller backup file as prompted and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/qoqLKVrVYRKtPlTt.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/password_config.png)
 
-## 3.5 Config Hard Disks
+### 3.5 Config Hard Disks
 
 With Crust as a decentralized storage network, the configuration of your hard disks becomes quite important. The node storage capacity will be reported to the Crust Network as reserved space, and this will determine the stake limit of this node.
 
@@ -111,16 +111,16 @@ You can use the following command to view the file directory:
 ```plain
 sudo crust tools space-info
 ```
-## 3.6 Review the Configuration (Optional)
+### 3.6 Review the Configuration (Optional)
 
 Execute following command to view the configuration file:
 
 ```plain
 sudo crust config show
 ```
-# 4. Start Node
+## 4. Start Node
 
-## 4.1 Preparation
+### 4.1 Preparation
 
 To start with, you need to ensure that the following ports are not occupied: 30888 19944 19933 (occupied by crust chain), 56666 (occupied by crust API), 12222 (occupied by crust sWorker), and 5001 4001 37773 (occupied by IPFS)
 
@@ -130,13 +130,13 @@ Then open the P2P port:
 sudo ufw allow 30888
 ```
 
-## 4.2 Start
+### 4.2 Start
 
 
 ```plain
 sudo crust start
 ```
-## 4.3 Check Running Status
+### 4.3 Check Running Status
 
 ```plain
 sudo crust status
@@ -144,9 +144,9 @@ sudo crust status
 
 If the following five services are running, it means that Crust node started successfully.
 
-![pic](https://uploader.shimo.im/f/zUCNWXKbNndrnZgF.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/all_run.png)
 
-## 4.4 Set SRD ratio and node storage capacity
+### 4.4 Set SRD ratio and node storage capacity
 
 Please wait about 2 minutes and execute the following commands.
 
@@ -169,7 +169,7 @@ c. These commands may fail to execute. This is because sworker has not been full
 ```plain
 sudo crust logs sworker
 ```
-## 4.5 Monitor
+### 4.5 Monitor
 
 Run following command to monitor your node, and press 'ctrl-c' to stop monitoring：
 
@@ -184,14 +184,14 @@ The monitoring log is as follows:
 * (3) Storage capacity statistics calculation in progress, which takes place gradually;
 * (4) Indicating that the storage status has been reported successfully. The process takes a long time, about half an hour.
 
-![pic](https://uploader.shimo.im/f/SUj6me4n1jSgAWdc.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/sworker_log1.png)
 
-![pic](https://uploader.shimo.im/f/IAa8s5RGE3Gn7UOi.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/sworker_log2.png)
 
 
-# 5. Blockchain Validate
+## 5. Blockchain Validate
 
-## 5.1 Get session key
+### 5.1 Get session key
 
 Please wait for the chain to synchronize to the latest block height, and execute the following command:
 
@@ -200,33 +200,33 @@ sudo crust tools rotate-keys
 ```
 Copy the session key as shown below:
 
-![pic](https://uploader.shimo.im/f/b2B7qUfIZe1TyyB3.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/gen_sessionkey.png)
 
-## 5.2  Set session key
+### 5.2  Set session key
 
 Enter [CRUST APPs](https://apps.crust.network/), click on "Staking" button under "Network" in the navigation bar, and go to "Accounting action". Click on the setting button on the right of your stashes(a 3-dots button) and click on "Change session key".
 
-![pic](https://uploader.shimo.im/f/YJmVUUKpqAapjfR5.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/set_sessionkey1.png)
 
 Fill in the sessionkey you have copied, and click on “Set session key”.
 
-![pic](https://uploader.shimo.im/f/dyEV8chTTCF7OPcQ.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/set_sessionkey2.png)
 
 
-## 5.3 Be a Validator/Candidate
+### 5.3 Be a Validator/Candidate
 
 Follow the steps below:
 
-![pic](https://uploader.shimo.im/f/jrDMO8UFk8wyXJez.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/be_validator1.png)
 
 After one era, you can find your account listed in the "Staking" or "Waiting" list, which means you have completed all the steps.
 
-![pic](https://uploader.shimo.im/f/nOCHRov9lNTEdTzF.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+![pic](assets/mining/be_validator2.png)
 
 
-# 6. Restart and Uninstall
+## 6. Restart and Uninstall
 
-## 6.1 Restart
+### 6.1 Restart
 
 If the device or Crust node related programs need to be somehow restarted, please refer to the following steps. 
 
@@ -236,7 +236,7 @@ If the device or Crust node related programs need to be somehow restarted, pleas
 ```plain
 sudo crust reload
 ```
-## 6.2 Uninstall and Data Cleanup
+### 6.2 Uninstall and Data Cleanup
 
 
 If you have run a previous version of Crust test chain, or if you want to redeploy your current node, you need to clear data from three sources:

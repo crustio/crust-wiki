@@ -4,20 +4,20 @@ title: Member Node
 sidebar_label: Member Node
 ---
 
-# 1. Overview
+## 1. Overview
 
 
-## 1.1 Node Responsibility
+### 1.1 Node Responsibility
 
 The Member node acts as the storage provider in Group. There can be multiple Member nodes in a Group, and their effective storage can be clustered on Owner to participate in block generation competition. Since Member nodes store files and perform trusted quantification, support for SGX is necessary. The Member node is connected to its account through configuring backup files.
 
-## 1.2 Hardware Spec
+### 1.2 Hardware Spec
 
 The Member node runs chain modules (not participating in block generation), storage modules, IPFS, etc. It needs to be equipped with an SGX environment. Meantime, it stores user files, involving frequent network transmission, so the network bandwidth should also be in high standards. Refer to specific hardware recommendations here.
 
-# 2. Ready to Deploy
+## 2. Ready to Deploy
 
-## 2.1 Create your Accounts
+### 2.1 Create your Accounts
 
 Refer to this link to create a Member account (It can be a single account). The Member node account needs to meet the following three requirements:
 
@@ -25,12 +25,12 @@ Refer to this link to create a Member account (It can be a single account). The 
 * Cannot be the account of Owner;
 * The account should be unique, meaning that it cannot be those same as other Member accounts, that is, one chain account only for one machine.
 
-## 2.2 Setup BIOS
+### 2.2 Setup BIOS
 
 The SGX (Software Guard Extensions) module of the machine is closed by default. In the BIOS settings of your machine, you can set SGX to 'enable', and turn off Secure Boot (some types of motherboard do not support this setting). If your SGX only supports software enabled, please refer to this link [https://github.com/intel/sgx-software-enable](https://github.com/intel/sgx-software-enable)
 
 
-## 2.3 Download Crust Node Package
+### 2.3 Download Crust Node Package
 
 a. Download
 
@@ -45,7 +45,7 @@ c. Go to package directory
 ```plain
 cd crust-node-0.8.0
 ```
-## 2.4 Install Crust Service
+### 2.4 Install Crust Service
 
 Notices:
 
@@ -60,38 +60,38 @@ Installation:
 ```plain
 sudo ./install.sh
 ```
-# 3. Node Configuration
+## 3. Node Configuration
 
-## 3.1 Edit Config File
+### 3.1 Edit Config File
 
 Execute the following command to edit the node configuration file:
 
 ```plain
 sudo crust config set
 ```
-## 3.2 Change Node Name
+### 3.2 Change Node Name
 
 Follow the prompts to enter the name of your node, and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/K3OcLXZW4ibVU5zH.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](assets/mining/member_name.png)
 
-## 3.3 Choose Mode
+### 3.3 Choose Mode
 
 Follow the prompts to enter a node mode 'member', and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/C9H8LC9PkqlgwtEq.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](assets/mining/member_mode.png)
 
-## 3.4 Config Controller Account
+### 3.4 Config Controller Account
 
 Enter the backup (backed up when the account was created) of the controller account as prompted and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/vk81y6dqNiGMxBL8.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](assets/mining/backup_config.png)
 
 Enter the password for the controller backup file as prompted and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/qoqLKVrVYRKtPlTt.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](assets/mining/password_config.png)
 
-## 3.5 Config Hard Disks
+### 3.5 Config Hard Disks
 
 With Crust as a decentralized storage network, the configuration of your hard disks becomes quite important. The node storage capacity will be reported to the Crust Network as reserved space, and this will determine the stake limit of this node.
 
@@ -113,16 +113,16 @@ You can use following command to view the file directory:
 ```plain
 sudo crust tools space-info
 ```
-## 3.6 Review the Configuration (Optional)
+### 3.6 Review the Configuration (Optional)
 
 Execute following command to view the configuration file:
 
 ```plain
 sudo crust config show
 ```
-# 4. Start Node
+## 4. Start Node
 
-## 4.1 Preparation
+### 4.1 Preparation
 
 To start with, you need to ensure that the following ports are not occupied: 30888 19944 19933 (occupied by crust chain), 56666 (occupied by crust API), 12222 (occupied by crust sWorker), and 5001 4001 37773 (occupied by IPFS).
 
@@ -131,20 +131,20 @@ Then open the P2P port:
 ```plain
 sudo ufw allow 30888
 ```
-## 4.2 Start
+### 4.2 Start
 
 ```plain
 sudo crust start 
 ```
-## 4.3 Check Running Status
+### 4.3 Check Running Status
 
 ```plain
 sudo crust status
 ```
 If the following five services are running, it means that Crust node started successfully.
-![pic](https://uploader.shimo.im/f/zUCNWXKbNndrnZgF.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](assets/mining/all_run.png)
 
-## 4.4 Set Node Storage Capacity
+### 4.4 Set Node Storage Capacity
 Please wait about 2 minutes and execute the following commands.
 
 a. SRD ratio refers to the upper limit of the hard disk used by SRD files, the default is 70%, and its range is 0% ~ 95%. For example, suppose the hard disk capacity is 1000GB and the SRD ratio is 70%. At this time, sWorker will reserve 30% of the space without SRD, so the total amount of SRD you can set is 700G.
@@ -166,7 +166,7 @@ c. These commands may fail to execute. This is because sworker has not been full
 ```plain
 sudo crust logs sworker
 ```
-## 4.5 Monitor
+### 4.5 Monitor
 
 Run following command to monitor your node, and press 'ctrl-c' to stop monitoring：
 
@@ -180,19 +180,19 @@ The monitoring log is as follows:
 * (3) Storage capacity statistics calculation in progress, which takes place gradually;
 * (4) Indicating that the storage status has been reported successfully. The process takes a long time, about half an hour.
 
-![pic](https://uploader.shimo.im/f/SUj6me4n1jSgAWdc.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](assets/mining/sworker_log1.png)
 
-![pic](https://uploader.shimo.im/f/IAa8s5RGE3Gn7UOi.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](assets/mining/sworker_log2.png)
 
-# **5. Joining Group**
+## **5. Joining Group**
 
 After the first work report, enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Member account, select 'swork' in the submit group, select joinGroup(target),  select the Controller address of the Owner of the Group you want to join, and click on 'Submit Transaction' to send the transaction.
 
-![pic](https://uploader.shimo.im/f/m33sn2fMfIZ4OqKX.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](assets/mining/join_group.png)
 
-# 6. Restart and Uninstall
+## 6. Restart and Uninstall
 
-## 6.1 Restart
+### 6.1 Restart
 
 If the device or Crust node related programs need to be somehow restarted, please refer to the following steps. 
 
@@ -201,7 +201,7 @@ If the device or Crust node related programs need to be somehow restarted, pleas
 ```plain
 sudo crust reload
 ```
-## 6.2 Uninstall and Data Cleanup
+### 6.2 Uninstall and Data Cleanup
 
 
 If you have run a previous version of Crust test chain, or if you want to redeploy your current node, you need to clear data from three sources:

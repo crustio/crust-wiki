@@ -27,11 +27,11 @@ sidebar_label: Node Overview
 
 详细配置要求和推荐，请参考官方硬件spec
 
-### **1.4 构建Owner节点**
+### 1.4 构建Owner节点
 
 参考这个[链接](ownerNode.md)
 
-### **1.5 构建Member节点**
+### 1.5 构建Member节点
 
 参考这个[链接](memberNode.md)
 
