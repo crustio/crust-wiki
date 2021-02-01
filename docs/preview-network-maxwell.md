@@ -8,25 +8,32 @@ Maxwell, as the preview network of the Crust mainnet, implements all the core me
 
 ## How to Join Maxwell Preview Network
 
-You can join as a validator and provide storage services for mining, or participate in staking as token holders. For mining rules, please refer to the [GPoS](GPoS.md) consensus algorithm.
+There is 4 roles in Maxwell: **Validator and Guarantor, Storage User and Storage Merchant**
 
-You can also use Crust network as a storage user, the storage market is coming soon.
+### 1. Validators(Nodde)
 
-### Validators
+Validator is the maintainer of Crust Network, to be validator, you need:
 
-Validators need to setup nodes according to their roles. For more details, please refer to [validator guidance](validatorGuidance.md).
+1. Set up node, please refer [Node Overview](node-overview.md)
+2. Be Validator, please refer [Validator Guidance](validatorGuidance.md)
+3. Learn the reward and slash details, please refer [Validator](validator.md)
 
+### 2. Guarantor(Token Holder)
 
+Token holders can guarantee Validators(Node) to get reward, to be Guarantor, you need:
 
-### Token Holders
+1. Be Guarantor, please refer [Guarantor Guidance](guarantor-guidance.md)
+2. Learn the reward and slash details, please refer [Guarantor](guarantor.md)
 
-Token holders can obtain income by [guarantee](guarantor-guidance.md) the node.
+### Storage User
 
-### Storage Users
+Storage users store files through the standard IPFS protocol and place orders through the Crust storage market, letting Crust network save files for you.
+Currently on the preview network Maxwell, storage users are in the limited internal test phase. Please continue to pay attention to the official limited internal test notice on the storage market to apply.
 
-Opening soon.
+### Storage Merchant
 
+Waiting for DSM, comming soon
 
-### Developers
+## Developer
 
 The developer documentation will be available at the same time as the storage market.
