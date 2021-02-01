@@ -13,6 +13,9 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/copyaddr.png)
 
+> Notice: The guarantee fee means the proportion of node staking rewards distributed to guarantors
+
+![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
 
 ## Guarantee
 ### Step 1 go to guarantee page
