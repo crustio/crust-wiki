@@ -93,6 +93,8 @@ Enter the password for the controller backup file as prompted and press Enter to
 
 ### 3.5 Config Hard Disks
 
+> Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.
+
 With Crust as a decentralized storage network, the configuration of your hard disks becomes quite important. The node storage capacity will be reported to the Crust Network as reserved space, and this will determine the stake limit of this node.
 
 Hard disk mounting requirements:
@@ -103,7 +105,7 @@ Hard disk mounting requirements:
 
 Suggestions for mounting HDDs:
 
-* Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.
+* **Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.**
 * If you only have one HDD, mount it directly to /opt/crust/data/files;
 * For multiple HDDs, you can use LVM technology to organize these hard disks into a device and mount them to the /opt/crust/data/files directory. Please use LVM stripe to improve the storage performance;
 * For disks with low stability, it is recommended you make several RAID5/RAID10 groups first, each with no more than 6 hard disks, and then use LVM to combine each group;
@@ -149,7 +151,7 @@ Please wait about 2 minutes and execute the following commands.
 
 a. SRD ratio refers to the upper limit of the hard disk used by SRD files, the default is 70%, and its range is 0% ~ 95%. For example, suppose the hard disk capacity is 1000GB and the SRD ratio is 70%. At this time, sWorker will reserve 30% of the space without SRD, so the total amount of SRD you can set is 700G.
 
-This parameter is to ensure that the hard disk works in the optimal status, so that the machine can quickly accept and process meaningful file orders. After the opening of the storage market, the income of meaningful files of the same size is up to 5 times that of SRD. At the same time, the efficiency of some hard disks and hard disk organization methods will be very low when the hard disk is fully loaded, and even affect the reporting of work reports. This parameter is related to the performance of the hard disk, please decide by yourself, you can change it by calling the following interface, for example, set to 75%:
+This parameter is to ensure that the hard disk works in the optimal status, so that the machine can quickly accept and process meaningful file orders. After the opening of the storage market, the income of meaningful files of the same size is up to 5 times that of SRD. At the same time, the efficiency of some hard disks and hard disk organization methods will be very low when the hard disk is fully loaded, and even affect the reporting of work reports. **This parameter is related to the performance of the hard disk, please decide by yourself**, you can change it by calling the following interface, for example, set to 75%:
 
 ```plain
 sudo crust tools set-srd-ratio 75
