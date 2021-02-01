@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: ' Crust Wiki', // Title for your website.
-  tagline: 'wiki for crust network',
+  tagline: 'Wiki for Crust Network',
   url: 'https://wiki.crust.network', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -73,7 +73,6 @@ const siteConfig = {
     '/js/packaged/addressChanger.js',
     "/js/clipboard.min.js",
     "/js/copycode.js",
-
   ],
 
   stylesheets: [
@@ -104,19 +103,6 @@ const siteConfig = {
   scrollToTopOptions: {
     zIndex: 100,
   },
-
-  // Add custom scripts here that would be placed in <script> tags.
-  // Add custom scripts here that would be placed in <script> tags.
-  scripts: [
-    "https://buttons.github.io/buttons.js",
-    "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js",
-    "https://unpkg.com/aos@next/dist/aos.js",
-    "/js/custom.js",
-    '/js/packaged/addressChanger.js',
-    "/js/clipboard.min.js",
-    "/js/copycode.js",
-
-  ],
 
   markdownPlugins: [
     (md) => {

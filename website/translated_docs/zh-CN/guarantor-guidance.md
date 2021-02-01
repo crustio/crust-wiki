@@ -4,58 +4,51 @@ title: Guarantor Guidance
 sidebar_label: Guarantor Guidance
 ---
 
-### 配置绑定关系
-确保你已经完成了[账户配置](new-bond.md)，并且已经绑定了你的stash和controller账户。
+### 0. 配置绑定关系
 
-### 浏览可被担保的节点列表
+确保你已经完成了[账户配置（新增绑定）](new-bond.md)，并且已经绑定了你的stash和controller账户。
 
-* 点击上方“Staking”—— “Staking overview”
-* 选择你要担保的节点。单击节点的头像，即可复制节点地址 
+### 1. 浏览可被担保的节点列表
+
+在进行本步骤选择之前，请保证您已了解[担保人](guarantor.md)的概念，并已充分了解关于验证人（节点）的奖罚细则, 再开始以下操作：
+
+1. 进入[APPs](https://apps.crust.network), 点击上方“Staking”—— “Staking overview”/“Waiting”，这意味着您可以选择担保验证人（出块节点），或是候选人（候选节点），并从他们的Staking收益中获取奖励
+2. 选择你要担保的节点。单击节点的头像，即可复制节点地址
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/copyaddr.png)
 
-> 注意：节点设置的担保费是指，节点Staking收益中分给担保人的占比
+3. 理解担保费
+
+节点设置的担保费是指节点在**Staking收益中分给担保人的百分比**
+
+> 比如节点获取到1000 CRU的Staking收益，需要分给担保人100 CRU，担保费95%, 则最终担保人获取到95 CRU的收益，剩余5 CRU归节点所有。
+
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
 
-### 进行担保
-#### 找到担保页面
+### 2. 进行担保
 
-* 点击上方“Staking”—— “Account actions”
-* 确认你的stash以及controller账户，点击下图所示位置，单击“Guarantee”
+#### 2.1 进入担保页面
+
+1. 点击上方“Staking”—— “Account actions”
+2. 确认你的stash以及controller账户，点击下图所示位置，单击“Guarantee”
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/guarantee.png)
 
+#### 2.2 输入担保节点的地址及金额
 
-#### 输入担保节点的地址及金额
-
-* 在空白处粘贴在节点列表复制的地址
-* 单击candidate accounts中的节点名称
-* 输入你要担保的金额
-* 点击Guarantee
+1. 在空白处粘贴在节点列表复制的地址
+2. 单击candidate accounts中的节点名称
+3. 输入你要担保的金额
+4. 点击Guarantee
   
-
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/guarantee2.png)
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/amount.png)
 
+#### 2.3 确认担保生效
 
-#### 确认担保生效
-
-* 点击上方“Staking”—— “Account actions”
-* 找到“effective stake”，单击图中小箭头
-* Staking动作生效需要一个era的时间
+1. 点击上方“Staking”—— “Account actions”
+2. 找到“effective stake”，单击图中小箭头
+3. Staking动作生效需要一个era的时间
   
-
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/staked.png)
-
-#### 有效质押
-
-举个例子：
-
-有一个验证人，通过提供存储获得了100CRU的Stake Limit。而这个Validator账号自身绑定了100CRU，则这100CRU将会全部质押给本节点。
-
-这时，如果有一个Guarantor对这个Validator进行了担保，担保金额为400CRU。等待1个ERA后，这个Guarantor和Validator的有效担保量分别为80和20CRU。即，各方按担保的CRU的比例计算各自贡献的有效质押。
-
-
-
-
