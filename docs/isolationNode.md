@@ -101,10 +101,10 @@ Hard disk mounting requirements:
 
 Suggestions for mounting HDDs:
 
+* Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.
 * If you only have one HDD, mount it directly to /opt/crust/data/files;
 * For multiple HDDs, you can use LVM technology to organize these hard disks into a device and mount them to the /opt/crust/data/files directory. Please use LVM stripe to improve the storage performance;
 * For disks with low stability, it is recommended you make several RAID5/RAID10 groups first, each with no more than 6 hard disks, and then use LVM to combine each group;
-* Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.
 
 You can use the following command to view the file directory:
 
@@ -121,7 +121,6 @@ sudo crust config show
 # 4. Start Node
 
 ## 4.1 Preparation
-
 
 To start with, you need to ensure that the following ports are not occupied: 30888 19944 19933 (occupied by crust chain), 56666 (occupied by crust API), 12222 (occupied by crust sWorker), and 5001 4001 37773 (occupied by IPFS)
 
