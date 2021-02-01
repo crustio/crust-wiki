@@ -25,3 +25,8 @@ Token holders can obtain income by [guarantee](guarantor-guidance.md) the node.
 ### Storage Users
 
 Opening soon.
+
+
+### Developers
+
+The developer documentation will be available at the same time as the storage market.
