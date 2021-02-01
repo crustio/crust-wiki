@@ -12,7 +12,7 @@ Isolation节点是Crust的全功能节点，其承担了出块，存储，文件
 
 ## 1.2 硬件环境
 
-Isolation节点形态下，你唯一的节点上需要运行链模块以及存储量模块,所以对SGX的支持是必不可少的。同时，由于出块进程以及存储工作量上报进程对网络稳定性要求比较高，类似波卡生态的 Kusama 网络或者其他项目，我们强烈推荐出块节点使用固定的公网 IP，否则会因为出块不稳定等情况带来损失。详细配置要求和推荐，请参考官方[硬件spec](https://github.com/crustio/crust/wiki/Crust%E8%8A%82%E7%82%B9%E7%A1%AC%E4%BB%B6Spec)。
+Isolation节点形态下，你唯一的节点上需要运行链模块以及存储量模块,所以对SGX的支持是必不可少的。同时，由于出块进程以及存储工作量上报进程对网络稳定性要求比较高，类似波卡生态的 Kusama 网络或者其他项目，我们强烈推荐出块节点使用固定的公网 IP，否则会因为出块不稳定等情况带来损失。详细配置要求和推荐，请参考官方[硬件spec](node-Hard-wareSpec.md)。
 
 # 2 基础工作
 
@@ -23,7 +23,6 @@ Isolation节点形态下，你唯一的节点上需要运行链模块以及存�
 * Controller账户保留5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
 * 保证账户的唯一性，及每台机器一组Controller&Stash账户
 ## 2.2 BIOS 设置
-
 
 
 一般来说，机器的 SGX（Software Guard Extensions） 模块是默认关闭的，需要在机器的 BIOS 设置，首先将SGX 开关设置为 enable，同时把Secure Boot 关闭（部分主板没有）。如果 SGX 只支持 software enabled 方式，参考这个链接[https://github.com/intel/sgx-software-enable](https://github.com/intel/sgx-software-enable)
@@ -96,10 +95,10 @@ Crust作为去中心话存储网络，硬盘的配置尤为重要。节点存储
 
 机械硬盘挂载建议：
 
-* 如果你只有一块硬盘直接挂载到/opt/crust/data/files即可
-* 对于多个机械硬盘，建议利用LVM技术将这些硬盘组织成一个设备并挂载到/opt/crust/data/files目录，注意请使用条带化（stripe）配置以加快存储的速度。
-* 对于稳定性不佳的硬盘，建议先组数个RAID5/RAID10的组，每个组不超6块盘，再用LVM进行合并
 * 硬盘组织方式不唯一，如果有更好的方案可以自行优化
+* 如果你只有一块硬盘直接挂载到/opt/crust/data/files即可
+* 对于多个机械硬盘，可以利用LVM技术将这些硬盘组织成一个设备并挂载到/opt/crust/data/files目录，注意请使用条带化（stripe）配置以加快存储的速度。
+* 对于稳定性不佳的硬盘，建议先组数个RAID5/RAID10的组，每个组不超6块盘，再用LVM进行合并
 
 可以使用如下命令查看文件目录的具体情况：
 
@@ -139,16 +138,28 @@ sudo crust start
 sudo crust status
 ```
 如下上面五个服务运行表示启动成功：
+
 ![图片](https://uploader.shimo.im/f/zUCNWXKbNndrnZgF.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
 
-## 4.4 设置节点存储容量
+## 4.4 设置SRD占用率和节点存储容量
+请等待2分钟后执行.
 
-请等待1分钟之后执行以下命令设置节点容量，假设你/opt/crust/data/files下面有剩余空间1000G，再给予%5的预留空间，那就设置950G：
+a. SRD占用率是指SRD文件使用硬盘的上限，默认是70%, 它的范围是0% ~ 95%。举个例子，假设硬盘容量为1000GB，SRD占用率为70%，这时sWorker会预留30%的空间不进行SRD，所以你可设置的SRD总量为700G。
 
+这个参数是为了保证硬盘工作在最优区间，让机器可以快速接受处理有意义订单。存储市场开放后同样大小有意义文件的收益最高是SRD的5倍。同时，部分硬盘与硬盘组织方式在硬盘满载的情况下效率会很低，甚至会影响work report的上报。该参数与硬盘的性能有关，请自行决定，可以通过调用以下接口更改，比如设置为75%：
+
+```plain
+sudo crust tools set-srd-ratio 75
 ```
-sudo crust tools change-srd 950
+
+b. 假设你/opt/crust/data/files下面有空间500G，SRD占用率是80%, sWorker会保持硬盘有20%的空余空间, 那就设置400G, 如下：
+
+```plain
+sudo crust tools change-srd 400
 ```
-这条命令有可能会执行失败，这是由于sworker还没有完全启动，请等待几分钟之后再尝试，如果依旧不行，请执行下属监控命令排查错误情况：
+
+c. 这些命令有可能会执行失败，这是由于sworker还没有完全启动，请等待几分钟之后再尝试，如果依旧不行，请执行下属监控命令排查错误情况：
+
 ```plain
 sudo crust logs sworker
 ```
@@ -164,7 +175,8 @@ sudo crust logs sworker
 * 成功在链上注册身份（2）
 * 正在进行存储余量统计操作，该过程会逐步进行（3）
 * 表示工作量上报成功， 该过程耗时较长，大约半小时左右（4）
-# ![图片](https://uploader.shimo.im/f/SUj6me4n1jSgAWdc.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
+
+![图片](https://uploader.shimo.im/f/SUj6me4n1jSgAWdc.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
 
 ![图片](https://uploader.shimo.im/f/IAa8s5RGE3Gn7UOi.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
 
