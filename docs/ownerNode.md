@@ -12,7 +12,7 @@ The Owner node is the initiator of and in charge of the Group, participating in 
 
 ## 1.2 Hardware Spec
 
-On Owner nodes run chain modules used for generating blocks, which is  similar to projects in Polkadot ecology, therefore, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to unstable block generation. If necessary, such node can also be configured in a cloud computer.  For detailed configuration requirements and recommendations, please refer to this.
+On Owner nodes run chain modules used for generating blocks, which is  similar to projects in Polkadot ecology, therefore, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to unstable block generation. If necessary, such node can also be configured in a cloud computer.  For detailed configuration requirements and recommendations, please refer to [this](node-Hard-wareSpec.md).
 
 # 2. Ready to Deploy
 
@@ -59,7 +59,7 @@ Notice:
 Installation:
 
 ```plain
-sudo ./install.sh --registry cn
+sudo ./install.sh
 ```
 # 3. Node Configuration
 

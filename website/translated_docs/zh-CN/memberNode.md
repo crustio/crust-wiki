@@ -25,8 +25,6 @@ Member节点，负责运行链模块（不参与出块）,存储模块, IPFS等,
 * 保证账户的唯一性，不能和其他Member账户相同， 即每台机器一个链账户
 ## 2.2 BIOS 设置
 
-
-
 机器的 SGX（Software Guard Extensions）  模块的默认关闭的，需要在机器的 BIOS 设置。首先将SGX 开关设置为 enable，同时把Secure Boot 关闭（部分主板没有）。如果 SGX 只支持 software enabled 方式，参考这个链接[https://github.com/intel/sgx-software-enable](https://github.com/intel/sgx-software-enable)
 
 ## 2.3 下载Crust node安装包
@@ -100,7 +98,9 @@ Crust作为去中心话存储网络，硬盘的配置尤为重要。节点存储
 机械硬盘挂载建议：
 
 * 如果你只有一块硬盘直接挂载到/opt/crust/data/files即可
-* 对于多个机械硬盘，建议将硬盘先分组组织成RAID0，每个RAID组的硬盘数不超过6块，然后利用LVM技术将这些RAID组组织成一个设备并挂载到/opt/crust/data/files目录。举个例子, 假设你有24块硬盘，请将每6块硬盘其组织成4个RAID组，然后利用LVM将其整合成一个设备，并挂载。
+* 对于多个机械硬盘，可以利用LVM技术将这些硬盘组织成一个设备并挂载到/opt/crust/data/files目录，注意请使用条带化（stripe）配置以加快存储的速度。
+* 对于稳定性不佳的硬盘，建议先组数个RAID5/RAID10的组，每个组不超6块盘，再用LVM进行合并
+* 硬盘组织方式不唯一，如果有更好的方案可以自行优化
 
 可以使用如下命令查看文件目录的具体情况：
 
@@ -140,14 +140,25 @@ sudo crust status
 如下上面五个服务运行表示启动成功：
 ![图片](https://uploader.shimo.im/f/zUCNWXKbNndrnZgF.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
-## 4.4 设置节点存储容量
+## 4.4 设置SRD占用率和节点存储容量
+请等待2分钟后执行.
 
-请等待1分钟之后执行以下命令设置节点容量，假设你/opt/crust/data/files下面有剩余空间800G，再给予50G的预留空间，那就设置750G：
+a. SRD占用率是指SRD文件使用硬盘的上限，默认是70%, 它的范围是0% ~ 95%。举个例子，假设硬盘容量为1000GB，SRD占用率为70%，这时sWorker会预留30%的空间不进行SRD，所以你可设置的SRD总量为700G。
 
+这个参数是为了保证硬盘工作在最优区间，让机器可以快速接受处理有意义订单。存储市场开放后同样大小有意义文件的收益最高是SRD的5倍。同时，部分硬盘与硬盘组织方式在硬盘满载的情况下效率会很低，甚至会影响work report的上报。该参数与硬盘的性能有关，请自行决定，可以通过调用以下接口更改，比如设置为75%：
+
+```plain
+sudo crust tools set-srd-ratio 75
 ```
-sudo crust tools change-srd 750
+
+b. 假设你/opt/crust/data/files下面有空间500G，SRD占用率是80%, sWorker会保持硬盘有20%的空余空间, 那就设置400G, 如下：
+
+```plain
+sudo crust tools change-srd 400
 ```
-这条命令有可能会执行失败，这是由于sworker还没有完全启动，请等待几分钟之后再尝试，如果依旧不行，请执行下属监控命令排查错误情况：
+
+c. 这些命令有可能会执行失败，这是由于sworker还没有完全启动，请等待几分钟之后再尝试，如果依旧不行，请执行下属监控命令排查错误情况：
+
 ```plain
 sudo crust logs sworker
 ```
@@ -163,9 +174,10 @@ sudo crust logs sworker
 * 成功在链上注册身份（2）
 * 正在进行存储余量统计操作，该过程会逐步进行（3）
 * 表示工作量上报成功， 该过程耗时较长，大约半小时左右（4）
-# ![图片](https://uploader.shimo.im/f/SUj6me4n1jSgAWdc.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
-## ![图片](https://uploader.shimo.im/f/IAa8s5RGE3Gn7UOi.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![图片](https://uploader.shimo.im/f/SUj6me4n1jSgAWdc.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+
+![图片](https://uploader.shimo.im/f/IAa8s5RGE3Gn7UOi.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
 # 5. 加入Group
 

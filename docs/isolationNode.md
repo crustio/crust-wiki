@@ -10,13 +10,9 @@ sidebar_label: Isolation Node
 
 The Isolation node is a full-featured node of Crust Network, which undertakes core functions such as block generation, storage, and file transfer on a device. Therefore, support for SGX is necessary. The Isolation node account is connected to chain through the session key and the report of storage information works with configuring backup files. 
 
-
-
 ## 1.2 Hardware Spec
 
-For an isolation node, you need to run both chain module and storage module on your device, so your device needs to support SGX. Additionally, since the block generation process and the storage proving process both have high demands for network stability, similar to projects in Polkadot ecology, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to any unstable block generation. For detailed configuration requirements and recommendations, please refer to the official [hardware spec](https://github.com/crustio/crust/wiki/Crust%E8%8A%82%E7%82%B9%E7%A1%AC%E4%BB%B6Spec).
-
-
+For an isolation node, you need to run both chain module and storage module on your device, so your device needs to support SGX. Additionally, since the block generation process and the storage proving process both have high demands for network stability, similar to projects in Polkadot ecology, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to any unstable block generation. For detailed configuration requirements and recommendations, please refer to the official [hardware spec](node-Hard-wareSpec.md).
 
 # 2. Ready to Deploy
 
@@ -32,7 +28,6 @@ Notices:
 ## 2.2 Setup BIOS
 
 The SGX (Software Guard Extensions) module of the machine is closed by default. In the BIOS settings of your machine, you can set SGX to 'enable' and turn off Secure Boot (some types of motherboard do not support this setting). If your SGX only supports software enabled, please refer to this link [https://github.com/intel/sgx-software-enable](https://github.com/intel/sgx-software-enable).
-
 
 
 ## 2.3 Download Crust Node Package
@@ -62,7 +57,7 @@ Notices:
 Installation:
 
 ```plain
-sudo ./install.sh --registry cn
+sudo ./install.sh
 ```
 # 3. Node Configuration
 
@@ -107,7 +102,7 @@ Hard disk mounting requirements:
 Suggestions for mounting HDDs:
 
 * If you only have one HDD, mount it directly to /opt/crust/data/files;
-* For multiple HDDs, it is recommended you use LVM technology to organize these hard disks into a device and mount them to the /opt/crust/data/files directory. Please use LVM stripe to improve the storage performance;
+* For multiple HDDs, you can use LVM technology to organize these hard disks into a device and mount them to the /opt/crust/data/files directory. Please use LVM stripe to improve the storage performance;
 * For disks with low stability, it is recommended you make several RAID5/RAID10 groups first, each with no more than 6 hard disks, and then use LVM to combine each group;
 * Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.
 
@@ -152,15 +147,25 @@ If the following five services are running, it means that Crust node started suc
 
 ![pic](https://uploader.shimo.im/f/zUCNWXKbNndrnZgF.png!thumbnail?fileGuid=jTgvQQXKKcrq9hjG)
 
-## 4.4 Set Node Storage Capacity
+## 4.4 Set SRD ratio and node storage capacity
 
+Please wait about 2 minutes and execute the following commands.
 
-Please wait about 1 minute and execute the following command to set the node capacity. Assuming that you have 800G of free space under /opt/crust/data/files, with 50G reserved for data swap, you should set 750G for Crust storage service:
+a. SRD ratio refers to the upper limit of the hard disk used by SRD files, the default is 70%, and its range is 0% ~ 95%. For example, suppose the hard disk capacity is 1000GB and the SRD ratio is 70%. At this time, sWorker will reserve 30% of the space without SRD, so the total amount of SRD you can set is 700G.
 
+This parameter is to ensure that the hard disk works in the optimal status, so that the machine can quickly accept and process meaningful file orders. After the opening of the storage market, the income of meaningful files of the same size is up to 5 times that of SRD. At the same time, the efficiency of some hard disks and hard disk organization methods will be very low when the hard disk is fully loaded, and even affect the reporting of work reports. This parameter is related to the performance of the hard disk, please decide by yourself, you can change it by calling the following interface, for example, set to 75%:
+
+```plain
+sudo crust tools set-srd-ratio 75
 ```
-sudo crust tools change-srd 750
+
+b. Assuming you have 500G of space under /opt/crust/data/files, and the SRD ratio is 80%, sWorker will keep the hard disk with 20% free space, then set 400G, as follows:
+
+```plain
+sudo crust tools change-srd 400
 ```
-This command may fail to execute. This is because sWorker is not yet been started. Please wait a few minutes and try it again. If it still does not work, please execute following command to troubleshoot:
+
+c. These commands may fail to execute. This is because sworker has not been fully started. Please wait a few minutes and try again. If it still does not work, please execute the subordinate monitoring commands to troubleshoot the error:
 
 ```plain
 sudo crust logs sworker

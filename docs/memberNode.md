@@ -30,7 +30,6 @@ Refer to this link to create a Member account (It can be a single account). The 
 The SGX (Software Guard Extensions) module of the machine is closed by default. In the BIOS settings of your machine, you can set SGX to 'enable', and turn off Secure Boot (some types of motherboard do not support this setting). If your SGX only supports software enabled, please refer to this link [https://github.com/intel/sgx-software-enable](https://github.com/intel/sgx-software-enable)
 
 
-
 ## 2.3 Download Crust Node Package
 
 a. Download
@@ -59,7 +58,7 @@ Notices:
 Installation:
 
 ```plain
-sudo ./install.sh --registry cn
+sudo ./install.sh
 ```
 # 3. Node Configuration
 
@@ -74,38 +73,41 @@ sudo crust config set
 
 Follow the prompts to enter the name of your node, and press Enter to end:
 
-![图片](https://uploader.shimo.im/f/K3OcLXZW4ibVU5zH.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](https://uploader.shimo.im/f/K3OcLXZW4ibVU5zH.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
 ## 3.3 Choose Mode
 
 Follow the prompts to enter a node mode 'member', and press Enter to end:
 
-![图片](https://uploader.shimo.im/f/C9H8LC9PkqlgwtEq.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](https://uploader.shimo.im/f/C9H8LC9PkqlgwtEq.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
 ## 3.4 Config Controller Account
 
 Enter the backup (backed up when the account was created) of the controller account as prompted and press Enter to end:
 
-![图片](https://uploader.shimo.im/f/vk81y6dqNiGMxBL8.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](https://uploader.shimo.im/f/vk81y6dqNiGMxBL8.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
 Enter the password for the controller backup file as prompted and press Enter to end:
 
-## ![图片](https://uploader.shimo.im/f/qoqLKVrVYRKtPlTt.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](https://uploader.shimo.im/f/qoqLKVrVYRKtPlTt.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
 ## 3.5 Config Hard Disks
 
-With Crust as a decentralized storage network, the configuration of your hard disks becomes also important. The node storage capacity will be reported to the Crust Network as reserved space, and this will determine the stake limit of this node.
+With Crust as a decentralized storage network, the configuration of your hard disks becomes quite important. The node storage capacity will be reported to the Crust Network as reserved space, and this will determine the stake limit of this node.
 
 Hard disk mounting requirements:
 
-* Chain data and related DB data will be stored in /opt/crust/data directory. It is recommended you mount your SSD to this directory;
+* Chain data and related DB data will be stored in /opt/crust/data directory. It is recommend you mount your SSD to this directory;
 
 * The storage order file and SRD (Sealed Random Data, the placeholder files) will be written into the /opt/crust/data/files directory, it is recommended you mount the HDD to this directory. Initially, each device can be configured with up to 200TB of reserved space.
+
 
 Suggestions for mounting HDDs:
 
 * If you only have one HDD, mount it directly to /opt/crust/data/files;
-* For multiple HDDs, it is recommended you first put disks into groups of RAID0, each group with no more than 6 hard disks, and then use LVM technology to organize these RAID groups into a device and mount them to the /opt/crust/data/files directory. For example, assuming you have 24 hard disks, you are suggested to put each 6 hard disks into 4 RAID groups, and then use LVM to organize them into one device and mount it.
+* For multiple HDDs, you can use LVM technology to organize these hard disks into a device and mount them to the /opt/crust/data/files directory. Please use LVM stripe to improve the storage performance;
+* For disks with low stability, it is recommended you make several RAID5/RAID10 groups first, each with no more than 6 hard disks, and then use LVM to combine each group;
+* Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.
 
 You can use following command to view the file directory:
 
@@ -142,17 +144,27 @@ sudo crust start
 sudo crust status
 ```
 If the following five services are running, it means that Crust node started successfully.
-![图片](https://uploader.shimo.im/f/zUCNWXKbNndrnZgF.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](https://uploader.shimo.im/f/zUCNWXKbNndrnZgF.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
 ## 4.4 Set Node Storage Capacity
+Please wait about 2 minutes and execute the following commands.
 
+a. SRD ratio refers to the upper limit of the hard disk used by SRD files, the default is 70%, and its range is 0% ~ 95%. For example, suppose the hard disk capacity is 1000GB and the SRD ratio is 70%. At this time, sWorker will reserve 30% of the space without SRD, so the total amount of SRD you can set is 700G.
 
-Please wait about 1 minute and execute the following command to set the node capacity. Assuming that you have 800G of free space under /opt/crust/data/files, with 50G reserved for data swap, you should set 750G for Crust storage service:
+This parameter is to ensure that the hard disk works in the optimal status, so that the machine can quickly accept and process meaningful file orders. After the opening of the storage market, the income of meaningful files of the same size is up to 5 times that of SRD. At the same time, the efficiency of some hard disks and hard disk organization methods will be very low when the hard disk is fully loaded, and even affect the reporting of work reports. This parameter is related to the performance of the hard disk, please decide by yourself, you can change it by calling the following interface, for example, set to 75%:
 
+```plain
+sudo crust tools set-srd-ratio 75
 ```
-sudo crust tools change-srd 750
+
+b. Assuming you have 500G of space under /opt/crust/data/files, and the SRD ratio is 80%, sWorker will keep the hard disk with 20% free space, then set 400G, as follows:
+
+```plain
+sudo crust tools change-srd 400
 ```
-This command may fail to execute. This is because sWorker is not yet been started. Please wait a few minutes and try it again. If it still does not work, please execute following command to troubleshoot:
+
+c. These commands may fail to execute. This is because sworker has not been fully started. Please wait a few minutes and try again. If it still does not work, please execute the subordinate monitoring commands to troubleshoot the error:
+
 ```plain
 sudo crust logs sworker
 ```
@@ -170,15 +182,15 @@ The monitoring log is as follows:
 * (3) Storage capacity statistics calculation in progress, which takes place gradually;
 * (4) Indicating that the storage status has been reported successfully. The process takes a long time, about half an hour.
 
-![图片](https://uploader.shimo.im/f/SUj6me4n1jSgAWdc.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](https://uploader.shimo.im/f/SUj6me4n1jSgAWdc.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
-## ![图片](https://uploader.shimo.im/f/IAa8s5RGE3Gn7UOi.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](https://uploader.shimo.im/f/IAa8s5RGE3Gn7UOi.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
 # **5. Joining Group**
 
 After the first work report, enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Member account, select 'swork' in the submit group, select joinGroup(target),  select the Controller address of the Owner of the Group you want to join, and click on 'Submit Transaction' to send the transaction.
 
-![图片](https://uploader.shimo.im/f/m33sn2fMfIZ4OqKX.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
+![pic](https://uploader.shimo.im/f/m33sn2fMfIZ4OqKX.png!thumbnail?fileGuid=twYQrXRXdPKjcQPq)
 
 # 6. Restart and Uninstall
 
