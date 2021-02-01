@@ -11,10 +11,11 @@ sidebar_label: Guarantor Guidance
 
 * 点击上方“Staking”—— “Staking overview”
 * 选择你要担保的节点。单击节点的头像，即可复制节点地址 
-  
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/copyaddr.png)
 
+> 注意：节点设置的担保费是指，节点Staking收益中分给担保人的占比
+![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
 
 ### 进行担保
 #### 找到担保页面
