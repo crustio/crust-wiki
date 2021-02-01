@@ -4,19 +4,19 @@ title: Owner Node
 sidebar_label: Owner Node
 ---
 
-# 1. Overview
+## 1. Overview
 
-## 1.1 Node Responsibility
+### 1.1 Node Responsibility
 
 The Owner node is the initiator of and in charge of the Group, participating in block generation. Effective storage of the Member can be clustered on the Owner to participate in the block generation competition. Meantime, the organizers of the Owner node are accountable for the Group's strategy of receiving meaningful files to improve the Group's overall competitiveness. Since the Owner node itself does not store files, support for SGX is not necessary. The Owner node account is connected to block node through the session key. 
 
-## 1.2 Hardware Spec
+### 1.2 Hardware Spec
 
 On Owner nodes run chain modules used for generating blocks, which is  similar to projects in Polkadot ecology, therefore, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to unstable block generation. If necessary, such node can also be configured in a cloud computer.  For detailed configuration requirements and recommendations, please refer to [this](node-Hard-wareSpec.md).
 
-# 2. Ready to Deploy
+## 2. Ready to Deploy
 
-## 2.1 Create your Accounts
+### 2.1 Create your Accounts
 
 The Owner node participates in the block generation competition. It needs to create accounts and be bonded to the Controller&Stash account group. For details, please refer to [this page](new-bond.md). 
 
@@ -25,13 +25,13 @@ Notices:
 * The account should be unique and cannot be any other account for Owner, Member or Isolation;
 * Be sure to reserve a small number of CRUs not locked in the Controller&Stash for sending transactions (about 1 CRU).
 
-## 2.2 Create Group
+### 2.2 Create Group
 
 Enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Owner Controller account, select 'swork' in the submit group, select joinGroup( ), and click on 'Submit Transaction' to send the transaction and create Group.
 
-![pic](https://uploader.shimo.im/f/1ntJsdEeLoiH0I38.png!thumbnail?fileGuid=WgGQvHgjg6cxqwXk)
+![pic](assets/mining/create_group.png)
 
-## 2.2 Download Crust Node Package
+### 2.2 Download Crust Node Package
 
 a. Download
 
@@ -46,7 +46,7 @@ c. Go to package directory
 ```plain
 cd crust-node-0.8.0
 ```
-## 2.3 Install Crust Service
+### 2.3 Install Crust Service
 
 Notice:
 
@@ -61,37 +61,37 @@ Installation:
 ```plain
 sudo ./install.sh
 ```
-# 3. Node Configuration
+## 3. Node Configuration
 
-## 3.1 Edit Config File
+### 3.1 Edit Config File
 
 Execute the following command to edit the node configuration file:
 
 ```plain
 sudo crust config set
 ```
-## 3.2 Change Node Name
+### 3.2 Change Node Name
 
 Follow the prompts to enter the name of your node, and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/h0HOI0sAFZOrqbAm.png!thumbnail?fileGuid=WgGQvHgjg6cxqwXk)
+![pic](assets/mining/owner_name.png)
 
-## 3.3 Choose Mode
+### 3.3 Choose Mode
 
 Follow the prompts to enter a node mode 'owner', and press Enter to end:
 
-![pic](https://uploader.shimo.im/f/WWhaAgwHJ1BGOt5I.png!thumbnail?fileGuid=WgGQvHgjg6cxqwXk)
+![pic](assets/mining/owner_mode.png)
 
-## 3.4 Review the Configuration (Optional)
+### 3.4 Review the Configuration (Optional)
 
 Execute following command to view the configuration file:
 
 ```plain
 sudo crust config show
 ```
-# 4. Start Node
+## 4. Start Node
 
-## 4.1 Preparation
+### 4.1 Preparation
 
 To start with, you need to ensure that the following ports are not occupied: 30888, 19944, and 19933.
 
@@ -100,22 +100,22 @@ Then open the P2P port:
 ```plain
 sudo ufw allow 30888
 ```
-## 4.2 Start
+### 4.2 Start
 
 ```plain
 sudo crust start 
 ```
-## 4.3 Check Running Status
+### 4.3 Check Running Status
 
 ```plain
 sudo crust logs chain
 ```
 As detailed below, all is ready for synchronizing blocks. 
-![pic](https://uploader.shimo.im/f/mrsc0Zo6V4y4fiBB.png!thumbnail?fileGuid=WgGQvHgjg6cxqwXk)
+![pic](assets/mining/owner_all_run.png)
 
-# 5. Blockchain Validate
+## 5. Blockchain Validate
 
-## 5.1 Get session key
+### 5.1 Get session key
 
 Please wait for the chain to synchronize to the latest block height, and execute the following command:
 
@@ -123,33 +123,33 @@ Please wait for the chain to synchronize to the latest block height, and execute
 sudo crust tools rotate-keys
 ```
 Copy the session key as shown below:
-![pic](https://uploader.shimo.im/f/b2B7qUfIZe1TyyB3.png!thumbnail?fileGuid=WgGQvHgjg6cxqwXk)
+![pic](assets/mining/gen_sessionkey.png)
 
-## 5.2  Set session key
+### 5.2  Set session key
 
 Enter [CRUST APPs](https://apps.crust.network/), click on "Staking" button under "Network" in the navigation bar, and go to "Accoung action". Click on the setting button on the right of your stashes(a 3-dots button) and click on "Change session key".
 
-![pic](https://uploader.shimo.im/f/YJmVUUKpqAapjfR5.png!thumbnail?fileGuid=WgGQvHgjg6cxqwXk)
+![pic](assets/mining/set_sessionkey1.png)
 
 Fill in the sessionkey you have copied, and click on “Set session key”.
 
-![pic](https://uploader.shimo.im/f/dyEV8chTTCF7OPcQ.png!thumbnail?fileGuid=WgGQvHgjg6cxqwXk)
+![pic](assets/mining/set_sessionkey2.png)
 
 
-## 5.3 Be a Validator/Candidate
+### 5.3 Be a Validator/Candidate
 
 Please follow the steps below:
 
-![pic](https://uploader.shimo.im/f/jrDMO8UFk8wyXJez.png!thumbnail?fileGuid=WgGQvHgjg6cxqwXk)
+![pic](assets/mining/be_validator1.png)
 
 After one era, you can find your account listed in the "Staking" or "Waiting" list, which means you have completed all the steps.
 
-![pic](https://uploader.shimo.im/f/nOCHRov9lNTEdTzF.png!thumbnail?fileGuid=WgGQvHgjg6cxqwXk)
+![pic](assets/mining/be_validator2.png)
 
 
-# 6. Restart and Uninstall
+## 6. Restart and Uninstall
 
-## 6.1 Restart
+### 6.1 Restart
 
 If the device or Crust node related programs need to be somehow restarted, please refer to the following steps. 
 
@@ -158,7 +158,7 @@ If the device or Crust node related programs need to be somehow restarted, pleas
 ```plain
 sudo crust reload
 ```
-## 6.2 Uninstall and Data Cleanup
+### 6.2 Uninstall and Data Cleanup
 
 
 If you have run a previous version of Crust test chain, or if you want to redeploy your current node, you need to clear data from three sources:
