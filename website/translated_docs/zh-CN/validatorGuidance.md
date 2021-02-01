@@ -6,25 +6,25 @@ sidebar_label: Validator Guidance
 
 验证人是组成Crust区块链网络的基本单元，参考本文成为一个Crust网络的验证人。
 
-### 0. 准备工作
+## 0. 准备工作
 
 您需要确保您有足够的CRU进行转账和担保。您可以将您在以太坊上的CRU[认领到Maxwell](claims.md)。
 
-### 1. 配置绑定关系
+## 1. 配置绑定关系
 
 确保你已经完成了[账户配置（新增绑定）](new-bond.md)，绑定了你的Stash和Controller账户。
 
-### 2. 配置节点
+## 2. 配置节点
 
 参考[节点概要](node-overview.md)对您的节点进行配置，并成功启动节点。
 
-### 3. 增加/减少质押
+## 3. 增加/减少质押
 
 验证人也可以在[APPS](apps.crust.network)中增加或减少自己质押的金额，配置步骤如下。
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/bondmore.png)
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/unbond.png)
 
-### 4. 设置担保费
+## 4. 设置担保费
 
 节点设置的担保费是指节点在**Staking收益中分给担保人的百分比**，具体设置如下:
 

@@ -10,7 +10,7 @@ Maxwell, as the preview network of the Crust mainnet, implements all the core me
 
 There is 4 roles in Maxwell: **Validator and Guarantor, Storage User and Storage Merchant**
 
-### 1. Validators(Nodde)
+### 1. Validators(Node)
 
 Validator is the maintainer of Crust Network, to be validator, you need:
 
@@ -25,12 +25,12 @@ Token holders can guarantee Validators(Node) to get reward, to be Guarantor, you
 1. Be Guarantor, please refer [Guarantor Guidance](guarantor-guidance.md)
 2. Learn the reward and slash details, please refer [Guarantor](guarantor.md)
 
-### Storage User
+### 3. Storage User
 
 Storage users store files through the standard IPFS protocol and place orders through the Crust storage market, letting Crust network save files for you.
 Currently on the preview network Maxwell, storage users are in the limited internal test phase. Please continue to pay attention to the official limited internal test notice on the storage market to apply.
 
-### Storage Merchant
+### 4. Storage Merchant
 
 Waiting for DSM, comming soon
 
