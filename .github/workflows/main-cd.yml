@@ -18,9 +18,13 @@ jobs:
           docker build -t crustio/crust-wiki:latest .
           docker login -u ${{ secrets.DOCKER_HUB_USER_NAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
           docker push crustio/crust-wiki:latest
-      
+
       - name: Upgrade wiki
-        run: |
-          echo ${{ secrets.SSH_PRIVARE_KEY }} > private.key
-          cat private.key
-          ssh -i private.key ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "ls -a"
+        with:
+          command: |
+            docker pull crustio/crust-wiki:latest
+            cd /opt/compose
+            docker-compose up -d crust-wiki
+          host: ${{ secrets.SSH_HOST }}
+          user: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
