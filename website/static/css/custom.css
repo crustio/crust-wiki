@@ -1066,11 +1066,13 @@ footer .list-social-links a {
 }
 /* todo: last homeNavItem will disappeared after resizing window */
 .homeNavContainer {
-  background: url('/img/bg.png');
+  background: url("/img/bg.png");
 }
-.klaro .cookie-modal .cm-app-input.required:checked+.cm-app-label .slider, .klaro .cookie-notice .cm-app-input.required:checked+.cm-app-label .slider {
+.klaro .cookie-modal .cm-app-input.required:checked + .cm-app-label .slider,
+.klaro .cookie-notice .cm-app-input.required:checked + .cm-app-label .slider {
   background-color: var(--primaryColor);
 }
-.klaro .cookie-modal .cm-btn.cm-btn-info, .klaro .cookie-notice .cm-btn.cm-btn-info {
+.klaro .cookie-modal .cm-btn.cm-btn-info,
+.klaro .cookie-notice .cm-btn.cm-btn-info {
   background-color: var(--primaryColor);
 }
