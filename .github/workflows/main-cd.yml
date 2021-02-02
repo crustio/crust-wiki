@@ -22,10 +22,7 @@ jobs:
       - name: Upgrade wiki
         uses: ./
         with:
-          command: |
-            docker pull crustio/crust-wiki:latest
-            cd /opt/compose
-            docker-compose up -d crust-wiki
+          command: ls -a
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           privateKey: ${{ secrets.SSH_PRIVATE_KEY}}
