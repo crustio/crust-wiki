@@ -8,6 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Build and push docker
         run: |
           docker build -t crustio/crust-wiki:latest .
