@@ -580,7 +580,7 @@ body {
     ),
     linear-gradient(127deg, rgba(230, 0, 122, 0.8), rgba(230, 0, 122, 0) 70%),
     linear-gradient(336deg, rgba(103, 69, 210, 0.7), rgba(103, 69, 210, 0) 70%);
-  background-color: #e6007a;
+  background-color: #ff8812;
 }
 
 /* ==========================================================================
@@ -617,12 +617,12 @@ body {
 }
 
 .mainpage-maintain-btn:hover {
-  background: #e6007a;
+  background: #ff8812;
   cursor: pointer;
 }
 
 .mainpage-build-btn {
-  background: #e6007a;
+  background: #ff8812;
   border: none;
   color: white;
   font-weight: 500;
@@ -681,7 +681,7 @@ body {
 }
 
 .myButton:hover {
-  background: #e6007a;
+  background: #ff8812;
   cursor: pointer;
 }
 
@@ -1066,5 +1066,13 @@ footer .list-social-links a {
 }
 /* todo: last homeNavItem will disappeared after resizing window */
 .homeNavContainer {
-  background: url('/img/bg.png');
+  background: url("/img/bg.png");
+}
+.klaro .cookie-modal .cm-app-input.required:checked + .cm-app-label .slider,
+.klaro .cookie-notice .cm-app-input.required:checked + .cm-app-label .slider {
+  background-color: var(--primaryColor);
+}
+.klaro .cookie-modal .cm-btn.cm-btn-info,
+.klaro .cookie-notice .cm-btn.cm-btn-info {
+  background-color: var(--primaryColor);
 }
