@@ -22,4 +22,5 @@ jobs:
       - name: Upgrade wiki
         run: |
           echo ${{ secrets.SSH_PRIVARE_KEY }} > private.key
+          cat private.key
           ssh -i private.key ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "ls -a"
