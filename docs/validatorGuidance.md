@@ -11,7 +11,7 @@ The validator is the basic unit of the Crust Network. Refer to this document to 
 
 You need to ensure that you have enough CRUs for sending transactions. You can claim your CRU from Ethereum [Claim to Maxwell](claims.md).
 
-### 1. Bond Accounts
+## 1. Bond Accounts
 Make sure you have completed [Account Configuration](new-bond.md), and have bonded your stash and controller accounts.
 
 ## 2. Setup Crust Nodes
