@@ -1,0 +1,31 @@
+name: main-cd
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build and push docker
+        run: |
+          docker build -t crustio/crust-wiki:latest .
+          docker login -u ${{ secrets.DOCKER_HUB_USER_NAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
+          docker push crustio/crust-wiki:latest
+      
+      - name: Upgrade wiki
+        uses: ./
+        with:
+          command: |
+            docker pull crustio/crust-wiki:latest
+            cd /opt/compose
+            docker-compose up -d crust-wiki
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          privateKey: ${{ secrets.SSH_PRIVATE_KEY}}
