@@ -19,7 +19,7 @@ The Member node runs chain modules (not participating in block generation), stor
 
 ### 2.1 Create your Accounts
 
-Refer to this link to create a Member account (It can be a single account). The Member node account needs to meet the following three requirements:
+Refer to [this link](crust-account.md) to create a Member account (a single account). The Member node account needs to meet the following three requirements:
 
 * Reserve 5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
 * Cannot be the account of Owner;
@@ -83,13 +83,13 @@ Follow the prompts to enter a node mode 'member', and press Enter to end:
 
 ### 3.4 Config Controller Account
 
-Enter the backup (backed up when the account was created) of the controller account as prompted and press Enter to end:
+Enter the backup (backed up when the account was created) of the account as prompted and press Enter to end:
 
-![pic](assets/mining/backup_config.png)
+![pic](assets/mining/member_backup_config.png)
 
-Enter the password for the controller backup file as prompted and press Enter to end:
+Enter the password for the backup file as prompted and press Enter to end:
 
-![pic](assets/mining/password_config.png)
+![pic](assets/mining/member_password_config.png)
 
 ### 3.5 Config Hard Disks
 

@@ -31,7 +31,7 @@ Enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', 
 
 ![pic](assets/mining/create_group.png)
 
-### 2.2 Download Crust Node Package
+### 2.3 Download Crust Node Package
 
 a. Download
 
@@ -46,7 +46,7 @@ c. Go to package directory
 ```plain
 cd crust-node-0.8.0
 ```
-### 2.3 Install Crust Service
+### 2.4 Install Crust Service
 
 Notice:
 

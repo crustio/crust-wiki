@@ -18,7 +18,7 @@ Member节点，负责运行链模块（不参与出块）,存储模块, IPFS等,
 
 ### 2.1 构建账户
 
-参考这个链接去构建一个Member的账户（单账户即可），Member节点账户需要满足以下三个要求:
+参考这个[链接](crust-account.md)去构建一个Member的账户（单账户即可），Member节点账户需要满足以下三个要求:
 
 * 保留5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
 * 不能是Owner的账户
@@ -80,11 +80,11 @@ sudo crust config set
 
 按提示输入backup内容，具体为账户创建时备份的文件内容，回车键结束：
 
-![图片](assets/mining/backup_config.png)
+![图片](assets/mining/member_backup_config.png)
 
 按提示输入password内容，具体为账户的密码，回车键结束：
 
-![图片](assets/mining/password_config.png)
+![图片](assets/mining/member_password_config.png)
 
 ### 3.5 配置硬盘
 
