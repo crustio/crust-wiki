@@ -188,6 +188,71 @@ var klaroConfig = {
               styling: 'Biçimlendirme',
           },
       },
+      zh: {
+        consentNotice: {
+            description: 'We collect and process your personal information for the following purposes: Security.',
+            learnMore: "Learn More"
+        },
+        decline: "Decline",
+        ok: "Accept",
+        consentModal: {
+            title: 'Information that we collect',
+            privacyPolicy: {
+                name: "privacy policy",
+                text: "To learn more, please read our {privacyPolicy}."
+            },
+            description:
+                'Measuring our audience gives us useful statistics to improve the website and the products we build for you. By allowing these third party services, you accept their cookies and the use of tracking technologies necessary for their functioning.',
+        },
+        inlineTracker: {
+            description: 'Example of an inline tracking script',
+        },
+        externalTracker: {
+            description: 'Example of an external tracking script',
+        },
+        adsense: {
+            description: 'Displaying of advertisements (just an example)',
+        },
+        fathom: {
+            description: 'Collecting of visitor statistics',
+        },
+        camera: {
+            description:
+                'A surveillance camera (just an example for an IMG tag)',
+        },
+        cloudflare: {
+            description: 'Protection against DDoS attacks',
+        },
+        intercom: {
+            description:
+                'Chat widget & collecting of visitor statistics (just an example)',
+        },
+        mouseflow: {
+            description: 'Real-Time user analytics (just an example)',
+        },
+        googleFonts: {
+            description: 'Web fonts hosted by Google',
+        },
+        purposes: {
+            analytics: 'Analytics',
+            security: 'Security',
+            livechat: 'Livechat',
+            advertising: 'Advertising',
+            styling: 'Styling',
+        },
+        app: {
+            required: {
+                title: "always required",
+            },
+            cloudflare: {
+                description: "Protection against DDoS attacks"
+            },
+            purpose: "Purpose",
+            purposes: "Security",
+        },
+        poweredBy: "Powered by Klaro!",
+        acceptSelected: "Accept selected",
+    }
   },
 
   // This is a list of third-party apps that Klaro will manage for you.
