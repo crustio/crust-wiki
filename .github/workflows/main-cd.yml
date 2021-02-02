@@ -20,9 +20,6 @@ jobs:
           docker push crustio/crust-wiki:latest
       
       - name: Upgrade wiki
-        uses: ./
-        with:
-          command: ls -a
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          privateKey: ${{ secrets.SSH_PRIVATE_KEY}}
+        run: |
+          echo ${{ secrets.SSH_PRIVARE_KEY }} > private.key
+          ssh -i private.key ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "ls -a"
