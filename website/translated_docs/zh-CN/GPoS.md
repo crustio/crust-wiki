@@ -9,7 +9,7 @@ sidebar_label: GPoS
 
 Crust网络使用的是GPoS（Guaranteed Proof of Stake）共识机制，是一个以存储资源做担保额度的PoS共识。和现有的PoS项目类似，节点需要将CRU通证质押来竞争成为验证人，不一样的是节点还需要提供存储资源以获取相应的担保额度，有了担保额度才能Stake相应数量的CRU。通过MPoW机制，节点的存储量的节点存储量监测机制，节点贡献的存储资源越多，能获得的抵押额便越高。
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/gpos.png)
+![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/gpos.png)
 
 GPoS基于Substrate框架的[BABE/GRANDPA](https://wiki.polkadot.network/docs/en/learn-consensus#what-is-grandpababe)算法进行最终出块。如果想从共识上攻击Crust网络，除了需要拥有大比例的CRU通证，还需要控制足够多的存储资源，这样的设计会让攻击难度变得相对更高。
 

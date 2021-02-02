@@ -37,10 +37,8 @@ PoS 链的高性能。和现有的 PoS 项目类似，节点需要将 CRU 通证
 CRU 通证才有效。在这个机制下需要有存储资源和 CRU 通证两类资产才可以成为节点，将
 资源型（如比特币）和通证型（如 Cosmos）共识机制的优点结合起来，更有效的保证网
 络安全性。
-[Polkadot](https://wiki.polkadot.network/docs/en/getting-started)网络的[NPoS](https://wiki.polkadot.network/docs/en/learn-consensus)，则是在PoS的基础上，加入了提名人机制。验证人节点可以接受持币者的提名，从而获得更高的质押量。
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/gpos.png)
-
 
 
 ### DSM

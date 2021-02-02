@@ -14,7 +14,7 @@ Crust network uses the GPoS (Guaranteed Proof of Stake) consensus, which is a Po
 Through the MPoW mechanism - the node storage status monitoring mechanism, the chain can obtain the node storage capacity through the work report signed by the node's TEE module. The more storage resources a node contributes, the higher the stake limit it can obtain.
 
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/gpos.png)
+![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/gpos.png)
 
 GPoS is based on Substrate framework, the block generation algorithm is [BABE/GRANDPA](https://wiki.polkadot.network/docs/en/learn-consensus#what-is-grandpababe). If someone wants to control this network, in addition to having a large proportion of CRU tokens, they also need to control enough storage resources. Such a design will make the attack more difficult.
 

@@ -6,23 +6,30 @@ sidebar_label: Validator Guidance
 
 The validator is the basic unit of the Crust Network. Refer to this document to become a validator of Crust Network.
 
-### Preparation
+
+## 0. Preparation
 
 You need to ensure that you have enough CRUs for sending transactions. You can claim your CRU from Ethereum [Claim to Maxwell](claims.md).
 
-### Bond Accounts
+### 1. Bond Accounts
 Make sure you have completed [Account Configuration](new-bond.md), and have bonded your stash and controller accounts.
 
-### Setup Crust Nodes
-
+## 2. Setup Crust Nodes
 Refer to [Node Overview](node-overview.md) to setup your nodes.
+
+## 3. Increase or Decrease the Amount of Self-staked Token
 
 You can change your self-staked token amount in [APPS](apps.crust.network). 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/bondmore.png)
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/unbond.png)
 
-> Note: The guarantee fee set by the validator refers to the proportion of the node Staking income distributed to the guarantors
+## 4. Set Guarantee Fee
+
+The guarantee fee set by the validator refers to the percentage of the staking rewards distributed to his guarantors. 
+
+
+> For example, if the validator obtains 1000 CRU staking rewards in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtains 1000 * 10% * 95% = 95 CRUs income, and the remaining 5 CRU belongs to the validator.
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
-
-> Note: In your controller account, you need to reserve enough CRU (about 5CRU) to ensure that your node can send work reports stably
+![change guarantee_fee1](assets/gpos/guarantee_fee1.jpg)
+![change guarantee_fee2](assets/gpos/guarantee_fee2.jpg)
