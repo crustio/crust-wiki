@@ -61,7 +61,7 @@ Go to the Claims page of [Crust Apps](https://apps.crust.network/#/claims)
 
 ![Connect Wallet5](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/allow.jpeg)
 
-If you use MetaMask, pls click MEW CX after you access your Wallet
+If you use MetaMask, please click `MEW CX` after you access your Wallet
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/connect_mm.jpeg)
 
