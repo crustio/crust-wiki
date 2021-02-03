@@ -31,7 +31,7 @@ sidebar_label: Validator
 验证人每个era会重新进行一轮选举，会从所有候选人和验证人中选出下一个Era的出块验证人，选举的规则为：
 
 ```shell
-按照质押上限（Stake Limit）的从高到低进行选举
+按照有效质押（Effective Staking）的从高到低进行选举
 ```
 
 #### 质押奖励
@@ -55,7 +55,7 @@ sidebar_label: Validator
 ```
 
 ```shell
-担保人有效质押量 = MIN(质押上限，总质押)* / (担保量 / 验证人总质押量)
+担保人有效质押量 = MIN(质押上限，总质押)* (担保量 / 验证人总质押量)
 ```
 
 ```shell
