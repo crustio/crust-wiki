@@ -13,7 +13,7 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 > Don't worry about being unfamiliar with the following tools, we will teach you how to use them step by step in the following steps.
 
 1. [MyEtherWallet](https://www.myetherwallet.com/interface/dashboard)
-2. [ImToken](https://token.im/)
+2. [ImToken](https://token.im/) or [MetaMask](https://metamask.io/)
 3. [Crust Apps](https://apps.crust.network/)
 
 
@@ -27,7 +27,7 @@ First of all, you need to transfer CRUs to ***Crust Official Claim Account*** on
 2. **Confirm the CRU ERC20 contract address: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)**
 3. ***Crust Official Claim Account***: [0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A](https://etherscan.io/address/0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A) 
    ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/cru_qr.png)
-Please confirm your transfering is successful and make sure it has **at least 6 confirmations**, **copy the hash value of this successful transaction** and do to the following steps.
+Please confirm your transfering is successful and make sure it has **at least 6 confirmations**, **copy the hash value of this successful transaction** and do the following steps.
 
 ### 2. Verify transactions and bridge tokens
 
@@ -45,7 +45,7 @@ Go to the Claims page of [Crust Apps](https://apps.crust.network/#/claims)
 
 1. Open [MyEtherWallet](https://www.myetherwallet.com/access-my-wallet):
     - Click 'MEW wallet'
-    - Connect the wallet which you **transfer ERC20 CRU**(The following process will use 'ImToken' as example)
+    - Connect the wallet which you **transfer ERC20 CRU**(The following process will use 'ImToken' and 'MetaMask' as example)
 
 **⚠️ Pay Attention, please ensure that the connected wallet address is same as the address where the transaction was successfully sent in [step 1](#1-send-erc20-claim-transaction)**(We need to sign the message with the private key of this address)
 
@@ -55,11 +55,18 @@ Go to the Claims page of [Crust Apps](https://apps.crust.network/#/claims)
 
 ![Connect Wallet3](assets/claims/connect_wallet3.png)
 
-1. On the ImToken mobile client, click the *scan icon* in the upper right corner, scan the QR code displayed by MyEtherWallet and authorize
+2. On the ImToken mobile client, click the *scan icon* in the upper right corner, scan the QR code displayed by MyEtherWallet and authorize
 
 ![Connect Wallet4](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/main.jpeg)
 
 ![Connect Wallet5](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/allow.jpeg)
+
+If you use MetaMask, please click `MEW CX` after you access your Wallet
+
+![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/connect_mm.jpeg)
+
+![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/connected.jpg)
+
 
 3. After the authorization is successful, you will see the following screen on the MyEtherWallet page, which means your wallet is successfully connected
 
@@ -80,6 +87,10 @@ Make sure you completed [step 2](#2-verify-transactions-and-bridge-tokens), then
 3. There will be a pop-up in the ImToken side, Click "Confirm", **⚠️ Please be attention here, At this step, the communication between MyEtherWallet and ImToken may be interrupted and no authorization information will pop up. Please execute** [Step 3](#3-log-in-to-myetherwallet-to-connect-to-your-wallet) again.
 
 ![Sign Msg3](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/confirm.jpeg)
+
+If you use MetaMask, you just need to make your sign through Metamask pop-up window.
+![Sign mm](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/mm_sig.jpg)
+
 
 4. Go back to MyEtherWallet, click **Confirm Signing**
 
