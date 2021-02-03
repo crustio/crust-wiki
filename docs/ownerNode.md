@@ -27,7 +27,7 @@ Notices:
 
 ### 2.2 Create Group
 
-Enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Owner Controller account, select 'swork' in the submit group, select joinGroup( ), and click on 'Submit Transaction' to send the transaction and create Group.
+Enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Owner Controller account, select 'swork' in the submit group, select createGroup( ), and click on 'Submit Transaction' to send the transaction and create Group.
 
 ![pic](assets/mining/create_group.png)
 
