@@ -7,22 +7,22 @@ sidebar_label: Q&A
 ## Perview Network Maxwell
 
 ### Overview of benefits and rewards？
-The preview network provides staking and block rewards (total 540,000 CRU), and stores market rewards (the specific amount is to be determined). The staking and block rewards are distributed in 2 years. The initial reward for each era (6 hours) is 750CRU, including 600CRU staking reward and 150CRU block reward. The era reward is halved every 90 days. All rewards need to be collected manually.  At least one era in the receiving cycle.
+The preview network provides staking and authoring rewards (total 540,000 CRU), and stores market rewards (the specific amount is to be determined). The staking and authoring rewards are distributed in 2 years. The initial reward for each era (6 hours) is 750CRU, including 600CRU staking reward and 150CRU authoring reward. The era reward is halved every 90 days. All rewards need to be collected manually.  At least one era in the receiving cycle.
 
 ### Types of rewards？
-There are three main types of rewards: block reward, staking reward and storage reward. All revenue from the preview network will be sent directly in the form of CRU
+There are three main types of rewards: authoring reward, staking reward and storage reward. All revenue from the preview network will be sent directly in the form of CRU
 
 ## Validators and candidates
 
 ### How a candidate becomes a validator？
-Through competition, nodes with larger "effective stake" (effective stake = other effective stake + own effective stake) will be selected as validators. "effective stake" is determined by two parameters. One is that you need to increase the "staking limit" by adding storage; the other is that you need to increase the "effective stake" by staking CRU or letting someone else guarantee the CRU for you. The selection of the validator is recalculated for each era
+Through competition, nodes with larger "effective stake" (effective stake = other effective stake + own effective stake) will be selected as validators. "effective stake" is determined by two parameters. One is that you need to increase the "staking limit" by adding storage; the other is that you need to increase the "effective stake" by staking CRU or letting someone else guarantee the CRU for you. The selection of the validator is recalculated for each era. Check [this](validatorGuidance.md) for details
 ![pic](assets/qa/be_validator.png)
 
 ### The difference between validators and candidates？
-Validators have block rewards, candidates do not have block rewards, but they all have staking rewards
+Validators have authoring rewards, candidates do not have authoring rewards, but they all have staking rewards
 
 ### The total number of validators？
-During the preview network, the total number of validators will be dynamically adjusted to ensure that about 1/3 of the nodes competing for block production can become validators. This setting is to ensure sufficient competition between nodes
+During the preview network, the total number of validators will be dynamically adjusted. This setting is to ensure sufficient competition between nodes
 
 ### The icon meaning of validator page？
 ![pic](assets/qa/app_validator_page.png)

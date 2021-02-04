@@ -17,7 +17,7 @@ sidebar_label: Q&A
 
 ### 候选人如何成为验证人？
 
-通过竞争成为，"effective stake"（effective stake = other effective stake + own effective stake）大节点会被选择成为验证人。"effective stake"是由两个参数决定的，其一，你需要通过增加存储来增加"staking limit"；其二，需要通过质押CRU或者让其他人给你担保CRU来增加"effective stake"。验证人的选择每个era重新计算一遍
+通过竞争成为，"effective stake"（effective stake = other effective stake + own effective stake）大节点会被选择成为验证人。"effective stake"是由两个参数决定的，其一，你需要通过增加存储来增加"staking limit"；其二，需要通过质押CRU或者让其他人给你担保CRU来增加"effective stake"。验证人的选择每个era重新计算一遍。详情请看这个[链接](validatorGuidance.md)
 ![图片](assets/qa/be_validator.png)
 
 ### 验证人和候选人的区别？
@@ -26,7 +26,7 @@ sidebar_label: Q&A
 
 ### 验证人总数变化规则？
 
-在预览网期间，验证人总数会动态调整，保证大约1/3的竞争出块的节点可以成为验证人。这样设置是为了保证节点之间有充分的竞争
+在预览网期间，验证人总数会动态调整。这样设置是为了保证节点之间有充分的竞争
 
 ### 验证人界面图标意义？
 ![图片](assets/qa/app_validator_page.png)
