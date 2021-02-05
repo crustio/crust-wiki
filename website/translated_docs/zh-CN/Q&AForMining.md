@@ -64,14 +64,17 @@ swork，选择groups(AccountId)方法，然后选择创建Group的账号，最�
 ### Group如何分发收益的？
 存储收益是各自结算的， 而其他收益链不做收益分发，需owner私下结算
 
-### 奖励总额，如何分发以及如何领取？
-二测会提供质押和出块奖励（总额540000CRU），存储市场奖励（具体数额待定），
-其中质押和出块奖励分2年发放，初始每个era(6小时)奖励750CRU，包括600CRU的质押奖励和150CRU出块奖励，每隔90天era奖励减半，即每个era奖励由原本750CRU变为375CRU。
-所有奖励需要手动领取，如果一个节点（validator/candidate）有多个guarantor，其中一个人领取即帮所有人领取。领取周期至少一个era.
+### 怎么领取？
 领取奖励操作流程如下：
 进入Crust APPS中，选择Staking，选择Payouts
 ![图片](assets/qa/payouts1.png)
 ![图片](assets/qa/payouts2.png)
+
+### 每次领取奖励，怎么查看收益？
+打开[Subscan](https://crust.subscan.io/)
+用你的收益账户查询，"收益和罚金"中可以看到领取到的数量
+![图片](assets/qa/subscanreward1.png)
+![图片](assets/qa/subscanreward2.png)
 
 ### 详解SRD占用率和节点存储容量之间的关系
 SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁盘，如果设置SRD占用率为80%，即该磁盘最大只能使用800G来存SRD，如果不进行设置，默认70%的使用率。
@@ -84,12 +87,6 @@ SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁�
 
 ### Member加入group,报"swork.IdentityNotExist"错误
 这是因为加入group需要有链上唯一身份，所以需要等待第一次上报work report后（半小大概时），再执行加入的操作。
-
-### 每次领取奖励，怎么查看收益？
-打开[Subscan](https://crust.subscan.io/)
-用你的收益账户查询，"收益和罚金"中可以看到领取到的数量
-![图片](assets/qa/subscanreward1.png)
-![图片](assets/qa/subscanreward2.png)
 
 ### 更换收益账户
 1)进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Network模块下的Staking,选择Account actions,选择你想要更换的的目标，点击右边三点，选择"change reword destination"
