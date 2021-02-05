@@ -15,14 +15,14 @@ There is 4 roles in Maxwell: **Validator and Guarantor, Storage User and Storage
 Validator is the maintainer of Crust Network, to be validator, you need:
 
 1. Set up node, please refer [Node Overview](node-overview.md)
-2. Be Validator, please refer [Validator Guidance](validatorGuidance.md)
+2. To be a validator, please refer [Validator Guidance](validatorGuidance.md)
 3. Learn the reward and slash details, please refer [Validator](validator.md)
 
 ### 2. Guarantor(Token Holder)
 
 Token holders can guarantee Validators(Node) to get reward, to be Guarantor, you need:
 
-1. Be Guarantor, please refer [Guarantor Guidance](guarantor-guidance.md)
+1. To be a guarantor, please refer [Guarantor Guidance](guarantor-guidance.md)
 2. Learn the reward and slash details, please refer [Guarantor](guarantor.md)
 
 ### 3. Storage User
