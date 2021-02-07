@@ -61,6 +61,8 @@ swork，选择groups(AccountId)方法，然后选择创建Group的账号，最�
 进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择Member账号，Submit 组选择swork，然后选择quitGroup()，最后点击Submit Transaction发送交易退出Group
 ![图片](assets/qa/quit_group.png)
 
+## 奖励
+
 ### Group如何分发收益的？
 存储收益是各自结算的， 而其他收益链不做收益分发，需owner私下结算
 
@@ -76,6 +78,14 @@ swork，选择groups(AccountId)方法，然后选择创建Group的账号，最�
 ![图片](assets/qa/subscanreward1.jpg)
 ![图片](assets/qa/subscanreward2.jpg)
 
+### 更换收益账户
+1)进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Network模块下的Staking,选择Account actions,选择你想要更换的的目标，点击右边三点，选择"change reword destination"
+![图片](assets/qa/changerewarddestination1.jpg)
+2）选择你设置的收益账户，点击"set reward desination"发送交易
+![图片](assets/qa/changerewarddestination2.jpg)
+
+## 其它
+
 ### 详解SRD占用率和节点存储容量之间的关系
 SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁盘，如果设置SRD占用率为80%，即该磁盘最大只能使用800G来存SRD，如果不进行设置，默认70%的使用率。
 节点存储容量（必填）是设置具体磁盘容量并下发SRD任务进行封装数据。
@@ -87,9 +97,3 @@ SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁�
 
 ### Member加入group,报"swork.IdentityNotExist"错误
 这是因为加入group需要有链上唯一身份，所以需要等待第一次上报work report后（半小大概时），再执行加入的操作。
-
-### 更换收益账户
-1)进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Network模块下的Staking,选择Account actions,选择你想要更换的的目标，点击右边三点，选择"change reword destination"
-![图片](assets/qa/changerewarddestination1.jpg)
-2）选择你设置的收益账户，点击"set reward desination"发送交易
-![图片](assets/qa/changerewarddestination2.jpg)
