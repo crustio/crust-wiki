@@ -67,14 +67,14 @@ swork，选择groups(AccountId)方法，然后选择创建Group的账号，最�
 ### 怎么领取？
 领取奖励操作流程如下：
 进入Crust APPS中，选择Staking，选择Payouts
-![图片](assets/qa/payouts1.png)
-![图片](assets/qa/payouts2.png)
+![图片](assets/qa/payouts1.jpg)
+![图片](assets/qa/payouts2.jpg)
 
 ### 每次领取奖励，怎么查看收益？
 打开[Subscan](https://crust.subscan.io/)
 用你的收益账户查询，"收益和罚金"中可以看到领取到的数量
-![图片](assets/qa/subscanreward1.png)
-![图片](assets/qa/subscanreward2.png)
+![图片](assets/qa/subscanreward1.jpg)
+![图片](assets/qa/subscanreward2.jpg)
 
 ### 详解SRD占用率和节点存储容量之间的关系
 SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁盘，如果设置SRD占用率为80%，即该磁盘最大只能使用800G来存SRD，如果不进行设置，默认70%的使用率。
@@ -90,9 +90,9 @@ SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁�
 
 ### 更换收益账户
 1)进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Network模块下的Staking,选择Account actions,选择你想要更换的的目标，点击右边三点，选择"change reword destination"
-![图片](assets/qa/changerewarddestination1.png)
+![图片](assets/qa/changerewarddestination1.jpg)
 2）选择你设置的收益账户，点击"set reward desination"发送交易
-![图片](assets/qa/changerewarddestination2.png)
+![图片](assets/qa/changerewarddestination2.jpg)
 
 
 

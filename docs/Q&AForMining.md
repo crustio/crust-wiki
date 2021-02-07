@@ -63,12 +63,12 @@ The storage income is settled separately, while other income chains do not distr
 ### How to receive reward?
 The process of receiving rewards is as follows:
 Enter [Crust APPS](https://apps.crust.network/#/explorer), choose"Staking", choose"Payouts"
-![pic](assets/qa/receiverewarden.png)
+![pic](assets/qa/receiverewarden.jpg)
 
 ### How to check the reward?
 Open [Subscan](https://crust.subscan.io/)
 Use your income account to query, you can see the amount received in "Profit and Penalty"
-![pic](assets/qa/subscanrewarden.png)
+![pic](assets/qa/subscanrewarden.jpg)
 
 ### How to set SRD rate and node storage capacity?
 SRD rate (optional) sets the disk usage rate, such as a 1000G disk, if you set the SRD rate to 80%, that is, the disk can only use 800G to store SRD at most, if not set, the default is 70% Usage rate.
@@ -82,8 +82,8 @@ If the validator has set the guarantee fee multiple times during era1, the last 
 ### How to change income account?
 1) Enter [Crust APPS](https://apps.crust.network/#/explorer), select Staking under the Network module, select Account actions, select the target you want to change, click the three points on the right, and select "change reword destination"
 2) Select the income account you set, click "set reward desination" to send the transaction
-![pic](assets/qa/changerewarddestination1.png)
-![pic](assets/qa/changerewarddestinationen.png)
+![pic](assets/qa/changerewarddestination1.jpg)
+![pic](assets/qa/changerewarddestinationen.jpg)
 
 ### Member joins the group and reports "swork.IdentityNotExist" error, how to solve it?
 This is because joining a group requires a unique identity on the chain, so you need to wait for the first report of the work report (about half a hour), and then perform the operation of joining
