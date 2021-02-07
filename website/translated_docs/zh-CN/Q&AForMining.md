@@ -93,6 +93,3 @@ SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁�
 ![图片](assets/qa/changerewarddestination1.jpg)
 2）选择你设置的收益账户，点击"set reward desination"发送交易
 ![图片](assets/qa/changerewarddestination2.jpg)
-
-
-
