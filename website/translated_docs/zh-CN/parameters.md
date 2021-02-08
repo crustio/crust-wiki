@@ -9,7 +9,7 @@ sidebar_label: Parameters
 
 | **变量名**                           | **解释**                                                     | **预览网参数** | **主网参数** |
 | :----------------------------------- | :----------------------------------------------------------- | :------------- | :----------- |
-| **PointRewardsInEra**            | 初始出块奖励（cru/era）                                      | 150            |              |
+| **AuthoringRewardsInEra**            | 初始出块奖励（cru/era）                                      | 150            |              |
 | **StakingRewardsInRra**              | 初始质押奖励（cru/era）                                      | 600            |              |
 | **DecreasePeriod**                      | 奖励衰减周期                                                 | 90             | 365.25       |
 | **SessiongDuration**                 | Session时长(min)                                             | 10             |              |
