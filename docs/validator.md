@@ -14,18 +14,18 @@ The validator is the node that validates transactions and generates blocks in Cr
 
 ### 1.Rewards
 
-The rewards of validators are composed of two parts: **authoring rewards and staking rewards**. Normally, validators will receive both the authoring and staking rewards, while candidates receive only staking rewards.
+The rewards of validators are composed of two parts: **point rewards and staking rewards**. Normally, validators will receive both the point and staking rewards, while candidates receive only staking rewards.
 
-#### Authoring rewards
+#### Point rewards
 
-Authoring rewards are the incomes obtained by validators participating in block generation and transaction packaging in Crust Network. The incomes are related to staking points.
+Point rewards are the incomes obtained by validators participating in block generation and transaction packaging in Crust Network. The incomes are related to staking points.
 
 ![staking_points](assets/gpos/staking_points.jpg)
 
-**In Maxwell, each Era (6 hours) generates a total authoring rewards of 150 CRUs, which gets halved every 90 days.** And the authoring rewards for each validator in each Era are calculated as:
+**In Maxwell, each Era (6 hours) generates a total point rewards of 150 CRUs, which gets halved every 90 days.** And the point rewards for each validator in each Era are calculated as:
 
 ```shell
-authoring_rewards = total_authoring_rewards * point_ratio (individual_points / total_points)
+point_rewards = total_point_rewards * point_ratio (individual_points / total_points)
 ```
 
 A new round of validator election will conducted in each era, and the next validator of the era will be selected from all candidates and validators. The rule for the election is:
