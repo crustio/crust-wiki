@@ -7,11 +7,11 @@ sidebar_label: Q&A
 ## Perview Network Maxwell
 
 ### Overview of benefits and rewards？
-The preview network provides staking and point rewards (total 540,000 CRU), and stores market rewards (the specific amount is to be determined). The staking and point rewards are distributed in 2 years. The initial reward for each era (6 hours) is 750CRU, including 600CRU staking reward and 150CRU point reward. The era reward is halved every 90 days. All rewards need to be collected manually.  At least one era in the receiving cycle.
+The preview network provides staking and authoring rewards (total 540,000 CRU), and stores market rewards (the specific amount is to be determined). The staking and authoring rewards are distributed in 2 years. The initial reward for each era (6 hours) is 750CRU, including 600CRU staking reward and 150CRU authoring reward. The era reward is halved every 90 days. All rewards need to be collected manually.  At least one era in the receiving cycle.
 
 ### Types of rewards？
-There are three main types of rewards: point reward, staking reward and storage reward. All revenue from the preview network will be sent directly in the form of CRU
-
+There are three main types of rewards: authoring reward, staking reward and storage reward. All revenue from the preview network will be sent directly in the form of CRU
+po
 ## Validators and candidates
 
 ### How a candidate becomes a validator？
@@ -19,7 +19,7 @@ Through competition, nodes with larger "effective stake" (effective stake = othe
 ![pic](assets/qa/be_validator.png)
 
 ### The difference between validators and candidates？
-Validators have point rewards, candidates do not have point rewards, but they all have staking rewards
+Validators have authoring rewards, candidates do not have authoring rewards, but they all have staking rewards
 
 ### The total number of validators？
 During the preview network, the total number of validators will be dynamically adjusted. This setting is to ensure sufficient competition between nodes
