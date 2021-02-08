@@ -28,6 +28,10 @@
       "crustAccount": {
         "title": "Account",
         "sidebar_label": "Account"
+      },      
+      "crustTokens": {
+        "title": "Crust Tokens",
+        "sidebar_label": "Crust Tokens"
       },
       "crustBuilderGuide": {
         "title": "Crust builders starter’s guide",
