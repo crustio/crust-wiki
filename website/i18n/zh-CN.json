@@ -17,6 +17,10 @@
         "title": "CRU 认领",
         "sidebar_label": "CRU 认领"
       },
+      "claimBack": {
+        "title": "CRU 领回",
+        "sidebar_label": "CRU 领回"
+      },
       "community": {
         "title": "社区",
         "sidebar_label": "社区"

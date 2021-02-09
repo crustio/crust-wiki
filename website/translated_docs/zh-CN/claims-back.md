@@ -1,7 +1,7 @@
 ---
-id: claimsBack
-title: Crust Claims Back
-sidebar_label: Crust Claims Back
+id: claimBack
+title: Crust Claim Back
+sidebar_label: Crust Claim Back
 ---
 
 如果您想将**Crust 预览网 Maxwell的代币重新映射回ERC20 CRU**，您可以通过本教程学习到如何进行ERC20 CRU的领回。
@@ -24,7 +24,7 @@ sidebar_label: Crust Claims Back
 1. ***Crust官方领回地址*** 为：[5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx](https://crust.subscan.io/account/5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx) (已认证地址：**CRU BRIDGE\<ERC-20\>🚗💰**)
 2. ⚠️ 请注意在一个领回周期内（7天），需要**保证领回总金额大于2 CRUs**
 
-![claim_back_transfer](assets/claimsBack/claim-back-transfer.png)
+![claim_back_transfer](assets/claimBack/claim-back-transfer.png)
 
 ### 二、绑定以太坊地址
 
@@ -32,11 +32,11 @@ sidebar_label: Crust Claims Back
 
 1. ⚠️ **提交交易的账户**需要和你发送交易的账户是**同一个**
 
-![claim-back-bond-eth](assets/claimsBack/claim-back-bond-eth.png)
+![claim-back-bond-eth](assets/claimBack/claim-back-bond-eth.png)
 
 2. 交易显示成功后，最好如下图所示，到[Chain State](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/chainstate)页面查询确认，如果查询不到，请重复执行第1步骤
 
-![claim-back-query-eth](assets/claimsBack/claim-back-query-eth.png)
+![claim-back-query-eth](assets/claimBack/claim-back-query-eth.png)
 
 ### 三、后续
 
