@@ -83,15 +83,14 @@ Make sure you completed [Step II](#ii-verify-transactions-and-bridge-tokens), th
 
 ![Sign Msg2](assets/claims/sign_msg2.png)
 
-1. There will be a pop-up in the ImToken side, Click "Confirm", **⚠️ Please be attention here, At this step, the communication between MyEtherWallet and ImToken may be interrupted and no authorization information will pop up. Please execute** [Step III](#iii-log-in-to-myetherwallet-and-connect-to-your-wallet) again.
+3. There will be a pop-up in the ImToken side, Click "Confirm", **⚠️ Please be attention here, At this step, the communication between MyEtherWallet and ImToken may be interrupted and no authorization information will pop up. Please execute** [Step III](#iii-log-in-to-myetherwallet-and-connect-to-your-wallet) again.
 
 ![Sign Msg3](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/confirm.jpeg)
 
 If you use MetaMask, you just need to make your sign through Metamask pop-up window.
 ![Sign mm](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/mm_sig.jpg)
 
-
-1. Go back to MyEtherWallet, click **Confirm Signing**
+4. Go back to MyEtherWallet, click **Confirm Signing**
 
 ![Sign Msg4](assets/claims/sign_msg4.jpg)
 
