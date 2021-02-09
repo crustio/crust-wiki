@@ -13,6 +13,10 @@
         "title": "BitSwap",
         "sidebar_label": "BitSwap"
       },
+      "claimBack": {
+        "title": "Crust Claim Back",
+        "sidebar_label": "Crust Claim Back"
+      },
       "claims": {
         "title": "Crust Claims",
         "sidebar_label": "Crust Claims"
@@ -28,10 +32,6 @@
       "crustAccount": {
         "title": "Account",
         "sidebar_label": "Account"
-      },      
-      "crustTokens": {
-        "title": "Crust Tokens",
-        "sidebar_label": "Crust Tokens"
       },
       "crustBuilderGuide": {
         "title": "Crust builders starter’s guide",
@@ -44,6 +44,10 @@
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
         "sidebar_label": "Crust Storage Explorer"
+      },
+      "crustTokens": {
+        "title": "Crust Tokens",
+        "sidebar_label": "Crust Tokens"
       },
       "crustIntegrationGuide": {
         "title": "Crust Integration guide",

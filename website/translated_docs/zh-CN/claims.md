@@ -20,11 +20,11 @@ sidebar_label: Crust Claims
 
 ### 一. 发送ERC20认领交易
 
-首先，您需要在以太坊上向 ***Crust官方认领地址*** 发起一笔CRU的转账交易，这个操作可以在任意的钱包端完成，但发起转账之前一定要注意:
+首先，您需要在以太坊上向 ***Crust Maxwell认领地址*** 发起一笔CRU的转账交易，这个操作可以在任意的钱包端完成，但发起转账之前一定要注意:
 
 1. **⚠️ 您拥有发起交易账户的私钥签名权限（所有交易所创建的账户均不适用, 请转到拥有私钥的钱包进行下列操作）**
 2. **确认CRU ERC20的合约地址：[CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)**
-3. ***Crust官方认领地址*** 为： [0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A](https://etherscan.io/address/0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A)
+3. ***Crust Maxwell认领地址*** 为： [0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A](https://etherscan.io/address/0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A)
    ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/cru_qr.png)
 
 待确认交易成功并且已有**6块以上的confirmations**之后，**复制这笔成功交易的Hash值**，进入到下列步骤。

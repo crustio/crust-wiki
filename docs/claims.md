@@ -16,38 +16,37 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 2. [ImToken](https://token.im/) or [MetaMask](https://metamask.io/)
 3. [Crust Apps](https://apps.crust.network/)
 
-
 ## Steps
 
-### 1. Send ERC20 Claim Transaction
+### I. Send ERC20 Claim Transaction
 
-First of all, you need to transfer CRUs to ***Crust Official Claim Account*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
+First of all, you need to transfer CRUs to ***Crust Maxwell Claim Account*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
 
 1. **⚠️ Make sure you have the authority to make signature with the private key of the account (all accounts created by exchanges are not applicable, please use the wallet with private key stored to perform following steps)**
 2. **Confirm the CRU ERC20 contract address: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)**
-3. ***Crust Official Claim Account***: [0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A](https://etherscan.io/address/0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A) 
+3. ***Crust Maxwell Claim Account***: [0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A](https://etherscan.io/address/0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A) 
    ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/cru_qr.png)
 Please confirm your transfering is successful and make sure it has **at least 6 confirmations**, **copy the hash value of this successful transaction** and do the following steps.
 
-### 2. Verify transactions and bridge tokens
+### II. Verify transactions and bridge tokens
 
 Go to the Claims page of [Crust Apps](https://apps.crust.network/#/claims)
 
 ![Apps Claim1](assets/claims/apps_claims1.png)
 
 1. Select the account of Maxwell Preview Network that you want to claim
-2. Input the Tx Hash you copied from  [step 1](#1-send-erc20-claim-transaction)
+2. Input the Tx Hash you copied from  [Step I](#i-send-erc20-claim-transaction)
 3. Click "Continue", this step will wait for a while, backend bridge service will check the legicimacy of your claim transaction. **The network may busy for a while, and you will receive a failure hint, if that, you can wait and try it later.**
 
 ![Apps Claims2](assets/claims/apps_claims2.png)
 
-### 3. Log in to MyEtherWallet and Connect to your wallet
+### III. Log in to MyEtherWallet and Connect to your wallet
 
 1. Open [MyEtherWallet](https://www.myetherwallet.com/access-my-wallet):
     - Click 'MEW wallet'
     - Connect the wallet which you **transfer ERC20 CRU**(The following process will use 'ImToken' and 'MetaMask' as example)
 
-**⚠️ Pay Attention, please ensure that the connected wallet address is same as the address where the transaction was successfully sent in [step 1](#1-send-erc20-claim-transaction)**(We need to sign the message with the private key of this address)
+**⚠️ Pay Attention, please ensure that the connected wallet address is same as the address where the transaction was successfully sent in [Step I](#i-send-erc20-claim-transaction)**(We need to sign the message with the private key of this address)
 
 ![Connect Wallet1](assets/claims/connect_wallet1.jpg)
 
@@ -72,9 +71,9 @@ If you use MetaMask, please click `MEW CX` after you access your Wallet
 
 ![Connect Wallet6](assets/claims/connect_wallet6.jpg)
 
-### 4. Get the Ethereum Signature
+### IV. Get the Ethereum Signature
 
-Make sure you completed [step 2](#2-verify-transactions-and-bridge-tokens), then continue with following steps
+Make sure you completed [Step II](#ii-verify-transactions-and-bridge-tokens), then continue with following steps
 
 1. In Crust Apps Claim page，**Click the gray box to copy the text**
 
@@ -84,13 +83,12 @@ Make sure you completed [step 2](#2-verify-transactions-and-bridge-tokens), then
 
 ![Sign Msg2](assets/claims/sign_msg2.png)
 
-3. There will be a pop-up in the ImToken side, Click "Confirm", **⚠️ Please be attention here, At this step, the communication between MyEtherWallet and ImToken may be interrupted and no authorization information will pop up. Please execute** [Step 3](#3-log-in-to-myetherwallet-to-connect-to-your-wallet) again.
+3. There will be a pop-up in the ImToken side, Click "Confirm", **⚠️ Please be attention here, At this step, the communication between MyEtherWallet and ImToken may be interrupted and no authorization information will pop up. Please execute** [Step III](#iii-log-in-to-myetherwallet-and-connect-to-your-wallet) again.
 
 ![Sign Msg3](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/confirm.jpeg)
 
 If you use MetaMask, you just need to make your sign through Metamask pop-up window.
 ![Sign mm](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/mm_sig.jpg)
-
 
 4. Go back to MyEtherWallet, click **Confirm Signing**
 
@@ -100,9 +98,9 @@ If you use MetaMask, you just need to make your sign through Metamask pop-up win
 
 ![Sign Msg5](assets/claims/sign_msg5.jpg)
 
-### 5. Claim CRUs
+### V. Claim CRUs
 
-Go back to **Crust Apps Claims** page, with the **Signed Message** copied in [step 4](#4-get-the-ethereum-signature):
+Go back to **Crust Apps Claims** page, with the **Signed Message** copied in [Step IV](#iv-get-the-ethereum-signature):
 
 1. Paste the signature into the area shown in the image below, and click "Confirm claim". The green area shown as the image below will appear if the claim is recorded on chain.
 
@@ -118,7 +116,7 @@ Go back to **Crust Apps Claims** page, with the **Signed Message** copied in [st
 
 ## References
 
-The code involved in claim process has been open source:
+The code involved in claim process has been **open source**:
 
 1. [Crust Bridge](https://github.com/decloudf/crust-bridge)
 2. [Crust Claims](https://github.com/crustio/crust/tree/master/cstrml/claims)
