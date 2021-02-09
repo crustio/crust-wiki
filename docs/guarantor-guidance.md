@@ -43,8 +43,9 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 ### Wait for the guarantee to take effect
 
 * Go to "Staking" —— "Account actions"
-* Find the validator you guaranteed, follow the steps shown in below 
-* It takes one era for the guarantee to take effect
+* Find the validator you guaranteed, follow the steps shown in below picture 
+* There are two values under the account you just guaranteed, the value below is "effective stake", it will take effect after waiting for an era
+
   
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/staked.png)

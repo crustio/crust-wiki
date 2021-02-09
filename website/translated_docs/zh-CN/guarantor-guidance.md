@@ -49,6 +49,6 @@ sidebar_label: Guarantor Guidance
 
 1. 点击上方“Staking”—— “Account actions”
 2. 找到“effective stake”，单击图中小箭头
-3. Staking动作生效需要一个era的时间
+3. 在刚刚担保的新账户下方有两个值，靠下面的这个值是生效的staking，需要等一个era时间生效
   
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/staked.png)

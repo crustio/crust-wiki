@@ -8,7 +8,7 @@ sidebar_label: Parameters
 
 | **Parameter Name**                   | **Details**                                                  | **Preview Network** | **Mainnet** |
 | :----------------------------------- | :----------------------------------------------------------- | :------------------ | :---------- |
-| **AuthoringRewardsInEra**            | Initial authoring reward(cru/era)                                | 150                 |             |
+| **AuthoringRewardsInEra**            | Initial authoring rewards(cru/era)                                | 150                 |             |
 | **StakingRewardsInRra**              | Initial staking reward(cru/era)                              | 600                 |             |
 | **DecreasePeriod**                      | The period to decrease reward                                   | 90                  | 365.25      |
 | **SessionDuration**                  | Duration of one session (min)                                | 10                  |             |

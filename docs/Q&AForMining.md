@@ -10,7 +10,8 @@ sidebar_label: Q&A
 The preview network provides staking and authoring rewards (total 540,000 CRU), and stores market rewards (the specific amount is to be determined). The staking and authoring rewards are distributed in 2 years. The initial reward for each era (6 hours) is 750CRU, including 600CRU staking reward and 150CRU authoring reward. The era reward is halved every 90 days. All rewards need to be collected manually.  At least one era in the receiving cycle.
 
 ### Types of rewards？
-There are three main types of rewards: authoring reward, staking reward and storage reward. All revenue from the preview network will be sent directly in the form of CRU
+There are three main types of rewards: authoring reward, staking reward and storage reward. All rewards will be distributed in the form of CRU.
+
 
 ## Validators and candidates
 
