@@ -19,7 +19,7 @@ If you want to **map Crust Maxwell CRU back to ERC20 CRU**, you can follow this 
 
 ### I. Bond Ethereum Address
 
-First of all, **⚠️you need to bind your Ethereum address. Please note that the system will directly judge the claim back transaction that is not bonded to the Ethereum address as a failure ⚠️**, so be sure to bind the Ethereum address you need to claim back.
+First of all, **⚠️you need to bind your Ethereum address. Please note that for claim back transactions that are not bonded with an Ethereum address, you may lose the claim back CRU⚠️**, so be sure to bind the Ethereum address you need to claim back.
 
 1. Through [Crust Apps's Extrinsics Page](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/extrinsics), select `claims` and `bondEth`, and fillin the Ethereum Address which you wanna claim back.
 
