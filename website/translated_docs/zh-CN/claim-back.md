@@ -19,7 +19,7 @@ sidebar_label: Crust Claim Back
 
 ### 一、绑定以太坊地址
 
-首先，**⚠️你需要绑定你的以太坊地址，请注意，对于没有绑定以太坊地址的转回交易，系统会直接判定为失败⚠️**，所以务必绑定你需要领回的以太坊地址
+首先，**⚠️你需要绑定你的以太坊地址，请注意，对于没有绑定以太坊地址的转回交易，你可能会丢失掉转回的CRU⚠️**，所以务必绑定你需要领回的以太坊地址
 
 1. 在[Crust Apps的发送交易页面](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/extrinsics)，选择`claims`和`bondEth`，并填入你想转回的以太坊地址
 
