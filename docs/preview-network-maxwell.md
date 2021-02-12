@@ -6,10 +6,6 @@ sidebar_label: Preview Network Maxwell
 
 Maxwell, as the preview network of Crust Network, implements all the core mechanisms of Crust, including token staking, decentralized storage market(DSM), and file retrieval. Maxwell runs in a real economic system, participants can lock and [claim](claims.md) thier CRU-ERC20 token to the Mexwell CRU token for staking, use the storage services and retrieval files from Maxwell. The mining revenue in Maxwell is the reward of the node, which can also be claimed back to Ethereum. The claim back server will be available soon.
 
-## Overview of benefits and rewards？
-The preview network provides staking and authoring rewards (total 540,000 CRU), and storage market rewards. The staking and authoring rewards are distributed in 2 years. The initial reward for each era (6 hours) is 750CRU, including 600CRU staking reward and 150CRU authoring reward. The era reward is halved every 90 days.
-
-
 ## How to Join Maxwell Preview Network
 
 There is 4 roles in Maxwell: **Validator and Guarantor, Storage User and Storage Merchant**
@@ -37,6 +33,11 @@ Currently on the preview network Maxwell, storage users are in the limited inter
 ### 4. Storage Merchant
 
 Waiting for DSM, comming soon
+
+
+## Benefits and Rewards
+The preview network provides staking and authoring rewards (total 540,000 CRU), and storage market rewards. The staking and authoring rewards are distributed in 2 years. The initial reward for each era (6 hours) is 750CRU, including 600CRU staking reward and 150CRU authoring reward. The era reward is halved every 90 days.
+
 
 ## Developer
 
