@@ -67,7 +67,7 @@ The following is an example:
 If node A staked 1000 CRUs itself, and was guaranteed with 200 CRUs. The staking upper limit is 1000 CRUs, with the guarantee fee set at 95%, and the staking income generated per round is 600 CRUs. Supposing the effective staking amount of the network is 2000 CRUs, we can work out the income of each Era:
 
 1. Validator's effective staking amount = MIN（1000， 1200）*（1000 / 1200） = 1000 * （1000 / 1200） = 833.3 CRU
-2. Guarantor's effective staking amount = MIN（1000，1200）* （200 / 1200）= 1000 * （200 / 1000） = 166.66 CRU
+2. Guarantor's effective staking amount = MIN（1000，1200）* （200 / 1200）= 1000 * （200 / 1200） = 166.66 CRU
 3. Validator's rewards = 600 * （833.3 / 2000） + 600 * （166.66 / 2000） * 5% = 252.49
 
 ### 2. Slash
