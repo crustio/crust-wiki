@@ -34,6 +34,11 @@ Currently on the preview network Maxwell, storage users are in the limited inter
 
 Waiting for DSM, comming soon
 
+
+## Benefits and Rewards
+The preview network provides staking and authoring rewards (total 540,000 CRU), and storage market rewards. The staking and authoring rewards are distributed in 2 years. The initial reward for each era (6 hours) is 750CRU, including 600CRU staking reward and 150CRU authoring reward. The era reward is halved every 90 days.
+
+
 ## Developer
 
 The developer documentation will be available at the same time as the storage market.
