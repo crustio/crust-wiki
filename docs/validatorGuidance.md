@@ -19,7 +19,7 @@ Refer to [Node Overview](node-overview.md) to setup your nodes.
 
 ## 3. Increase or Decrease the Amount of Self-staked Token
 
-You can change your self-staked token amount in [APPS](apps.crust.network). 
+You can change your self-staked token amount in [APPS](https://apps.crust.network). 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/bondmore.png)
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/unbond.png)
 

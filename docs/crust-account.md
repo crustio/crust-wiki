@@ -11,7 +11,7 @@ The types of assets stored in the Crust account can be referred to [crust tokens
 
 
 ## Create Accout
-Go to [Crust Apps](apps.crust.network), Click "Accounts" in the navigation bar at the top of the window, and click "Add account", as shown below.
+Go to [Crust Apps](https://apps.crust.network), Click "Accounts" in the navigation bar at the top of the window, and click "Add account", as shown below.
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/cloud_docImage/maxwell/en/3.1/3.1.1.png)
 
