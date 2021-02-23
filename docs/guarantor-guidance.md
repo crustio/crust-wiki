@@ -18,7 +18,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
 
 ## Guarantee
-### Step 1 go to guarantee page
+### Step 1, go to guarantee page
 
 * Go to“Staking” —— “Account actions”
 * Confirm your stash and controller account, follow the process shown below, click "Guarantee"
@@ -26,7 +26,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/guarantee.png)
 
 
-### Input guarantee information
+### Step 2, input guarantee information
 
 
 * Paste the copied address in the node list in the blank
@@ -40,7 +40,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/amount.png)
 
 
-### Wait for the guarantee to take effect
+### Step 3, wait for the guarantee to take effect
 
 * Go to "Staking" —— "Account actions"
 * Find the validator you guaranteed, follow the steps shown in below picture 
@@ -50,7 +50,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/staked.png)
 
-### Effective Stake
+## Effective Stake
 
 For example:
 
@@ -59,6 +59,20 @@ There is a validator who obtained a Stake Limit of 100 CRUs by providing storage
 At this time, if a guarantor guarantees the same validator, the guarantee amount is 400 CRUs. After waiting for an ERA, the effective stake contributed by the guarantor and validator are 80 and 20 CRUs respectively. That is, each part's effective stake are calculated from their contributions according to the proportion of the guaranteed CRU.
 
 
+## Cut guarantee
 
+If you want to reduce the guarantee of a validator, follow these steps.
+
+### Step1
+Staking- Account action- click the validator’s icon to copy it’s address
+![guarantee](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guarantee.png)
+
+### Step2
+Click the button- cut guarantee
+![cut1](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/cut_guarantee1.png)
+
+### Step3
+Paste the validator’s address and pick it in the caditate accounts and input the amount you want to cut.
+![cut2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/cut_guarantee2.png)
 
 

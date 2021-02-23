@@ -52,3 +52,19 @@ sidebar_label: Guarantor Guidance
 3. 在刚刚担保的新账户下方有两个值，靠下面的这个值是生效的staking，需要等一个era时间生效
   
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/staked.png)
+
+## 减少担保金
+
+如果您想减少担保给某节点的金额，可以进行一下步骤：
+
+#### 步骤1
+进入"网络" -> "质押" -> "账户操作" 找到并点击想要减少担保金的验证人的图标，如下图，点击图标即可复制该验证人的地址。
+![guarantee](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guarantee.png)
+
+#### 步骤2
+点击右侧又三个点组成的功能键，点击“减投”。
+![cut1](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/cut_guarantee1.png)
+
+#### 步骤3
+粘贴并选中对应的Validator地址，并输入想要减少的金额量，提交交易即可减少担保金。
+![cut2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/cut_guarantee2.png)
