@@ -1,7 +1,7 @@
 ---
 id: appsStorageIssue
-title: Apps Strorage Issue
-sidebar_label: Apps Strorage Issue
+title: Apps Storage Issues
+sidebar_label: Apps Storage Issues
 ---
 
 存储订单长时间“等待”有几个原因：
