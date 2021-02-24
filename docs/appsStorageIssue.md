@@ -1,7 +1,7 @@
 ---
 id: appsStorageIssue
-title: Apps Strorage Issues
-sidebar_label: Apps Strorage Issues
+title: Apps Storage Issues
+sidebar_label: Apps Storage Issues
 ---
 
 Here are a few possible reasons for the long "pending" of a storage order:
