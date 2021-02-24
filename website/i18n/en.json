@@ -144,9 +144,9 @@
         "title": "Storage Collateral",
         "sidebar_label": "Storage Collateral"
       },
-      "storeFilesInAPPS": {
-        "title": "Store Files in APPS",
-        "sidebar_label": "Store Files in APPS"
+      "storageUserGuide": {
+        "title": "Storage User's Guide",
+        "sidebar_label": "Storage User's Guide"
       },
       "sWorkerGuide": {
         "title": "sWorker",
