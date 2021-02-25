@@ -41,7 +41,7 @@ The Miner Information page also consists of two parts: miner statistics and the 
 ## Miner Statistics
 ![miner_info](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/miner_info.png)
 
-The miner statistics show the miner's balance, spare and used storage capacity, [storage guarantee deposit](), and stake limit.
+The miner statistics show the miner's balance, spare and used storage capacity and [storage collateral](merchantGuidance).
 
 ## File list
 
@@ -49,4 +49,4 @@ The file list displays the user files stored by the miner node.
 * File CID: the unique ID of the file in IPFS Network;
 * File Size: the size of the file; 
 * Expired on: the date when the file order expires;
-* Expected Earning: the storage rewards the file is expected to bring to the node. Refer to [Storage Merchant](storage-merchant.md) for the reward mechanism.
+* Expected Earning: the storage rewards the file is expected to bring to the node. Refer to [Storage Merchant](merchantGuidance.md) for the reward mechanism.
