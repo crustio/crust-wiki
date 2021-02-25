@@ -148,10 +148,6 @@
         "title": "Storage User's Guide",
         "sidebar_label": "Storage User's Guide"
       },
-      "appsStorageIssue": {
-        "title": "Apps Storage Issues",
-        "sidebar_label": "Apps Storage Issues"
-      },
       "sWorkerGuide": {
         "title": "sWorker",
         "sidebar_label": "sWorker"
