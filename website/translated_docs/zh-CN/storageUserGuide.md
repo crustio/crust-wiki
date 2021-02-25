@@ -5,8 +5,8 @@ sidebar_label: Storage User's Guide
 ---
 
 用户可以通过三种方式使用Crust网络存储文件：
-* 用户可以直接使用[Crust Apps]存储文件；
-* 用户可以通过原生IPFS配合[Crust Apps]存储文件；
+* 用户可以直接使用[Crust Apps](https://apps.crust.network/#/storage)存储文件；
+* 用户可以通过原生IPFS配合[Crust Apps](https://apps.crust.network/#/storage)存储文件；
 * 开发者可以使用Crust SDK开发存储功能；
 
 ## 1. 使用 Crust Apps 存储文件
