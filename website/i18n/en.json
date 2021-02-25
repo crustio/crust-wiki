@@ -140,9 +140,9 @@
         "title": "Storage Merchant",
         "sidebar_label": "Storage Merchant"
       },
-      "storageCollateral": {
-        "title": "Storage Collateral",
-        "sidebar_label": "Storage Collateral"
+      "merchantGuidance": {
+        "title": "Merchant Guidance",
+        "sidebar_label": "Merchant Guidance"
       },
       "storageUserGuide": {
         "title": "Storage User's Guide",
