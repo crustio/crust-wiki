@@ -24,3 +24,5 @@ The process for storage merchants to obtain files and storage rewards is shown i
 2. The storage fee (from users) is divided into two parts: 20% of the storage funds will be obtained by the first four merchants who store files, and 80% of the storage funds will be expanded to the entire network node staking reward;
 3. After Crust storage merchants monitor new orders on the chain, they can catch the user files through the IPFS network;
 4. After the Crust storage merchant completes the storage proof, the new user files will be collected by the workload report, which will increase the effective staking limit of the node. At the same time, the first four storage merchants who have completed the document storage proof will be able to participate in the distribution of 20% of the deposit;
+
+For detailed information, refer to [merchant guidance](merchantGuidance.md).
