@@ -145,10 +145,6 @@
         "title": "存储用户手册",
         "sidebar_label": "存储用户手册"
       },
-      "appsStorageIssue": {
-        "title": "Apps存储问题指南",
-        "sidebar_label": "Apps存储问题指南"
-      },
       "sWorkerGuide": {
         "title": "sWorker",
         "sidebar_label": "sWorker"
