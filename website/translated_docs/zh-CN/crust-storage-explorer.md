@@ -40,7 +40,7 @@ sPlorer大体分为两个子页面：通用信息页（General Infomation）和�
 ## 矿工统计信息
 ![miner_info](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/miner_info.png)
 
-矿工统计信息中主要展示了矿工的余额、矿工可用存储量和已使用存储量、矿工的[存储保障金]()、以及矿工的质押额度。
+矿工统计信息中主要展示了矿工的余额、矿工可用存储量和已使用存储量以及矿工的[存储保障金](merchantGuidance.md)度。
 
 ## 文件列表
 
@@ -48,4 +48,4 @@ sPlorer大体分为两个子页面：通用信息页（General Infomation）和�
 * 文件CID（File CID）：即是这个文件在IPFS网络中第一无二的ID；
 * 文件大小（File Size）：这个文件的大小；
 * 到期时间（Expired On）：这个文件订单将会在什么时候到期；
-* 预期收益（Expected Earning）：这个文件预期为节点带来的存储奖励金。存储奖励金机制参考[存储商户](storage-merchant.md)
+* 预期收益（Expected Earning）：这个文件预期为节点带来的存储奖励金。存储奖励金机制参考[存储商户](merchantGuidance.md)
