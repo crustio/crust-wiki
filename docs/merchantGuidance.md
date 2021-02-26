@@ -128,5 +128,5 @@ Stake limit of meaningful files = 10 * 0.1 CRU（Stake limit of SRD files）= 1 
 
 1. [Crust sManager](https://github.com/crustio/crust-smanager)
 2. [Decentralized Storage Market](DSM.md)
-3. [Crust Storage Explorer](crustStorageExplorer.md)
+3. [Crust Storage Explorer](crust-storage-explorer.md)
 4. [Economic White Paper](https://crust.network/download/ecowhitepaper_en.pdf)

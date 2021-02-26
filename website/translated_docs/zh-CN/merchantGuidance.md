@@ -128,5 +128,5 @@ sudo crust reload smanager
 
 1. [Crust sManager](https://github.com/crustio/crust-smanager)
 2. [去中心化存储市场](DSM.md)
-3. [Crust存储浏览器](crustStorageExplorer.md)
+3. [Crust存储浏览器](crust-storage-explorer.md)
 4. [经济白皮书](https://crust.network/download/ecowhitepaper_en.pdf)
