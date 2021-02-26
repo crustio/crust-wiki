@@ -37,6 +37,7 @@
       "Q&AForMining"
     ],
     "Storage": [
+      "storageOverview"
       "storageUserGuide",
       "merchantGuidance",
       "crustStorageExplorer",
