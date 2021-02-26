@@ -133,6 +133,10 @@
         "title": "设置链上身份",
         "sidebar_label": "设置链上身份"
       },
+      "storageOverview": {
+        "title": "概览",
+        "sidebar_label": "概览"
+      },
       "storageMerchant": {
         "title": "存储商户",
         "sidebar_label": "存储商户"
