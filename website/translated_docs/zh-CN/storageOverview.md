@@ -4,7 +4,6 @@ title: Overview
 sidebar_label: Overview
 ---
 
-## 概述
 [去中心化存储市场](DSM.md)是Crust网络的应用层协议，节点可以作为存储商户从而获得存储市场相关收益，用户可以通过存储市场来使用存储服务。
 
 ## 角色
