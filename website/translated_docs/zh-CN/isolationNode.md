@@ -146,21 +146,13 @@ sudo crust status
 ### 4.4 设置SRD占用率和节点存储容量
 请等待2分钟后执行.
 
-1 SRD占用率是指SRD文件使用硬盘的上限，默认是99%, 它的范围是0% ~ 99%。举个例子，假设硬盘容量为1000GB，SRD占用率为70%，这时sWorker会预留30%的空间不进行SRD，所以你可设置的SRD总量为700G。
-
-这个参数是为了保证硬盘工作在最优区间，让机器可以快速接受处理有意义订单。存储市场开放后同样大小有意义文件的收益最高是SRD的5倍。同时，部分硬盘与硬盘组织方式在硬盘满载的情况下效率会很低，甚至会影响work report的上报。**该参数与硬盘的性能有关，请自行决定**，可以通过调用以下接口更改，比如设置为95%：
+1 假设你/opt/crust/data/files下面有空间1000G, sWorker会保持硬盘有1%的空余空间, 那就设置990G, 如下：
 
 ```plain
-sudo crust tools set-srd-ratio 95
+sudo crust tools change-srd 990
 ```
 
-2 假设你/opt/crust/data/files下面有空间1000G，SRD占用率是75%, sWorker会保持硬盘有25%的空余空间, 那就设置750G, 如下：
-
-```plain
-sudo crust tools change-srd 750
-```
-
-3 这些命令有可能会执行失败，这是由于sworker还没有完全启动，请等待几分钟之后再尝试，如果依旧不行，请执行下属监控命令排查错误情况：
+2 这些命令有可能会执行失败，这是由于sworker还没有完全启动，请等待几分钟之后再尝试，如果依旧不行，请执行下属监控命令排查错误情况：
 
 ```plain
 sudo crust logs sworker
