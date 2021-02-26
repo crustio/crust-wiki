@@ -5,7 +5,7 @@ sidebar_label: Overview
 ---
 
 ## Overview
-[Decentralized Storage Market, DSM](DSM.md) is an application layer protocol of Crust network. Nodes can become storage merchants to obtain related benefits in the storage market. Users can use storage services through the storage market.
+[Decentralized Storage Market, DSM](DSM.md) is an application layer protocol of Crust network. With DSM, nodes can serve as storage merchants and get related benefits, users can get decentralized storage services.
 
 
 ## Roles
