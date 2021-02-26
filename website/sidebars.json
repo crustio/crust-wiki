@@ -38,8 +38,8 @@
     ],
     "Storage": [
       "storageUserGuide",
-      "crustStorageExplorer",
       "merchantGuidance",
+      "crustStorageExplorer",
       "Q&AForStorage"
     ]
   }

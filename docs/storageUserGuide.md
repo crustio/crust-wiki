@@ -1,7 +1,7 @@
 ---
 id: storageUserGuide
-title: Storage User's Guide
-sidebar_label: Storage User's Guide
+title: User Guidance
+sidebar_label: User Guidance
 ---
 
 Users can store files with Crust Network in three ways:

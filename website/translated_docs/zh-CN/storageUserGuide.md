@@ -1,7 +1,7 @@
 ---
 id: storageUserGuide
-title: Storage User's Guide
-sidebar_label: Storage User's Guide
+title: User Guidance
+sidebar_label: User Guidance
 ---
 
 用户可以通过三种方式使用Crust网络存储文件：

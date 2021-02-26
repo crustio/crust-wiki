@@ -6,7 +6,7 @@ sidebar_label: Merchant Guidance
 
 ## 介绍
 
-成为存储商户并成功存储用户文件，可以获得**订单奖励**，并且可以**增加[质押上限](https://wiki.crust.network/docs/zh-CN/validator#%E8%B4%A8%E6%8A%BC%E5%A5%96%E5%8A%B1)**
+成为存储商户并成功存储用户文件，可以获得**订单奖励**，并且可以**增加**[质押上限](validator.md#质押奖励)
 
 ## 接单
 
@@ -15,7 +15,7 @@ sidebar_label: Merchant Guidance
 ### 1. 运行默认sManager接单策略
 
 ```shell
-sudo docker pull crustio/crust-smanager
+sudo crust tools upgrade-image smanager
 sudo crust reload smanager 
 ```
 
@@ -127,6 +127,6 @@ sudo crust reload smanager
 ## 参考
 
 1. [Crust sManager](https://github.com/crustio/crust-smanager)
-2. [去中心化存储市场](https://wiki.crust.network/docs/zh-CN/DSM)
-3. [Crust存储浏览器](https://wiki.crust.network/docs/zh-CN/crustStorageExplorer)
+2. [去中心化存储市场](DSM.md)
+3. [Crust存储浏览器](crustStorageExplorer.md)
 4. [经济白皮书](https://crust.network/download/ecowhitepaper_en.pdf)
