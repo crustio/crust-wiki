@@ -140,6 +140,10 @@
         "title": "Set OnChain Identity",
         "sidebar_label": "Set OnChain Identity"
       },
+      "storageOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
       "storageMerchant": {
         "title": "Storage Merchant",
         "sidebar_label": "Storage Merchant"
