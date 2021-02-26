@@ -1,6 +1,6 @@
 ---
 id: validator
-title: validator
+title: Validator
 sidebar_label: Validator
 ---
 

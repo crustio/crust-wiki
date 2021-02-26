@@ -54,7 +54,7 @@ class HomeNav extends React.Component {
                     aosDelay="300"
                 />
                 <NavItem
-                    href={this.props.docUrl("storeFilesInAPPS.html")}
+                    href={this.props.docUrl("storageUserGuide.html")}
                     title="Storage"
                     content="Information and guides on how to store files by using Crust Network"
                     aosDelay="600"

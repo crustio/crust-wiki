@@ -37,9 +37,9 @@
       "Q&AForMining"
     ],
     "Storage": [
-      "storeFilesInAPPS",
+      "storageUserGuide",
+      "merchantGuidance",
       "crustStorageExplorer",
-      "storageCollateral",
       "Q&AForStorage"
     ]
   }

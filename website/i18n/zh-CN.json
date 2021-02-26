@@ -137,13 +137,13 @@
         "title": "存储商户",
         "sidebar_label": "存储商户"
       },
-      "storageCollateral": {
-        "title": "存储保证金",
-        "sidebar_label": "存储保证金"
+      "merchantGuidance": {
+        "title": "存储商户指南",
+        "sidebar_label": "存储商户指南"
       },
-      "storeFilesInAPPS": {
-        "title": "使用Crust APPs存储文件",
-        "sidebar_label": "使用Crust APPs存储文件"
+      "storageUserGuide": {
+        "title": "存储用户指南",
+        "sidebar_label": "存储用户指南"
       },
       "sWorkerGuide": {
         "title": "sWorker",

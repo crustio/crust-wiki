@@ -96,6 +96,10 @@
         "title": "Member Node",
         "sidebar_label": "Member Node"
       },
+      "merchantGuidance": {
+        "title": "Merchant Guidance",
+        "sidebar_label": "Merchant Guidance"
+      },
       "newBond": {
         "title": "New Bond",
         "sidebar_label": "New Bond"
@@ -140,13 +144,9 @@
         "title": "Storage Merchant",
         "sidebar_label": "Storage Merchant"
       },
-      "storageCollateral": {
-        "title": "Storage Collateral",
-        "sidebar_label": "Storage Collateral"
-      },
-      "storeFilesInAPPS": {
-        "title": "Store Files in APPS",
-        "sidebar_label": "Store Files in APPS"
+      "storageUserGuide": {
+        "title": "User Guidance",
+        "sidebar_label": "User Guidance"
       },
       "sWorkerGuide": {
         "title": "sWorker",
