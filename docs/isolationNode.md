@@ -151,21 +151,13 @@ If the following five services are running, it means that Crust node started suc
 
 Please wait about 2 minutes and execute the following commands.
 
-1 SRD ratio refers to the upper limit of the hard disk used by SRD files, the default is 70%, and its range is 0% ~ 95%. For example, suppose the hard disk capacity is 1000GB and the SRD ratio is 70%. At this time, sWorker will reserve 30% of the space without SRD, so the total amount of SRD you can set is 700G.
-
-This parameter is to ensure that the hard disk works in the optimal status, so that the machine can quickly accept and process meaningful file orders. After the opening of the storage market, the income of meaningful files of the same size is up to 5 times that of SRD. At the same time, the efficiency of some hard disks and hard disk organization methods will be very low when the hard disk is fully loaded, and even affect the reporting of work reports. **This parameter is related to the performance of the hard disk, please decide by yourself, you can change it by calling the following interface**, for example, set to 75%:
+1  Assuming you have 1000G of space under /opt/crust/data/files, sWorker will keep the hard disk with 1% free space, then set 990G, as follows:
 
 ```plain
-sudo crust tools set-srd-ratio 75
+sudo crust tools change-srd 990
 ```
 
-2 Assuming you have 1000G of space under /opt/crust/data/files, and the SRD ratio is 75%, sWorker will keep the hard disk with 25% free space, then set 750G, as follows:
-
-```plain
-sudo crust tools change-srd 750
-```
-
-3 These commands may fail to execute. This is because sworker has not been fully started. Please wait a few minutes and try again. If it still does not work, please execute the subordinate monitoring commands to troubleshoot the error:
+2 These commands may fail to execute. This is because sworker has not been fully started. Please wait a few minutes and try again. If it still does not work, please execute the subordinate monitoring commands to troubleshoot the error:
 
 ```plain
 sudo crust logs sworker
