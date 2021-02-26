@@ -144,6 +144,10 @@
         "title": "Storage Merchant",
         "sidebar_label": "Storage Merchant"
       },
+      "storageOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
       "storageUserGuide": {
         "title": "User Guidance",
         "sidebar_label": "User Guidance"

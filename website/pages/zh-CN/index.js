@@ -53,7 +53,7 @@ class HomeNav extends React.Component {
                     aosDelay="300"
                 />
                 <NavItem
-                    href={this.props.docUrl("storageUserGuide.html")}
+                    href={this.props.docUrl("storageOverview.html")}
                     title="存储"
                     content="使用Crust网络存储文件"
                     aosDelay="600"
