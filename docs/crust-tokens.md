@@ -24,6 +24,8 @@ following aspects:
 2. Users can use it to obtain discounts related to storage market rates
 3. Merchants can use it to obtain discounts related to storage market rates
 4. Can be used to exchange CRU in market revenue pool
+5. Used for privacy encryption of data, exchange and trading of data assets, and
+censorship governance of data content
 
 ## Candy
 The Candy is often distributed in the form of Crust community event rewards. After the Crust mainnet is launched, Candy can be exchanged for CRUs at an exchange rate of 1000:1.
