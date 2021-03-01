@@ -5,7 +5,7 @@ sidebar_label: DSM
 ---
 
 
-DSM (Decentralized Storage Market) essentially provides a decentralized version of IPFS pinning service. It allows storage users to place storage orders on the chain, and the files (IPFS CID list) specified in a particular storage order will be stored by nodes. DSM also takes care of incentivizing storage nodes to provide retrieving service.
+DSM (Decentralized Storage Market) provides a decentralized version of IPFS pinning service. It allows storage users to place storage orders on the chain, and the files (IPFS CID list) specified in a particular storage order will be stored by nodes. DSM also takes care of incentivizing storage nodes to provide retrieving service.
  
 DSM contains 3 major mechanisms. For more details refer to [Crust economy whitepaper](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf):
 ## 1. Pricing Mechanism
