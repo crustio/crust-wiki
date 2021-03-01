@@ -11,5 +11,3 @@ This section contains guides to build modules and applications based on Crust Ne
 - [Developer Guidance](build-developer-guidance.md) - Series of pages to describe SDK and API specifications of Crust Network, to help developers start to build applications on Crust Network.
 
 More details coming soon...
-
-
