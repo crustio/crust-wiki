@@ -13,6 +13,18 @@
         "title": "BitSwap",
         "sidebar_label": "BitSwap"
       },
+      "buildDevGuidance": {
+        "title": "Developer Guidance: Start Building Applications",
+        "sidebar_label": "Developer Guidance: Start Building Applications"
+      },
+      "buildGettingStarted": {
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
+      },
+      "buildMinerGuidance": {
+        "title": "Miner Guidance: Improve DSM Strategy",
+        "sidebar_label": "Miner Guidance: Improve DSM Strategy"
+      },
       "claimBack": {
         "title": "Crust Claim Back",
         "sidebar_label": "Crust Claim Back"
@@ -33,10 +45,6 @@
         "title": "Account",
         "sidebar_label": "Account"
       },
-      "crustBuilderGuide": {
-        "title": "Crust builders starter’s guide",
-        "sidebar_label": "Crust builders starter’s guide"
-      },
       "crustConsensus": {
         "title": "Crust Consensus",
         "sidebar_label": "Crust Consensus"
@@ -48,10 +56,6 @@
       "crustTokens": {
         "title": "Crust Tokens",
         "sidebar_label": "Crust Tokens"
-      },
-      "crustIntegrationGuide": {
-        "title": "Crust Integration guide",
-        "sidebar_label": "Crust Integration guide"
       },
       "DSM": {
         "title": "DSM",
