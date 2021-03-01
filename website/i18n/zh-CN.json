@@ -13,6 +13,18 @@
         "title": "BitSwap",
         "sidebar_label": "BitSwap"
       },
+      "buildDevGuidance": {
+        "title": "开发者指南：开始构建应用程序",
+        "sidebar_label": "开发者指南：开始构建应用程序"
+      },
+      "buildGettingStarted": {
+        "title": "开始",
+        "sidebar_label": "开始"
+      },
+      "buildMinerGuidance": {
+        "title": "矿工指南：改进DSM策略",
+        "sidebar_label": "矿工指南：改进DSM策略"
+      },
       "claims": {
         "title": "CRU 认领",
         "sidebar_label": "CRU 认领"
