@@ -41,7 +41,10 @@ Next, you need to initiate a CRU transfer transaction to the ***Crust Maxwell Ce
 
 ### III. Follow-up
 
-After performing Step I and II, all claim back transactions will be cleared within a claim back cycle.
+After performing Step I and II:
+
+1. All claim back transactions will be cleared within a claim back cycle
+2. The claim back sender's address is same as claim address: [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b), you can find all the transactions and operations in this address
 
 ## Reference
 
