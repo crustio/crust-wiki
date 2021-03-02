@@ -20,12 +20,18 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 
 ### I. Send ERC20 Claim Transaction
 
-First of all, you need to transfer CRUs to ***Crust Maxwell Claim Account*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
+First of all, you need to transfer CRUs to ***Crust Maxwell Claim Address*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
 
 1. **⚠️ Make sure you have the authority to make signature with the private key of the account (all accounts created by exchanges are not applicable, please use the wallet with private key stored to perform following steps)**
-2. **Confirm the CRU ERC20 contract address: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)**
-3. ***Crust Maxwell Claim Account***: [0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A](https://etherscan.io/address/0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A) 
-   ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/cru_qr.png)
+2. **Confirm the CRU ERC20: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)**
+3. ***Crust Maxwell Claim Address***:
+   - New Claim Address(Contract): [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
+   ![new claim address](assets/claims/new_claim_addr.png)
+   - Old Claim Address: [0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A](https://etherscan.io/address/0x2B2b3F6a8c08d789fB48e5316Fd314e4662fFA2A)
+   ![old claim address](assets/claims/old_claim_addr.png)
+
+> Both old and new claim accounts are legal
+
 Please confirm your transfering is successful and make sure it has **at least 6 confirmations**, **copy the hash value of this successful transaction** and do the following steps.
 
 ### II. Verify transactions and bridge tokens
