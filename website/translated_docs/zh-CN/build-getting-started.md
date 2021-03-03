@@ -8,6 +8,6 @@ sidebar_label: Getting Started
 
 - [矿工指南](build-miner-guidance.md): -包含sManager（存储管理器）模块的详细信息，以及矿工如何自定义和优化与DSM（分散存储市场）有关的策略。
 
-- [矿工指南](build-miner-guidance.md): -描述Crust Network的SDK和API规范，以帮助开发人员开始在Crust Network上构建应用程序。
+- [开发者指南](build-developer-guidance.md): -描述Crust Network的SDK和API规范，以帮助开发人员开始在Crust Network上构建应用程序。
 
 更多详情即将推出...
