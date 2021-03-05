@@ -58,6 +58,12 @@ sudo crust reload smanager
 
 ### 2. 计算订单奖励
 
+#### 自动计算奖励工具
+
+请参考[cst](https://www.npmjs.com/package/crust-storage-tool)运行来自动清算奖励
+
+#### 手动计算奖励
+
 订单奖励**在领取之前需要进行计算**。目前，商户可以执行3个操作以计算订单奖励：
 
 1. 通过[sPlorer](https://splorer.crust.network/home/mr)查看节点接单信息

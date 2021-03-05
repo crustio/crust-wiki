@@ -13,17 +13,37 @@
         "title": "BitSwap",
         "sidebar_label": "BitSwap"
       },
+      "buildCrustKits": {
+        "title": "Crust Development Kits(CDKs)",
+        "sidebar_label": "Crust Development Kits(CDKs)"
+      },
+      "buildCrustJs": {
+        "title": "crust.js",
+        "sidebar_label": "crust.js"
+      },
       "buildDevGuidance": {
-        "title": "Developer Guidance: Start Building Applications",
-        "sidebar_label": "Developer Guidance: Start Building Applications"
+        "title": "Start Building Applications",
+        "sidebar_label": "Start Building Applications"
       },
       "buildGettingStarted": {
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
       },
-      "buildMinerGuidance": {
-        "title": "Miner Guidance: Improve DSM Strategy",
-        "sidebar_label": "Miner Guidance: Improve DSM Strategy"
+      "buildHelloCrust": {
+        "title": "Hello Crust",
+        "sidebar_label": "Hello Crust"
+      },
+      "buildIPFSSDKs": {
+        "title": "IPFS SDKs",
+        "sidebar_label": "IPFS SDKs"
+      },
+      "buildnode": {
+        "title": "Crust Node",
+        "sidebar_label": "Crust Node"
+      },
+      "buildSmanager": {
+        "title": "Crust Storage Manager",
+        "sidebar_label": "Crust Storage Manager"
       },
       "claimBack": {
         "title": "Crust Claim Back",

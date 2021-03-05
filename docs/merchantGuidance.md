@@ -58,6 +58,12 @@ Click on the "Register" button. The registration requires a threshold collateral
 
 ### 2. Calculating order rewards
 
+#### Auto calculation tool
+
+Please use [cst](https://www.npmjs.com/package/crust-storage-tool) to calculate your order reward.
+
+#### Mannual calculation way
+
 Order rewards **need to be calculated before collection**. Currently, there are 3 ways for merchants to calculate their order rewards:
 
 1. Checking node order-taking information through [sPlorer](https://splorer.crust.network/home/mr)：
