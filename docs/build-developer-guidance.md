@@ -1,18 +1,19 @@
 ---
 id: buildDevGuidance
-title: Developer Guidance: Start Building Applications
-sidebar_label: Developer Guidance: Start Building Applications
+title: Start Building Applications
+sidebar_label: Start Building Applications
 ---
 
-This page contains a code sample to demonstrate how to upload a file to IPFS, and place a storage order to get the file stored in Crust Network. After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in WebSite/DApp frontend hosting, content/media delivery, cloud storage, etc.
+This doc contains a code sample to demonstrate how to upload a file to IPFS, and place a storage order to get the file stored in Crust Network. After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in WebSite/DApp frontend hosting, content/media delivery, cloud storage, etc.
 
 The code sample is on GitHub repo: https://github.com/crustio/crust-demo
 
 More details coming soon…
 
-
 ## 1 Overview
+
 ### 1.1 Storage process
+
 Using IPFS and Crust Network, developers can follow below process to upload, store and distribute files：
 
 - Upload the file to IPFS, and get the file `CID` (a unique identifier generated based on the content of each file) and file `Size` (the actual size of the file stored in IPFS, which is different from the original file size)

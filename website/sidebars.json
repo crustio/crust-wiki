@@ -23,8 +23,31 @@
     ],
     "Build": [
       "buildGettingStarted",
-      "buildDevGuidance",
-      "buildMinerGuidance"
+      {
+        "type": "subcategory",
+        "label": "Basics",
+        "ids": [
+          "buildCrustKits",
+          "buildIPFSSDKs",
+          "buildCrustJs"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Development Guide",
+        "ids": [
+          "buildHelloCrust",
+          "buildDevGuidance"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Miner Guide",
+        "ids": [
+          "buildSmanager",
+          "buildNode"
+        ]
+      }
     ],
     "Mining": [
       "nodeOverview",
