@@ -26,8 +26,10 @@ sPlorer大体分为两个子页面：通用信息页（General Infomation）和�
 
 ## 节点信息
 
+
 节点信息以表格形式分页展示了全网节点的基本信息:
 ![general_info2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/general_info2.png)
+用户可以在搜索栏输入Group Owner节点的Controller地址来查看对应Owner信息。如果要查的节点是Isolation节点，则直接输入Isolation节点的Controller地址。
 
 表中每一行都对应了一个Group Owner的信息。其中，“质押额度”展现了该Group Owner的总质押额度，节点ID一栏用于展示该Group Owner下所有的Member节点，可以点击 "..."按钮展开查看:
 ![general_info2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/nodes.png)

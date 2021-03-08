@@ -29,6 +29,7 @@ The general statistics are reflected in the above figure, including
 
 The primary information of the nodes in the entire network is displayed in tables as shown below.
 ![general_info2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/general_info2.png)
+Users can enter the controller address of one group owner in the search bar to view the corresponding group owner information. If the node to be looked up is an isolation node, enter the controller address of the isolation node directly.
 
 Each row in the table contains the information of a Group Owner. The "Stake Limit" is the total staking amount of the Group Owner. The Node ID includes all the Member nodes of the Group Owner, and you can click on the "..." button to unfold them.
 ![general_info2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/nodes.png)
