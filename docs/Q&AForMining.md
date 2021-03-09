@@ -90,6 +90,30 @@ Node storage capacity (required) is to set specific disk capacity and issue SRD 
 The guarantee fee set during era1 will take effect during era2
 If the validator has set the guarantee fee multiple times during era1, the last setting will take effect
 
+### As a guarantor, how to cut guarantee?
+>Note: Dosing operation is not supported.If more than one person is guaranteed,need to be cuted one by one
+
+1) Through the STASH account of the guarantor, check out all the node's accounts guaranteed by the guarantor and the guarantee amount
+![pic](assets/qa/checkguarantor.jpg)
+
+2) Cut guarantee for each node
+
+![pic](assets/qa/cutguarantor.jpg)
+
+3) Query through the account of the guaranteed node found in step 1 and click on the account to enter the "guaranteed account", enter the amount of cancellation of the guarantee in the "amount", and click CutGuarantee.
+
+![pic](assets/qa/cutguarantor1.jpg)
+
+### Unbond
+
+>Note: **If you want to unbond all amount, the guarantor needs to cut all guarantees,** and other roles can unbond them directly
+
+![pic](assets/qa/unbond1.jpg)
+
+Enter the amount  in "unbond amount". The unbond process lasts for 28 eras. During this period, it cannot be used as stake. The funds will be transferrable after the unbond period.
+
+![pic](assets/qa/unbond2.jpg)
+
 ### Member joins the group and reports "swork.IdentityNotExist" error, how to solve it?
 This is because joining a group requires a unique identity on the chain, so you need to wait for the first report of the work report (about half a hour), and then perform the operation of joining
 
