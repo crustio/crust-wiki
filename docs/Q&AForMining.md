@@ -106,7 +106,7 @@ If the validator has set the guarantee fee multiple times during era1, the last 
 
 ### Unbond
 
->Note: If you want to unbond all amount, the guarantor needs to cut all guarantees, and other characters can unbond them directly
+>Note: **If you want to unbond all amount, the guarantor needs to cut all guarantees,** and other roles can unbond them directly
 
 ![pic](assets/qa/unbond1.jpg)
 
