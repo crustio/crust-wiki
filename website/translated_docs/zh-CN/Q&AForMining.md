@@ -75,7 +75,6 @@ swork，选择groups(AccountId)方法，然后选择创建Group的账号，最�
 ### 每次领取奖励，怎么查看收益？
 打开[Subscan](https://crust.subscan.io/)
 用你的收益账户查询，"收益和罚金"中可以看到领取到的数量
-![图片](assets/qa/subscanreward1.jpg)
 ![图片](assets/qa/subscanreward2.jpg)
 
 ### 更换收益账户
@@ -94,6 +93,31 @@ SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁�
 ------era1------era2------
 在era1期间设置的guarantee fee会era2期间生效
 如果验证人在era1期间设置过多次guarantee fee,以最后一次设置为准
+
+### 作为担保人，如何撤销担保？
+>注：暂时不支持配量操作，多个被担保的话需要依次撤销担保
+
+1)通过担保人的STASH账户查询出该账户担保的所有节点账户和担保额度
+
+![图片](assets/qa/checkguarantor.jpg)
+
+2)撤销对每个节点的担保
+
+![图片](assets/qa/cutguarantor.jpg)
+
+3)通过在步骤一中查询到的被担保人的账户查询并点击该账户，使其进入“guaranteed account”在“amount”中输入撤销担保的额度，点击CutGuarantee.
+
+![图片](assets/qa/cutguarantor1.jpg)
+
+### 解除绑定
+
+>注：解除绑定的金额不能超过可解绑的金额，如果想全部解绑，担保人需要先撤销所有担保，其他角色可直接解绑
+
+![图片](assets/qa/unbond1.jpg)
+
+在“unbond amount”中输入需要解绑的金额，解绑过程持续28个era，在此期间不能作为抵押，该资金将可在解除绑定期后提取
+
+![图片](assets/qa/unbond2.jpg)
 
 ### Member加入group,报"swork.IdentityNotExist"错误
 这是因为加入group需要有链上唯一身份，所以需要等待第一次上报work report后（半小大概时），再执行加入的操作。
