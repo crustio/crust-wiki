@@ -4,10 +4,40 @@ title: Getting Started
 sidebar_label: Getting Started
 ---
 
-本节包含基于Crust Network构建应用程序和相关模块的指南。开发人员能够在此处找到有关SDK，API规范和工具包的最新信息。
+Welcome to the builders section of the Crust Wiki!
 
-- [矿工指南](build-miner-guidance.md): -包含sManager（存储管理器）模块的详细信息，以及矿工如何自定义和优化与DSM（分散存储市场）有关的策略。
+Here you will be able to find the most up-to-date information on the status of the development tools in the Crust ecosystem. We are always adding new tools and frameworks as we learn about them so if you are working on something that should be included please reach out to us on [Discord](https://discord.gg/D97GGQndmx).
 
-- [开发者指南](build-developer-guidance.md): -描述Crust Network的SDK和API规范，以帮助开发人员开始在Crust Network上构建应用程序。
+## How to Read
 
-更多详情即将推出...
+**Basic** listed all the development kits which both developer and miner uses. If you want to quickly start, you can just jump this section.
+
+We highly recommended **Developers** started with [Hello Crust](build-hello-crust.md), you'll learn a simple but super fundamental techniques of Crust.
+
+**Miners** please refer the miners guide.
+
+## Basics
+
+- [Crust Development Kits](build-crust-sdk.md) - CDKs are the fundamental toolkits for developing storage and chain's functions.
+- [IPFS SDKs](build-ipfs-sdk.md) - Crust related IPFS SDKs.
+- [crust.js](build-crustjs.md) - Types definition of Crust Network.
+
+## Development Guide
+
+- [Hello Crust](build-hello-crust.md) - Tutorial for hosting website, *this doc will help you to understand what is Crust Storage function in a super intuitive way*.
+- [Start Building Applications](build-developer-guidance.md) - Build a simple storage application with code sample.
+
+## Miner Guide
+
+- [sManager](build-smanager.md) - Storage manager integrated with Crust, IPFS and sWorker, contains different strategies of storage-order picking.
+- [Crust Node](build-node.md) - Node management tool with Chain, sWorker, API, IPFS and sManager.
+- File Settlement - Comming soon.
+
+## Scenarios
+
+Comming soon
+
+## Hackathon
+
+Comming soon
+

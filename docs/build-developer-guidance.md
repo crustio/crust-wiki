@@ -1,7 +1,7 @@
 ---
 id: buildDevGuidance
-title: Start Building Applications
-sidebar_label: Start Building Applications
+title: Building Applications
+sidebar_label: Building Applications
 ---
 
 This doc contains a code sample to demonstrate how to upload a file to IPFS, and place a storage order to get the file stored in Crust Network. After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in WebSite/DApp frontend hosting, content/media delivery, cloud storage, etc.
