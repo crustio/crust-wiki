@@ -146,7 +146,7 @@ sudo crust status
 If the following five services are running, it means that Crust node started successfully.
 ![pic](assets/mining/all_run.png)
 
-### 4.4 Set Node Storage Capacity
+### 4.4 Set Node Storage Capacity and run SRD
 Please wait about 2 minutes and execute the following commands.
 
 1  Assuming you have 1000G of space under /opt/crust/data/files, sWorker will keep the hard disk with 1% free space, then set 990G, as follows:

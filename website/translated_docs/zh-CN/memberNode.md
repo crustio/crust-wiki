@@ -142,7 +142,7 @@ sudo crust status
 如下上面五个服务运行表示启动成功：
 ![图片](assets/mining/all_run.png)
 
-### 4.4 设置SRD占用率和节点存储容量
+### 4.4 设置节点存储容量并运行SRD
 请等待2分钟后执行.
 
 1 假设你/opt/crust/data/files下面有空间1000G, sWorker会保持硬盘有1%的空余空间, 那就设置990G, 如下：
