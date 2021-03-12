@@ -14,16 +14,16 @@
         "sidebar_label": "BitSwap"
       },
       "buildCrustKits": {
-        "title": "Crust Development Kits(CDKs)",
-        "sidebar_label": "Crust Development Kits(CDKs)"
+        "title": "Crust Development Kits",
+        "sidebar_label": "Crust Development Kits"
       },
       "buildCrustJs": {
         "title": "crust.js",
         "sidebar_label": "crust.js"
       },
       "buildDevGuidance": {
-        "title": "Start Building Applications",
-        "sidebar_label": "Start Building Applications"
+        "title": "Building Applications",
+        "sidebar_label": "Building Applications"
       },
       "buildGettingStarted": {
         "title": "Getting Started",
@@ -33,11 +33,27 @@
         "title": "Hello Crust",
         "sidebar_label": "Hello Crust"
       },
+      "buildIntegrationCloudStorage": {
+        "title": "Cloud storage",
+        "sidebar_label": "Cloud storage"
+      },
+      "buildIntegrationContentDelivery": {
+        "title": "Content delivery",
+        "sidebar_label": "Content delivery"
+      },
+      "buildIntegrationOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
+      "buildIntegrationWebsiteHosting": {
+        "title": "Website hosting",
+        "sidebar_label": "Website hosting"
+      },
       "buildIPFSSDKs": {
         "title": "IPFS SDKs",
         "sidebar_label": "IPFS SDKs"
       },
-      "buildnode": {
+      "buildNode": {
         "title": "Crust Node",
         "sidebar_label": "Crust Node"
       },

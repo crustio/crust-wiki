@@ -1,7 +1,7 @@
 ---
 id: buildDevGuidance
-title: Developer Guidance: Start Building Applications
-sidebar_label: Developer Guidance: Start Building Applications
+title: Building Applications
+sidebar_label: Building Applications
 ---
 
 此页面包含一个代码示例，以演示如何将文件上传到IPFS，并下达存储订单以将文件存储在Crust Network中。之后，可以通过标准IPFS接口和网关从任何地方检索文件。这个场景简单通用。它可以广泛应用于WebSite / DApp前端托管，内容/媒体分发，云存储等。
