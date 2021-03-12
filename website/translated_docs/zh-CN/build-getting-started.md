@@ -25,7 +25,14 @@ We highly recommended **Developers** started with [Hello Crust](build-hello-crus
 ## Development Guide
 
 - [Hello Crust](build-hello-crust.md) - Tutorial for hosting website, *this doc will help you to understand what is Crust Storage function in a super intuitive way*.
-- [Start Building Applications](build-developer-guidance.md) - Build a simple storage application with code sample.
+- [Building Applications](build-developer-guidance.md) - Build a simple storage application with code sample.
+
+## Integration Guide
+
+- [Overview](build-integration-overview.md) - Realize various scenarios based on the Crust network.
+- [Website hosting](build-integration-website-hosting.md) - Build a decentralized website/DAPP.
+- [Cloud storage](build-integration-cloud-storage.md) - Decentralized solution for storing files.
+- [Content delivery](build-integration-content-delivery.md) - Safe and efficient file sharing business.
 
 ## Miner Guide
 
