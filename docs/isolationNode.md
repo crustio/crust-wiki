@@ -147,7 +147,7 @@ If the following five services are running, it means that Crust node started suc
 
 ![pic](assets/mining/all_run.png)
 
-### 4.4 Set node storage capacity and run SRD
+### 4.4 Set Node Storage Capacity and Run SRD
 
 Please wait about 2 minutes and execute the following commands.
 
