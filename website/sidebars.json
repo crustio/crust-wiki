@@ -42,6 +42,16 @@
       },
       {
         "type": "subcategory",
+        "label": "Integration Guide",
+        "ids": [
+          "buildIntegrationOverview",
+          "buildIntegrationWebsiteHosting",
+          "buildIntegrationCloudStorage",
+          "buildIntegrationContentDelivery"
+        ]
+      },
+      {
+        "type": "subcategory",
         "label": "Miner Guide",
         "ids": [
           "buildSmanager",

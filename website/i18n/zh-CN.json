@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "下一篇",
     "previous": "上一篇",
-    "tagline": "wiki for crust network",
+    "tagline": "Wiki for crust network",
     "docs": {
       "architecture": {
         "title": "架构",
@@ -14,16 +14,52 @@
         "sidebar_label": "BitSwap"
       },
       "buildDevGuidance": {
-        "title": "开发者指南：开始构建应用程序",
-        "sidebar_label": "开发者指南：开始构建应用程序"
+        "title": "Building Applications",
+        "sidebar_label": "Building Applications"
       },
       "buildGettingStarted": {
-        "title": "开始",
-        "sidebar_label": "开始"
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
       },
-      "buildMinerGuidance": {
-        "title": "矿工指南：改进DSM策略",
-        "sidebar_label": "矿工指南：改进DSM策略"
+      "buildHelloCrust": {
+        "title": "Hello Crust",
+        "sidebar_label": "Hello Crust"
+      },
+      "buildIntegrationCloudStorage": {
+        "title": "Cloud storage",
+        "sidebar_label": "Cloud storage"
+      },
+      "buildIntegrationContentDelivery": {
+        "title": "Content delivery",
+        "sidebar_label": "Content delivery"
+      },
+      "buildIntegrationOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
+      "buildIntegrationWebsiteHosting": {
+        "title": "Website hosting",
+        "sidebar_label": "Website hosting"
+      },
+      "buildIPFSSDKs": {
+        "title": "IPFS SDKs",
+        "sidebar_label": "IPFS SDKs"
+      },
+      "buildCrustKits": {
+        "title": "Crust Development Kits",
+        "sidebar_label": "Crust Development Kits"
+      },
+      "buildCrustJs": {
+        "title": "crust.js",
+        "sidebar_label": "crust.js"
+      },
+      "buildNode": {
+        "title": "Crust Node",
+        "sidebar_label": "Crust Node"
+      },
+      "buildSmanager": {
+        "title": "Crust Storage Manager",
+        "sidebar_label": "Crust Storage Manager"
       },
       "claims": {
         "title": "CRU 认领",
