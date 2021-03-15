@@ -73,7 +73,7 @@ crust-cli status QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
 
 **Congrats**, you can access your website everywhere now with:
 
-https://ipfs/io/ipfs/QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
+https://ipfs.io/ipfs/QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
 
 ![hello-crust](assets/build/hello-crust.png)
 
