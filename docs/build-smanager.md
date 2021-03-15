@@ -271,7 +271,7 @@ sManager judged the current free space when trying to pulling file from IPFS and
 
 #### 4.2 File replica judging
 
-sManager will get file's replica info **before pulling file**. When the replica is full(currently is 70, defined by `MaxFileReplicas`), the node will refuse to pulling this file.
+sManager will get file's replica info **before pulling file**. When the replica is full(currently is 200, defined by `MaxFileReplicas`), the node will refuse to pulling this file.
 
 ```ts
   /**

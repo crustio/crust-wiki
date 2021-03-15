@@ -10,7 +10,7 @@ We will build and host a simple React website during this tutorial. **You might 
 
 ### 1. Setup
 
-> Make sure you have **Node.js** env, refer [this](https://nodejs.org/en/download/package-manager/) to install
+> Please make sure you have **Node.js** env, refer [this](https://nodejs.org/en/download/package-manager/) to install
 
 - Install Crust Command Line
 
@@ -32,6 +32,8 @@ PUBLIC_URL=./ npm run build
 ```
 
 ### 2. Pin and Publish
+
+> Please make sure you have **IPFS** running locally, refer [this](https://ipfs.io/#install) to install and run
 
 - Login with seeds
 

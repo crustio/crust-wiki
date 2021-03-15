@@ -33,15 +33,15 @@ Owner节点负责参与出块竞争，需要生成并绑定Controller&Stash账�
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.8.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v0.9.0.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v0.8.0.tar.gz
+tar -xvf v0.9.0.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-0.8.0
+cd crust-node-0.9.0
 ```
 ### 2.4 安装Crust服务
 
