@@ -27,7 +27,7 @@ The process should be executed sequentially to ensure that the files are stored 
 The code sample mainly depends on the following libraries:
 
 - [@crustio/type-definitions](https://github.com/crustio/crust.js) Custom data type, used to adapt to Crust network
-- [@polkadot/api](https://github.com/polkadot-js/api/blob/master/packages/api) The polkadot api library provides a Promise-style interface for performing related operations on the Crust chain
+- [@polkadot/api](https://github.com/polkadot-js/api) The polkadot api library provides a Promise-style interface for performing related operations on the Crust chain
 - [ipfs-core](https://github.com/ipfs/js-ipfs) ipfs library, contains all the functions of ipfs
 
 ## 2 Description

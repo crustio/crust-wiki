@@ -25,7 +25,7 @@ sidebar_label: Building Applications
 本代码示例主要依赖以下几个库:
 
 - [@crustio/type-definitions](https://github.com/crustio/crust.js) 自定义数据类型，用于适配Crust网络
-- [@polkadot/api](https://github.com/polkadot-js/api/blob/master/packages/api) polkadot api库，提供Promise风格的接口，用于对Crust链进行相关操作
+- [@polkadot/api](https://github.com/polkadot-js/api) polkadot api库，提供Promise风格的接口，用于对Crust链进行相关操作
 - [ipfs-core](https://github.com/ipfs/js-ipfs) ipfs库, 包含ipfs的所有功能
 
 ## 2 说明
