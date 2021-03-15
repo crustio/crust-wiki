@@ -4,7 +4,7 @@ title: Preview Network Maxwell
 sidebar_label: Preview Network Maxwell
 ---
 
-Maxwell, as the preview network of Crust Network, implements all the core mechanisms of Crust, including token staking, decentralized storage market(DSM), and file retrieval. Maxwell runs in a real economic system, participants can lock and [claim](claims.md) thier CRU-ERC20 token to the Mexwell CRU token for staking, use the storage services and retrieval files from Maxwell. The mining revenue in Maxwell is the reward of the node, which can also be [claimed back to Ethereum](claim-back.md). 
+Maxwell, as the preview network of Crust Network, implements all the core mechanisms of Crust, including token staking, decentralized storage market(DSM), and file retrieval. Maxwell runs in a real economic system, participants can lock and [claim](claims.md) thier CRU-ERC20 token to the Maxwell CRU token for staking, use the storage services and retrieval files from Maxwell. The mining revenue in Maxwell is the reward of the node, which can also be [claimed back to Ethereum](claim-back.md). 
 
 ## How to Join Maxwell Preview Network
 
