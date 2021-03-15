@@ -35,15 +35,15 @@ The SGX (Software Guard Extensions) module of the machine is closed by default. 
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.8.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v0.9.0.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v0.8.0.tar.gz
+tar -xvf v0.9.0.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-0.8.0
+cd crust-node-0.9.0
 ```
 ### 2.4 Install Crust Service
 

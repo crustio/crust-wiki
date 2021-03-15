@@ -32,15 +32,15 @@ Isolation节点形态下，你唯一的节点上需要运行链模块以及存�
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.8.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v0.9.0.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v0.8.0.tar.gz
+tar -xvf v0.9.0.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-0.8.0
+cd crust-node-0.9.0
 ```
 ### 2.4 安装Crust服务
 
