@@ -67,7 +67,7 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 
 ### 2.2 Initialize API instance and on-chain identity
 
-Here you need to initialize an instance of `api` to interact with the Crust network. The code is as follows:
+You need to initialize an instance of `api` to interact with the Crust network. The code is as follows:
 
 ```typescript
 import { ApiPromise, WsProvider } from '@polkadot/api';
