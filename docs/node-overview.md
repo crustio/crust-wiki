@@ -45,7 +45,7 @@ Refer to [member node setup](memberNode.md)
 
 ## 2 Setup Isolation Node
 
-The Isolation node uses only one device to run functions of block generation, storage and file transfer. It can be simply understood as the combination of a owner and a member. From a technical perspective, a isolation node is easier to setup,  but because a single device has a storage limit (200TB) in Crust Network, there is no advantage in the competition of block generation. 
+The Isolation node uses only one device to run functions of block generation, storage and file transfer. It can be simply understood as the combination of a owner and a member. From a technical perspective, a isolation node is easier to setup,  but because a single device has a storage limit (500TB) in Crust Network, there is no advantage in the competition of block generation. 
 
 Refer to [isolation node setup](isolationNode.md) to build an Isolation node.
 

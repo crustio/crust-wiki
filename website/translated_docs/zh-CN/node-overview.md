@@ -37,5 +37,5 @@ sidebar_label: Node Overview
 
 ## 2 部署单节点
 
-单节点也叫Isolation节点，即仅用一台设备来完成出块，存储，文件传输的功能。可以简单地理解为Owner与一个Member的结合。从部署角度来说单节点比较容易搭建，但由于单台设备的存储上限是有限的（200TB），在出块的竞争中没有优势，参考这个[链接](isolationNode.md)构建Isolation节点。
+单节点也叫Isolation节点，即仅用一台设备来完成出块，存储，文件传输的功能。可以简单地理解为Owner与一个Member的结合。从部署角度来说单节点比较容易搭建，但由于单台设备的存储上限是有限的（500TB），在出块的竞争中没有优势，参考这个[链接](isolationNode.md)构建Isolation节点。
 

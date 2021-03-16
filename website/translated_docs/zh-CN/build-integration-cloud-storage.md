@@ -20,7 +20,7 @@ Crust Network在结合IPFS的基础上提供了标准的文件上传与下载服
 
 上传文件，其中5001为ipfs的默认api端口：
 ```shell
-curl --location --request POST 'http://127.0.0.1:5001/api/v0/add' --form '=@"/home/crust/Capture.PNG"
+curl --request POST 'http://127.0.0.1:5001/api/v0/add' --form '=@"/home/crust/Capture.PNG"
 ```
 返回：
 ```json
@@ -31,3 +31,5 @@ curl --location --request POST 'http://127.0.0.1:5001/api/v0/add' --form '=@"/ho
 }
 ```
 其中，返回值中获得CID：QmcztAX232UrQ3VUg7MZXsHSrkaRzT3uACZMJSRN7ymjYV 与 Size：285920
+
+## 利用Crust去中心话存储文件
