@@ -33,13 +33,9 @@
         "title": "Hello Crust",
         "sidebar_label": "Hello Crust"
       },
-      "buildIntegrationCloudStorage": {
-        "title": "Cloud storage",
-        "sidebar_label": "Cloud storage"
-      },
-      "buildIntegrationContentDelivery": {
-        "title": "Content delivery",
-        "sidebar_label": "Content delivery"
+      "buildIntegrationContentStorageDelivery": {
+        "title": "Content storage & delivery",
+        "sidebar_label": "Content storage & delivery"
       },
       "buildIntegrationOverview": {
         "title": "Overview",

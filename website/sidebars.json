@@ -46,8 +46,7 @@
         "ids": [
           "buildIntegrationOverview",
           "buildIntegrationWebsiteHosting",
-          "buildIntegrationCloudStorage",
-          "buildIntegrationContentDelivery"
+          "buildIntegrationContentStorageDelivery"
         ]
       },
       {

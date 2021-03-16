@@ -98,7 +98,7 @@ Hard disk mounting requirements:
 
 * Chain data and related DB data will be stored in /opt/crust/data directory. It is recommend you mount your SSD to this directory;
 
-* The storage order file and SRD (Sealed Random Data, the placeholder files) will be written into the /opt/crust/data/files directory, it is recommended you mount the HDD to this directory. Initially, each device can be configured with up to 200TB of reserved space.
+* The storage order file and SRD (Sealed Random Data, the placeholder files) will be written into the /opt/crust/data/files directory, it is recommended you mount the HDD to this directory. Initially, each device can be configured with up to 500TB of reserved space.
 
 Suggestions for mounting HDDs:
 

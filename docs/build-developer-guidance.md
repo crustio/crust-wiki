@@ -27,7 +27,7 @@ The process should be executed sequentially to ensure that the files are stored 
 The code sample mainly depends on the following libraries:
 
 - [@crustio/type-definitions](https://github.com/crustio/crust.js) Custom data type, used to adapt to Crust network
-- [@polkadot/api](https://github.com/polkadot-js/api/blob/master/packages/api) The polkadot api library provides a Promise-style interface for performing related operations on the Crust chain
+- [@polkadot/api](https://github.com/polkadot-js/api) The polkadot api library provides a Promise-style interface for performing related operations on the Crust chain
 - [ipfs-core](https://github.com/ipfs/js-ipfs) ipfs library, contains all the functions of ipfs
 
 ## 2 Description
@@ -67,7 +67,7 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 
 ### 2.2 Initialize API instance and on-chain identity
 
-Here you need to initialize an instance of `api` to interact with the Crust network. The code is as follows:
+You need to initialize an instance of `api` to interact with the Crust network. The code is as follows:
 
 ```typescript
 import { ApiPromise, WsProvider } from '@polkadot/api';
