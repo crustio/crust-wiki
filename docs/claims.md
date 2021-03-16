@@ -18,9 +18,11 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 
 ## Steps
 
-### I. Send ERC20 Claim Transaction
+### I. Send CRU Claim Transaction
 
-First of all, you need to transfer CRUs to ***Crust Maxwell Claim Address*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
+> Please make sure you transfer CRU to the Claim Address, not ETH.
+
+First of all, you need to **transfer CRU** to ***Crust Maxwell Claim Address*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
 
 1. **⚠️ Make sure you have the authority to make signature with the private key of the account (all accounts created by exchanges are not applicable, please use the wallet with private key stored to perform following steps)**
 2. **Confirm the CRU ERC20: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)**
