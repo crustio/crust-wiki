@@ -4,48 +4,51 @@ title: Order Settlement
 sidebar_label: Order Settlement
 ---
 
-Crust网络通过“文件续费”和“订单清算”两个机制，保证：
-1. **延续**有存储意愿的文件订单；
-2. **关闭**已到期且无续费意愿的文件订单；
+Through two mechanisms: "File renewal" and "Order settlement", Crust Network guarantees:
+
+1. **renewal** of file orders seeking to continue the storage;
+2. **settlement** of expired file orders that have no intention of renewal.
 
 
-## 1. 文件续费
+## 1. File renewal
 
-### 1.1 文件续费机制的作用
-对于一些想要长期保存的文件，用户可以在生成存储订单后，额外为文件的续费池存入一笔金额。以奖励网络中其它用户代为续费，保证文件存储订单长期有效。
+### 1.1 Role of the file renewal mechanism
+For the file with a long-term storage need, users are suggested to deposit an additional amount into the file renewal pool after placing a storage order. This is to reward other users in the network for renewing the order for them so that the order is kept valid for a long time.
 
-### 1.2 文件的资金池
-一个文件订单中存在两个资金池：
-1. **文件订单费用**：用户生成存储订单时支付的费用，详情参考[DSM](https://wiki.crust.network/docs/en/DSM)
-2. **文件续费池**：用户可以额外为文件存入一笔金额，也就是文件的续费池。文件存储订单到期（目前每个文件订单到期时间为15天）且续费池充足时，第一个对该文件发起清算交易的用户，将会触发文件的续费操作（效果等同于重新发起一笔存储订单）。于此同时，清算人将会获得一笔续费奖励。续费订单和给清算人的续费奖励均由文件的续费池支付。
+### 1.2 Pools of money for files
+There are two pools of money in a file order:
+1. **Storage order fee**: the fee paid by the user when placing a storage order, refer to [DSM](https://wiki.crust.network/docs/en/DSM) for details.
+2. **File Renewal Pool**: an additional amount that the user deposits for the file. When a file storage order expires (currently the validity period is set for 15 days per order) and the balance of the renewal pool is sufficient, the first user to initiate a settlement request for the file will trigger the renewal of the file (equivalent to the effect of re-initiating a storage order). At the same time, the request initiator will receive a renewal reward. Both the fee of order renewal and the renewal reward to the initiator are paid from the file renewal pool.
 
-### 1.3 文件续费奖励
-在1.2中提到，文件存储订单到期且文件续费池充足时，任意用户对该文件发起清算将会触发文件的续费操作并获得一笔续费奖励。
+### 1.3 File renewal reward
+As mentioned in 1.2, when a file storage order expires and the balance of the file renewal pool is sufficient, any user who initiates the settlement request of the file will trigger the renewal of the file and receive a renewal reward.
 
 
-## 2. 订单清算
+## 2. Order settlement
 
-### 2.1 订单清算机制的作用
-当文件订单过期后，存储节点可以对订单进行清算从而获得相应存储金奖励。但如果存储节点没有进行清算，则订单会一直存在。Crust网络设计的订单清算机制可以激励存储节点之外的用户，对文件进行清算并关闭续费池金额不足的文件订单。
+### 2.1 Role of order settlement mechanism
+When a file storage order expires, storage nodes can bring the order into settlement and obtain the corresponding reward. If the settlement is not activated by nodes, the order will always be there. As such, the order settlement mechanism is designed to serve as an incentive for users apart from the storage nodes to settle files and close orders with insufficient renewal pool balance.
 
-### 2.2 订单清算奖励
+### 2.2 Order settlement reward
 
-当文件订单过期时间超过15天后，任意用户对文件发起清算将可以获得一定比例的清算奖励。清算奖励计算满足如下规则：
-1. 订单清算奖励在订单过期时间15天时初始为0；
-2. 订单清算奖励随着时间线性增加；
-3. 订单清算奖励在文件订单过期30天时达到最大，最大值为该文件的存储节点能获得该文件的存储金总和；
-4. 文件订单清算时，存储节点最终能获得的奖励 = 20% * 文件订单的存储金 - 订单清算奖励；
+15 days after the expiration of a file storage order, any user who initiates the file settlement will receive a settlement reward, which is calculated based on the following principles:
 
-## 3. 如何进行文件续费和订单清算
+1. the order settlement reward is initially 0 (15 days after the order expiration);
+2. the order settlement reward increases linearly with time;
+3. the order settlement reward reaches its maximum 30 days after the expiration, which specifically equals the total amount of storage reward that storage nodes can obtain from the file's deposit.
+4. in a file order settlement, the reward that storage nodes can obtain = 20% * the deposit of the file order - the order settlement reward.
 
-用户可以进入[Crust Apps](https://apps.crust.network/#/market/settlements) -> Network -> Market -> Order Settlement，浏览可清算的文件并进行清算。如下图：
+## 3. How to renew files and settle orders
+
+Users can go to [Crust Apps](https://apps.crust.network/#/market/settlements) -> Network -> Market -> Order Settlement to view the files that can be settled and do the settlement, as shown below.
+
 ![settlement](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/settlement.png)
 
-“Total Commission” 一栏显示了这笔清算操作可以获得的最终收益，也就是**文件的续费奖励+文件的清算奖励**。用户只需点击右边的“Settle”按钮来进行清算，并获得收益。（**注意：清算需要发起交易，并支付交易手续费，有些文件的总清算奖励可能低于手续费，这些文件的清算可能导致清算人负收益**）
+The "Total Commission" column shows the final earning in a settlement (**the renewal reward + the settlement reward**). Users simply need to click on the "Settle" button on the right to do the settlement and receive the earning. (**Notice: Doing settlement requires the initiation of a transaction and the payment of a sum of transaction fee. For some files, the transaction fee may surpass the total settlement reward, hence the settlement of these files may result in negative earnings for the settlement initiator.**)
 
-## 4. 清算条件和效果
-清算机制会触发如下效果：
- 清算效果  | 续费池余额充足     |     续费余额不足
- -------- | :-----------:  | :-----------: 
-**文件过期时间超过15天**     | 触发文件续费；<br> 触发订单清算；<br> 获得订单清算奖励；<br> 获得文件续费奖励 | 获得订单清算奖励；<br> 触发订单清算；<br> 关闭订单；   
-**文件过期时间未超15天**     | 触发文件续费；<br> 获得文件续费奖励；     | 触发订单清算；<br> 关闭订单；   
+## 4. Settlement conditions and effects
+The settlement mechanism will trigger the following effects:
+ Settlement effects | Renewal pool balance sufficient | Renewal balance insufficient 
+ :------: | :-----------:  | :-----------: 
+**File expiration over 15 days**     | Triggering file renewal;<br>Triggering order settlement;<br> Receiving order settlement rewards;<br>Receiving file renewal rewards; | Receiving order settlement rewards;<br> Triggering order settlement;<br>Closing the order; 
+**File expiration less than 15 days**     | Triggering file renewal;<br>Receiving file renewal rewards; | Triggering order settlement;<br>Closing the order; 
