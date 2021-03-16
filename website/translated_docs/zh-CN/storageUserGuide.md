@@ -71,7 +71,7 @@ sidebar_label: User Guidance
 ![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/pich_source.png)
 
 3. 点击确认后，所选账户的订单将会被展示在订单列表。
-4. 
+
 ### 1.6 为文件续费池充值
 文件续费池机制是[Crust DSM](DSM.md)帮助文件被定期续费的机制。用户在为文件下单后，可以额外为文件的续费池存入任意金额。当文件存储订单到期（目前每个文件订单到期时间为15天），并且文件续费池剩余金额充足，则任何用户都可以对该文件发起一个[清算交易](fileSettlement.md)，使得文件订单重新生效（重新拥有15天的有效期），清算发起者也会获得一笔来自文件续费池的奖励。充值步骤如下：
 1. 进入[Crust Apps](https://apps.crust.network/#/storage) -> “IPFS” -> “存储订单页”/"Storage Orders"，查看文件列表，找到对应文件；
