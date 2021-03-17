@@ -193,6 +193,10 @@
         "title": "存储用户指南",
         "sidebar_label": "存储用户指南"
       },
+      "orderSettlement": {
+        "title": "存储订单清算",
+        "sidebar_label": "存储订单清算"
+      },
       "sWorkerGuide": {
         "title": "sWorker",
         "sidebar_label": "sWorker"
