@@ -188,6 +188,10 @@
         "title": "User Guidance",
         "sidebar_label": "User Guidance"
       },
+      "orderSettlement": {
+        "title": "Order Settlement",
+        "sidebar_label": "Order Settlement"
+      },
       "sWorkerGuide": {
         "title": "sWorker",
         "sidebar_label": "sWorker"
