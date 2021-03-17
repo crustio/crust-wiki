@@ -50,16 +50,20 @@ sidebar_label: User Guidance
 以下是Crust Apps中显示的订单状态：
 
 * 订单状态状态 -- “Pending”，代表这个订单文件正在被Crust节点拉取中，一般30分钟内状态会更新。您可以通过增加存储费用来吸引更多节点优先拉取文件。
+![renew_pending](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pending.png)
+
     > **_注意 1:_** 在订单“Pending”期间内请不要关闭IPFS或在IPFS中删除该文件。否则可能导致存储节点拉取不到用户文件。
 
     > **_注意 2:_** 如果超过30分钟状态依然为“Pending”，请参考这个[解决方案]()
 
-* 订单状态状态 -- “Success”，代表这个订单文件已经被Crust节点保存。
+* 订单状态状态 -- “Success”，代表这个订单文件已经被Crust节点保存。用户可以点击“Renew”对此类订单进行续费。
+![renew_success](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_success.png)
 
 * 订单状态状态 -- “Failed”，代表这个订单发生错误。最常见的错误发生在：用户发起订单时，填写了错误的订单大小，导致支付的金额不足。这个时候可以点击“Retry”按钮重新发起订单，并正确填写文件大小和金额。
+![renew_failed](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_failed.png)
 
 * 订单状态状态 -- “Expired”，代表订单过期。这时用户需要确保文件在IPFS网络内有副本的情况下，点击“Renew”重新发起订单。
-
+![renew_expired](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_expired.png)
 
 
 ### 1.5 获取用户的所有订单
@@ -68,10 +72,10 @@ sidebar_label: User Guidance
 ![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/fetch.png)
 
 1. 选择查询的目标账户以及数据源（开发者可以开发自己的数据源并[提交申请](https://github.com/crustio/crust-apps/issues/new)，通过审核的数据源将会显示在数据源列表中供用户访问）
-![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/pich_source.png)
+![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/pick_source.png)
 
 3. 点击确认后，所选账户的订单将会被展示在订单列表。
-
+   
 ### 1.6 为文件续费池充值
 文件续费池机制是[Crust DSM](DSM.md)帮助文件被定期续费的机制。用户在为文件下单后，可以额外为文件的续费池存入任意金额。当文件存储订单到期（目前每个文件订单到期时间为15天），并且文件续费池剩余金额充足，则任何用户都可以对该文件发起一个[清算交易](orderSettlement.md)，使得文件订单重新生效（重新拥有15天的有效期），清算发起者也会获得一笔来自文件续费池的奖励。充值步骤如下：
 1. 进入[Crust Apps](https://apps.crust.network/#/storage) -> “IPFS” -> “存储订单页”/"Storage Orders"，查看文件列表，找到对应文件；
