@@ -4,28 +4,26 @@ title: Crust Wallet
 sidebar_label: Crust Wallet
 ---
 
-Crust Wallet是一款基于Google Chrome浏览器的插件钱包，用户可以在Crust Wallet上管理自己的在Crust网络中的资产，比如CRU、Candy，以及主网上线后的CSM。Crust Wallet目前支持的主要功能有：
-* 注入账户到[Crust Apps](https://apps.crust.network/#/accounts)中；
-* 创建新账户；
-* CRU、Candy的转账
-* 账户JSON文件的导入和导出；
+Crust Wallet is a plug-in wallet. Users can manage their assets in Crust Network, such as CRU and Candy (and CSM after the mainnet launch)  via Crust Wallet. It includes following features:
+* Interact with Crust DApps such as [Crust Apps](https://apps.crust.network/#/accounts);
+* Manage accounts;
+* Transfer of tokens;
 
+Please note that Crust Wallet *does NOT* support CRU tokens of ERC20. It is used to interact with Crust Networks including Maxwell and MainNet.
 
-用户可以通过以下两种方式安装Crust Wallet：
+You can install Crust Wallet in two ways.
 
-### 1. Chrome APP商城
-如果您在浏览器上可以访问Google，则可以[通过Chrome App商城安装Crust Wallet]().
+### 1. Install via Chrome App Store
+You can install Crust Wallet from the Chrome Web Store (under review, opening soon).
 
-### 2. 安装包导入
-如果您无法通过Google Chrome App商城下载，则需要下载安装包并手动导入，步骤如下：
-  1. [下载安装包]()；
-  2. 解压安装包；
-  3. 打开Chrome浏览器,地址栏输入chrome://extensions/ 并回车；
-  4. 点击“加载已解压的扩展程序”；
-  5. 选中解压后的文件夹；
-  6. 安装结束；
+### 2. Install via Installation Package 
+You can follow steps below to download and install Crust Wallet package.
 
+  1. [Download installation package](https://github.com/crustio/crust-extension/releases/download/v1.0.1/crust-wallet_v1.0.1.zip) and unpack.
+  2. Open the Chrome browser, enter `chrome://extensions/` in the address bar and press Enter;
+  3. Open `Developer mode` in the top right corner of the page;
+  4. Click on `Load unpacked extension`;
+  5. Select the unpacked folder;
+  6. Installation complete;
 
-***注意：在Crust Wallet上创建新账户时，用户需要妥善保管账户的助记词和备份文件，因为一旦发生账户遗失，用户将永久遗失账户中的资产。***
-
-
+***Notice: When creating a new account on Crust Wallet, users need to keep the mnemonic words and backup files of the account safe lest they permanently lose assets of the account due to account loss.***
