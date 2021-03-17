@@ -1,12 +1,8 @@
----
-id: storageUserGuide
-title: User Guidance
-sidebar_label: User Guidance
----
+# User Guide to Storage
 
 Users can store files with Crust Network in three ways:
-* Users are able to store files by directly using [Crust Apps](https://apps.crust.network/#/storage);
-* Users are able to store files by adapting the standard IPFS to [Crust Apps](https://apps.crust.network/#/storage);
+* Users are able to store files by directly using [Crust Apps];
+* Users are able to store files by adapting the standard IPFS to [Crust Apps];
 * Developers are able to develop storage features based on Crust SDK;
 
 ## 1. File storage via Crust Apps
@@ -52,23 +48,28 @@ You can find the order you just generated in the list below after opening the st
 The order statuses displayed in Crust Apps are detailed as follows:
 
 * "Pending" indicates that the file is being pulled by Crust nodes. Oftentimes, the status will be updated within 30 minutes. But you can improve storage fees to attract more nodes to prioritize the pulling.
+![renew_pending](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pending.png)
+
     > **_Note 1:_** Please do not close IPFS or delete the file in IPFS during the "Pending" period. Otherwise, storage nodes may fail to pull the file.
 
     > **_Note 2:_** If the "Pending" status is there for more than 30 minutes, please refer to [solutions]().
 
-* "Success" shows that the file has been stored by Crust nodes.
+* "Success" shows that the file has been stored by Crust nodes. You can click on "Renew" to renew the order (to postpone the expired date).
+![renew_success](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_success.png)
 
 * "Failed" suggests that an error has occurred to this order. The most typical error occurs when you initiate an order but submit an improper order size, thus resulting in an insufficient payment. If this happens, you can click on "Retry" to re-generate an order. Remember to fill in the file size and prize correctly.
+![renew_failed](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_failed.png)
 
 * "Expired" means that the order has expired. Under this circumstance, you will need to make sure that the file has a copy in IPFS Network and then click on "Renew" to re-generate the order.
+![renew_expired](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_expired.png)
 
 ### 1.5 Viewing all user orders
 The order information in [Crust Apps](https://apps.crust.network/#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" is locally cached. Users can view all orders of a given account through "Pulling"/"Fetching".
 1. Click on "Fetch My Orders";
-   ![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/fetch.png)
+   ![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/fetch1.png)
 
 2. Choose the account and data source (Developers can develop their own data sources and [submit applications](https://github.com/crustio/crust-apps/issues/new) for review. Data sources that are approved will be displayed in the data source list for users to access.);
-   ![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/pich_source.png)
+   ![pich_source](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/pick_source1.png)
 
 3. Click "Confirm". The orders of the selected account will appear in the order list.
 
@@ -78,9 +79,9 @@ The order information in [Crust Apps](https://apps.crust.network/#/storage) -> "
 The pool balance renewal mechanism is designed by [Crust DSM](DSM.md) to regularly renew files. After placing an order for a file, users can deposit an additional amount of any size into the file renewal pool. When the expiration of the file storage order is due (currently each file order expires 15 days after it is placed), and the balance of the file renewal pool is sufficient, users can initiate a [order settlement transaction](orderSettlement.md) for the file to renew the file order (regain a 15-day period of validity). Meanwhile, all settlement initiators will also receive a reward from the file renewal pool. The renewal steps include:
    1. Enter [Crust Apps](https://apps.crust.network/#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" to choose the file in the file list;
    2. Click on "Renew"/"Add Balance"；
-    ![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pool.png)
+    ![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pool1.png)
    3. Choose the account, fill in the renewal amount and click on "Confirm" in the box that pops up.
-![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/add_balance.png)
+![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/add_balance1.png)
 
 ### 1.7 Retrieving files
 Once you know the CID of a file, you can retrieve the file in [Crust Apps](https://apps.crust.network/#/storage/files) or in the standard IPFS Network (provided this file has been stored by nodes).
