@@ -65,6 +65,10 @@
         "title": "Crust Claims",
         "sidebar_label": "Crust Claims"
       },
+      "crustWallet": {
+        "title": "Crust Wallet",
+        "sidebar_label": "Crust Wallet"
+      },
       "community": {
         "title": "Community",
         "sidebar_label": "Community"
@@ -189,8 +193,8 @@
         "sidebar_label": "User Guidance"
       },
       "orderSettlement": {
-        "title": "Order Settlement",
-        "sidebar_label": "Order Settlement"
+        "title": "Order Settlement Guidance",
+        "sidebar_label": "Order Settlement Guidance"
       },
       "sWorkerGuide": {
         "title": "sWorker",
