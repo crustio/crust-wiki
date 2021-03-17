@@ -89,6 +89,10 @@
         "title": "Crust Tokens",
         "sidebar_label": "Crust Tokens"
       },
+      "crustWallet": {
+        "title": "Crust Wallet",
+        "sidebar_label": "Crust Wallet"
+      },
       "DSM": {
         "title": "DSM",
         "sidebar_label": "DSM"
@@ -147,6 +151,10 @@
       "nodeOverview": {
         "title": "Node Overview",
         "sidebar_label": "Node Overview"
+      },
+      "orderSettlement": {
+        "title": "Order Settlement Guidance",
+        "sidebar_label": "Order Settlement Guidance"
       },
       "ownerNode": {
         "title": "Owner Node",

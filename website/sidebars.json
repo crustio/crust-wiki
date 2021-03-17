@@ -5,6 +5,7 @@
       "previewNetworkMaxwell",
       "claims",
       "claimBack",
+      "crustWallet",
       "glossary",
       "community",
       "contributing"
@@ -73,6 +74,7 @@
       "storageOverview",
       "storageUserGuide",
       "merchantGuidance",
+      "orderSettlement",
       "crustStorageExplorer",
       "Q&AForStorage"
     ]
