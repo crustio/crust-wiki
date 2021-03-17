@@ -9,7 +9,7 @@ Crust Wallet is a plug-in wallet. Users can manage their assets in Crust Network
 * Manage accounts;
 * Transfer of tokens;
 
-Please note that Crust Wallet *does NOT* support CRU tokens of ERC20. It is used to interact with Crust Networks including Maxwell and MainNet.
+Please note that Crust Wallet **does NOT** support CRU tokens of ERC20. It is used to interact with Crust Networks including Maxwell and MainNet.
 
 You can install Crust Wallet in two ways.
 
