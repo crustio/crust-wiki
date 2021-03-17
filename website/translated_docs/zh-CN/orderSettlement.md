@@ -1,7 +1,7 @@
 ---
 id: orderSettlement
-title: Order Settlement
-sidebar_label: Order Settlement
+title: Order Settlement Guidance
+sidebar_label: Order Settlement Guidance
 ---
 
 Crust网络通过“文件续费”和“订单清算”两个机制，保证：

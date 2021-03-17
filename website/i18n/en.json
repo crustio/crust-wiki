@@ -65,10 +65,6 @@
         "title": "Crust Claims",
         "sidebar_label": "Crust Claims"
       },
-      "crustWallet": {
-        "title": "Crust Wallet",
-        "sidebar_label": "Crust Wallet"
-      },
       "community": {
         "title": "Community",
         "sidebar_label": "Community"
@@ -92,6 +88,10 @@
       "crustTokens": {
         "title": "Crust Tokens",
         "sidebar_label": "Crust Tokens"
+      },
+      "crustWallet": {
+        "title": "Crust Wallet",
+        "sidebar_label": "Crust Wallet"
       },
       "DSM": {
         "title": "DSM",
@@ -152,6 +152,10 @@
         "title": "Node Overview",
         "sidebar_label": "Node Overview"
       },
+      "orderSettlement": {
+        "title": "Order Settlement Guidance",
+        "sidebar_label": "Order Settlement Guidance"
+      },
       "ownerNode": {
         "title": "Owner Node",
         "sidebar_label": "Owner Node"
@@ -191,10 +195,6 @@
       "storageUserGuide": {
         "title": "User Guidance",
         "sidebar_label": "User Guidance"
-      },
-      "orderSettlement": {
-        "title": "Order Settlement Guidance",
-        "sidebar_label": "Order Settlement Guidance"
       },
       "sWorkerGuide": {
         "title": "sWorker",
