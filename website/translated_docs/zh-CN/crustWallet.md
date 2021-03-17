@@ -9,7 +9,7 @@ Crust Wallet是一款基于 Google Chrome 浏览器的插件钱包，用户可�
 * 账户管理；
 * 通证转账；
 
-请注意，Crust Wallet *不支持ERC20的CRU代币*，仅用于和 Crust Maxwell 和 MainNet 在内的网络进行交互。
+请注意，Crust Wallet **不支持ERC20上的CRU代币**，仅用于和 Crust Maxwell / MainNet 进行交互。
 
 用户可以通过以下两种方式安装Crust Wallet：
 
