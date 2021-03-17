@@ -65,6 +65,10 @@
         "title": "CRU 转回",
         "sidebar_label": "CRU 转回"
       },
+      "crustWallet": {
+        "title": "Crust 钱包",
+        "sidebar_label": "Crust 钱包"
+      },
       "community": {
         "title": "社区",
         "sidebar_label": "社区"
@@ -194,8 +198,8 @@
         "sidebar_label": "存储用户指南"
       },
       "orderSettlement": {
-        "title": "存储订单清算",
-        "sidebar_label": "存储订单清算"
+        "title": "存储订单清算指南",
+        "sidebar_label": "存储订单清算指南"
       },
       "sWorkerGuide": {
         "title": "sWorker",
