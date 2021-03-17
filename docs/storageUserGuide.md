@@ -1,8 +1,11 @@
-# User Guide to Storage
-
+---
+id: storageUserGuide
+title: User Guidance
+sidebar_label: User Guidance
+---
 Users can store files with Crust Network in three ways:
-* Users are able to store files by directly using [Crust Apps];
-* Users are able to store files by adapting the standard IPFS to [Crust Apps];
+* Users are able to store files by directly using [Crust Apps](https://apps.crust.network/#/storage);
+* Users are able to store files by adapting the standard IPFS to [Crust Apps](https://apps.crust.network/#/storage);
 * Developers are able to develop storage features based on Crust SDK;
 
 ## 1. File storage via Crust Apps
