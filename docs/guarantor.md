@@ -39,7 +39,7 @@ Here is an example:
 
 If node A staked 1000 CRUs itself, for which you guaranteed 200 CRUs. The stake limit is 1000 CRUs, with the percentage of guarantee fee set at 95%, and the staking incomes generated per round are 600 CRUs. Supposing the effective staking amount of the network is 2000, we can work out the income of each Era:
 
-1. Effective staking amount = minimum value (1000, 1200) * (200 / 1200) = 1000 * (200 / 1000) = 166.66 CRU
+1. Effective staking amount = minimum value (1000, 1200) * (200 / 1200) = 1000 * (200 / 1200) = 166.66 CRU
 2. Staking income = 600 * (166.66 / 2000) * 95% = 47.498 CRU
 
 ### 2. Slash
