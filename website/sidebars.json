@@ -47,7 +47,8 @@
         "ids": [
           "buildIntegrationOverview",
           "buildIntegrationWebsiteHosting",
-          "buildIntegrationContentStorageDelivery"
+          "buildIntegrationContentStorageDelivery",
+          "buildIntegrationNFTDataStorage"
         ]
       },
       {

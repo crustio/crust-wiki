@@ -32,6 +32,7 @@ We highly recommended **Developers** started with [Hello Crust](build-hello-crus
 - [Overview](build-integration-overview.md) - Realize various scenarios based on the Crust network.
 - [Website hosting](build-integration-website-hosting.md) - Build a decentralized website/DAPP.
 - [Content storage & delivery](build-integration-content-storage-delivery.md) - Decentralized solution for storing and sharing files.
+- [NFT Data Storage](build-integration-nft-data.md) - Store NFT on Crust.
 
 ## Miner Guide
 

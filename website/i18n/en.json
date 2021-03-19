@@ -37,6 +37,10 @@
         "title": "Content storage & delivery",
         "sidebar_label": "Content storage & delivery"
       },
+      "buildIntegrationNFTDataStorage": {
+        "title": "NFT Data Storage",
+        "sidebar_label": "NFT Data Storage"
+      },
       "buildIntegrationOverview": {
         "title": "Overview",
         "sidebar_label": "Overview"
@@ -153,8 +157,8 @@
         "sidebar_label": "Node Overview"
       },
       "orderSettlement": {
-        "title": "Order Settlement Guidance",
-        "sidebar_label": "Order Settlement Guidance"
+        "title": "Order Settlement",
+        "sidebar_label": "Order Settlement"
       },
       "ownerNode": {
         "title": "Owner Node",
