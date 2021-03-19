@@ -37,6 +37,10 @@
         "title": "Website hosting",
         "sidebar_label": "Website hosting"
       },
+      "buildIntegrationNFTDataStorage": {
+        "title": "NFT Data Storage",
+        "sidebar_label": "NFT Data Storage"
+      },
       "buildIPFSSDKs": {
         "title": "IPFS SDKs",
         "sidebar_label": "IPFS SDKs"
