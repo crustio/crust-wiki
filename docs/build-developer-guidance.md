@@ -1,14 +1,12 @@
 ---
 id: buildDevGuidance
-title: Building Applications
-sidebar_label: Building Applications
+title: Code Sample to Use Crust
+sidebar_label: Code Sample to Use Crust
 ---
 
 This doc contains a code sample to demonstrate how to upload a file to IPFS, and place a storage order to get the file stored in Crust Network. After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in WebSite/DApp frontend hosting, content/media delivery, cloud storage, etc.
 
-The code sample is on GitHub repo: https://github.com/crustio/crust-demo
-
-More details coming soon…
+The code sample is open source on GitHub repo: https://github.com/crustio/crust-demo
 
 ## 1 Overview
 
@@ -188,6 +186,7 @@ If the order does not exist, it will return `none`. If the order exists, it will
 }
 ```
 
-## 3 Code example
+## 3 Github Link
 
-Please refer this [link](https://github.com/crustio/crust-demo)
+Please refer to this [link](https://github.com/crustio/crust-demo)
+
