@@ -14,40 +14,40 @@
         "sidebar_label": "BitSwap"
       },
       "buildDevGuidance": {
-        "title": "Building Applications",
-        "sidebar_label": "Building Applications"
+        "title": "代码示例：使用Crust",
+        "sidebar_label": "代码示例：使用Crust"
       },
       "buildGettingStarted": {
-        "title": "Getting Started",
-        "sidebar_label": "Getting Started"
+        "title": "开始",
+        "sidebar_label": "开始"
       },
       "buildHelloCrust": {
         "title": "Hello Crust",
         "sidebar_label": "Hello Crust"
       },
       "buildIntegrationContentStorageDelivery": {
-        "title": "Content storage & delivery",
-        "sidebar_label": "Content storage & delivery"
+        "title": "内容存储与分发",
+        "sidebar_label": "内容存储与分发"
       },
       "buildIntegrationOverview": {
         "title": "Overview",
         "sidebar_label": "Overview"
       },
       "buildIntegrationWebsiteHosting": {
-        "title": "Website hosting",
-        "sidebar_label": "Website hosting"
+        "title": "部署和运行网站",
+        "sidebar_label": "部署和运行网站"
       },
       "buildIntegrationNFTDataStorage": {
-        "title": "NFT Data Storage",
-        "sidebar_label": "NFT Data Storage"
+        "title": "NFT数据存储",
+        "sidebar_label": "NFT数据存储"
       },
       "buildIPFSSDKs": {
         "title": "IPFS SDKs",
         "sidebar_label": "IPFS SDKs"
       },
       "buildCrustKits": {
-        "title": "Crust Development Kits",
-        "sidebar_label": "Crust Development Kits"
+        "title": "Crust SDK",
+        "sidebar_label": "Crust SDK"
       },
       "buildCrustJs": {
         "title": "crust.js",

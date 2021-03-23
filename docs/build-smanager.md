@@ -4,7 +4,7 @@ title: Crust Storage Manager
 sidebar_label: Crust Storage Manager
 ---
 
-sManager(Storage Manager) is a file picking robot which continuous picking and handling files from Crust Network. Basically, it divideds into the following parts:
+sManager (Storage Manager) is a file picking robot which continuous picking and handling files from Crust Network. Node operators can customize this module to implement their own file handling strategy. Basically, sManager is divideds into the following parts:
 
 1. **Picker**: Listen new files from chain, add a pulling task into `Pulling Queue`;
 2. **Puller**: Take task from `Pulling Queue`, pull the file from IPFS, when the file downloaded successfully, add a sealing task into `Sealing Queue`;
