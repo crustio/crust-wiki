@@ -84,17 +84,17 @@ The PolkadotJS API document can be found [here](https://polkadot.js.org/docs/api
 Please visit [Crust Apps](https://apps.crust.network/), connect your [CRU wallet](crustWallet.md) (or any other wallet that supports CRU), and check out the [`Chain state`](https://apps.crust.network/#/chainstate) and [`Extrinsics`](https://apps.crust.network/#/extrinsics) under `Developer` menu for detailed API list.
 
 - Chainstate: contains storage query API list for different modules. 
-  - market: contains storage market related API, such as filePrice, files, merchantLedgers, etc.
-  - swork: contains node storage proof related API, such as workReports, reportedInSlot, identities, etc.
-  - system, staking, balances, etc: contains typical blockchain related API such as system.account.
+  - `market`: contains storage market related API, such as `filePrice`, `files`, `merchantLedgers`, etc.
+  - `swork`: contains node storage proof related API, such as `workReports`, `reportedInSlot`, `identities`, etc.
+  - `system`, `staking`, `balances`, etc: contains typical blockchain related API such as `system.account`.
 
 ![api-chainstate](assets/build/api-fileprice.png)
   
 - Extrinsics: contains extrinsics execution API list for different modules.
-  - market: contains storage market related API, such as placeStorageOrder, calculateReward, addPrepaid, etc.
-  - staking: contains GPoS related API, such as bond, unbond, validate, gurantee, etc.
-  - swork: contains node storage proof related API, such as createGroup, joinGroup, etc.
-  - session, balances, utility, etc: contains typical blockchain related API, such as session.setKeys, balances.transfer, utility.batch, etc.
+  - `market`: contains storage market related API, such as p`laceStorageOrder`, `calculateReward`, `addPrepaid`, etc.
+  - `staking`: contains GPoS related API, such as `bond`, `unbond`, `validate`, `gurantee`, etc.
+  - `swork`: contains node storage proof related API, such as `createGroup`, `joinGroup`, etc.
+  - `session`, `balances`, `utility`, etc: contains typical blockchain related API, such as session.`setKeys`, balances.`transfer`, utility.`batch`, etc.
 
 ![api-placeorder](assets/build/api-placestorageorder.png)
 
