@@ -26,19 +26,11 @@
       "buildGettingStarted",
       {
         "type": "subcategory",
-        "label": "Basics",
-        "ids": [
-          "buildCrustKits",
-          "buildIPFSSDKs",
-          "buildCrustJs"
-        ]
-      },
-      {
-        "type": "subcategory",
         "label": "Development Guide",
         "ids": [
           "buildHelloCrust",
-          "buildDevGuidance"
+          "buildDevGuidance",
+          "buildCrustKits"
         ]
       },
       {
