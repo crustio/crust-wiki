@@ -4,7 +4,7 @@ title: Crust SDK
 sidebar_label: Crust SDK
 ---
 
-Crust provides PolkadotJS based SDK to access Crust Network functionalities. It is a library to provide additional type definitions.
+Crust provides PolkadotJS based SDK to access Crust Network functionalities. It is implemented as crust.js library to provide additional type definitions.
 
 # crust.js
 
@@ -45,7 +45,7 @@ const fileInfo = await api.query.market.files('QmRaknS23vXEcdJezkrVC5WrApQNUkUDd
 console.log(fileInfo.toHuman());
 ```
 
-More documentation and examples on [Crust Wiki](build-developer-guidance.md).
+E2E code sample can be found [here](build-developer-guidance.md).
 
 ## Crust Types
 
@@ -75,5 +75,31 @@ export type FileInfo = typeof crustTypes.market.types.FileInfo;
   
 ## API Specifications
 
-TBD.
+### PolkadotJS API 
+
+The PolkadotJS API document can be found [here](https://polkadot.js.org/docs/api).
+
+### Crust API
+
+Please visit [Crust Apps](https://apps.crust.network/), connect your [CRU wallet](crustWallet.md) (or any other wallet that supports CRU), and check out the [`Chain state`](https://apps.crust.network/#/chainstate) and [`Extrinsics`](https://apps.crust.network/#/extrinsics) under `Developer` menu for detailed API list.
+
+- Chainstate: contains storage query API list for different modules. 
+  - market: contains storage market related API, such as filePrice, files, merchantLedgers, etc.
+  - swork: contains node storage proof related API, such as workReports, reportedInSlot, identities, etc.
+  - system, staking, balances, etc: contains typical blockchain related API such as system.account.
+
+![api-chainstate](assets/build/api-fileprice.png)
+  
+- Extrinsics: contains extrinsics execution API list for different modules.
+  - market: contains storage market related API, such as placeStorageOrder, calculateReward, addPrepaid, etc.
+  - staking: contains GPoS related API, such as bond, unbond, validate, gurantee, etc.
+  - swork: contains node storage proof related API, such as createGroup, joinGroup, etc.
+  - session, balances, utility, etc: contains typical blockchain related API, such as session.setKeys, balances.transfer, utility.batch, etc.
+
+![api-placeorder](assets/build/api-placestorageorder.png)
+
+
+### Contributes on Crust API Specifications
+
+You are welcome to contribute on Crust API specifications to provide more integrated and user-friendly documents.
 
