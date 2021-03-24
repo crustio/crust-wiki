@@ -8,9 +8,9 @@ sidebar_label: Overview
 
 ## Roles
 
-- Merchants: Refer to [merchant guidance](merchantGuidance.md) to get more information about DSM
+- Merchants: Refer to [merchant guide](merchantGuidance.md) to get more information about DSM
 - Storage Users: Refer to [storage user guide](storageUserGuide.md) to use the storage functions of Crust Network
-- Developers: Refer to [build guidance](build-getting-started.md) to build applications based on Crust Network
+- Developers: Refer to [build guide](build-getting-started.md) to build applications based on Crust Network
 
 ## References
 
