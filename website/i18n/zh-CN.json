@@ -30,8 +30,8 @@
         "sidebar_label": "内容存储与分发"
       },
       "buildIntegrationOverview": {
-        "title": "Overview",
-        "sidebar_label": "Overview"
+        "title": "总览",
+        "sidebar_label": "总览"
       },
       "buildIntegrationWebsiteHosting": {
         "title": "部署和运行网站",
