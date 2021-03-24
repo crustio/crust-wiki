@@ -6,45 +6,31 @@ sidebar_label: Getting Started
 
 Welcome to the builders section of the Crust Wiki!
 
-Here you will be able to find the most up-to-date information on the status of the development tools in the Crust ecosystem. We are always adding new tools and frameworks as we learn about them so if you are working on something that should be included please reach out to us on [Discord](https://discord.gg/D97GGQndmx).
+Here you will be able to find the most up-to-date information on the status of the development tools in the Crust ecosystem. We will keep adding new tools, frameworks and documents as we progress. If you are working on something that should be included please reach out to us on [Discord](https://discord.gg/D97GGQndmx).
 
 ## How to Read
 
-**Basic** listed all the development kits which both developer and miner uses. If you want to quickly start, you can just jump this section.
+**Developers** can start with [Hello Crust](build-hello-crust.md) and [Code Sample to Use Crust](build-developer-guidance.md), you'll go through a typical Crust use case, to learn how to use Crust CLI and Crust SDK.
 
-We highly recommended **Developers** started with [Hello Crust](build-hello-crust.md), you'll learn a simple but super fundamental techniques of Crust.
+**Miners** can refer to the Miner Guide to learn how to optimize node operation and file handling strategies.
 
-**Miners** please refer the miners guide.
-
-## Basics
-
-- [Crust Development Kits](build-crust-sdk.md) - CDKs are the fundamental toolkits for developing storage and chain's functions.
-- [IPFS SDKs](build-ipfs-sdk.md) - Crust related IPFS SDKs.
-- [crust.js](build-crustjs.md) - Types definition of Crust Network.
+You can read **Integration Guide** to learn how to leverage Crust in your applications for specific use cases.
 
 ## Development Guide
 
-- [Hello Crust](build-hello-crust.md) - Tutorial for hosting website, *this doc will help you to understand what is Crust Storage function in a super intuitive way*.
-- [Building Applications](build-developer-guidance.md) - Build a simple storage application with code sample.
+- [Hello Crust](build-hello-crust.md) - Tutorial on hosting a website on Crust, *this doc will help you understand Crust functions in a super intuitive way*.
+- [Code Sample to Use Crust](build-developer-guidance.md) - How to build a simple application with code sample.
+- [Crust SDK](build-crust-sdk.md) - Crust SDK and API document.
 
 ## Integration Guide
 
-- [Overview](build-integration-overview.md) - Realize various scenarios based on the Crust network.
-- [Website hosting](build-integration-website-hosting.md) - Build a decentralized website/DAPP.
-- [Content storage & delivery](build-integration-content-storage-delivery.md) - Decentralized solution for storing and sharing files.
-- [NFT Data Storage](build-integration-nft-data.md) - Store NFT on Crust.
+- [Overview](build-integration-overview.md) - Overview of various scenarios based on the Crust Network.
+- [Website hosting](build-integration-website-hosting.md) - Hosting websites and DApp frontend on IPFS + Crust.
+- [Content storage & delivery](build-integration-content-storage-delivery.md) - Decentralized file storage and delivery solution.
+- [NFT Data Storage](build-integration-nft-data.md) - Store NFT files using IPFS + Crust.
 
 ## Miner Guide
 
-- [sManager](build-smanager.md) - Storage manager integrated with Crust, IPFS and sWorker, contains different strategies of storage-order picking.
-- [Crust Node](build-node.md) - Node management tool with Chain, sWorker, API, IPFS and sManager.
-- File Settlement - Comming soon.
-
-## Scenarios
-
-Comming soon
-
-## Hackathon
-
-Comming soon
+- [Storage Manager](build-smanager.md) - Storage manager interacts with Crust, IPFS and sWorker; it can be customized to apply different strategies to deal with storage orders and files.
+- [Crust Node](build-node.md) - Node operation program interacts with Chain, sWorker, API, IPFS and sManager; it can be customized to ease your node operation work.
 
