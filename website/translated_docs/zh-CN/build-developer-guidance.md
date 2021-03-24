@@ -1,37 +1,37 @@
 ---
 id: buildDevGuidance
-title: Building Applications
-sidebar_label: Building Applications
+title: Code Sample to Use Crust
+sidebar_label: Code Sample to Use Crust
 ---
 
-此页面包含一个代码示例，以演示如何将文件上传到IPFS，并下达存储订单以将文件存储在Crust Network中。之后，可以通过标准IPFS接口和网关从任何地方检索文件。这个场景简单通用。它可以广泛应用于WebSite / DApp前端托管，内容/媒体分发，云存储等。
+This doc contains a code sample to demonstrate how to upload a file to IPFS, and place a storage order to get the file stored in Crust Network. After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in WebSite/DApp frontend hosting, content/media delivery, cloud storage, etc.
 
-该代码示例在GitHub上：https://github.com/crustio/crust-demo
+The code sample is open source on GitHub repo: https://github.com/crustio/crust-demo
 
-更多详情即将推出…
+## 1 Overview
 
-## 1 概述
-### 1.1 流程
-使用IPFS和Crust Network，开发人员可以按照以下过程上传、存储和分发文件：
+### 1.1 Storage process
 
-- 将文件上传到IPFS, 并获取文件的`CID`（每个文件基于内容生成的唯一标识）和文件`Size`（存储在IPFS内部的文件实际大小，区别于原文件大小）
-- 在Crust链上利用文件的`CID`, `Size`下存储订单。给出的文件大小应不小于实际文件大小
-- 获取与监控订单状态
+Using IPFS and Crust Network, developers can follow below process to upload, store and distribute files：
 
-上面的流程必须被顺序执行，以保证文件被Crust网络顺利存储。
+- Upload the file to IPFS, and get the file `CID` (a unique identifier generated based on the content of each file) and file `Size` (the actual size of the file stored in IPFS, which is different from the original file size)
+- Use the `CID` and `Size` of the file to place a storage order on the Crust chain. The given size should be no smaller than the actual file size.
+- Obtain and monitor order status
 
-### 1.2 依赖
+The process should be executed sequentially to ensure that the files are stored smoothly by the Crust network。
 
-本代码示例主要依赖以下几个库:
+### 1.2 Dependencies
 
-- [@crustio/type-definitions](https://github.com/crustio/crust.js) 自定义数据类型，用于适配Crust网络
-- [@polkadot/api](https://github.com/polkadot-js/api) polkadot api库，提供Promise风格的接口，用于对Crust链进行相关操作
-- [ipfs-core](https://github.com/ipfs/js-ipfs) ipfs库, 包含ipfs的所有功能
+The code sample mainly depends on the following libraries:
 
-## 2 说明
-### 2.1 上传文件到IPFS
+- [@crustio/type-definitions](https://github.com/crustio/crust.js) Custom data type, used to adapt to Crust network
+- [@polkadot/api](https://github.com/polkadot-js/api) The polkadot api library provides a Promise-style interface for performing related operations on the Crust chain
+- [ipfs-core](https://github.com/ipfs/js-ipfs) ipfs library, contains all the functions of ipfs
 
-和IPFS网络交互之前需要实现一个`ipfs`实例, 代码如下:
+## 2 Description
+### 2.1 Upload files to IPFS
+
+Before interacting with the IPFS network, an instance of `ipfs` needs to be instantiated. The code is as follows:
 
 ```typescript
 import IPFS from 'ipfs-core';
@@ -40,7 +40,7 @@ import IPFS from 'ipfs-core';
 const ipfs = await IPFS.create()
 ```
 
-然后可以使用`ipfs.add(fileContent, options)`方法进行上传文件, `fileContent`可以是以下任意类型:` Uint8Array | Blob | String | Iterable<Uint8Array> | Iterable<number> | AsyncIterable<Uint8Array> | ReadableStream<Uint8Array>` 以下代码会返回两个值，分别是`CID`与`Size`
+Then you can use `ipfs.add(fileContent, options)` to upload a file into IPFS, `fileContent` can be any of the following types:` Uint8Array | Blob | String | Iterable<Uint8Array> | Iterable<number> | AsyncIterable<Uint8Array> | ReadableStream<Uint8Array>`. The following code will return two values, namely `CID` and `Size`
 
 ```typescript
 async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
@@ -63,9 +63,9 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 }
 ```
 
-### 2.2 初始化API实例和链上身份
+### 2.2 Initialize API instance and on-chain identity
 
-这里需要初始化一个`api`实例, 用于和Crust网络交互，代码如下:
+You need to initialize an instance of `api` to interact with the Crust network. The code is as follows:
 
 ```typescript
 import { ApiPromise, WsProvider } from '@polkadot/api';
@@ -81,7 +81,7 @@ const api = new ApiPromise({
 });
 ```
 
-同时，需要链上的身份`krp`才能发送订单交易。可以通过账户（确保该账户有足够的CRU用于发送存储订单）的seeds来生成:
+Also, you need to get the identity `krp` on the chain to send the order transaction. It can be generated from the seeds of the account (please ensure that the account has enough CRUs for sending storage orders):
 
 ```typescript
 /* eslint-disable node/no-extraneous-import */
@@ -99,9 +99,9 @@ const kr = new Keyring({
 const krp = kr.addFromUri(seeds);
 ```
 
-### 2.3 下达存储订单
+### 2.3 Place storage order
 
-可以利用以下代码判断链是否同步到最新块：
+You can use the following code to determine whether the chain is synchronized to the latest block:
 
 ```typescript
 /**
@@ -126,7 +126,7 @@ async function isSyncing(api: ApiPromise) {
 }
 ```
 
-等待链同步到最新块后，就可以和链交互进行下单了, 注意这里的`fileSize`必须是上一步获取的`cumulativeSize`, 如果比`cumulativeSize`小的话, 下单就会失败;
+After waiting for the chain to synchronize to the latest block, you can interact with the chain to place a storage order. Note that the `fileSize` must be the `cumulativeSize` obtained in the previous step. If it is smaller than the `cumulativeSize`, the order will fail:
 
 ```typescript
 /**
@@ -148,9 +148,9 @@ async function placeOrder(api: ApiPromise, krp: KeyringPair, fileCID: string, fi
 }
 ```
 
-### 2.4 获取订单状态
+### 2.4 Get order status
 
-一般来说,订单的状态在半小时左右更新一次，可以通过 `api.query.market.files()`查询订单的状态
+In general, the order stauts is updated every half an hour. You can query the status of the order through `api.query.market.files()`
 
 ```typescript
 /**
@@ -165,7 +165,8 @@ async function getOrderState(api: ApiPromise, cid: string) {
 }
 ```
 
-如果订单不存在会返回`none`, 如果订单存在会返回以下数据结构, 其中`expired_on`和当前块高比较可以判断出是否过期, `reported_replica_count`如果为0的, 则订单还在进行中, 如果大于0, 且未过期的话, 则订单成功
+If the order does not exist, it will return `none`. If the order exists, it will return the following data structure, where `expired_on` is compared with the current block height to determine whether it has expired. If `reported_replica_count` is 0, the order is still in progress, if it is greater than 0 , and if it has not expired, the order is successful.
+
 ```json
 {
 	"file_size": 186,
@@ -185,6 +186,7 @@ async function getOrderState(api: ApiPromise, cid: string) {
 }
 ```
 
-## 3 代码示例
+## 3 Github Link
 
-请参考这个[链接](https://github.com/crustio/crust-demo)
+Please refer to this [link](https://github.com/crustio/crust-demo)
+

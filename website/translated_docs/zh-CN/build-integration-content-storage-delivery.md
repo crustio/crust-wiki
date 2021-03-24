@@ -4,21 +4,23 @@ title: Content storage & delivery
 sidebar_label: Content storage & delivery
 ---
 
-Crust在结合IPFS的基础上提供了标准的文件上传与下载服务。开发者可以在此基础上构建云存储服务，文件分发以及标准的S3服务. 本文将从文件上传，文件存储，文件下载的角度来进行阐述。
+Crust provides standard file upload and download services based on the combination of IPFS. Developers can build cloud storage functions, file distribution and even standard S3-like services on Crust. This article will explain from the perspectives of file upload, file storage, and file download
 
 ## 1 IPFS
 
-### 1.1 启动IPFS节点
-相较于传统的中心化存储，IPFS的存取模式有所不同，网络中的每个IPFS都是对等的，所以如果你想存一个文件首先你需要启动一个IPFS的节点，来加入整个存储网络。IPFS的相关信息请参考以下[链接](https://github.com/ipfs/go-ipfs)
+### 1.1 Start IPFS node
 
-### 1.2 上传文件到本地IPFS
-可以使用命令行，HTTP请求或者[ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client)方式来操作IPFS，具体可以参考[链接](https://github.com/ipfs/go-ipfs)，下面以HTTP请求为例。
+Compared with traditional centralized storage, the access mode of IPFS is different. Each IPFS in the network is peer-to-peer, so if you want to save a file, you first need to start an IPFS node to join the entire storage network. For more information about IPFS, please refer to the following [link](https://github.com/ipfs/go-ipfs)
 
-上传文件，其中5001为ipfs的默认api端口：
+### 1.2 Upload file to local IPFS
+
+You can use command line, HTTP request or [ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client) to operate IPFS. For details, please refer to [link](https:// github.com/ipfs/go-ipfs), the following takes HTTP request as an example.
+
+Upload files, where 5001 is the default api port of ipfs：
 ```shell
 curl --request POST 'http://127.0.0.1:5001/api/v0/add' --form '=@"/home/crust/Capture.PNG"
 ```
-返回：
+result:
 ```json
 {
     "Name": "Capture.PNG",
@@ -26,19 +28,19 @@ curl --request POST 'http://127.0.0.1:5001/api/v0/add' --form '=@"/home/crust/Ca
     "Size": "285920"
 }
 ```
-返回值中获得`Hash (CID)`：QmcztAX232UrQ3VUg7MZXsHSrkaRzT3uACZMJSRN7ymjYV 与 `Size (cumulativeSize)`：285920
+Get `Hash (CID)`: QmcztAX232UrQ3VUg7MZXsHSrkaRzT3uACZMJSRN7ymjYV and `Size (cumulativeSize)`: 285920
 
-## 2 Crust存储文件
+## 2 Crust storage file
 
-当文件存储在本地的IPFS节点之后，需要让IPFS网络中的其他节点来帮助存储该文件，否则当你关闭本地IPFS或者删除该文件后，IPFS网络中将找不到该文件。Crust作为激励层，可以去中心化地扩散文件到整个网络，并实时的确保该文件的存在性，具体代码和流程如下。
+When the file is stored on the local IPFS node, you need to let other nodes in the IPFS network help store the file, otherwise when you close the local IPFS or delete the file, the file will not be found in the IPFS network. As an incentive layer, Crust can spread files to the entire network in a decentralized manner and ensure the existence of the file in real time. The specific code and process are as follows.
 
-### 2.1 依赖库
-- [@crustio/type-definitions](https://github.com/crustio/crust.js) 自定义数据类型，用于适配Crust网络
-- [@polkadot/api](https://github.com/polkadot-js/api) polkadot api库，提供Promise风格的接口，用于对Crust链进行相关操作
+### 2.1 Dependencies
+- [@crustio/type-definitions](https://github.com/crustio/crust.js) Custom data type, used to adapt to Crust network
+- [@polkadot/api](https://github.com/polkadot-js/api) The polkadot api library provides a Promise-style interface for performing related operations on the Crust chain
 
-### 2.2 初始化API实例
+### 2.2 Initialize API instance
 
-这里需要初始化一个`api`实例, 用于和Crust网络交互，代码如下:
+You need to initialize an instance of `api` to interact with the Crust network. The code is as follows:
 
 ```typescript
 import { ApiPromise, WsProvider } from '@polkadot/api';
@@ -54,8 +56,9 @@ const api = new ApiPromise({
 });
 ```
 
-### 2.3 链上身份
-需要链上的身份`krp`才能发送订单交易。可以通过账户（确保该账户有足够的CRU用于发送存储订单）的seeds来生成:
+### 2.3 On-chain identity
+
+You need to get the identity `krp` on the chain to send the order transaction. It can be generated from the seeds of the account (please ensure that the account has enough CRUs for sending storage orders):
 
 ```typescript
 /* eslint-disable node/no-extraneous-import */
@@ -73,9 +76,9 @@ const kr = new Keyring({
 const krp = kr.addFromUri(seeds);
 ```
 
-### 2.4 下达存储订单
+### 2.4 Place storage order
 
-等待链同步到最新块后，就可以和链交互进行下单了, 注意这里的`fileSize`必须是上一步获取的`cumulativeSize`, 如果比`cumulativeSize`小的话, 下单就会失败;
+After waiting for the chain to synchronize to the latest block, you can interact with the chain to place a storage order. Note that the `fileSize` must be the `cumulativeSize` obtained in the previous step. If it is smaller than the `cumulativeSize`, the order will fail:
 
 ```typescript
 /**
@@ -97,9 +100,9 @@ async function placeOrder(api: ApiPromise, krp: KeyringPair, fileCID: string, fi
 }
 ```
 
-### 2.5 获取订单状态
+### 2.5 Get order status
 
-一般来说,订单的状态在半小时左右更新一次，可以通过 `api.query.market.files()`查询订单的状态
+In general, the order stauts is updated every half an hour. You can query the status of the order through `api.query.market.files()`
 
 ```typescript
 /**
@@ -114,7 +117,8 @@ async function getOrderState(api: ApiPromise, cid: string) {
 }
 ```
 
-如果订单不存在会返回`none`, 如果订单存在会返回以下数据结构, 其中`expired_on`和当前块高比较可以判断出是否过期, `reported_replica_count`如果为0的, 则订单还在进行中, 如果大于0, 且未过期的话, 则订单成功
+If the order does not exist, it will return `none`. If the order exists, it will return the following data structure, where `expired_on` is compared with the current block height to determine whether it has expired. If `reported_replica_count` is 0, the order is still in progress, if it is greater than 0 , and if it has not expired, the order is successful.
+
 ```json
 {
 	"file_size": 186,
@@ -134,38 +138,38 @@ async function getOrderState(api: ApiPromise, cid: string) {
 }
 ```
 
-### 2.6 代码示例
+### 2.6 Code example
 
-请参考这个[链接](https://github.com/crustio/crust-demo)
+Please refer this [link](https://github.com/crustio/crust-demo)
 
-## 3 文件下载与使用
+## 3 File download and use
 
-当Crust网络将文件存储后，文件的访问和下载流程遵循IPFS网络的设计，下面分别介绍几种访问方式
+When the Crust network stores the files, the access and download process of the files follows the design of the IPFS network. Several access methods are introduced below.
 
-### 3.1 本地IPFS Gateway
+### 3.1 Local IPFS Gateway
 
-如果你本地启动了IPFS节点，可以使用以下的方式访问或下载资源：
+If you have started the IPFS node locally, you can use the following methods to access or download resources:
 
 ```
 http://localhost:8080/ipfs/QmcztAX232UrQ3VUg7MZXsHSrkaRzT3uACZMJSRN7ymjYV
 ```
 
-### 3.2 官方IPFS Gateway
+### 3.2 Officially IPFS Gateway
 
-IPFS官方提供Gateway：
+IPFS officially provides Gateway:
 ```
 https://ipfs.io/ipfs/QmcztAX232UrQ3VUg7MZXsHSrkaRzT3uACZMJSRN7ymjYV
 ```
 
-### 3.3 第三方IPFS Gateway
+### 3.3 The third-party Gateways
 
-具体的第三方Gateway[列表](https://ipfs.github.io/public-gateway-checker)
+The third-party Gateways [list](https://ipfs.github.io/public-gateway-checker)
 
-### 3.4 本地IPFS接口访问
+### 3.4 Local IPFS interface access
 
-可以使用命令行，HTTP请求或者[ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client)方式来操作IPFS，具体可以参考[链接](https://github.com/ipfs/go-ipfs)，下面以HTTP请求为例。
+You can use command line, HTTP request or [ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client) to operate IPFS. For details, please refer to [link](https:// github.com/ipfs/go-ipfs), the following takes HTTP request as an example.
 
-下载文件，其中5001为ipfs的默认api端口：
+Download files, where 5001 is the default api port of ipfs：
 ```shell
 curl --request POST 'http://127.0.0.1:5001/api/v0/get?arg=QmcztAX232UrQ3VUg7MZXsHSrkaRzT3uACZMJSRN7ymjYV'
 ```

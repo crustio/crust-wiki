@@ -4,13 +4,13 @@ title: Hello Crust
 sidebar_label: Hello Crust
 ---
 
-We will build and host a simple React website during this tutorial. **You might be tempted to skip it because you’re not interested in building or hosting website — but give it a chance.** The techniques you'll learn in the tutorial are fundamental to building with Crust Storage, and mastering it will give you a deep understanding of Crust storage functions.
+This doc will walk you through a typical process to save and publish a simple website in Crust Network, to help you understand the basic steps to use Crust before you write any code. In this tutorial, we will build a simple React website, put to IPFS, and leverage Crust to store and pin it. The techniques you'll learn in the tutorial are fundamental to building with Crust Storage, and mastering it will give you a deep understanding of Crust storage functions.
 
-## Try Crust Storage
+## Hello, Crust
 
-### 1. Setup
+### 1. Setup Crust CLI
 
-> Please make sure you have **Node.js** env, refer [this](https://nodejs.org/en/download/package-manager/) to install
+> Please make sure you have **Node.js** env, refer to [this](https://nodejs.org/en/download/package-manager/) to install.
 
 - Install Crust Command Line
 
@@ -31,13 +31,13 @@ cd hello-crust/
 PUBLIC_URL=./ npm run build
 ```
 
-### 2. Pin and Publish
+### 2. Store, Pin and Publish
 
-> Please make sure you have **IPFS** running locally, refer [this](https://ipfs.io/#install) to install and run
+> Please make sure you have **IPFS** running locally, refer to [this](https://ipfs.io/#install) to install and run.
 
 - Login with seeds
 
-> *SEEDS* are 12 secret words of your Crust Account
+> *SEEDS* are 12 secret words of your Crust Account. You can refer to [this](crust-account.md) to create your Crust Account.
 
 ```shell
 crust-cli login [SEEDS]
@@ -57,7 +57,7 @@ You'll get an IPFS cid in this step, like `QmYene5icko1cusFCG9D92YUyfonN4hmRPNdP
 crust-cli publish QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
 ```
 
-Then your website is already been published into Crust Network now.
+Now your website is published into Crust Network. Storage nodes in Crust Network will get notified and try to pull your website to store.
 
 ### 3. Query status
 
@@ -73,18 +73,15 @@ crust-cli status QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
 
 ### 4. Access it
 
-**Congrats**, you can access your website everywhere now with:
+**Congrats**, you can now access your website via any standard IPFS interface and gateway, such as following public IPFS gateway that Crust contributes:
 
-https://ipfs.io/ipfs/QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
+https://crustwebsites.net/ipfs/QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
 
 ![hello-crust](assets/build/hello-crust.png)
 
 ## Learn
 
-In the quick demo just now, including the interaction with IPFS and the interaction with the Crust Chain.
-
-- [Pin website](#2-pin-and-publish) access the IPFS SDK to pin your website locally, if you want to write code to access IPFS, please refer [this part](build-developer-guidance.md#21-upload-files-to-ipfs).
-- [Publish website](#2-pin-and-publish) access `crust.js` and send a `place storage order` transaction, if you want to write code to access Crust Chain and send transactions, please refer [this part](build-developer-guidance.md#22-initialize-api-instance-and-on-chain-identity)
+The tutorial above includes the interaction steps with IPFS and Crust Chain using Crust command line tool. You can continue on reading [code sample](build-developer-guidance.md) to start coding to do the same thing.
 
 ## Resources
 
