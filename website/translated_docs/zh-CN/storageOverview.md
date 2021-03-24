@@ -10,7 +10,7 @@ sidebar_label: Overview
 
 - 商户：参考[存储商户指南](merchantGuidance.md)，查看存储市场相关细节
 - 用户：参考[存储用户指南](storageUserGuide.md)，使用Crust网络的存储功能
-- 开发者：开发者手册*即将公布*
+- 开发者：参考[开发者指南](build-getting-started.md)，开始基于Crust构建应用
 
 ## 参考
 
