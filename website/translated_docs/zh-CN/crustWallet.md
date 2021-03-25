@@ -14,7 +14,7 @@ Crust Wallet是一款基于 Google Chrome 浏览器的插件钱包，用户可�
 用户可以通过以下两种方式安装Crust Wallet：
 
 ### 1. Chrome APP商城
-您可以通过Chrome App商城安装 [Crust Wallet](https://chrome.google.com/webstore/detail/crust-wallet/jccapkebeeiajkkdemacblkjhhhboiek)。
+您可以通过Chrome App商城[安装 Crust Wallet](https://chrome.google.com/webstore/detail/crust-wallet/jccapkebeeiajkkdemacblkjhhhboiek)。
 
 ### 2. 安装包导入
 如果您无法通过Google Chrome Web Store 下载，则需要下载安装包并手动导入Chrome浏览器，步骤如下：
