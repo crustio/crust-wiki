@@ -14,7 +14,7 @@ Please note that Crust Wallet **does NOT** support CRU tokens of ERC20. It is us
 You can install Crust Wallet in two ways.
 
 ### 1. Install via Chrome App Store
-You can install Crust Wallet from the Chrome Web Store (under review, opening soon).
+You can install Crust Wallet from the [Chrome Web Store](https://chrome.google.com/webstore/detail/crust-wallet/jccapkebeeiajkkdemacblkjhhhboiek).
 
 ### 2. Install via Installation Package 
 You can follow steps below to download and install Crust Wallet package.
