@@ -20,7 +20,8 @@
       "storageMerchant",
       "GPoS",
       "DSM",
-      "bitSwap"
+      "bitSwap",
+      "democracyGuide"
     ],
     "Build": [
       "buildGettingStarted",

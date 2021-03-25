@@ -97,6 +97,10 @@
         "title": "Crust Wallet",
         "sidebar_label": "Crust Wallet"
       },
+      "democracyGuide": {
+        "title": "Democracy Guide",
+        "sidebar_label": "Democracy Guide"
+      },
       "DSM": {
         "title": "DSM",
         "sidebar_label": "DSM"
