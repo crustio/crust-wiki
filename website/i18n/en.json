@@ -34,8 +34,8 @@
         "sidebar_label": "Hello Crust"
       },
       "buildIntegrationContentStorageDelivery": {
-        "title": "Content Storage & Delivery",
-        "sidebar_label": "Content Storage & Delivery"
+        "title": "Content storage & delivery",
+        "sidebar_label": "Content storage & delivery"
       },
       "buildIntegrationNFTDataStorage": {
         "title": "NFT Data Storage",
@@ -46,8 +46,8 @@
         "sidebar_label": "Overview"
       },
       "buildIntegrationWebsiteHosting": {
-        "title": "Website Hosting",
-        "sidebar_label": "Website Hosting"
+        "title": "Website hosting",
+        "sidebar_label": "Website hosting"
       },
       "buildIPFSSDKs": {
         "title": "IPFS SDKs",

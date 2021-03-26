@@ -47,15 +47,15 @@ class HomeNav extends React.Component {
                     aosDelay="0"
                 />
                 <NavItem
-                    href={this.props.docUrl("nodeOverview.html")}
-                    title="节点"
-                    content="参与并维护Crust网络"
+                    href={this.props.docUrl("buildGettingStarted.html")}
+                    title="构建"
+                    content="在Crust网络上构建你的去中心化应用"
                     aosDelay="300"
                 />
                 <NavItem
-                    href={this.props.docUrl("storageOverview.html")}
-                    title="存储"
-                    content="使用Crust网络存储文件"
+                    href={this.props.docUrl("nodeOverview.html")}
+                    title="节点"
+                    content="参与并维护Crust网络"
                     aosDelay="600"
                 />
             </NavContainer>
