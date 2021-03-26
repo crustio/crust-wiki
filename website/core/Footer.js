@@ -35,9 +35,14 @@ class Footer extends React.Component {
             <a href={this.docUrl('gettingStarted.html')}>
               Getting Started
             </a>
-            <a href={this.docUrl('claims.html')}>CRU Claims</a>
-            <a href={this.docUrl('GPoS.html')}>
-              GPoS
+            <a href={this.docUrl('claims.html')}>
+              CRU Claims
+            </a>
+            <a href={this.docUrl('buildIntegrationWebsiteHosting.html')}>
+              Website Hosting with Crust
+            </a>
+            <a href={this.docUrl('buildIntegrationNFTDataStorage.html')}>
+              NFT Data Storage with Crust
             </a>
           </div>
           <div>
@@ -50,6 +55,12 @@ class Footer extends React.Component {
             {/*  Stack Overflow*/}
             {/*</a>*/}
             {/*<a href="https://discordapp.com/">Project Chat</a>*/}
+            <a
+              href="https://discord.gg/D97GGQndmx"
+              target="_blank"
+              rel="noreferrer noopener">
+              Discord
+            </a>
             <a
               href="https://twitter.com/CrustNetwork"
               target="_blank"

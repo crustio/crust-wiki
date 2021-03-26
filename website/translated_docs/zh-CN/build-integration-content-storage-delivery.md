@@ -1,7 +1,7 @@
 ---
 id: buildIntegrationContentStorageDelivery
-title: Content storage & delivery
-sidebar_label: Content storage & delivery
+title: Content Storage & Delivery
+sidebar_label: Content Storage & Delivery
 ---
 
 Crust provides standard file upload and download services based on the combination of IPFS. Developers can build cloud storage functions, file distribution and even standard S3-like services on Crust. This article will explain from the perspectives of file upload, file storage, and file download
