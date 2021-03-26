@@ -1,7 +1,7 @@
 ---
 id: buildIntegrationWebsiteHosting
-title: Website hosting
-sidebar_label: Website hosting
+title: Website Hosting
+sidebar_label: Website Hosting
 ---
 
 Crust provides 3 standard ways to host websites based on [Crust SDK](build-crust-sdk.md) and [IPFS SDK](https://github.com/ipfs/js-ipfs/):
