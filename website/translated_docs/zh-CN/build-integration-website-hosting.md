@@ -147,14 +147,14 @@ Also, there is a [standard Github Workflow](https://github.com/crustio/ipfs-crus
 
 There's already some project used Crust Network to host their website application.
 
-- [Uniswap Interface Crust Pinner](https://github.com/crustio/ipfs-crust-pinner/actions/workflows/uniswap-interface.yml): Use Crust IPFS Pin Github Action
-- [Crust Apps](https://github.com/crustio/crust-apps/actions/workflows/release.yml): Use Crust IPFS Pin Github Action
+- 🦄 [Uniswap](https://github.com/Uniswap/uniswap-interface/blob/main/.github/workflows/release.yaml#L57): Use Crust IPFS Pin Github Action
+- 🟠 [Crust Apps](https://github.com/crustio/crust-apps/actions/workflows/release.yml): Use Crust IPFS Pin Github Action
 - *More*
 
 ## Resources
 
-- [Uniswap Interface Release Workflow](https://github.com/Uniswap/uniswap-interface/blob/main/.github/workflows/release.yaml)
-- [Crust Apps Release Workflow](https://github.com/crustio/crust-apps/blob/master/.github/workflows/release.yml)
+- [Uniswap](https://github.com/Uniswap/uniswap-interface)
+- [Crust Apps](https://github.com/crustio/crust-apps/)
 - [crust-pin](https://github.com/crustio/crust.js/tree/main/packages/crust-pin)
 - [ipfs-crust-action](https://github.com/crustio/ipfs-crust-action)
 - [ipfs-upload-action](https://github.com/crustio/ipfs-upload-action)
