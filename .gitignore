@@ -106,3 +106,6 @@ dist
 
 # User
 .idea/
+
+# Mac
+*.DS_Store

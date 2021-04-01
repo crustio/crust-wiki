@@ -4,22 +4,25 @@ title: Democracy Guide
 sidebar_label: Democracy Guide
 ---
 
-The Democracy module is an important part of Crust Network, reflecting the advantages of Crust on-chain governance and degree of decentralization. Since the design of the Democracy module is modelled after the British parliamentary system that by nature contains many aspects, this tutorial mainly focuses on the main processes, specific practices, rules, and parameters of the Democracy module for the ease of reading.
+The Democracy module is an important part of Crust Network, reflecting the advantages of Crust on-chain governance and degree of decentralization. The whole picture of Democracy module contains the following parts:
 
+1. [**Proposals&Referenda**](#1-proposalsreferenda): General democracy module that every one can submit a proposal and vote for the proposal to make Crust Network better.
+2. [**Treasury&Tips**](#2-treasurytips): A treasury module which can support eco-system growing and provide the source of tips. 
+3. [**Bounty**](#3-bounty): Bounty module that everyone can open a bounty.
+4. [**Council**](#4-council): Council system which can decide the big decision about Crust Network, which has root authority right.
+5. [**Technical Committee**](#5-technical-committee): Technical committee which can help maintain the technical part of Crust Network.
 
+## 1 Proposals&Referenda
+This part mainly focuses on the main processes, specific practices, rules, and parameters of the Democracy module for the ease of reading.
 
-## Process of Democracy module
-
-### Main processes
+### 1.1 Main processes
 1. Create a preimage to decide on the code for execution with a request for voting;
 2. Create and submit a proposal;
 3. Review proposals from others or wait for the proposal to be reviewed;
 4. At the end of each Lanuch cycle, the proposal with the highest number of review votes will be selected into the voting stage, and the proposals that pass the voting stage will move on to the execution stage.
 5. A timer will be set for the execution of the approved proposals according to the chain parameters.
 
-
-
-## Practices
+### 1.2 Practices
 1. Create a preimage
 ![democracy_entry_page](assets/democracy/democracy_entry_page.jpeg)
 As shown above, go to the Democracy page and then click on "Submit preimage".
@@ -48,9 +51,7 @@ After the transaction is submitted, you can go to the event page and check the h
 
   ![scheduled](assets/democracy/scheduled.png)
 
-  
-
-## Rules, parameters and notices
+### 1.3 Rules, parameters and notices
 
 1. The created preimage needs to be a transaction that can be executed by Root permission, such as taking.SetValidatorCount or market.setPunishment. Otherwise,  the execution will eventually fail even if it enters the stage.
 2. Both the proposal submission and the proposal review will require a certain number of CRUs to be staked. The amount set on the preview web is **10 CRUs**. The locked-in CRUs will be automatically unlocked once the proposal enters the voting stage. However, it should be noted that the locked CRUs cannot be unlocked for proposals up for review at the same time, and only the proposal that ultimately makes into the voting stage will see CRUs unlocked. On the preview web, **every 7 days** the proposal with the highest number of review votes will be selected into the voting stage.
@@ -59,22 +60,19 @@ After the transaction is submitted, you can go to the event page and check the h
 
 4. The deferred time duration is **8 days** on the preview web.
 
-   
-
-## Advanced process of democracy module
-### Proxy voting mechanism
+### 1.4 Proxy voting mechanism
 Comming soon
-### External proposals
+### 1.5 External proposals
 Comming soon
 
-### Tipping mechanism
+## 2 Treasury&Tips
 Comming soon
 
-### Bounty mechanism
+## 3 Bounty
 Comming soon
 
-### Parliamentary system and participation
+## 4 Council
 Comming soon
 
-### Technical Committee System
+## 5 Technical Committee
 Comming Soon
