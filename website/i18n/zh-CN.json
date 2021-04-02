@@ -73,6 +73,10 @@
         "title": "Crust 钱包",
         "sidebar_label": "Crust 钱包"
       },
+      "democracyGuide": {
+        "title": "民主指南",
+        "sidebar_label": "民主指南"
+      },
       "community": {
         "title": "社区",
         "sidebar_label": "社区"
