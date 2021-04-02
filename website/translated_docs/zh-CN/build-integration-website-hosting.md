@@ -148,12 +148,14 @@ Also, there is a [standard Github Workflow](https://github.com/crustio/ipfs-crus
 There's already some project used Crust Network to host their website application.
 
 - 🦄 [Uniswap](https://github.com/Uniswap/uniswap-interface/blob/main/.github/workflows/release.yaml#L57): Use Crust IPFS Pin Github Action
+- 🟣 [Polkadot Apps](https://github.com/polkadot-js/apps/blob/master/scripts/ipfsUpload.cjs#L64-L65): Use Crust Pin Nodejs package
 - 🟠 [Crust Apps](https://github.com/crustio/crust-apps/actions/workflows/release.yml): Use Crust IPFS Pin Github Action
 - *More*
 
 ## Resources
 
 - [Uniswap](https://github.com/Uniswap/uniswap-interface)
+- [Polkadot Apps](https://github.com/polkadot-js/apps)
 - [Crust Apps](https://github.com/crustio/crust-apps/)
 - [crust-pin](https://github.com/crustio/crust.js/tree/main/packages/crust-pin)
 - [ipfs-crust-action](https://github.com/crustio/ipfs-crust-action)
