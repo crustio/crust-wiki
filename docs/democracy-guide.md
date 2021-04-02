@@ -6,11 +6,11 @@ sidebar_label: Democracy Guide
 
 The Democracy module is an important part of Crust Network, reflecting the advantages of Crust on-chain governance and degree of decentralization. The whole picture of Democracy module contains the following parts:
 
-1. [**Proposals&Referenda**](#1-proposalsreferenda): General democracy module that every one can submit a proposal and vote for the proposal to make Crust Network better.
-2. [**Treasury&Tips**](#2-treasurytips): A treasury module which can support eco-system growing and provide the source of tips. 
-3. [**Bounty**](#3-bounty): Bounty module that everyone can open a bounty.
-4. [**Council**](#4-council): Council system which can decide the big decision about Crust Network, which has root authority right.
-5. [**Technical Committee**](#5-technical-committee): Technical committee which can help maintain the technical part of Crust Network.
+1. [**Proposals&Referenda**](#1-proposalsreferenda): General democracy module that everyone can submit a proposal and vote for the proposal to make Crust Network better.
+2. [**Treasury&Tips**](#2-treasurytips): The Treasury is a pot of funds collected through transaction fees, slashing, staking inefficiencies, etc. The funds held in the Treasury can be spent by making a spending proposal that, if approved by the Council, will enter a waiting period before distribution. 
+3. [**Bounty**](#3-bounty): Bounties Spending proposals aim to delegate the curation activity of spending proposals to experts called Curators: They can be defined as addresses with agency over a portion of the Treasury with the goal of fixing a bug or vulnerability, developing a strategy, or monitoring a set of tasks related to a specific topic: all for the benefit of the Crust ecosystem.
+4. [**Council**](#4-council): The council is an on-chain entity comprising a number of actors, each represented as an on-chain account. Along with controlling the treasury, the council is called upon primarily for three tasks of governance: proposing sensible referenda, cancelling uncontroversially dangerous or malicious referenda, and electing the technical committee.
+5. [**Technical Committee**](#5-technical-committee): The Technical Committee can, along with the Council, produce emergency referenda, which are fast-tracked for voting and implementation. These emergency referenda are intended for use only under urgent circumstances.
 
 ## 1 Proposals&Referenda
 This part mainly focuses on the main processes, specific practices, rules, and parameters of the Democracy module for the ease of reading.
