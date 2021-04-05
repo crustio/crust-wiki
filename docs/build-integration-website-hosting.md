@@ -6,9 +6,9 @@ sidebar_label: Website Hosting
 
 Crust provides 3 standard ways to host websites based on [Crust SDK](build-crust-sdk.md) and [IPFS SDK](https://github.com/ipfs/js-ipfs/):
 
-1. 💻 [Crust Command Line](https://github.com/crustio/crust-cli): Allow user to publish website to Crust Network through terminal command line.
-2. 📦 [Crust Pin Nodejs Package](https://github.com/crustio/crust.js/tree/main/packages/crust-pin): Allow user to write javascript code to publish website to Crust Network through javascript code.
-3. 🔗 [Crust IPFS Pin Github Action](https://github.com/crustio/ipfs-crust-action): Allow user to integrate standard [Github Action](https://github.com/features/actions) to publish website to Crust Network.
+1. 💻 [Crust Command Line](https://github.com/crustio/crust-cli): Allows user to publish website to Crust Network through terminal command line.
+2. 📦 [Crust Pin Nodejs Package](https://github.com/crustio/crust.js/tree/main/packages/crust-pin): Allows user to write javascript code to publish website to Crust Network through javascript code.
+3. 🔗 [Crust IPFS Pin Github Action](https://github.com/crustio/ipfs-crust-action): Allows user to integrate standard [Github Action](https://github.com/features/actions) to publish website to Crust Network.
 
 In this guide, we will host a simple React website as an example and show how to deploy and host it on Crust Network use 3 different ways.
 
