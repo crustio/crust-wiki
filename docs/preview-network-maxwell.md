@@ -36,8 +36,7 @@ Waiting for DSM, comming soon
 
 
 ## Benefits and Rewards
-The preview network provides staking and authoring rewards (total 540,000 CRU), and storage market rewards. The staking and authoring rewards are distributed in 2 years. The initial reward for each era (6 hours) is 750CRU, including 600CRU staking reward and 150CRU authoring reward. The era reward is halved every 90 days.
-
+The preview network provides 540,000 CRU as the reward for staking and generating block. The initial amount of reward for staking and generating block is 750 CRU per era(6 hours),  including 600CRU staking reward and 150CRU generating reward. The era reward will be halved every 360 eras(90 days), finally, the total amount of reward will be 540,000 CRU. If a validatior/candidater has guarantors, no matter who claim the reward, all the participators can receive the reward.
 
 ## Developer
 
