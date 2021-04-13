@@ -9,7 +9,7 @@ sidebar_label: Crust Claim Back
 ## 注意
 
 1. 转回的操作**不会实时到账**，每一个转回周期为：**7天**
-2. 转回需要**扣除一定的CRU作为以太坊转账的手续费**，手续费为：**3 CRUs**
+2. 转回需要**扣除一定的CRU作为以太坊转账的手续费**，手续费为：**1 CRUs**
 
 > 同一转回周期的**多笔转账总和需要大于一笔手续费**，小于手续费的转回会被判定为无效，不予转回
 
@@ -34,7 +34,7 @@ sidebar_label: Crust Claim Back
 其次，你需要在Crust Maxwell预览网上向 ***Crust Maxwell认证转回地址*** 发起一笔CRU转账交易，这个操作需要在[Crust Apps的账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/accounts)进行，发起转账之前**请务必阅读**：
 
 1. ***Crust Maxwell转回地址*** 为：[5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx](https://crust.subscan.io/account/5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx) (已认证地址：**CRU BRIDGE\<ERC-20\>🚗💰**)
-2. ⚠️ 请注意在一个转回周期内（7天），需要**保证转回总金额大于3 CRUs**
+2. ⚠️ 请注意在一个转回周期内（7天），需要**保证转回总金额大于1 CRUs**
 3. 发起转回交易的账户已经执行过[步骤一](#一绑定以太坊地址)进行以太坊地址的绑定
 
 ![claim_back_transfer](assets/claimBack/claim-back-transfer.png)
