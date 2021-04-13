@@ -3,100 +3,88 @@ id: gettingStarted
 title: Getting Started
 sidebar_label: Getting Started
 ---
-## What is Crust
 
-Crust provides a decentralized storage network of Web3 ecosystem. It supports multiple storage layer protocols such as IPFS, and exposes storag
-interfaces to application layer. Crust's technical stack is also capable of supporting a decentralized computing layer. It is designed to build a
-decentralized cloud ecosystem that values data privacy and ownership.
+## Crust 是什么
+CRUST提供了Web3⽣态系统的去中⼼化存储⽹络，⽀持包括IPFS在内的多种存储层协议，并对应⽤层提供接⼝。Crust的技术栈还能够⽀持去中⼼化计算层。Crust旨在构建⼀个重视数据隐私和所有权的分布式云⽣态系统。
 
-## How to Use Crust
+## 如何使用 Crust
+您可以按照3个简单的步骤来上传，存储和分发文件：
+1. 将文件添加到IPFS网络。
+2. 在Crust链上下达相应的存储订单。
+3. 在存储订单状态变为成功之后，您可以通过标准IPFS接口和网关从任何地方访问该文件。
 
-In general, you can follow 3 simple steps to upload, store and distribute files:
+请参考[代码示例](build-developer-guidance.md)，其中说明了如何通过程序执行上述3个步骤。您也可以访问[Crust Apps](storageUserGuide.md)通过UI执行这些步骤。
 
-1. Add your file to IPFS network.
-2. Place corresponding storage order on Crust Chain.
-3. After the storage order status turns to be successful, the file can be then accessed via standard IPFS interface and gateway from anywhere.
+Crust Network 适用于多种场景，包括：
 
-Please refer to the [code sample](build-developer-guidance.md) that explains how to execute above 3 steps via program. You can also visit [Crust Apps](storageUserGuide.md) to execute those steps via UI.
+1. 无服务器 DApp/网站托管
+开发人员能够基于Crust/IPFS网络部署自己的DApp/网站。这样，开发人员仅需专注于构建DApp/网站，而无需管理服务器。此外，Crust Network鼓励多个节点存储DApp/网站文件并提供存储服务，从而确保DApp/网站的高可用性。Crust Apps是一个示例，它托管在Crust Network上。
 
-Crust can be used in a wide range of scenarios, including:
+2. 通用链下数据存储
+一些基于区块链的去中心化应用程序（例如NFT和去中心化社交平台）涉及大量数据，远远超出了链上存储能力。基于Crust/IPFS网络，开发人员可以为这些应用程序提供通用的链下数据存储服务。
 
-1. Serverless DApp/website hosting
+3. 加速内容分发
+开发人员能够使用Crust/IPFS网络构建P2P内容分发网络（CDN）服务。 Crust Network激励节点自发分发CDN数据，并扮演CDN边缘节点的角色，以加快CDN用户的数据传输速度。
 
-   Developers are able to deploy their own Dapps/websites based on Crust/IPFS Network. With this, developers are able to only focus on building Dapps/websites, no need for server management. Moreover, Crust Network incentivizes multiple nodes to store Dapp/website files and provide storage services, thus ensuring the high availability of Dapps/websites. [Crust Apps] is an example, it is hosted on Crust Network.
+4. 安全的云存储
+开发人员能够使用Crust/IPFS网络构建云存储应用程序。在不维护存储集群的情况下，开发人员只需要将Crust/IPFS的SDK集成到应用程序中即可为用户提供稳定的存储服务。
 
-2. General off-chain data storage
+我们将引入一系列的`Crust Grants`，以加速应用程序开发和网络采用。
 
-   Some blockchain-based decentralized applications, such as NFT and decentralized social platforms, involve a large amount of user data, far beyond the on-chain storage capacity. Based on Crust/IPFS Network, developers can provide general off-chain data storage services for these applications.
+## 立即加入并开始使用 Crust
 
-3. Accelerated content delivery
+Crust预览网“Maxwell”现已上线。这是一个激励网络。您可以参考以下链接来加入或者尝试使用网络。
 
-   Developers are able to build P2P content delivery network (CDN) services with Crust/IPFS Network. Crust Network incentivizes the nodes to spontaneously distribute CDN data and play the role of CDN edge nodes to accelerate the data transmission for CDN users.
+- 节点提供者 - 请参考[节点指南](node-overview.md)以在Maxwell中安装配置和运行Crust节点。
+- Token持有者 - 请参考[Guarantor Guidance](guarantor-guidance.md)进行Staking及担保等相关操作。
+- 存储用户 - 请参考[存储用户指南](storageUserGuide.md)以开始使用存储市场。
+- 开发人员 - 有关更多信息，请参见[构建](build-getting-started.md)页面。
 
-4. Secured cloud storage
-   Developers are able to build Cloud storage applications with Crust/IPFS Network. Without maintaining storage clusters, developers only need to integrate the SDK of Crust/IPFS into applications to provide users with stable storage services.
+## Crust 如何工作
 
-A series of `Crust Grants` will be introduced to accelerate the application development and network adoption.
-
-## Join and Use Crust Now
-
-Crust Preview Network "Maxwell" is now live. It is an incentivized network. You can refer to following links to join and play.
-
-- Node Provider - Refer to the [Node Guidance](node-overview.md) to run setup and run Crust Nodes in Maxwell.  
-- Token Holder - Refer to the [Guarantor Guidance](guarantor-guidance.md) to perform staking operations.
-- Storage User - Refer to the [Storage User Guidance](storageUserGuide.md) to start using storage market.
-- Developers - Refer to the [Build](build-getting-started.md) pages for more information.
-
-## How Crust Works
-
-Crust works in 3 layers as follows.
-
-1. MPoW (Meaningful Proof of Work) - The low-trust/zero-trust storage proof layer to inspect and prove storage work of miners.
-2. GPoS (Guaranteed Proof of Stake) - The PoS-derived consensus layer that requires nodes to provide storage proof to get staking quota.
-3. DSM (Decentralized Storage Market) - It enables users to place storage orders on the chain, to get their data stored and distributed on Crust Network.
-
+Crust包含以下几层工作机制：
+1. MPoW（有意义工作证明）- 低信任/零信任存储证明层，用于检查和证明矿工的存储工作。
+2. GPoS（担保权益证明）- PoS衍生共识，GPoS要求节点提供存储证明以获取权益配额。
+3. DSM（去中心化存储市场）- DSM支持用户在链上下达存储订单，以将其数据存储和分发到 Crust Network。
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/arch.png)
 
-
 ### MPoW
+MPoW是低信任存储证明层。 MPoW的总体功能是定期生成可信赖的存储工作报告并上传到链中。存储工作量报告包括特定节点上数据存储工作的增量信息。
 
-MPoW is a low-trust storage proof layer. The overall function of MPoW is to periodically generate trustable storage work reports and upload to the chain. A storage work report includes incremental information of data storage work on a particular node.
+从技术上讲，当前MPoW的存储证明机制是基于TEE（可信执行环境）技术实现的。包含3个主要流程：存储流程，报告流程和验证流程。
 
-Technical-wise, Current MPoW's low-trust storage proof mechanism is implemented based on TEE (Trusted Execution Environment) technology. There are 3 major processes: store process, report process and verify process.
-
-Based on the Trusted Execution Environment(TEE) technology, nodes in Crust network can perform non-interactive storage proof. As shown in the figure below, TEE will periodically check the storage status of nodes and generate a workload report that can be verified by all nodes.
+基于可信执行环境（TEE）技术，Crust网络中的节点可以执行非交互式存储证明。如下图所示，TEE将定期检查节点的存储状态并生成可被所有节点验证的工作量报告。
 
 ![wiki-mpow](assets/mpow/wiki-mpow.png)
 
-Zero-knowledge algorithm is an alternative technical approach to implement the 3 major processes of MPoW. It will be considered in future development.
+零知识证明算法是实现MPoW的3个主要流程的替代技术方法。我们将在未来的技术方案中纳入此算法。
 
 ### GPoS
 
-GPoS is a PoS-derived consensus protocol. Like NPoS, a user can vote to specific nodes (and we define the vote behavior as a guarantee process). The key difference is that each node has its own staking quota, decided by its proven storage resource and work. Therefore, GPoS encourages nodes to provide more storage resources to take more work, and improve the security and robustness of the network.
+GPoS是PoS衍生的共识协议。像NPoS一样，用户可以对特定节点进行投票（我们将此投票行为定义为担保操作）。关键区别在于，每个节点都有自己的Staking配额，配额取决于其经过证明的存储资源和工作量。因此，GPoS鼓励节点提供更多的存储资源，以提高网络的安全性和鲁棒性。
 
-GPoS leverages the storage work reports generated by the MPoW storage proof layer to calculate the storage resource related parameters.
+GPoS利用MPoW存储证明层生成的存储工作报告来计算与存储资源相关的参数。
 
-GPoS also encourages users to stake their tokens to high quality nodes via guarantee operation to obtain staking income.
+GPoS还鼓励用户通过担保操作将其代币Staking到高质量的节点上，以获取Staking收益。
 
-GPoS related concepts and processes are described in the following diagram.
+下图描述了与GPoS相关的概念和过程。
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/gpos.png)
 
 
 ### DSM
+DSM（去中心化存储市场）允许存储用户在链上下达存储订单，订单中指定的文件（IPFS CID列表）将由Crust节点进行存储。DSM还负责激励存储节点提供检索服务。
 
-DSM (Decentralized Storage Market) allows storage users to place storage orders on the chain, and the files (IPFS CID list) specified in the storage order will be stored by Crust nodes. DSM also takes care of incentivizing storage nodes to provide retrieving service.
+DSM包含3种主要机制：
 
-DSM contains 3 major mechanisms:
-
-1. Pricing Mechanism. Storage order fee is calculated by the network according to file size, storage period and overall storage requirement and supply.  
-   <br/>
-2. Storage Order Mechanism. Storage Order works in a pooled way. Once a user places a storage order:
-   a) Certain amount of order fee will be added to the specific file payment pool, and the rest will be put to the overall network staking pool.
-   b) Any node that submits corresponding storage proof will be added to the payout queue of the file payment pool, until the payout queue reaches its limitation. Nodes in the queue will be able to claim the income later.
-   c) Any node that submits corresponding storage proof will get a staking quota increasement (by several times depending on the file copy amount all over the network). 
-   <br/>
-3. Retrieval Mechanism. As a data storage system, besides the storage market, DSM also takes the responsibility of incentivizing the nodes to provide retrieval service. Therefore, DSM includes another layer of incentives to encourage nodes to support data retrieval:
-   a) DSM enhances the IPFS credit system, which is a local node ranking system without consensus, as part of the BitSwap strategy. In a Crust-backed BitSwap process, a node is able to query the on-chain storage proof info to get what blocks are stored on which nodes; therefore, if it failed to retrieve blocks from from target node, the local ranking for target node will be lowered down.
-   b) According to the credit system, nodes providing better retrieval service will get higher ranking and have a better chance of getting more files quickly, thus getting more storage payments and staking income. On the other hand, nodes that provide lower quality of retrieval service will unlikely to benefit from the system.
+1. 定价机制。存储订单费用由网络根据文件大小，存储期限以及总体存储需求和供应量计算得出。
+<br/>
+2. 存储订单机制。存储订单按类似“存储池”的机制工作。用户下达存储订单后：
+a）一定数量的存储费将被添加到订单指定的文件支付池中，其余的将被放入整个网络权益池（Staking Pool）中。
+b）优先提交了相应存储证明的节点都将添加到该文件支付池的支付队列中，直到支付队列达到其限制为止。队列中的节点可以从此支付池中领取相应费用。
+c）任何提交了相应存储证明的节点都将获得Staking配额增加（取决于整个网络上的文件复制量，增加几倍）。
+<br/>
+3. 检索机制。作为去中心化存储系统，除了存储市场之外，DSM还承担了激励节点提供检索服务的责任。因此，DSM包括另一层激励机制，以鼓励节点支持数据检索：
+a）作为BitSwap策略的一部分，DSM增强了IPFS信用系统，该系统是一个非共识的本地节点排名系统。在Crust支持的BitSwap流程中，一个节点能够查询链上存储证明信息，以获取哪些块存储在哪些节点上；因此，如果无法从目标节点成功检索块，则目标节点的本地排名将降低。
+b）根据信用系统，提供更好的检索服务的节点将获得更高的排名，并且有更快获得文件的机会，从而获得更多的存储市场收入。另一方面，提供较低质量的检索服务的节点将不太可能从该系统中受益。
