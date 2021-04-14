@@ -81,6 +81,10 @@
         "title": "Account",
         "sidebar_label": "Account"
       },
+      "crustGrants": {
+        "title": "Crust Grants",
+        "sidebar_label": "Crust Grants"
+      },
       "crustConsensus": {
         "title": "Crust Consensus",
         "sidebar_label": "Crust Consensus"
