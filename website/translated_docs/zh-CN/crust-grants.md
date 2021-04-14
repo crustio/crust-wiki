@@ -18,7 +18,7 @@ Crust Grants Program由Decentralized Cloud Foundation（DCF，去中心化云基
 
 ## 2. 申请方向
 
-![crust_stack](assets/general/crust-stack.png)
+![crust_stack](assets/general/crust_stack.png)
 
 ### 2.1 L0协议层
 
