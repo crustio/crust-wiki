@@ -22,7 +22,7 @@ For projects whose Crust Grants application has been accepted:
 
 ## 2. Application direction
 
-![crust_stack](assets/general/crust-stack.png)
+![crust_stack](assets/general/crust_stack.png)
 
 Crust Grants protocol stacks
 
