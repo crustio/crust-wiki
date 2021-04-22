@@ -22,6 +22,9 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 
 Using an exchange account to sent a transfer (withdrawal) transaction will be invalidated and cause asset loss. <font color='red'>You are responsible for the consequences</font>!
 
+<font color='red'>If your CRU is in the exchange. You need to make sure to transfer the CRU from the exchange to your wallet first.
+</font>
+
 ### I. Send CRU Claim Transaction
 
 > Please make sure you transfer CRU to the Claim Address, not ETH.
