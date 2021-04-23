@@ -57,6 +57,10 @@
         "title": "Crust Node",
         "sidebar_label": "Crust Node"
       },
+      "buildRockyGuidance": {
+        "title": "Crust Rocky Network",
+        "sidebar_label": "Crust Rocky Network"
+      },
       "buildSmanager": {
         "title": "Crust Storage Manager",
         "sidebar_label": "Crust Storage Manager"

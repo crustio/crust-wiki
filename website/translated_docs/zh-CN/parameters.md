@@ -28,16 +28,16 @@ sidebar_label: Parameters
 | **变量名**          | **解释**                                 | **预览网参数** | **主网参数** |
 | :------------------ | :--------------------------------------- | :------------- | :----------- |
 | **REPORT_SLOT**     | Work report 上报周期（block）            | 300            | <br>         |
-| **PunishmentSlots** | Work report漏报的惩罚长度(REPORT_SLOT)   | 24             | <br>         |
+| **PunishmentSlots** | Work report漏报的惩罚长度(REPORT_SLOT)   | 16             | <br>         |
 | **sWorkerReLoad**   | sWorker 重启的惩罚时间长度 (REPORT_SLOT) | 1              | <br>         |
 
 ## Storage Market
 
 | **变量名**                | **解释**                                                 | **预览网参数** | **主网参数** |
 | :------------------------ | :------------------------------------------------------- | :------------- | :----------- |
-| **FileDuration**          | 文件有效期 (块)                                          | 216000         | <br>         |
+| **FileDuration**          | 文件有效期 (块)                                          | 2592000         | <br>         |
 | **InitialReplica**        | 能直接获得文件存储奖励的副本节点数                       | 4              | <br>         |
-| **FileBaseFee**           | 15天存储的基础费 （cru）                                 | 0.01           | <br>         |
+| **FileBaseFee**           | 15天存储的基础费 （cru）                                 | 0.001           | <br>         |
 | **FileInitPrice**         | 初始每MB大小 （cru）                                     | 0.000001         | <br>         |
 | **StorageReferenceRatio** | 供需基准线：有效存储量超过这个值，价格会上升，反之会下降 | 25%            | <br>         |
 | **StorageIncreaseRatio**  | 存储价格上升速率（cru/order）                            | 0.00001        | <br>         |

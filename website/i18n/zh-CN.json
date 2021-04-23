@@ -25,6 +25,10 @@
         "title": "Hello Crust",
         "sidebar_label": "Hello Crust"
       },
+      "buildRockyGuidance": {
+        "title": "Crust Rocky Network",
+        "sidebar_label": "Crust Rocky Network"
+      },
       "buildIntegrationContentStorageDelivery": {
         "title": "内容存储与分发",
         "sidebar_label": "内容存储与分发"

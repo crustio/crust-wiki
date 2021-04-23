@@ -19,6 +19,7 @@ You can read **Integration Guide** to learn how to leverage Crust in your applic
 ## Development Guide
 
 - [Hello Crust](build-hello-crust.md) - Tutorial on hosting a website on Crust, *this doc will help you understand Crust functions in a super intuitive way*.
+- [Crust Rocky](build-rocky-guidance.md) - How to join Crust Rocky Network.
 - [Code Sample to Use Crust](build-developer-guidance.md) - How to build a simple application with code sample.
 - [Crust SDK](build-crust-sdk.md) - Crust SDK and API document.
 
