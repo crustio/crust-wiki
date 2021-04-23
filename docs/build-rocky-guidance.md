@@ -8,7 +8,7 @@ Welcome to Crust Rocky Network. Crust Rocky Network is a test network for develo
 
 Here you will learn how to join the Crust Rocky Network, get the Rocky CRU from the faucet and important parameters of Crust Rocky Network.
 
-## How to join the Crust Rocky Network.
+## How to play with the Crust Rocky Network.
 You can join and check the Crust Rocky Network from our [apps](https://apps.crust.network/?rpc=wss%3A%2F%2Frocky-api.crust.network#/accounts). It's exact same with our Crust Maxwell Preview Network. You can create your account first and copy the account address.
 
 ## Get the Rocky CRU from the faucet.
