@@ -81,22 +81,7 @@ The PolkadotJS API document can be found [here](https://polkadot.js.org/docs/api
 
 ### Crust API
 
-Please visit [Crust Apps](https://apps.crust.network/), connect your [CRU wallet](crustWallet.md) (or any other wallet that supports CRU), and check out the [`Chain state`](https://apps.crust.network/#/chainstate) and [`Extrinsics`](https://apps.crust.network/#/extrinsics) under `Developer` menu for detailed API list.
-
-- Chainstate: contains storage query API list for different modules. 
-  - `market`: contains storage market related API, such as `filePrice`, `files`, `merchantLedgers`, etc.
-  - `swork`: contains node storage proof related API, such as `workReports`, `reportedInSlot`, `identities`, etc.
-  - `system`, `staking`, `balances`, etc: contains typical blockchain related API such as `system.account`.
-
-![api-chainstate](assets/build/api-fileprice.png)
-  
-- Extrinsics: contains extrinsics execution API list for different modules.
-  - `market`: contains storage market related API, such as p`laceStorageOrder`, `calculateReward`, `addPrepaid`, etc.
-  - `staking`: contains GPoS related API, such as `bond`, `unbond`, `validate`, `gurantee`, etc.
-  - `swork`: contains node storage proof related API, such as `createGroup`, `joinGroup`, etc.
-  - `session`, `balances`, `utility`, etc: contains typical blockchain related API, such as session.`setKeys`, balances.`transfer`, utility.`batch`, etc.
-
-![api-placeorder](assets/build/api-placestorageorder.png)
+Please visit [Crust Docs](http://101.132.117.183:8080/) to check all Crust API. You can check the [`Constants`](http://101.132.117.183:8080/substrate/constants) to get all constants stored on chain. You can learn how the chain state organazied on [`Storage`](http://101.132.117.183:8080/substrate/storage) page and all supported extrinsices on [`Extrinsics`](http://101.132.117.183:8080/substrate/extrinsics). You can check the [`Events`](http://101.132.117.183:8080/substrate/events) and [`Errors`](http://101.132.117.183:8080/substrate/errors) as well if neccessary.
 
 
 ### Contributes on Crust API Specifications
