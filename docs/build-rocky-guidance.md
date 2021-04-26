@@ -9,7 +9,7 @@ Welcome to Crust Rocky Network. Crust Rocky Network is a test network for develo
 Here you will learn how to join the Crust Rocky Network, get the Rocky CRU from the faucet and important parameters of Crust Rocky Network.
 
 ## How to play with the Crust Rocky Network.
-You can join and check the Crust Rocky Network from our [apps](https://apps.crust.network/?rpc=wss%3A%2F%2Frocky-api.crust.network#/accounts). It's exact same with our Crust Maxwell Preview Network. You can create your account first and copy the account address.
+You can join and check the Crust Rocky Network from our [apps](https://apps.crust.network/?rpc=wss%3A%2F%2Frocky-api.crust.network#/explorer). It's exact same with our Crust Maxwell Preview Network. You can create your account first and copy the account address.
 
 ## Get the Rocky CRU from the faucet.
 Go to our faucet repo and [open an issue](https://github.com/decloudf/faucet-bot/issues/new?assignees=&labels=en%2C+token-wanted%F0%9F%99%8B&template=crust-profit-ark-test-token-application---.md&title=5GNJqTPyNqANBkUVMN1LPPrxXnFouWXoe2wNSmmEoLctxiZY) to get Rocky CRU. You just need to put your account address into the title and click the "Submit new issue" button.
@@ -85,4 +85,4 @@ services:
 If you want to build and run a chain from source code, please check the [readme](https://github.com/crustio/crust/blob/master/README.md) in the [crust repo](https://github.com/crustio/crust).
 
 ## API Docs
-You can check [Crust Docs](http://101.132.117.183:8080/) website to learn supported api for our chain.
+You can check [Crust Docs](https://apps.crust.network/docs/) website to learn supported api for our chain.

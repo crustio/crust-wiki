@@ -81,7 +81,7 @@ The PolkadotJS API document can be found [here](https://polkadot.js.org/docs/api
 
 ### Crust API
 
-Please visit [Crust Docs](http://101.132.117.183:8080/) to check all Crust API. You can check the [`Constants`](http://101.132.117.183:8080/substrate/constants) to get all constants stored on chain. You can learn how the chain state organazied on [`Storage`](http://101.132.117.183:8080/substrate/storage) page and all supported extrinsices on [`Extrinsics`](http://101.132.117.183:8080/substrate/extrinsics). You can check the [`Events`](http://101.132.117.183:8080/substrate/events) and [`Errors`](http://101.132.117.183:8080/substrate/errors) as well if neccessary.
+Please visit [Crust Docs](https://apps.crust.network/docs/) to check all Crust API. You can check the [`Constants`](https://apps.crust.network/docs/crust/constants) to get all constants stored on chain. You can learn how the chain state organazied on [`Storage`](https://apps.crust.network/docs/crust/storage) page and all supported extrinsices on [`Extrinsics`](https://apps.crust.network/docs/crust/extrinsics). You can check the [`Events`](https://apps.crust.network/docs/crust/events) and [`Errors`](https://apps.crust.network/docs/crust/errors) as well if neccessary.
 
 
 ### Contributes on Crust API Specifications
