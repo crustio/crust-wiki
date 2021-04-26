@@ -69,6 +69,10 @@
         "title": "CRU 转回",
         "sidebar_label": "CRU 转回"
       },
+      "claimCRU18": {
+        "title": "CRU18 认领",
+        "sidebar_label": "CRU18 认领"
+      },
       "crustWallet": {
         "title": "Crust 钱包",
         "sidebar_label": "Crust 钱包"

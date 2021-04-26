@@ -69,6 +69,10 @@
         "title": "Crust Claims",
         "sidebar_label": "Crust Claims"
       },
+      "claimsCRU18": {
+        "title": "Crust Claim CRU18",
+        "sidebar_label": "Crust Claim CRU18"
+      },
       "community": {
         "title": "Community",
         "sidebar_label": "Community"
