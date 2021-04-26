@@ -30,6 +30,7 @@
         "label": "Development Guide",
         "ids": [
           "buildHelloCrust",
+          "buildRockyGuidance",
           "buildDevGuidance",
           "buildCrustKits"
         ]

@@ -6,7 +6,7 @@ sidebar_label: Parameters
 
 ## GPoS
 
-| **Parameter Name**                   | **Details**                                                  | **Preview Network** | **Mainnet** |
+| **Parameters**                   | **Details**                                                  | **Preview Network** | **Mainnet** |
 | :----------------------------------- | :----------------------------------------------------------- | :------------------ | :---------- |
 | **AuthoringRewardsInEra**            | Initial authoring rewards(cru/era)                                | 150                 |             |
 | **StakingRewardsInRra**              | Initial staking reward(cru/era)                              | 600                 |             |
@@ -27,23 +27,23 @@ sidebar_label: Parameters
 | **Parameters**      | **Details**                                                  | **Preview Network** | **Mainnet** |
 | :------------------ | :----------------------------------------------------------- | :------------------ | :---------- |
 | **REPORT_SLOT**     | Work report cycle（block）                                   | 300                 | <br>        |
-| **PunishmentSlots** | Penalty for loss of stake limit caused by work report missing (REPORT_SLOT) | 24                  | <br>        |
+| **PunishmentSlots** | Penalty for loss of stake limit caused by work report missing (REPORT_SLOT) | 16                  | <br>        |
 | **sWorkerReLoad**   | Penalty for loss of stake limit caused by reload sWorker (REPORT_SLOT) | 1                   | <br>        |
 
 ## Storage Market
 
 | **Parameters**            | **Details**                                                  | **Preview Network** | **Mainnet** |
 | :------------------------ | :----------------------------------------------------------- | :------------------ | :---------- |
-| **FileDuration**          | File validity period  (blocks)                               | 216000              | <br>        |
+| **FileDuration**          | File validity period  (blocks)                               | 2592000              | <br>        |
 | **InitialReplica**        | Replica nodes that can directly receive file storage rewards | 4                   | <br>        |
-| **FileBaseFee**           | Basic storage fee (cru)                                      | 0.002              | <br>        |
+| **FileBaseFee**           | Basic storage fee (cru)                                      | 0.001              | <br>        |
 | **FileInitPrice**         | Initial cost per MB (cru)                                    | 0.000001              | <br>        |
 | **StorageReferenceRatio** | Storage supply and demand baseline: If the percentage of storage exceeds this value, the price will rise, otherwise it will fall | 25%                 | <br>        |
 | **StorageIncreaseRatio**  | Storage price rise speed (cru/order)                         | 0.00001             | <br>        |
 | **StorageDecreaseRatio**  | Storage price fall speed (cru/order)                         | 0.00005             | <br>        |
 | **StakingRatio**          | Percentage of storage cost allocated to the entire network for staking rewards | 80%                 | <br>        |
 | **TaxRatio**              | Percentage of storage cost allocated to the network tax      | 10%                 | <br>        |
-| **UsedTrashMaxSize**      | Expired files exceeding this number will all become invalid files | 500000              | <br>        |
+| **UsedTrashMaxSize**      | Expired files exceeding this number will all become invalid files | 1000              | <br>        |
 
 
 
