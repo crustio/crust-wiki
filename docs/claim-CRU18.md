@@ -1,12 +1,10 @@
 ---
 id: claimCRU18
-title: Crust Claim CRU18
-sidebar_label: Crust Claim CRU18
+title: Crust CRU18 Claim
+sidebar_label: Crust CRU18 Claim
 ---
 
 This document is only for users who hold CRU18 tokens. CRU18 cannot be transferred or staked on the Maxwell(preview network). Users can map the CRU18 of ERC20 to Maxwell(preview network) in advance. After the CRUST mainnet goes online, they can be staked directly. Learn how to claim Maxwell CRU18 step by step through this tutorial. 
-
-[CRU18 Holders List](https://etherscan.io/token/0x655ad6cc3cf6bdccab3fa286cb328f3bce9a3e38#balances)
 
 ## Preparation
 
@@ -16,7 +14,7 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 
 1. [MyEtherWallet](https://www.myetherwallet.com/interface/dashboard)
 2. [Crust Apps](https://apps.crust.network/)
-
+3. [CRU18 Holders List](https://etherscan.io/token/0x655ad6cc3cf6bdccab3fa286cb328f3bce9a3e38#balances):Make sure you are listed on CRU18's holder list
 
 ## Steps
 
@@ -40,9 +38,9 @@ Go to the Claims page of [Crust Apps](https://apps.crust.network/#/claims)
 
 1. Open[MyEtherWallet](https://www.myetherwallet.com/access-my-wallet):
     - Click 'MEW wallet'
-    - Connect the wallet which you transfer ERC20 CRU(The following process will use 'ImToken' and 'MetaMask' as example)
+    - Connect the wallet which with CRU18(The following process will use 'ImToken' and 'MetaMask' as example)
 
-**⚠️ Pay Attention, please ensure that the connected wallet address is same as the address where the transaction was successfully sent in [Step I](#i-send-erc20-claim-transaction)**(We need to sign the message with the private key of this address)
+**⚠️ Pay Attention, please ensure that the connected wallet address has CRU18**(We need to sign the message with the private key of this address)
 
 ![Connect Wallet1](assets/claimcru18/4myetherwallet.jpg)
 
@@ -91,7 +89,7 @@ If you use MetaMask, you just need to make your sign through Metamask pop-up win
 
 ![Connect Wallet1](assets/claimcru18/13copysignedmessage.jpg)
 
-### V. Claim CRUs
+### V. Claim CRU18
 
 Go back to **Crust Apps Claims** page, with the **Signed Message** copied in [Step IV](#iv-get-the-ethereum-signature):
 

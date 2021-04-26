@@ -1,12 +1,10 @@
 ---
 id: claimCRU18
-title: Crust Claim CRU18
-sidebar_label: Crust Claim CRU18
+title: Crust CRU18 Claim
+sidebar_label: Crust CRU18 Claim
 ---
 
 该文档只针对持有CRU18代币用户。CRU18在预览网络是无法转账和抵押的，用户可提前将ERC20的CRU18映射到 Crust 预览网 Maxwell，等待CRUST主网上线之后，可以直接抵押使用，通过本教程一步一步学习到如何进行Maxwell CRU18的认领。
-
-[CRU18持币用户列表](https://cn.etherscan.com/token/0x655ad6cc3cf6bdccab3fa286cb328f3bce9a3e38#balances)
 
 ## 准备工作
 
@@ -16,7 +14,7 @@ sidebar_label: Crust Claim CRU18
 
 1. [MyEtherWallet](https://www.myetherwallet.com/interface/dashboard)
 2. [Crust Apps](https://apps.crust.network/)
-
+3. [确保你在CRU8持币用户列表中](https://cn.etherscan.com/token/0x655ad6cc3cf6bdccab3fa286cb328f3bce9a3e38#balances)
 
 ## 步骤
 
@@ -40,7 +38,7 @@ sidebar_label: Crust Claim CRU18
 
 1. 打开[MyEtherWallet](https://www.myetherwallet.com/access-my-wallet):
     - 点击MEW wallet
-    - 连接你**发送交易的钱包**（下列流程以ImToken举例）
+    - 连接你拥有CRU18的钱包（下列流程以ImToken举例）
 
 **⚠️ 这一步必须特别注意，确保连接的钱包地址拥有CRU18（我们需要用这个地址的私钥进行消息签名）
 
