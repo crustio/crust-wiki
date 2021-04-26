@@ -14,7 +14,7 @@ sidebar_label: Crust CRU18 Claim
 
 1. [MyEtherWallet](https://www.myetherwallet.com/interface/dashboard)
 2. [Crust Apps](https://apps.crust.network/)
-3. [确保你在CRU8持币用户列表中](https://cn.etherscan.com/token/0x655ad6cc3cf6bdccab3fa286cb328f3bce9a3e38#balances)
+3. [CRU18持币用户列表](https://cn.etherscan.com/token/0x655ad6cc3cf6bdccab3fa286cb328f3bce9a3e38#balances):确保你在CRU18持币列表中
 
 ## 步骤
 
