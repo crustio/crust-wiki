@@ -4,7 +4,11 @@ title: Crust CRU18 Claim
 sidebar_label: Crust CRU18 Claim
 ---
 
+<<<<<<< HEAD
 This document is aimed at claiming the mainnet CRU18. The user signs it with an ETH account, and maps the CRU18 information in advance on the Maxwell preview network.After the mainnet goes online, the Maxwell address of your claimed CRU18 will be converted to the mainnet address.
+=======
+This document is only for users who hold CRU18 tokens. CRU18 cannot be transferred or staked on the Maxwell(preview network). Users can map the CRU18 of ERC20 to Maxwell(preview network) in advance. After the CRUST mainnet goes online, they can be staked directly. Learn how to claim Maxwell CRU18 step by step through this tutorial.
+>>>>>>> d17ed7e38b202b22213bd6a005dff42029cd7004
 
 ## Preparation
 

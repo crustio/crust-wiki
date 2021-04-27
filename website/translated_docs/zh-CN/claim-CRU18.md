@@ -25,7 +25,11 @@ sidebar_label: Crust CRU18 Claim
 
 ### 一．确认你的钱包拥有CRU18代币，并且拥有私钥签名权限
 
+<<<<<<< HEAD
 确保你在CRU18持币列表中:[Etherscan CRU18持币用户列表](https://cn.etherscan.com/token/0x655ad6cc3cf6bdccab3fa286cb328f3bce9a3e38#balances)
+=======
+确保你在CRU18的持币列表中：[Etherscan CRU18持币用户列表](https://cn.etherscan.com/token/0x655ad6cc3cf6bdccab3fa286cb328f3bce9a3e38#balances)
+>>>>>>> d17ed7e38b202b22213bd6a005dff42029cd7004
 
 ![Connect Wallet1](assets/claimcru18/1checkcru18.jpg)
 
@@ -108,5 +112,8 @@ sidebar_label: Crust CRU18 Claim
 CRU18 Claims涉及到的代码均**已开源**：
 
 1. [Crust CRU18 Bridge](https://github.com/decloudf/crust-bridge/tree/main/mainnet-bridge)
+<<<<<<< HEAD
 
+=======
+>>>>>>> d17ed7e38b202b22213bd6a005dff42029cd7004
 2. [Crust Claims](https://github.com/crustio/crust/tree/maxwell/cstrml/claims)
