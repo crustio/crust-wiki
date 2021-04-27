@@ -4,7 +4,7 @@ title: Crust CRU18 Claim
 sidebar_label: Crust CRU18 Claim
 ---
 
-This document is only for users who hold CRU18 tokens. CRU18 cannot be transferred or staked on the Maxwell(preview network). Users can map the CRU18 of ERC20 to Maxwell(preview network) in advance. After the CRUST mainnet goes online, they can be staked directly. Learn how to claim Maxwell CRU18 step by step through this tutorial. 
+This document is only for users who hold CRU18 tokens. CRU18 cannot be transferred or staked on the Maxwell(preview network). Users can map the CRU18 of ERC20 to Maxwell(preview network) in advance. After the CRUST mainnet goes online, they can be staked directly. Learn how to claim Maxwell CRU18 step by step through this tutorial.
 
 ## Preparation
 

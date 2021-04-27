@@ -126,5 +126,5 @@ Go back to **Crust Apps Claims** page, with the **Signed Message** copied in [St
 
 The code involved in claim process has been **open source**:
 
-1. [Crust Bridge](https://github.com/decloudf/crust-bridge)
+1. [Crust Bridge](https://github.com/decloudf/crust-bridge/tree/main/maxwell-bridge)
 2. [Crust Claims](https://github.com/crustio/crust/tree/master/cstrml/claims)
