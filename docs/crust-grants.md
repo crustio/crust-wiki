@@ -100,7 +100,10 @@ Current applications that have successfully leveraged Crust Network include:
 
 3. Crust Apps (See the implementation code:[https://github.com/crustio/crust-apps/blob/master/.github/workflows/release.yml#L72-L77)](https://github.com/crustio/crust-apps/blob/master/.github/workflows/release.yml#L72-L77)?fileGuid=8g6KfhSut6oyB6R1).
 
-## 3. Application Process
+## 3. Decelopment Environment
+Developers can refer to the [Crust Rocky Testnet Guidance](https://wiki.crust.network/docs/en/buildRockyGuidance) for development and testing.
+
+## 4. Application Process
 
 Each stage of the application is described in detail in the[Application Entrance](https://github.com/crustio/Crust-Grants-Program?fileGuid=8g6KfhSut6oyB6R1). The overall process for Crust Grants application is as follows.
 
