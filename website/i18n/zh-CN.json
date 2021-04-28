@@ -129,6 +129,10 @@
         "title": "术语表",
         "sidebar_label": "术语表"
       },
+      "crustGrants": {
+        "title": "Crust Grants",
+        "sidebar_label": "Crust Grants"
+      },
       "GPoS": {
         "title": "GPoS",
         "sidebar_label": "GPoS"
