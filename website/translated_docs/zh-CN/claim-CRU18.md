@@ -9,7 +9,7 @@ sidebar_label: Crust CRU18 Claim
 ## 注意事项
 
 1. **在Maxwell上，CRU18无法进行质押获取收益**，CRU18的质押功能仅在主网上线后生效
-2. 主网上线后，会将您认领CRU18的**Maxwell地址转换为主网地址**，<font color='red'>⚠️务必保留好您的Maxwell地址私钥/助记词⚠️</font>
+2. 主网上线后，会将您认领CRU18的**Maxwell地址转换为主网地址**，<font color='red'>⚠️务必保留好您的Maxwell地址助记词/backup file&密码⚠️</font>
 3. CRU18 **认领只能进行一次**，请**务必选择好您的Maxwell地址(主网地址)并保管好您的私钥信息**，所有信息都被Maxwell链记录，无法进行更新和更改
 
 ## 认领准备工作
@@ -31,7 +31,7 @@ sidebar_label: Crust CRU18 Claim
 
 ### 二．签名验证和桥接代币
 
-登陆[Crust Apps](https://apps.crust.network/#/claims)的Claims模块
+登录[Crust Apps](https://apps.crust.network/#/claims)的Claims模块
 
 ![Connect Wallet1](assets/claimcru18/2claimtokens.jpg)
 

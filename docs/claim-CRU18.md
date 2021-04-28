@@ -6,11 +6,11 @@ sidebar_label: Crust CRU18 Claim
 
 This document is aimed at claiming the mainnet CRU18. The user signs it with an ETH account, and maps the CRU18 information in advance on the Maxwell preview network.After the mainnet goes online, the Maxwell address of your claimed CRU18 will be converted to the mainnet address.
 
-## Preparation
+## Attention
 
 1. **On Maxwell,CRU18 cannot be staked to obtain income**,the stake function of CRU18 will only take effect after the mainnet is launched
-2. After the mainnet goes online, the **Maxwell address you claimed for CRU18 will be converted to the mainnet address**, <font color='red'>⚠️Be sure to keep your Maxwell address private key/mnemonic phrase⚠️</font> 
-3. CRU18 **Claimation can only be done once**, please **be sure to choose your Maxwell address (main network address) and keep your private key information**, all information is recorded by the Maxwell chain and cannot be updated or changed
+2. After the mainnet goes online, the **Maxwell address you claimed for CRU18 will be converted to the mainnet address**, <font color='red'>⚠️Be sure to keep your Maxwell address's mnemonic seed"/"backup file"&password⚠️</font> 
+3. CRU18 **Claim can only be done once**, please **be sure to choose your Maxwell address (main network address) and keep your private key information**, all information is recorded by the Maxwell chain and cannot be updated or changed
 
 ## Preparation for claiming
 
@@ -36,7 +36,7 @@ Go to the Claims page of [Crust Apps](https://apps.crust.network/#/claims)
 ![Connect Wallet1](assets/claimcru18/2claimtokens.jpg)
 
 1. Select the Claim CRU18 module
-2. Select the account of Maxwell Preview Network that you want to claim（**⚠️Remember to backup "mnemonic words"/"backup file"&password⚠️**）
+2. Select the account of Maxwell Preview Network that you want to claim（**⚠️Remember to backup "mnemonic seed"/"backup file"&password⚠️**）
 3. Click "Continue"
 
 ![Connect Wallet1](assets/claimcru18/3claimtokens.jpg)
