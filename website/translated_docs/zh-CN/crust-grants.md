@@ -79,7 +79,7 @@ Crust协议目前利用IPFS作为底层存储，任何对于IPFS协议的改进�
 3. Crust Apps，具体参考实现代码：[https://github.com/crustio/crust-apps/blob/master/.github/workflows/release.yml#L72-L77](https://github.com/crustio/crust-apps/blob/master/.github/workflows/release.yml#L72-L77?fileGuid=zyPNxf65rognWNlE)
 
 ## 3. 开发环境
-开发者可以参考[Crust Rocky测试网手册](https://wiki.crust.network/docs/en/buildRockyGuidance)进行开发和测试。
+开发者可以参考[Crust Rocky测试网手册](https://wiki.crust.network/docs/zh-CN/buildRockyGuidance)进行开发和测试。
 
 ## 4. 申请流程
 
