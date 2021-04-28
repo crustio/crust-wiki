@@ -78,7 +78,10 @@ Crust协议目前利用IPFS作为底层存储，任何对于IPFS协议的改进�
 2. Polkadot Apps，具体参考实现代码：[https://github.com/polkadot-js/apps/pull/4933](https://github.com/polkadot-js/apps/pull/4933?fileGuid=zyPNxf65rognWNlE)
 3. Crust Apps，具体参考实现代码：[https://github.com/crustio/crust-apps/blob/master/.github/workflows/release.yml#L72-L77](https://github.com/crustio/crust-apps/blob/master/.github/workflows/release.yml#L72-L77?fileGuid=zyPNxf65rognWNlE)
 
-## 3. 申请流程
+## 3. 开发环境
+开发者可以参考[Crust Rocky测试网手册](https://wiki.crust.network/docs/en/buildRockyGuidance)进行开发和测试。
+
+## 4. 申请流程
 
 [申请入口](https://github.com/crustio/Crust-Grants-Program?fileGuid=zyPNxf65rognWNlE)中对每个阶段均有详细描述。Crust Grants申请的整体流程如下：
 
