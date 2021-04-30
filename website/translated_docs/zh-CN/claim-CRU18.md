@@ -4,6 +4,8 @@ title: Crust CRU18 Claim
 sidebar_label: Crust CRU18 Claim
 ---
 
+> 🗣 **CRU18的认领尚未开始，请等候进一步的通知**
+
 该文档针对主网CRU18的认领，用户使用ETH账户进行签名，并在Maxwell预览网上**提前映射CRU18信息**，并在主网上线后映射到主网。
 
 ## 注意事项
