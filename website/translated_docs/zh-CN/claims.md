@@ -117,5 +117,5 @@ sidebar_label: Crust Claims
 
 Claims涉及到的代码均**已开源**：
 
-1. [Crust Bridge](https://github.com/decloudf/crust-bridge)
+1. [Crust Maxwell Bridge](https://github.com/decloudf/crust-bridge/tree/main/maxwell-bridge)
 2. [Crust Claims](https://github.com/crustio/crust/tree/master/cstrml/claims)
