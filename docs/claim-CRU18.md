@@ -8,9 +8,10 @@ This document is aimed at claiming the mainnet CRU18. The user signs it with an 
 
 ## Attention
 
-1. **On Maxwell,CRU18 cannot be staked to obtain income**,the stake function of CRU18 will only take effect after the mainnet is launched
-2. After the mainnet goes online, the **Maxwell address you claimed for CRU18 will be converted to the mainnet address**, <font color='red'>⚠️Be sure to keep your Maxwell address's mnemonic seed"/"backup file"&password⚠️</font> 
-3. CRU18 **Claim can only be done once**, please **be sure to choose your Maxwell address (main network address) and keep your private key information**, all information is recorded by the Maxwell chain and cannot be updated or changed
+1. <font color='red'>⚠️Please claim CRU18 as soon as possible⚠️</font>
+2. **On Maxwell,CRU18 cannot be staked to obtain income**,the stake function of CRU18 will only take effect after the mainnet is launched
+3. After the mainnet goes online, the **Maxwell address you claimed for CRU18 will be converted to the mainnet address**, <font color='red'>⚠️Be sure to keep your Maxwell address's mnemonic seed"/"backup file"&password⚠️</font> 
+4. CRU18 **Claim can only be done once**, please **be sure to choose your Maxwell address (main network address) and keep your private key information**, all information is recorded by the Maxwell chain and cannot be updated or changed
 
 ## Preparation for claiming
 
