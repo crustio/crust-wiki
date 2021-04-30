@@ -8,9 +8,10 @@ sidebar_label: Crust CRU18 Claim
 
 ## 注意事项
 
-1. **在Maxwell上，CRU18无法进行质押获取收益**，CRU18的质押功能仅在主网上线后生效
-2. 主网上线后，会将您认领CRU18的**Maxwell地址转换为主网地址**，<font color='red'>⚠️务必保留好您的Maxwell地址助记词/backup file&密码⚠️</font>
-3. CRU18 **认领只能进行一次**，请**务必选择好您的Maxwell地址(主网地址)并保管好您的私钥信息**，所有信息都被Maxwell链记录，无法进行更新和更改
+1. <font color='red'>⚠️请务必尽快认领⚠️</font>
+2. **在Maxwell上，CRU18无法进行质押获取收益**，CRU18的质押功能仅在主网上线后生效
+3. 主网上线后，会将您认领CRU18的**Maxwell地址转换为主网地址**，<font color='red'>⚠️务必保留好您的Maxwell地址助记词/backup file&密码⚠️</font>
+4. CRU18 **认领只能进行一次**，请**务必选择好您的Maxwell地址(主网地址)并保管好您的私钥信息**，所有信息都被Maxwell链记录，无法进行更新和更改
 
 ## 认领准备工作
 
