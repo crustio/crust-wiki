@@ -97,6 +97,10 @@
         "title": "账户",
         "sidebar_label": "账户"
       },
+      "websiteHostingUniswap": {
+        "title": "Case Study - Uniswap",
+        "sidebar_label": "Case Study - Uniswap"
+      },
       "crustTokens": {
         "title": "Crust 通证",
         "sidebar_label": "Crust 通证"

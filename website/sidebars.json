@@ -23,7 +23,14 @@
       "GPoS",
       "DSM",
       "bitSwap",
-      "democracyGuide"
+      "democracyGuide",
+      {
+        "type": "subcategory",
+        "label": "Case Studies",
+        "ids": [
+          "websiteHostingUniswap"
+        ]
+      }
     ],
     "Build": [
       "buildGettingStarted",

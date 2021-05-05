@@ -5,6 +5,10 @@
     "previous": "Previous",
     "tagline": "Wiki for Crust Network",
     "docs": {
+      "appsStorageIssue": {
+        "title": "Apps Strorage Issue",
+        "sidebar_label": "Apps Strorage Issue"
+      },
       "architecture": {
         "title": "Architecture",
         "sidebar_label": "Architecture"
@@ -69,13 +73,13 @@
         "title": "Crust Claim Back",
         "sidebar_label": "Crust Claim Back"
       },
+      "claimCRU18": {
+        "title": "Crust CRU18 Claim",
+        "sidebar_label": "Crust CRU18 Claim"
+      },
       "claims": {
         "title": "Crust Claims",
         "sidebar_label": "Crust Claims"
-      },
-      "claimsCRU18": {
-        "title": "Crust CRU18 Claim",
-        "sidebar_label": "Crust CRU18 Claim"
       },
       "community": {
         "title": "Community",
@@ -89,13 +93,13 @@
         "title": "Account",
         "sidebar_label": "Account"
       },
-      "crustGrants": {
-        "title": "Crust Grants",
-        "sidebar_label": "Crust Grants"
-      },
       "crustConsensus": {
         "title": "Crust Consensus",
         "sidebar_label": "Crust Consensus"
+      },
+      "crustGrants": {
+        "title": "Crust Grants",
+        "sidebar_label": "Crust Grants"
       },
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
@@ -231,6 +235,10 @@
       "validatorGuidance": {
         "title": "Validator Guidance",
         "sidebar_label": "Validator Guidance"
+      },
+      "websiteHostingUniswap": {
+        "title": "Website Hosting - Uniswap",
+        "sidebar_label": "Website Hosting - Uniswap"
       }
     },
     "links": {
