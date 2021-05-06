@@ -93,7 +93,7 @@ async function placeOrder(api: ApiPromise, krp: KeyringPair, fileCID: string, fi
     // Determine whether to connect to the chain
     await api.isReadyOrError;
     // Generate transaction
-    const pso = api.tx.market.placeStorageOrder(fileCID, fileSize, tip, false);
+    const pso = api.tx.market.placeStorageOrder(fileCID, fileSize, tip);
     // Send transaction, for 'sendTx()' please refer https://github.com/crustio/crust-demo/blob/main/sample-store-demo/src/utils.ts
     const txRes = JSON.parse(JSON.stringify((await sendTx(krp, pso))));
     return JSON.parse(JSON.stringify(txRes));
