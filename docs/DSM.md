@@ -22,7 +22,7 @@ Storage Order works in a pooled way. Once a user places a storage order:
 ### 3. Retrieval Mechanism
 As a data storage system, besides the storage market, DSM also takes the responsibility of incentivizing the nodes to provide retrieval service. Therefore, DSM includes another layer of incentives to encourage nodes to support data retrieval:
 
-   * The data retrieval mechanism in Crust Network follows the [IPFS Bitswap Protocol] (https://docs.ipfs.io/concepts/bitswap/). By such, data can be shared and exchanged among the nodes of the entire IPFS Network.
+   * The data retrieval mechanism in Crust Network follows the [IPFS Bitswap Protocol](https://docs.ipfs.io/concepts/bitswap/). By such, data can be shared and exchanged among the nodes of the entire IPFS Network.
 
    * Crust Network provides a highly efficient retrieval pointing mechanism. Enabled by the Bitswap protocol and using a “credit” mechanism, nodes can resist those “free-riding” nodes that only seek to pull data without providing retrieval services. Building on the Bitswap credit mechanism, Crust Network makes the access to trusted on-chain information available for nodes, further boosting the Crust Network credit mechanism.
 
