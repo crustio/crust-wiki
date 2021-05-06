@@ -5,10 +5,6 @@
     "previous": "Previous",
     "tagline": "Wiki for Crust Network",
     "docs": {
-      "appsStorageIssue": {
-        "title": "Apps Strorage Issue",
-        "sidebar_label": "Apps Strorage Issue"
-      },
       "architecture": {
         "title": "Architecture",
         "sidebar_label": "Architecture"
