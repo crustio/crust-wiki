@@ -26,9 +26,9 @@ sidebar_label: Validator Guidance
 
 ## 4. 设置担保费
 
-节点设置的担保费是指节点在**Staking收益中分给担保人的百分比**，具体设置如下:
+节点设置的担保费是指节点在**Staking收益+出块，分给担保人的百分比**，具体设置如下:
 
-> 如果一个验证人获取到1000 CRU的Staking收益，并且如果他自身投入的质押金额占总质押金额的90%（另外10%为担保人的投入)。如果该验证人设置的担保费为95%, 则最终担保人将一共获取到 1000 * 10% * 95% = 95 个CRU的收益，剩余 905 CRU归节点所有。
+> 如果一个验证人在一个ERA中获取到900 CRU的Staking收益以及100CRU的出块收益，并且如果他自身投入的质押金额占总质押金额的90%（另外10%为担保人的投入)。如果该验证人设置的担保费为95%, 则最终担保人将一共获取到 (900 + 100) * 10% * 95% = 95 个CRU的收益，剩余 905 CRU归节点所有。
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
 ![change guarantee_fee1](assets/gpos/guarantee_fee1.jpg)
