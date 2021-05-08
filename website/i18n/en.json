@@ -69,13 +69,13 @@
         "title": "Crust Claim Back",
         "sidebar_label": "Crust Claim Back"
       },
-      "claimCRU18": {
-        "title": "Crust CRU18 Claim",
-        "sidebar_label": "Crust CRU18 Claim"
-      },
       "claims": {
         "title": "Crust Claims",
         "sidebar_label": "Crust Claims"
+      },
+      "claimCRU18": {
+        "title": "Crust CRU18 Claim",
+        "sidebar_label": "Crust CRU18 Claim"
       },
       "community": {
         "title": "Community",
@@ -89,13 +89,13 @@
         "title": "Account",
         "sidebar_label": "Account"
       },
-      "crustConsensus": {
-        "title": "Crust Consensus",
-        "sidebar_label": "Crust Consensus"
-      },
       "crustGrants": {
         "title": "Crust Grants",
         "sidebar_label": "Crust Grants"
+      },
+      "crustConsensus": {
+        "title": "Crust Consensus",
+        "sidebar_label": "Crust Consensus"
       },
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
