@@ -42,7 +42,9 @@ Staking rewards refer to the validators or candidates who hold storage resources
 - Effective Stake: The Effective Stake is **the amount of staking that actually generates incomes**, which is related to the stake limit of the validator that is guaranteed. An example will be provided later.
 - Guarantee fee: Guarantee fee is the ratio of the share to guarantors. The larger the value, the higher the guarantor’s income.
 
-> If a validator obtains a staking income of 1000 CRUs and has his own staking share accounting for 90% of the total stake (the other 10% is the guarantor’s share). If the validator sets the guarantee fee at 95%, then the guarantor will get a total of 95 CRUs (1000 * 10% * 95% =95), with the remaining 5 CRUs going to the node.
+> When a Validator or Candidator adjusts its own guarantee fee, the guarantee fee of the first Era after the adjustment will be set to 100% compulsively, which means that all the income of the node except for its own effective stake will be distributed to the guarantor. After an Era, the guarantee fee is restored to the value set by the Validator/Candidator.
+
+> For example, if the validator obtains 900 CRU staking rewards and 100 CRU block generation reward in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtains (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belongs to the validator.
 
 How are the rewards specifically distributed? **First, in Maxwell, each Era (6 hours) will generate a staking reward of 600 CRUs, which gets halved every 90 days.** The income obtained by the validator and candidate is calculated as following steps:
 
