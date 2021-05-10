@@ -18,7 +18,7 @@ For the file with a long-term storage need, users are suggested to deposit an ad
 ### 1.2 Pools of money for files
 There are two pools of money in a file order:
 1. **Storage order fee**: the fee paid by the user when placing a storage order, refer to [DSM](https://wiki.crust.network/docs/en/DSM) for details.
-2. **File Renewal Pool**: an additional amount that the user deposits for the file. When a file storage order expires (currently the validity period is set for 15 days per order) and the balance of the renewal pool is sufficient, the first user to initiate a settlement request for the file will trigger the renewal of the file (equivalent to the effect of re-initiating a storage order). At the same time, the request initiator will receive a renewal reward. Both the fee of order renewal and the renewal reward to the initiator are paid from the file renewal pool.
+2. **File Renewal Pool**: an additional amount that the user deposits for the file. When a file storage order expires (currently the validity period is set for 180 days per order) and the balance of the renewal pool is sufficient, the first user to initiate a settlement request for the file will trigger the renewal of the file (equivalent to the effect of re-initiating a storage order). At the same time, the request initiator will receive a renewal reward. Both the fee of order renewal and the renewal reward to the initiator are paid from the file renewal pool.
 
 ### 1.3 File renewal reward
 As mentioned in 1.2, when a file storage order expires and the balance of the file renewal pool is sufficient, any user who initiates the settlement request of the file will trigger the renewal of the file and receive a renewal reward.

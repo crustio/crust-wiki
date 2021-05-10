@@ -89,7 +89,7 @@ Merchants can receive 18% of an order's earnings, which are shared by the multip
 For newly placed orders:
 
 - The initial order reward count (`expected_replica_count`): 4
-- File storage duration: 15 days
+- File storage duration: 180 days
 
 Therefore, the first 4 merchants that pull user files will receive order rewards which are affected by multiple factors:
 

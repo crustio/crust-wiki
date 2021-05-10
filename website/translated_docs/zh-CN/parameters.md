@@ -37,7 +37,7 @@ sidebar_label: Parameters
 | :------------------------ | :------------------------------------------------------- | :------------- | :----------- |
 | **FileDuration**          | 文件有效期 (块)                                          | 2592000         | <br>         |
 | **InitialReplica**        | 能直接获得文件存储奖励的副本节点数                       | 4              | <br>         |
-| **FileBaseFee**           | 15天存储的基础费 （cru）                                 | 0.001           | <br>         |
+| **FileBaseFee**           | 180天存储的基础费 （cru）                                 | 0.001           | <br>         |
 | **FileInitPrice**         | 初始每MB大小 （cru）                                     | 0.000001         | <br>         |
 | **StorageReferenceRatio** | 供需基准线：有效存储量超过这个值，价格会上升，反之会下降 | 25%            | <br>         |
 | **StorageIncreaseRatio**  | 存储价格上升速率（cru/order）                            | 0.00001        | <br>         |
