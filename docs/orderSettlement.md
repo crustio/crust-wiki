@@ -18,7 +18,7 @@ For the file with a long-term storage need, users are suggested to deposit an ad
 ### 1.2 Pools of money for files
 There are two pools of money in a file order:
 1. **Storage order fee**: the fee paid by the user when placing a storage order, refer to [DSM](https://wiki.crust.network/docs/en/DSM) for details.
-2. **File Renewal Pool**: an additional amount that the user deposits for the file. When a file storage order expires (currently the validity period is set for 15 days per order) and the balance of the renewal pool is sufficient, the first user to initiate a settlement request for the file will trigger the renewal of the file (equivalent to the effect of re-initiating a storage order). At the same time, the request initiator will receive a renewal reward. Both the fee of order renewal and the renewal reward to the initiator are paid from the file renewal pool.
+2. **File Renewal Pool**: an additional amount that the user deposits for the file. When a file storage order expires (currently the validity period is set for 180 days per order) and the balance of the renewal pool is sufficient, the first user to initiate a settlement request for the file will trigger the renewal of the file (equivalent to the effect of re-initiating a storage order). At the same time, the request initiator will receive a renewal reward. Both the fee of order renewal and the renewal reward to the initiator are paid from the file renewal pool.
 
 ### 1.3 File renewal reward
 As mentioned in 1.2, when a file storage order expires and the balance of the file renewal pool is sufficient, any user who initiates the settlement request of the file will trigger the renewal of the file and receive a renewal reward.
@@ -31,9 +31,9 @@ When a file storage order expires, storage nodes can bring the order into settle
 
 ### 2.2 Order settlement reward
 
-15 days after the expiration of a file storage order, any user who initiates the file settlement will receive a settlement reward, which is calculated based on the following principles:
+180 days after the expiration of a file storage order, any user who initiates the file settlement will receive a settlement reward, which is calculated based on the following principles:
 
-1. the order settlement reward is initially 0 (15 days after the order expiration);
+1. the order settlement reward is initially 0 (180 days after the order expiration);
 2. the order settlement reward increases linearly with time;
 3. the order settlement reward reaches its maximum 30 days after the expiration, which specifically equals the total amount of storage reward that storage nodes can obtain from the file's deposit.
 4. in a file order settlement, the reward that storage nodes can obtain = 20% * the deposit of the file order - the order settlement reward.
@@ -50,5 +50,5 @@ The "Total Commission" column shows the final earning in a settlement (**the ren
 The settlement mechanism will trigger the following effects:
  Settlement effects | Renewal pool balance sufficient | Renewal balance insufficient 
  :------: | :-----------:  | :-----------: 
-**File expiration over 15 days**     | Triggering file renewal;<br>Triggering order settlement;<br> Receiving order settlement rewards;<br>Receiving file renewal rewards; | Receiving order settlement rewards;<br> Triggering order settlement;<br>Closing the order; 
-**File expiration less than 15 days**     | Triggering file renewal;<br>Receiving file renewal rewards; | Triggering order settlement;<br>Closing the order; 
+**File expiration over 180 days**     | Triggering file renewal;<br>Triggering order settlement;<br> Receiving order settlement rewards;<br>Receiving file renewal rewards; | Receiving order settlement rewards;<br> Triggering order settlement;<br>Closing the order; 
+**File expiration less than 180 days**     | Triggering file renewal;<br>Receiving file renewal rewards; | Triggering order settlement;<br>Closing the order; 

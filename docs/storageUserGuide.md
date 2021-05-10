@@ -79,7 +79,7 @@ The order information in [Crust Apps](https://apps.crust.network/#/storage) -> "
    
 
 ### 1.6  Renewing pool balance
-The pool balance renewal mechanism is designed by [Crust DSM](DSM.md) to regularly renew files. After placing an order for a file, users can deposit an additional amount of any size into the file renewal pool. When the expiration of the file storage order is due (currently each file order expires 15 days after it is placed), and the balance of the file renewal pool is sufficient, users can initiate a [order settlement transaction](orderSettlement.md) for the file to renew the file order (regain a 15-day period of validity). Meanwhile, all settlement initiators will also receive a reward from the file renewal pool. The renewal steps include:
+The pool balance renewal mechanism is designed by [Crust DSM](DSM.md) to regularly renew files. After placing an order for a file, users can deposit an additional amount of any size into the file renewal pool. When the expiration of the file storage order is due (currently each file order expires 180 days after it is placed), and the balance of the file renewal pool is sufficient, users can initiate a [order settlement transaction](orderSettlement.md) for the file to renew the file order (regain a 180-day period of validity). Meanwhile, all settlement initiators will also receive a reward from the file renewal pool. The renewal steps include:
    1. Enter [Crust Apps](https://apps.crust.network/#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" to choose the file in the file list;
    2. Click on "Renew"/"Add Balance"；
     ![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pool1.png)

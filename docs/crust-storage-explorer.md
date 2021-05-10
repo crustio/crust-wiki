@@ -20,7 +20,7 @@ The general statistics are reflected in the above figure, including
 * Total number of nodes (in the entire network);
 * Total number of user files (currently stored in Crust Network);
 * Average copies of each file (in Crust Network);
-* Real-time storage price (calculated from the supply-demand relation of the entire network, representing the price for each MB stored for 15 days);
+* Real-time storage price (calculated from the supply-demand relation of the entire network, representing the price for each MB stored for 180 days);
 * You can click on "Blockchain Information" on the right of the page to check the blockchain information in the blockchain browser;
 * Storage (with the gram showing the spare and used storage capacity of the current network);
 * Statistics for the latest 7 days (where you can switch between "Number of nodes", "Total storage", and "Total stored files");
