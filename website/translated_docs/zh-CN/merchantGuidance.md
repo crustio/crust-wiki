@@ -34,7 +34,7 @@ sudo crust reload smanager
 
 保障金决定了商户能领取订单奖励的上限，**兑换比例为10:1**。这意味着商户质押10 CRU的保障金可以领取1 CRU的订单奖励
 
-可以通过[Apps的商户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/merchants)进行保障金和奖励操作，具体功能和操作为：
+可以通过[Apps的商户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/market)进行保障金和奖励操作，具体功能和操作为：
 
 1. 注册
 
