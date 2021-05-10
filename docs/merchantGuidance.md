@@ -94,7 +94,7 @@ For newly placed orders:
 Therefore, the first 4 merchants that pull user files will receive order rewards which are affected by multiple factors:
 
 1. ***Work report*** is the only way to prove that you have stored user files. If the work is not reported or user files are deleted, you will lose the order rewards, and your reward entitlement will also be handed to the next storage node;
-2. Please do the [Order Reward Calculation](#2-calculating-order-rewards) and collect rewards timely. If the rewards are not collected for more than *180 days*, anyone can obtain them by sending `market.claimReward` transaction;
+2. Please do the [Order Reward Calculation](#2-calculating-order-rewards) and collect rewards timely. If the rewards are not collected for more than *15 days*, anyone can obtain them by sending `market.claimReward` transaction;
 3. Renewing an order (placing another order for the same file) will also trigger the calculation of order rewards.
 
 ## Stake limit and Meaningful files

@@ -31,9 +31,9 @@ When a file storage order expires, storage nodes can bring the order into settle
 
 ### 2.2 Order settlement reward
 
-180 days after the expiration of a file storage order, any user who initiates the file settlement will receive a settlement reward, which is calculated based on the following principles:
+15 days after the expiration of a file storage order, any user who initiates the file settlement will receive a settlement reward, which is calculated based on the following principles:
 
-1. the order settlement reward is initially 0 (180 days after the order expiration);
+1. the order settlement reward is initially 0 (15 days after the order expiration);
 2. the order settlement reward increases linearly with time;
 3. the order settlement reward reaches its maximum 30 days after the expiration, which specifically equals the total amount of storage reward that storage nodes can obtain from the file's deposit.
 4. in a file order settlement, the reward that storage nodes can obtain = 20% * the deposit of the file order - the order settlement reward.
@@ -50,5 +50,5 @@ The "Total Commission" column shows the final earning in a settlement (**the ren
 The settlement mechanism will trigger the following effects:
  Settlement effects | Renewal pool balance sufficient | Renewal balance insufficient 
  :------: | :-----------:  | :-----------: 
-**File expiration over 180 days**     | Triggering file renewal;<br>Triggering order settlement;<br> Receiving order settlement rewards;<br>Receiving file renewal rewards; | Receiving order settlement rewards;<br> Triggering order settlement;<br>Closing the order; 
-**File expiration less than 180 days**     | Triggering file renewal;<br>Receiving file renewal rewards; | Triggering order settlement;<br>Closing the order; 
+**File expiration over 15 days**     | Triggering file renewal;<br>Triggering order settlement;<br> Receiving order settlement rewards;<br>Receiving file renewal rewards; | Receiving order settlement rewards;<br> Triggering order settlement;<br>Closing the order; 
+**File expiration less than 15 days**     | Triggering file renewal;<br>Receiving file renewal rewards; | Triggering order settlement;<br>Closing the order; 
