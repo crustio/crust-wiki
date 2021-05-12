@@ -217,6 +217,10 @@
         "title": "存储用户指南",
         "sidebar_label": "存储用户指南"
       },
+      "appsStorageIssue": {
+        "title": "使用Crust Apps 存储的问题",
+        "sidebar_label": "使用Crust Apps 存储的问题"
+      },
       "orderSettlement": {
         "title": "存储订单清算指南",
         "sidebar_label": "存储订单清算指南"

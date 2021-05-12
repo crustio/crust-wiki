@@ -216,6 +216,10 @@
         "title": "User Guidance",
         "sidebar_label": "User Guidance"
       },
+      "appsStorageIssue": {
+        "title": "Apps Strorage Issue",
+        "sidebar_label": "Apps Strorage Issue"
+      },
       "sWorkerGuide": {
         "title": "sWorker",
         "sidebar_label": "sWorker"
