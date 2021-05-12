@@ -124,7 +124,7 @@ sudo crust tools rotate-keys
 
 ### 5.2  设置session key
 
-进入[CRUST APPs](https://apps.crust.network/)，点击导航栏的“**Network**”下的“**Staking**”。选中右侧的配置的三个点，选择“**Change session key**”
+进入[CRUST APPs](https://apps.crust.network/)，点击导航栏的“**Network**”下的“**Staking**”。选择“**Session Key**”
 
 ![图片](assets/mining/set_sessionkey1.png)
 

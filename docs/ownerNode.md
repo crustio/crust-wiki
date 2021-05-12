@@ -127,7 +127,7 @@ Copy the session key as shown below:
 
 ### 5.2  Set session key
 
-Enter [CRUST APPs](https://apps.crust.network/), click on "Staking" button under "Network" in the navigation bar, and go to "Accoung action". Click on the setting button on the right of your stashes(a 3-dots button) and click on "Change session key".
+Enter [CRUST APPs](https://apps.crust.network/), click on "Staking" button under "Network" in the navigation bar, and go to "Accoung action". Click on "Session Key".
 
 ![pic](assets/mining/set_sessionkey1.png)
 
