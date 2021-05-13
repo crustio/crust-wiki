@@ -72,7 +72,7 @@ Click the button- cut guarantee
 ![cut1](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/cut_guarantee1.png)
 
 ### Step3
-Paste the validator’s address and pick it in the caditate accounts and input the amount you want to cut.
+Paste the validator’s address and pick it in the candidate accounts and input the amount you want to cut.
 ![cut2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/cut_guarantee2.png)
 
 
