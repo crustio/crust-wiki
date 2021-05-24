@@ -56,7 +56,7 @@
         ]
       }
     ],
-    "Mining": [
+    "Node": [
       "nodeOverview",
       "nodeHardwareSpec",
       "ownerNode",
