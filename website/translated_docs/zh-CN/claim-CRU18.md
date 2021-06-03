@@ -108,6 +108,6 @@ sidebar_label: Crust CRU18 Claim
 
 CRU18 Claims涉及到的代码均**已开源**：
 
-1. [Crust CRU18 Bridge](https://github.com/decloudf/crust-bridge/tree/main/mainnet-bridge)
+1. [Crust CRU18 Bridge](https://github.com/decloudf/crust-bridge/tree/main/maxwell-cru18-pre-claim)
 
 2. [Crust Claims](https://github.com/crustio/crust/tree/maxwell/cstrml/claims)
