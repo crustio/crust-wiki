@@ -1,7 +1,7 @@
 ---
 id: claims
-title: Crust Claims
-sidebar_label: Crust Claims
+title: CRU Claim
+sidebar_label: CRU Claim
 ---
 
 If you want to **map ERC20 CRU to Crust Preview Network Maxwell** and participate in the preview network, you follow this tutorial step by step to claim Maxwell CRU.

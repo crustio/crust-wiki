@@ -81,6 +81,10 @@
         "title": "CSM 认领",
         "sidebar_label": "CSM 认领"
       },
+      "csmclaimback": {
+        "title": "CSM 转回",
+        "sidebar_label": "CSM 转回"
+      },
       "crustWallet": {
         "title": "Crust 钱包",
         "sidebar_label": "Crust 钱包"

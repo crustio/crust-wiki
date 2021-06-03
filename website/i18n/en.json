@@ -70,20 +70,20 @@
         "sidebar_label": "Crust Storage Manager"
       },
       "claimBack": {
-        "title": "Crust Claim Back",
-        "sidebar_label": "Crust Claim Back"
+        "title": "CRU Claim Back",
+        "sidebar_label": "CRU Claim Back"
       },
       "claimCRU18": {
-        "title": "Crust CRU18 Claim",
-        "sidebar_label": "Crust CRU18 Claim"
+        "title": "CRU18 Claim",
+        "sidebar_label": "CRU18 Claim"
       },
       "claimCSM": {
-        "title": "Crust CSM Claim",
-        "sidebar_label": "Crust CSM Claim"
+        "title": "CSM Claim",
+        "sidebar_label": "CSM Claim"
       },
       "claims": {
-        "title": "Crust Claims",
-        "sidebar_label": "Crust Claims"
+        "title": "CRU Claim",
+        "sidebar_label": "CRU Claim"
       },
       "community": {
         "title": "Community",
@@ -116,6 +116,10 @@
       "crustWallet": {
         "title": "Crust Wallet",
         "sidebar_label": "Crust Wallet"
+      },
+      "csmclaimback": {
+        "title": "CSM Claim Back",
+        "sidebar_label": "CSM Claim Back"
       },
       "democracyGuide": {
         "title": "Democracy Guide",

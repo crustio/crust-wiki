@@ -1,7 +1,7 @@
 ---
 id: claimCSM
-title: Crust CSM Claim
-sidebar_label: Crust CSM Claim
+title: CSM Claim
+sidebar_label: CSM Claim
 ---
 
 CSM (Crust Storage Market) token is designed for Crust Decentralized Storage Market.Serving the Crust storage market,you can map the ERC20 CSM to the Crust Maxwell network in advance for guarantee.Follow this tutorial step by step to claim Maxwell CSM. 

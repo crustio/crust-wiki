@@ -1,7 +1,7 @@
 ---
 id: claimCRU18
-title: Crust CRU18 Claim
-sidebar_label: Crust CRU18 Claim
+title: CRU18 Claim
+sidebar_label: CRU18 Claim
 ---
 
 This document is aimed at claiming the mainnet CRU18. The user signs it with an ETH account, and maps the CRU18 information in advance on the Maxwell preview network.After the mainnet goes online, the Maxwell address of your claimed CRU18 will be converted to the mainnet address.
