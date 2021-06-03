@@ -50,4 +50,4 @@ sidebar_label: Crust Claim Back
 
 转回涉及到的代码**已开源**：
 
-1. [Crust Bridge](https://github.com/decloudf/crust-bridge)
+1. [Crust Bridge](https://github.com/decloudf/crust-bridge/tree/main/maxwell-claim-back)

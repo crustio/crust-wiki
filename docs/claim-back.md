@@ -50,4 +50,4 @@ After performing Step I and II:
 
 The code involved in claim back process has been **open source**:
 
-1. [Crust Bridge](https://github.com/decloudf/crust-bridge)
+1. [Crust Bridge](https://github.com/decloudf/crust-bridge/tree/main/maxwell-claim-back)
