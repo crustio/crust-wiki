@@ -24,23 +24,22 @@ sidebar_label: Crust Claims
 
 ### 一. 发送CRU认领交易
 
-> 请注意此步骤发送到认领地址的是CRU，不是ETH
+首先，您需要在以太坊网络上向 ***Crust Maxwell认领地址*** 发起一笔**CRU的转账交易**，这个操作可以在任意的钱包端完成，但发起转账之前一定要注意:
 
-首先，您需要在以太坊上向 ***Crust Maxwell认领地址*** 发起一笔**CRU的转账交易**，这个操作可以在任意的钱包端完成，但发起转账之前一定要注意:
-
-1. **⚠️ 您拥有发起交易账户的私钥签名权限（所有交易所创建的账户均不适用, 请转到拥有私钥的钱包进行下列操作）**
-2. **确认CRU ERC20的合约地址：[CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)**
-3. ***Crust Maxwell认领地址*** 为：[0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
-
-    ![new_claim_addr](assets/claims/new_claim_addr.png)
-
-待确认交易成功并且已有**6块以上的confirmations**之后，**复制这笔成功交易的Hash值**，进入到下列步骤。
-
-### 二. 验证交易和桥接代币
+> 1. ⚠️ 请注意此步骤发送到认领地址的是CRU，不是ETH
+> 2. ⚠️ 您拥有发起交易账户的私钥签名权限（所有交易所创建的账户均不适用, 请转到拥有私钥的钱包进行下列操作）
+> 3. ⚠️ 确认CRU ERC20的合约地址：[CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)
+> 4. ⚠️ Crust Maxwell认领地址为：[0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
 
 登陆[Crust Apps](https://apps.crust.network/#/claims)的Claim CRU模块
 
-![Apps Claim1](assets/claims/apps_claims1.png)
+向***Crust Maxwell认领地址***发起一笔**CRU的转账交易**.
+
+![Apps Claim0](assets/claims/apps_claims0.jpg)
+
+待确认交易成功并且已有**6块以上的confirmations**之后，**复制这笔成功交易的Hash值**，点击”继续“。
+
+### 二. 验证交易和桥接代币
 
 1. 选择您需要认领的Maxwell预览网账户
 2. 填入您[步骤一](#一-发送cru认领交易)复制的Tx Hash值
