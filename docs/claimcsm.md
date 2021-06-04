@@ -4,7 +4,7 @@ title: CSM Claim
 sidebar_label: CSM Claim
 ---
 
-CSM (Crust Storage Market) token is designed for Crust Decentralized Storage Market.Serving the Crust storage market,you can map the ERC20 CSM to the Crust Maxwell network in advance for guarantee.Follow this tutorial step by step to claim Maxwell CSM. 
+[CSM Token](https://ipfs.decoo.io/ipfs/QmYVRP7puUhGvQPuThHK2mtQgj2nUAoJYkBgXYxwiaC8Dq) is Crust Shadow's original token.The total initial amount of CSM is 200 million,it will be allocated to community.you can map the ERC20 CSM to the Crust Maxwell network in advance to participate Maxwell's storage market related activities.Follow this tutorial step by step to claim Maxwell CSM. 
 
 ## Preparation
 
@@ -24,23 +24,22 @@ Using an exchange account to sent a transfer (withdrawal) transaction will be in
 
 ### I. Send CSM Claim Transaction
 
-> Please make sure you transfer CSM to the Claim Address, not ETH or CRU.
-
 First of all, you need to **transfer CSM** to ***Crust Maxwell Claim Address*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CSM:
 
-1. **⚠️ Make sure you have the authority to make signature with the private key of the account (all accounts created by exchanges are not applicable, please use the wallet with private key stored to perform following steps)**
-2. **Confirm the CSM ERC20: [CSM](https://etherscan.io/token/0x2620638eda99f9e7e902ea24a285456ee9438861)**
-3. ***Crust Maxwell Claim Address***: [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
-
-   ![new claim address](assets/claimcsm/new_claim_addr.png)
-
-Please confirm your transfering is successful and make sure it has **at least 6 confirmations**, **copy the hash value of this successful transaction** and do the following steps.
-
-### II. Verify transactions and bridge tokens
+> 1. ⚠️ Please make sure you transfer CSM to the Claim Address, not ETH or CRU.
+> 2. ⚠️ Make sure you have the authority to make signature with the private key of the account (all accounts created by exchanges are not applicable, please use the wallet with private key stored to perform following steps)
+> 3. ⚠️ Confirm the CSM ERC20: [CSM](https://etherscan.io/token/0x2620638eda99f9e7e902ea24a285456ee9438861)
+> 4. ⚠️ Crust Maxwell Claim Address: [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
 
 Go to the Claim CSM page of [Crust Apps](https://apps.crust.network/#/claims/maxwellCsmClaims)
 
-![Apps Claim1](assets/claimcsm/apps_claims1.png)
+Initiate a CSM transaction to Crust Maxwell Claim Address
+
+![Apps Claim0](assets/claimcsm/apps_claims01.jpg)
+
+Please confirm your transaction is successful and make sure it has **at least 6 confirmations**, **copy the hash value of this successful transaction** and click "Continue".
+
+### II. Verify transactions and bridge tokens
 
 1. Select the account of Maxwell Preview Network that you want to claim
 2. Input the Tx Hash you copied from  [Step I](#i-send-csm-claim-transaction)

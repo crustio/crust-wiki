@@ -24,23 +24,22 @@ Using an exchange account to sent a transfer (withdrawal) transaction will be in
 
 ### I. Send CRU Claim Transaction
 
-> Please make sure you transfer CRU to the Claim Address, not ETH.
-
 First of all, you need to **transfer CRU** to ***Crust Maxwell Claim Address*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
 
-1. **⚠️ Make sure you have the authority to make signature with the private key of the account (all accounts created by exchanges are not applicable, please use the wallet with private key stored to perform following steps)**
-2. **Confirm the CRU ERC20: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)**
-3. ***Crust Maxwell Claim Address***: [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
-
-   ![new claim address](assets/claims/new_claim_addr.png)
-
-Please confirm your transfering is successful and make sure it has **at least 6 confirmations**, **copy the hash value of this successful transaction** and do the following steps.
-
-### II. Verify transactions and bridge tokens
+> 1. ⚠️ Please make sure you transfer CRU to the Claim Address, not ETH.
+> 2. ⚠️ Make sure you have the authority to make signature with the private key of the account (all accounts created by exchanges are not applicable, please use the wallet with private key stored to perform following steps)
+> 3. ⚠️ Confirm the CRU ERC20: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)
+> 4. ⚠️ Crust Maxwell Claim Address: [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
 
 Go to the Claim CRU page of [Crust Apps](https://apps.crust.network/#/claims)
 
-![Apps Claim1](assets/claims/apps_claims1.png)
+Initiate a CRU transaction to Crust Maxwell Claim Address
+
+![Apps Claim0](assets/claims/apps_claims0.jpg)
+
+Please confirm your transfering is successful and make sure it has **at least 6 confirmations**, **copy the hash value of this successful transaction** and click "Continue".
+
+### II. Verify transactions and bridge tokens
 
 1. Select the account of Maxwell Preview Network that you want to claim
 2. Input the Tx Hash you copied from  [Step I](#i-send-cru-claim-transaction)
