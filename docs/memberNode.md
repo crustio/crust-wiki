@@ -35,21 +35,21 @@ The SGX (Software Guard Extensions) module of the machine is closed by default. 
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.9.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v0.9.0.tar.gz
+tar -xvf v0.10.0.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-0.9.0
+cd crust-node-0.10.0
 ```
 ### 2.4 Install Crust Service
 
 Notices:
 
-* The program will be installed under /opt/crust, please make sure this path is mounted with more than 250G of SSD space;
+* The program will be installed under /opt/crust, please make sure this path is mounted with more than 500G of SSD space;
 
 * If you have run a previous Crust testnet program on this device, you need to close the previous Crust Node and clear the data before this installation. For details, please refer to section 6.2;
 
@@ -99,29 +99,31 @@ With Crust as a decentralized storage network, the configuration of your hard di
 
 Hard disk mounting requirements:
 
-* Chain data and related DB data will be stored in /opt/crust/data directory. It is recommend you mount your SSD to this directory;
+* Chain data and related DB data will be stored in /opt/crust/data directory. It is recommend you mount your SSD to this directory.
 
-* The storage order file and SRD (Sealed Random Data, the placeholder files) will be written into the /opt/crust/data/files directory, it is recommended you mount the HDD to this directory. Initially, each device can be configured with up to 500TB of reserved space.
+* The order files and SRD (Sealed Random Data, the placeholder files) will be written in the /opt/crust/data/disks/1 ~ /opt/crust/data/disks/128 directory, depending on how you mount the hard disk. Each physical machine can be configured with up to 500TB of reserved space
+
+* Please pay attention to the read and write permissions of the directory after mounting
 
 Suggestions for mounting HDDs:
 
 * **Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.**
-* If you only have one HDD, mount it directly to /opt/crust/data/files;
-* For multiple HDDs, you can use LVM technology to organize these hard disks into a device and mount them to the /opt/crust/data/files directory. Please use LVM stripe to improve the storage performance;
-* For disks with low stability, it is recommended you make several RAID5/RAID10 groups first, each with no more than 6 hard disks, and then use LVM to combine each group;
+
+* Single HDD: mount it directly to /opt/crust/data/disks/1
+* Multiple HDDs (multi-directories): Mount the hard disks to the /opt/crust/data/disks/1 ~ /opt/crust/data/disks/128 directories respectively. For example, if there are three hard disks /dev/sdb1, /dev/sdb1 and /dev/sdb3, you can mount them to /opt/crust/data/disks/1, /opt/crust/data/disks/2, /opt/crust/data/disks/3 directories respectively. The efficiency of this method is relatively high, and the method is relatively simple, but the fault tolerance of the hard disk will be reduced
+* Multiple HDDs (single directory): For hard disks with poor stability, using RAID/LVM/mergerfs and other means to combine the hard disks and mount them to the /opt/crust/data/disks/1 directory is an option. This method can increase the fault tolerance of the hard disk, but it will also bring about a drop in efficiency
+* Multiple HDDs (mixed): Combine single directory and multiple directories to mount HDDs
 
 You can use following command to view the file directory:
 
 ```plain
 sudo crust tools space-info
 ```
-### 3.6 Review the Configuration (Optional)
 
-Execute following command to view the configuration file:
+### 3.6 External chain Configuration (Optional)
 
-```plain
-sudo crust config show
-```
+The use of external chain can make member nodes more lightweight. Meanwhile, multiple members connect to the same chain node, thereby avoiding repeated chain synchronization. However, due to the single point of failure in this method, that is to say, the failure of the external chain node will cause multiple members to fail to report the workload, so please try to use a good network device or cloud server to start the external chain. At the same time, don't connect too many members to the same chain. It is recommended that there be less than 10 members, otherwise, there may be a problem of transaction congestion. Please refer to this [link](memberNode.md) for configuration
+
 ## 4. Start Node
 
 ### 4.1 Preparation
@@ -143,16 +145,17 @@ sudo crust start
 ```plain
 sudo crust status
 ```
-If the following five services are running, it means that Crust node started successfully.
+
+If the following five services are running, it means that Crust node started successfully.(The chain will not start when the external chain is configured)
 ![pic](assets/mining/all_run.png)
 
 ### 4.4 Set Node Storage Capacity and Run SRD
 Please wait about 2 minutes and execute the following commands.
 
-1  Assuming you have 1000G of space under /opt/crust/data/files, sWorker will keep the hard disk with 1% free space, then set 990G, as follows:
+1  Assuming that the HDDs have 1000G of space, set it as follows, sWorker will reserve some space and automatically determine the size of the SRD:
 
 ```plain
-sudo crust tools change-srd 990
+sudo crust tools change-srd 1000
 ```
 
 2 These commands may fail to execute. This is because sworker has not been fully started. Please wait a few minutes and try again. If it still does not work, please execute the subordinate monitoring commands to troubleshoot the error:
@@ -196,13 +199,13 @@ If the device or Crust node related programs need to be somehow restarted, pleas
 ```plain
 sudo crust reload
 ```
+
 ### 6.2 Uninstall and Data Cleanup
 
 
 If you have run a previous version of Crust test chain, or if you want to redeploy your current node, you need to clear data from three sources:
 
 * Delete basic Crust files under /opt/crust/data
-* Clean the SRD file under the "srd_paths" you configured (if you have run a version before 0.8.0)
 * Clean node data under /opt/crust/crust-node by executing:
 
 ```plain

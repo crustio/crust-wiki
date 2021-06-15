@@ -32,21 +32,21 @@ Isolation节点形态下，你唯一的节点上需要运行链模块以及存�
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.9.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v0.9.0.tar.gz
+tar -xvf v0.10.0.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-0.9.0
+cd crust-node-0.10.0
 ```
 ### 2.4 安装Crust服务
 
 安装前的注意点：
 
-* 程序将会被安装在/opt/crust路径下，请确保该路径有大于250G的固态硬盘空间
+* 程序将会被安装在/opt/crust路径下，请确保该路径有大于500G的固态硬盘空间
 * 如果之前运行过 Crust 的其他测试链，请把程序关闭并将数据清除后再执行安装，具体请参考6.2小节
 * 安装过程中涉及到下载相关依赖和 docker images 的操作，会比较耗时，并有可能因为网络的问题失败，如发生，请重复执行该操作直到安装完成
 
@@ -88,32 +88,26 @@ sudo crust config set
 
 > 硬盘组织方式不唯一，如果有更好的方案可以自行优化
 
-Crust作为去中心话存储网络，硬盘的配置尤为重要。节点存储容量将作为预留空间上报到 Crust 网络，这个将决定你链上可以被别人担保的上限，也决定你可以接单的量。
+Crust作为去中心话存储网络，硬盘的配置尤为重要。节点存储容量将作为预留空间上报到 Crust 网络，这个将决定你链上可以被别人担保的上限，也决定你可以接单的量
 
 硬盘挂载要求：
 
 * 链数据和相关DB数据将会被存在/opt/crust/data下，请将固态硬盘先挂载到该目录。
-* 接单的文件和SRD占位文件将会被写入/opt/crust/data/files目录下，所以请将机械硬盘组织好挂载到该目录。每台物理机最多可以配置500TB的预留空间。
+* 接单的文件和SRD占位文件将会被写入/opt/crust/data/disks/1 ~ /opt/crust/data/disks/128目录下，这取决于你挂载硬盘的方式。每台物理机最多可以配置500TB的预留空间
+* 挂载完毕后请注意目录的读写权限
 
 机械硬盘挂载建议：
 
 * **硬盘组织方式不唯一，如果有更好的方案可以自行优化**
-* 如果你只有一块硬盘直接挂载到/opt/crust/data/files即可
-* 对于多个机械硬盘，可以利用LVM技术将这些硬盘组织成一个设备并挂载到/opt/crust/data/files目录，注意请使用条带化（stripe）配置以加快存储的速度。
-* 对于稳定性不佳的硬盘，建议先组数个RAID5/RAID10的组，每个组不超6块盘，再用LVM进行合并
-
-可以使用如下命令查看文件目录的具体情况：
+* 单一机械硬盘：直接挂载到/opt/crust/data/disks/1即可
+* 多个机械硬盘（多目录）：分别将硬盘挂载到/opt/crust/data/disks/1 ~ /opt/crust/data/disks/128目录。举个例子，假设有三块硬盘/dev/sdb1，/dev/sdb1和/dev/sdb3，则可以将他们分别挂载到/opt/crust/data/disks/1，/opt/crust/data/disks/2， /opt/crust/data/disks/3目录。这种方式的效率相对比较高，方式也比较简单，但硬盘的容错性会降低
+* 多个机械硬盘（单目录）：对于稳定性不佳的硬盘，利用RAID/LVM/mergerfs等手段将硬盘组合，并挂载到/opt/crust/data/disks/1目录不失为一种选择。这种方式可以增加硬盘的容错性，但也会带来效率上的下降
+* 多个机械硬盘（混合）：结合单目录和多目录的方式进行挂载
 
 ```plain
 sudo crust tools space-info
 ```
-### 3.6 查看配置情况（可选）
 
-执行以下命令查看配置文件
-
-```plain
-sudo crust config show
-```
 ## 4. 节点启动
 
 ### 4.1 准备
@@ -146,10 +140,10 @@ sudo crust status
 ### 4.4 设置节点存储容量并运行SRD
 请等待2分钟后执行.
 
-1 假设你/opt/crust/data/files下面有空间1000G, sWorker会保持硬盘有1%的空余空间, 那就设置990G, 如下：
+1 假设机械硬盘有空间1000G, 就如下设置，sWorker会预留一些空间并自动判断SRD的大小：
 
 ```plain
-sudo crust tools change-srd 990
+sudo crust tools change-srd 1000
 ```
 
 2 这些命令有可能会执行失败，这是由于sworker还没有完全启动，请等待几分钟之后再尝试，如果依旧不行，请执行下属监控命令排查错误情况：
@@ -157,6 +151,7 @@ sudo crust tools change-srd 990
 ```plain
 sudo crust logs sworker
 ```
+
 ### 4.5 监控
 
 通过以下监控命令进行监控，ctrl-c结束监控：
@@ -224,8 +219,8 @@ sudo crust reload
 如果你运行过老版本的测试链或者想重新部署，默认情况下需要清除三处数据，
 
 * Crust的基础数据会被默认放在/opt/crust/data中，请清除其中的文件
-* 占位数据存储在你之前配置的“srd_paths”中（0.8.0之前版本），请清除其中的数据
 * Node数据存储在/opt/crust/crust-node中，请执行以下命令进行卸载
+
 ```plain
 sudo /opt/crust/crust-node/scripts/uninstall.sh
 ```
