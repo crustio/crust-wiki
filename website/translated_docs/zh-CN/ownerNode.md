@@ -33,15 +33,15 @@ Owner节点负责参与出块竞争，需要生成并绑定Controller&Stash账�
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.9.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v0.9.0.tar.gz
+tar -xvf v0.10.0.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-0.9.0
+cd crust-node-0.10.0
 ```
 ### 2.4 安装Crust服务
 
@@ -158,7 +158,6 @@ sudo crust reload
 如果你运行过老版本的测试链或者想重新部署，默认情况下需要清除三处数据，
 
 * Crust的基础数据会被默认放在/opt/crust/data中，请清除其中的文件
-* 占位数据存储在你之前配置的“srd_paths”中（0.8.0之前版本），请清除其中的数据
 * Node数据存储在/opt/crust/crust-node中，请执行以下命令进行卸载
 ```plain
 sudo /opt/crust/crust-node/scripts/uninstall.sh
