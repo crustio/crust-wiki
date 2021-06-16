@@ -122,7 +122,7 @@ sudo crust tools space-info
 
 ### 3.6 External chain Configuration (Optional)
 
-The use of external chain can make member nodes more lightweight. Meanwhile, multiple members connect to the same chain node, thereby avoiding repeated chain synchronization. However, due to the single point of failure in this method, that is to say, the failure of the external chain node will cause multiple members to fail to report the workload, so please try to use a good network device or cloud server to start the external chain. At the same time, don't connect too many members to the same chain. It is recommended that there be less than 10 members, otherwise, there may be a problem of transaction congestion. Please refer to this [link](memberNode.md) for configuration
+The use of external chain can make member nodes more lightweight. Meanwhile, multiple members connect to the same chain node, thereby avoiding repeated chain synchronization. However, due to the single point of failure in this method, that is to say, the failure of the external chain node will cause multiple members to fail to report the workload, so please try to use a good network device or cloud server to start the external chain. At the same time, don't connect too many members to the same chain. It is recommended that there be less than 10 members, otherwise, there may be a problem of transaction congestion. Please refer to this [link](build-node.md) for configuration
 
 ## 4. Start Node
 
