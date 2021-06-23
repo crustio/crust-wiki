@@ -98,15 +98,13 @@ Crust作为去中心话存储网络，硬盘的配置尤为重要。节点存储
 硬盘挂载要求：
 
 * 链数据和相关DB数据将会被存在/opt/crust/data下，请将固态硬盘先挂载到该目录。
-* 接单的文件和SRD占位文件将会被写入/opt/crust/data/disks/1 ~ /opt/crust/data/disks/128目录下，这取决于你挂载硬盘的方式。每台物理机最多可以配置500TB的预留空间
+* 接单的文件和SRD占位文件将会被写入/opt/crust/disks/1 ~ /opt/crust/disks/128目录下，这取决于你挂载硬盘的方式。每台物理机最多可以配置500TB的预留空间
 * 挂载完毕后请注意目录的读写权限
 
-机械硬盘挂载建议：
-
-* **硬盘组织方式不唯一，如果有更好的方案可以自行优化**
-* 单一机械硬盘：直接挂载到/opt/crust/data/disks/1即可
-* 多个机械硬盘（多目录）：分别将硬盘挂载到/opt/crust/data/disks/1 ~ /opt/crust/data/disks/128目录。举个例子，假设有三块硬盘/dev/sdb1，/dev/sdb1和/dev/sdb3，则可以将他们分别挂载到/opt/crust/data/disks/1，/opt/crust/data/disks/2， /opt/crust/data/disks/3目录。这种方式的效率相对比较高，方式也比较简单，但硬盘的容错性会降低
-* 多个机械硬盘（单目录）：对于稳定性不佳的硬盘，利用RAID/LVM/mergerfs等手段将硬盘组合，并挂载到/opt/crust/data/disks/1目录不失为一种选择。这种方式可以增加硬盘的容错性，但也会带来效率上的下降
+* **机械硬盘组织方式不唯一，如果有更好的方案可以自行优化**
+* 单一机械硬盘：直接挂载到/opt/crust/disks/1即可
+* 多个机械硬盘（多目录）：分别将硬盘挂载到/opt/crust/disks/1 ~ /opt/crust/disks/128目录。举个例子，假设有三块硬盘/dev/sdb1，/dev/sdb1和/dev/sdb3，则可以将他们分别挂载到/opt/crust/disks/1，/opt/crust/disks/2， /opt/crust/disks/3目录。这种方式的效率相对比较高，方式也比较简单，但硬盘的容错性会降低
+* 多个机械硬盘（单目录）：对于稳定性不佳的硬盘，利用RAID/LVM/mergerfs等手段将硬盘组合，并挂载到/opt/crust/disks/1目录不失为一种选择。这种方式可以增加硬盘的容错性，但也会带来效率上的下降
 * 多个机械硬盘（混合）：结合单目录和多目录的方式进行挂载
 
 可以使用如下命令查看文件目录的具体情况：
@@ -197,7 +195,7 @@ sudo crust reload
 
 如果你运行过老版本的测试链或者想重新部署，默认情况下需要清除三处数据，
 
-* Crust的基础数据会被默认放在/opt/crust/data中，请清除其中的文件
+* Crust的基础数据会被默认放在/opt/crust/data和/opt/crust/disks中，请清除其中的文件
 * Node数据存储在/opt/crust/crust-node中，请执行以下命令进行卸载
 ```plain
 sudo /opt/crust/crust-node/scripts/uninstall.sh
