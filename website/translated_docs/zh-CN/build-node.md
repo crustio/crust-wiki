@@ -10,7 +10,7 @@ Crust Node是辅助搭建Crust节点的命令行工具，点击[连接](https://
 
 ### 系统
 
-> 获取链的session key
+#### 1. 获取链的session key
 
 - 命令
 ```shell
@@ -21,7 +21,7 @@ sudo crust tools rotate-keys
 
 ![start](assets/node/rotate-keys.png)
 
-> 设置sworker的srd容量
+#### 2. 设置sworker的srd容量
 - 命令
 ```shell
 sudo crust tools change-srd {number}
@@ -38,7 +38,7 @@ sudo crust tools change-srd {number}
 
 ### 配置
 
-> 设置并生成配置文件
+#### 1. 设置并生成配置文件
 
 配置节点名称，节点类型，账户的备份文件和密码
 
@@ -50,7 +50,7 @@ sudo crust config set
 
 ![start](assets/node/set.png)
 
-> 修改并生成配置文件
+#### 2. 修改并生成配置文件
 
 - 命令
 ```shell
@@ -68,7 +68,7 @@ sudo vi /opt/crust/crust-node/config.yaml
 ![start](assets/node/generate.png)
 
 
-> 设置链的rpc端口
+#### 3. 设置链的rpc端口
 
 - 命令
 ```shell
@@ -83,7 +83,7 @@ sudo crust config chain-port 30889
 ```
 ![start](assets/node/chainport.png)
 
-> 设置连接其他链
+#### 4. 设置连接其他链
 
 设置连接其他链，默认连接本地链（ws://127.0.0.1:19944）
 
@@ -100,7 +100,7 @@ sudo crust config conn-chain ws://7.7.7.7:19944
 ```
 ![start](assets/node/connchain.png)
 
-> 查询配置文件
+#### 5. 查询配置文件
 
 - 命令
 ```shell
@@ -113,7 +113,7 @@ sudo crust config show
 
 ### 控制
 
-> 启动Crust服务
+#### 1. 启动Crust服务
 - 命令
 
 ```shell
@@ -135,7 +135,7 @@ sudo crust start api
  ```
 ![start](assets/node/startapi.png)
 
-> 停止 Crust 服务
+#### 2. 停止 Crust 服务
 
 - 命令
 ```shell
@@ -156,7 +156,7 @@ sudo crust stop smanager
 ```
 ![start](assets/node/stopsmanager.png)
 
-> 重启节点服务
+#### 3. 重启节点服务
 
 - 命令
 ```shell
@@ -174,7 +174,7 @@ sudo crust reload {chain|api|sworker|smanager|ipfs}
 ![start](assets/node/reloadipfs.png)
 
 ### 监控
-> 查询当前节点版本的详细信息
+#### 1. 查询当前节点版本的详细信息
 
 版本信息包括节点网络，类型和版本，Sworker的详细信息，Docker ImageID等信息
 
@@ -185,7 +185,7 @@ sudo crust version
 - 实例
 ![start](assets/node/version.png)
 
-> 查询节点服务状态
+#### 2. 查询节点服务状态
 
 - 命令 
 ```shell
@@ -205,7 +205,7 @@ sudo crust status {chain|api|sworker|smanager|ipfs}
 查询节点单个服务状态
 ![start](assets/node/version.png)
 
-> 查询节点日志
+#### 3. 查询节点日志
 
 查询节点某个服务的日志，使用Ctrl+c 退出日志界面，使用“crust logs help”命令查询更多日志参数说明
 
@@ -222,7 +222,7 @@ sudo crust logs --tail 5 sworker
 ```
 ![start](assets/node/logs.png)
 
-> 查询base data和storage data的存放路径和使用详情
+#### 4. 查询base data和storage data的存放路径和使用详情
 
 注：
 1. base data的文件夹是用来存放链数据和其他服务的matedata，默认为系统盘，推荐2T SSD
@@ -238,7 +238,7 @@ sudo crust tools space-info
 已经将磁盘成功挂载在/opt/crust/data/disks/2,/opt/crust/data/disks/4,/opt/crust/data/disks/33这三个目录下
 ![start](assets/node/space-info.png)
 
-> 查询节点的files和srd的状态
+#### 5. 查询节点的files和srd的状态
 
 - 命令
 ```shell
@@ -267,7 +267,7 @@ srd参数说明
 
 ### 升级
 
-> 升级节点服务的docker image
+#### 1. 升级节点服务的docker image
 
 - 命令
 ```shell
@@ -286,7 +286,7 @@ sudo crust tools upgrade-image chain
 sudo crust tools upgrade-image ipfs
 ```
 
-> sworker的AB升级
+#### 2. sworker的AB升级
 
 - 命令
 ```shell
@@ -296,13 +296,13 @@ sudo crust tools sworker-ab-upgrade {code}
 
 - 实例
 ```shell
-sduo crust tools sworker-ab-upgrade 032ceedd27918ddb4807c78ec5734a8a49878a2e7a7001381b90eae8d1d1c093
+sudo crust tools sworker-ab-upgrade 032ceedd27918ddb4807c78ec5734a8a49878a2e7a7001381b90eae8d1d1c093
 ```
 ![start](assets/node/sworker-ab-upgrade.png)
 
 ### 文件
 
-> 查询文件信息
+#### 1. 查询文件信息
 
 - 命令
 ```shell
@@ -316,7 +316,7 @@ sudo crust tools file-info {all/valid/lost/pending} {output-file}
 查询进行中的订单信息
 ![start](assets/node/filepending.png)
 
-> 删除文件
+#### 2. 删除文件
 
 - 命令
 ```shell
@@ -334,7 +334,7 @@ sudo crust tools delete-file QmaK1Rbc4AYtDJoTLgZQNZx4JpDPYrN2DW269i54eA5Phk
 
 ### 其他
 
-> IPFS命令
+#### 1. IPFS命令
 
 - 命令
 ```shell
@@ -392,7 +392,7 @@ sudo docker logs crust-watch
 member节点
 
 1. Member节点搭建请参考[member节点](https://wiki.crust.network/docs/zh-CN/memberNode)
-2. 在Member节点启动之前，将watcher节点设置为外援链，参考[conn-chain](> 设置连接其他链)
+2. 在Member节点启动之前，将watcher节点设置为外援链，参考[conn-chain](#4-设置连接其他链)
 
 ## 关闭SGX驱动自动安装
 
@@ -410,5 +410,4 @@ sudo mv /opt/crust/crust-node/scripts/install_sgx_driver.sh /opt/crust/crust-nod
 sudo mv /opt/crust/crust-node/scripts/install_sgx_driveroff.sh /opt/crust/crust-node/scripts/install_sgx_driver.sh
 ```
 
-## 自定义Node
 
