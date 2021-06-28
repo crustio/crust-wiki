@@ -101,7 +101,7 @@ Hard disk mounting requirements:
 
 * Chain data and related DB data will be stored in /opt/crust/data directory. It is recommend you mount your SSD to this directory.
 
-* The order files and SRD (Sealed Random Data, the placeholder files) will be written in the /opt/crust/data/disks/1 ~ /opt/crust/data/disks/128 directory, depending on how you mount the hard disk. Each physical machine can be configured with up to 500TB of reserved space
+* The order files and SRD (Sealed Random Data, the placeholder files) will be written in the /opt/crust/disks/1 ~ /opt/crust/disks/128 directory, depending on how you mount the hard disk. Each physical machine can be configured with up to 500TB of reserved space
 
 * Please pay attention to the read and write permissions of the directory after mounting
 
@@ -109,9 +109,9 @@ Suggestions for mounting HDDs:
 
 * **Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.**
 
-* Single HDD: mount it directly to /opt/crust/data/disks/1
-* Multiple HDDs (multi-directories): Mount the hard disks to the /opt/crust/data/disks/1 ~ /opt/crust/data/disks/128 directories respectively. For example, if there are three hard disks /dev/sdb1, /dev/sdb1 and /dev/sdb3, you can mount them to /opt/crust/data/disks/1, /opt/crust/data/disks/2, /opt/crust/data/disks/3 directories respectively. The efficiency of this method is relatively high, and the method is relatively simple, but the fault tolerance of the hard disk will be reduced
-* Multiple HDDs (single directory): For hard disks with poor stability, using RAID/LVM/mergerfs and other means to combine the hard disks and mount them to the /opt/crust/data/disks/1 directory is an option. This method can increase the fault tolerance of the hard disk, but it will also bring about a drop in efficiency
+* Single HDD: mount it directly to /opt/crust/disks/1
+* Multiple HDDs (multi-directories): Mount the hard disks to the /opt/crust/disks/1 ~ /opt/crust/disks/128 directories respectively. For example, if there are three hard disks /dev/sdb1, /dev/sdb1 and /dev/sdb3, you can mount them to /opt/crust/disks/1, /opt/crust/disks/2, /opt/crust/disks/3 directories respectively. The efficiency of this method is relatively high, and the method is relatively simple, but the fault tolerance of the hard disk will be reduced
+* Multiple HDDs (single directory): For hard disks with poor stability, using RAID/LVM/mergerfs and other means to combine the hard disks and mount them to the /opt/crust/disks/1 directory is an option. This method can increase the fault tolerance of the hard disk, but it will also bring about a drop in efficiency
 * Multiple HDDs (mixed): Combine single directory and multiple directories to mount HDDs
 
 You can use following command to view the file directory:
@@ -205,7 +205,7 @@ sudo crust reload
 
 If you have run a previous version of Crust test chain, or if you want to redeploy your current node, you need to clear data from three sources:
 
-* Delete basic Crust files under /opt/crust/data
+* Delete basic Crust files under /opt/crust/data and /opt/crust/disks
 * Clean node data under /opt/crust/crust-node by executing:
 
 ```plain
