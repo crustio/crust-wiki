@@ -110,6 +110,19 @@ sudo crust config show
 - 实例
 ![start](assets/node/show.png)
 
+#### 6. 设置sworker日志级别
+
+- 命令
+```shell
+sudo crust tools set-sworker-debug {true|false}
+```
+- 实例
+
+开启DEBUG级别日志
+![start](assets/node/debugtrue.png)
+关闭DEBUG级别日志
+![start](assets/node/debugfalse.png)
+
 
 ### 控制
 

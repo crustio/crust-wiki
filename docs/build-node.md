@@ -110,6 +110,19 @@ sudo crust config show
 - Instance
 ![start](assets/node/show.png)
 
+#### 6. Set sworker log level
+
+- Command
+```shell
+sudo crust tools set-sworker-debug {true|false}
+```
+- Instance
+
+Enable DEBUG log
+![start](assets/node/debugtrue.png)
+Disable DEBUG log
+![start](assets/node/debugfalse.png)
+
 
 ### Control
 
