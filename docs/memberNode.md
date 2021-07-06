@@ -13,7 +13,7 @@ The Member node acts as the storage provider in Group. There can be multiple Mem
 
 ### 1.2 Hardware Spec
 
-The Member node runs chain modules (not participating in block generation), storage modules, IPFS, etc. It needs to be equipped with an SGX environment. Meantime, it stores user files, involving frequent network transmission, so the network bandwidth should also be in high standards. Refer to specific hardware recommendations here.
+The Member node runs chain modules (not participating in block generation), storage modules, IPFS, etc. It needs to be equipped with an SGX environment. Meantime, it stores user files, involving frequent network transmission, so the network bandwidth should also be in high standards. Refer to specific hardware recommendations [here](nodeHardwareSpec#member-node).
 
 ## 2. Ready to Deploy
 
@@ -21,7 +21,7 @@ The Member node runs chain modules (not participating in block generation), stor
 
 Refer to [this link](crust-account.md) to create a Member account (a single account). The Member node account needs to meet the following three requirements:
 
-* Reserve 5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
+* Reserve 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
 * Cannot be the account of Owner;
 * The account should be unique, meaning that it cannot be those same as other Member accounts, that is, one chain account only for one machine.
 
@@ -45,6 +45,7 @@ c. Go to package directory
 ```plain
 cd crust-node-0.10.0
 ```
+
 ### 2.4 Install Crust Service
 
 Notices:
@@ -97,7 +98,7 @@ Enter the password for the backup file as prompted and press Enter to end:
 
 With Crust as a decentralized storage network, the configuration of your hard disks becomes quite important. The node storage capacity will be reported to the Crust Network as reserved space, and this will determine the stake limit of this node.
 
-Hard disk mounting requirements:
+**Base hard disk mounting requirements:**
 
 * Chain data and related DB data will be stored in /opt/crust/data directory. It is recommend you mount your SSD to this directory.
 
@@ -105,9 +106,7 @@ Hard disk mounting requirements:
 
 * Please pay attention to the read and write permissions of the directory after mounting
 
-Suggestions for mounting HDDs:
-
-* **Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.**
+**HDDs organization solution is not unitary. If there is a better solution, you can optimize it yourself**
 
 * Single HDD: mount it directly to /opt/crust/disks/1
 * Multiple HDDs (multi-directories): Mount the hard disks to the /opt/crust/disks/1 ~ /opt/crust/disks/128 directories respectively. For example, if there are three hard disks /dev/sdb1, /dev/sdb1 and /dev/sdb3, you can mount them to /opt/crust/disks/1, /opt/crust/disks/2, /opt/crust/disks/3 directories respectively. The efficiency of this method is relatively high, and the method is relatively simple, but the fault tolerance of the hard disk will be reduced
@@ -122,7 +121,20 @@ sudo crust tools space-info
 
 ### 3.6 External chain Configuration (Optional)
 
-The use of external chain can make member nodes more lightweight. Meanwhile, multiple members connect to the same chain node, thereby avoiding repeated chain synchronization. However, due to the single point of failure in this method, that is to say, the failure of the external chain node will cause multiple members to fail to report the workload, so please try to use a good network device or cloud server to start the external chain. At the same time, don't connect too many members to the same chain. It is recommended that there be less than 10 members, otherwise, there may be a problem of transaction congestion. Please refer to this [link](build-node.md) for configuration
+Enable local storage services to use external chain nodes for information collection, workload reporting, etc.
+
+Advantage:
+- Member nodes are more lightweight
+- One chain node serves multiple members
+- The reporting workload is more stable
+- Avoid repeated synchronization of chain nodes
+
+Disadvantages:
+- The single point of failure
+- The number of Member connections is limited (10 or less recommended)
+- Additional machine (cloud server recommended)
+
+Please refer to this [link](build-node.md) for configuration
 
 ## 4. Start Node
 
@@ -201,7 +213,6 @@ sudo crust reload
 ```
 
 ### 6.2 Uninstall and Data Cleanup
-
 
 If you have run a previous version of Crust test chain, or if you want to redeploy your current node, you need to clear data from three sources:
 

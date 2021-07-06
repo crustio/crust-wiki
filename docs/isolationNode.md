@@ -12,7 +12,7 @@ The Isolation node is a full-featured node of Crust Network, which undertakes co
 
 ### 1.2 Hardware Spec
 
-For an isolation node, you need to run both chain module and storage module on your device, so your device needs to support SGX. Additionally, since the block generation process and the storage proving process both have high demands for network stability, similar to projects in Polkadot ecology, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to any unstable block generation. For detailed configuration requirements and recommendations, please refer to the official [hardware spec](node-Hard-wareSpec.md).
+For an isolation node, you need to run both chain module and storage module on your device, so your device needs to support SGX. Additionally, since the block generation process and the storage proving process both have high demands for network stability, similar to projects in Polkadot ecology, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to any unstable block generation. For detailed configuration requirements and recommendations, please refer to the official [hardware spec](node-Hard-wareSpec.md#isolation-node-spec).
 
 ## 2. Ready to Deploy
 
@@ -95,7 +95,7 @@ Enter the password for the controller backup file as prompted and press Enter to
 
 With Crust as a decentralized storage network, the configuration of your hard disks becomes quite important. The node storage capacity will be reported to the Crust Network as reserved space, and this will determine the stake limit of this node.
 
-Hard disk mounting requirements:
+**Hard disk mounting requirements:**
 
 * Chain data and related DB data will be stored in /opt/crust/data directory. It is recommend you mount your SSD to this directory.
 
@@ -105,7 +105,7 @@ Hard disk mounting requirements:
 
 Suggestions for mounting HDDs:
 
-* **HDDs organization solution is not unitary. If there is a better solution, you can optimize it yourself.**
+**HDDs organization solution is not unitary. If there is a better solution, you can optimize it yourself.**
 
 * Single HDD: mount it directly to /opt/crust/disks/1
 * Multiple HDDs (multi-directories): Mount the hard disks to the /opt/crust/disks/1 ~ /opt/crust/disks/128 directories respectively. For example, if there are three hard disks /dev/sdb1, /dev/sdb1 and /dev/sdb3, you can mount them to /opt/crust/disks/1, /opt/crust/disks/2, /opt/crust/disks/3 directories respectively. The efficiency of this method is relatively high, and the method is relatively simple, but the fault tolerance of the hard disk will be reduced
