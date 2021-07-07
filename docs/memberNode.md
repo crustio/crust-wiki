@@ -6,7 +6,6 @@ sidebar_label: Member Node
 
 ## 1. Overview
 
-
 ### 1.1 Node Responsibility
 
 The Member node acts as the storage provider in Group. There can be multiple Member nodes in a Group, and their effective storage can be clustered on Owner to participate in block generation competition. Since Member nodes store files and perform trusted quantification, support for SGX is necessary. The Member node is connected to its account through configuring backup files.
@@ -134,7 +133,7 @@ Disadvantages:
 - The number of Member connections is limited (10 or less recommended)
 - Additional machine (cloud server recommended)
 
-Please refer to this [link](build-node.md) for configuration
+Please refer to this [link](build-node.md#8-configure-external-source-chain) for configuration
 
 ## 4. Start Node
 
