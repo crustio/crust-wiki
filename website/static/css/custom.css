@@ -1,5 +1,5 @@
 :root {
-  --primaryColor: #ff8812;
+  --primaryColor: #838D9D;
   --secondaryColor: #172026;
   --snowColor: #efefef;
   --silverColor: #b7b8bb;
@@ -56,6 +56,10 @@ body {
 
 .fixedHeaderContainer .headerWrapper {
   max-width: 1400px !important;
+}
+
+.headerWrapper > header > a > img {
+  width: 300px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -393,9 +397,9 @@ body {
   .navigationSlider .slidingNav > ul > li a[href*="contributing"] {
     background: white;
     height: 100%;
-    border: solid 1px #ff8812;
+    border: solid 1px #838D9D;
     border-radius: 20px;
-    color: #ff8812;
+    color: #838D9D;
     height: 35px;
     line-height: 35px;
     font-size: 14px;
@@ -405,7 +409,7 @@ body {
   }
 
   .navigationSlider .slidingNav > ul > li a[href*="contributing"]:hover {
-    background: #ff8812;
+    background: #838D9D;
     color: white;
   }
 }
@@ -580,7 +584,7 @@ body {
     ),
     linear-gradient(127deg, rgba(230, 0, 122, 0.8), rgba(230, 0, 122, 0) 70%),
     linear-gradient(336deg, rgba(103, 69, 210, 0.7), rgba(103, 69, 210, 0) 70%);
-  background-color: #ff8812;
+  background-color: #838D9D;
 }
 
 /* ==========================================================================
@@ -617,12 +621,12 @@ body {
 }
 
 .mainpage-maintain-btn:hover {
-  background: #ff8812;
+  background: #838D9D;
   cursor: pointer;
 }
 
 .mainpage-build-btn {
-  background: #ff8812;
+  background: #838D9D;
   border: none;
   color: white;
   font-weight: 500;
@@ -681,7 +685,7 @@ body {
 }
 
 .myButton:hover {
-  background: #ff8812;
+  background: #838D9D;
   cursor: pointer;
 }
 
