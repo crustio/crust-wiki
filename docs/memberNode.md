@@ -118,7 +118,7 @@ You can use following command to view the file directory:
 sudo crust tools space-info
 ```
 
-### 3.6 External chain Configuration (Optional)
+### 3.6 External chain Configuration (Optional&recommend)
 
 Enable local storage services to use external chain nodes for information collection, workload reporting, etc.
 
