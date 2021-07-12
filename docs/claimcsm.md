@@ -12,7 +12,7 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 
 > Don't worry about being unfamiliar with the following tools, we will teach you how to use them step by step in the following steps.
 
-1. [MyEtherWallet](https://www.myetherwallet.com/interface/dashboard)
+1. [MyEtherWallet](https://v5.myetherwallet.com/)
 2. [ImToken](https://token.im/) or [MetaMask](https://metamask.io/)
 3. [Crust Apps](https://apps.crust.network/)
 
@@ -49,7 +49,7 @@ Please confirm your transaction is successful and make sure it has **at least 6 
 
 ### III. Log in to MyEtherWallet and Connect to your wallet
 
-1. Open [MyEtherWallet](https://www.myetherwallet.com/access-my-wallet):
+1. Open [MyEtherWallet](https://v5.myetherwallet.com/access-my-wallet):
     - Click 'MEW wallet'
     - Connect the wallet which you **transfer ERC20 CSM**(The following process will use 'ImToken' and 'MetaMask' as example)
 

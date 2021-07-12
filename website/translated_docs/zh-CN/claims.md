@@ -12,7 +12,7 @@ sidebar_label: Crust Claims
 
 > 不用过分担心不熟悉这些工具的使用，我们会在下面的认领步骤中详细阐述每一个工具的使用流程。
 
-1. [MyEtherWallet](https://www.myetherwallet.com/interface/dashboard)
+1. [MyEtherWallet](https://v5.myetherwallet.com/)
 2. [ImToken](https://token.im/)
 3. [Crust Apps](https://apps.crust.network/)
 
@@ -49,7 +49,7 @@ sidebar_label: Crust Claims
 
 ### 三. 登陆MyEtherWallet连接钱包
 
-1. 打开[MyEtherWallet](https://www.myetherwallet.com/access-my-wallet):
+1. 打开[MyEtherWallet](https://v5.myetherwallet.com/access-my-wallet):
     - 点击MEW wallet
     - 连接你**发送交易的钱包**（下列流程以ImToken举例）
 
