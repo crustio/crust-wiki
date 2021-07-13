@@ -177,9 +177,9 @@
         "title": "参数表",
         "sidebar_label": "参数表"
       },
-      "previewNetworkMaxwell": {
-        "title": "预览网 Maxwell",
-        "sidebar_label": "预览网 Maxwell"
+      "crustOverview": {
+        "title": "Crust 概览",
+        "sidebar_label": "Crust 概览"
       },
       "Q&AForMining": {
         "title": "Q&A",

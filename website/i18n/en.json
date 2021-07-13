@@ -184,9 +184,9 @@
         "title": "Parameters",
         "sidebar_label": "Parameters"
       },
-      "previewNetworkMaxwell": {
-        "title": "Preview Network Maxwell",
-        "sidebar_label": "Preview Network Maxwell"
+      "crustOverview": {
+        "title": "Crust Network Overview",
+        "sidebar_label": "Crust Network Overview"
       },
       "Q&AForMining": {
         "title": "Q&A",
