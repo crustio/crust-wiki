@@ -36,15 +36,15 @@ Enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', 
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.9.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v0.9.0.tar.gz
+tar -xvf v0.10.0.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-0.9.0
+cd crust-node-0.10.0
 ```
 ### 2.4 Install Crust Service
 
@@ -160,11 +160,9 @@ sudo crust reload
 ```
 ### 6.2 Uninstall and Data Cleanup
 
-
 If you have run a previous version of Crust test chain, or if you want to redeploy your current node, you need to clear data from three sources:
 
 * Delete basic Crust files under /opt/crust/data
-* Clean the SRD file under the "srd_paths" you configured (if you have run a version before 0.8.0)
 * Clean node data under /opt/crust/crust-node by executing:
 
 ```plain
