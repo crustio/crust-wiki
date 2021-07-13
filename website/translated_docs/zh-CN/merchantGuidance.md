@@ -105,7 +105,7 @@ sudo crust reload smanager
 有意义文件质押上限 = 文件副本函数 * SRD文件质押上限
 ```
 
-在Maxwell中，SRD为1TB对应1CRU的质押上限，**文件副本函数**为：
+在Crust mainnet中，SRD为1TB对应1CRU的质押上限，**文件副本函数**为：
 
 | Group文件副本数 | 倍数 |
 |-----------------|------|

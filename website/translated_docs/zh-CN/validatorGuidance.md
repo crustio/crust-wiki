@@ -8,7 +8,7 @@ sidebar_label: Validator Guidance
 
 ## 0. 准备工作
 
-您需要确保您有足够的CRU进行转账和担保。您可以将您在以太坊上的CRU[认领到Maxwell](claims.md)。
+您需要确保您有足够的CRU进行转账和担保。
 
 ## 1. 配置绑定关系
 

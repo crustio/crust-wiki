@@ -4,7 +4,7 @@ title: CRU Claim
 sidebar_label: CRU Claim
 ---
 
-If you want to **map ERC20 CRU to Crust Preview Network Maxwell** and participate in the preview network, you follow this tutorial step by step to claim Maxwell CRU.
+If you want to **map ERC20 CRU to Crust Network** and participate in Crust, you follow this tutorial step by step to claim CRU.
 
 ## Preparation
 
@@ -24,16 +24,16 @@ Using an exchange account to sent a transfer (withdrawal) transaction will be in
 
 ### I. Send CRU Claim Transaction
 
-First of all, you need to **transfer CRU** to ***Crust Maxwell Claim Address*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
+First of all, you need to **transfer CRU** to ***Crust mainnet Claim Address*** on the Ethereum side. Transfering can be done on any wallet side, but you **must pay attention to following points** before transfering CRUs:
 
 > 1. ⚠️ Please make sure you transfer CRU to the Claim Address, not ETH.
 > 2. ⚠️ Make sure you have the authority to make signature with the private key of the account (all accounts created by exchanges are not applicable, please use the wallet with private key stored to perform following steps)
 > 3. ⚠️ Confirm the CRU ERC20: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)
-> 4. ⚠️ Crust Maxwell Claim Address: [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
+> 4. ⚠️ Crust mainnet Claim Address: [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
 
 Go to the Claim CRU page of [Crust Apps](https://apps.crust.network/#/claims)
 
-Initiate a CRU transaction to Crust Maxwell Claim Address
+Initiate a CRU transaction to Crust Claim Address
 
 ![Apps Claim0](assets/claims/apps_claims0.jpg)
 
@@ -41,7 +41,7 @@ Please confirm your transfering is successful and make sure it has **at least 6 
 
 ### II. Verify transactions and bridge tokens
 
-1. Select the account of Maxwell Preview Network that you want to claim
+1. Select the account of Crust mainnet that you want to claim
 2. Input the Tx Hash you copied from  [Step I](#i-send-cru-claim-transaction)
 3. Click "Continue", this step will wait for a while, backend bridge service will check the legicimacy of your claim transaction. **The network may busy for a while, and you will receive a failure hint, if that, you can wait and try it later.**
 
@@ -125,5 +125,5 @@ Go back to **Crust Apps Claims** page, with the **Signed Message** copied in [St
 
 The code involved in claim process has been **open source**:
 
-1. [Crust Bridge](https://github.com/decloudf/crust-bridge/tree/main/maxwell-claim)
+1. [Crust Bridge](https://github.com/decloudf/crust-bridge/tree/main/mainnet-claim)
 2. [Crust Claims](https://github.com/crustio/crust/tree/master/cstrml/claims)

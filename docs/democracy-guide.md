@@ -13,9 +13,11 @@ The Democracy module is an important part of Crust Network, reflecting the advan
 5. [**Technical Committee**](#5-technical-committee): The Technical Committee can, along with the Council, produce emergency referenda, which are fast-tracked for voting and implementation. These emergency referenda are intended for use only under urgent circumstances.
 
 ## 1 Proposals&Referenda
+
 This part mainly focuses on the main processes, specific practices, rules, and parameters of the Democracy module for the ease of reading.
 
 ### 1.1 Main processes
+
 1. Create a preimage to decide on the code for execution with a request for voting;
 2. Create and submit a proposal;
 3. Review proposals from others or wait for the proposal to be reviewed;
@@ -23,6 +25,7 @@ This part mainly focuses on the main processes, specific practices, rules, and p
 5. A timer will be set for the execution of the approved proposals according to the chain parameters.
 
 ### 1.2 Practices
+
 1. Create a preimage
 ![democracy_entry_page](assets/democracy/democracy_entry_page.jpeg)
 As shown above, go to the Democracy page and then click on "Submit preimage".

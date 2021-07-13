@@ -5,7 +5,7 @@ sidebar_label: Getting Started
 ---
 
 ## Crust 是什么
-CRUST提供了Web3⽣态系统的去中⼼化存储⽹络，⽀持包括IPFS在内的多种存储层协议，并对应⽤层提供接⼝。Crust的技术栈还能够⽀持去中⼼化计算层。Crust旨在构建⼀个重视数据隐私和所有权的分布式云⽣态系统。
+Crust提供了Web3⽣态系统的去中⼼化存储⽹络，⽀持包括IPFS在内的多种存储层协议，并对应⽤层提供接⼝。Crust的技术栈还能够⽀持去中⼼化计算层。Crust旨在构建⼀个重视数据隐私和所有权的分布式云⽣态系统。
 
 ## 如何使用 Crust
 您可以按照3个简单的步骤来上传，存储和分发文件：
@@ -33,9 +33,9 @@ Crust Network 适用于多种场景，包括：
 
 ## 立即加入并开始使用 Crust
 
-Crust预览网“Maxwell”现已上线。这是一个激励网络。您可以参考以下链接来加入或者尝试使用网络。
+Crust主网现已上线。您可以参考以下链接来加入或者尝试使用网络。
 
-- 节点提供者 - 请参考[节点指南](node-overview.md)以在Maxwell中安装配置和运行Crust节点。
+- 节点提供者 - 请参考[节点指南](node-overview.md)安装配置和运行Crust节点。
 - Token持有者 - 请参考[Guarantor Guidance](guarantor-guidance.md)进行Staking及担保等相关操作。
 - 存储用户 - 请参考[存储用户指南](storageUserGuide.md)以开始使用存储市场。
 - 开发人员 - 有关更多信息，请参见[构建](build-getting-started.md)页面。
