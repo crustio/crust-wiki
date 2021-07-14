@@ -93,6 +93,10 @@
         "title": "Crust Grants",
         "sidebar_label": "Crust Grants"
       },
+      "crustOverview": {
+        "title": "Crust Network Overview",
+        "sidebar_label": "Crust Network Overview"
+      },
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
         "sidebar_label": "Crust Storage Explorer"
@@ -183,10 +187,6 @@
       "parameters": {
         "title": "Parameters",
         "sidebar_label": "Parameters"
-      },
-      "crustOverview": {
-        "title": "Crust Network Overview",
-        "sidebar_label": "Crust Network Overview"
       },
       "Q&AForMining": {
         "title": "Q&A",
