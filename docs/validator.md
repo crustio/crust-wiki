@@ -10,11 +10,11 @@ The validator is the node that validates transactions and generates blocks in Cr
 
 ## Validators’ Rewards and Slash
 
-> Currently, Crust Network is at the preview network stage - Maxwell. Therefore, the following reward and punishment specifications concern only rules and parameters pertaining to Maxwell.
-
 ### 1.Rewards
 
 The rewards of validators are composed of two parts: **authoring rewards and staking rewards**. Normally, validators will receive both the authoring and staking rewards, while candidates receive only staking rewards.
+
+**In Crust mainnet, each Era (6 hours) generates authoring and staking rewards**, more details about the reward decreasing refer to [economic whitepaper](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).
 
 #### Authoring rewards
 
@@ -22,7 +22,7 @@ Authoring rewards are the incomes obtained by validators participating in block 
 
 ![staking_points](assets/gpos/staking_points.jpg)
 
-**In Maxwell, each Era (6 hours) generates a total authoring rewards of 150 CRUs, which gets halved every 90 days.** And the authoring rewards for each validator in each Era are calculated as:
+The authoring rewards for each validator in each Era are calculated as:
 
 ```shell
 authoring_rewards = total_authoring_rewards * point_ratio (individual_points / total_points)
@@ -38,7 +38,7 @@ Electing from high to low according to effective stake
 
 Staking rewards refer to the validators or candidates who hold storage resources obtaining incomes through staking CRUs. The staking income is related to the following factors:
 
-- Stake Limit: The Stake Limit determines the upper limit of the effective stake of CRUs by the validator, which is directly related to the amount of storage provided by the validator. In Maxwell, a 1TB SRD file corresponds to an upper limit of 1CRU, and a meaningful file corresponds to 1-5 times the upper limit of SRD, with specific "times" related to the number of duplicates of meaningful files. For details, please refer to [DSM Guidance](DSM.md);
+- Stake Limit: The Stake Limit determines the upper limit of the effective stake of CRUs by the validator, which is directly related to the amount of storage provided by the validator. In Crust mainnet, a 1TB SRD file corresponds to an upper limit of 1CRU, and a meaningful file corresponds to 1-5 times the upper limit of SRD, with specific "times" related to the number of duplicates of meaningful files. For details, please refer to [DSM Guidance](DSM.md);
 - Effective Stake: The Effective Stake is **the amount of staking that actually generates incomes**, which is related to the stake limit of the validator that is guaranteed. An example will be provided later.
 - Guarantee fee: Guarantee fee is the ratio of the share to guarantors. The larger the value, the higher the guarantor’s income.
 
@@ -46,7 +46,7 @@ Staking rewards refer to the validators or candidates who hold storage resources
 
 > For example, if the validator obtains 900 CRU staking rewards and 100 CRU block generation reward in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtains (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belongs to the validator.
 
-How are the rewards specifically distributed? **First, in Maxwell, each Era (6 hours) will generate a staking reward of 600 CRUs, which gets halved every 90 days.** The income obtained by the validator and candidate is calculated as following steps:
+The income obtained by the validator and candidate is calculated as following steps:
 
 ```shell
 validator_total_staking_amount = self_staking_amount + guarantee_amount
@@ -101,6 +101,4 @@ The slash will not take place instantly, rather, a delayed deduction comes after
 
 ## To become a validator
 
-To become a validator of Crust Network requires you to have a certain amount of storage resources, a high-quality network, as well as configured nodes ready.
-
-Currently, you can join the Maxwell to become a validator. For details, please refer to the description of validators (nodes) in [Maxwell Overview](preview-network-maxwell.md).
+To become a validator of Crust Network requires you to have a certain amount of storage resources, a high-quality network, as well as configured nodes ready. For details, please refer to the description of validators (nodes) in [Validator Guidance](validatorGuidance.md).

@@ -4,7 +4,7 @@ title: Crust Claims
 sidebar_label: Crust Claims
 ---
 
-如果您想将**ERC20的CRU映射到 Crust 预览网 Maxwell**，参与体验预览网的各个功能，您可以通过本教程一步一步学习到如何进行Maxwell CRU的认领。
+如果您想将**ERC20的CRU映射到 Crust 主网**，您可以通过本教程一步一步学习到如何进行Crust主网 CRU的认领。
 
 ## 准备工作
 
@@ -24,16 +24,16 @@ sidebar_label: Crust Claims
 
 ### 一. 发送CRU认领交易
 
-首先，您需要在以太坊网络上向 ***Crust Maxwell认领地址*** 发起一笔**CRU的转账交易**，这个操作可以在任意的钱包端完成，但发起转账之前一定要注意:
+首先，您需要在以太坊网络上向 ***Crust 主网认领地址*** 发起一笔**CRU的转账交易**，这个操作可以在任意的钱包端完成，但发起转账之前一定要注意:
 
 > 1. ⚠️ 请注意此步骤发送到认领地址的是CRU，不是ETH
 > 2. ⚠️ 您拥有发起交易账户的私钥签名权限（所有交易所创建的账户均不适用, 请转到拥有私钥的钱包进行下列操作）
 > 3. ⚠️ 确认CRU ERC20的合约地址：[CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)
-> 4. ⚠️ Crust Maxwell认领地址为：[0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
+> 4. ⚠️ Crust 主网认领地址为：[0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
 
 登陆[Crust Apps](https://apps.crust.network/#/claims)的Claim CRU模块
 
-向***Crust Maxwell认领地址***发起一笔**CRU的转账交易**.
+向***Crust 主网认领地址***发起一笔**CRU的转账交易**.
 
 ![Apps Claim0](assets/claims/apps_claims0.jpg)
 
@@ -41,7 +41,7 @@ sidebar_label: Crust Claims
 
 ### 二. 验证交易和桥接代币
 
-1. 选择您需要认领的Maxwell预览网账户
+1. 选择您需要认领的账户
 2. 填入您[步骤一](#一-发送cru认领交易)复制的Tx Hash值
 3. 点击“继续”，这步*会等待一段时间*，会验证您交易的合法性，在**网络拥堵的情况下也有可能出现认领失败，您只需要再试一次即可**
 
@@ -116,5 +116,5 @@ sidebar_label: Crust Claims
 
 Claims涉及到的代码均**已开源**：
 
-1. [Crust Maxwell Bridge](https://github.com/decloudf/crust-bridge/tree/main/maxwell-claim)
+1. [Crust Mainnet Bridge](https://github.com/decloudf/crust-bridge/tree/main/mainnet-claim)
 2. [Crust Claims](https://github.com/crustio/crust/tree/master/cstrml/claims)

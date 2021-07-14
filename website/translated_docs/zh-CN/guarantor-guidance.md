@@ -4,13 +4,13 @@ title: Guarantor Guidance
 sidebar_label: Guarantor Guidance
 ---
 
+关于担保人这个角色的介绍参考[担保人](guarantor.md). 本文章主要介绍担保人如何参与GPoS获得收益。
+
 ## 0. 配置绑定关系
 
 确保你已经完成了[账户配置（新增绑定）](new-bond.md)，并且已经绑定了你的stash和controller账户。
 
 ## 1. 浏览可被担保的节点列表
-
-在进行本步骤选择之前，请保证您已了解[担保人](guarantor.md)的概念，并已充分了解关于验证人（节点）的奖罚细则, 再开始以下操作：
 
 1. 进入[APPs](https://apps.crust.network), 点击上方“Staking”—— “Staking overview”/“Waiting”，这意味着您可以选择担保验证人（出块节点），或是候选人（候选节点），并从他们的Staking收益中获取奖励
 2. 选择你要担保的节点。单击节点的头像，即可复制节点地址
@@ -21,7 +21,7 @@ sidebar_label: Guarantor Guidance
 
 节点设置的担保费是指节点在**Staking收益中分给担保人的百分比**
 
-> 如果一个验证人获取到1000 CRU的Staking收益，并且如果他自身投入的质押金额占总质押金额的90%（另外10%为担保人的投入)。如果该验证人设置的担保费为95%, 则最终担保人将一共获取到 1000 * 10% * 95% = 95 个CRU的收益，剩余5 CRU归节点所有。
+> 如果一个验证人在上个era内获取到1000 CRU的Staking收益，并且如果他自身投入的质押金额占总质押金额的90%（另外10%为担保人的投入)。如果该验证人设置的担保费为95%, 则最终担保人将一共获取到 1000 * 10% * 95% = 95 个CRU的收益，验证人将获得905个CRU。
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
 

@@ -4,6 +4,8 @@ title: Guarantor Guidance
 sidebar_label: Guarantor Guidance
 ---
 
+For the introduction of the role of the guarantor, please refer to [guarantor](guarantor.md). This article mainly introduces how the guarantor can participate in GPoS and get rewards.
+
 ## Bond Accounts
 Makesure you have finished [account setup steps](new-bond.md), and bonded your stash and controller account.
 
@@ -13,7 +15,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/copyaddr.png)
 
-> Notice: The guarantee fee means the proportion of node staking rewards distributed to guarantors
+> If a validator obtains 1000 CRU staking reward in one era, and if his own self-staking is 90% of the total staking amount of him (the other 10% is the guarantor's staking). If the guarantee fee set by the validator is 95%, the final guarantor will receive a total of 1000 * 10% * 95% = 95 CRUs, and the validator will get 905 CRUs.
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
 
@@ -33,7 +35,6 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 * Select the specific node in the candidate accounts
 * Enter the amount you want to guarantee
 * Click "Guarantee"
-  
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/guarantee2.png)
 
@@ -43,7 +44,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 ### Step 3, wait for the guarantee to take effect
 
 * Go to "Staking" —— "Account actions"
-* Find the validator you guaranteed, follow the steps shown in below picture 
+* Find the validator you guaranteed, follow the steps shown in below picture
 * There are two values under the account you just guaranteed, the value below is "effective stake", it will take effect after waiting for an era
 
   

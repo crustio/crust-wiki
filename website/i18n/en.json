@@ -69,18 +69,6 @@
         "title": "Crust Storage Manager",
         "sidebar_label": "Crust Storage Manager"
       },
-      "claimBack": {
-        "title": "CRU Claim Back",
-        "sidebar_label": "CRU Claim Back"
-      },
-      "claimCRU18": {
-        "title": "CRU18 Claim",
-        "sidebar_label": "CRU18 Claim"
-      },
-      "claimCSM": {
-        "title": "CSM Claim",
-        "sidebar_label": "CSM Claim"
-      },
       "claims": {
         "title": "CRU Claim",
         "sidebar_label": "CRU Claim"
@@ -105,6 +93,10 @@
         "title": "Crust Grants",
         "sidebar_label": "Crust Grants"
       },
+      "crustOverview": {
+        "title": "Crust Network Overview",
+        "sidebar_label": "Crust Network Overview"
+      },
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
         "sidebar_label": "Crust Storage Explorer"
@@ -116,10 +108,6 @@
       "crustWallet": {
         "title": "Crust Wallet",
         "sidebar_label": "Crust Wallet"
-      },
-      "csmclaimback": {
-        "title": "CSM Claim Back",
-        "sidebar_label": "CSM Claim Back"
       },
       "democracyGuide": {
         "title": "Democracy Guide",
@@ -199,10 +187,6 @@
       "parameters": {
         "title": "Parameters",
         "sidebar_label": "Parameters"
-      },
-      "previewNetworkMaxwell": {
-        "title": "Preview Network Maxwell",
-        "sidebar_label": "Preview Network Maxwell"
       },
       "Q&AForMining": {
         "title": "Q&A",

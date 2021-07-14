@@ -40,9 +40,9 @@ A series of `Crust Grants` will be introduced to accelerate the application deve
 
 ## Join and Use Crust Now
 
-Crust Preview Network "Maxwell" is now live. It is an incentivized network. You can refer to following links to join and play.
+Crust mainnet is now live. You can refer to following links to join and play.
 
-- Node Provider - Refer to the [Node Guidance](node-overview.md) to run setup and run Crust Nodes in Maxwell.  
+- Node Provider - Refer to the [Node Guidance](node-overview.md) to run setup and run Crust Nodes.  
 - Token Holder - Refer to the [Guarantor Guidance](guarantor-guidance.md) to perform staking operations.
 - Storage User - Refer to the [Storage User Guidance](storageUserGuide.md) to start using storage market.
 - Developers - Refer to the [Build](build-getting-started.md) pages for more information.

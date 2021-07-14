@@ -4,19 +4,22 @@ title: Crust Wallet
 sidebar_label: Crust Wallet
 ---
 
-Crust Wallet is a plug-in wallet. Users can manage their assets in Crust Network, such as CRU and Candy (and CSM after the mainnet launch)  via Crust Wallet. It includes following features:
+Crust Wallet is a plug-in wallet. Users can manage their CRUs via Crust Wallet. It includes following features:
+
 * Interact with Crust DApps such as [Crust Apps](https://apps.crust.network/#/accounts);
 * Manage accounts;
 * Transfer of tokens;
 
-Please note that Crust Wallet **does NOT** support CRU tokens of ERC20. It is used to interact with Crust Networks including Maxwell and MainNet.
+Please note that Crust Wallet **does NOT** support CRU tokens of ERC20. It is used to interact with Networks including Maxwell and MainNet.
 
 You can install Crust Wallet in two ways.
 
 ### 1. Install via Chrome App Store
+
 You can install Crust Wallet from the [Chrome Web Store](https://chrome.google.com/webstore/detail/crust-wallet/jccapkebeeiajkkdemacblkjhhhboiek).
 
 ### 2. Install via Installation Package 
+
 You can follow steps below to download and install Crust Wallet package.
 
   1. [Download installation package](https://github.com/crustio/crust-extension/releases/download/v1.0.1/crust-wallet_v1.0.1.zip) and unpack.

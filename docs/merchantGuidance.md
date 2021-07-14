@@ -105,7 +105,7 @@ Storing meaningful files (user files) will effectively increase the stake limit.
 Stake limit of meaningful files = File replica mapping function * Stake limit of SRD files
 ```
 
-In Maxwell, the Stake Limit of SRD files is 1TB to 1CRU, and the **File replica mapping function** is:
+In Crust mainnet, the Stake Limit of SRD files is 1TB to 1CRU, and the **File replica mapping function** is:
 
 | Group file replica count | Multiple |
 |-----------------|------|
