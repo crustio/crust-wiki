@@ -70,7 +70,7 @@ Order rewards **need to be settled before collection**. Currently, there are 3 w
 
 ![splorer](assets/merchant/splorer.png)
 
-2. **For any files (including unexpired files, settlement can also be carried out. Tips and basic fees will be distributed nodes in proportion to the storage duration)**, sending the`claimReward` transaction in [Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi. crust.network%2F#/extrinsics) to settle order rewards：
+2. **For any files (including unexpired files, settlement can also be carried out. Tips and basic fees will be distributed according to the proportion of the storage time to the total order time)**, sending the`claimReward` transaction in [Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi. crust.network%2F#/extrinsics) to settle order rewards：
 
 ![claimReward](assets/merchant/calculate.png)
 
