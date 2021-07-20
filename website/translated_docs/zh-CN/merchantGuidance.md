@@ -32,7 +32,7 @@ sudo crust reload smanager
 
 ### 1. 操作
 
-保障金决定了商户能领取订单奖励的上限，**兑换比例为10:1**。这意味着商户质押10 CRU的保障金可以领取1 CRU的订单奖励
+保障金决定了商户能领取订单奖励的上限，**兑换比例为1:1**。这意味着商户质押1 CRU的保障金可以领取1 CRU的订单奖励
 
 可以通过[Apps的商户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/market)进行保障金和奖励操作，具体功能和操作为：
 
@@ -54,27 +54,27 @@ sudo crust reload smanager
 
 ![reward](assets/merchant/reward.png)
 
-> ⚠️ 请注意，请时刻保证有充足的保障金，由于任何人都可以领取订单奖励，在计算订单的时候，如果保障金不足，奖励则不会归属
+> ⚠️ 请注意，请时刻保证有充足的保障金，由于任何人都可以领取订单奖励，在清算订单的时候，如果保障金不足，奖励则不会归属
 
-### 2. 计算订单奖励
+### 2. 清算订单奖励
 
-#### 自动计算奖励工具
+#### 自动清算奖励工具
 
 请参考[cst](https://www.npmjs.com/package/crust-storage-tool)运行来自动清算奖励
 
-#### 手动计算奖励
+#### 手动清算奖励
 
-订单奖励**在领取之前需要进行计算**。目前，商户可以执行3个操作以计算订单奖励：
+订单奖励**在领取之前需要进行清算**。目前，商户可以执行3个操作以清算奖励：
 
 1. 通过[sPlorer](https://splorer.crust.network/home/mr)查看节点接单信息
 
 ![splorer](assets/merchant/splorer.png)
 
-2. **对已到期的文件（未到期的文件无法进行奖励的计算）**, 到[Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/extrinsics)发送`claimReward`交易进行订单奖励计算
+2. **所有文件（包括未过期的文件，也可以进行清算。清算的文件小费和基础费将会按存储时长占总有效期时长比例发放）**, 到[Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/extrinsics)发送`claimReward`交易进行订单奖励清算
 
 ![claimReward](assets/merchant/calculate.png)
 
-3. 对于计算好的订单奖励，可以参考[操作的第4步](#1-操作)进行领取
+3. 对于清算好的订单奖励，可以参考[操作的第4步](#1-操作)进行领取
 
 ### 3. 订单奖励说明
 
@@ -94,8 +94,8 @@ sudo crust reload smanager
 所以前4个拉取到用户文件的商户会获得订单奖励，订单奖励会被多个因素影响：
 
 1. ***工作量报告*** 是证明你存储了用户文件的唯一途径，如果工作量未上报/删除了用户文件，会导致你丢失订单奖励，你的奖励资格会延续给下一个存储节点
-2. 请及时进行[订单奖励的计算](#2-计算订单奖励)，如果超过*15天*未被领取，则任何人都可以通过发送`market.claimReward`交易获取这笔订单的收益
-3. 续单（指对同一个文件下单）也会引发订单奖励的计算
+2. 请及时进行[订单奖励的清算](#2-清算订单奖励)，如果超过*15天*未被领取，则任何人都可以通过发送`market.claimReward`交易获取这笔订单的收益
+3. 续单（指对同一个文件下单）也会引发订单奖励的清算
 
 ## 质押额度和有意义文件说明
 
