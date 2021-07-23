@@ -1,4 +1,4 @@
-name: CI
+name: maxwell-ci
 
 on:
   pull_request:
