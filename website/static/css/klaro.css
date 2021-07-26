@@ -8,11 +8,11 @@
     }
   }
   #klaro .cookie-notice a {
-    color: #838D9D !important;
+    color: #ff8812 !important;
   }
   #klaro .cookie-notice button {
     border-radius: 10px;
-    background: #838D9D;
+    background: #ff8812;
     margin-bottom: 2px;
   }
   #klaro .cookie-notice button.cn-decline {
@@ -51,7 +51,7 @@
     border-radius: 10px;
   }
   #klaro .cookie-modal .cm-header a {
-    color: #838D9D !important;
+    color: #ff8812 !important;
   }
   @media (min-width: 990px) {
     #klaro .cookie-modal .cm-header {

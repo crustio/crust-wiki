@@ -31,6 +31,7 @@ const siteConfig = {
   organizationName: 'crust network',
   headerLinks: [
     {doc: 'gettingStarted', label: 'Docs'},
+    {href: 'https://wiki-maxwell.crust.network', label: 'Maxwell'},
     // {blog: true, label: 'Blog'},
     {search: true},
     {doc: "contributing", label: "Contribute"},
@@ -43,7 +44,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#838D9D',
+    primaryColor: '#ff8812',
     secondaryColor: '#585474',
   },
 
