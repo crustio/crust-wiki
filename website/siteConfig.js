@@ -22,64 +22,93 @@ const users = [
 
 const siteConfig = {
   title: ' Crust Wiki', // Title for your website.
-  tagline: 'wiki for crust network',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  tagline: 'Wiki for Crust Network',
+  url: 'https://wiki.crust.network', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
-
   // Used for publishing and more
-  projectName: 'Crust-Wiki',
-  organizationName: 'Crust Network',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
-
-  // For no header links in the top nav bar -> headerLinks: [],
+  projectName: 'crust-wiki',
+  organizationName: 'crust network',
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
-    { languages: true },
+    {doc: 'gettingStarted', label: 'Docs'},
+    // {blog: true, label: 'Blog'},
+    {search: true},
+    {doc: "contributing", label: "Contribute"},
+    {languages: true},
   ],
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
+  headerIcon: "img/logo_crust_wiki.svg",
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#7e78a6',
+    primaryColor: '#838D9D',
     secondaryColor: '#585474',
   },
 
-  /* Custom fonts for website */
-  /*
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
+  algolia: {
+    // apiKey: "",
+    // indexName: "",
+    algoliaOptions: {
+      facetFilters: ["language:LANGUAGE"],
+    }, // Optional, if provided by Algolia
   },
-  */
+
+  /* Custom fonts for website */
+  fonts: {
+    myFont: ["Work Sans", "sans-serif"],
+  },
+
+  onPageNav: "separate",
+
+  // Add custom scripts here that would be placed in <script> tags.
+  scripts: [
+    "https://buttons.github.io/buttons.js",
+    "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js",
+    "https://unpkg.com/aos@next/dist/aos.js",
+    "/js/custom.js",
+    "/js/klaro-config.js",
+    "/js/klaro.js",
+    '/js/packaged/addressChanger.js',
+    "/js/clipboard.min.js",
+    "/js/copycode.js",
+  ],
+
+  stylesheets: [
+    "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",
+    "https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap",
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
+    "https://unpkg.com/aos@next/dist/aos.css",
+    "https://fonts.googleapis.com/icon?family=Material+Icons",
+    "/css/klaro.css",
+    "/css/copycode.css",
+  ],
+
+  editUrl: "https://github.com/crustio/crust-wiki/edit/main/docs/",
+
+  translationRecruitingLink: "https://crowdin.com/project/Crust-Wiki",
+
+  docsSideNavCollapsible: true,
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Crust Network`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    theme: "default",
   },
 
-  // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scrollToTop: true,
+  scrollToTopOptions: {
+    zIndex: 100,
+  },
+
+  markdownPlugins: [
+    (md) => {
+      md.use(require("remarkable-katex"));
+    },
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
@@ -102,7 +131,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  // repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: 'https://github.com/crustio',
 };
 
 module.exports = siteConfig;

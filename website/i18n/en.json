@@ -3,35 +3,258 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "wiki for crust network",
+    "tagline": "Wiki for Crust Network",
     "docs": {
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
+      "appsStorageIssue": {
+        "title": "Apps Strorage Issue",
+        "sidebar_label": "Apps Strorage Issue"
       },
-      "doc2": {
-        "title": "document number 2"
+      "architecture": {
+        "title": "Architecture",
+        "sidebar_label": "Architecture"
       },
-      "doc3": {
-        "title": "This is document number 3"
+      "bitSwap": {
+        "title": "BitSwap",
+        "sidebar_label": "BitSwap"
       },
-      "doc4": {
-        "title": "Other Document"
+      "buildCrustKits": {
+        "title": "Crust SDK",
+        "sidebar_label": "Crust SDK"
       },
-      "doc5": {
-        "title": "Fifth Document"
+      "buildCrustJs": {
+        "title": "crust.js",
+        "sidebar_label": "crust.js"
+      },
+      "buildDevGuidance": {
+        "title": "Code Sample to Use Crust",
+        "sidebar_label": "Code Sample to Use Crust"
+      },
+      "buildGettingStarted": {
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
+      },
+      "buildHelloCrust": {
+        "title": "Hello Crust",
+        "sidebar_label": "Hello Crust"
+      },
+      "buildIntegrationContentStorageDelivery": {
+        "title": "Content Storage & Delivery",
+        "sidebar_label": "Content Storage & Delivery"
+      },
+      "buildIntegrationNFTDataStorage": {
+        "title": "NFT Data Storage",
+        "sidebar_label": "NFT Data Storage"
+      },
+      "buildIntegrationOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
+      "buildIntegrationWebsiteHosting": {
+        "title": "Website Hosting",
+        "sidebar_label": "Website Hosting"
+      },
+      "buildIPFSSDKs": {
+        "title": "IPFS SDKs",
+        "sidebar_label": "IPFS SDKs"
+      },
+      "buildNode": {
+        "title": "Crust Node",
+        "sidebar_label": "Crust Node"
+      },
+      "buildRockyGuidance": {
+        "title": "Crust Rocky Network",
+        "sidebar_label": "Crust Rocky Network"
+      },
+      "buildSmanager": {
+        "title": "Crust Storage Manager",
+        "sidebar_label": "Crust Storage Manager"
+      },
+      "claimBack": {
+        "title": "CRU Claim Back",
+        "sidebar_label": "CRU Claim Back"
+      },
+      "claimCRU18": {
+        "title": "CRU18 Claim",
+        "sidebar_label": "CRU18 Claim"
+      },
+      "claimCSM": {
+        "title": "CSM Claim",
+        "sidebar_label": "CSM Claim"
+      },
+      "claims": {
+        "title": "CRU Claim",
+        "sidebar_label": "CRU Claim"
+      },
+      "community": {
+        "title": "Community",
+        "sidebar_label": "Community"
+      },
+      "contributing": {
+        "title": "Contributing",
+        "sidebar_label": "Contributing"
+      },
+      "crustAccount": {
+        "title": "Account",
+        "sidebar_label": "Account"
+      },
+      "crustConsensus": {
+        "title": "Crust Consensus",
+        "sidebar_label": "Crust Consensus"
+      },
+      "crustGrants": {
+        "title": "Crust Grants",
+        "sidebar_label": "Crust Grants"
+      },
+      "crustStorageExplorer": {
+        "title": "Crust Storage Explorer",
+        "sidebar_label": "Crust Storage Explorer"
+      },
+      "crustTokens": {
+        "title": "Crust Tokens",
+        "sidebar_label": "Crust Tokens"
+      },
+      "crustWallet": {
+        "title": "Crust Wallet",
+        "sidebar_label": "Crust Wallet"
+      },
+      "csmclaimback": {
+        "title": "CSM Claim Back",
+        "sidebar_label": "CSM Claim Back"
+      },
+      "democracyGuide": {
+        "title": "Democracy Guide",
+        "sidebar_label": "Democracy Guide"
+      },
+      "DSM": {
+        "title": "DSM",
+        "sidebar_label": "DSM"
+      },
+      "frequentlyAskedQuestions": {
+        "title": "Editing How to submit bugs & feedbacks",
+        "sidebar_label": "Editing How to submit bugs & feedbacks"
+      },
+      "gettingStarted": {
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
+      },
+      "glossary": {
+        "title": "Glossary",
+        "sidebar_label": "Glossary"
+      },
+      "GPoS": {
+        "title": "GPoS",
+        "sidebar_label": "GPoS"
+      },
+      "guarantorGuidance": {
+        "title": "Guarantor Guidance",
+        "sidebar_label": "Guarantor Guidance"
+      },
+      "guarantor": {
+        "title": "Guarantor",
+        "sidebar_label": "Guarantor"
+      },
+      "identity": {
+        "title": "Identity",
+        "sidebar_label": "Identity"
+      },
+      "isolationNode": {
+        "title": "Isolation Node",
+        "sidebar_label": "Isolation Node"
+      },
+      "manage-files-in-JS-APPS": {
+        "title": "manage-files-in-JS-APPS"
+      },
+      "memberNode": {
+        "title": "Member Node",
+        "sidebar_label": "Member Node"
+      },
+      "merchantGuidance": {
+        "title": "Merchant Guidance",
+        "sidebar_label": "Merchant Guidance"
+      },
+      "newBond": {
+        "title": "New Bond",
+        "sidebar_label": "New Bond"
+      },
+      "nodeHardwareSpec": {
+        "title": "Node Hardware Spec",
+        "sidebar_label": "Node Hardware Spec"
+      },
+      "nodeOverview": {
+        "title": "Node Overview",
+        "sidebar_label": "Node Overview"
+      },
+      "orderSettlement": {
+        "title": "Order Settlement",
+        "sidebar_label": "Order Settlement"
+      },
+      "ownerNode": {
+        "title": "Owner Node",
+        "sidebar_label": "Owner Node"
+      },
+      "parachain": {
+        "title": "Parachain",
+        "sidebar_label": "Parachain"
+      },
+      "parameters": {
+        "title": "Parameters",
+        "sidebar_label": "Parameters"
+      },
+      "previewNetworkMaxwell": {
+        "title": "Preview Network Maxwell",
+        "sidebar_label": "Preview Network Maxwell"
+      },
+      "Q&AForMining": {
+        "title": "Q&A",
+        "sidebar_label": "Q&A"
+      },
+      "Q&AForStorage": {
+        "title": "Q&A",
+        "sidebar_label": "Q&A"
+      },
+      "setOnChainIdentity": {
+        "title": "Set OnChain Identity",
+        "sidebar_label": "Set OnChain Identity"
+      },
+      "storageMerchant": {
+        "title": "Storage Merchant",
+        "sidebar_label": "Storage Merchant"
+      },
+      "storageOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
+      "storageUserGuide": {
+        "title": "User Guidance",
+        "sidebar_label": "User Guidance"
+      },
+      "sWorkerGuide": {
+        "title": "sWorker",
+        "sidebar_label": "sWorker"
+      },
+      "teeTechnology": {
+        "title": "TEE Technology",
+        "sidebar_label": "TEE Technology"
+      },
+      "validator": {
+        "title": "Validator",
+        "sidebar_label": "Validator"
+      },
+      "validatorGuidance": {
+        "title": "Validator Guidance",
+        "sidebar_label": "Validator Guidance"
       }
     },
     "links": {
       "Docs": "Docs",
-      "API": "API",
-      "Help": "Help",
-      "Blog": "Blog"
+      "Contribute": "Contribute"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "General": "General",
+      "Learn": "Learn",
+      "Build": "Build",
+      "Node": "Node",
+      "Storage": "Storage"
     }
   },
   "pages-strings": {

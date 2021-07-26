@@ -10,5 +10,10 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.6"
+  },
+  "dependencies": {
+    "react-bootstrap": "^1.4.0",
+    "remarkable-katex": "^1.1.7",
+    "katex": "^0.12.0"
   }
 }

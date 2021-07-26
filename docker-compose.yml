@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-  docusaurus:
-    build: .
+  crust-wiki:
+    image: crustio/crust-wiki
     ports:
       - 3000:3000
       - 35729:35729
