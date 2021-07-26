@@ -1,8 +1,8 @@
-name: main-cd
+name: maxwell-cd
 
 on:
   push:
-    branches: [ main ]
+    branches: [ maxwell ]
 
 jobs:
   build:
@@ -11,17 +11,17 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build and push docker
         run: |
-          docker build -t crustio/crust-wiki:latest .
+          docker build -t crustio/crust-wiki:maxwell .
           docker login -u ${{ secrets.DOCKER_HUB_USER_NAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
-          docker push crustio/crust-wiki:latest
+          docker push crustio/crust-wiki:maxwell
 
       - name: Upgrade wiki
         uses: fifsky/ssh-action@master
         with:
           command: |
-            docker pull crustio/crust-wiki:latest
+            docker pull crustio/crust-wiki:maxwell
             cd /opt/compose
-            docker-compose up -d crust-wiki
+            docker-compose up -d crust-maxwell-wiki
           host: ${{ secrets.SSH_HOST }}
           user: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
