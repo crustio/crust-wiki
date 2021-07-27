@@ -32,6 +32,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'gettingStarted', label: 'Docs'},
     // {blog: true, label: 'Blog'},
+    {href: 'https://wiki.crust.network', label: 'Mainnet'},
     {search: true},
     {doc: "contributing", label: "Contribute"},
     {languages: true},
