@@ -1,7 +1,7 @@
 ---
 id: merchantGuidance
 title: Merchant Guidance
-sidebar_label: Merchant Guidance
+sidebar_label: Merchant Guidancex
 ---
 
 ## Overview
@@ -32,7 +32,7 @@ sudo crust reload smanager
 
 ### 1. Operations
 
-The collateral determines the upper limit for merchants to receive the order rewards. **The exchange rate is set at 10:1.** This means that a merchant can get an order reward of 1 CRU by staking a collateral of 10 CRUs.
+The collateral determines the upper limit for merchants to receive the order rewards. **The exchange rate is set at 1:1.** This means that a merchant can get an order reward of 1 CRU by staking a collateral of 1 CRUs.
 
 Merchants can log in the [Merchants](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/market) page to check relevant features and perform procedures including:
 
@@ -54,27 +54,27 @@ Click on the "Register" button. The registration requires a threshold collateral
 
 ![reward](assets/merchant/reward.png)
 
-> ⚠️ Please be sure to have sufficient collateral. Since anyone can collect order rewards, it is stipulated that rewards will not be issued if the collateral is insufficient when a reward calculation is done.
+> ⚠️ Please be sure to have sufficient collateral. Since anyone can settle order rewards, it is stipulated that rewards will not be issued if the collateral is insufficient when a reward settlement is done.
 
-### 2. Calculating order rewards
+### 2. Settlement of order rewards
 
-#### Auto calculation tool
+#### Auto settlement tool
 
-Please use [cst](https://www.npmjs.com/package/crust-storage-tool) to calculate your order reward.
+Please use [cst](https://www.npmjs.com/package/crust-storage-tool) to settle your order reward.
 
-#### Mannual calculation way
+#### Mannual settlement way
 
-Order rewards **need to be calculated before collection**. Currently, there are 3 ways for merchants to calculate their order rewards:
+Order rewards **need to be settled before collection**. Currently, there are 3 ways for merchants to settle their order rewards:
 
 1. Checking node order-taking information through [sPlorer](https://splorer.crust.network/home/mr)：
 
 ![splorer](assets/merchant/splorer.png)
 
-2. **For expired files (rewards for unexpired files cannot be calculated)**, sending the`claimReward` transaction in [Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi. crust.network%2F#/extrinsics) to calculate order rewards：
+2. **For any files (including unexpired files, settlement can also be carried out. Tips and basic fees will be distributed according to the proportion of the storage time to the total order time)**, sending the`claimReward` transaction in [Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi. crust.network%2F#/extrinsics) to settle order rewards：
 
 ![claimReward](assets/merchant/calculate.png)
 
-3. For those calculated order rewards, merchants can collect them (see [Collect rewards](#1-procedures)).
+3. For those settled order rewards, merchants can collect them (see [Collect rewards](#1-procedures)).
 
 ### 3. Order reward description
 
@@ -94,8 +94,8 @@ For newly placed orders:
 Therefore, the first 4 merchants that pull user files will receive order rewards which are affected by multiple factors:
 
 1. ***Work report*** is the only way to prove that you have stored user files. If the work is not reported or user files are deleted, you will lose the order rewards, and your reward entitlement will also be handed to the next storage node;
-2. Please do the [Order Reward Calculation](#2-calculating-order-rewards) and collect rewards timely. If the rewards are not collected for more than *15 days*, anyone can obtain them by sending `market.claimReward` transaction;
-3. Renewing an order (placing another order for the same file) will also trigger the calculation of order rewards.
+2. Please do the [Order Reward Settlement](#2-settlement-of-order-rewards) and collect rewards timely. If the rewards are not collected for more than *15 days*, anyone can obtain them by sending `market.claimReward` transaction;
+3. Renewing an order (placing another order for the same file) will also trigger the settlement of order rewards.
 
 ## Stake limit and Meaningful files
 
