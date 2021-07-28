@@ -18,19 +18,29 @@ For an isolation node, you need to run both chain module and storage module on y
 
 ### 2.1 Create your Accounts
 
-Refer to [bond accounts](new-bond.md) to create your stash and controller accounts.
+Refer to [bond accounts](new-bond.md) to create your Stash and Controller accounts,and create a Member account.
 
 Notices:
 
-* Reserve 5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
-* Make sure that the account is unique, and that one machine corresponds only to one group of Controller&Stash accounts.
+* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file
+* Ensure Member account has 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
+* Be sure to reserve a small number of CRUs not locked in the Controller&Stash for sending transactions (about 1 CRU)
+* Make sure that the Member account is unique, and that one machine corresponds only to one group of Controller&Stash accounts.
 
-### 2.2 Setup BIOS
+### 2.2 Create Group
+
+Enter Crust APPS, select 'Benefit', click on 'Create group',select the Owner Stash account, click on 'Create', enter the password of the stash account and click on 'Sign and Submit' to send the transaction and create Group.
+
+![pic](assets/mining/create_group.png)
+![pic](assets/mining/create_group1.png)
+
+
+### 2.3 Setup BIOS
 
 The SGX (Software Guard Extensions) module of the machine is closed by default. In the BIOS settings of your machine, you can set SGX to 'enable' and turn off Secure Boot (some types of motherboard do not support this setting). If your SGX only supports software enabled, please refer to this link [https://github.com/intel/sgx-software-enable](https://github.com/intel/sgx-software-enable).
 
 
-### 2.3 Download Crust Node Package
+### 2.4 Download Crust Node Package
 
 a. Download
 
@@ -45,7 +55,7 @@ c. Go to package directory
 ```plain
 cd crust-node-0.10.0
 ```
-### 2.4 Install Crust Service
+### 2.5 Install Crust Service
 
 Notices:
 
@@ -179,10 +189,25 @@ The monitoring log is as follows:
 
 ![pic](assets/mining/sworker_log2.png)
 
+## **5. Joining Group**
 
-## 5. Blockchain Validate
+### Add allowlist
 
-### 5.1 Get session key
+Enter Crust APPS, select 'Extrinsics', select the Stash account used to create the group, select 'swork' in the submit group, select 'addMemberIntoAllowlist(target)', then select the Member account that needs to be added to the Group, and finally click 'Submit transaction' to send the transaction to add the allowlist
+
+![pic](assets/mining/addMemberIntoAllowlist.png)
+
+### Join group
+
+After the first work report,select 'Benefit', click on 'Join group',select the Member account and the Stash account, click 'Join group', enter the password of the Member account, and finally click 'Sign and Submit' to send the transaction
+
+![pic](assets/mining/join_group.png)
+![pic](assets/mining/join_group1.png)
+
+
+## 6. Blockchain Validate
+
+### 6.1 Get session key
 
 Please wait for the chain to synchronize to the latest block height, and execute the following command:
 
@@ -193,7 +218,7 @@ Copy the session key as shown below:
 
 ![pic](assets/mining/gen_sessionkey.png)
 
-### 5.2  Set session key
+### 6.2  Set session key
 
 Enter [CRUST APPs](https://apps.crust.network/), click on "Staking" button under "Network" in the navigation bar, and go to "Accounting action". Click on the setting button on the right of your stashes(a 3-dots button) and click on "Change session key".
 
@@ -204,7 +229,7 @@ Fill in the sessionkey you have copied, and click on “Set session key”.
 ![pic](assets/mining/set_sessionkey2.png)
 
 
-### 5.3 Be a Validator/Candidate
+### 6.3 Be a Validator/Candidate
 
 Follow the steps below:
 
@@ -215,9 +240,9 @@ After one era, you can find your account listed in the "Staking" or "Waiting" l
 ![pic](assets/mining/be_validator2.png)
 
 
-## 6. Restart and Uninstall
+## 7. Restart and Uninstall
 
-### 6.1 Restart
+### 7.1 Restart
 
 If the device or Crust node related programs need to be somehow restarted, please refer to the following steps. 
 
@@ -228,7 +253,7 @@ If the device or Crust node related programs need to be somehow restarted, pleas
 sudo crust reload
 ```
 
-### 6.2 Uninstall and Data Cleanup
+### 7.2 Uninstall and Data Cleanup
 
 If you have run a previous version of Crust test chain, or if you want to redeploy your current node, you need to clear data from three sources:
 

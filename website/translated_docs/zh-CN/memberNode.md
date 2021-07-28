@@ -20,7 +20,8 @@ Member节点，负责运行链模块（不参与出块）,存储模块, IPFS等,
 
 参考这个[链接](crust-account.md)去构建一个Member的账户（单账户即可），Member节点账户需要满足以下三个要求:
 
-* 保留2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
+* 如果要使用Maxwell网络上的账户，需要将备份文件导入到主网[APPs](https://apps.crustcode.com/)并重新导出新版备份文件
+* 确保Member账户拥有2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
 * 不能是Owner的账户
 * 保证账户的唯一性，不能和其他Member账户相同， 即每台机器一个链账户
 
@@ -191,9 +192,19 @@ sudo crust logs sworker
 
 ## 5. 加入Group
 
-等待第一次上报work report后，进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择填写Member的账号，选择submit组为swork，选择joinGroup()方法，然后再选择你要加入的Group的Owner的Controller地址，最后点击submit transaction发送交易
+### 5.1 添加白名单
+
+进入Crust APPS中，选择Extrinsics，选择创建组的Stash账号，选择submit组为swork，选择addMemberIntoAllowlist(target)方法，然后再选择需要加入Group的Member账户，最后点击submit transaction发送交易增加白名单
+
+![图片](assets/mining/addMemberIntoAllowlist.png)
+
+### 5.2 加组
+
+等待第一次上报work report后，选择Benefit，点击Join group,选择需要加组的Member账户和创建group的Stash账户，点击Join group，输入Member账户密码，最后点击Sign and Submit发送交易
 
 ![图片](assets/mining/join_group.png)
+![图片](assets/mining/join_group1.png)
+
 
 ## 6. 重启与卸载
 

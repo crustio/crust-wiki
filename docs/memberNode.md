@@ -20,7 +20,8 @@ The Member node runs chain modules (not participating in block generation), stor
 
 Refer to [this link](crust-account.md) to create a Member account (a single account). The Member node account needs to meet the following three requirements:
 
-* Reserve 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
+* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file
+* Ensure Member account has 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
 * Cannot be the account of Owner;
 * The account should be unique, meaning that it cannot be those same as other Member accounts, that is, one chain account only for one machine.
 
@@ -195,9 +196,18 @@ The monitoring log is as follows:
 
 ## **5. Joining Group**
 
-After the first work report, enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Member account, select 'swork' in the submit group, select joinGroup(target),  select the Controller address of the Owner of the Group you want to join, and click on 'Submit Transaction' to send the transaction.
+### Add allowlist
+
+Enter Crust APPS, select 'Extrinsics', select the Stash account used to create the group, select 'swork' in the submit group, select 'addMemberIntoAllowlist(target)', then select the Member account that needs to be added to the Group, and finally click 'Submit transaction' to send the transaction to add the allowlist
+
+![pic](assets/mining/addMemberIntoAllowlist.png)
+
+### Join group
+
+After the first work report,select 'Benefit', click on 'Join group',select the Member account and the Stash account, click 'Join group', enter the password of the Member account, and finally click 'Sign and Submit' to send the transaction
 
 ![pic](assets/mining/join_group.png)
+![pic](assets/mining/join_group1.png)
 
 ## 6. Restart and Uninstall
 

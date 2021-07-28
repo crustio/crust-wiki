@@ -27,9 +27,10 @@ Notices:
 
 ### 2.2 Create Group
 
-Enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Owner Controller account, select 'swork' in the submit group, select createGroup( ), and click on 'Submit Transaction' to send the transaction and create Group.
+Enter Crust APPS, select 'Benefit', click on 'Create group',select the Owner Stash account, click on 'Create', enter the password of the stash account and click on 'Sign and Submit' to send the transaction and create Group.
 
 ![pic](assets/mining/create_group.png)
+![pic](assets/mining/create_group1.png)
 
 ### 2.3 Download Crust Node Package
 
