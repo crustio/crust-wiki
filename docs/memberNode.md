@@ -20,9 +20,10 @@ The Member node runs chain modules (not participating in block generation), stor
 
 Refer to [this link](crust-account.md) to create a Member account (a single account). The Member node account needs to meet the following three requirements:
 
-* Reserve 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
+* Ensure Member account has 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
 * Cannot be the account of Owner;
-* The account should be unique, meaning that it cannot be those same as other Member accounts, that is, one chain account only for one machine.
+* The account should be unique, meaning that it cannot be those same as other Member accounts, that is, one chain account only for one machine;
+* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file;
 
 ### 2.2 Setup BIOS
 
@@ -34,15 +35,15 @@ The SGX (Software Guard Extensions) module of the machine is closed by default. 
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v0.10.0.tar.gz
+tar -xvf v1.0.0.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-0.10.0
+cd crust-node-1.0.0
 ```
 
 ### 2.4 Install Crust Service
@@ -187,17 +188,41 @@ The monitoring log is as follows:
 * (1) Indicating that the block is being synchronized. The process takes a long time;
 * (2) Having successfully registered your on-chain identity;
 * (3) Storage capacity statistics calculation in progress, which takes place gradually;
-* (4) Indicating that the storage status has been reported successfully. The process takes a long time, about half an hour.
+* (4) Indicating that the storage status has been reported successfully. The process takes a long time, about an hour.
 
 ![pic](assets/mining/sworker_log1.png)
 
 ![pic](assets/mining/sworker_log2.png)
 
-## **5. Joining Group**
+## 5. Joining Group
 
-After the first work report, enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Member account, select 'swork' in the submit group, select joinGroup(target),  select the Controller address of the Owner of the Group you want to join, and click on 'Submit Transaction' to send the transaction.
+### 5.1 Add allowlist
+
+Member accounts need to be added to the whitelist of the group before they can be added to the group. Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before (or contact the group manager for operation), and click 'Add allowed accounts', as follows:
+
+![pic](assets/mining/addMemberIntoAllowlist1.png)
+
+Select the Member account that needs to be added to the group, click 'Submit' and send the transaction, and add the account to the whitelist of the Group
+![pic](assets/mining/addMemberIntoAllowlist2.png)
+
+### 5.2 Join group
+
+After the first work report,select 'Benefit', click on 'Join group',select the Member account and the Stash account, click 'Join group', enter the password of the Member account, and finally click 'Sign and Submit' to send the transaction
 
 ![pic](assets/mining/join_group.png)
+![pic](assets/mining/join_group1.png)
+
+### 5.3 Lockup CRU to reduce the fee of the work report
+
+**The work report in mainnet requires handling fees.** Under normal circumstances, each Member will perform 24 workload reporting transactions per day, which brings a lot of handling fees. For this reason, the Crust network provides a Benefit module that exempts workload reporting fees. Group owners can reduce or waive member handling fees by locking CRUs. **Each Member** needs to lock 18CRU for fee reduction. However, considering the unstable reporting of workload, it is recommended to lock 24CRU~30CRU to ensure that the fee is completely free.
+
+Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before (or contact the group manager for operation), and click 'Increase lookup', as follows:
+
+![pic](assets/mining/benefit_lockup1.png)
+
+Enter the number of CRUs that **need to be added**, and sign the transaction, as follows:
+
+![pic](assets/mining/benefit_lockup2.png)
 
 ## 6. Restart and Uninstall
 

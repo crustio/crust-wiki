@@ -5,47 +5,57 @@ sidebar_label: Isolation Node
 ---
 ## 1. Overview
 
-
 ### 1.1 Node Responsibility
 
-The Isolation node is a full-featured node of Crust Network, which undertakes core functions such as block generation, storage, and file transfer on a device. Therefore, support for SGX is necessary. The Isolation node account is connected to chain through the session key and the report of storage information works with configuring backup files. 
+The Isolation node is a full-featured node of Crust Network, which undertakes core functions such as block generation, storage, and file transfer, equivalent to that the Owner and Member nodes are on the same machine. Therefore, support for SGX is necessary. The Isolation node account is connected to chain through the session key and the report of storage information works with configuring backup files. 
 
 ### 1.2 Hardware Spec
 
-For an isolation node, you need to run both chain module and storage module on your device, so your device needs to support SGX. Additionally, since the block generation process and the storage proving process both have high demands for network stability, similar to projects in Polkadot ecology, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to any unstable block generation. For detailed configuration requirements and recommendations, please refer to the official [hardware spec](node-Hard-wareSpec.md#isolation-node-spec).
+For an isolation node, you need to run both chain module and storage module on your device, so your device needs to support SGX. Additionally, since the block generation process and the storage proving process both have high demands for network stability, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to any unstable block generation. For detailed configuration requirements and recommendations, please refer to the official [hardware spec](node-Hard-wareSpec.md#isolation-node-spec).
 
 ## 2. Ready to Deploy
 
 ### 2.1 Create your Accounts
-
-Refer to [bond accounts](new-bond.md) to create your stash and controller accounts.
+The node is responsible for participating in the block production competition, ** the Controller&Stash account group and a Member account are needed, 3 accounts in total** Please refer to [here](new-bond.md) to create your Stash and Controller group and [here](crust-account.md) to create a Member account. These 3 accounts need to meet the following requirements:
 
 Notices:
 
-* Reserve 5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
-* Make sure that the account is unique, and that one machine corresponds only to one group of Controller&Stash accounts.
+* Ensure Member account has 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
+* Be sure to reserve a small number of CRUs not locked in the Controller&Stash for sending transactions (about 1 CRU)
+* Make sure those accounts are unique
+* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file
 
-### 2.2 Setup BIOS
+### 2.2 Create Group
+
+> The account to create the Group must be a bound Stash account
+
+Enter Crust APPS, select 'Benefit', click on 'Create group',select **the Stash account**, click on 'Create', enter the password of the stash account and click on 'Sign and Submit' to send the transaction and create Group.
+
+![pic](assets/mining/create_group.png)
+![pic](assets/mining/create_group1.jpg)
+
+
+### 2.3 Setup BIOS
 
 The SGX (Software Guard Extensions) module of the machine is closed by default. In the BIOS settings of your machine, you can set SGX to 'enable' and turn off Secure Boot (some types of motherboard do not support this setting). If your SGX only supports software enabled, please refer to this link [https://github.com/intel/sgx-software-enable](https://github.com/intel/sgx-software-enable).
 
 
-### 2.3 Download Crust Node Package
+### 2.4 Download Crust Node Package
 
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v0.10.0.tar.gz
+tar -xvf v1.0.0.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-0.10.0
+cd crust-node-1.0.0
 ```
-### 2.4 Install Crust Service
+### 2.5 Install Crust Service
 
 Notices:
 
@@ -80,14 +90,15 @@ Follow the prompts to enter a node mode, and press Enter to end:
 
 ![pic](assets/mining/isolation_mode.png)
 
-### 3.4 Config Controller Account
+### 3.4 Config Member Account
 
-Enter the backup of the controller account as prompted and press Enter to end:
+Enter the backup of **the Member account** as prompted and press Enter to end:
 
-![pic](assets/mining/backup_config.png)
-Enter the password for the controller backup file as prompted and press Enter to end:
+![pic](assets/mining/member_backup_config.png)
 
-![pic](assets/mining/password_config.png)
+Enter the password for the Member backup file as prompted and press Enter to end:
+
+![pic](assets/mining/member_password_config.png)
 
 ### 3.5 Config Hard Disks
 
@@ -173,16 +184,45 @@ The monitoring log is as follows:
 
 * (2) Having successfully registered your on-chain identity;
 * (3) Storage capacity statistics calculation in progress, which takes place gradually;
-* (4) Indicating that the storage status has been reported successfully. The process takes a long time, about half an hour.
+* (4) Indicating that the storage status has been reported successfully. The process takes a long time, about an hour.
 
 ![pic](assets/mining/sworker_log1.png)
 
 ![pic](assets/mining/sworker_log2.png)
 
+## 5 Joining Group
 
-## 5. Blockchain Validate
+### 5.1 Add allowlist
 
-### 5.1 Get session key
+Member accounts need to be added to the whitelist of the group before they can be added to the group. Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before, and click 'Add allowed accounts', as follows:
+
+![pic](assets/mining/addMemberIntoAllowlist1.png)
+
+Select the Member account that needs to be added to the group, click 'Submit' and send the transaction, and add the account to the whitelist of the Group
+![pic](assets/mining/addMemberIntoAllowlist2.png)
+
+### 5.2 Join group
+
+After the first work report,select 'Benefit', click on 'Join group',select the Member account and the Stash account, click 'Join group', enter the password of the Member account, and finally click 'Sign and Submit' to send the transaction
+
+![pic](assets/mining/join_group.png)
+![pic](assets/mining/join_group1.png)
+
+### 5.3 Lockup CRU to reduce the fee of the work report
+
+**The work report in mainnet requires handling fees.** Under normal circumstances, each Member will perform 24 workload reporting transactions per day, which brings a lot of handling fees. For this reason, the Crust network provides a Benefit module that exempts workload reporting fees. Group owners can reduce or waive member handling fees by locking CRUs. **Each Member** needs to lock 18CRU for fee reduction. However, considering the unstable reporting of workload, it is recommended to lock 24CRU~30CRU to ensure that the fee is completely free.
+
+Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before, and click 'Increase lookup', as follows:
+
+![pic](assets/mining/benefit_lockup1.png)
+
+Enter the number of CRUs that **need to be added**, and sign the transaction, as follows:
+
+![pic](assets/mining/benefit_lockup2.png)
+
+## 6. Blockchain Validate
+
+### 6.1 Get session key
 
 Please wait for the chain to synchronize to the latest block height, and execute the following command:
 
@@ -193,7 +233,7 @@ Copy the session key as shown below:
 
 ![pic](assets/mining/gen_sessionkey.png)
 
-### 5.2  Set session key
+### 6.2  Set session key
 
 Enter [CRUST APPs](https://apps.crust.network/), click on "Staking" button under "Network" in the navigation bar, and go to "Accounting action". Click on the setting button on the right of your stashes(a 3-dots button) and click on "Change session key".
 
@@ -204,7 +244,7 @@ Fill in the sessionkey you have copied, and click on “Set session key”.
 ![pic](assets/mining/set_sessionkey2.png)
 
 
-### 5.3 Be a Validator/Candidate
+### 6.3 Be a Validator/Candidate
 
 Follow the steps below:
 
@@ -215,9 +255,9 @@ After one era, you can find your account listed in the "Staking" or "Waiting" l
 ![pic](assets/mining/be_validator2.png)
 
 
-## 6. Restart and Uninstall
+## 7. Restart and Uninstall
 
-### 6.1 Restart
+### 7.1 Restart
 
 If the device or Crust node related programs need to be somehow restarted, please refer to the following steps. 
 
@@ -228,7 +268,7 @@ If the device or Crust node related programs need to be somehow restarted, pleas
 sudo crust reload
 ```
 
-### 6.2 Uninstall and Data Cleanup
+### 7.2 Uninstall and Data Cleanup
 
 If you have run a previous version of Crust test chain, or if you want to redeploy your current node, you need to clear data from three sources:
 

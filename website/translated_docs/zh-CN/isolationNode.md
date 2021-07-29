@@ -8,41 +8,52 @@ sidebar_label: Isolation Node
 
 ### 1.1 功能职责
 
-Isolation节点是Crust的全功能节点，其承担了出块，存储，文件传输等核心功能。所以，对SGX的支持是必不可少的。而账户是通过session key与运行的链程序进行互联，参与出块的。存储信息的上报是是通过配置backup的形式进行关联的。
+Isolation节点是Crust的全功能节点，其承担了出块，存储，文件传输等核心功能，相当于Owner和Member节点处于同一台机器。所以，对SGX的支持是必不可少的。而账户是通过session key与运行的链程序进行互联，参与出块的。存储信息的上报是是通过配置backup的形式进行关联的。
 
 ### 1.2 硬件环境
 
-Isolation节点形态下，你唯一的节点上需要运行链模块以及存储量模块,所以对SGX的支持是必不可少的。同时，由于出块进程以及存储工作量上报进程对网络稳定性要求比较高，类似波卡生态的 Kusama 网络或者其他项目，我们强烈推荐出块节点使用固定的公网 IP，否则会因为出块不稳定等情况带来损失。详细配置要求和推荐，请参考官方[硬件spec](node-Hard-wareSpec.md#isolation节点形态硬件spec)。
+Isolation节点形态下，你唯一的节点上需要运行链模块以及存储量模块,所以对SGX的支持是必不可少的。同时，由于出块进程以及存储工作量上报进程对网络稳定性要求比较高，我们强烈推荐出块节点使用固定的公网 IP，否则会因为出块不稳定等情况带来损失。详细配置要求和推荐，请参考官方[硬件spec](node-Hard-wareSpec.md#isolation节点形态硬件spec)。
 
 ## 2 基础工作
 
 ### 2.1 构建账户
 
-节点负责参与出块竞争，需要生成并绑定Controller&Stash账户组，具体参考[这里](new-bond.md)。账户需要满足以下两个个要求:
+节点负责参与出块竞争，**要生成并绑定Controller&Stash账户组和创建一个Member账户，共3个账户**，具体参考[这里](new-bond.md)进行账户组的创建和[这里](crust-account.md)创建Member账户。这3个账户需要满足以下要求:
 
-* Controller账户保留2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
-* 保证账户的唯一性，及每台机器一组Controller&Stash账户
-### 2.2 BIOS 设置
+* 需要保证Controller&Stash留有少量的未被Lock的CRU用于发送各类交易（约1CRU）
+* 确保Member账户拥有2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
+* 确保账户的唯一性
+* 如果要使用Maxwell网络上的账户，需要将备份文件导入到主网[APPs](https://apps.crustcode.com/)并重新导出新版备份文件
 
+### 2.2 创建Group
+
+> 创建Group的账号必须是绑定好的Stash账号
+
+进入Crust APPS中，选择Benefit，点击Create group,选择Owner的Stash账号，点击Create，输入**Stash账户密码**，最后点击Sign and Submit发送交易创建Group。
+
+![图片](assets/mining/create_group.png)
+![图片](assets/mining/create_group1.jpg)
+
+### 2.3 BIOS 设置
 
 一般来说，机器的 SGX（Software Guard Extensions） 模块是默认关闭的，需要在机器的 BIOS 设置，首先将SGX 开关设置为 enable，同时把Secure Boot 关闭（部分主板没有）。如果 SGX 只支持 software enabled 方式，参考这个链接[https://github.com/intel/sgx-software-enable](https://github.com/intel/sgx-software-enable)
 
-### 2.3 下载Crust node安装包
+### 2.4 下载Crust node安装包
 
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v0.10.0.tar.gz
+tar -xvf v1.0.0.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-0.10.0
+cd crust-node-1.0.0
 ```
-### 2.4 安装Crust服务
+### 2.5 安装Crust服务
 
 安装前的注意点：
 
@@ -72,17 +83,19 @@ sudo crust config set
 
 ### 3.3 选择节点模式
 
-按照提示输入节点模式123，按回车结束：
+按照提示输入节点模式isolation，按回车结束：
 
 ![图片](assets/mining/isolation_mode.png)
 
-### 3.4 配置controller账户
+### 3.4 配置Member账户
 
-按提示输入backup内容，具体为controller 账户创建时备份的文件内容，回车键结束：
+按提示输入backup内容，具体为**Member账户**创建时备份的文件内容，回车键结束：
 
-![图片](assets/mining/backup_config.png)按提示输入password内容，具体为controller 账户的密码，回车键结束：
+![图片](assets/mining/member_backup_config.png)
 
-![图片](assets/mining/password_config.png)
+按提示输入password内容，回车键结束：
+
+![图片](assets/mining/member_password_config.png)
 
 ### 3.5 配置硬盘
 
@@ -160,16 +173,46 @@ sudo crust logs sworker
 * 表示区块正在同步中，该过程耗时较长（1）
 * 成功在链上注册身份（2）
 * 正在进行存储余量统计操作，该过程会逐步进行（3）
-* 表示工作量上报成功， 该过程耗时较长，大约半小时左右（4）
+* 表示工作量上报成功， 该过程耗时较长，大约一小时左右（4）
 
 ![pic](assets/mining/sworker_log1.png)
 
 ![pic](assets/mining/sworker_log2.png)
 
+## 5. 加入Group
 
-## 5 参与出块
+### 5.1 添加白名单
 
-### 5.1 获取session key
+Member账户需要添加到Group的白名单后才能加入Group中。进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组，点击Add allowed accounts，如下：
+
+![图片](assets/mining/addMemberIntoAllowlist1.png)
+
+选择需要加入组的Member账户，点击Submit并发送交易，将该账户加入Group的白名单
+![图片](assets/mining/addMemberIntoAllowlist2.png)
+
+### 5.2 加组
+
+等待第一次上报work report后（一般是同步块到最高后再等一小时，可以通过swoker的log进行查询，或查询链上状态），选择Benefit，点击Join group,选择需要加组的Member账户和创建Group的Stash账户，点击Join group，输入Member账户密码，最后点击Sign and Submit发送交易
+
+![图片](assets/mining/join_group.png)
+![图片](assets/mining/join_group1.png)
+
+### 5.3 锁定CRU减免工作量手续费
+
+**主网的工作量上报需要手续费。**一般情况下，每个Member每天会进行24次工作量上报交易，这带来的大量的手续费开销。为此Crust网络提供了免除工作量上报费用的Benefit模块，Group owner可以通过锁定CRU的方式，减免Member的手续费。**每个Member**需要锁定18CRU来进行手续费减免，但考虑到存在工作量上报不稳定的情况，建议锁定24CRU~30CRU来确保手续费的完全免费。
+
+进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组，点击Increase lookup，如下：
+
+![图片](assets/mining/benefit_lockup1.png)
+
+输入需要**增加**的CRU数量，并进行签名交易，如下：
+
+![图片](assets/mining/benefit_lockup2.png)
+
+
+## 6 参与出块
+
+### 6.1 获取session key
 
 等待链同步到最新块高，执行以下命令：
 
@@ -179,7 +222,7 @@ sudo crust tools rotate-keys
 结果返回的就是该节点的session key, 请复制，下小结将会使用，如下所示:
 ![图片](assets/mining/gen_sessionkey.png)
 
-### 5.2  设置session key
+### 6.2  设置session key
 
 进入[CRUST APPs](https://apps.crust.network/)，点击导航栏的“**Network**”下的“**Staking**”。选中右侧的配置的三个点，选择“**Change session key**”
 
@@ -190,7 +233,7 @@ sudo crust tools rotate-keys
 ![图片](assets/mining/set_sessionkey2.png)
 
 
-### 5.3 成为验证人/候选人
+### 6.3 成为验证人/候选人
 
 进入[Crust APPs](https://apps.crust.network)，执行 “Be Validator” 操作。
 
@@ -202,9 +245,9 @@ sudo crust tools rotate-keys
 
 ## 
 
-## 6. 重启与卸载
+## 7. 重启与卸载
 
-### 6.1 重启
+### 7.1 重启
 
 如果机器需要重新启动，或者因为任何情况需要重启 Crust 节点相关程序，请参考下列步骤进行。请注意：本小节仅包括 Crust 节点相关程序的启动步骤，不包括机器基本软硬件环境设置和检查的相关内容，比如硬盘挂载、frp 内网穿透、IPFS等。请在保证软硬件系统正常的情况下进行下列步骤
 
@@ -212,7 +255,7 @@ sudo crust tools rotate-keys
 sudo crust reload
 ```
 
-### 6.2 数据清除与卸载
+### 7.2 数据清除与卸载
 
 如果你运行过老版本的测试链或者想重新部署，默认情况下需要清除三处数据，
 
