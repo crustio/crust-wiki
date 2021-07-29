@@ -12,7 +12,7 @@ The Isolation node is a full-featured node of Crust Network, which undertakes co
 
 ### 1.2 Hardware Spec
 
-For an isolation node, you need to run both chain module and storage module on your device, so your device needs to support SGX. Additionally, since the block generation process and the storage proving process both have high demands for network stability, similar to projects in Polkadot ecology, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to any unstable block generation. For detailed configuration requirements and recommendations, please refer to the official [hardware spec](node-Hard-wareSpec.md#isolation-node-spec).
+For an isolation node, you need to run both chain module and storage module on your device, so your device needs to support SGX. Additionally, since the block generation process and the storage proving process both have high demands for network stability, we strongly recommend that the block generation node use a fixed public network IP, otherwise it will be punished due to any unstable block generation. For detailed configuration requirements and recommendations, please refer to the official [hardware spec](node-Hard-wareSpec.md#isolation-node-spec).
 
 ## 2. Ready to Deploy
 
@@ -193,9 +193,12 @@ The monitoring log is as follows:
 
 ### 5.1 Add allowlist
 
-Enter Crust APPS, select 'Extrinsics', select the Stash account used to create the group, select 'swork' in the submit group, select 'addMemberIntoAllowlist(target)', then select the Member account that needs to be added to the Group, and finally click 'Submit transaction' to send the transaction to add the allowlist
+Member accounts need to be added to the whitelist of the group before they can be added to the group. Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before, and click 'Add allowed accounts', as follows:
 
-![pic](assets/mining/addMemberIntoAllowlist.png)
+![pic](assets/mining/addMemberIntoAllowlist1.png)
+
+Select the Member account that needs to be added to the group, click 'Submit' and send the transaction, and add the account to the whitelist of the Group
+![pic](assets/mining/addMemberIntoAllowlist2.png)
 
 ### 5.2 Join group
 
@@ -205,6 +208,16 @@ After the first work report,select 'Benefit', click on 'Join group',select the M
 ![pic](assets/mining/join_group1.png)
 
 ### 5.3 Lockup CRU to reduce the fee of the work report
+
+**The work report in mainnet requires handling fees.** Under normal circumstances, each Member will perform 24 workload reporting transactions per day, which brings a lot of handling fees. For this reason, the Crust network provides a Benefit module that exempts workload reporting fees. Group owners can reduce or waive member handling fees by locking CRUs. **Each Member** needs to lock 18CRU for fee reduction. However, considering the unstable reporting of workload, it is recommended to lock 24CRU~30CRU to ensure that the fee is completely free.
+
+Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before, and click 'Increase lookup', as follows:
+
+![pic](assets/mining/benefit_lockup1.png)
+
+Enter the number of CRUs that need to be added, and sign the transaction, as follows:
+
+![pic](assets/mining/benefit_lockup2.png)
 
 ## 6. Blockchain Validate
 

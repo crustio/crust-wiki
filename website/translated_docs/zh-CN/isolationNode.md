@@ -12,7 +12,7 @@ Isolation节点是Crust的全功能节点，其承担了出块，存储，文件
 
 ### 1.2 硬件环境
 
-Isolation节点形态下，你唯一的节点上需要运行链模块以及存储量模块,所以对SGX的支持是必不可少的。同时，由于出块进程以及存储工作量上报进程对网络稳定性要求比较高，类似波卡生态的 Kusama 网络或者其他项目，我们强烈推荐出块节点使用固定的公网 IP，否则会因为出块不稳定等情况带来损失。详细配置要求和推荐，请参考官方[硬件spec](node-Hard-wareSpec.md#isolation节点形态硬件spec)。
+Isolation节点形态下，你唯一的节点上需要运行链模块以及存储量模块,所以对SGX的支持是必不可少的。同时，由于出块进程以及存储工作量上报进程对网络稳定性要求比较高，我们强烈推荐出块节点使用固定的公网 IP，否则会因为出块不稳定等情况带来损失。详细配置要求和推荐，请参考官方[硬件spec](node-Hard-wareSpec.md#isolation节点形态硬件spec)。
 
 ## 2 基础工作
 
@@ -181,18 +181,31 @@ sudo crust logs sworker
 
 ### 5.1 添加白名单
 
-进入Crust APPS中，选择Extrinsics，选择创建组的Stash账号，选择submit组为swork，选择addMemberIntoAllowlist(target)方法，然后再选择需要加入Group的Member账户，最后点击submit transaction发送交易增加白名单
+Member账户需要添加到Group的白名单后才能加入Group中。进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组，点击Add allowed accounts，如下：
 
-![图片](assets/mining/addMemberIntoAllowlist.png)
+![图片](assets/mining/addMemberIntoAllowlist1.png)
+
+选择需要加入组的Member账户，点击Submit并发送交易，将该账户加入Group的白名单
+![图片](assets/mining/addMemberIntoAllowlist2.png)
 
 ### 5.2 加组
 
-等待第一次上报work report后，选择Benefit，点击Join group,选择需要加组的Member账户和创建group的Stash账户，点击Join group，输入Member账户密码，最后点击Sign and Submit发送交易
+等待第一次上报work report后（一般是同步块到最高后再等一小时，可以通过swoker的log进行查询，或查询链上状态），选择Benefit，点击Join group,选择需要加组的Member账户和创建Group的Stash账户，点击Join group，输入Member账户密码，最后点击Sign and Submit发送交易
 
 ![图片](assets/mining/join_group.png)
 ![图片](assets/mining/join_group1.png)
 
 ### 5.3 锁定CRU减免工作量手续费
+
+**主网的工作量上报需要手续费。**一般情况下，每个Member每天会进行24次工作量上报交易，这带来的大量的手续费开销。为此Crust网络提供了免除工作量上报费用的Benefit模块，Group owner可以通过锁定CRU的方式，减免Member的手续费。**每个Member**需要锁定18CRU来进行手续费减免，但考虑到存在工作量上报不稳定的情况，建议锁定24CRU~30CRU来确保手续费的完全免费。
+
+进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组，点击Increase lookup，如下：
+
+![图片](assets/mining/benefit_lockup1.png)
+
+输入需要增加的CRU数量，并进行签名交易，如下：
+
+![图片](assets/mining/benefit_lockup2.png)
 
 
 ## 6 参与出块
