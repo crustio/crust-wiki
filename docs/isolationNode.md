@@ -5,7 +5,6 @@ sidebar_label: Isolation Node
 ---
 ## 1. Overview
 
-
 ### 1.1 Node Responsibility
 
 The Isolation node is a full-featured node of Crust Network, which undertakes core functions such as block generation, storage, and file transfer, equivalent to that the Owner and Member nodes are on the same machine. Therefore, support for SGX is necessary. The Isolation node account is connected to chain through the session key and the report of storage information works with configuring backup files. 
@@ -17,8 +16,7 @@ For an isolation node, you need to run both chain module and storage module on y
 ## 2. Ready to Deploy
 
 ### 2.1 Create your Accounts
-
-Please refer to [here](new-bond.md) to create your Stash and Controller group and [here](crust-account.md) to create a Member account. These 3 accounts need to meet the following requirements:
+The node is responsible for participating in the block production competition, ** the Controller&Stash account group and a Member account are needed, 3 accounts in total** Please refer to [here](new-bond.md) to create your Stash and Controller group and [here](crust-account.md) to create a Member account. These 3 accounts need to meet the following requirements:
 
 Notices:
 
@@ -29,7 +27,9 @@ Notices:
 
 ### 2.2 Create Group
 
-Enter Crust APPS, select 'Benefit', click on 'Create group',select the Owner Stash account, click on 'Create', enter the password of the stash account and click on 'Sign and Submit' to send the transaction and create Group.
+> The account to create the Group must be a bound Stash account
+
+Enter Crust APPS, select 'Benefit', click on 'Create group',select **the Stash account**, click on 'Create', enter the password of the stash account and click on 'Sign and Submit' to send the transaction and create Group.
 
 ![pic](assets/mining/create_group.png)
 ![pic](assets/mining/create_group1.jpg)
@@ -90,14 +90,15 @@ Follow the prompts to enter a node mode, and press Enter to end:
 
 ![pic](assets/mining/isolation_mode.png)
 
-### 3.4 Config Controller Account
+### 3.4 Config Member Account
 
-Enter the backup of the controller account as prompted and press Enter to end:
+Enter the backup of **the Member account** as prompted and press Enter to end:
 
-![pic](assets/mining/backup_config.png)
-Enter the password for the controller backup file as prompted and press Enter to end:
+![pic](assets/mining/member_backup_config.png)
 
-![pic](assets/mining/password_config.png)
+Enter the password for the Member backup file as prompted and press Enter to end:
+
+![pic](assets/mining/member_password_config.png)
 
 ### 3.5 Config Hard Disks
 

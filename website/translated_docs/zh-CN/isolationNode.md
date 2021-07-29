@@ -18,7 +18,7 @@ Isolation节点形态下，你唯一的节点上需要运行链模块以及存�
 
 ### 2.1 构建账户
 
-节点负责参与出块竞争，要生成并绑定Controller&Stash账户组和创建一个Member账户，具体参考[这里](new-bond.md)进行账户组的创建和[这里](crust-account.md)创建Member账户。这3个账户需要满足以下要求:
+节点负责参与出块竞争，**要生成并绑定Controller&Stash账户组和创建一个Member账户，共3个账户**，具体参考[这里](new-bond.md)进行账户组的创建和[这里](crust-account.md)创建Member账户。这3个账户需要满足以下要求:
 
 * 需要保证Controller&Stash留有少量的未被Lock的CRU用于发送各类交易（约1CRU）
 * 确保Member账户拥有2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
@@ -83,17 +83,19 @@ sudo crust config set
 
 ### 3.3 选择节点模式
 
-按照提示输入节点模式123，按回车结束：
+按照提示输入节点模式isolation，按回车结束：
 
 ![图片](assets/mining/isolation_mode.png)
 
-### 3.4 配置controller账户
+### 3.4 配置Member账户
 
-按提示输入backup内容，具体为controller 账户创建时备份的文件内容，回车键结束：
+按提示输入backup内容，具体为**Member账户**创建时备份的文件内容，回车键结束：
 
-![图片](assets/mining/backup_config.png)按提示输入password内容，具体为controller 账户的密码，回车键结束：
+![图片](assets/mining/member_backup_config.png)
 
-![图片](assets/mining/password_config.png)
+按提示输入password内容，回车键结束：
+
+![图片](assets/mining/member_password_config.png)
 
 ### 3.5 配置硬盘
 
