@@ -185,7 +185,7 @@ sudo crust logs sworker
 * 表示区块正在同步中，该过程耗时较长（1）
 * 成功在链上注册身份（2）
 * 正在进行存储余量统计操作，该过程会逐步进行（3）
-* 表示工作量上报成功， 该过程耗时较长，大约半小时左右（4）
+* 表示工作量上报成功， 该过程耗时较长，大约一小时左右（4）
 ![图片](assets/mining/sworker_log1.png)
 
 ![图片](assets/mining/sworker_log2.png)
@@ -194,16 +194,31 @@ sudo crust logs sworker
 
 ### 5.1 添加白名单
 
-进入Crust APPS中，选择Extrinsics，选择创建组的Stash账号，选择submit组为swork，选择addMemberIntoAllowlist(target)方法，然后再选择需要加入Group的Member账户，最后点击submit transaction发送交易增加白名单
+Member账户需要添加到Group的白名单后才能加入Group中。进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组（或者联系Group管理者，进行操作），点击Add allowed accounts，如下：
 
-![图片](assets/mining/addMemberIntoAllowlist.png)
+![图片](assets/mining/addMemberIntoAllowlist1.png)
+
+选择需要加入组的Member账户，点击Submit并发送交易，将该账户加入Group的白名单
+![图片](assets/mining/addMemberIntoAllowlist2.png)
 
 ### 5.2 加组
 
-等待第一次上报work report后，选择Benefit，点击Join group,选择需要加组的Member账户和创建group的Stash账户，点击Join group，输入Member账户密码，最后点击Sign and Submit发送交易
+等待第一次上报work report后（一般是同步块到最高后再等一小时，可以通过swoker的log进行查询，或查询链上状态），选择Benefit，点击Join group,选择需要加组的Member账户和创建Group的Stash账户，点击Join group，输入Member账户密码，最后点击Sign and Submit发送交易
 
 ![图片](assets/mining/join_group.png)
 ![图片](assets/mining/join_group1.png)
+
+### 5.3 锁定CRU减免工作量手续费
+
+**主网的工作量上报需要手续费。**一般情况下，每个Member每天会进行24次工作量上报交易，这带来的大量的手续费开销。为此Crust网络提供了免除工作量上报费用的Benefit模块，Group owner可以通过锁定CRU的方式，减免Member的手续费。**每个Member**需要锁定18CRU来进行手续费减免，但考虑到存在工作量上报不稳定的情况，建议锁定24CRU~30CRU来确保手续费的完全免费。
+
+进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组（或者联系Group管理者，进行操作），点击Increase lookup，如下：
+
+![图片](assets/mining/benefit_lockup1.png)
+
+输入需要**增加**的CRU数量，并进行签名交易，如下：
+
+![图片](assets/mining/benefit_lockup2.png)
 
 
 ## 6. 重启与卸载

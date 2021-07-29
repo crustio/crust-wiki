@@ -183,7 +183,7 @@ The monitoring log is as follows:
 
 * (2) Having successfully registered your on-chain identity;
 * (3) Storage capacity statistics calculation in progress, which takes place gradually;
-* (4) Indicating that the storage status has been reported successfully. The process takes a long time, about half an hour.
+* (4) Indicating that the storage status has been reported successfully. The process takes a long time, about an hour.
 
 ![pic](assets/mining/sworker_log1.png)
 
@@ -215,7 +215,7 @@ Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Be
 
 ![pic](assets/mining/benefit_lockup1.png)
 
-Enter the number of CRUs that need to be added, and sign the transaction, as follows:
+Enter the number of CRUs that **need to be added**, and sign the transaction, as follows:
 
 ![pic](assets/mining/benefit_lockup2.png)
 

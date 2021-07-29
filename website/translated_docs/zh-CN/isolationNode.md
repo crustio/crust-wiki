@@ -171,7 +171,7 @@ sudo crust logs sworker
 * 表示区块正在同步中，该过程耗时较长（1）
 * 成功在链上注册身份（2）
 * 正在进行存储余量统计操作，该过程会逐步进行（3）
-* 表示工作量上报成功， 该过程耗时较长，大约半小时左右（4）
+* 表示工作量上报成功， 该过程耗时较长，大约一小时左右（4）
 
 ![pic](assets/mining/sworker_log1.png)
 
@@ -203,7 +203,7 @@ Member账户需要添加到Group的白名单后才能加入Group中。进入[Cru
 
 ![图片](assets/mining/benefit_lockup1.png)
 
-输入需要增加的CRU数量，并进行签名交易，如下：
+输入需要**增加**的CRU数量，并进行签名交易，如下：
 
 ![图片](assets/mining/benefit_lockup2.png)
 

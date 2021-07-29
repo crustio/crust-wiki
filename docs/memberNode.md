@@ -188,26 +188,41 @@ The monitoring log is as follows:
 * (1) Indicating that the block is being synchronized. The process takes a long time;
 * (2) Having successfully registered your on-chain identity;
 * (3) Storage capacity statistics calculation in progress, which takes place gradually;
-* (4) Indicating that the storage status has been reported successfully. The process takes a long time, about half an hour.
+* (4) Indicating that the storage status has been reported successfully. The process takes a long time, about an hour.
 
 ![pic](assets/mining/sworker_log1.png)
 
 ![pic](assets/mining/sworker_log2.png)
 
-## **5. Joining Group**
+## 5. Joining Group
 
-### Add allowlist
+### 5.1 Add allowlist
 
-Enter Crust APPS, select 'Extrinsics', select the Stash account used to create the group, select 'swork' in the submit group, select 'addMemberIntoAllowlist(target)', then select the Member account that needs to be added to the Group, and finally click 'Submit transaction' to send the transaction to add the allowlist
+Member accounts need to be added to the whitelist of the group before they can be added to the group. Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before (or contact the group manager for operation), and click 'Add allowed accounts', as follows:
 
-![pic](assets/mining/addMemberIntoAllowlist.png)
+![pic](assets/mining/addMemberIntoAllowlist1.png)
 
-### Join group
+Select the Member account that needs to be added to the group, click 'Submit' and send the transaction, and add the account to the whitelist of the Group
+![pic](assets/mining/addMemberIntoAllowlist2.png)
+
+### 5.2 Join group
 
 After the first work report,select 'Benefit', click on 'Join group',select the Member account and the Stash account, click 'Join group', enter the password of the Member account, and finally click 'Sign and Submit' to send the transaction
 
 ![pic](assets/mining/join_group.png)
 ![pic](assets/mining/join_group1.png)
+
+### 5.3 Lockup CRU to reduce the fee of the work report
+
+**The work report in mainnet requires handling fees.** Under normal circumstances, each Member will perform 24 workload reporting transactions per day, which brings a lot of handling fees. For this reason, the Crust network provides a Benefit module that exempts workload reporting fees. Group owners can reduce or waive member handling fees by locking CRUs. **Each Member** needs to lock 18CRU for fee reduction. However, considering the unstable reporting of workload, it is recommended to lock 24CRU~30CRU to ensure that the fee is completely free.
+
+Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before (or contact the group manager for operation), and click 'Increase lookup', as follows:
+
+![pic](assets/mining/benefit_lockup1.png)
+
+Enter the number of CRUs that **need to be added**, and sign the transaction, as follows:
+
+![pic](assets/mining/benefit_lockup2.png)
 
 ## 6. Restart and Uninstall
 

@@ -25,7 +25,9 @@ Notices:
 * The account should be unique and cannot be any other account for Owner, Member or Isolation;
 * Be sure to reserve a small number of CRUs not locked in the Controller&Stash for sending transactions (about 1 CRU).
 
-### 2.2 Create Group
+### 2.2 Create and manager group
+
+#### 2.2.1 Create group
 
 > The account to create the Group must be a bound Stash account
 
@@ -33,6 +35,18 @@ Enter Crust APPS, select 'Benefit', click on 'Create group',select the Owner **
 
 ![pic](assets/mining/create_group.png)
 ![pic](assets/mining/create_group1.jpg)
+
+#### 2.2.2 Lockup CRU to reduce the fee of the work report
+
+**The work report in mainnet requires handling fees.** Under normal circumstances, each Member will perform 24 workload reporting transactions per day, which brings a lot of handling fees. For this reason, the Crust network provides a Benefit module that exempts workload reporting fees. Group owners can reduce or waive member handling fees by locking CRUs. **Each Member** needs to lock 18CRU for fee reduction. However, considering the unstable reporting of workload, it is recommended to lock 24CRU~30CRU to ensure that the fee is completely free. For example, suppose your Group is ready to have 6 Members ready to join, then lock 30*6=180CRU
+
+Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before, and click 'Increase lookup', as follows:
+
+![pic](assets/mining/benefit_lockup1.png)
+
+Enter the number of CRUs that **need to be added**, and sign the transaction, as follows:
+
+![pic](assets/mining/benefit_lockup2.png)
 
 ### 2.3 Download Crust Node Package
 
