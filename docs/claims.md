@@ -1,7 +1,7 @@
 ---
 id: claims
-title: CRU Claim
-sidebar_label: CRU Claim
+title: Crust Claims
+sidebar_label: Crust Claims
 ---
 
 If you want to **map ERC20 CRU to Crust Network**, you can follow this tutorial step by step to claim CRU
