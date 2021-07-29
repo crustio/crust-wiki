@@ -20,10 +20,10 @@ Member节点，负责运行链模块（不参与出块）,存储模块, IPFS等,
 
 参考这个[链接](crust-account.md)去构建一个Member的账户（单账户即可），Member节点账户需要满足以下三个要求:
 
-* 如果要使用Maxwell网络上的账户，需要将备份文件导入到主网[APPs](https://apps.crustcode.com/)并重新导出新版备份文件
 * 确保Member账户拥有2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
 * 不能是Owner的账户
 * 保证账户的唯一性，不能和其他Member账户相同， 即每台机器一个链账户
+* 如果要使用Maxwell网络上的账户，需要将备份文件导入到主网[APPs](https://apps.crustcode.com/)并重新导出新版备份文件
 
 ### 2.2 BIOS 设置
 
@@ -34,15 +34,15 @@ Member节点，负责运行链模块（不参与出块）,存储模块, IPFS等,
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v0.10.0.tar.gz
+tar -xvf v1.0.0.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-0.10.0
+cd crust-node-1.0.0
 ```
 
 ### 2.4 安装Crust服务

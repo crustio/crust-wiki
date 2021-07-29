@@ -22,27 +22,30 @@ Owner节点负责参与出块竞争，需要生成并绑定Controller&Stash账�
 
 * 保证账户唯一性，不是是其他的Owner，Member和Isolation账户
 * 需要保证Controller&Stash留有少量的未被Lock的CRU用于发送各类交易（约1CRU）。
+
 ### 2.2 创建Group
 
-进入Crust APPS中，选择Benefit，点击Create group,选择Owner的Stash账号，点击Create，输入Stash账户密码，最后点击Sign and Submit发送交易创建Group。
+> 创建Group的账号必须是绑定好的Stash账号
+
+进入Crust APPS中，选择Benefit，点击Create group,选择Owner的Stash账号，点击Create，输入**Stash账户密码**，最后点击Sign and Submit发送交易创建Group。
 
 ![图片](assets/mining/create_group.png)
-![图片](assets/mining/create_group1.png)
+![图片](assets/mining/create_group1.jpg)
 
 ### 2.3 下载
 
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v0.10.0.tar.gz
+tar -xvf v1.0.0.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-0.10.0
+cd crust-node-1.0.0
 ```
 ### 2.4 安装Crust服务
 

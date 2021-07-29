@@ -20,10 +20,10 @@ The Member node runs chain modules (not participating in block generation), stor
 
 Refer to [this link](crust-account.md) to create a Member account (a single account). The Member node account needs to meet the following three requirements:
 
-* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file
 * Ensure Member account has 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
 * Cannot be the account of Owner;
-* The account should be unique, meaning that it cannot be those same as other Member accounts, that is, one chain account only for one machine.
+* The account should be unique, meaning that it cannot be those same as other Member accounts, that is, one chain account only for one machine;
+* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file;
 
 ### 2.2 Setup BIOS
 
@@ -35,15 +35,15 @@ The SGX (Software Guard Extensions) module of the machine is closed by default. 
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v0.10.0.tar.gz
+tar -xvf v1.0.0.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-0.10.0
+cd crust-node-1.0.0
 ```
 
 ### 2.4 Install Crust Service

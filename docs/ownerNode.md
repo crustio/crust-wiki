@@ -27,25 +27,27 @@ Notices:
 
 ### 2.2 Create Group
 
-Enter Crust APPS, select 'Benefit', click on 'Create group',select the Owner Stash account, click on 'Create', enter the password of the stash account and click on 'Sign and Submit' to send the transaction and create Group.
+> The account to create the Group must be a bound Stash account
+
+Enter Crust APPS, select 'Benefit', click on 'Create group',select the Owner **Stash account**, click on 'Create', enter the password of the stash account and click on 'Sign and Submit' to send the transaction and create Group.
 
 ![pic](assets/mining/create_group.png)
-![pic](assets/mining/create_group1.png)
+![pic](assets/mining/create_group1.jpg)
 
 ### 2.3 Download Crust Node Package
 
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v0.10.0.tar.gz
+tar -xvf v1.0.0.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-0.10.0
+cd crust-node-1.0.0
 ```
 ### 2.4 Install Crust Service
 

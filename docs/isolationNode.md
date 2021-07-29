@@ -8,7 +8,7 @@ sidebar_label: Isolation Node
 
 ### 1.1 Node Responsibility
 
-The Isolation node is a full-featured node of Crust Network, which undertakes core functions such as block generation, storage, and file transfer on a device. Therefore, support for SGX is necessary. The Isolation node account is connected to chain through the session key and the report of storage information works with configuring backup files. 
+The Isolation node is a full-featured node of Crust Network, which undertakes core functions such as block generation, storage, and file transfer, equivalent to that the Owner and Member nodes are on the same machine. Therefore, support for SGX is necessary. The Isolation node account is connected to chain through the session key and the report of storage information works with configuring backup files. 
 
 ### 1.2 Hardware Spec
 
@@ -18,21 +18,21 @@ For an isolation node, you need to run both chain module and storage module on y
 
 ### 2.1 Create your Accounts
 
-Refer to [bond accounts](new-bond.md) to create your Stash and Controller accounts,and create a Member account.
+Please refer to [here](new-bond.md) to create your Stash and Controller group and [here](crust-account.md) to create a Member account. These 3 accounts need to meet the following requirements:
 
 Notices:
 
-* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file
 * Ensure Member account has 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
 * Be sure to reserve a small number of CRUs not locked in the Controller&Stash for sending transactions (about 1 CRU)
-* Make sure that the Member account is unique, and that one machine corresponds only to one group of Controller&Stash accounts.
+* Make sure those accounts are unique
+* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file
 
 ### 2.2 Create Group
 
 Enter Crust APPS, select 'Benefit', click on 'Create group',select the Owner Stash account, click on 'Create', enter the password of the stash account and click on 'Sign and Submit' to send the transaction and create Group.
 
 ![pic](assets/mining/create_group.png)
-![pic](assets/mining/create_group1.png)
+![pic](assets/mining/create_group1.jpg)
 
 
 ### 2.3 Setup BIOS
@@ -45,15 +45,15 @@ The SGX (Software Guard Extensions) module of the machine is closed by default. 
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v0.10.0.tar.gz
+tar -xvf v1.0.0.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-0.10.0
+cd crust-node-1.0.0
 ```
 ### 2.5 Install Crust Service
 
@@ -189,21 +189,22 @@ The monitoring log is as follows:
 
 ![pic](assets/mining/sworker_log2.png)
 
-## **5. Joining Group**
+## 5 Joining Group
 
-### Add allowlist
+### 5.1 Add allowlist
 
 Enter Crust APPS, select 'Extrinsics', select the Stash account used to create the group, select 'swork' in the submit group, select 'addMemberIntoAllowlist(target)', then select the Member account that needs to be added to the Group, and finally click 'Submit transaction' to send the transaction to add the allowlist
 
 ![pic](assets/mining/addMemberIntoAllowlist.png)
 
-### Join group
+### 5.2 Join group
 
 After the first work report,select 'Benefit', click on 'Join group',select the Member account and the Stash account, click 'Join group', enter the password of the Member account, and finally click 'Sign and Submit' to send the transaction
 
 ![pic](assets/mining/join_group.png)
 ![pic](assets/mining/join_group1.png)
 
+### 5.3 Lockup CRU to reduce the fee of the work report
 
 ## 6. Blockchain Validate
 
