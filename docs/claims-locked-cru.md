@@ -26,13 +26,13 @@ If you are using Crust Apps to manage your account, then, the only thing you nee
 
 ### 2.1 Export backup file
 
-First, export the backup json file in [Crust Apps's Account Page](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.decloudf.com%2F#/accounts)
+First, export the backup json file in [Crust Apps's Account Page](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/accounts) on Maxwell (you can switch between different networks by clicking the Crust icon in the upper left corner of Crust APPs)
 
 ![Apps1](assets/claimsLockedCRU/apps1.jpg)
 
 ### 2.2 Restore account in Crust Apps
 
-Go to [Crust Mainnet Apps' Account Page](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts), import your backup json
+Go to [Crust Mainnet Apps' Account Page](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts), import your backup json (you can switch between different networks by clicking the Crust icon in the upper left corner of Crust APPs)
 
 ![Others1](assets/claimsLockedCRU/others1.jpg)
 

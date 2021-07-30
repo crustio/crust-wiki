@@ -26,13 +26,13 @@ sidebar_label: LockedCRU Claims
 
 ### 2.1 导出备份文件
 
-首先在原来网络的[Crust Apps账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.decloudf.com%2F#/accounts)导出备份文件
+首先在Maxwell网络的[Crust Apps账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/accounts)导出备份文件（可以通过点击Crust APPs左上角的Crust图标进行不同网络的切换）
 
 ![Apps1](assets/claimsLockedCRU/apps1.jpg)
 
 ### 2.2 在Crust Apps上恢复账户
 
-然后切换到[主网的Crust Apps的账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts)， 导入您的备份文件
+然后切换到主网的[Crust Apps的账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts)， 导入您的备份文件（可以通过点击Crust APPs左上角的Crust图标进行不同网络的切换）
 
 ![Others1](assets/claimsLockedCRU/others1.jpg)
 
