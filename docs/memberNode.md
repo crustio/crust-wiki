@@ -23,7 +23,7 @@ Refer to [this link](crust-account.md) to create a Member account (a single acco
 * Ensure Member account has 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
 * Cannot be the account of Owner;
 * The account should be unique, meaning that it cannot be those same as other Member accounts, that is, one chain account only for one machine;
-* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file;
+* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crust.network/) and re-export the new version of the backup file;
 
 ### 2.2 Setup BIOS
 

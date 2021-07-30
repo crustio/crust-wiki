@@ -51,7 +51,7 @@ sidebar_label: CRU Claims
 
 1. 选择您需要认领的账户，如果还未创建账户，可以参考此[创建账户教程](https://wiki.crust.network/docs/zh-CN/crustAccount)
 2. 填入您[步骤一](#一-销毁erc20-cru)复制的Tx Hash值
-3. 请确认您销毁的**总额小于Claim Limit**
+3. 请确认您销毁的**总额小于等于Claim Limit**
 4. 点击“继续”，这步**会等待一段时间**，会验证您交易的合法性
 
 ![Apps Claims2](assets/claims/apps_claims2.png)

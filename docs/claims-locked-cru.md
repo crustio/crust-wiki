@@ -10,7 +10,7 @@ LockedCRU(including CRU18/CRU24/CRU24D6) is ERC20 token **for the paticipants of
 
 This tutorial currently only suit for the users already [claimed lockedCRU in Maxwell](https://wiki-maxwell.crust.network/docs/en/claimCRU18) before mainnet launched. **At present, maxwell's lockedCRU claim has ended, for those users haven't claimed lockedCRU, please wait for the mainnet's democracy open**.
 
-## 1. Extension Wallet/Crust Apps users
+## 1. Crust Apps/Extension Wallets
 
 If you are using the browser extension wallet(MathWallet/Polkadot Extension/Crust Wallet/...) or Crust Apps to manage your account, you can just go to [Crust Mainnet Apps' Account Page](https://apps.crust.network/#/accounts) to check about your lockedCRU asset (you can switch between different networks by clicking the Crust icon in the upper left corner of Crust APPs)
 

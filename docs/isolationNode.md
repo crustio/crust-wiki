@@ -23,7 +23,7 @@ Notices:
 * Ensure Member account has 2~5 CRUs as a transaction fee (cannot be locked) for sending work reports. It is recommended you check the remaining status of reserves from time to time;
 * Be sure to reserve a small number of CRUs not locked in the Controller&Stash for sending transactions (about 1 CRU)
 * Make sure those accounts are unique
-* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crustcode.com/) and re-export the new version of the backup file
+* If you want to use the account on the Maxwell network, you need to import the backup file to the main network [APPs](https://apps.crust.network/) and re-export the new version of the backup file
 
 ### 2.2 Create Group
 

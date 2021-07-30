@@ -33,7 +33,7 @@ Crust Network 适用于多种场景，包括：
 
 ## 立即加入并开始使用 Crust
 
-Crust主网现已上线。您可以参考以下链接来加入或者尝试使用网络。
+[Crust主网](crust-overview.md)现已上线。您可以参考以下链接来加入或者尝试使用网络。
 
 - 节点提供者 - 请参考[节点指南](node-overview.md)安装配置和运行Crust节点。
 - Token持有者 - 请参考[Guarantor Guidance](guarantor-guidance.md)进行Staking及担保等相关操作。

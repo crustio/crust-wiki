@@ -10,7 +10,7 @@ sidebar_label: LockedCRU Claims
 
 这篇教程仅针对已经在[Maxwell进行过锁定CRU认领](https://wiki-maxwell.crust.network/docs/zh-CN/claimCRU18)的用户，**目前Maxwell上的锁定CRU认领已经结束，对于尚未在Maxwell进行认领的用户，请等待主网民主模块开放后进行操作**。
 
-## 1. 浏览器插件钱包/Crust Apps用户
+## 1. Crust Apps/浏览器插件钱包
 
 如果您使用浏览器插件钱包（麦子钱包/Polkadot Extension/Crust钱包/...）或Crust Apps来管理您的账户，您可以直接访问[Crust Mainnet Apps 账户页面](https://apps.crust.network/#/accounts)来查看您的锁定CRU资产（可以通过点击Crust APPs左上角的Crust图标进行不同网络的切换）
 
