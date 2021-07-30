@@ -4,6 +4,9 @@ title: Node Overview
 sidebar_label: Node Overview
 ---
 
+即将到来
+
+<!--
 在本文中，我们将从介绍如何组织和搭建节点，让你成功加入 Crust 网络，并从网络中获得相应的收益。本教程需要一定的 Linux 基础，请一定按照教程步骤，不要跳过任何一步。如有疑惑请添加Crust官方微信：crust_kele。
 
 ## 1 组织多节点（推荐）
@@ -39,4 +42,4 @@ sidebar_label: Node Overview
 ## 2 部署单节点
 
 单节点也叫Isolation节点，即仅用一台设备来完成出块，存储，文件传输的功能。可以简单地理解为Owner与一个Member的结合。从部署角度来说单节点比较容易搭建，但由于单台设备的存储上限是有限的（500TB），在出块的竞争中没有优势，参考这个[链接](isolationNode.md)构建Isolation节点。
-
+-->
