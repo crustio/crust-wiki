@@ -23,7 +23,7 @@ Isolation节点形态下，你唯一的节点上需要运行链模块以及存�
 * 需要保证Controller&Stash留有少量的未被Lock的CRU用于发送各类交易（约1CRU）
 * 确保Member账户拥有2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
 * 确保账户的唯一性
-* 如果要使用Maxwell网络上的账户，需要将备份文件导入到主网[APPs](https://apps.crustcode.com/)并重新导出新版备份文件
+* 如果要使用Maxwell网络上的账户，需要将备份文件导入到主网[APPs](https://apps.crust.network/)并重新导出新版备份文件
 
 ### 2.2 创建Group
 

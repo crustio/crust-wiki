@@ -5,7 +5,11 @@
       "crustOverview",
       "crustGrants",
       "claims",
-      "crustWallet"
+      "claimsLockedCRU",
+      "crustWallet",
+      "glossary",
+      "community",
+      "contributing"
     ],
     "Learn": [
       "crustAccount",

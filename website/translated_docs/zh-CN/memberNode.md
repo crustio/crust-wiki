@@ -23,7 +23,7 @@ Member节点，负责运行链模块（不参与出块）,存储模块, IPFS等,
 * 确保Member账户拥有2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
 * 不能是Owner的账户
 * 保证账户的唯一性，不能和其他Member账户相同， 即每台机器一个链账户
-* 如果要使用Maxwell网络上的账户，需要将备份文件导入到主网[APPs](https://apps.crustcode.com/)并重新导出新版备份文件
+* 如果要使用Maxwell网络上的账户，需要将备份文件导入到主网[APPs](https://apps.crust.network/)并重新导出新版备份文件
 
 ### 2.2 BIOS 设置
 

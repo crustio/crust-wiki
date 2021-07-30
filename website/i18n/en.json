@@ -61,9 +61,13 @@
         "title": "Crust Storage Manager",
         "sidebar_label": "Crust Storage Manager"
       },
+      "claimsLockedCRU": {
+        "title": "LockedCRU Claims",
+        "sidebar_label": "LockedCRU Claims"
+      },
       "claims": {
-        "title": "CRU Claim",
-        "sidebar_label": "CRU Claim"
+        "title": "CRU Claims",
+        "sidebar_label": "CRU Claims"
       },
       "contributing": {
         "title": "Contributing",
@@ -82,8 +86,8 @@
         "sidebar_label": "Crust Grants"
       },
       "crustOverview": {
-        "title": "Crust Network Overview",
-        "sidebar_label": "Crust Network Overview"
+        "title": "Crust Mainnet",
+        "sidebar_label": "Crust Mainnet"
       },
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
