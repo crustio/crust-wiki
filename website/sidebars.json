@@ -15,13 +15,11 @@
       "crustAccount",
       "crustTokens",
       "newBond",
-      "sWorkerGuide",
       "guarantor",
       "validator",
       "storageMerchant",
       "GPoS",
       "DSM",
-      "bitSwap",
       "democracyGuide"
     ],
     "Build": [
