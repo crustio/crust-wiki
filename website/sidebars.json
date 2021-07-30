@@ -5,22 +5,17 @@
       "crustOverview",
       "crustGrants",
       "claims",
-      "crustWallet",
-      "glossary",
-      "community",
-      "contributing"
+      "crustWallet"
     ],
     "Learn": [
       "crustAccount",
       "crustTokens",
       "newBond",
-      "sWorkerGuide",
       "guarantor",
       "validator",
       "storageMerchant",
       "GPoS",
       "DSM",
-      "bitSwap",
       "democracyGuide"
     ],
     "Build": [
