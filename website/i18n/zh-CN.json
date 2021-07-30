@@ -69,6 +69,10 @@
         "title": "Crust 钱包",
         "sidebar_label": "Crust 钱包"
       },
+      "contributing": {
+        "title": "贡献",
+        "sidebar_label": "贡献"
+      },
       "democracyGuide": {
         "title": "民主指南",
         "sidebar_label": "民主指南"

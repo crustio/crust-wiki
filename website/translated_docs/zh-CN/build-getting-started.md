@@ -4,6 +4,9 @@ title: Getting Started
 sidebar_label: Getting Started
 ---
 
+即将到来
+
+<!--
 Welcome to the builders section of the Crust Wiki!
 
 Here you will be able to find the most up-to-date information on the status of the development tools in the Crust ecosystem. We will keep adding new tools, frameworks and documents as we progress. If you are working on something that should be included please reach out to us on [Discord](https://discord.gg/D97GGQndmx).
@@ -33,4 +36,4 @@ You can read **Integration Guide** to learn how to leverage Crust in your applic
 
 - [Storage Manager](build-smanager.md) - Storage manager interacts with Crust, IPFS and sWorker; it can be customized to apply different strategies to deal with storage orders and files.
 - [Crust Node](build-node.md) - Node operation program interacts with Chain, sWorker, API, IPFS and sManager; it can be customized to ease your node operation work.
-
+-->
