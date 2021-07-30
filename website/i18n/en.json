@@ -70,12 +70,12 @@
         "sidebar_label": "Crust Storage Manager"
       },
       "claimsLockedCRU": {
-        "title": "Crust LockedCRU Claims",
-        "sidebar_label": "Crust LockedCRU Claims"
+        "title": "LockedCRU Claims",
+        "sidebar_label": "LockedCRU Claims"
       },
       "claims": {
-        "title": "Crust Claims",
-        "sidebar_label": "Crust Claims"
+        "title": "CRU Claims",
+        "sidebar_label": "CRU Claims"
       },
       "community": {
         "title": "Community",

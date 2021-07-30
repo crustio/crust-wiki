@@ -66,12 +66,12 @@
         "sidebar_label": "Crust Storage Manager"
       },
       "claimsLockedCRU": {
-        "title": "Crust 锁定CRU认领",
-        "sidebar_label": "Crust 锁定CRU认领"
+        "title": "锁定CRU 认领",
+        "sidebar_label": "锁定CRU 认领"
       },
       "claims": {
-        "title": "Crust 认领",
-        "sidebar_label": "Crust 认领"
+        "title": "CRU 认领",
+        "sidebar_label": "CRU 认领"
       },
       "crustWallet": {
         "title": "Crust 钱包",

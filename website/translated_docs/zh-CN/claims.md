@@ -1,7 +1,7 @@
 ---
 id: claims
-title: Crust Claims
-sidebar_label: Crust Claims
+title: CRU Claims
+sidebar_label: CRU Claims
 ---
 
 如果您想将**ERC20 CRU映射到Crust主网**，您可以通过本教程一步一步学习到如何进行Crust主网CRU的认领
