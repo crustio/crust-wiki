@@ -12,7 +12,7 @@ sidebar_label: Crust Claims
 
 > 不用过分担心不熟悉这些工具的使用，我们会在下面的认领步骤中详细阐述每一个工具的使用流程。
 
-1. [MyEtherWallet](https://myetherwallet.com/)
+1. [MyEtherWallet](https://www.myetherwallet.com/wallet/access)
 2. [ImToken](https://token.im/)
 3. [Crust Apps](https://apps.crust.network/)
 
@@ -49,14 +49,14 @@ sidebar_label: Crust Claims
 
 访问[Crust Apps](https://apps.crust.network/#/claims)的Claim CRU模块
 
-1. 选择您需要认领的账户
+1. 选择您需要认领的账户，如果还未创建账户，可以参考此[创建账户教程](https://wiki.crust.network/docs/zh-CN/crustAccount)
 2. 填入您[步骤一](#一-销毁erc20-cru)复制的Tx Hash值
 3. 请确认您销毁的**总额小于Claim Limit**
-4. 点击“继续”，这步*会等待一段时间*，会验证您交易的合法性
+4. 点击“继续”，这步**会等待一段时间**，会验证您交易的合法性
 
 ![Apps Claims2](assets/claims/apps_claims2.png)
 
-如果您在此步骤失败，那么有可能是下列原因导致：
+如果页面右上角有红色报错，表示您在此步骤失败，那么有可能是下列原因导致：
 
 1. 您销毁交易的confirmations不足6个
 2. 您销毁交易的总额大于了Claim Limit，如果是这样，请等待Claim Limit恢复
@@ -68,7 +68,7 @@ sidebar_label: Crust Claims
 
 **⚠️ 这一步必须特别注意，确保连接的钱包地址和[步骤一](#一-销毁erc20-cru)中成功发送交易的地址相同**（我们需要用这个地址的私钥进行消息签名）
 
-1. 打开[MyEtherWallet](https://v5.myetherwallet.com/access-my-wallet):
+1. 打开[MyEtherWallet](https://www.myetherwallet.com/wallet/access):
     - 点击 'Mobile Apps'
     - 连接你**发送交易的钱包**
 
@@ -90,7 +90,7 @@ sidebar_label: Crust Claims
 
 ### 四. 获取以太坊签名
 
-请确保[步骤二](#二-验证交易和桥接代币)**成功之后**，再继续下列步骤：
+请确保[步骤二](#二-验证交易)**成功之后**，再继续下列步骤：
 
 1. 在Crust Apps Claim界面，**点击灰色框复制其中文字**
 

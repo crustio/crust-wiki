@@ -12,7 +12,7 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 
 > Don't worry about being unfamiliar with the following tools, we will teach you how to use them step by step in the following steps.
 
-1. [MyEtherWallet](https://myetherwallet.com/)
+1. [MyEtherWallet](https://www.myetherwallet.com/wallet/access)
 2. [ImToken](https://token.im/) or [MetaMask](https://metamask.io/)
 3. [Crust Apps](https://apps.crust.network/)
 
@@ -46,14 +46,14 @@ Then, you can burn your ERC20 CRU now 😄
 
 Go to the claim page in [Crust Apps](https://apps.crust.network/#/claims)
 
-1. Select the account of Crust mainnet that you want to claim
+1. Select the account of Crust mainnet that you want to claim,If you haven't created an account yet, you can refer to this [create account tutorial](https://wiki.crust.network/docs/en/crustAccount#create-accout)
 2. Paste the transaction hash value you copied in [Step I](#i-burn-erc20-cru)
 3. Make sure your transaction's **amount <= claim limit**
 4. Click "Continue", this step will wait for a while, the claim service will check the legicimacy of your transaction.
 
 ![Apps Claims2](assets/claims/apps_claims2.png)
 
-If you failed in this step, it may caused by the following reasons:
+If a red error appears in the upper right corner of the page, it means you have failed in this step, it may caused by the following reasons:
 
 1. Your transaction's confirmations is not enough (**at least 6 confirmations**)
 2. Your transaction amount exceeding the claim limit, if so, please wait it to recover
@@ -63,7 +63,7 @@ If you failed in this step, it may caused by the following reasons:
 
 > Since MyEtherWallet supports lots of wallets, the following process will use 'ImToken' and 'MetaMask' as example, other wallets are super familiar with these 2
 
-**⚠️ Please make sure that the connecting wallet address is same as the address where the transaction was successfully sent in [Step I](#i-send-cru-claim-transaction)** (We need to sign the message with the private key of this address)
+**⚠️ Please make sure that the connecting wallet address is same as the address where the transaction was successfully sent in [Step I](#i-burn-erc20-cru)** (We need to sign the message with the private key of this address)
 
 **If you're using ImToken mobile wallet**
 
@@ -110,7 +110,7 @@ Please make sure you completed [Step II](#ii-verify-transaction), then continue 
 3. Then:
     - If you're using ImToken, there will be a pop-up in the ImToken side, Click "Confirm", **⚠️ Please be attention here, At this step, the communication between MyEtherWallet and ImToken may be interrupted and no authorization information will pop up. Please do the** [Step III](#iii-log-in-to-myetherwallet-and-connect-to-your-wallet) again.
 
-    ![Sign Msg3](assets/claims/sign_msg3.jpg)
+    ![Sign Msg3](assets/claims/sign_msgg.jpg)
 
     - If you're using MetaMask, you just need to make your sign through Metamask pop-up window.
 
