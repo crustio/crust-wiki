@@ -10,9 +10,9 @@ sidebar_label: LockedCRU Claims
 
 这篇教程仅针对已经在[Maxwell进行过锁定CRU认领](https://wiki-maxwell.crust.network/docs/zh-CN/claimCRU18)的用户，**目前Maxwell上的锁定CRU认领已经结束，对于尚未在Maxwell进行认领的用户，请等待主网民主模块开放后进行操作**。
 
-## 1. Crust Apps/浏览器插件钱包
+## 1. 浏览器插件钱包
 
-如果您使用浏览器插件钱包（麦子钱包/Polkadot Extension/Crust钱包/...）或Crust Apps来管理您的账户，您可以直接访问[Crust Mainnet Apps 账户页面](https://apps.crust.network/#/accounts)来查看您的锁定CRU资产（可以通过点击Crust APPs左上角的Crust图标进行不同网络的切换）
+如果您使用浏览器插件钱包（麦子钱包/Polkadot Extension/Crust钱包/...）来管理您的账户，您可以直接访问[Crust Mainnet Apps 账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts)来查看您的锁定CRU资产（可以通过点击Crust APPs左上角的Crust图标进行不同网络的切换）
 
 1. 查看插件钱包
 ![Extension1](assets/claimsLockedCRU/extension1.jpg)
@@ -20,11 +20,33 @@ sidebar_label: LockedCRU Claims
 2. 在Crust Apps上查看锁定CRU
 ![Extension2](assets/claimsLockedCRU/extension2.jpg)
 
-## 2. 其他方式
+## 2. Crust Apps
+
+如果您使用[Crust Apps](https://apps.crust.network) 来管理您的账户，那么您只需要在原来的网络中导出账户，并在主网导入账户即可
+
+### 2.1 导出备份文件
+
+首先在原来网络的[Crust Apps账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.decloudf.com%2F#/accounts)导出备份文件
+
+![Apps1](assets/claimsLockedCRU/apps1.jpg)
+
+### 2.2 在Crust Apps上恢复账户
+
+然后切换到[主网的Crust Apps的账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts)， 导入您的备份文件
+
+![Others1](assets/claimsLockedCRU/others1.jpg)
+
+![Others2](assets/claimsLockedCRU/others2.jpg)
+
+然后您就可以在主网上看到您的锁定CRU资产了
+
+![Extension2](assets/claimsLockedCRU/extension2.jpg)
+
+## 3. 其他方式
 
 如果您使用手机钱包或其他Apps来管理您的账户
 
-### 2.1 导出备份文件
+### 3.1 导出备份文件
 
 首先，您需要导出备份JSON文件
 
@@ -47,9 +69,9 @@ sidebar_label: LockedCRU Claims
 }
 ```
 
-### 2.2 在Crust Apps上恢复账户
+### 3.2 在Crust Apps上恢复账户
 
-访问[Crust Mainnet Apps 账户页面](https://apps.crust.network/#/accounts)，导入您的备份文件
+访问[Crust Mainnet Apps 账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts)，导入您的备份文件
 
 ![Others1](assets/claimsLockedCRU/others1.jpg)
 

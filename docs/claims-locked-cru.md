@@ -10,9 +10,9 @@ LockedCRU(including CRU18/CRU24/CRU24D6) is ERC20 token **for the paticipants of
 
 This tutorial currently only suit for the users already [claimed lockedCRU in Maxwell](https://wiki-maxwell.crust.network/docs/en/claimCRU18) before mainnet launched. **At present, maxwell's lockedCRU claim has ended, for those users haven't claimed lockedCRU, please wait for the mainnet's democracy open**.
 
-## 1. Crust Apps/Extension Wallets
+## 1. Extension Wallets
 
-If you are using the browser extension wallet(MathWallet/Polkadot Extension/Crust Wallet/...) or Crust Apps to manage your account, you can just go to [Crust Mainnet Apps' Account Page](https://apps.crust.network/#/accounts) to check about your lockedCRU asset (you can switch between different networks by clicking the Crust icon in the upper left corner of Crust APPs)
+If you are using the browser extension wallet(MathWallet/Polkadot Extension/Crust Wallet/...) to manage your account, you can just go to [Crust Mainnet Apps' Account Page](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts) to check about your lockedCRU asset (you can switch between different networks by clicking the Crust icon in the upper left corner of Crust APPs)
 
 1. Check Extension Wallet
 ![Extension1](assets/claimsLockedCRU/extension1.jpg)
@@ -20,11 +20,33 @@ If you are using the browser extension wallet(MathWallet/Polkadot Extension/Crus
 2. Check lockedCRU on Crust Apps
 ![Extension2](assets/claimsLockedCRU/extension2.jpg)
 
-## 2. Others
+## 2. Crust Apps
+
+If you are using Crust Apps to manage your account, then, the only thing you need to do is export the backup json file in the original network, and restore backup in Crust MainNet
+
+### 2.1 Export backup file
+
+First, export the backup json file in [Crust Apps's Account Page](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.decloudf.com%2F#/accounts)
+
+![Apps1](assets/claimsLockedCRU/apps1.jpg)
+
+### 2.2 Restore account in Crust Apps
+
+Go to [Crust Mainnet Apps' Account Page](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts), import your backup json
+
+![Others1](assets/claimsLockedCRU/others1.jpg)
+
+![Others2](assets/claimsLockedCRU/others2.jpg)
+
+Then you can check out your lockedCRU asset
+
+![Extension2](assets/claimsLockedCRU/extension2.jpg)
+
+## 3. Others
 
 If you are using other wallet or apps to manage your account
 
-### 2.1 Export backup file
+### 3.1 Export backup file
 
 First, you need to export the backup json file, which looks like below
 
@@ -47,9 +69,9 @@ First, you need to export the backup json file, which looks like below
 }
 ```
 
-### 2.2 Restore account in Crust Apps
+### 3.2 Restore account in Crust Apps
 
-Go to [Crust Mainnet Apps' Account Page](https://apps.crust.network/#/accounts), import your backup json
+Go to [Crust Mainnet Apps' Account Page](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts), import your backup json
 
 ![Others1](assets/claimsLockedCRU/others1.jpg)
 
