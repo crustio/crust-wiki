@@ -4,6 +4,10 @@ title: Crust Mainnet
 sidebar_label: Crust Mainnet
 ---
 
+The Crust mainnet is advancing steadily. Now, the claim functions of [CRU](claims.md) and [lockedCRU](claims-locked-cru.md) have been opened.
+
+
+<!--
 Crust's core functions include token staking, decentralized storage market DSM, and file retrieval mechanism. It is an application ecosystem as well as an economic ecosystem. There is 5 roles in Crust ecosystem: **validator, guarantor, storage user, storage merchant, and developer**
 
 ## 1 Validators(Node)
@@ -32,3 +36,4 @@ The validators provide node resources, they can open [Storage Market](merchantGu
 ## 5 Developer
 
 The developer documentation will be available at the same time as the storage market.
+-->
