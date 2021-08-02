@@ -19,7 +19,7 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: |
-            docker pull crustio/crust-wiki:latest
+            sudo docker pull crustio/crust-wiki:latest
             cd /usr/local/docker/crust-mainnet-wiki
             sudo docker-compose up -d
           host: ${{ secrets.SSH_PRD_HOST }}
