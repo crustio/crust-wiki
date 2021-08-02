@@ -1,8 +1,8 @@
-name: main-cd
+name: mainnet-cd
 
 on:
   push:
-    branches: [ main ]
+    branches: [ mainnet ]
 
 jobs:
   build:
@@ -19,9 +19,9 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: |
-            docker pull crustio/crust-wiki:latest
-            cd /opt/compose
-            docker-compose up -d crust-wiki
-          host: ${{ secrets.SSH_HOST }}
-          user: ${{ secrets.SSH_USER }}
+            sudo docker pull crustio/crust-wiki:latest
+            cd /usr/local/docker/crust-mainnet-wiki
+            sudo docker-compose up -d
+          host: ${{ secrets.SSH_PRD_HOST }}
+          user: ${{ secrets.SSH_PRD_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
