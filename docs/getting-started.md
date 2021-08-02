@@ -11,7 +11,7 @@ decentralized cloud ecosystem that values data privacy and ownership.
 
 ## Join Crust
 
-The Crust mainnet is advancing steadily, and the CRU claim function is now open. The owner of CRU-ERC20 can claim CRU-ERC20 to Crust mainnet. Claims include [claim CRU](claims.md) and [Claim Locked CRU](claims-locked-cru.md).
+The Crust mainnet is advancing steadily, and the CRU claim function is now open. The owner of CRU-ERC20 can claim CRU-ERC20 to Crust mainnet. Claims include [CRU Claims](claims.md) and [Locked CRU Claims](claims-locked-cru.md).
 
 ## Use Crust
 
