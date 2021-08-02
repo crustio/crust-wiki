@@ -10,7 +10,7 @@ Crust提供了Web3⽣态系统的去中⼼化存储⽹络，⽀持包括IPFS在�
 
 ## 加入 Crust
 
-Crust主网正在稳步推进，目前已开放[CRU](claims.md)和[锁定CRU](claims-locked-cru.md)的认领功能
+Crust主网正在稳步推进，目前已开放CRU认领功能。CRU-ERC20的拥有者可以把CRU-ERC20映射到Crust主网上。认领包括[CRU的认领](claims.md)和[锁定CRU的认领](claims-locked-cru.md)。
 
 ## 使用 Crust
 

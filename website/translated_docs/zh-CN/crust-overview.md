@@ -4,7 +4,9 @@ title: Crust Mainnet
 sidebar_label: Crust Mainnet
 ---
 
-Crust主网正在稳步推进，目前已开放[CRU](claims.md)和[锁定CRU](claims-locked-cru.md)的认领功能
+Crust主网正在稳步推进，目前已开放CRU认领功能。CRU-ERC20的拥有者可以把CRU-ERC20映射到Crust主网上。认领包括[CRU的认领](claims.md)和[锁定CRU的认领](claims-locked-cru.md)。
+
+Crust主网上线进度可以[在这里查看](https://medium.com/crustnetwork/big-announcement-crust-mainnet-launch-timeline-c2bd2dc0d490)。
 
 <!--
 Crust的核心功能包含了代币质押、去中心化存储市场DSM、以及文件检索机制等，是一个应用系统，也是一个经济系统。Crust生态系统一共有五个角色：**验证人，担保人，存储用户，存储商户，开发者**

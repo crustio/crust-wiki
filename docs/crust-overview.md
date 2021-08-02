@@ -4,8 +4,9 @@ title: Crust Mainnet
 sidebar_label: Crust Mainnet
 ---
 
-The Crust mainnet is advancing steadily. Now, the claim functions of [CRU](claims.md) and [lockedCRU](claims-locked-cru.md) have been opened.
+The Crust mainnet is advancing steadily, and the CRU claim function is now open. The owner of CRU-ERC20 can claim CRU-ERC20 to Crust mainnet. Claims include [claim CRU](claims.md) and [Claim Locked CRU](claims-locked-cru.md).
 
+The progress of Crust mainnet launch can be viewed [here](https://medium.com/crustnetwork/big-announcement-crust-mainnet-launch-timeline-c2bd2dc0d490).
 
 <!--
 Crust's core functions include token staking, decentralized storage market DSM, and file retrieval mechanism. It is an application ecosystem as well as an economic ecosystem. There is 5 roles in Crust ecosystem: **validator, guarantor, storage user, storage merchant, and developer**

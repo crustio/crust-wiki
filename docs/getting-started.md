@@ -11,7 +11,7 @@ decentralized cloud ecosystem that values data privacy and ownership.
 
 ## Join Crust
 
-The Crust mainnet is advancing steadily. Now, the claim functions of [CRU](claims.md) and [lockedCRU](claims-locked-cru.md) have been opened.
+The Crust mainnet is advancing steadily, and the CRU claim function is now open. The owner of CRU-ERC20 can claim CRU-ERC20 to Crust mainnet. Claims include [claim CRU](claims.md) and [Claim Locked CRU](claims-locked-cru.md).
 
 ## Use Crust
 
@@ -24,7 +24,6 @@ Crust works in 3 layers as follows.
 1. MPoW (Meaningful Proof of Work) - The low-trust/zero-trust storage proof layer to inspect and prove storage work of miners.
 2. GPoS (Guaranteed Proof of Stake) - The PoS-derived consensus layer that requires nodes to provide storage proof to get staking quota.
 3. DSM (Decentralized Storage Market) - It enables users to place storage orders on the chain, to get their data stored and distributed on Crust Network.
-
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/arch.png)
 

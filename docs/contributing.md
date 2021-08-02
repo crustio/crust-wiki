@@ -25,9 +25,9 @@ The Crust protocol stack requires a large number of documents to be accurately d
 
 The original intention of Crust is to allow more people to develop applications and services on it and to allow more applications to integrate the functions of Crust.
 
-You can refer to [Crust Dev Guide](https://wiki.crust.network/docs/zh-CN/buildGettingStarted) to start your development.
+You can refer to [Crust Dev Guide](build-getting-started.md) to start your development.
 
-If you have some excellent ideas, we welcome you to apply for [Crust Grants](https://wiki.crust.network/docs/zh-CN/crustGrants).
+If you have some excellent ideas, we welcome you to apply for [Crust Grants](crust-grants.md).
 
 ## Research
 

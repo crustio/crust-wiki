@@ -25,9 +25,9 @@ Crust协议需要大量的文档来精确的描述。如果您觉得Crust wiki�
 
 Crust 创建的初衷就是让更多的人在其上开发Application和Service，以及让更多的Application集成Crust的功能。
 
-您可以参考[Crust Dev Guide](https://wiki.crust.network/docs/zh-CN/buildGettingStarted)开始进行您的开发。
+您可以参考[Crust Dev Guide](build-getting-started.md)开始进行您的开发。
 
-如果您有一些优秀的想法，我们欢迎您在[Crust Grants上](https://wiki.crust.network/docs/zh-CN/crustGrants)提交申请。
+如果您有一些优秀的想法，我们欢迎您在[Crust Grants上](crust-grants.md)提交申请。
 
 ## 技术研究
 
