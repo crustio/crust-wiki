@@ -5,40 +5,16 @@ sidebar_label: Getting Started
 ---
 
 ## Crust 是什么
+
 Crust提供了Web3⽣态系统的去中⼼化存储⽹络，⽀持包括IPFS在内的多种存储层协议，并对应⽤层提供接⼝。Crust的技术栈还能够⽀持去中⼼化计算层。Crust旨在构建⼀个重视数据隐私和所有权的分布式云⽣态系统。
 
-## 如何使用 Crust
-您可以按照3个简单的步骤来上传，存储和分发文件：
-1. 将文件添加到IPFS网络。
-2. 在Crust链上下达相应的存储订单。
-3. 在存储订单状态变为成功之后，您可以通过标准IPFS接口和网关从任何地方访问该文件。
+## 加入 Crust
 
-请参考[代码示例](build-developer-guidance.md)，其中说明了如何通过程序执行上述3个步骤。您也可以访问[Crust Apps](storageUserGuide.md)通过UI执行这些步骤。
+Crust主网正在稳步推进，目前已开放[CRU](claims.md)和[锁定CRU](claims-locked-cru.md)的认领功能
 
-Crust Network 适用于多种场景，包括：
+## 使用 Crust
 
-1. 无服务器 DApp/网站托管
-开发人员能够基于Crust/IPFS网络部署自己的DApp/网站。这样，开发人员仅需专注于构建DApp/网站，而无需管理服务器。此外，Crust Network鼓励多个节点存储DApp/网站文件并提供存储服务，从而确保DApp/网站的高可用性。Crust Apps是一个示例，它托管在Crust Network上。
-
-2. 通用链下数据存储
-一些基于区块链的去中心化应用程序（例如NFT和去中心化社交平台）涉及大量数据，远远超出了链上存储能力。基于Crust/IPFS网络，开发人员可以为这些应用程序提供通用的链下数据存储服务。
-
-3. 加速内容分发
-开发人员能够使用Crust/IPFS网络构建P2P内容分发网络（CDN）服务。 Crust Network激励节点自发分发CDN数据，并扮演CDN边缘节点的角色，以加快CDN用户的数据传输速度。
-
-4. 安全的云存储
-开发人员能够使用Crust/IPFS网络构建云存储应用程序。在不维护存储集群的情况下，开发人员只需要将Crust/IPFS的SDK集成到应用程序中即可为用户提供稳定的存储服务。
-
-我们将引入一系列的`Crust Grants`，以加速应用程序开发和网络采用。
-
-## 立即加入并开始使用 Crust
-
-Crust主网现已上线。您可以参考以下链接来加入或者尝试使用网络。
-
-- 节点提供者 - 请参考[节点指南](node-overview.md)安装配置和运行Crust节点。
-- Token持有者 - 请参考[Guarantor Guidance](guarantor-guidance.md)进行Staking及担保等相关操作。
-- 存储用户 - 请参考[存储用户指南](storageUserGuide.md)以开始使用存储市场。
-- 开发人员 - 有关更多信息，请参见[构建](build-getting-started.md)页面。
+即将到来
 
 ## Crust 如何工作
 

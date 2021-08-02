@@ -4,9 +4,12 @@ title: Node Overview
 sidebar_label: Node Overview
 ---
 
+Comming soon
+
+<!--
 This tutorial introduces how to build and organize nodes so that you can successfully join Crust preview network - Maxwell and get corresponding rewards from the network. This tutorial requires a certain Linux foundation, please follow the tutorial steps and do not skip any steps. If you have any questions, please contact the [Crust official telegram](https://t.me/CrustNetwork). If you have multiple devices, it is recommended to refer to section 2, If you only have one device, it is recommended to refer to section 3.
 
-## 1 Multiple Nodes
+## 1 Multiple Nodes (Recommended)
 
 ### 1.1 Group
 
@@ -29,7 +32,7 @@ If you have multiple devices, it is a reasonable choice to group these devices i
 
 In the group conception, your devices will be divided into two types, namely owner node and member node, using 1:N topology, that mean: There is only one owner and multiple members in a group:
 
-* Owner Node: Responsible for running the chain module and participating in block generation, similar to the [Kusama network](https://kusama.network/), we strongly recommend that the block generation node use a fixed public IP, otherwise it may cause losses due to unstable network. If necessary, this type of node can also be deployed in a cloud service.
+* Owner Node: Responsible for running the chain module and participating in block generation, we strongly recommend that the block generation node use a fixed public IP, otherwise it may cause losses due to unstable network. If necessary, this type of node can also be deployed in a cloud service.
 
 * Member Node: Responsible for running chain modules (not involved in block generation) and storage modules. Such nodes need to have an SGX environment. At the same time, this type of node is responsible for storing user files, which will cause a large amount of network transmission, so sufficient network bandwidth is required.
 
@@ -48,5 +51,4 @@ Refer to [member node setup](memberNode.md)
 The Isolation node uses only one device to run functions of block generation, storage and file transfer. It can be simply understood as the combination of a owner and a member. From a technical perspective, a isolation node is easier to setup,  but because a single device has a storage limit (500TB) in Crust Network, there is no advantage in the competition of block generation. 
 
 Refer to [isolation node setup](isolationNode.md) to build an Isolation node.
-
-
+-->

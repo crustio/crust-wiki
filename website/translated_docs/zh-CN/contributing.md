@@ -4,4 +4,4 @@ title: Contributing
 sidebar_label: Contributing
 ---
 
-即将开放
+即将到来

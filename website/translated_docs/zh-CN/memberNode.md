@@ -20,9 +20,10 @@ Member节点，负责运行链模块（不参与出块）,存储模块, IPFS等,
 
 参考这个[链接](crust-account.md)去构建一个Member的账户（单账户即可），Member节点账户需要满足以下三个要求:
 
-* 保留2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
+* 确保Member账户拥有2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
 * 不能是Owner的账户
 * 保证账户的唯一性，不能和其他Member账户相同， 即每台机器一个链账户
+* 如果要使用Maxwell网络上的账户，需要将备份文件导入到主网[APPs](https://apps.crust.network/)并重新导出新版备份文件
 
 ### 2.2 BIOS 设置
 
@@ -33,15 +34,15 @@ Member节点，负责运行链模块（不参与出块）,存储模块, IPFS等,
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v0.10.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v0.10.0.tar.gz
+tar -xvf v1.0.0.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-0.10.0
+cd crust-node-1.0.0
 ```
 
 ### 2.4 安装Crust服务
@@ -184,16 +185,41 @@ sudo crust logs sworker
 * 表示区块正在同步中，该过程耗时较长（1）
 * 成功在链上注册身份（2）
 * 正在进行存储余量统计操作，该过程会逐步进行（3）
-* 表示工作量上报成功， 该过程耗时较长，大约半小时左右（4）
+* 表示工作量上报成功， 该过程耗时较长，大约一小时左右（4）
 ![图片](assets/mining/sworker_log1.png)
 
 ![图片](assets/mining/sworker_log2.png)
 
 ## 5. 加入Group
 
-等待第一次上报work report后，进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择填写Member的账号，选择submit组为swork，选择joinGroup()方法，然后再选择你要加入的Group的Owner的Controller地址，最后点击submit transaction发送交易
+### 5.1 添加白名单
+
+Member账户需要添加到Group的白名单后才能加入Group中。进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组（或者联系Group管理者，进行操作），点击Add allowed accounts，如下：
+
+![图片](assets/mining/addMemberIntoAllowlist1.png)
+
+选择需要加入组的Member账户，点击Submit并发送交易，将该账户加入Group的白名单
+![图片](assets/mining/addMemberIntoAllowlist2.png)
+
+### 5.2 加组
+
+等待第一次上报work report后（一般是同步块到最高后再等一小时，可以通过swoker的log进行查询，或查询链上状态），选择Benefit，点击Join group,选择需要加组的Member账户和创建Group的Stash账户，点击Join group，输入Member账户密码，最后点击Sign and Submit发送交易
 
 ![图片](assets/mining/join_group.png)
+![图片](assets/mining/join_group1.png)
+
+### 5.3 锁定CRU减免工作量手续费
+
+**主网的工作量上报需要手续费。**一般情况下，每个Member每天会进行24次工作量上报交易，这带来的大量的手续费开销。为此Crust网络提供了免除工作量上报费用的Benefit模块，Group owner可以通过锁定CRU的方式，减免Member的手续费。**每个Member**需要锁定18CRU来进行手续费减免，但考虑到存在工作量上报不稳定的情况，建议锁定24CRU~30CRU来确保手续费的完全免费。
+
+进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组（或者联系Group管理者，进行操作），点击Increase lookup，如下：
+
+![图片](assets/mining/benefit_lockup1.png)
+
+输入需要**增加**的CRU数量，并进行签名交易，如下：
+
+![图片](assets/mining/benefit_lockup2.png)
+
 
 ## 6. 重启与卸载
 

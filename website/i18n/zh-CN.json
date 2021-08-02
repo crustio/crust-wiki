@@ -5,14 +5,6 @@
     "previous": "上一篇",
     "tagline": "Wiki for crust network",
     "docs": {
-      "architecture": {
-        "title": "架构",
-        "sidebar_label": "架构"
-      },
-      "bitSwap": {
-        "title": "BitSwap",
-        "sidebar_label": "BitSwap"
-      },
       "buildDevGuidance": {
         "title": "代码示例：使用Crust",
         "sidebar_label": "代码示例：使用Crust"
@@ -65,6 +57,10 @@
         "title": "Crust Storage Manager",
         "sidebar_label": "Crust Storage Manager"
       },
+      "claimsLockedCRU": {
+        "title": "锁定CRU 认领",
+        "sidebar_label": "锁定CRU 认领"
+      },
       "claims": {
         "title": "CRU 认领",
         "sidebar_label": "CRU 认领"
@@ -73,17 +69,13 @@
         "title": "Crust 钱包",
         "sidebar_label": "Crust 钱包"
       },
-      "democracyGuide": {
-        "title": "民主指南",
-        "sidebar_label": "民主指南"
-      },
-      "community": {
-        "title": "社区",
-        "sidebar_label": "社区"
-      },
       "contributing": {
         "title": "贡献",
         "sidebar_label": "贡献"
+      },
+      "democracyGuide": {
+        "title": "民主指南",
+        "sidebar_label": "民主指南"
       },
       "crustAccount": {
         "title": "账户",
@@ -120,10 +112,6 @@
       "gettingStarted": {
         "title": "开始",
         "sidebar_label": "开始"
-      },
-      "glossary": {
-        "title": "术语表",
-        "sidebar_label": "术语表"
       },
       "crustGrants": {
         "title": "Crust Grants",
@@ -169,17 +157,13 @@
         "title": "Owner 节点",
         "sidebar_label": "Owner 节点"
       },
-      "parachain": {
-        "title": "Parachain",
-        "sidebar_label": "Parachain"
-      },
       "parameters": {
         "title": "参数表",
         "sidebar_label": "参数表"
       },
       "crustOverview": {
-        "title": "Crust 概览",
-        "sidebar_label": "Crust 概览"
+        "title": "Crust 主网",
+        "sidebar_label": "Crust 主网"
       },
       "Q&AForMining": {
         "title": "Q&A",
@@ -216,10 +200,6 @@
       "orderSettlement": {
         "title": "存储订单清算指南",
         "sidebar_label": "存储订单清算指南"
-      },
-      "sWorkerGuide": {
-        "title": "sWorker",
-        "sidebar_label": "sWorker"
       },
       "teeTechnology": {
         "title": "TEE 技术",

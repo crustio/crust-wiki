@@ -9,14 +9,6 @@
         "title": "Apps Strorage Issue",
         "sidebar_label": "Apps Strorage Issue"
       },
-      "architecture": {
-        "title": "Architecture",
-        "sidebar_label": "Architecture"
-      },
-      "bitSwap": {
-        "title": "BitSwap",
-        "sidebar_label": "BitSwap"
-      },
       "buildCrustKits": {
         "title": "Crust SDK",
         "sidebar_label": "Crust SDK"
@@ -69,13 +61,13 @@
         "title": "Crust Storage Manager",
         "sidebar_label": "Crust Storage Manager"
       },
-      "claims": {
-        "title": "CRU Claim",
-        "sidebar_label": "CRU Claim"
+      "claimsLockedCRU": {
+        "title": "LockedCRU Claims",
+        "sidebar_label": "LockedCRU Claims"
       },
-      "community": {
-        "title": "Community",
-        "sidebar_label": "Community"
+      "claims": {
+        "title": "CRU Claims",
+        "sidebar_label": "CRU Claims"
       },
       "contributing": {
         "title": "Contributing",
@@ -94,8 +86,8 @@
         "sidebar_label": "Crust Grants"
       },
       "crustOverview": {
-        "title": "Crust Network Overview",
-        "sidebar_label": "Crust Network Overview"
+        "title": "Crust Mainnet",
+        "sidebar_label": "Crust Mainnet"
       },
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
@@ -124,10 +116,6 @@
       "gettingStarted": {
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
-      },
-      "glossary": {
-        "title": "Glossary",
-        "sidebar_label": "Glossary"
       },
       "GPoS": {
         "title": "GPoS",
@@ -158,7 +146,7 @@
       },
       "merchantGuidance": {
         "title": "Merchant Guidance",
-        "sidebar_label": "Merchant Guidance"
+        "sidebar_label": "Merchant Guidancex"
       },
       "newBond": {
         "title": "New Bond",
@@ -179,10 +167,6 @@
       "ownerNode": {
         "title": "Owner Node",
         "sidebar_label": "Owner Node"
-      },
-      "parachain": {
-        "title": "Parachain",
-        "sidebar_label": "Parachain"
       },
       "parameters": {
         "title": "Parameters",
@@ -211,10 +195,6 @@
       "storageUserGuide": {
         "title": "User Guidance",
         "sidebar_label": "User Guidance"
-      },
-      "sWorkerGuide": {
-        "title": "sWorker",
-        "sidebar_label": "sWorker"
       },
       "teeTechnology": {
         "title": "TEE Technology",
