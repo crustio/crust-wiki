@@ -13,7 +13,7 @@ The types of assets stored in the Crust account can be referred to [crust tokens
 
 ### Install Crust Wallet
 
-[Tutorial to install wallet](https://wiki.crust.network/docs/en/crustWallet),After the installation is complete, you can pin it for easy use.
+[Tutorial to install wallet](crustWallet.md),After the installation is complete, you can pin it for easy use.
 
 ![pin](assets/wallet/pin.png)
 

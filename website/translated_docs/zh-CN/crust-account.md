@@ -13,7 +13,7 @@ Crust账户中存储的资产种类可以参考[crust tokens](crust-tokens.md)�
 
 ### 安装Crust Wallet
 
-[钱包安装教程](https://wiki.crust.network/docs/zh-CN/crustWallet)，安装完成之后可以将钱包固定，方便使用。
+[钱包安装教程](crustWallet.md)，安装完成之后可以将钱包固定，方便使用。
 
 ![pin](assets/wallet/pin.png)
 
