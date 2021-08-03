@@ -246,6 +246,8 @@ Fill in the sessionkey you have copied, and click on “Set session key”.
 
 ### 6.3 Be a Validator/Candidate
 
+> Becoming a validator needs to shoulder the responsibility of maintaining the network, a large-scale disconnection will result in a certain degree of punishment (up to %7 of the effective pledge amount)
+
 Follow the steps below:
 
 ![pic](assets/mining/be_validator1.png)

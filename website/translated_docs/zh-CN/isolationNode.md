@@ -235,6 +235,8 @@ sudo crust tools rotate-keys
 
 ### 6.3 成为验证人/候选人
 
+> 成为验证人需要肩负维护网络的责任，大规模的掉线会导致一定程度的处罚（最高约质有效质押量的%7）
+
 进入[Crust APPs](https://apps.crust.network)，执行 “Be Validator” 操作。
 
 ![图片](assets/mining/be_validator1.png)
