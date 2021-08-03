@@ -18,7 +18,7 @@ The rewards of validators are composed of two parts: **authoring rewards and sta
 
 #### Authoring rewards
 
-Authoring rewards are the incomes obtained by validators participating in block generation and transaction packaging in Crust Network. The incomes are related to staking points.
+Authoring rewards are the incomes obtained by validators participating in block generation and transaction packaging in Crust Network. The incomes are related to staking points. The Babe algorithm randomly selects a validator for each block to produce the block. Normally, each validator's block production score is roughly average. If the validator does not have a block production score, please check the chain operation of the Owner machine. **No block production score means no block production reward**.
 
 ![staking_points](assets/gpos/staking_points.jpg)
 
@@ -38,9 +38,9 @@ Electing from high to low according to effective stake
 
 Staking rewards refer to the validators or candidates who hold storage resources obtaining incomes through staking CRUs. The staking income is related to the following factors:
 
-- Stake Limit: The Stake Limit determines the upper limit of the effective stake of CRUs by the validator, which is directly related to the amount of storage provided by the validator. In Crust mainnet, a 1TB SRD file corresponds to an upper limit of 1CRU, and a meaningful file corresponds to 1-5 times the upper limit of SRD, with specific "times" related to the number of duplicates of meaningful files. For details, please refer to [DSM Guidance](DSM.md);
+- Stake Limit: The Stake Limit determines the upper limit of the effective stake of CRUs by the validator, which is directly related to the amount of storage provided by the validator. In Crust mainnet, a 1TB SRD file corresponds to an upper limit of 1CRU, and a meaningful file corresponds to 1-10 times the upper limit of SRD, with specific "times" related to the number of duplicates of meaningful files. For details, please refer to [DSM Guidance](DSM.md);
 - Effective Stake: The Effective Stake is **the amount of staking that actually generates incomes**, which is related to the stake limit of the validator that is guaranteed. An example will be provided later.
-- Guarantee fee: Guarantee fee is the ratio of the share to guarantors. The larger the value, the higher the guarantor’s income.
+- Guarantee fee: Guarantee fee is the ratio of the share to guarantors. The larger the value, the higher the guarantor’s revenue share. However, **A higher guarantee fee does not mean higher guarantee income**. The guarantee income of any guarantor needs to consider the effective stake and his own staking amount.
 
 > When a Validator or Candidator adjusts its own guarantee fee, the guarantee fee of the first Era after the adjustment will be set to 100% compulsively, which means that all the income of the node except for its own effective stake will be distributed to the guarantor. After an Era, the guarantee fee is restored to the value set by the Validator/Candidator.
 
@@ -78,7 +78,7 @@ Only validators (block generators) and the nodes that actually package blocks an
 
 1. Conditions for slash
 
-- At the end of each Session (10 minutes), an examination will be performed to detect whether validators are offline. Once validators are found to be offline, the slash mechanism will be triggered to calculate the slashing amount;
+- At the end of each Session (1 hours), an examination will be performed to detect whether validators are offline. Once validators are found to be offline, the slash mechanism will be triggered to calculate the slashing amount;
 - Each time a block is generated, the packager (block author) of the block will be checked on double authoring. If it is detected that the packager attempted to generate two different blocks out of the same block height, a slash will be imposed on him.
 
 2. Consequence of slash
@@ -87,17 +87,17 @@ The staked CRUs will be deducted according to the slash ratio, and the validator
 
 3. Slash ratio
 
-The slashing amount is the maximum slash ratio that occurs in a SlashingSpan multiplied by the validator’s number of valid votes:
+The slashing amount is the maximum slash ratio that occurs in a SlashingSpan multiplied by the validator’s effective stakes:
 
 ```shell
 slash_ratio = min((3 * (k - (n / 10 + 1))) / n, 1) * 0.07
 ```
 
-where **k is the number of offline validators and n is the overall number of validators (for block authoring).** A 10% offline triggers 0% slash which however can climb linearly up to the maximum of 7%. When one-third of the validators are offline, the slash ratio is approximately 5%.
+where **k is the number of offline validators in one era and n is the overall number of validators (for block authoring).** Less than 10% offline triggers 0% slash which however can climb linearly up to the maximum of 7%. When one-third of the validators are offline, the slash ratio is approximately 5%.
 
 4. Deduction time point for slash
 
-The slash will not take place instantly, rather, a delayed deduction comes after 28 Eras (7 days). A slash that does not actually occur can be cancelled (applicable through the Treasury).
+The slash will not take place instantly, rather, a delayed deduction comes after 108 Eras (27 days). A slash that does not actually occur can be cancelled (applicable through the Demoncracy).
 
 ## To become a validator
 
