@@ -26,6 +26,6 @@ As a data storage system, besides the storage market, DSM also takes the respons
 
    * Crust Network provides a highly efficient retrieval pointing mechanism. Enabled by the Bitswap protocol and using a “credit” mechanism, nodes can resist those “free-riding” nodes that only seek to pull data without providing retrieval services. Building on the Bitswap credit mechanism, Crust Network makes the access to trusted on-chain information available for nodes, further boosting the Crust Network credit mechanism.
 
-   * Crust Network nodes provide reliable retrieval services. The initial earning of Crust Network nodes comes from [Network Staking——GPoS](gpos.md), and storing more user files can translate into increased effective stake limits for nodes. Driven by such a bonus and coupled with Crust Network credit mechanism, nodes offer to provide corresponding retrieval services so as to receive more user files.
+   * Crust Network nodes provide reliable retrieval services. The initial earning of Crust Network nodes comes from [Network Staking——GPoS](GPoS.md), and storing more user files can translate into increased effective stake limits for nodes. Driven by such a bonus and coupled with Crust Network credit mechanism, nodes offer to provide corresponding retrieval services so as to receive more user files.
 
 Users can expirence DSM in [Crust Apps](https://apps.crust.network/#/storage).
