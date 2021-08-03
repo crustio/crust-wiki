@@ -4,7 +4,9 @@ title: CRU Claims
 sidebar_label: CRU Claims
 ---
 
-如果您想将**ERC20 CRU映射到Crust主网**，您可以通过本教程一步一步学习到如何进行Crust主网CRU的认领
+如果您想将**ERC20 CRU映射到Crust主网**，您可以通过本教程一步一步学习到如何进行Crust主网CRU的认领，下图显示了整个认领的过程
+
+![Overview](assets/claims/overview_zh.jpeg)
 
 ## 准备工作
 
