@@ -160,6 +160,10 @@
         "title": "Node Overview",
         "sidebar_label": "Node Overview"
       },
+      "nodeQos": {
+        "title": "Configure QoS",
+        "sidebar_label": "Configure QoS"
+      },
       "orderSettlement": {
         "title": "Order Settlement",
         "sidebar_label": "Order Settlement"

@@ -153,6 +153,10 @@
         "title": "节点概要",
         "sidebar_label": "节点概要"
       },
+      "nodeQos": {
+        "title": "配置 QoS",
+        "sidebar_label": "配置 QoS"
+      },
       "ownerNode": {
         "title": "Owner 节点",
         "sidebar_label": "Owner 节点"
