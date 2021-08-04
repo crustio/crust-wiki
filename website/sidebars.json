@@ -17,7 +17,8 @@
       "buildGettingStarted"
     ],
     "Node": [
-      "nodeOverview"
+      "nodeOverview",
+      "nodeQos"
     ],
     "Storage": [
       "storageOverview"

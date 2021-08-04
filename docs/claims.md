@@ -4,11 +4,13 @@ title: CRU Claims
 sidebar_label: CRU Claims
 ---
 
-If you want to **map ERC20 CRU to Crust Network**, you can follow this tutorial step by step to claim CRU
+If you want to **map ERC20 CRU to Crust Network**, you can follow this tutorial step by step to claim CRU, the whole claim process shows below
+
+![Overall](assets/claims/overview.jpeg)
 
 ## Preparation
 
-In order to prevent unknown errors in the claim process, we highly recommend using the following tools to help you in the entire claim process:
+In order to prevent unknown errors in the claim process, we highly recommend using the following tools to help you in the entire claim process
 
 > Don't worry about being unfamiliar with the following tools, we will teach you how to use them step by step in the following steps.
 
