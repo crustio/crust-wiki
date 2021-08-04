@@ -116,6 +116,10 @@
       "gettingStarted": {
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
+      },      
+      "glossary": {
+        "title": "Glossary",
+        "sidebar_label": "Glossary"
       },
       "GPoS": {
         "title": "GPoS",
