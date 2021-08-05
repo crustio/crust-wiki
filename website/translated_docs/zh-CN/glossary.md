@@ -48,6 +48,8 @@ sidebar_label: Glossary
 
 **sWorker** - sWorker是运行MPoW协议以及相关功能的模块，可以理解成节点上运行了可信的存储监控器。节点上执运行sWorker后，sWorker会定期向链汇报节点存储数据的状态。
 
+**SRD** - Sealed Ramdon Data，被封装的随机数。sWorker 使用SRD来填充节点的可用空间，这样链上能可信的获得每个节点的容量。
+
 **封装/Seal** - 节点上的数据都会被TEE进行封装，被封装的数据只有TEE能解密。可以抵御女巫攻击和生成攻击。
 
 **工作量报告/Work Report** - 节点的sWorker进行存储证明的报告。节点sWorker中会周期性的生成可以被验证的Work Report并发往链上。
