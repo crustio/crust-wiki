@@ -28,13 +28,13 @@ sidebar_label: Glossary
 
 **Node/Chain Node** - When the term "node" is used in relation to Crust chain or GPoS, it broadly refers to all the nodes that make up the blockchain. As such, the Crust chain is composed of many Validator and Candidate nodes.
 
-**Stake** - Nodes in Crust Network race for validators or compete for block generation by staking. The staking can be sourced either from nodes' self-staking or from the guarantee by the guarantors.
+**Staking** - In the Crust network, nodes compete to become validators by staking, and Validators compete to generate blocks by staking. Nodes can increase their total staking amount by self-staking or obtaining guarantees from guarantors.
 
-**Guarantor** - Users who hold CRUs can obtain income by guaranteeing a Validator or a Candidate. [Reference reading](guarantor.md).
+**Guarantor** - Users who hold CRUs can obtain GPoS reward by guaranteeing a Validator or a Candidate. [Reference reading](guarantor.md).
 
 **Era** - A 6-hour interval. In Crust Network, validators will be re-elected and the rewards of the previous Era will be settled in each new Era.
 
-**Session**- A 1-hour process. In each session, the validator online verification will be conducted and the kick-out check mechanism will be triggered. 
+**Session**- A 1-hour process. In each session, the validator online verification will be conducted and the kick-out check mechanism will be triggered.
 
 **Slot** - A 6-second block generation cycle.
 
@@ -56,9 +56,9 @@ sidebar_label: Glossary
 
 **Group** - Group consists of a Group Owner and multiple Group Member nodes. The total storage capacity of Members in the same Group is also the workload of the Group Owner. The Group Owner corresponds to a Validator or a Candidate on the Crust chain.
 
-**Group Owner** - An Owner node as the initiator of a Group is in charge of the Group and is responsible for generating blocks on the Crust chain. The effective storage of the Group Members will be aggregated to the Owner to increase the overall effective stake limit.
+**Group Owner** - An Owner node as the initiator of a Group is in charge of the Group and is responsible for generating blocks on the Crust chain. The storage of the Group Members will be aggregated to the Owner to increase the overall effective stake limit.
 
-**Group Member** - The Member node is a storage node, which is a storage provider in a Group. There can be multiple Member nodes in a Group, and their effective storage will be aggregated to the Owner, which will increase the effective stake limit of the Owner.
+**Group Member** - The Member node is a storage node, which is a storage provider in a Group. There can be multiple Member nodes in a Group, and their storage will be aggregated to the Owner, which will increase the effective stake limit of the Owner.
 
 **Benefits(sWorker)** - Crust nodes can stake CRUs through the Benefits module to free them from the work report fee.
 

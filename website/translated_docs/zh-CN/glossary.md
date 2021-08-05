@@ -28,7 +28,7 @@ sidebar_label: Glossary
 
 **节点/Node** - 当节点一词被用在在Crust链或者GPoS的范畴内时，代表的是共同组成区块链的节点，Crust链由众多Validator和Candidate节点组成。
 
-**质押/Stake** - Crust网络中节点通过Stake来竞选Validator或竞争出块。Stake可以来自节点自我质押，也可以来自担保人的担保。
+**质押/Stake** - Crust网络中节点通过质押来竞选Validator，而Validator通过质押来竞争出块。节点可以通过自我质押或获得来自担保人的担保来增加节点的总质押量。
 
 **担保人/Guarantor** - 持有CRU的用户，可以通过担保Validator或Candidate来获得收益。[参考阅读](guarantor.md)。
 
