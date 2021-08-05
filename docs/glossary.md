@@ -8,7 +8,7 @@ sidebar_label: Glossary
 
 **Crust Mainnet** - With Crust Mainnet, nodes can execute and obtain corresponding token rewards by following the mechanism and parameters described in the Technical White Paper and Economic White Paper. Users can utilize all the storage features of Crust on the mainnet. [Reference reading](crust-overview.md)
 
-**Maxwell Network** - As a Crust preview network, Crust Maxwell is responsible for the full functional test and simulation before the main network launch. It is equipped with the same features as the main network, only with some parameters being slightly different. [Reference reading](https://wiki-maxwell.crust.network/docs/zh-CN/previewNetworkMaxwell).
+**Maxwell Network** - As a Crust preview network, Crust Maxwell is responsible for the full functional test and simulation before the main network launch. It is equipped with the same features as the main network, only with some parameters being slightly different. [Reference reading](https://wiki-maxwell.crust.network/docs/en/previewNetworkMaxwell).
 
 **Shadow Network** - Crust Shadow is a "Kusama version" for Crust Network, an early unaudited release of the code that is available first and holds real economic value.
 
@@ -47,6 +47,8 @@ sidebar_label: Glossary
 **TEE** - Trusted Execution Environment is a sandbox environment running on a node. When an executable code is put into the TEE to run, no one can modify the execution of the code or snoop on the data protected by the TEE. [Reference reading](https://www.trustonic.com/technical-articles/what-is-a-trusted-execution-environment-tee/).
 
 **sWorker** - sWorker is a module that runs the MPoW protocol and related features on a Crust nodes. It can be considered as a honest storage monitor running on the node. Once running, sWorker will periodically report the storage status of the node to the chain.
+
+**SRD** - Sealed Ramdon Data. sWorker uses SRD to fill the available space of nodes, so that the capacity of each node is verifiable.
 
 **Seal** - All the data on the node will be sealed by the TEE, which can only be decrypted by the TEE. This allows for the resistance against witch attacks and spawn attacks.
 
