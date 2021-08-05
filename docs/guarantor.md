@@ -47,6 +47,7 @@ If node A staked 1000 CRUs itself, for which you guaranteed 200 CRUs. The stake 
 The guarantor and the validator guaranteed by him have the same slash ratio. For details of the slash, please refer to slash specifications in [Validator](validator.md).
 
 ## How to Guarantee
-
+<!--
 Please refer to [Guarantee Guidance](guarantor-guidance.md) for details.
-
+-->
+Coming soon.

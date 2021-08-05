@@ -100,5 +100,7 @@ where **k is the number of offline validators in one era and n is the overall nu
 The slash will not take place instantly, rather, a delayed deduction comes after 108 Eras (27 days). A slash that does not actually occur can be cancelled (applicable through the Demoncracy).
 
 ## To become a validator
-
+<!--
 To become a validator of Crust Network requires you to have a certain amount of storage resources, a high-quality network, as well as configured nodes ready. For details, please refer to the description of validators (nodes) in [Validator Guidance](validatorGuidance.md).
+-->
+Coming soon

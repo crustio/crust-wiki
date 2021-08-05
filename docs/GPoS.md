@@ -34,8 +34,13 @@ GPoS is based on Substrate framework, the block generation algorithm is [BABE/GR
 Users can join in as validator or as guarantors.
 
 ### Join GPoS as a validator
+<!--
 To join Crust Network as a validator, You can check [validator guidance](validatorGuidance.md).
+-->
+Coming soon.
 
 ### Join GPoS as Guarantor
-
+<!--
 Users can share the staking income of Crust network through [guarantee](guarantor-guidance.md). Users can browse the validators in the network and use CRUs to guarantee then, thereby increasing the validator’s effective stake (the final validator’s total effective stake amount will not exceed its stake limit).
+-->
+Coming soon.
