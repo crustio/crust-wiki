@@ -12,7 +12,11 @@
     ],
     "Learn": [
       "crustAccount",
-      "crustTokens"
+      "crustTokens",
+      "guarantor",
+      "validator",
+      "GPoS",
+      "DSM"
     ],
     "Build": [
       "buildGettingStarted"
