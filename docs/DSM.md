@@ -22,7 +22,7 @@ Storage Order works in a pooled way. Once a user places a storage order:
    * Tips are voluntarily provided by users to storage merchants, and all fees will enter the file reward pot.
    * Any node that submits corresponding storage proof will be added to the payout queue of the file payment queue, the top four nodes in the queue will get the reward of this file's reward pool.
    * Any node that submits corresponding storage proof will get a staking quota increasement (by ~2x). Those nodes will be able to get additional staking income from the overall staking reward pot.
-![dsm](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/learn/dsm.png)
+![dsm](assets/merchant/dsm.png)
 
 ### 3. File Order Renew and Settlement
 * File Order Renew:
@@ -33,13 +33,12 @@ agent income when operating the renewal order.
 
 
 * File Settlement:
-After the user places an order and stores the file, the first 4 merchants who submit thestorage proof can continue to obtain order revenue, and this revenue needs to be claimedbefore it can be collected by the merchant. The order selttement mechanism is a
-mechanism designed by Crust Network to better manage the file order system. Any Crust
-user can act as a clearer to settle unsettled orders in the network. When the settled order isan order that has expired, the clearer will receive the agent settlement income. The clearer can lock CRU to obtain the fee reduction for settlement transction.
+After the user places an order and stores the file, the first 4 merchants who submit thestorage proof can continue to obtain order revenue, and this revenue needs to be claimedbefore it can be collected by the merchant. The order selttement mechanism is a mechanism designed by Crust Network to better manage the file order system. Any Crust user can act as a clearer to settle unsettled orders in the network. When the settled order isan order that has expired, the clearer will receive the agent settlement income. The clearer can lock CRU to obtain the fee reduction for settlement transction.
+
 ### 4. Retrieval Mechanism
 As a data storage system, besides the storage market, DSM also takes the responsibility of incentivizing the nodes to provide retrieval service. Therefore, DSM includes another layer of incentives to encourage nodes to support data retrieval:
 
-   * The data retrieval mechanism in Crust Network follows the [IPFS Bitswap Protocol] (https://docs.ipfs.io/concepts/bitswap/). By such, data can be shared and exchanged among the nodes of the entire IPFS Network.
+   * The data retrieval mechanism in Crust Network follows the [IPFS Bitswap Protocol](https://docs.ipfs.io/concepts/bitswap/). By such, data can be shared and exchanged among the nodes of the entire IPFS Network.
 
    * Crust Network provides a highly efficient retrieval pointing mechanism. Enabled by the Bitswap protocol and using a “credit” mechanism, nodes can resist those “free-riding” nodes that only seek to pull data without providing retrieval services. Building on the Bitswap credit mechanism, Crust Network makes the access to trusted on-chain information available for nodes, further boosting the Crust Network credit mechanism.
 

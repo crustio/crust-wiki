@@ -14,7 +14,7 @@ A guarantor is the account that provides guarantee for one or multiple validator
 
 The guarantor obtains rewards from staking, which is influenced by the following factors:
 
-- Stake Limit: The Stake Limit determines the upper limit of the effective stake of CRUs by the validator, which is directly related to the amount of storage provided by the validator. In Crust Network, a 1TB SRD file corresponds to an upper limit of 1CRU, and a meaningful file corresponds to 1-10 times the upper limit of SRD, with specific ‘times’ related to the number of duplicates of meaningful files. For details, please refer to [DSM Guidance](DSM.md).
+- Stake Limit: The Stake Limit determines the upper limit of the effective stake of CRUs by the validator, which is directly related to the amount of storage provided by the validator. In Crust Network, a 1TB SRD([check the meaning of SRD from glossary](glossary.md)) file corresponds to an upper limit of 1CRU, and a meaningful file corresponds to 1-10 times the upper limit of SRD, with specific ‘times’ related to the number of duplicates of meaningful files. For details, please refer to [DSM Guidance](DSM.md).
 - Effective Stake: The Effective Stake is **the amount of staking that actually generates incomes**, which is related to the stake limit of the validator that is guaranteed. An example is provided as follows:
 - Guarantee Fee: The proportion of reward obtained by the guarantor, which is set by the validator. **A higher guarantee fee does not mean higher guarantee income**. The guarantee income of any guarantor needs to consider the effective stake and his own staking amount.
 
@@ -47,6 +47,7 @@ If node A staked 1000 CRUs itself, for which you guaranteed 200 CRUs. The stake 
 The guarantor and the validator guaranteed by him have the same slash ratio. For details of the slash, please refer to slash specifications in [Validator](validator.md).
 
 ## How to Guarantee
-
+<!--
 Please refer to [Guarantee Guidance](guarantor-guidance.md) for details.
-
+-->
+Coming soon.

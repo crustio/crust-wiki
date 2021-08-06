@@ -7,11 +7,18 @@
       "claims",
       "claimsLockedCRU",
       "crustWallet",
+      "glossary",
       "contributing"
     ],
     "Learn": [
       "crustAccount",
-      "crustTokens"
+      "crustTokens",
+      "newBond",
+      "guarantor",
+      "validator",
+      "GPoS",
+      "DSM",
+      "storageMerchant"
     ],
     "Build": [
       "buildGettingStarted"

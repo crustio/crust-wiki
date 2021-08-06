@@ -19,7 +19,7 @@ GPoS基于Substrate框架的[BABE/GRANDPA](https://wiki.polkadot.network/docs/en
 3.  有效质押: 质押上限以及总质押数额的较小值。它的更新频率为一个era，主网上的更新频率为6小时。
 
 ### 质押上限计算
-**1TB的SRD文件对应上限值为1CRU，而有意义文件是SRD上限值的1-10倍**，详细机制请参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper.pdf)，这里仅针对有意义文件的质押上限计算机制进行阐释，一切以经济白皮书内容为最终准则。
+**1TB的SRD([在术语表中查看SRD的释意](glossary.md))文件对应上限值为1CRU，而有意义文件是SRD上限值的1-10倍**，详细机制请参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper.pdf)，这里仅针对有意义文件的质押上限计算机制进行阐释，一切以经济白皮书内容为最终准则。
 1.  算力延期: 文件对应的质押上限计算具有延期效应，主网启动阶段设置为3个月。在算力延期阶段，有意义文件质押上限等于SRD文件带来的质押上限。
 2.  文件副本算力倍数: 同一文件会被Crust网络中的不同节点进行存储，当存储的节点数目越多，该文件所产生的质押上限越大，最多可带来文件大小的十倍质押上限。
 3.  文件副本算力去重: 在同一个存储节点组中，只有一个成员可以接取该文件并获得该文件算力，后续成员接取该文件会被视为无效并损失原有SRD文件带来的算力质押上限。
@@ -31,4 +31,7 @@ GPoS基于Substrate框架的[BABE/GRANDPA](https://wiki.polkadot.network/docs/en
 作为验证人参与网络请参考[验证人指南](validatorGuidance.md)
 
 ### 作为担保人参与GPoS
+<!--
 持币用户可以通过[担保](guarantor-guidance.md)节点来分享Crust网络的质押收益。用户可以浏览网络中的验证人并进行担保，从而增加该验证人的有效质押（最终验证人的总有效质押量不会超过其质押额度）
+-->
+即将发布。

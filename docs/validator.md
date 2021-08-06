@@ -6,7 +6,9 @@ sidebar_label: Validator
 
 ## Overview
 
-The validator is the node that validates transactions and generates blocks in Crust Network, also maintaining the security of Crust Network. Under the GPoS (Guaranteed Proof of Stake) consensus of Crust Network, validator nodes obtain rewards via staking and block generation.
+Crust chain is composed of many Validator and Candidate nodes. The validators are elected from the candidates according to the effective staking amount in each ERA. The validator is the node that validates transactions and generates blocks in Crust Network, also maintaining the security of Crust Network.
+
+Under the GPoS (Guaranteed Proof of Stake) consensus of Crust Network, validator nodes obtain rewards via staking and block generation.
 
 ## Validators’ Rewards and Slash
 
@@ -38,7 +40,7 @@ Electing from high to low according to effective stake
 
 Staking rewards refer to the validators or candidates who hold storage resources obtaining incomes through staking CRUs. The staking income is related to the following factors:
 
-- Stake Limit: The Stake Limit determines the upper limit of the effective stake of CRUs by the validator, which is directly related to the amount of storage provided by the validator. In Crust mainnet, a 1TB SRD file corresponds to an upper limit of 1CRU, and a meaningful file corresponds to 1-10 times the upper limit of SRD, with specific "times" related to the number of duplicates of meaningful files. For details, please refer to [DSM Guidance](DSM.md);
+- Stake Limit: The Stake Limit determines the upper limit of the effective stake of CRUs by the validator, which is directly related to the amount of storage provided by the validator. In Crust mainnet, a 1TB SRD([check the meaning of SRD from glossary](glossary.md)) file corresponds to an upper limit of 1CRU, and a meaningful file corresponds to 1-10 times the upper limit of SRD, with specific "times" related to the number of duplicates of meaningful files. For details, please refer to [DSM Guidance](DSM.md);
 - Effective Stake: The Effective Stake is **the amount of staking that actually generates incomes**, which is related to the stake limit of the validator that is guaranteed. An example will be provided later.
 - Guarantee fee: Guarantee fee is the ratio of the share to guarantors. The larger the value, the higher the guarantor’s revenue share. However, **A higher guarantee fee does not mean higher guarantee income**. The guarantee income of any guarantor needs to consider the effective stake and his own staking amount.
 
@@ -100,5 +102,7 @@ where **k is the number of offline validators in one era and n is the overall nu
 The slash will not take place instantly, rather, a delayed deduction comes after 108 Eras (27 days). A slash that does not actually occur can be cancelled (applicable through the Demoncracy).
 
 ## To become a validator
-
+<!--
 To become a validator of Crust Network requires you to have a certain amount of storage resources, a high-quality network, as well as configured nodes ready. For details, please refer to the description of validators (nodes) in [Validator Guidance](validatorGuidance.md).
+-->
+Coming soon
