@@ -17,7 +17,7 @@ sidebar_label: Storage Merchant
 
 ### 存储商户如何工作
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/learn/dsm.png)
+![dsm](assets/merchant/dsm.png)
 
 存储商户获得文件以及存储奖励的流程如上图所示：
 1. 用户为文件发起一个存储订单。
@@ -29,6 +29,9 @@ sidebar_label: Storage Merchant
 考虑到Crust网络的TPS和性能原因，Crust网络不会主动对文件进行清算，商户可以主动对文件进行清算来获得存储收益。存储金额的释放是随着文件有效期线性释放的，通过质押权益金额商户可以获得清算手续费的免除。
 
 ### 文件奖励领取和商户担保金
+<!--
 清算每一个文件可以积累对应的文件奖励，积累的文件奖励池可以定期领取。领取文件奖励需要对等的商户担保金，担保金额可以获得同等金额的奖励领取上限，领取奖励后，奖励领取上限重置。
 
 更多存储商户的细节请参考[存储商户指南](merchantGuidance.md)。
+-->
+即将发布。

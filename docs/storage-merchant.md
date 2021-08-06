@@ -15,7 +15,7 @@ The staking reward will be proportionally distributed to the nodes participating
 
 ### How Storage Merchants Work
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/learn/dsm.png)
+![dsm](assets/merchant/dsm.png)
 
 The process for storage merchants to obtain files and storage rewards is shown in the figure above:
 
@@ -29,6 +29,10 @@ The process for storage merchants to obtain files and storage rewards is shown i
 Taking into account the TPS and performance reasons of the Crust Network, the Crust Network will not actively liquidate files. Merchants can actively liquidate files to obtain storage rewards. The release of the stored amount is linearly released with the validity period of the file, and the merchant can obtain the exemption of the transaction fee through the benefits funds amount.
 
 ### File reward collection and merchant collateral
+
+<!--
 Settle each file can accumulate corresponding file rewards, and the accumulated file reward pool can be collected regularly. Receipt of file rewards requires equivalent merchant collateral funds. The collateral amount can get the upper limit of reward collection for the same amount. After receiving the reward, the upper limit of reward collection will be reset.
 
 For detailed information, refer to [merchant guidance](merchantGuidance.md).
+-->
+Coming soon.
