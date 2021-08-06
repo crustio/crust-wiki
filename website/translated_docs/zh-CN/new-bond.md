@@ -6,37 +6,22 @@ sidebar_label: New Bond
 
 Crust 账户是你链上的身份的体现，也是各类交易的主体。作为节点，你需要对应的账户来和节点进行绑定，从而获取区块奖励。Crust 账户作为标准的双账户模型 Controller/Stash，需要进行特定的账户绑定操作。双账户模型中Controller账户作为热钱包，只需要少量CRU作为交易手续费即可支持大部分操作，降低了可能出现的风险。通过操作 [Crust APPs](http://apps.crust.network/)，本节将说明如何创建账号和绑定账号关系。
 
-## 创建 Stash 账户
-在导航栏中点击 “账户” 下的 “账户”。然后点击“添加账户“
+## 1 创建 Controller 与 Stash 账户
 
-![](assets/newBond/accounts.png)
+### 1.1 Controller
 
-备份好助记词，勾选“我已经安全保存好助记词种子”，点击“下一步”
+首先我们将新建一个账户用于资产操作，创建账户的说明点击此[链接](crust-account.md)：
 
-![](assets/newBond/stash1.png)
+我们将第一个账户命名为 CONTROLLER 用来提醒自己，这个账号将用做 Controller，用于操作资产。账户里面需要有一定数量的 CRU 用于支付各类交易的交易费。
 
-输入账号名称以及密码，点击“下一步”
+### 1.2 Stash
 
-![](assets/newBond/stash2.png) 
+重复[新建账户](crust-account.md)步骤，再次创建另一个账户：
 
-点击“保存”备份账户信息，请切记保管好备份文件，格式如下“cTJhJ6m3xxxxxxxxTPBdqKHjUpWiQMHY4ox3in.json”
+我们将第二个新建的账号用做 Stash 账号。Stash 账号是用户的资产账号，用来管理用户的资产。账户里面需要有一定数量的 CRU 进行后续的各类交易和资产抵押等操作。
 
-![](assets/newBond/stash3.png) 
+## 2 建立 controller 和 stash 的绑定关系
 
-我们将第一个新建的账号  用做 Stash 账号。Stash 账号是用户的资产账号，用来管理用户的资产。账户里面需要有一定数量的 CRU 进行后续的各类交易和资产抵押等操作。
-
-## 创建 Controller 账户
-重复新建账号步骤，再次创建另一个账号。
-
-![](assets/newBond/controller1.png)
-
-![](assets/newBond/controller2.png)
-
-![](assets/newBond/controller3.png)
-
-我们将新账号命名为 CONTROLLER 用来提醒自己，这个账号将用做 Controller，用于操作资产。账户里面需要有一定数量的 CRU 用于支付各类交易的交易费。
-
-## 建立 controller 和 stash 的绑定关系
 点击导航栏的“网络”下的“质押”。选中“账户操作”
 ![](assets/newBond/stakingAccount.png)
  
