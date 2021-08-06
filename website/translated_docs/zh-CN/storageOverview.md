@@ -3,6 +3,9 @@ id: storageOverview
 title: Overview
 sidebar_label: Overview
 ---
+
+即将发布。
+
 <!--
 Crust 网络构建了一个任何人都可以使用的[去中心化存储市场](DSM.md)，简称DSM。存储用户和存储商户可以在去中心化存储市场中各取所需。
 
@@ -25,4 +28,4 @@ Crust 网络构建了一个任何人都可以使用的[去中心化存储市场]
 
 Crust网络为开发者准备了相应的技术工具，开发者可以基于去中心化存储市场，构建出适合各种业务场景的应用。[查看如何构建](build-getting-started.md)。
 -->
-即将发布。
+
