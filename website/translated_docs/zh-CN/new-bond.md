@@ -19,7 +19,7 @@ Crust 账户是你链上的身份的体现，也是各类交易的主体。作�
 
 ![](assets/newBond/stash2.png) 
 
-点击“保存”备份账户信息，请切记保管好备份文件，格式如下“5G1K1QvCcR4xxxxxxVcS8AVxxxxLuSxNBiEt.json”
+点击“保存”备份账户信息，请切记保管好备份文件，格式如下“cTJhJ6m3xxxxxxxxTPBdqKHjUpWiQMHY4ox3in.json”
 
 ![](assets/newBond/stash3.png) 
 

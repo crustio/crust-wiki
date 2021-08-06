@@ -19,7 +19,7 @@ Enter your account name and password, and click "Next"
 
 ![](assets/newBond/stash2.png)
 
-Click "Save" the account will be backed up on your device by default.
+Click "Save" the account will be backed up on your device by default. Please remember to keep the backup file, the format is as follows "cTJhJ6m3xxxxxxxxTPBdqKHjUpWiQMHY4ox3in.json"
 
 ![](assets/newBond/stash3.png)
 
