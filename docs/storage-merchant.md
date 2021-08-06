@@ -31,4 +31,6 @@ Taking into account the TPS and performance reasons of the Crust Network, the Cr
 ### File reward collection and merchant collateral
 Settle each file can accumulate corresponding file rewards, and the accumulated file reward pool can be collected regularly. Receipt of file rewards requires equivalent merchant collateral funds. The collateral amount can get the upper limit of reward collection for the same amount. After receiving the reward, the upper limit of reward collection will be reset.
 
+<!--
 For detailed information, refer to [merchant guidance](merchantGuidance.md).
+-->
