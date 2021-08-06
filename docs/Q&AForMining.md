@@ -69,7 +69,7 @@ Enter [Crust APPS](https://apps.crust.network/#/explorer), choose"Staking", choo
 ![pic](assets/qa/receiverewarden.jpg)
 
 ### How to check the reward?
-Open [Subscan](https://crust.subscan.io/)
+Open [Subscan](https://maxwell.subscan.io/)
 Use your income account to query, you can see the amount received in "Profit and Penalty"
 ![pic](assets/qa/subscanrewarden.jpg)
 

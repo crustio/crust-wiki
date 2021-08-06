@@ -33,7 +33,7 @@ sidebar_label: CSM Claim Back
 
 其次，你需要在Crust Maxwell预览网上向 ***Crust Maxwell认证转回地址*** 发起一笔CSM转账交易，这个操作需要在[Crust Apps的账户页面](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/accounts)进行，发起转账之前**请务必阅读**：
 
-1. ***Crust Maxwell转回地址*** 为：[5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx](https://crust.subscan.io/account/5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx) (已认证地址：**Token Bridge\<ERC-20\>🚗💰**)
+1. ***Crust Maxwell转回地址*** 为：[5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx](https://maxwell.subscan.io/account/5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx) (已认证地址：**Token Bridge\<ERC-20\>🚗💰**)
 2. ⚠️ 请注意在一个转回周期内（7天），需要**保证转回总金额大于1000 CSM**
 3. 发起转回交易的账户已经执行过[步骤一](#一-绑定以太坊地址)进行以太坊地址的绑定
 

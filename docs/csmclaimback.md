@@ -33,7 +33,7 @@ First of all, **⚠️you need to bind your Ethereum address. Please note that f
 
 Next, you need to initiate a CSM transfer transaction to the ***Crust Maxwell Certified Claim Back Address*** on Crust Maxwell Preview Network online. This operation needs to be performed on [Crust Apps's Account Page](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/accounts). Please be sure to read before initiating the transfer:
 
-1. ***Crust Maxwell Certified Claim Back Address***: [5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx](https://crust.subscan.io/account/5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx) (Certified with name: Token Bridge<ERC-20>🚗💰)
+1. ***Crust Maxwell Certified Claim Back Address***: [5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx](https://maxwell.subscan.io/account/5HbMS3P5e6rMP9KTDkVTZCaytKQkbqsV7HGnxgAgvv5d64tx) (Certified with name: Token Bridge<ERC-20>🚗💰)
 2. ⚠️ Note that within a claim back cycle (7 days), you need to **ensure that the total claim back amount is greater than 1000 CSM**
 3. The account that initiated the transfer back transaction has performed [Step I](#i-bond-ethereum-address) to bond the Ethereum address
 
