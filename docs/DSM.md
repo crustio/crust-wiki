@@ -33,9 +33,8 @@ agent income when operating the renewal order.
 
 
 * File Settlement:
-After the user places an order and stores the file, the first 4 merchants who submit thestorage proof can continue to obtain order revenue, and this revenue needs to be claimedbefore it can be collected by the merchant. The order selttement mechanism is a
-mechanism designed by Crust Network to better manage the file order system. Any Crust
-user can act as a clearer to settle unsettled orders in the network. When the settled order isan order that has expired, the clearer will receive the agent settlement income. The clearer can lock CRU to obtain the fee reduction for settlement transction.
+After the user places an order and stores the file, the first 4 merchants who submit thestorage proof can continue to obtain order revenue, and this revenue needs to be claimedbefore it can be collected by the merchant. The order selttement mechanism is a mechanism designed by Crust Network to better manage the file order system. Any Crust user can act as a clearer to settle unsettled orders in the network. When the settled order isan order that has expired, the clearer will receive the agent settlement income. The clearer can lock CRU to obtain the fee reduction for settlement transction.
+
 ### 4. Retrieval Mechanism
 As a data storage system, besides the storage market, DSM also takes the responsibility of incentivizing the nodes to provide retrieval service. Therefore, DSM includes another layer of incentives to encourage nodes to support data retrieval:
 

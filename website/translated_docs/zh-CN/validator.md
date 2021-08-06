@@ -6,7 +6,9 @@ sidebar_label: Validator
 
 ## 介绍
 
-验证人是Crust网络中验证交易并生成区块的节点，维护着整个Crust网络的安全。在Crust网络的GPoS（Guranteed Proof of Stake）共识中，验证人节点可以获得Staking奖励以及区块生成奖励。
+Crust网络中链上节点分为验证人和候选人。验证人是每个ERA由从候选人中按有效质押量选举产生，是Crust网络中验证交易并生成区块的节点，维护着整个Crust网络的安全。
+
+在Crust网络的GPoS（Guranteed Proof of Stake）共识中，验证人节点可以获得Staking奖励以及区块生成奖励。
 
 ## 验证人的奖励和惩罚
 

@@ -13,10 +13,12 @@
     "Learn": [
       "crustAccount",
       "crustTokens",
+      "newBond",
       "guarantor",
       "validator",
       "GPoS",
-      "DSM"
+      "DSM",
+      "storageMerchant"
     ],
     "Build": [
       "buildGettingStarted"
