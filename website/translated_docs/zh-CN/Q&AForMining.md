@@ -73,7 +73,7 @@ swork，选择groups(AccountId)方法，然后选择创建Group的账号，最�
 ![图片](assets/qa/payouts2.jpg)
 
 ### 每次领取奖励，怎么查看收益？
-打开[Subscan](https://crust.subscan.io/)
+打开[Subscan](https://maxwell.subscan.io/)
 用你的收益账户查询，"收益和罚金"中可以看到领取到的数量
 ![图片](assets/qa/subscanreward2.jpg)
 
