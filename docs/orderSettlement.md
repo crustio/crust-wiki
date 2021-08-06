@@ -4,51 +4,40 @@ title: Order Settlement
 sidebar_label: Order Settlement
 ---
 
-Through two mechanisms: "File renewal" and "Order settlement", Crust Network guarantees:
+Any user can initiate a request for the settlement of a storage order. As a pre-step for [storage merchants](storage-merchant.md) to receive their order rewards, storage order settlement can also serve to renew storage orders that seek to **prolong** storage services and to **close** expired storage orders not looking for a renewal.
 
-1. **renewal** of file orders seeking to continue the storage;
-2. **settlement** of expired file orders that have no intention of renewal.
+## Order settlement conditions and effects
 
+The effects vary depending on different conditions:
 
-## 1. File renewal
+|    |When the balance of Renew Pool is sufficient|When the balance of Renew Pool is not sufficient|
+|:----|:----|:----|
+|Within the expiration date|<ul><li>The current total order reward is assigned to merchants</li>|<ul><li>The current total order reward is assigned to merchants</li>|
+|Within 15 days after expiration|<ul><li>Order renewal is triggered</li><li>The one doing the settlement receives an order renewal reward</li><li>The current total order reward is assigned to merchants</li>|<ul><li>Order is closed</li><li>The current total order reward is assigned to merchants</li>|
+|15 days after expiration|<ul><li>Order renewal is triggered</li><li>The one doing the settlement receives an order renewal reward</li><li>The one doing the settlement receives an order settlement reward</li><li>The current total order reward is assigned to merchants after the settlement commission part is deducted from it</li>|<ul><li>Order is closed</li><li>The one doing the settlement receives an order settlement reward</li></ul><ul><li>The current total order reward is assigned to merchants after the settlement commission part is deducted from it</li>|
 
-### 1.1 Role of the file renewal mechanism
-For the file with a long-term storage need, users are suggested to deposit an additional amount into the file renewal pool after placing a storage order. This is to reward other users in the network for renewing the order for them so that the order is kept valid for a long time.
+### Order renewal rewards
 
-### 1.2 Pools of money for files
-There are two pools of money in a file order:
-1. **Storage order fee**: the fee paid by the user when placing a storage order, refer to [DSM](https://wiki.crust.network/docs/en/DSM) for details.
-2. **File Renewal Pool**: an additional amount that the user deposits for the file. When a file storage order expires (currently the validity period is set for 180 days per order) and the balance of the renewal pool is sufficient, the first user to initiate a settlement request for the file will trigger the renewal of the file (equivalent to the effect of re-initiating a storage order). At the same time, the request initiator will receive a renewal reward. Both the fee of order renewal and the renewal reward to the initiator are paid from the file renewal pool.
+When a storage order expires (currently 180 days for each file order before expiration) and the balance of the renewal pool is sufficient, the first user who initiates a settlement request for the order will trigger the order’s renewal process (equivalent to re-initiating a storage order). At the same time, the one doing the settlement will receive a renewal reward. Both the renewal order and the renewal reward are paid by the order's renewal pool. Check out the [Storage User Guide](storageUserGuide.md) for more details about the “renewal pool”.
 
-### 1.3 File renewal reward
-As mentioned in 1.2, when a file storage order expires and the balance of the file renewal pool is sufficient, any user who initiates the settlement request of the file will trigger the renewal of the file and receive a renewal reward.
+### Order settlement rewards
 
+When a storage order has been expired for over 15 days, any user who initiates the settlement for the order will receive a certain portion of settlement rewards. The calculation rules appear as follows.
 
-## 2. Order settlement
+  1. the order settlement reward is initially 0 when the order has been expired just for 15 days.
 
-### 2.1 Role of order settlement mechanism
-When a file storage order expires, storage nodes can bring the order into settlement and obtain the corresponding reward. If the settlement is not activated by nodes, the order will always be there. As such, the order settlement mechanism is designed to serve as an incentive for users apart from the storage nodes to settle files and close orders with insufficient renewal pool balance.
+  2. the order settlement reward linearly increases with time.
 
-### 2.2 Order settlement reward
+  3. the order settlement reward reaches its maximum when the order has been expired for 30 days, and the value is the current total order reward.
 
-15 days after the expiration of a file storage order, any user who initiates the file settlement will receive a settlement reward, which is calculated based on the following principles:
+  4. the current total order reward is assigned to the storage merchant after the order settlement reward is deducted from it.
 
-1. the order settlement reward is initially 0 (15 days after the order expiration);
-2. the order settlement reward increases linearly with time;
-3. the order settlement reward reaches its maximum 30 days after the expiration, which specifically equals the total amount of storage reward that storage nodes can obtain from the file's deposit.
-4. in a file order settlement, the reward that storage nodes can obtain = 20% * the deposit of the file order - the order settlement reward.
+Check out the [Storage Merchant Guide](merchantGuidance.md) for more details about the “Current Total Order Reward”.
 
-## 3. How to renew files and settle orders
+## Order settlement instructions
 
-Users can go to [Crust Apps](https://apps.crust.network/#/market/settlements) -> Network -> Market -> Order Settlement to view the files that can be settled and do the settlement, as shown below.
+Users can go to Crust Apps -> Market -> My Merchant -> Order Settlement and get the list of orders they want to settle by clicking on the “Fetch” button as shown below.
 
-![settlement](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/settlement.png)
+![dsm](assets/merchant/settlement.png)
 
-The "Total Commission" column shows the final earning in a settlement (**the renewal reward + the settlement reward**). Users simply need to click on the "Settle" button on the right to do the settlement and receive the earning. (**Notice: Doing settlement requires the initiation of a transaction and the payment of a sum of transaction fee. For some files, the transaction fee may surpass the total settlement reward, hence the settlement of these files may result in negative earnings for the settlement initiator.**)
-
-## 4. Settlement conditions and effects
-The settlement mechanism will trigger the following effects:
- Settlement effects | Renewal pool balance sufficient | Renewal balance insufficient 
- :------: | :-----------:  | :-----------: 
-**File expiration over 15 days**     | Triggering file renewal;<br>Triggering order settlement;<br> Receiving order settlement rewards;<br>Receiving file renewal rewards; | Receiving order settlement rewards;<br> Triggering order settlement;<br>Closing the order; 
-**File expiration less than 15 days**     | Triggering file renewal;<br>Receiving file renewal rewards; | Triggering order settlement;<br>Closing the order; 
+The “Total Commission” column shows the final income that can be obtained from this settlement action, **which equals order renewal commission plus order settlement commission**. Users simply need to click on the “Settle” button on the right to settle the orders and receive corresponding commissions. **As the order settlement requires the initiation of a transaction and the payment of a transaction fee, the total settlement reward for some orders may be lower than the fee to be paid, and the settlement of these orders may lead to negative incomes. Given this, users can try to get a reduction of transaction fees by utilizing the [DSM Benefits function](dsm-benefits.md).**
