@@ -66,7 +66,46 @@ Comming soon
 Comming soon
 
 ## 2 Treasury&Tips
-Comming soon
+
+### 2.1 Treasury
+The national treasury can collect the handling fees consumed in network operation and the penalty amount in GPoS. The existence of the national treasury provides financial support for the long-term development of the crust network.
+
+Anyone can also make a proposal for the use of treasury funds, and each proposal for the use of treasury funds needs to lock up 5% of the proposed amount in advance as collateral. Council member can vote to pass or reject each proposal. It is worth noting that if it is a malicious proposal and is rejected, the proponent’s locked amount will be punished.
+
+In order to maintain the stability of the network economic system, another major function of the treasury is deflation, and a fixed proportion of the treasury will be destroyed in each treasury spending cycle.
+
+### 2.2 Tips
+One of the ways to use treasury funds is through the tipping mechanism. By submitting the reasons for the tip application and passing the approval of the members of the council, a tip fund can be given to a specific account. Specifically includes the following functions:
+
+1. Anyone can initiate a tip application, there are two situations
+- a. If the sponsor is a member of the council, you can directly fill in the tip amount without locking the funds, and the sponsor will not be rewarded after the tip is passed.  
+- b. If the initiator is not a member of the council, he can only fill in the tip reason. The tip amount will be automatically calculated based on the data size of the tip reason, and the initiator needs to lock the equivalent tip funds until the tip is approved or cancelled. When the tip is approved, the sponsor will unlock the locked funds and get a part of the tip amount (currently 20%).
+It is worth noting that although the tip amount can be filled in the tip application, **but the actual tip amount is not determined by the initiator**. Each council member can choose the amount of tip to be given, **The final tip amount is the midpoint of all tips**.
+
+2. Members of the council can approve tips and agree, by default, they can propose intermediate tips, or they can give a specific amount of tips through transactions.
+
+3. After the tip application is approved by more than half of the council members, the members of the council can close and trigger the tip issuance step after a certain period of time.
+
+4. The initiator can also cancel the tip application that has already been initiated.
+
+5. Members of the council can punish specific invalid tips. (Supported in subsequent versions)
+
+The overall process is:
+
+1. The initiator submits the tip application and selects the tip beneficiary, fills in the reason for the tip application, and will be locked in the corresponding tip amount. If the initiator is a member of the council, he can fill in the tip amount additionally, and his own funds will not be locked. After submitting the tip application, no other operations are required, and you can wait for the tip to pass. In addition, the tip application can also be revoked.
+![overview](assets/tips/overview_en.png)
+![sendtx](assets/tips/sendtx_en.png)
+
+2. Council members can approve each tip application and choose the amount of tip to be given. You can also tick tip applications in batches and choose to give intermediate tips.
+![processing](assets/tips/processing_en.png)
+
+3. After more than half of the council members have given a tip for a tip application, the tip application will enter the countdown stage. After the countdown, council members can close the tip application to trigger the tip issuance process.
+![approved](assets/tips/approved_en.png)
+![done](assets/tips/done_en.png)
+
+4. The tip amount is the intermediate number of tips given by all council members. If the sponsor is not a council member, 20% of the tip amount will be given to the sponsor as a reward, and the remaining part will be given to the tip beneficiary.
+
+At this point, the application, approval and distribution process of a tip is over.
 
 ## 3 Bounty
 Comming soon
