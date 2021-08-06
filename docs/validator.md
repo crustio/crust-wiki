@@ -6,7 +6,9 @@ sidebar_label: Validator
 
 ## Overview
 
-The validator is the node that validates transactions and generates blocks in Crust Network, also maintaining the security of Crust Network. Under the GPoS (Guaranteed Proof of Stake) consensus of Crust Network, validator nodes obtain rewards via staking and block generation.
+Crust chain is composed of many Validator and Candidate nodes. The validators are elected from the candidates according to the effective staking amount in each ERA. The validator is the node that validates transactions and generates blocks in Crust Network, also maintaining the security of Crust Network.
+
+Under the GPoS (Guaranteed Proof of Stake) consensus of Crust Network, validator nodes obtain rewards via staking and block generation.
 
 ## Validators’ Rewards and Slash
 
