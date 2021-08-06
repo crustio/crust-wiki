@@ -17,7 +17,7 @@ sidebar_label: Storage Merchant
 
 ### 存储商户如何工作
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/learn/dsm.png)
+![dsm](assets/merchant/dsm.png)
 
 存储商户获得文件以及存储奖励的流程如上图所示：
 1. 用户为文件发起一个存储订单。
