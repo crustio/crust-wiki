@@ -156,6 +156,10 @@
         "title": "New Bond",
         "sidebar_label": "New Bond"
       },
+      "nodeBenefits": {
+        "title": "Node Benefits",
+        "sidebar_label": "Node Benefits"
+      },
       "nodeHardwareSpec": {
         "title": "Node Hardware Spec",
         "sidebar_label": "Node Hardware Spec"

@@ -161,6 +161,10 @@
         "title": "配置 QoS",
         "sidebar_label": "配置 QoS"
       },
+      "nodeBenefits": {
+        "title": "节点权益",
+        "sidebar_label": "节点权益"
+      },
       "ownerNode": {
         "title": "Owner 节点",
         "sidebar_label": "Owner 节点"

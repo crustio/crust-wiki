@@ -3,6 +3,8 @@ id: storageOverview
 title: Overview
 sidebar_label: Overview
 ---
+Coming soon.
+
 <!--
 The Crust Network has built a [Decentralized Storage Market (DSM)](DSM.md) that allows everyone to access it. Storage users and merchants both can take what they need from the DSM.
 
@@ -28,4 +30,3 @@ Check out the [Storage Merchant Guide](merchantGuide.m'd) for more details.
 
 The Crust Network has provided necessary technical tools for developers to enable them to build DSM-based applications needed in varied business scenarios. Check out [how to build](build-getting-started.md).
 -->
-Coming soon.
