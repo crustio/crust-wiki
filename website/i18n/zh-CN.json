@@ -125,6 +125,10 @@
         "title": "GPoS",
         "sidebar_label": "GPoS"
       },
+      "sWorkerOverview": {
+        "title": "概览",
+        "sidebar_label": "概览"
+      },
       "guarantorGuidance": {
         "title": "担保人指南",
         "sidebar_label": "担保人指南"

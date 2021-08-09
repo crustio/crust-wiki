@@ -204,6 +204,10 @@
         "title": "User Guidance",
         "sidebar_label": "User Guidance"
       },
+      "sWorkerOverview": {
+        "title": "sWorkerOverview",
+        "sidebar_label": "sWorkerOverview"
+      },
       "teeTechnology": {
         "title": "TEE Technology",
         "sidebar_label": "TEE Technology"

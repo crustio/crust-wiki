@@ -17,6 +17,14 @@
       "guarantor",
       "validator",
       "GPoS",
+      "sWorker",
+      {
+        "type": "subcategory",
+        "label": "sWorker",
+        "ids": [
+          "sWorkerOverview"
+        ]
+      },
       "DSM",
       "storageMerchant"
     ],
