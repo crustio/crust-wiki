@@ -25,7 +25,8 @@
     ],
     "Node": [
       "nodeOverview",
-      "nodeQos"
+      "nodeQos",
+      "nodeBenefits"
     ],
     "Storage": [
       "storageOverview"
