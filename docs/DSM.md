@@ -24,7 +24,7 @@ Storage Order works in a pooled way. Once a user places a storage order:
    * Any node that submits corresponding storage proof will get a staking quota increasement (by ~2x). Those nodes will be able to get additional staking income from the overall staking reward pot.
 ![dsm](assets/merchant/dsm.png)
 
-### 3. File Order Renew and Settlement
+### 3. File Order Renew, Settlement and Discount
 * File Order Renew:
 In the Crust network, each file has a file renewal pool. Users can pre-charge CRU to this renewal pool. At any time, other agents in the network (including users themselves) can use the
 funds in the renewal pool to renew files. When the file is still valid, there is no benefit from
@@ -32,8 +32,10 @@ the agent's operation to renew the order. When the filet expires, the agent will
 agent income when operating the renewal order.
 
 
-* File Settlement:
-After the user places an order and stores the file, the first 4 merchants who submit thestorage proof can continue to obtain order revenue, and this revenue needs to be claimedbefore it can be collected by the merchant. The order selttement mechanism is a mechanism designed by Crust Network to better manage the file order system. Any Crust user can act as a clearer to settle unsettled orders in the network. When the settled order isan order that has expired, the clearer will receive the agent settlement income. The clearer can lock CRU to obtain the fee reduction for settlement transction.
+* File Order Settlement:
+After the user places an order and stores the file, the first 4 merchants who submit the storage proof can continue to obtain order revenue, and this revenue needs to be claimedbefore it can be collected by the merchant. The order selttement mechanism is a mechanism designed by Crust Network to better manage the file order system. Any Crust user can act as a clearer to settle unsettled orders in the network. When the settled order isan order that has expired, the clearer will receive the agent settlement income. The clearer can lock CRU to obtain the fee reduction for settlement transction.
+
+* File Order Discount: Users can get the discount rate for file orders by locking the CRU, and the locked CRU can also get a the fee reduction for settlement transction. Discounts can reduce file base fees, dynamic file size fees, and dynamic key-value fees. The maximum discount rate is 10%.
 
 ### 4. Retrieval Mechanism
 As a data storage system, besides the storage market, DSM also takes the responsibility of incentivizing the nodes to provide retrieval service. Therefore, DSM includes another layer of incentives to encourage nodes to support data retrieval:
