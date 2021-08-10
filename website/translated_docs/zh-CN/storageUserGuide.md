@@ -22,7 +22,7 @@ sidebar_label: User Guidance
 
 #### 1.1.1 在Apps中安装、配置并运行IPFS
 
-进入[Crust Apps](apps.crust.network) -> Storage User ->。*如果出现以下提示，则代表您需要安装IPFS并进行正确的配置*
+进入[Crust Apps](https://apps.crust.network) -> Storage User ->。*如果出现以下提示，则代表您需要安装IPFS并进行正确的配置*
 
 ![uninstall](assets/storage/uninstall.png)
 
@@ -42,7 +42,7 @@ sidebar_label: User Guidance
 
 #### 1.1.2 上传文件
 
-在 [Crust Apps](apps.crust.network) -> DSM -> Storage User中，选中“文件”栏，点击右上角的“导入”，点击“文件”或“文件夹”，在弹出窗口中选中您要上传的文件/文件夹，并确认。
+在 [Crust Apps](https://apps.crust.network) -> DSM -> Storage User中，选中“文件”栏，点击右上角的“导入”，点击“文件”或“文件夹”，在弹出窗口中选中您要上传的文件/文件夹，并确认。
 
 ![appsUpload](assets/storage/appsUpload.png)
 
@@ -90,7 +90,7 @@ sidebar_label: User Guidance
 ### 2.2 对远程文件下单
 
 如果您本地没有文件，已知文件的CID和大小，也同样可以在Crust网络下单。
-进入[Crust Apps](apps.crust.network/#/storage) -> DSM  -> Storage User -> Storage Orders，点击 “Place an order”。
+进入[Crust Apps](https://apps.crust.network/#/storage) -> DSM  -> Storage User -> Storage Orders，点击 “Place an order”。
 
 ![storageOrder](assets/storage/storageOrder.png)
 
@@ -100,7 +100,7 @@ sidebar_label: User Guidance
 
 ### 2.3 查看订单
 
-在[Crust Apps](apps.crust.network/#/storage) -> DSM -> Storage User 中，用户可以通过“拉取”/"Fetch"功能查看指定账号的所有订单。
+在[Crust Apps](https://apps.crust.network/#/storage) -> DSM -> Storage User 中，用户可以通过“拉取”/"Fetch"功能查看指定账号的所有订单。
 ![fetch](assets/storage/fetch.png)
 
 点击“Fetch”，选择查询的目标账户以及数据源（开发者可以开发自己的数据源[并提交申请](https://github.com/crustio/crust-apps/issues/new)，通过审核的数据源将会显示在数据源列表中供用户访问），点击确认后所选账户的所有订单会被列出。
@@ -147,7 +147,7 @@ sidebar_label: User Guidance
 
 您可以在Crust Apps里检索到任何存储在IPFS或Crust网络的文件。流程如下：
 
-进入 [Crust Apps](apps.crust.network/#/storage) -> DSM -> Storage User，进入“文件”列表，点击“导入”，弹出列表中选择“From IPFS”。
+进入 [Crust Apps](https://apps.crust.network/#/storage) -> DSM -> Storage User，进入“文件”列表，点击“导入”，弹出列表中选择“From IPFS”。
 
 ![retrievelApps](assets/storage/retrievalApps.png)
 
