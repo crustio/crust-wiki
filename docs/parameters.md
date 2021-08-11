@@ -70,14 +70,15 @@ sidebar_label: Parameters
 | **TaxRatio**              | Percentage of storage cost allocated to the network tax                                                                          | 10%         |
 | **RenewRewardRatio**      | The reward ratio for the liquaditor to renew one storage order                                                                   | 5%          |
 | **MAX_REPLICAS**          | The maximum replicas for one file                                                                                                | 200         |
-| **COLLATERAL_RATIO**      | The ratio that the collateral should have to earn market reward                                                                  | 1           |
+| **COLLATERAL_RATIO**      | The ratio that the collateral should have to earn market reward                                                                  | 1:1           |
 | **FILES_COUNT_REFERENCE** | The keys reference number for keys price | 20_000_000 |
 
 ## Benefit
 | **Parameters**              | **Details**                                                        | **Mainnet** |
 | :-------------------------- | :----------------------------------------------------------------- | :---------- |
 | **BenefitReportWorkCost**   | The benefit amount that one work report need                       | 3 CRU       |
-| **BenefitsLimitRatio**      | The total amount ratio for benefit module                          | 0.2%        |
+| **BenefitsLimitRatio**      | The ratio of the upper limit of the order settlement transaction fee relief pool to the total additional issuance
+                          | 0.2%        |
 | **BondingDuration**         | Unbonding duration                                                 | 112 era     |
 
 ## CRU18 Locks
@@ -106,4 +107,3 @@ sidebar_label: Parameters
 ## Transaction Fee
 | **Parameters**            | **Details**                    | **Mainnet** |
 | :-----------------------  | :----------------------------- | :---------- |
-Comming Soon
