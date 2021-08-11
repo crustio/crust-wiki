@@ -6,6 +6,8 @@ sidebar_label: Guarantor
 
 ## Overview
 
+The "Guarantee" is an important mechanism in the Crust Consensus [GPoS](GPoS.md), which enables nodes to obtain effective staking not only from their own staked tokens, but also from the guarantor's guarantee.
+
 A guarantor is the account that provides guarantee for one or multiple validators in Crust Network. Any account with CRU tokens can potentially become a guarantor while in turn obtaining guarantee incomes. Additionally, the guarantor can maintain the security of the network by choosing validators with quality performance.
 
 ## Guarantors’ Rewards and Slash
