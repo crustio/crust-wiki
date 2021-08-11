@@ -20,9 +20,16 @@ sidebar_label: Validator Guidance
 
 ## 3. 增加/减少质押
 
-验证人也可以在[APPS](https://apps.crust.network)中增加或减少自己质押的金额，配置步骤如下。
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/bondmore.png)
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/unbond.png)
+验证人也可以在[APPS](https://apps.crust.network)中增加或减少自己质押的金额，操作步骤如下。
+
+### 3.1. 增加质押金额
+
+![validator](assets/gpos/staking.png)
+![validator](assets/gpos/bondmore.png)
+### 3.2. 减少质押金额
+![validator](assets/gpos/staking.png)
+![validator](assets/gpos/unbond.png)
+
 
 ## 4. 设置担保费
 
@@ -30,6 +37,6 @@ sidebar_label: Validator Guidance
 
 > 如果一个验证人在一个ERA中获取到900 CRU的Staking收益以及100CRU的出块收益，并且如果他自身投入的质押金额占总质押金额的90%（另外10%为担保人的投入)。如果该验证人设置的担保费为95%, 则最终担保人将一共获取到 (900 + 100) * 10% * 95% = 95 个CRU的收益，剩余 905 CRU归节点所有。
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
-![change guarantee_fee1](assets/gpos/guarantee_fee1.jpg)
-![change guarantee_fee2](assets/gpos/guarantee_fee2.jpg)
+![change guarantee_fee1](assets/gpos/guranteefee.png)
+![change guarantee_fee1](assets/gpos/guaranteefee1.png)
+![change guarantee_fee2](assets/gpos/guaranteefee2.png)
