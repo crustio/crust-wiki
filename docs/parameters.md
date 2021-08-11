@@ -107,4 +107,3 @@ sidebar_label: Parameters
 ## Transaction Fee
 | **Parameters**            | **Details**                    | **Mainnet** |
 | :-----------------------  | :----------------------------- | :---------- |
-Comming Soon
