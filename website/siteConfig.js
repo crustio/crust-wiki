@@ -86,7 +86,7 @@ const siteConfig = {
     "/css/copycode.css",
   ],
 
-  editUrl: "https://github.com/crustio/crust-wiki/edit/main/docs/",
+  editUrl: "https://github.com/crustio/crust-wiki/edit/mainnet/docs/",
 
   translationRecruitingLink: "https://crowdin.com/project/Crust-Wiki",
 
