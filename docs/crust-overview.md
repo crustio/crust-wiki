@@ -4,7 +4,24 @@ title: Crust Mainnet
 sidebar_label: Crust Mainnet
 ---
 
-The Crust mainnet is advancing steadily, and the CRU claim function is now open. The owner of CRU-ERC20 can claim CRU-ERC20 to Crust mainnet. Claims include [claim CRU](claims.md) and [Claim Locked CRU](claims-locked-cru.md).
+The Crust mainnet is advancing steadily, The current mainnet online progress is:
+
+1. CRU claim - opened
+
+CRU is the main token of the Crust network, and CRU-ERC20 refers to the CRU token that existed in Ethereum smart contract. The process by which the owner of CRU-ERC20 maps CRU-ERC20 to the Crust mainnet is called **claim**.
+The owner of CRU-ERC20 can claim their CRUs on Crust mainnet. Claims include [claim CRU](claims.md) and [Claim Locked CRU](claims-locked-cru.md).
+
+2. Node joining - opened
+
+Nodes and storage resource providers can deploy nodes in Crust mainnet. Node deployment process reference [node manual](node-overview.md)
+
+3. DSM (Decentralized Storage Market) - coming soon
+
+Crust’s DSM (Decentralized Storage Market) enables users to place storage orders on the chain, to get their data stored and distributed on Crust Network. With the backup of the entire network, users can retrieve their data from everywhere at any time. The DSM User Guide will be released soon.
+
+4. GPoS - coming soon
+
+Crust’s GPoS (Guaranteed Proof of Stake) derives from PoS consensus. It requires nodes to provide storage resources as a guarantee to obtain staking quota and encourages users to stake their tokens to high-quality nodes via guarantee operation to obtain staking income. At this stage, GPoS rewards have not yet begun to be distributed.
 
 The progress of Crust mainnet launch can be viewed [here](https://medium.com/crustnetwork/big-announcement-crust-mainnet-launch-timeline-c2bd2dc0d490).
 
@@ -13,18 +30,18 @@ Crust's core functions include token staking, decentralized storage market DSM, 
 
 ## 1 Validators(Node)
 
-Validator is the maintainer of Crust Network, to be validator, you need:
+Validator is the maintainer of Crust Network, to be a validator, you need:
 
-1. Set up node, please refer [Node Overview](node-overview.md)
+1. Set up a node, please refer [Node Overview](node-overview.md)
 2. To be a validator, please refer [Validator Guidance](validatorGuidance.md)
 3. Learn the reward and slash details, please refer [Validator](validator.md)
 
 ## 2 Guarantor(Token Holder)
 
-Token holders can guarantee Validators(Node) to get reward, to be Guarantor, you need:
+Token holders can guarantee Validators(Node) to get rewards, to be Guarantor, you need:
 
-1. To be a guarantor, please refer [Guarantor Guidance](guarantor-guidance.md)
-2. Learn the reward and slash details, please refer [Guarantor](guarantor.md)
+1. To be a guarantor, please refer to [Guarantor Guidance](guarantor-guidance.md)
+2. Learn the reward and slash details, please refer to [Guarantor](guarantor.md)
 
 ## 3 Storage User
 
