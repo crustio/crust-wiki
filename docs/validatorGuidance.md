@@ -19,9 +19,14 @@ Refer to [Node Overview](node-overview.md) to setup your nodes.
 
 ## 3. Increase or Decrease the Amount of Self-staked Token
 
-You can change your self-staked token amount in [APPS](https://apps.crust.network). 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/bondmore.png)
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/unbond.png)
+### 3.1. Increase the Amount of Self-staked Token
+
+![validator](assets/gpos/staking.png)
+![validator](assets/gpos/bondmore.png)
+### 3.2. Decrease the Amount of Self-staked Token
+![validator](assets/gpos/staking.png)
+![validator](assets/gpos/unbond.png)
+
 
 ## 4. Set Guarantee Fee
 
@@ -30,6 +35,7 @@ The guarantee fee set by the validator refers to the **the percentage of total i
 
 > For example, if the validator obtains 900 CRU staking rewards and 100 CRU authoring reward (block generation reward) in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtains (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belongs to the validator.
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
-![change guarantee_fee1](assets/gpos/guarantee_fee1.jpg)
-![change guarantee_fee2](assets/gpos/guarantee_fee2.jpg)
+![change guarantee_fee1](assets/gpos/guranteefee.png)
+![change guarantee_fee1](assets/gpos/guaranteefee1.png)
+![change guarantee_fee2](assets/gpos/guaranteefee2.png)
+
