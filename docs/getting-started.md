@@ -9,13 +9,47 @@ Crust provides a decentralized storage network of Web3 ecosystem. It supports mu
 interfaces to application layer. Crust's technical stack is also capable of supporting a decentralized computing layer. It is designed to build a
 decentralized cloud ecosystem that values data privacy and ownership.
 
-## Join Crust
+## How to Use Crust
 
-The Crust mainnet is advancing steadily, and the CRU claim function is now open. The owner of CRU-ERC20 can claim CRU-ERC20 to Crust mainnet. Claims include [CRU Claims](claims.md) and [Locked CRU Claims](claims-locked-cru.md).
+In general, you can follow 3 simple steps to upload, store and distribute files:
 
-## Use Crust
+1. Add your file to IPFS network.
+2. Place corresponding storage order on Crust Chain.
+3. After the storage order status turns to be successful, the file can be then accessed via standard IPFS interface and gateway from anywhere.
 
-Comming soon
+<!--
+Please refer to the [code sample](build-developer-guidance.md) that explains how to execute above 3 steps via program. You can also visit [Crust Apps](storageUserGuide.md) to execute those steps via UI.
+-->
+
+## Best Scenarios of Crust
+
+Crust can be used in a wide range of scenarios, including:
+
+1. Serverless DApp/website hosting
+
+   Developers are able to deploy their own Dapps/websites based on Crust/IPFS Network. With this, developers are able to only focus on building Dapps/websites, no need for server management. Moreover, Crust Network incentivizes multiple nodes to store Dapp/website files and provide storage services, thus ensuring the high availability of Dapps/websites. [Crust Apps] is an example, it is hosted on Crust Network.
+
+2. General off-chain data storage
+
+   Some blockchain-based decentralized applications, such as NFT and decentralized social platforms, involve a large amount of user data, far beyond the on-chain storage capacity. Based on Crust/IPFS Network, developers can provide general off-chain data storage services for these applications.
+
+3. Accelerated content delivery
+
+   Developers are able to build P2P content delivery network (CDN) services with Crust/IPFS Network. Crust Network incentivizes the nodes to spontaneously distribute CDN data and play the role of CDN edge nodes to accelerate the data transmission for CDN users.
+
+4. Secured cloud storage
+   Developers are able to build Cloud storage applications with Crust/IPFS Network. Without maintaining storage clusters, developers only need to integrate the SDK of Crust/IPFS into applications to provide users with stable storage services.
+
+A series of `Crust Grants` will be introduced to accelerate the application development and network adoption.
+
+## Join and Use Crust Now
+
+You can refer to following links to join the Crust Network.
+
+- Node Provider - Refer to the [Node Guidance](node-overview.md) to run setup and run Crust Nodes.  
+- Token Holder - Refer to the [Guarantor Guidance](guarantor-guidance.md) to perform staking operations.
+- Storage User - Storage user guidance is comming soon.
+- Developers - Refer to the [Build](build-getting-started.md) pages for more information.
 
 ## How Crust Works
 
@@ -26,7 +60,6 @@ Crust works in 3 layers as follows.
 3. DSM (Decentralized Storage Market) - It enables users to place storage orders on the chain, to get their data stored and distributed on Crust Network.
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/arch.png)
-
 
 ### MPoW
 

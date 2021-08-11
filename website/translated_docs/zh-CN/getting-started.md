@@ -8,24 +8,57 @@ sidebar_label: Getting Started
 
 Crust提供了Web3⽣态系统的去中⼼化存储⽹络，⽀持包括IPFS在内的多种存储层协议，并对应⽤层提供接⼝。Crust的技术栈还能够⽀持去中⼼化计算层。Crust旨在构建⼀个重视数据隐私和所有权的分布式云⽣态系统。
 
-## 加入 Crust
+## 如何使用 Crust
 
-Crust主网正在稳步推进，目前已开放CRU认领功能。CRU-ERC20的拥有者可以把CRU-ERC20映射到Crust主网上。认领包括[CRU的认领](claims.md)和[锁定CRU的认领](claims-locked-cru.md)。
+您可以按照3个简单的步骤来上传，存储和分发文件：
 
-## 使用 Crust
+1. 将文件添加到IPFS网络。
+2. 在Crust链上下达相应的存储订单。
+3. 在存储订单状态变为成功之后，您可以通过标准IPFS接口和网关从任何地方访问该文件。
 
-即将到来
+<!--
+请参考[代码示例](build-developer-guidance.md)，其中说明了如何通过程序执行上述3个步骤。您也可以访问[Crust Apps](storageUserGuide.md)通过UI执行这些步骤。
+-->
+
+## Crust 的适用场景
+
+Crust Network 适用于多种场景，包括：
+
+1. 无服务器 DApp/网站托管
+开发人员能够基于Crust/IPFS网络部署自己的DApp/网站。这样，开发人员仅需专注于构建DApp/网站，而无需管理服务器。此外，Crust Network鼓励多个节点存储DApp/网站文件并提供存储服务，从而确保DApp/网站的高可用性。Crust Apps是一个示例，它托管在Crust Network上。
+
+2. 通用链下数据存储
+一些基于区块链的去中心化应用程序（例如NFT和去中心化社交平台）涉及大量数据，远远超出了链上存储能力。基于Crust/IPFS网络，开发人员可以为这些应用程序提供通用的链下数据存储服务。
+
+3. 加速内容分发
+开发人员能够使用Crust/IPFS网络构建P2P内容分发网络（CDN）服务。 Crust Network激励节点自发分发CDN数据，并扮演CDN边缘节点的角色，以加快CDN用户的数据传输速度。
+
+4. 安全的云存储
+开发人员能够使用Crust/IPFS网络构建云存储应用程序。在不维护存储集群的情况下，开发人员只需要将Crust/IPFS的SDK集成到应用程序中即可为用户提供稳定的存储服务。
+
+我们将引入一系列的[Crust Grants](https://github.com/crustio/Crust-Grants-Program/tree/main/applications)，以加速应用程序落地和生态构建。
+
+## 立即加入并开始使用 Crust
+
+您可以参考以下链接来加入或者使用Crust网络。
+
+- 节点提供者 - 请参考[节点指南](node-overview.md)以安装配置和运行Crust节点。
+- 通证持有者 - 请参考[担保人指南](guarantor-guidance.md)进行Staking及担保等相关操作。
+- 存储用户 - **存储用户指南**即将发布，敬请关注。
+- 开发人员 - 有关更多信息，请参见[构建](build-getting-started.md)页面。
 
 ## Crust 如何工作
 
 Crust包含以下几层工作机制：
+
 1. MPoW（有意义工作证明）- 低信任/零信任存储证明层，用于检查和证明矿工的存储工作。
 2. GPoS（担保权益证明）- PoS衍生共识，GPoS要求节点提供存储证明以获取权益配额。
 3. DSM（去中心化存储市场）- DSM支持用户在链上下达存储订单，以将其数据存储和分发到 Crust Network。
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/arch.png)
+![arch](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/arch.png)
 
 ### MPoW
+
 MPoW是低信任存储证明层。 MPoW的总体功能是定期生成可信赖的存储工作报告并上传到链中。存储工作量报告包括特定节点上数据存储工作的增量信息。
 
 从技术上讲，当前MPoW的存储证明机制是基于TEE（可信执行环境）技术实现的。包含3个主要流程：存储流程，报告流程和验证流程。
@@ -46,10 +79,10 @@ GPoS还鼓励用户通过担保操作将其代币Staking到高质量的节点上
 
 下图描述了与GPoS相关的概念和过程。
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/gpos.png)
-
+![gpos](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/gpos.png)
 
 ### DSM
+
 DSM（去中心化存储市场）允许存储用户在链上下达存储订单，订单中指定的文件（IPFS CID列表）将由Crust节点进行存储。DSM还负责激励存储节点提供检索服务。
 
 DSM包含3种主要机制：
