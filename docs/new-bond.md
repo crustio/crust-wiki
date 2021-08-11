@@ -4,7 +4,7 @@ title: New Bond
 sidebar_label: New Bond
 ---
 
-Crust account, featuring a standard dual account (Controller/Stash) model, needs to go through a set of account bonding procedures. In the dual-account model, the Controller account is used as a hot wallet, and only a small amount of CRU is required as a transaction fee to support most operations, reducing possible risks. This section will illustrate how to create accounts and bond account relationships through actions in Crust APPs.
+Crust account, featuring a standard dual account (Controller/Stash) model, needs to go through a set of account bonding procedures. In the dual account model, by binding the specified amount to the controller account, the risk is isolated, making the stash account that manages all assets relatively safe. This section will illustrate how to create accounts and bond account relationships through actions in Crust APPs.
 
 ## Create a stash account
 
