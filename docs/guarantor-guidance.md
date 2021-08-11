@@ -10,14 +10,14 @@ For the introduction of the role of the guarantor, please refer to [guarantor](g
 Makesure you have finished [account setup steps](new-bond.md), and bonded your stash and controller account.
 
 ## Explorer Validators
-* Click “Staking” in the top and click “Staking overview”
+* Click “Staking” in the top and click “Overview” or "Waiting"
 * Choose a validator and click it's icon in the validator list to copy the validator's Accound ID.
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/copyaddr.png)
+![gua](assets/gpos/copyaddress.png)
 
 > If a validator obtains 1000 CRU staking reward in one era, and if his own self-staking is 90% of the total staking amount of him (the other 10% is the guarantor's staking). If the guarantee fee set by the validator is 95%, the final guarantor will receive a total of 1000 * 10% * 95% = 95 CRUs, and the validator will get 905 CRUs.
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guaranteefee_ch.png)
+![change guaranteefee1](assets/gpos/guranteefee.png)
 
 ## Guarantee
 ### Step 1, go to guarantee page
@@ -25,8 +25,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 * Go to“Staking” —— “Account actions”
 * Confirm your stash and controller account, follow the process shown below, click "Guarantee"
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/guarantee.png)
-
+![gua](assets/gpos/gurantee1.png)
 
 ### Step 2, input guarantee information
 
@@ -36,9 +35,9 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 * Enter the amount you want to guarantee
 * Click "Guarantee"
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/guarantee2.png)
+![gua](assets/gpos/gurantee2.png)
 
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/amount.png)
+![gua](assets/gpos/gurantee3.png)
 
 
 ### Step 3, wait for the guarantee to take effect
@@ -47,9 +46,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 * Find the validator you guaranteed, follow the steps shown in below picture
 * There are two values under the account you just guaranteed, the value below is "effective stake", it will take effect after waiting for an era
 
-  
-
-![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/staked.png)
+![gua](assets/gpos/effect.png)  
 
 ## Effective Stake
 
@@ -66,14 +63,13 @@ If you want to reduce the guarantee of a validator, follow these steps.
 
 ### Step1
 Staking- Account action- click the validator’s icon to copy it’s address
-![guarantee](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/guarantee.png)
+![gua](assets/gpos/copy.png)
 
 ### Step2
 Click the button- cut guarantee
-![cut1](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/cut_guarantee1.png)
+![gua](assets/gpos/cut.png)
 
 ### Step3
 Paste the validator’s address and pick it in the candidate accounts and input the amount you want to cut.
-![cut2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/cut_guarantee2.png)
-
+![gua](assets/gpos/cut1.png)
 

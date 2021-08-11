@@ -8,6 +8,7 @@
       "claimsLockedCRU",
       "crustWallet",
       "glossary",
+      "parameters",
       "contributing"
     ],
     "Learn": [
@@ -33,8 +34,14 @@
     ],
     "Node": [
       "nodeOverview",
-      "nodeQos",
-      "nodeBenefits"
+      "nodeHardwareSpec",
+      "ownerNode",
+      "memberNode",
+      "isolationNode",
+      "validatorGuidance",
+      "guarantorGuidance",
+      "nodeBenefits",
+      "nodeQos"
     ],
     "Storage": [
       "storageOverview"

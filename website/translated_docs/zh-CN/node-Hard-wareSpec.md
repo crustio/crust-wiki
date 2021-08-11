@@ -8,7 +8,7 @@ sidebar_label: Node Hardware Spec
 
 * 在开始之前请检测您的 CPU 是否支持 SGX。 使用以下方法检测
   * 脚本检测：https://github.com/crustio/crust/wiki/Check-TEE-supportive
-  * 官网查询：https://shimo.im/docs/yRcDKGYv8Rxwp6GV/
+  * 官网查询：https://www.intel.com/content/www/us/en/search.html
 * 部分主板仅支持SGX的software enabled 方式，参考这个链接https://github.com/intel/sgx-software-enable
 * 部分主板的BIOS没有SGX开启选项，请在购买或配置前确定
 
