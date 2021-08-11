@@ -6,7 +6,6 @@ sidebar_label: Node Overview
 
 Comming soon
 
-<!--
 This tutorial introduces how to build and organize nodes so that you can successfully join Crust preview network - Maxwell and get corresponding rewards from the network. This tutorial requires a certain Linux foundation, please follow the tutorial steps and do not skip any steps. If you have any questions, please contact the [Crust official telegram](https://t.me/CrustNetwork). If you have multiple devices, it is recommended to refer to section 2, If you only have one device, it is recommended to refer to section 3.
 
 ## 1 Multiple Nodes (Recommended)
@@ -51,4 +50,3 @@ Refer to [member node setup](memberNode.md)
 The Isolation node uses only one device to run functions of block generation, storage and file transfer. It can be simply understood as the combination of a owner and a member. From a technical perspective, a isolation node is easier to setup,  but because a single device has a storage limit (500TB) in Crust Network, there is no advantage in the competition of block generation. 
 
 Refer to [isolation node setup](isolationNode.md) to build an Isolation node.
--->
