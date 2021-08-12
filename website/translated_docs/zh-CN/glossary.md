@@ -10,7 +10,7 @@ sidebar_label: Glossary
 
 **Crust Maxwell** - Crust预览网，在主网启动前进行全功能的测试和模拟。拥有跟主网一样的功能，参数可能略有不同。[参考阅读](https://wiki-maxwell.crust.network/docs/zh-CN/previewNetworkMaxwell)。
 
-**Crust Shadow** - Crust Shadow是一个Kusama版本的Crust网络，一个早起未经审核发布的可用代码，并拥有真正的经济价值。
+**Crust Shadow** - Crust Shadow是一个Kusama版本的Crust网络，一个早期未经审核发布的可用代码，并拥有真正的经济价值。
 
 **Crust Rocky** - Crust内部测试用的开发者测试网。
 

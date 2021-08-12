@@ -18,7 +18,7 @@ The rewards of validators are composed of two parts: **authoring rewards and sta
 
 **In Crust mainnet, each Era (6 hours) generates authoring and staking rewards**, more details about the reward decreasing refer to [economic whitepaper](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).
 
-#### Authoring rewards
+#### 1.1 Authoring rewards
 
 Authoring rewards are the incomes obtained by validators participating in block generation and transaction packaging in Crust Network. The incomes are related to staking points. The Babe algorithm randomly selects a validator for each block to produce the block. Normally, each validator's block production score is roughly average. If the validator does not have a block production score, please check the chain operation of the Owner machine. **No block production score means no block production reward**.
 
@@ -36,7 +36,7 @@ A new round of validator election will conducted in each era, and the next valid
 Electing from high to low according to effective stake 
 ```
 
-#### Staking rewards
+#### 1.2 Staking rewards
 
 Staking rewards refer to the validators or candidates who hold storage resources obtaining incomes through staking CRUs. The staking income is related to the following factors:
 
@@ -73,6 +73,15 @@ If node A staked 1000 CRUs itself, and was guaranteed with 200 CRUs. The staking
 1. Validator's effective staking amount = MIN（1000， 1200）*（1000 / 1200） = 1000 * （1000 / 1200） = 833.3 CRU
 2. Guarantor's effective staking amount = MIN（1000，1200）* （200 / 1200）= 1000 * （200 / 1200） = 166.66 CRU
 3. Validator's rewards = 600 * （833.3 / 2000） + 600 * （166.66 / 2000） * 5% = 252.49
+
+#### 1.3 Withdraw rewards
+
+The validator’s **authoring rewards and staking rewards cannot be directly received and transferred**, but will be changed to the [Binding](new-bond.md) state to increase the staking amount of the validator itself. To make the rewarding tokens transferable, you need to do the following steps:
+
+1. you need to do the [unbond](https://wiki.crust.network/docs/zh-CN/validatorGuidance#32-%E5%87%8F%E5%B0%91%E8%B4%A8% E6%8A%BC%E9%87%91%E9%A2%9D) for the amount that you want to withdraw.
+2. After 28 days, you can withdraw your reward by click the "withdraw" icon as the following picture.
+
+![withdraw](assets/mining/withdraw.png)
 
 ### 2. Slash
 

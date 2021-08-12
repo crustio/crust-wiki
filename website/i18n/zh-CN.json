@@ -50,8 +50,8 @@
         "sidebar_label": "crust.js"
       },
       "buildNode": {
-        "title": "Crust Node",
-        "sidebar_label": "Crust Node"
+        "title": "Crust 节点",
+        "sidebar_label": "Crust 节点"
       },
       "buildSmanager": {
         "title": "Crust Storage Manager",

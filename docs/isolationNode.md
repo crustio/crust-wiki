@@ -92,9 +92,13 @@ Follow the prompts to enter a node mode, and press Enter to end:
 
 ### 3.4 Config Member Account
 
-Enter the backup of **the Member account** as prompted and press Enter to end:
+Enter the contents of the backup file into the terminal, you can follow this: copy the contents of the backup file generated when the account is created, copy it to the terminal, and enter. The backup file content setup result is shown below:
 
 ![pic](assets/mining/member_backup_config.png)
+
+>Note 1: The account of Crust mainnet starting with the letter 'c'. For example, the value of "address" in the above picture is is `cTJFUK...` which is a Crust mainnet account.
+
+>Note 2: This backup file and its content is the credential of your account, it is very important, please do not disclose or lose it.
 
 Enter the password for the Member backup file as prompted and press Enter to end:
 
@@ -212,7 +216,7 @@ After the first work report,select 'Benefit', click on 'Join group',select the M
 
 **The work report in mainnet requires handling fees.** Under normal circumstances, each Member will perform 24 workload reporting transactions per day, which brings a lot of handling fees. For this reason, the Crust network provides a Benefit module that exempts workload reporting fees. Group owners can reduce or waive member handling fees by locking CRUs. **Each Member** needs to lock 18CRU for fee reduction. However, considering the unstable reporting of workload, it is recommended to lock 24CRU~30CRU to ensure that the fee is completely free.
 
-Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before, and click 'Increase lookup', as follows:
+Enter [Crust APPS](https://apps.crust.network), select 'Account', select the 'Benefit' module, find the group created before, and click 'Increase lockup', as follows:
 
 ![pic](assets/mining/benefit_lockup1.png)
 
