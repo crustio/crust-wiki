@@ -18,6 +18,8 @@ Owner节点上负责运行链模块并用于生成区块，我们强烈推荐出
 
 ### 2.1 构建账号
 
+> 注意：Crust主网账号一定是以'c'开头
+
 Owner节点负责参与出块竞争，需要生成并绑定Controller&Stash账户组，具体参考[这里](new-bond.md)。要求：
 
 * 保证账户唯一性，不是是其他的Owner，Member和Isolation账户
@@ -38,7 +40,7 @@ Owner节点负责参与出块竞争，需要生成并绑定Controller&Stash账�
 
 **主网的工作量上报需要手续费。**一般情况下，每个Member每天会进行24次工作量上报交易，这带来的大量的手续费开销。为此Crust网络提供了免除工作量上报费用的Benefit模块，Group owner可以通过锁定CRU的方式，减免Member的手续费。**每个Member**需要锁定18CRU来进行手续费减免，但考虑到存在工作量上报不稳定的情况，建议锁定24CRU~30CRU来确保手续费的完全免费。举个例子，假设你的Group准备有6个Member准备加入，那就锁定30*6=180CRU。
 
-进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，点击Increase lookup，如下：
+进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，点击Increase lockup，如下：
 
 ![图片](assets/mining/benefit_lockup1.png)
 
@@ -153,7 +155,7 @@ sudo crust tools rotate-keys
 
 ### 5.3 成为验证人/候选人
 
-> 成为验证人需要肩负维护网络的责任，大规模的掉线会导致一定程度的处罚（最高约质有效质押量的7%）
+> 成为验证人需要肩负维护网络的责任，大规模的掉线会导致一定程度的处罚（最高约为有效质押量的7%）
 
 进入[Crust APPs](https://apps.crust.network)，执行 “Be Validator” 操作。
 

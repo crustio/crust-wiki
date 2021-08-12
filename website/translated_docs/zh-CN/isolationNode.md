@@ -18,6 +18,8 @@ Isolation节点形态下，你唯一的节点上需要运行链模块以及存�
 
 ### 2.1 构建账户
 
+> 注意：Crust主网账号一定是以'c'开头
+
 节点负责参与出块竞争，**要生成并绑定Controller&Stash账户组和创建一个Member账户，共3个账户**，具体参考[这里](new-bond.md)进行账户组的创建和[这里](crust-account.md)创建Member账户。这3个账户需要满足以下要求:
 
 * 需要保证Controller&Stash留有少量的未被Lock的CRU用于发送各类交易（约1CRU）
@@ -57,7 +59,7 @@ cd crust-node-1.0.0
 
 安装前的注意点：
 
-* 程序将会被安装在/opt/crust路径下，请确保该路径有大于500G的固态硬盘空间
+* 程序将会被安装在/opt/crust路径下，请确保该路径有大于2T的固态硬盘空间
 * 如果之前运行过 Crust 的其他测试链，请把程序关闭并将数据清除后再执行安装，具体请参考6.2小节
 * 安装过程中涉及到下载相关依赖和 docker images 的操作，会比较耗时，并有可能因为网络的问题失败，如发生，请重复执行该操作直到安装完成
 
@@ -89,9 +91,13 @@ sudo crust config set
 
 ### 3.4 配置Member账户
 
-按提示输入backup内容，具体为**Member账户**创建时备份的文件内容，回车键结束：
+将backup文件内容输入到终端，具体操作为：拷贝账户创建时备份的文件内容，复制到终端，输入回车键。backup 文件内容输入效果如下图所示：
 
 ![图片](assets/mining/member_backup_config.png)
+
+> 注意 1：Crust主网账号一定是以'c'开头，比如上图中"address"值就是一个Crust主网账号。
+
+> 注意 2：这个备份文件以及其内容是您账户的凭证，非常重要，请勿泄露或遗失。
 
 按提示输入password内容，回车键结束：
 
@@ -201,7 +207,7 @@ Member账户需要添加到Group的白名单后才能加入Group中。进入[Cru
 
 **主网的工作量上报需要手续费。**一般情况下，每个Member每天会进行24次工作量上报交易，这带来的大量的手续费开销。为此Crust网络提供了免除工作量上报费用的Benefit模块，Group owner可以通过锁定CRU的方式，减免Member的手续费。**每个Member**需要锁定18CRU来进行手续费减免，但考虑到存在工作量上报不稳定的情况，建议锁定24CRU~30CRU来确保手续费的完全免费。
 
-进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组，点击Increase lookup，如下：
+进入[Crust APPS](https://apps.crust.network)中，选择Account，选择Benefit模块，找到之前创建的组，点击Increase lockup，如下：
 
 ![图片](assets/mining/benefit_lockup1.png)
 

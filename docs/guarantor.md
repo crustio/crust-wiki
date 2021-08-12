@@ -14,6 +14,8 @@ A guarantor is the account that provides guarantee for one or multiple validator
 
 ### 1. Rewards
 
+#### 1. Calculate rewards
+
 The guarantor obtains rewards from staking, which is influenced by the following factors:
 
 - Stake Limit: The Stake Limit determines the upper limit of the effective stake of CRUs by the validator, which is directly related to the amount of storage provided by the validator. In Crust Network, a 1TB SRD([check the meaning of SRD from glossary](glossary.md)) file corresponds to an upper limit of 1CRU, and a meaningful file corresponds to 1-10 times the upper limit of SRD, with specific ‘times’ related to the number of duplicates of meaningful files. For details, please refer to [DSM Guidance](DSM.md).
@@ -44,12 +46,23 @@ If node A staked 1000 CRUs itself, for which you guaranteed 200 CRUs. The stake 
 1. Effective staking amount = minimum value (1000, 1200) * (200 / 1200) = 1000 * (200 / 1200) = 166.66 CRU
 2. Staking income = 600 * (166.66 / 2000) * 95% = 47.498 CRU
 
+#### 1.2 Withdraw rewards
+
+The **guarantee rewards cannot be directly received and transferred**, but will be changed to the [Binding](new-bond.md) state(this part of bonding funds will not be guaranteed to anyone by default). To make use of these rewards, you can:
+
+1. follow the steps of [increase the guarantee amount](guarantor-guidance.md) to get more rewards.
+2. follow the following process to withdraw your rewards to make them transferable.
+
+    a. you need to do the [unbond](https://wiki.crust.network/docs/en/validatorGuidance#32-decrease-the-amount-of-self-staked-token) for the amount that you want to withdraw.
+    
+    b. After 28 days, you can withdraw your reward by click the "withdraw" icon as the following picture highlighted.
+
+![withdraw](assets/mining/withdraw.png)
+
 ### 2. Slash
 
 The guarantor and the validator guaranteed by him have the same slash ratio. For details of the slash, please refer to slash specifications in [Validator](validator.md).
 
 ## How to Guarantee
-<!--
+
 Please refer to [Guarantee Guidance](guarantor-guidance.md) for details.
--->
-Coming soon.

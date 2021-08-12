@@ -30,7 +30,8 @@
       "storageMerchant"
     ],
     "Build": [
-      "buildGettingStarted"
+      "buildGettingStarted",
+      "buildNode"
     ],
     "Node": [
       "nodeOverview",
