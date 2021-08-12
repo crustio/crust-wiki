@@ -71,3 +71,10 @@ Click "Save", the account will be backed up on your device by default. Please ta
 
 ![](assets/account/3.2.1.3.png)
 
+## III.Others
+
+> The following wallet extensions support Edge, Google, Firrefox, Brave or other browsers
+
+[polkadot.js](https://polkadot.js.org/extension/)
+[Math Wallet](https://mathwallet.org/en-us/#extension)
+

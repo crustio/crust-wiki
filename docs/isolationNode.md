@@ -15,6 +15,8 @@ For an isolation node, you need to run both chain module and storage module on y
 
 ## 2. Ready to Deploy
 
+> Note: The account of Crust mainnet starting with the letter 'c'.
+
 ### 2.1 Create your Accounts
 The node is responsible for participating in the block production competition, ** the Controller&Stash account group and a Member account are needed, 3 accounts in total** Please refer to [here](new-bond.md) to create your Stash and Controller group and [here](crust-account.md) to create a Member account. These 3 accounts need to meet the following requirements:
 
@@ -59,7 +61,7 @@ cd crust-node-1.0.0
 
 Notices:
 
-* The program will be installed under /opt/crust, please make sure this path is mounted with more than 500G of SSD space;
+* The program will be installed under /opt/crust, please make sure this path is mounted with more than 2T of SSD space;
 * If you have run a previous Crust testnet program on this device, you need to close the previous Crust Node and clear the data before this installation. For details, please refer to section 6.2;
 
 * The installation process will involve the download of dependencies and docker images, which is time-consuming. Meantime, it may fail due to network problems. If it happens, please repeat the process until the installation is all complete.
@@ -96,9 +98,9 @@ Enter the contents of the backup file into the terminal, you can follow this: co
 
 ![pic](assets/mining/member_backup_config.png)
 
->Note 1: The account of Crust mainnet starting with the letter 'c'. For example, the value of "address" in the above picture is is `cTJFUK...` which is a Crust mainnet account.
+> Note 1: The account of Crust mainnet starting with the letter 'c'. For example, the value of "address" in the above picture is is `cTJFUK...` which is a Crust mainnet account.
 
->Note 2: This backup file and its content is the credential of your account, it is very important, please do not disclose or lose it.
+> Note 2: This backup file and its content is the credential of your account, it is very important, please do not disclose or lose it.
 
 Enter the password for the Member backup file as prompted and press Enter to end:
 

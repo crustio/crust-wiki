@@ -17,7 +17,7 @@ Storage order fee contains 4 parts – dynamic basic fee, dynamic byte fee calcu
 ### 2. Storage Order Mechanism
 Storage Order works in a pooled way. Once a user places a storage order:
 
-   * Refer to EIP1559, the dynamic basic fee will currently enter the tax pot, and then the democratic module will vote on the use of the revenue from the tax pot.
+   * The dynamic basic fee will currently enter the market revenue pot, and then the democratic module will vote on the use of the revenue from the market revenue pot.
    * Part of the dynamic file byte fee and dynamic key count fee will enter the file reward pot, and the remaining part will join the entire network staking reward pot.
    * Tips are voluntarily provided by users to storage merchants, and all fees will enter the file reward pot.
    * Any node that submits corresponding storage proof will be added to the payout queue of the file payment queue, the top four nodes in the queue will get the reward of this file's reward pool.

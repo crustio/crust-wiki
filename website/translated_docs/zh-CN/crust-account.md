@@ -73,4 +73,10 @@ Crust账户中存储的资产种类可以参考[crust tokens](crust-tokens.md)�
 
 点击“保存”备份账户信息，**请切记保管好备份文件**，格式如下“cT1K1QvCcR4xxxxxxVcS8AVxxxxLuSxNBiEt.json”
 
-![](assets/account/3.1.3.png) 
+![](assets/account/3.1.3.png)
+
+## 三、其他
+> 如下钱包插件支持Edge，Google，Firefox，Brave等浏览器
+
+[polkadot.js钱包插件](https://polkadot.js.org/extension/)
+[麦子钱包插件](https://mathwallet.org/zh-cn/#extension) 

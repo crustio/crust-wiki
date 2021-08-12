@@ -18,6 +18,8 @@ Owner节点上负责运行链模块并用于生成区块，我们强烈推荐出
 
 ### 2.1 构建账号
 
+> 注意：Crust主网账号一定是以'c'开头
+
 Owner节点负责参与出块竞争，需要生成并绑定Controller&Stash账户组，具体参考[这里](new-bond.md)。要求：
 
 * 保证账户唯一性，不是是其他的Owner，Member和Isolation账户

@@ -18,6 +18,8 @@ Member节点，负责运行链模块（不参与出块）,存储模块, IPFS等,
 
 ### 2.1 构建账户
 
+> 注意：Crust主网账号一定是以'c'开头
+
 参考这个[链接](crust-account.md)去构建一个Member的账户（单账户即可），Member节点账户需要满足以下三个要求:
 
 * 确保Member账户拥有2~5个CRU作为交易费（不能被锁住），用于work report的发送，同时建议隔一段时间检查下剩余情况
@@ -86,9 +88,9 @@ sudo crust config set
 
 ![图片](assets/mining/member_backup_config.png)
 
->注意 1：Crust主网账号一定是以'C'开头，比如上图中"address"值就是一个Crust主网账号。
+> 注意 1：Crust主网账号一定是以'c'开头，比如上图中"address"值就是一个Crust主网账号。
 
->注意 2：这个备份文件以及其内容是您账户的凭证，非常重要，请勿泄露或遗失。
+> 注意 2：这个备份文件以及其内容是您账户的凭证，非常重要，请勿泄露或遗失。
 
 按提示输入password内容，具体为账户的密码，回车键结束：
 
