@@ -53,7 +53,7 @@ The **guarantee rewards cannot be directly received and transferred**, but will 
 1. follow the steps of [increase the guarantee amount](guarantor-guidance.md) to get more rewards.
 2. follow the following process to withdraw your rewards to make them transferable.
 
-    a. you need to do the [unbond](https://wiki.crust.network/docs/zh-CN/validatorGuidance#32-%E5%87%8F%E5%B0%91%E8%B4%A8% E6%8A%BC%E9%87%91%E9%A2%9D) for the amount that you want to withdraw.
+    a. you need to do the [unbond](https://wiki.crust.network/docs/en/validatorGuidance#32-decrease-the-amount-of-self-staked-token) for the amount that you want to withdraw.
     
     b. After 28 days, you can withdraw your reward by click the "withdraw" icon as the following picture highlighted.
 
@@ -64,7 +64,5 @@ The **guarantee rewards cannot be directly received and transferred**, but will 
 The guarantor and the validator guaranteed by him have the same slash ratio. For details of the slash, please refer to slash specifications in [Validator](validator.md).
 
 ## How to Guarantee
-<!--
+
 Please refer to [Guarantee Guidance](guarantor-guidance.md) for details.
--->
-Coming soon.
