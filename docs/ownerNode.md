@@ -16,6 +16,8 @@ On Owner nodes run chain modules used for generating blocks, which is  similar t
 
 ## 2. Ready to Deploy
 
+> Note: The account of Crust mainnet starting with the letter 'c'.
+
 ### 2.1 Create your Accounts
 
 The Owner node participates in the block generation competition. It needs to create accounts and be bonded to the Controller&Stash account group. For details, please refer to [this page](new-bond.md). 
