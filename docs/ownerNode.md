@@ -101,7 +101,15 @@ Follow the prompts to enter a node mode 'owner', and press Enter to end:
 
 ![pic](assets/mining/owner_mode.png)
 
-### 3.4 Review the Configuration (Optional)
+### 3.4 Generate Config
+
+Execute the following command to generate it
+
+```plain
+sudo crust config generate
+```
+
+### 3.5 Review the Configuration (Optional)
 
 Execute following command to view the configuration file:
 

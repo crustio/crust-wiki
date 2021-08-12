@@ -97,7 +97,14 @@ sudo crust config set
 
 ![图片](assets/mining/owner_mode.png)
 
-### 3.4 查看配置情况（可选）
+### 3.4 生成配置文件
+执行以下命令生成配置文件
+
+```plain
+sudo crust config generate
+```
+
+### 3.5 查看配置情况（可选）
 
 执行以下命令查看配置文件
 
