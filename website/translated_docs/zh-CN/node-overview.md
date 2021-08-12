@@ -4,7 +4,7 @@ title: Node Overview
 sidebar_label: Node Overview
 ---
 
-在本文中，我们将从介绍如何组织和搭建节点，让你成功加入 Crust 网络，并从网络中获得相应的收益。本教程需要一定的 Linux 基础，请一定按照教程步骤，不要跳过任何一步。如有疑惑请添加Crust官方微信：crust_kele。
+在本文中，我们将从介绍如何组织和搭建节点，让你成功加入 Crust 网络，并从网络中获得相应的收益。本教程需要一定的 Linux 基础，请一定按照教程步骤，不要跳过任何一步。如有疑惑请添加Crust官方微信：crust_cola。
 
 ## 1 组织多节点（推荐）
 ### 1.1 Group

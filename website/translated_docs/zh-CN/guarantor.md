@@ -51,7 +51,11 @@ GPoS奖励机制中，某个担保人获取的收益计算如下：
 1. 用绑定的金额继续[担保给验证人](guarantor-guidance.md)，从而获得更多奖励；
 2. 您也可以提现您的奖励，变成“可转账”的状态。您需要执行如下操作：
 
+<<<<<<< HEAD
     a. 对您绑定的资金进行[减少绑定操作](https://wiki.crust.network/docs/zh-CN/validatorGuidance#32-%E5%87%8F%E5%B0%91%E8%B4%A8% E6%8A%BC%E9%87%91%E9%A2%9D)，减绑的数额为您想要提现的数额；
+=======
+    a. 对您绑定的资金进行[减少绑定操作](https://wiki.crust.network/docs/zh-CN/validatorGuidance#32-%E5%87%8F%E5%B0%91%E8%B4%A8%E6%8A%BC%E9%87%91%E9%A2%9D)，减绑的数额为您想要提现的数额；
+>>>>>>> e9f17a78e150eb0cdc96d1806fb2e57280255b12
     
     b. 等待28天锁定期后，您可以点击下图的“锁型”按钮，提取奖励；
 

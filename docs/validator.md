@@ -78,7 +78,7 @@ If node A staked 1000 CRUs itself, and was guaranteed with 200 CRUs. The staking
 
 The validator’s **authoring rewards and staking rewards cannot be directly received and transferred**, but will be changed to the [Binding](new-bond.md) state to increase the staking amount of the validator itself. To make the rewarding tokens transferable, you need to do the following steps:
 
-1. you need to do the [unbond](https://wiki.crust.network/docs/zh-CN/validatorGuidance#32-%E5%87%8F%E5%B0%91%E8%B4%A8% E6%8A%BC%E9%87%91%E9%A2%9D) for the amount that you want to withdraw.
+1. you need to do the [unbond](https://wiki.crust.network/docs/en/validatorGuidance#32-decrease-the-amount-of-self-staked-token) for the amount that you want to withdraw.
 2. After 28 days, you can withdraw your reward by click the "withdraw" icon as the following picture.
 
 ![withdraw](assets/mining/withdraw.png)
@@ -111,7 +111,5 @@ where **k is the number of offline validators in one era and n is the overall nu
 The slash will not take place instantly, rather, a delayed deduction comes after 108 Eras (27 days). A slash that does not actually occur can be cancelled (applicable through the Demoncracy).
 
 ## To become a validator
-<!--
+
 To become a validator of Crust Network requires you to have a certain amount of storage resources, a high-quality network, as well as configured nodes ready. For details, please refer to the description of validators (nodes) in [Validator Guidance](validatorGuidance.md).
--->
-Coming soon
