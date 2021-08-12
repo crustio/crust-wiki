@@ -138,8 +138,8 @@
         "sidebar_label": "担保人"
       },
       "identity": {
-        "title": "Identity",
-        "sidebar_label": "Identity"
+        "title": "链上身份",
+        "sidebar_label": "链上身份"
       },
       "isolationNode": {
         "title": "Isolation 节点",

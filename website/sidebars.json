@@ -27,7 +27,8 @@
         ]
       },
       "DSM",
-      "storageMerchant"
+      "storageMerchant",
+      "identity"
     ],
     "Build": [
       "buildGettingStarted",
