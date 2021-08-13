@@ -30,7 +30,7 @@ The authoring rewards for each validator in each Era are calculated as:
 authoring_rewards = total_authoring_rewards * point_ratio (individual_points / total_points)
 ```
 
-A new round of validator election will conducted in each era, and the next validator of the era will be selected from all candidates and validators. The rule for the election is:
+A new round of validator elections will be conducted in each era, and the next validator of the era will be selected from all candidates and validators. The rule for the election is:
 
 ```shell
 Electing from high to low according to effective stake 
@@ -44,7 +44,7 @@ Staking rewards refer to the validators or candidates who hold storage resources
 - Effective Stake: The Effective Stake is **the amount of staking that actually generates incomes**, which is related to the stake limit of the validator that is guaranteed. An example will be provided later.
 - Guarantee fee: Guarantee fee is the ratio of the share to guarantors. The larger the value, the higher the guarantor’s revenue share. However, **A higher guarantee fee does not mean higher guarantee income**. The guarantee income of any guarantor needs to consider the effective stake and his own staking amount.
 
-> When a Validator or Candidator adjusts its own guarantee fee, the guarantee fee of the first Era after the adjustment will be set to 100% compulsively, which means that all the income of the node except for its own effective stake will be distributed to the guarantor. After an Era, the guarantee fee is restored to the value set by the Validator/Candidator.
+> When a Validator or Candidate adjusts its own guarantee fee, the guarantee fee of the first Era after the adjustment will be set to 100% compulsively, which means that all the income of the node except for its own effective stake will be distributed to the guarantor. After an Era, the guarantee fee is restored to the value set by the Validator/Candidate.
 
 > For example, if the validator obtains 900 CRU staking rewards and 100 CRU block generation reward in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtains (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belongs to the validator.
 
@@ -85,11 +85,11 @@ The validator’s **authoring rewards and staking rewards cannot be directly rec
 
 ### 2. Slash
 
-Only validators (block generators) and the nodes that actually package blocks and transactions will got slashing. It should be noted that:
+Only validators (block generators) and the nodes that actually package blocks and transactions will get slashing. It should be noted that:
 
 1. Conditions for slash
 
-- At the end of each Session (1 hours), an examination will be performed to detect whether validators are offline. Once validators are found to be offline, the slash mechanism will be triggered to calculate the slashing amount;
+- At the end of each Session (1 hour), an examination will be performed to detect whether validators are offline. Once validators are found to be offline, the slash mechanism will be triggered to calculate the slashing amount;
 - Each time a block is generated, the packager (block author) of the block will be checked on double authoring. If it is detected that the packager attempted to generate two different blocks out of the same block height, a slash will be imposed on him.
 
 2. Consequence of slash
@@ -108,7 +108,7 @@ where **k is the number of offline validators in one era and n is the overall nu
 
 4. Deduction time point for slash
 
-The slash will not take place instantly, rather, a delayed deduction comes after 108 Eras (27 days). A slash that does not actually occur can be cancelled (applicable through the Demoncracy).
+The slash will not take place instantly, rather, a delayed deduction comes after 108 Eras (27 days). A slash that does not actually occur can be canceled (applicable through the Democracy).
 
 ## To become a validator
 

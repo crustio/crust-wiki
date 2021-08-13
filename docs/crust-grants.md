@@ -4,7 +4,7 @@ title: Crust Grants
 sidebar_label: Crust Grants
 ---
 
-Crust Grants Program, launched by the Decentralized Cloud Foundation (DCF), rewards projects that add value to the Web 3.0 decentralized cloud storage ecosystem. Grants divides decentralized cloud storage into technology stacks at six layers, including chain protocol layer, file systems protocol layer, node strategies layer, development tools and infrastructure layer, blockchain-based applications layer and user-based applications layer, incentivizing projects in the decentralized cloud storage ecosystem at full strength.
+Crust Grants Program, launched by the Decentralized Cloud Foundation (DCF), rewards projects that add value to the Web 3.0 decentralized cloud storage ecosystem. Crust Grants Program divides decentralized cloud storage into technology stacks at six layers, including chain protocol layer, file systems protocol layer, node strategies layer, development tools and infrastructure layer, blockchain-based applications layer and user-based applications layer, incentivizing projects in the decentralized cloud storage ecosystem at full strength.
 
 ## 1. Joining Crust Grants gives you access to
 
@@ -40,7 +40,7 @@ The on-chain Crust protocol stack is actually not bound by any consensus algorit
 
 Crust protocol currently uses IPFS as the underlying storage, and any improvement to the IPFS protocol or projects contributing to the IPFS ecosystem are covered by Grants incentives. The file system protocol layer, of course, is not limited to the IPFS ecosystem, and compatibility or active adaptation of different decentralized storage protocols is also within the scope of this layer. Here we list 3 possible paths:
 
-1. Changing the Bitswap mechanism to optimize the credit mechanism for data exchange, thus improving the efficiency of IPFS Retrival (See implementation in the Bitswap codebase:[https://github.com/ipfs/go-bitswap](https://github.com/ipfs/go-bitswap?fileGuid=8g6KfhSut6oyB6R1));
+1. Changing the Bitswap mechanism to optimize the credit mechanism for data exchange, thus improving the efficiency of IPFS Retrieval (See implementation in the Bitswap codebase:[https://github.com/ipfs/go-bitswap](https://github.com/ipfs/go-bitswap?fileGuid=8g6KfhSut6oyB6R1));
 
 2. Providing encrypted version of IPFS. Here is the go-ipfs-encryptor codebase that Crust team is currently implementing:[https://github.com/crustio/go-ipfs-encryptor](https://github.com/crustio/go-ipfs-encryptor?fileGuid=8g6KfhSut6oyB6R1);
 

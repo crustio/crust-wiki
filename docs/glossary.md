@@ -34,7 +34,7 @@ sidebar_label: Glossary
 
 **Era** - A unit of time. In Crust network, an Era is a 6-hour interval. Validators will be re-elected and the rewards of the previous Era will be settled in each new Era.
 
-**Session**- A unit of time. In Crust network, an session is an 1-hour process. In each session, the validator online verification will be conducted and the kick-out check mechanism will be triggered.
+**Session**- A unit of time. In Crust network, a session is a 1-hour process. In each session, the validator online verification will be conducted and the kick-out check mechanism will be triggered.
 
 **Slot** - A 6-second block generation cycle.
 
@@ -46,7 +46,7 @@ sidebar_label: Glossary
 
 **TEE** - Trusted Execution Environment is a sandbox environment running on a node. When an executable code is put into the TEE to run, no one can modify the execution of the code or snoop on the data protected by the TEE. [Reference reading](https://www.trustonic.com/technical-articles/what-is-a-trusted-execution-environment-tee/).
 
-**sWorker** - sWorker is a module that runs the MPoW protocol and related features on a Crust nodes. It can be considered as a honest storage monitor running on the node. Once running, sWorker will periodically report the storage status of the node to the chain.
+**sWorker** - sWorker is a module that runs the MPoW protocol and related features on a Crust node. It can be considered as an honest storage monitor running on the node. Once running, sWorker will periodically report the storage status of the node to the chain.
 
 **SRD** - Sealed Ramdon Data. sWorker uses SRD to fill the available space of nodes, so that the capacity of each node is verifiable.
 

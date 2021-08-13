@@ -8,7 +8,7 @@ sidebar_label: Guarantor
 
 The "Guarantee" is an important mechanism in the Crust Consensus [GPoS](GPoS.md), which enables nodes to obtain effective staking not only from their own staked tokens, but also from the guarantor's guarantee.
 
-A guarantor is the account that provides guarantee for one or multiple validators in Crust Network. Any account with CRU tokens can potentially become a guarantor while in turn obtaining guarantee incomes. Additionally, the guarantor can maintain the security of the network by choosing validators with quality performance.
+A guarantor is an account that provides a guarantee for one or multiple validators in Crust Network. Any account with CRU tokens can potentially become a guarantor while in turn obtaining guarantee incomes. Additionally, the guarantor can maintain the security of the network by choosing validators with quality performance.
 
 ## Guarantors’ Rewards and Slash
 
@@ -22,8 +22,9 @@ The guarantor obtains rewards from staking, which is influenced by the following
 - Effective Stake: The Effective Stake is **the amount of staking that actually generates incomes**, which is related to the stake limit of the validator that is guaranteed. An example is provided as follows:
 - Guarantee Fee: The proportion of reward obtained by the guarantor, which is set by the validator. **A higher guarantee fee does not mean higher guarantee income**. The guarantee income of any guarantor needs to consider the effective stake and his own staking amount.
 
-> For example, if the validator obtains 900 CRU staking rewards and 100 CRU authoring reward (block generation reward) in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtains (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belongs to the validator.
-> If a validator’s stake limit is 1000 CRU, the self-staking is 900 CRU, and the guarantor staked 300 CRU. In this way, the total stake is 1200, and the total effective pledge is 1000. The effactive stake of the validator is 1000 * (900/1200) = 750, and the effective stake of the guarantor is 1000 * (300/1200) = 250.
+> For example, if the validator obtains 900 CRU staking rewards and 100 CRU authoring reward (block generation reward) in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtain (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belong to the validator.
+
+> If a validator’s stake limit is 1000 CRU, the self-staking is 900 CRU, and the guarantor staked 300 CRU. In this way, the total stake is 1200, and the total effective pledge is 1000. The effective stake of the validator is 1000 * (900/1200) = 750, and the effective stake of the guarantor is 1000 * (300/1200) = 250.
 
 How are the rewards specifically distributed? The GPoS income obtained by the guarantor is calculated as following:
 

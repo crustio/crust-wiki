@@ -30,7 +30,7 @@ sidebar_label: Parameters
 | **MAX_UNLOCKING_CHUNKS**             | The maximum number of funds that can be unlocked at the same time       | 32                |
 | **HistoryDepth**                     | Reward collection deadline                                              | 84 eras           |
 | **TwoStageLimitRatio**               | The proportion of the second-stage limit to the total network currency  | 35%               |
-| **StartRewardEra**                   | The era to start node operation reward                                  | Comming Soon      |
+| **StartRewardEra**                   | The era to start node operation reward                                  | Coming Soon      |
 
 ## MPoW
 
@@ -68,7 +68,7 @@ sidebar_label: Parameters
 | **FileFeeUpdateFrequency**| The frequency of updating FileByteFee and FileKeysCountFee                                                                       | 10 blocks   |
 | **StakingRatio**          | Percentage of storage cost allocated to the entire network for staking rewards                                                   | 80%         |
 | **TaxRatio**              | Percentage of storage cost allocated to the network tax                                                                          | 10%         |
-| **RenewRewardRatio**      | The reward ratio for the liquaditor to renew one storage order                                                                   | 5%          |
+| **RenewRewardRatio**      | The reward ratio for the liquidator to renew one storage order                                                                   | 5%          |
 | **MAX_REPLICAS**          | The maximum replicas for one file                                                                                                | 200         |
 | **COLLATERAL_RATIO**      | The ratio that the collateral should have to earn market reward                                                                  | 1:1           |
 | **FILES_COUNT_REFERENCE** | The keys reference number for keys price | 20_000_000 |
