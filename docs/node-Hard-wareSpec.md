@@ -18,7 +18,7 @@ Group consists of a group owner and multiple group members.
 
 ### Owner Node
 
-Owner node setup [guidence](ownerNode.md)
+Owner node setup [guidance](ownerNode.md)
 
 | ** | **CPU** | **Motherboard** | **RAM** | **HDD** | **Network** | **OS** |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -28,7 +28,7 @@ Owner node setup [guidence](ownerNode.md)
 
 ### Member Node
 
-Member node setup [guidence](memberNode.md)
+Member node setup [guidance](memberNode.md)
 
 | ** | **CPU** | **Motherboard** | **RAM** | **SSD** | **HDD** | **Network** | **OS** |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -38,7 +38,7 @@ Member node setup [guidence](memberNode.md)
 
 ## Isolation Node Spec
 
-Isolation node setup [guidence](isolationNode.md)
+Isolation node setup [guidance](isolationNode.md)
 
 | ** | **CPU** | **Motherboard** | **RAM** | **SSD** | **HDD** | **Network** | **OS** |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |

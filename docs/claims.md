@@ -51,21 +51,21 @@ Go to the claim page in [Crust Apps](https://apps.crust.network/#/claims)
 1. Select the account of Crust mainnet that you want to claim,If you haven't created an account yet, you can refer to this [create account tutorial](https://wiki.crust.network/docs/en/crustAccount#create-accout)
 2. Paste the transaction hash value you copied in [Step I](#i-burn-erc20-cru)
 3. Make sure your transaction's **amount <= claim limit**
-4. Click "Continue", this step will wait for a while, the claim service will check the legicimacy of your transaction.
+4. Click "Continue", this step will wait for a while, the claim service will check the legitimacy of your transaction.
 
 ![Apps Claims2](assets/claims/apps_claims2.png)
 
-If a red error appears in the upper right corner of the page, it means you have failed in this step, it may caused by the following reasons:
+If a red error appears in the upper right corner of the page, it means you have failed in this step, it may be caused by the following reasons:
 
 1. Your transaction's confirmations is not enough (**at least 6 confirmations**)
 2. Your transaction amount exceeding the claim limit, if so, please wait it to recover
-3. Claim service may busy for a while, if that, you can wait and try it later
+3. Claim service may be busy for a while, if that, you can wait and try it later
 
 ### III. Log in to MyEtherWallet and Connect to your wallet
 
-> Since MyEtherWallet supports lots of wallets, the following process will use 'ImToken' and 'MetaMask' as example, other wallets are super familiar with these 2
+> Since MyEtherWallet supports lots of wallets, the following process will use 'ImToken' and 'MetaMask' as an example, other wallets are super familiar with these 2
 
-**⚠️ Please make sure that the connecting wallet address is same as the address where the transaction was successfully sent in [Step I](#i-burn-erc20-cru)** (We need to sign the message with the private key of this address)
+**⚠️ Please make sure that the connecting wallet address is the same as the address where the transaction was successfully sent in [Step I](#i-burn-erc20-cru)** (We need to sign the message with the private key of this address)
 
 **If you're using ImToken mobile wallet**
 

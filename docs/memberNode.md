@@ -12,7 +12,7 @@ The Member node acts as the storage provider in Group. There can be multiple Mem
 
 ### 1.2 Hardware Spec
 
-The Member node runs chain modules (not participating in block generation), storage modules, IPFS, etc. It needs to be equipped with an SGX environment. Meantime, it stores user files, involving frequent network transmission, so the network bandwidth should also be in high standards. Refer to specific hardware recommendations [here](nodeHardwareSpec#member-node).
+The Member node runs chain modules (not participating in block generation), storage modules, IPFS, etc. It needs to be equipped with an SGX environment. Meantime, it stores user files, involving frequent network transmission, so the network bandwidth should also be in high standards. Refer to specific hardware recommended [here](nodeHardwareSpec#member-node).
 
 ## 2. Ready to Deploy
 
@@ -90,7 +90,7 @@ Enter the contents of the backup file into the terminal, you can follow this: co
 
 ![pic](assets/mining/member_backup_config.png)
 
-> Note 1: The account of Crust mainnet starting with the letter 'c'. For example, the value of "address" in the above picture is is `cTJFUK...` which is a Crust mainnet account.
+> Note 1: The account of Crust mainnet starting with the letter 'c'. For example, the value of "address" in the above picture is `cTJFUK...` which is a Crust mainnet account.
 
 > Note 2: This backup file and its content is the credential of your account, it is very important, please do not disclose or lose it.
 

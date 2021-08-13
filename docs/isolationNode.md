@@ -98,7 +98,7 @@ Enter the contents of the backup file into the terminal, you can follow this: co
 
 ![pic](assets/mining/member_backup_config.png)
 
-> Note 1: The account of Crust mainnet starting with the letter 'c'. For example, the value of "address" in the above picture is is `cTJFUK...` which is a Crust mainnet account.
+> Note 1: The account of Crust mainnet starting with the letter 'c'. For example, the value of "address" in the above picture is `cTJFUK...` which is a Crust mainnet account.
 
 > Note 2: This backup file and its content is the credential of your account, it is very important, please do not disclose or lose it.
 

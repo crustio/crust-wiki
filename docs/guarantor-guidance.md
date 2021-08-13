@@ -11,7 +11,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 
 ## Explorer Validators
 * Click “Staking” in the top and click “Overview” or "Waiting"
-* Choose a validator and click it's icon in the validator list to copy the validator's Accound ID.
+* Choose a validator and click it's icon in the validator list to copy the validator's Account ID.
 
 ![gua](assets/gpos/copyaddress.png)
 
