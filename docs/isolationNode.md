@@ -98,7 +98,7 @@ Enter the contents of the backup file into the terminal, you can follow this: co
 
 ![pic](assets/mining/member_backup_config.png)
 
-> Note 1: The account of Crust mainnet starting with the letter 'c'. For example, the value of "address" in the above picture is is `cTJFUK...` which is a Crust mainnet account.
+> Note 1: The account of Crust mainnet starting with the letter 'c'. For example, the value of "address" in the above picture is `cTJFUK...` which is a Crust mainnet account.
 
 > Note 2: This backup file and its content is the credential of your account, it is very important, please do not disclose or lose it.
 
@@ -114,7 +114,7 @@ With Crust as a decentralized storage network, the configuration of your hard di
 
 **Hard disk mounting requirements:**
 
-* Chain data and related DB data will be stored in /opt/crust/data directory. It is recommend you mount your SSD to this directory.
+* Chain data and related DB data will be stored in /opt/crust/data directory. It is recommended you mount your SSD to this directory.
 
 * The order files and SRD (Sealed Random Data, the placeholder files) will be written in the /opt/crust/disks/1 ~ /opt/crust/disks/128 directory, depending on how you mount the hard disk. Each physical machine can be configured with up to 500TB of reserved space
 

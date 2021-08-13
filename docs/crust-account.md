@@ -5,11 +5,12 @@ sidebar_label: Account
 ---
 
 ## What is the Crust account?
-The Crust account is the carrier of user’s assets in Crust Network. Users need to keep the Crust Network **mnemonic seeds** and backup files safe, in case of user’s permanent lose of assets resulted from their lose of accounts.The methods of creating an account include [using Crust Wallet to create an account](#iusing-crust-wallet-to-create-an-accout) and [using Apps to create an account](#iiusing-apps-to-create-an-accout).
+
+The Crust account is the carrier of the user’s assets in Crust Network. Users need to keep the Crust Network **mnemonic seeds** and backup files safe, in case of the user’s permanent loss of assets resulting from their loss of accounts. The methods of creating an account include [using Crust Wallet to create an account](#iusing-crust-wallet-to-create-an-accout) and [using Apps to create an account](#iiusing-apps-to-create-an-accout).
 
 The types of assets stored in the Crust account can be referred to [crust tokens](crust-tokens.md).
 
-## I.Using Crust Wallet to create an accout
+## I.Using Crust Wallet to create an account
 
 ### Install Crust Wallet
 
@@ -35,7 +36,7 @@ Confirm again that you have backed up the mnemonic. If there is no backup, you c
 
 ### Account backup
 
-Click Settings, enter the "Account Management" interface, click "Export Accout" to export the backup file.
+Click Settings, enter the "Account Management" interface, click "Export Account" to export the backup file.
 ![export](assets/wallet/export.png)
 ![export1](assets/wallet/export1.png)
 
@@ -50,7 +51,7 @@ Click to open Crust Apps,And allow Crust Apps access to Crust Wallet.
 ![sysc](assets/wallet/sysc.png)
 ![allow](assets/wallet/allow.png)
 
-## II.Using Apps to create an accout
+## II.Using Apps to create an account
 
 ### Create an account
 

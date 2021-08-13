@@ -4,11 +4,11 @@ title: LockedCRU Claims
 sidebar_label: LockedCRU Claims
 ---
 
-LockedCRU(including CRU18/CRU24/CRU24D6) is ERC20 token **for the paticipants of pre-saling and profit ark**, those paticipants can refer this tutorial to claim your lockedCRU in Crust Mainnet.
+LockedCRU(including CRU18/CRU24/CRU24D6) is ERC20 token **for the participants of pre-selling and profit ark**, those participants can refer to this tutorial to claim your lockedCRU  in Crust Mainnet.
 
 ## Precautions
 
-This tutorial currently only suit for the users already [claimed lockedCRU in Maxwell](https://wiki-maxwell.crust.network/docs/en/claimCRU18) before mainnet launched. **At present, maxwell's lockedCRU claim has ended, for those users haven't claimed lockedCRU, please wait for the mainnet's democracy open**.
+This tutorial currently only suits the users already [claimed lockedCRU in Maxwell](https://wiki-maxwell.crust.network/docs/en/claimCRU18) before mainnet launched. **At present, maxwell's lockedCRU claim has ended, for those users who haven't claimed lockedCRU, please wait for the mainnet's democracy to open**.
 
 ## 1. Extension Wallets
 
