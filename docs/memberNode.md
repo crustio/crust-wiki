@@ -86,7 +86,7 @@ Follow the prompts to enter a node mode 'member', and press Enter to end:
 
 ### 3.4 Config Account
 
-Enter the contents of the backup file into the terminal, you can follow this: copy the contents of the backup file generated when the account is created, copy it to the terminal, and enter. The backup file content setup result is shown below:
+Enter the contents of the Member's backup file into the terminal, you can follow this: copy the contents of the Member's backup file generated when the account is created, copy it to the terminal, and enter. The backup file content setup result is shown below:
 
 ![pic](assets/mining/member_backup_config.png)
 
