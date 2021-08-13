@@ -1,3 +1,8 @@
+---
+id: democracyGuide
+title: Democracy Guide
+sidebar_label: Democracy Guide
+---
 
 The Democracy module is an important part of Crust Network, reflecting the advantages of Crust on-chain governance and degree of decentralization. The whole picture of Democracy module contains the following parts:
 
