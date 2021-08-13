@@ -43,7 +43,8 @@
       "validatorGuidance",
       "guarantorGuidance",
       "nodeBenefits",
-      "nodeQos"
+      "nodeQos",
+      "Q&AForMining"
     ],
     "Storage": [
       "storageOverview"
