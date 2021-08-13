@@ -30,10 +30,10 @@ Refer to [Node Overview](node-overview.md) to setup your nodes.
 
 ## 4. Set Guarantee Fee
 
-The guarantee fee set by the validator refers to the **the percentage of total income (staking income + block generation income) which will be distributed to the guarantor**. 
+The guarantee fee set by the validator refers to **the percentage of total income (staking income + block generation income) which will be distributed to the guarantor**. 
 
 
-> For example, if the validator obtains 900 CRU staking rewards and 100 CRU authoring reward (block generation reward) in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtains (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belongs to the validator.
+> For example, if the validator obtains 900 CRU staking rewards and 100 CRU authoring rewards (block generation reward) in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtain (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belong to the validator.
 
 ![change guarantee_fee1](assets/gpos/guranteefee.png)
 ![change guarantee_fee1](assets/gpos/guaranteefee1.png)

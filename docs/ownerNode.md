@@ -71,7 +71,7 @@ Notice:
 
 * The program will be installed under /opt/crust, please make sure this path is mounted with more than 250G of SSD space;
 
-* If you have run a previous Crust testnet program on this device, you need to close the previous Crust Node and clear the data before this installation. For detailes, please refer to section 6.2;
+* If you have run a previous Crust testnet program on this device, you need to close the previous Crust Node and clear the data before this installation. For details, please refer to section 6.2;
 
 * The installation process will involve the download of dependencies and docker images, which is time-consuming. Meantime, it may fail due to network problems. If it happens, please repeat the process until the installation is all complete.
 
@@ -146,7 +146,7 @@ Copy the session key as shown below:
 
 ### 5.2  Set session key
 
-Enter [CRUST APPs](https://apps.crust.network/), click on "Staking" button under "Network" in the navigation bar, and go to "Accoung action". Click on "Session Key".
+Enter [CRUST APPs](https://apps.crust.network/), click on "Staking" button under "Network" in the navigation bar, and go to "Account action". Click on "Session Key".
 
 ![pic](assets/mining/set_sessionkey1.png)
 

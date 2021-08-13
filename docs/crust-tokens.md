@@ -12,7 +12,7 @@ The CRU is the most important type of token in Crust Network. It has the followi
 
 1. Staking to maintain the GPoS consensus of the Crust network
 2. Used to guarantee the selected nodes
-3. Serving as guarantee deposit for providing resourse service
+3. Serving as a guarantee deposit for providing resource service
 4. Serving as a transaction fee for using the network
 5. Used to purchase resource services
 6. Used for election and voting of on-chain governance mechanism, and vote on proposals
