@@ -23,12 +23,12 @@ sidebar_label: Q&A
 
 ### 验证人总数变化规则？
 
-在预览网期间，验证人总数会动态调整。这样设置是为了保证节点之间有充分的竞争
+验证人总数会动态调整，这样设置是为了保证节点之间有充分的竞争，社区成员可以通过议案表决来决定增加或者减少验证人总数。
 
 ### 验证人界面图标意义？
 ![图片](assets/qa/app_validator_page.png)
 - 1 下个era会参与验证人竞争
-- 2 一个session出块的数量，一个era有36个session
+- 2 一个session出块的数量，一个era有6个session
 - 3 其他人给你质押的有效CRU量
 - 4 自己质押的有效CRU量，参数3与参数4加起来用于竞争成为验证人
 - 5 由节点提供硬盘容量以及有意义文件计算出的值，决定了该节点可以质押的上限
@@ -37,26 +37,7 @@ sidebar_label: Q&A
 - 8 该节点目前出的最新块
 
 ### 节点启动之后好久"stake limit"和"effective stake"还是0？
-"stake limit"每半小时更新一次，"effective stake"每6小时更新一次，如果节点正在SRD, "stake limit"每隔半小时线性增长，如果SRD完成，"stake limit"会保持不变，如果有下降，请及时排查原因
-
-## Group
-
-### 如何创建Group？
-进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择Owner的Controller账号，Submit 组选择swork，然后submit方法选择createGroup()，最后点击Submit Transaction发送交易创建Group。
-![图片](assets/qa/create_group.png)
-
-### Member如何加入Group？
-等待Member第一次上报work report后（Member启动之后大概等待半小时时间），进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择填写Member的账号，选择submit组为swork，选择joinGroup()方法，然后再选择你要加入的Group的Owner的Controller地址，最后点击submit transaction发送交易
-![图片](assets/qa/join_group.png)
-
-### 如何查询Group下加入的Member？
-进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Chain state，选择selected state query组下的
-swork，选择groups(AccountId)方法，然后选择创建Group的账号，最后点击“+”进行查询，返回结果为该group下面的所有member账户
-![图片](assets/qa/check_member.png)
-
-### 如何退出Group？
-进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择Member账号，Submit 组选择swork，然后选择quitGroup()，最后点击Submit Transaction发送交易退出Group
-![图片](assets/qa/quit_group.png)
+"stake limit"每一小时更新一次，"effective stake"每6小时更新一次，如果节点正在SRD, "stake limit"每隔一小时线性增长，如果SRD完成，"stake limit"会保持不变，如果有下降，请及时排查原因
 
 ## 奖励
 
@@ -74,17 +55,7 @@ swork，选择groups(AccountId)方法，然后选择创建Group的账号，最�
 用你的收益账户查询，"收益和罚金"中可以看到领取到的数量
 ![图片](assets/qa/subscanreward2.jpg)
 
-### 更换收益账户
-1)进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Network模块下的Staking,选择Account actions,选择你想要更换的的目标，点击右边三点，选择"change reword destination"
-![图片](assets/qa/changerewarddestination1.jpg)
-2）选择你设置的收益账户，点击"set reward desination"发送交易
-![图片](assets/qa/changerewarddestination2.jpg)
-
 ## 其它
-
-### 详解SRD占用率和节点存储容量之间的关系
-SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁盘，如果设置SRD占用率为80%，即该磁盘最大只能使用800G来存SRD，如果不进行设置，默认70%的使用率。
-节点存储容量（必填）是设置具体磁盘容量并下发SRD任务进行封装数据。
 
 ### guarantee fee如何改动？
 ------era1------era2------
@@ -117,4 +88,19 @@ SRD占用率（选填）设置的是磁盘的使用率,比如一个1000G的磁�
 ![图片](assets/qa/unbond2.jpg)
 
 ### Member加入group,报"swork.IdentityNotExist"错误
-这是因为加入group需要有链上唯一身份，所以需要等待第一次上报work report后（半小大概时），再执行加入的操作。
+这是因为加入group需要有链上唯一身份，所以需要等待第一次上报work report后（大概一小时），再执行加入的操作。
+
+### 系统盘1T的SSD支不支持
+链数据大概一年会产生250G的数据，如果IPFS存储400T的数据，其数据索引会占用1T的容量，所以从机器稳定运行和磁盘利用率来看，推荐使用2T的SSD作为系统盘
+
+### 如何迁移Maxwell预览网的账户到主网？
+
+方法一：
+
+将Maxwell上账户的backup文件导入到主网上，再把该账户重新备份，生成新的backup文件，即可配置到节点进行使用
+![图片](assets/qa/restore.png)
+![图片](assets/qa/restore1.png)
+
+方法二：
+
+将Maxwell上账户的backup文件导入到[Crust Wallet](crustWallet.md),将钱包网络切换为Crust，再通过钱包导出backup文件，即可配置到节点进行使用
