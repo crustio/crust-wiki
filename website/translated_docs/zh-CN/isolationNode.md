@@ -91,7 +91,7 @@ sudo crust config set
 
 ### 3.4 配置Member账户
 
-将backup文件内容输入到终端，具体操作为：拷贝账户创建时备份的文件内容，复制到终端，输入回车键。backup 文件内容输入效果如下图所示：
+将Member账户的backup文件内容输入到终端，具体操作为：拷贝Member账户创建时备份的文件内容，复制到终端，输入回车键。backup文件内容输入效果如下图所示：
 
 ![图片](assets/mining/member_backup_config.png)
 
