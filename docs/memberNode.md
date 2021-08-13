@@ -52,7 +52,7 @@ cd crust-node-1.0.0
 
 Notices:
 
-* The program will be installed under /opt/crust, please make sure this path is mounted with more than 2TB of SSD space;
+* The program will be installed under '/opt/crust', please ensure that the **system disk has more than 2TB** of SSD space. **If you do not want to use the system disk, but use other SSD, please create the '/opt/crust' directory in advance, and hang the SSD in this directory, pay attention to the read and write permissions of the directory**;
 
 * If you have run a previous Crust testnet program on this device, you need to close the previous Crust Node and clear the data before this installation. For details, please refer to section 6.2;
 
@@ -105,8 +105,6 @@ Enter the password for the backup file as prompted and press Enter to end:
 With Crust as a decentralized storage network, the configuration of your hard disks becomes quite important. The node storage capacity will be reported to the Crust Network as reserved space, and this will determine the stake limit of this node.
 
 **Base hard disk mounting requirements:**
-
-* Chain data and related DB data will be stored in /opt/crust/data directory. It is recommend you mount your SSD to this directory.
 
 * The order files and SRD (Sealed Random Data, the placeholder files) will be written in the /opt/crust/disks/1 ~ /opt/crust/disks/128 directory, depending on how you mount the hard disk. Each physical machine can be configured with up to 500TB of reserved space
 
