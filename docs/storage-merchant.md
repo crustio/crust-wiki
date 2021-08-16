@@ -4,7 +4,7 @@ title: Storage Merchant
 sidebar_label: Storage Merchant
 ---
 
-Storage merchants are nodes in the Crust network that provide storage space. Storage merchants need to run sWorker modules for consensus on workload,  hard disks and network services, to support storage certification, storage services and retrieval services.
+Storage merchants are nodes in the Crust network that provide storage space. Storage merchants need to run sWorker modules for consensus on workload,  hard disks, and network services, to support storage certification, storage services, and retrieval services.
 
 ### Storage incentives for merchants
 Storage merchants could receive the rewards after providing storage services. The rewards include two aspects:
@@ -32,6 +32,4 @@ Taking into account the TPS and performance reasons of the Crust Network, the Cr
 
 Settle each file can accumulate corresponding file rewards, and the accumulated file reward pool can be collected regularly. Receipt of file rewards requires equivalent merchant collateral funds. The collateral amount can get the upper limit of reward collection for the same amount. After receiving the reward, the upper limit of reward collection will be reset.
 
-<!--
 For detailed information, refer to [merchant guidance](merchantGuidance.md).
--->

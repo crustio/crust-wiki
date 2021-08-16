@@ -3,14 +3,15 @@ id: storageUserGuide
 title: User Guidance
 sidebar_label: User Guidance
 ---
+
 Users can store files with Crust Network in three ways:
-* Users are able to store files by directly using [Crust Apps](https://apps.crust.network/#/storage);
-* Users are able to store files by adapting the standard IPFS to [Crust Apps](https://apps.crust.network/#/storage);
-* Developers are able to develop storage features based on Crust SDK;
+* Users can store files by directly using [Crust Apps](https://apps.crust.network/#/storage);
+* Users can store files by adapting the standard IPFS to [Crust Apps](https://apps.crust.network/#/storage);
+* Developers can develop storage features based on Crust SDK;
 
 ## 1. File storage via Crust Apps
 
-### 1.1 Installing, configuring and launching IPFS
+### 1.1 Installing, configuring, and launching IPFS
 If the following prompt appears after you entering [Crust Apps/IPFS](https://apps.crust.network/#/storage), you need to install and launch IPFS.
 ![Install IPFS](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/installIPFS)
 For this, you have two options:
@@ -18,7 +19,7 @@ For this, you have two options:
 #### Option 1. Install Crust-specific version of IPFS
 You can click on the link to install and launch the Crust-specific version of IPFS. The specific version of IPFS differs from the standard IPFS in that it has been adapted to Crust Apps, so it can be used on Crust Apps upon installation with no more additional configuration.
 
-#### Option 2. Install standard version of IPFS
+#### Option 2. Install the standard version of IPFS
 If you have already installed the [Standard IPFS](https://ipfs.io/#install), you need to follow a few configuration steps to adapt it to Crust Apps.
 You can click on the "Fold" on the page and follow the prompts to configure accordingly.
 
@@ -71,7 +72,7 @@ The order information in [Crust Apps](https://apps.crust.network/#/storage) -> "
 1. Click on "Fetch My Orders";
    ![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/fetch1.png)
 
-2. Choose the account and data source (Developers can develop their own data sources and [submit applications](https://github.com/crustio/crust-apps/issues/new) for review. Data sources that are approved will be displayed in the data source list for users to access.);
+2. Choose the account and data source (Developers can develop their data sources and [submit applications](https://github.com/crustio/crust-apps/issues/new) for review. Data sources that are approved will be displayed in the data source list for users to access.);
    ![pich_source](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/pick_source1.png)
 
 3. Click "Confirm". The orders of the selected account will appear in the order list.
@@ -79,7 +80,7 @@ The order information in [Crust Apps](https://apps.crust.network/#/storage) -> "
    
 
 ### 1.6  Renewing pool balance
-The pool balance renewal mechanism is designed by [Crust DSM](DSM.md) to regularly renew files. After placing an order for a file, users can deposit an additional amount of any size into the file renewal pool. When the expiration of the file storage order is due (currently each file order expires 180 days after it is placed), and the balance of the file renewal pool is sufficient, users can initiate a [order settlement transaction](orderSettlement.md) for the file to renew the file order (regain a 180-day period of validity). Meanwhile, all settlement initiators will also receive a reward from the file renewal pool. The renewal steps include:
+The pool balance renewal mechanism is designed by [Crust DSM](DSM.md) to regularly renew files. After placing an order for a file, users can deposit an additional amount of any size into the file renewal pool. When the expiration of the file storage order is due (currently each file order expires 180 days after it is placed), and the balance of the file renewal pool is sufficient, users can initiate a [order settlement transaction](orderSettlement.md) for the file to renew the file order (regain 180 days of validity). Meanwhile, all settlement initiators will also receive a reward from the file renewal pool. The renewal steps include:
    1. Enter [Crust Apps](https://apps.crust.network/#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" to choose the file in the file list;
    2. Click on "Renew"/"Add Balance"；
     ![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pool1.png)
@@ -119,7 +120,7 @@ The file size needs to be obtained through the command line below:
 ```shell
 ipfs object stat QmXXXXX
 ```
-The "QmXXXXX" in the command is the CID of your newly uploaded file. The value of "CumulativeSize" boxed with red in the figure below is the file size, which will be used together with CID in next steps.
+The "QmXXXXX" in the command is the CID of your newly uploaded file. The value of "CumulativeSize" boxed with red in the figure below is the file size, which will be used together with CID in the next steps.
     ![size](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/size.png)
 
 
