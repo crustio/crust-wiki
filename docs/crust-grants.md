@@ -4,7 +4,7 @@ title: Crust Grants
 sidebar_label: Crust Grants
 ---
 
-Crust Grants Program, launched by the Decentralized Cloud Foundation (DCF), rewards projects that add value to the Web 3.0 decentralized cloud storage ecosystem. Crust Grants Program divides decentralized cloud storage into technology stacks at six layers, including chain protocol layer, file systems protocol layer, node strategies layer, development tools and infrastructure layer, blockchain-based applications layer and user-based applications layer, incentivizing projects in the decentralized cloud storage ecosystem at full strength.
+Crust Grants Program, launched by the Decentralized Cloud Foundation (DCF), rewards projects that add value to the Web 3.0 decentralized cloud storage ecosystem. Crust Grants Program divides decentralized cloud storage into technology stacks at six layers, including chain protocol layer, file systems protocol layer, node strategies layer, development tools and infrastructure layer, blockchain-based applications layer and user-based applications layer. **Currently, Crust Grants program mainly targets projects of protocol layer, and applications that serve a wide range of users.**.
 
 ## 1. Joining Crust Grants gives you access to
 
@@ -72,6 +72,8 @@ Applications for cloud storage cannot be separated from the continuing improveme
 
 5. Command-line tools: Providing command lines enables the access to Crust network resource services, such as crust-cli:[https://github.com/crustio/crust-cli](https://github.com/crustio/crust-cli?fileGuid=8g6KfhSut6oyB6R1)
 
+>**The current wave of Crust Grants have closed grants for this type of projects**.
+
 ## 2.5 Blockchain-based Applications Layer
 
 Projects that help visualize on-chain information or bring on-chain features into good play are also within the scope of Grants incentives. Here are some successful examples.
@@ -81,6 +83,8 @@ Projects that help visualize on-chain information or bring on-chain features int
 2. Crust Storage Explorer: Displaying the storage information of Crust Network (Address:[https://splorer.crust.network](https://splorer.crust.network?fileGuid=8g6KfhSut6oyB6R1));
 
 3. Crust Plugin Wallet: With well-equipped features of Crust assets and IPFS Companion ( See the codebase:[https://github.com/crustio/crust-extension](https://github.com/crustio/crust-extension?fileGuid=8g6KfhSut6oyB6R1)).
+
+>**The current wave of Crust Grants have closed grants for this type of projects**.
 
 ## 2.6 User-based Applications Layer
 

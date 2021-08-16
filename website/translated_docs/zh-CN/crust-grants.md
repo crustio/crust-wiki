@@ -4,7 +4,7 @@ title: Crust Grants
 sidebar_label: Crust Grants
 ---
 
-Crust Grants Program由Decentralized Cloud Foundation（DCF，去中心化云基金会）发起，旨在奖励为Web 3.0 去中心化云存储生态提供价值的项目。Grants将去中心化云存储划分为6个层面的技术栈，包括了：L0协议层、文件系统协议层、节点策略层、开发者工具及基础设施层、区块链应用层和面向用户的应用层，全方位激励去中心化云存储生态下的项目。
+Crust Grants Program由Decentralized Cloud Foundation（DCF，去中心化云基金会）发起，旨在奖励为Web 3.0 去中心化云存储生态提供价值的项目。Crust的去中心化云存储分为6个层面的技术栈，包括了：L0协议层、文件系统协议层、节点策略层、开发者工具及基础设施层、区块链应用层和面向用户的应用层。现阶段，Crust Grants Program 的主要激励方向是协议层的改进以及面向广泛用户的应用。
 
 ## 1. 加入Crust Grants可以获得
 
@@ -56,6 +56,8 @@ Crust协议目前利用IPFS作为底层存储，任何对于IPFS协议的改进�
 4. API文档：文档也是制约开发者参与生态建设的重要影响因素，全面而合理的文档能够大大吸引开发者的参与
 5. 命令行工具：提供命令行能够访问Crust网络资源服务，比如crust-cli：[https://github.com/crustio/crust-cli](https://github.com/crustio/crust-cli?fileGuid=zyPNxf65rognWNlE)
 
+>**由于现阶段Crust Grants Program 的主要激励方向是协议层的改进以及面向广泛用户的应用，因此Crust 暂时关闭了这一领域的Grants**.
+
 ### 2.5 区块链应用层
 
 对于可视化链上信息，或是针对链上功能做出优秀应用的项目也在Grants的激励范围内，这里罗列一些样例作为参考：
@@ -63,6 +65,8 @@ Crust协议目前利用IPFS作为底层存储，任何对于IPFS协议的改进�
 1. Crust区块链浏览器：展示Crust网络的区块信息，区块链浏览器地址：[https://crust.subscan.io](https://crust.subscan.io?fileGuid=zyPNxf65rognWNlE)
 2. Crust存储浏览器：展示Crust网络的存储信息，存储浏览器地址：[https://splorer.crust.network](https://splorer.crust.network?fileGuid=zyPNxf65rognWNlE)
 3. Crust插件钱包：继承Crust各项资产和IPFS Companion功能，具体参考代码库：[https://github.com/crustio/crust-extension](https://github.com/crustio/crust-extension?fileGuid=zyPNxf65rognWNlE)
+
+>**由于现阶段Crust Grants Program 的主要激励方向是协议层的改进以及面向广泛用户的应用，因此Crust 暂时关闭了这一领域的Grants**.
 
 ### 2.6 面向用户的应用层
 
