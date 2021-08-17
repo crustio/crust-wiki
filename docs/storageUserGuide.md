@@ -4,14 +4,14 @@ title: User Guidance
 sidebar_label: User Guidance
 ---
 Users can store files with Crust Network in three ways:
-* Users are able to store files by directly using [Crust Apps](https://apps.crust.network/#/storage);
-* Users are able to store files by adapting the standard IPFS to [Crust Apps](https://apps.crust.network/#/storage);
+* Users are able to store files by directly using [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage);
+* Users are able to store files by adapting the standard IPFS to [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage);
 * Developers are able to develop storage features based on Crust SDK;
 
 ## 1. File storage via Crust Apps
 
 ### 1.1 Installing, configuring and launching IPFS
-If the following prompt appears after you entering [Crust Apps/IPFS](https://apps.crust.network/#/storage), you need to install and launch IPFS.
+If the following prompt appears after you entering [Crust Apps/IPFS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage), you need to install and launch IPFS.
 ![Install IPFS](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/installIPFS)
 For this, you have two options:
 
@@ -67,7 +67,7 @@ The order statuses displayed in Crust Apps are detailed as follows:
 ![renew_expired](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_expired.png)
 
 ### 1.5 Viewing all user orders
-The order information in [Crust Apps](https://apps.crust.network/#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" is locally cached. Users can view all orders of a given account through "Pulling"/"Fetching".
+The order information in [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" is locally cached. Users can view all orders of a given account through "Pulling"/"Fetching".
 1. Click on "Fetch My Orders";
    ![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/fetch1.png)
 
@@ -80,14 +80,14 @@ The order information in [Crust Apps](https://apps.crust.network/#/storage) -> "
 
 ### 1.6  Renewing pool balance
 The pool balance renewal mechanism is designed by [Crust DSM](DSM.md) to regularly renew files. After placing an order for a file, users can deposit an additional amount of any size into the file renewal pool. When the expiration of the file storage order is due (currently each file order expires 180 days after it is placed), and the balance of the file renewal pool is sufficient, users can initiate a [order settlement transaction](orderSettlement.md) for the file to renew the file order (regain a 180-day period of validity). Meanwhile, all settlement initiators will also receive a reward from the file renewal pool. The renewal steps include:
-   1. Enter [Crust Apps](https://apps.crust.network/#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" to choose the file in the file list;
+   1. Enter [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" to choose the file in the file list;
    2. Click on "Renew"/"Add Balance"；
     ![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pool1.png)
    3. Choose the account, fill in the renewal amount and click on "Confirm" in the box that pops up.
 ![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/add_balance1.png)
 
 ### 1.7 Retrieving files
-Once you know the CID of a file, you can retrieve the file in [Crust Apps](https://apps.crust.network/#/storage/files) or in the standard IPFS Network (provided this file has been stored by nodes).
+Once you know the CID of a file, you can retrieve the file in [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/files) or in the standard IPFS Network (provided this file has been stored by nodes).
 
 To retrieve files, please go back to the "Files" page, click on "Import" and select "From IPFS" as the import path, enter the CID of the file you want to retrieve in the page that pops up, and click on "Import".
 
@@ -125,7 +125,7 @@ The "QmXXXXX" in the command is the CID of your newly uploaded file. The value o
 
 
 ### 2.2 Generating storage orders with Crust Apps
-Enter [Crust](https://apps.crust.network/#/storage/market) and click on "Place an order".
+Enter [Crust](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/market) and click on "Place an order".
     ![place_order](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/place_order.png)
 Fill in the CID and Size obtained from the previous step in the order generation page and click on "Confirm". Then you can place an order on Crust Network.
     ![order_independent](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/order_independent.png)
@@ -133,7 +133,7 @@ Fill in the CID and Size obtained from the previous step in the order generation
 For order status, please go back to [1.4 Checking order status](#14-Checking order status). 
 
 ### 2.3 Retrieving files
-As long as you know the CID of a file, you can retrieve files through [Crust Apps](https://apps.crust.network/#/storage/files). For details, please refer to [1.5 Retrieving files](#15-Retrieving files). You may also use [IPFS file retrieval](https://dweb-primer.ipfs.io/avenues-for-access/retrieve-from-peer).
+As long as you know the CID of a file, you can retrieve files through [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/files). For details, please refer to [1.5 Retrieving files](#15-Retrieving files). You may also use [IPFS file retrieval](https://dweb-primer.ipfs.io/avenues-for-access/retrieve-from-peer).
 
 ## 3. Developing storage features based on Crust SDK
 Coming soon.

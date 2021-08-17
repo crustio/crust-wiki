@@ -14,6 +14,6 @@ sidebar_label: Overview
 
 ## References
 
-- [Crust Apps IPFS](https://apps.crust.network/#/storage)
+- [Crust Apps IPFS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage)
 - [Crust Explorer](https://splorer.crust.network)
 - [Decentralied Storage Market](DSM.md)

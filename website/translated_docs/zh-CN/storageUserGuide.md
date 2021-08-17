@@ -5,14 +5,14 @@ sidebar_label: User Guidance
 ---
 
 用户可以通过三种方式使用Crust网络存储文件：
-* 用户可以直接使用[Crust Apps](https://apps.crust.network/#/storage)存储文件；
-* 用户可以通过原生IPFS配合[Crust Apps](https://apps.crust.network/#/storage)存储文件；
+* 用户可以直接使用[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage)存储文件；
+* 用户可以通过原生IPFS配合[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage)存储文件；
 * 开发者可以使用Crust SDK开发存储功能；
 
 ## 1. 使用 Crust Apps 存储文件
 
 ### 1.1 安装、配置并运行IPFS
-进入[Crust Apps/IPFS](https://apps.crust.network/#/storage)。如果出现以下提示，则代表您需要安装并启动IPFS。
+进入[Crust Apps/IPFS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage)。如果出现以下提示，则代表您需要安装并启动IPFS。
 ![Install IPFS](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/installIPFS)
 这时您有两个选项：
 #### 选项一、安装Crust定制版IPFS
@@ -67,7 +67,7 @@ sidebar_label: User Guidance
 
 
 ### 1.5 获取用户的所有订单
-在[Crust Apps](https://apps.crust.network/#/storage) -> “IPFS” -> “存储订单页”/"Storage Orders" 中的订单信息均为本地缓存。用户可以通过“拉取”/"Fetch"功能查看指定账号的所有订单。
+在[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage) -> “IPFS” -> “存储订单页”/"Storage Orders" 中的订单信息均为本地缓存。用户可以通过“拉取”/"Fetch"功能查看指定账号的所有订单。
 1. 点击“Fetch My Orders”
 ![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/fetch1.png)
 
@@ -78,7 +78,7 @@ sidebar_label: User Guidance
    
 ### 1.6 为文件续费池充值
 文件续费池机制是[Crust DSM](DSM.md)帮助文件被定期续费的机制。用户在为文件下单后，可以额外为文件的续费池存入任意金额。当文件存储订单到期（目前每个文件订单到期时间为180天），并且文件续费池剩余金额充足，则任何用户都可以对该文件发起一个[清算交易](orderSettlement.md)，使得文件订单重新生效（重新拥有180天的有效期），清算发起者也会获得一笔来自文件续费池的奖励。充值步骤如下：
-1. 进入[Crust Apps](https://apps.crust.network/#/storage) -> “IPFS” -> “存储订单页”/"Storage Orders"，查看文件列表，找到对应文件；
+1. 进入[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage) -> “IPFS” -> “存储订单页”/"Storage Orders"，查看文件列表，找到对应文件；
 2. 点击“充值”/“Add Balance”
 ![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pool1.png)
 
@@ -86,7 +86,7 @@ sidebar_label: User Guidance
 ![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/add_balance1.png)
 
 ### 1.7 检索文件
-用户只要有某个文件的CID，即可在[Crust Apps](https://apps.crust.network/#/storage/files)或原生的IPFS网络中检索到这个文件（前提是有节点存了这个文件）。
+用户只要有某个文件的CID，即可在[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/files)或原生的IPFS网络中检索到这个文件（前提是有节点存了这个文件）。
 
 回到“Files”页，点击“Import”选择导入方式，点击“From IPFS”，在弹出窗口中输入想要检索的文件CID，点击确认。
 
@@ -124,7 +124,7 @@ ipfs object stat QmXXXXX
 
 
 ### 2.2 使用Crust Apps发起存储订单
-进入[Crust](https://apps.crust.network/#/storage/market),点击"Place an order"。
+进入[Crust](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/market),点击"Place an order"。
     ![place_order](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/place_order.png)
 在弹出的订单生成页中，填入上一步获得的Cid和Size并确认，即可在Crust网络中下单。
     ![order_independent](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/order_independent.png)
@@ -132,7 +132,7 @@ ipfs object stat QmXXXXX
 订单状态可以参考[1.4 查看订单状态](#14-查看订单状态)
 
 ### 2.3 检索文件
-用户只要有文件的CID，就可以使用[Crust Apps](https://apps.crust.network/#/storage/files)检索文件,参考[1.5 检索文件](#15-检索文件)。也可以使用原生[IPFS检索文件](https://dweb-primer.ipfs.io/avenues-for-access/retrieve-from-peer)。
+用户只要有文件的CID，就可以使用[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/files)检索文件,参考[1.5 检索文件](#15-检索文件)。也可以使用原生[IPFS检索文件](https://dweb-primer.ipfs.io/avenues-for-access/retrieve-from-peer)。
 
 ## 3. 使用Crust SDK开发存储功能
 即将开放

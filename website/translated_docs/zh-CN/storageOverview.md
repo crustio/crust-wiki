@@ -14,6 +14,6 @@ sidebar_label: Overview
 
 ## 参考
 
-- [Crust Apps IPFS](https://apps.crust.network/#/storage)
+- [Crust Apps IPFS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage)
 - [Crust存储浏览器](https://splorer.crust.network)
 - [去中心化存储市场](DSM.md)

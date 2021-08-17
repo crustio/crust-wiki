@@ -145,7 +145,7 @@ async function getOrderState(api: ApiPromise, cid: string) {
 
 其中`reported_replica_count`的值为Crust网络中存储了NFT文件`FireCloud.png`的节点数，`expired_on`的值为这个文件订单在Crust网络中过期的块高。
 
-*除了可以通过代码访问Crust网络，也可以通过[Crust Apps](https://apps.crust.network/#/storage/market)监控文件存储状态：*
+*除了可以通过代码访问Crust网络，也可以通过[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/market)监控文件存储状态：*
 ![pic](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/build/fire_cloud.png)
 
 ### 3.4 NFT文件的检索和访问

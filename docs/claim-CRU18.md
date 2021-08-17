@@ -20,7 +20,7 @@ In order to prevent unknown errors in the claim CRU18 process, we highly recomme
 > Don't worry about being unfamiliar with the following tools, we will teach you how to use them step by step in the following steps.
 
 1. [MyEtherWallet](https://www.myetherwallet.com/interface/dashboard)
-2. [Crust Apps](https://apps.crust.network/)
+2. [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)
 
 ## Steps
 
@@ -32,7 +32,7 @@ Make sure you are listed on CRU18's holder list:[Etherscan CRU18 Holders List](h
 
 ### II．Signature verification and bridge tokens
 
-Go to the Claims page of [Crust Apps](https://apps.crust.network/#/claims)
+Go to the Claims page of [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/claims)
 
 ![Connect Wallet1](assets/claimcru18/2claimtokens.jpg)
 

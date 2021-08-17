@@ -4,7 +4,7 @@ title: Crust Tokens
 sidebar_label: Crust Tokens
 ---
 
-Crust网络主要通证是CRU，同时也设计了存储市场通证CSM以及活动奖励专用通证Candy。所有通证均在Crust账号中保存，可以在[Crust Apps](https://apps.crust.network/#/accounts)中查看账号相关信息。
+Crust网络主要通证是CRU，同时也设计了存储市场通证CSM以及活动奖励专用通证Candy。所有通证均在Crust账号中保存，可以在[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/accounts)中查看账号相关信息。
 
 ## CRU
 CRU是Crust网络中最主要的通证，CRU通证主要有以下几个功能：

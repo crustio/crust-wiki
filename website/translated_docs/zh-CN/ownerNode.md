@@ -124,7 +124,7 @@ sudo crust tools rotate-keys
 
 ### 5.2  设置session key
 
-进入[CRUST APPs](https://apps.crust.network/)，点击导航栏的“**Network**”下的“**Staking**”。选择“**Session Key**”
+进入[CRUST APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)，点击导航栏的“**Network**”下的“**Staking**”。选择“**Session Key**”
 
 ![图片](assets/mining/set_sessionkey1.png)
 
@@ -135,7 +135,7 @@ sudo crust tools rotate-keys
 
 ### 5.3 成为验证人/候选人
 
-进入[Crust APPs](https://apps.crust.network)，执行 “Be Validator” 操作。
+进入[Crust APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)，执行 “Be Validator” 操作。
 
 ![图片](assets/mining/be_validator1.png)
 

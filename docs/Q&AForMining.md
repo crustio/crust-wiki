@@ -42,20 +42,20 @@ The "stake limit" is updated every half an hour, and the "effective stake" is up
 ## Group
 
 ### How to create group？
-Enter [CRUST APPs](https://apps.crust.network/), select 'Extrinsics', select the Owner's Controller account, select 'swork' for the submit group, select 'createGroup()' for the submit method, and finally click 'Submit Transaction' to send the transaction to create the Group.
+Enter [CRUST APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), select 'Extrinsics', select the Owner's Controller account, select 'swork' for the submit group, select 'createGroup()' for the submit method, and finally click 'Submit Transaction' to send the transaction to create the Group.
 ![pic](assets/qa/create_group.png)
 
 ### How to join a group？
-Wait for the member to report the work report for the first time (about half an hour after the member is started), enter the [CRUST APPs](https://apps.crust.network/), select 'Extrinsics', select the account of the Member, select the submit group as 'swork', select the 'joinGroup()' method, and then select the controller address of the Owner of the group you want to join, and finally click 'Submit transaction' to send the transaction
+Wait for the member to report the work report for the first time (about half an hour after the member is started), enter the [CRUST APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), select 'Extrinsics', select the account of the Member, select the submit group as 'swork', select the 'joinGroup()' method, and then select the controller address of the Owner of the group you want to join, and finally click 'Submit transaction' to send the transaction
 
 ![pic](assets/qa/join_group.png)
 
 ### How to query the members joined under the group？
-Enter [CRUST APPs](https://apps.crust.network/), select 'Chain state', select 'swork' under the selected state query group, select the 'groups(AccountId)' method, and finally click "+" to query, the returned result is all member accounts under the group
+Enter [CRUST APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), select 'Chain state', select 'swork' under the selected state query group, select the 'groups(AccountId)' method, and finally click "+" to query, the returned result is all member accounts under the group
 ![pic](assets/qa/check_member.png)
 
 ### How to leave a group？
-Enter [CRUST APPs](https://apps.crust.network/), select 'Extrinsics', select Member account, select 'swork' for submit group, then select 'quitGroup()', and finally click Submit Transaction to send the transaction to exit the group
+Enter [CRUST APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), select 'Extrinsics', select Member account, select 'swork' for submit group, then select 'quitGroup()', and finally click Submit Transaction to send the transaction to exit the group
 ![pic](assets/qa/quit_group.png)
 
 ## Reward
@@ -65,7 +65,7 @@ The storage income is settled separately, while other income chains do not distr
 
 ### How to receive reward?
 The process of receiving rewards is as follows:
-Enter [Crust APPS](https://apps.crust.network/#/explorer), choose"Staking", choose"Payouts"
+Enter [Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), choose"Staking", choose"Payouts"
 ![pic](assets/qa/receiverewarden.jpg)
 
 ### How to check the reward?
@@ -74,7 +74,7 @@ Use your income account to query, you can see the amount received in "Profit and
 ![pic](assets/qa/subscanrewarden.jpg)
 
 ### How to change income account?
-1) Enter [Crust APPS](https://apps.crust.network/#/explorer), select Staking under the Network module, select Account actions, select the target you want to change, click the three points on the right, and select "change reword destination"
+1) Enter [Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), select Staking under the Network module, select Account actions, select the target you want to change, click the three points on the right, and select "change reword destination"
 2) Select the income account you set, click "set reward desination" to send the transaction
 ![pic](assets/qa/changerewarddestination1.jpg)
 ![pic](assets/qa/changerewarddestinationen.jpg)

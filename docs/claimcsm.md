@@ -14,7 +14,7 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 
 1. [MyEtherWallet](https://v5.myetherwallet.com/)
 2. [ImToken](https://token.im/) or [MetaMask](https://metamask.io/)
-3. [Crust Apps](https://apps.crust.network/)
+3. [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)
 
 ## Steps
 
@@ -31,7 +31,7 @@ First of all, you need to **transfer CSM** to ***Crust Maxwell Claim Address*** 
 > 3. ⚠️ Confirm the CSM ERC20: [CSM](https://etherscan.io/token/0x2620638eda99f9e7e902ea24a285456ee9438861)
 > 4. ⚠️ Crust Maxwell Claim Address: [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
 
-Go to the Claim CSM page of [Crust Apps](https://apps.crust.network/#/claims/maxwellCsmClaims)
+Go to the Claim CSM page of [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/claims/maxwellCsmClaims)
 
 Initiate a CSM transaction to Crust Maxwell Claim Address
 

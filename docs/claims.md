@@ -14,7 +14,7 @@ In order to prevent unknown errors in the claim process, we highly recommend usi
 
 1. [MyEtherWallet](https://v5.myetherwallet.com/)
 2. [ImToken](https://token.im/) or [MetaMask](https://metamask.io/)
-3. [Crust Apps](https://apps.crust.network/)
+3. [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)
 
 ## Steps
 
@@ -31,7 +31,7 @@ First of all, you need to **transfer CRU** to ***Crust Maxwell Claim Address*** 
 > 3. ⚠️ Confirm the CRU ERC20: [CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)
 > 4. ⚠️ Crust Maxwell Claim Address: [0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
 
-Go to the Claim CRU page of [Crust Apps](https://apps.crust.network/#/claims)
+Go to the Claim CRU page of [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/claims)
 
 Initiate a CRU transaction to Crust Maxwell Claim Address
 

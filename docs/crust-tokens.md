@@ -4,7 +4,7 @@ title: Crust Tokens
 sidebar_label: Crust Tokens
 ---
 
-The CRU is the main token of Crust Network. Apart from CRUs, Crust Network also has CSMs (Crust Storage Market) and the event reward token Candy. All these tokens are stored in Crust accounts. You can find the account information in [Crust Apps](https://apps.crust.network/#/accounts).
+The CRU is the main token of Crust Network. Apart from CRUs, Crust Network also has CSMs (Crust Storage Market) and the event reward token Candy. All these tokens are stored in Crust accounts. You can find the account information in [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/accounts).
 
 ## CRU
 The CRU is the most important type of token in Crust Network. It has the following major functions:

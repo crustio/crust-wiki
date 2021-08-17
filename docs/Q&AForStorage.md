@@ -27,7 +27,7 @@ Turn off the computer firewell.
 ![closed_firewall](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/firewall_closed_en.png)
 
 
-Then with IPFS working properly, enter the [Storage Order](https://apps.crust.network/#/storage/market) page and place a new order for the file.
+Then with IPFS working properly, enter the [Storage Order](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/market) page and place a new order for the file.
 
 
 ### 4. Report the issue on Crust Github

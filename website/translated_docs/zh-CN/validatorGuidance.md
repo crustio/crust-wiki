@@ -20,7 +20,7 @@ sidebar_label: Validator Guidance
 
 ## 3. 增加/减少质押
 
-验证人也可以在[APPS](https://apps.crust.network)中增加或减少自己质押的金额，配置步骤如下。
+验证人也可以在[APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)中增加或减少自己质押的金额，配置步骤如下。
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/bondmore.png)
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/mining/unbond.png)
 

@@ -12,7 +12,7 @@ Crust账户中存储的资产种类可以参考[crust tokens](crust-tokens.md)�
 ## 生成Crust账户
 
 
-进入[Crust Apps](https://apps.crust.network/)，在顶部导航栏中点击 “账户” 下的 “账户”。然后点击“添加账户“
+进入[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)，在顶部导航栏中点击 “账户” 下的 “账户”。然后点击“添加账户“
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/cloud_docImage/maxwell/cn/3.1/1.png) 
 
