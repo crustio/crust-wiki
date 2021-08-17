@@ -25,4 +25,4 @@ DSM 包含 3个主要机制。详细机制请参考[经济白皮书](https://cru
    * Crust网络提供更高效的检索评分机制。在Bitswap协议中，节点通过“信用”机制来抵制只拉取数据而不提供检索的“吸血”节点。Crust网络在原有的Bitswap信用机制上，加入了可信的链上信息供节点参考，使得Crust网络的信用机制更加高效。
    * Crust网络节点提供可靠的供检索服务。Crust网络节点的早期收益来自于[网络质押——GPoS共识](gpos.md)，而存储更多用户文件可以有效增加节点的有效质押额度。结合Crust网络的信用机制，节点在利益驱动下，为了获得更大的质押额度，就需要获取更多用户文件，也就需要相应的提供更多的检索服务。
 
-用户可以在[Crust Apps](https://apps.crust.network/#/storage)上体验DSM功能。
+用户可以在[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage)上体验DSM功能。

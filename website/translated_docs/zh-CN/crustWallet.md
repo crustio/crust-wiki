@@ -5,7 +5,7 @@ sidebar_label: Crust Wallet
 ---
 
 Crust Wallet是一款基于 Google Chrome 浏览器的插件钱包，用户可以在 Crust Wallet 上管理自己的在Crust网络中的资产，比如CRU、Candy，以及主网上线后的CSM。Crust Wallet目前支持的主要功能有：
-* 与Crust网络的Dapp交互，比如[Crust Apps](https://apps.crust.network/#/accounts)；
+* 与Crust网络的Dapp交互，比如[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/accounts)；
 * 账户管理；
 * 通证转账；
 

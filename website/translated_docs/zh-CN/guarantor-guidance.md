@@ -12,7 +12,7 @@ sidebar_label: Guarantor Guidance
 
 在进行本步骤选择之前，请保证您已了解[担保人](guarantor.md)的概念，并已充分了解关于验证人（节点）的奖罚细则, 再开始以下操作：
 
-1. 进入[APPs](https://apps.crust.network), 点击上方“Staking”—— “Staking overview”/“Waiting”，这意味着您可以选择担保验证人（出块节点），或是候选人（候选节点），并从他们的Staking收益中获取奖励
+1. 进入[APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), 点击上方“Staking”—— “Staking overview”/“Waiting”，这意味着您可以选择担保验证人（出块节点），或是候选人（候选节点），并从他们的Staking收益中获取奖励
 2. 选择你要担保的节点。单击节点的头像，即可复制节点地址
 
 ![](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/maxwell/staking/copyaddr.png)

@@ -45,20 +45,20 @@ sidebar_label: Q&A
 ## Group
 
 ### 如何创建Group？
-进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择Owner的Controller账号，Submit 组选择swork，然后submit方法选择createGroup()，最后点击Submit Transaction发送交易创建Group。
+进入[Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)中，选择Extrinsics，选择Owner的Controller账号，Submit 组选择swork，然后submit方法选择createGroup()，最后点击Submit Transaction发送交易创建Group。
 ![图片](assets/qa/create_group.png)
 
 ### Member如何加入Group？
-等待Member第一次上报work report后（Member启动之后大概等待半小时时间），进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择填写Member的账号，选择submit组为swork，选择joinGroup()方法，然后再选择你要加入的Group的Owner的Controller地址，最后点击submit transaction发送交易
+等待Member第一次上报work report后（Member启动之后大概等待半小时时间），进入[Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)中，选择Extrinsics，选择填写Member的账号，选择submit组为swork，选择joinGroup()方法，然后再选择你要加入的Group的Owner的Controller地址，最后点击submit transaction发送交易
 ![图片](assets/qa/join_group.png)
 
 ### 如何查询Group下加入的Member？
-进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Chain state，选择selected state query组下的
+进入[Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)中，选择Chain state，选择selected state query组下的
 swork，选择groups(AccountId)方法，然后选择创建Group的账号，最后点击“+”进行查询，返回结果为该group下面的所有member账户
 ![图片](assets/qa/check_member.png)
 
 ### 如何退出Group？
-进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择Member账号，Submit 组选择swork，然后选择quitGroup()，最后点击Submit Transaction发送交易退出Group
+进入[Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)中，选择Extrinsics，选择Member账号，Submit 组选择swork，然后选择quitGroup()，最后点击Submit Transaction发送交易退出Group
 ![图片](assets/qa/quit_group.png)
 
 ## 奖励
@@ -78,7 +78,7 @@ swork，选择groups(AccountId)方法，然后选择创建Group的账号，最�
 ![图片](assets/qa/subscanreward2.jpg)
 
 ### 更换收益账户
-1)进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Network模块下的Staking,选择Account actions,选择你想要更换的的目标，点击右边三点，选择"change reword destination"
+1)进入[Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)中，选择Network模块下的Staking,选择Account actions,选择你想要更换的的目标，点击右边三点，选择"change reword destination"
 ![图片](assets/qa/changerewarddestination1.jpg)
 2）选择你设置的收益账户，点击"set reward desination"发送交易
 ![图片](assets/qa/changerewarddestination2.jpg)

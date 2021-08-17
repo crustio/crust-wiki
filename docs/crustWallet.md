@@ -5,7 +5,7 @@ sidebar_label: Crust Wallet
 ---
 
 Crust Wallet is a plug-in wallet. Users can manage their assets in Crust Network, such as CRU and Candy (and CSM after the mainnet launch)  via Crust Wallet. It includes following features:
-* Interact with Crust DApps such as [Crust Apps](https://apps.crust.network/#/accounts);
+* Interact with Crust DApps such as [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/accounts);
 * Manage accounts;
 * Transfer of tokens;
 

@@ -20,7 +20,7 @@ sidebar_label: Crust CRU18 Claim
 > 不用过分担心不熟悉这些工具的使用，我们会在下面的认领步骤中详细阐述每一个工具的。
 
 1. [MyEtherWallet](https://www.myetherwallet.com/interface/dashboard)
-2. [Crust Apps](https://apps.crust.network/)
+2. [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)
 
 ## 步骤
 
@@ -32,7 +32,7 @@ sidebar_label: Crust CRU18 Claim
 
 ### 二．签名验证和桥接代币
 
-登录[Crust Apps](https://apps.crust.network/#/claims)的Claims模块
+登录[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/claims)的Claims模块
 
 ![Connect Wallet1](assets/claimcru18/2claimtokens.jpg)
 

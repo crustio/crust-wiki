@@ -40,7 +40,7 @@ When a file storage order expires, storage nodes can bring the order into settle
 
 ## 3. How to renew files and settle orders
 
-Users can go to [Crust Apps](https://apps.crust.network/#/market/settlements) -> Network -> Market -> Order Settlement to view the files that can be settled and do the settlement, as shown below.
+Users can go to [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/market/settlements) -> Network -> Market -> Order Settlement to view the files that can be settled and do the settlement, as shown below.
 
 ![settlement](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/settlement.png)
 

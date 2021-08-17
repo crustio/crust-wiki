@@ -181,7 +181,7 @@ The monitoring log is as follows:
 
 ## **5. Joining Group**
 
-After the first work report, enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Member account, select 'swork' in the submit group, select joinGroup(target),  select the Controller address of the Owner of the Group you want to join, and click on 'Submit Transaction' to send the transaction.
+After the first work report, enter [Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), select 'Extrinsics', select the Member account, select 'swork' in the submit group, select joinGroup(target),  select the Controller address of the Owner of the Group you want to join, and click on 'Submit Transaction' to send the transaction.
 
 ![pic](assets/mining/join_group.png)
 

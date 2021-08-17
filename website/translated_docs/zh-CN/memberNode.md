@@ -174,7 +174,7 @@ sudo crust logs sworker
 
 ## 5. 加入Group
 
-等待第一次上报work report后，进入[Crust APPS](https://apps.crust.network/#/explorer)中，选择Extrinsics，选择填写Member的账号，选择submit组为swork，选择joinGroup()方法，然后再选择你要加入的Group的Owner的Controller地址，最后点击submit transaction发送交易
+等待第一次上报work report后，进入[Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)中，选择Extrinsics，选择填写Member的账号，选择submit组为swork，选择joinGroup()方法，然后再选择你要加入的Group的Owner的Controller地址，最后点击submit transaction发送交易
 
 ![图片](assets/mining/join_group.png)
 

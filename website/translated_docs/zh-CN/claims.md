@@ -14,7 +14,7 @@ sidebar_label: Crust Claims
 
 1. [MyEtherWallet](https://v5.myetherwallet.com/)
 2. [ImToken](https://token.im/)
-3. [Crust Apps](https://apps.crust.network/)
+3. [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)
 
 ## 步骤
 
@@ -31,7 +31,7 @@ sidebar_label: Crust Claims
 > 3. ⚠️ 确认CRU ERC20的合约地址：[CRUST](https://etherscan.io/token/0x32a7C02e79c4ea1008dD6564b35F131428673c41)
 > 4. ⚠️ Crust Maxwell认领地址为：[0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
 
-登陆[Crust Apps](https://apps.crust.network/#/claims)的Claim CRU模块
+登陆[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/claims)的Claim CRU模块
 
 向***Crust Maxwell认领地址***发起一笔**CRU的转账交易**.
 

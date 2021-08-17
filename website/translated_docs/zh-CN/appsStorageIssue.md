@@ -25,7 +25,7 @@ sidebar_label: 使用Crust Apps存储的问题
 关闭防火墙。
 ![closed_firewall](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/firewall_closed.png)
 
-关闭防火墙后，确保IPFS正常运行的情况下，进入[Apps存储订单页](https://apps.crust.network/#/storage/market)，对原文件重新下单。
+关闭防火墙后，确保IPFS正常运行的情况下，进入[Apps存储订单页](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/market)，对原文件重新下单。
 
 
 ## 4, 在Crust Github 中反馈

@@ -153,7 +153,7 @@ The results of an instance query are shown below:
 
 where the value of `reported_replica_count` is the number of nodes that store the NFT file: `FireCloud.png` in Crust Network, and the value of `expired_on` is the expired block height of this file order.
 
-*In addition to accessing Crust Network through code, you can also monitor the file storage status through [Crust Apps](https://apps.crust.network/#/storage/market)：*
+*In addition to accessing Crust Network through code, you can also monitor the file storage status through [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/storage/market)：*
 ![fire_cloud](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/build/fire_cloud.png)
 
 ### 3.4 NFT file retrieval and access

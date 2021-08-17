@@ -38,7 +38,7 @@ Crust网络通过“文件续费”和“订单清算”两个机制，保证：
 
 ## 3. 如何进行文件续费和订单清算
 
-用户可以进入[Crust Apps](https://apps.crust.network/#/market/settlements) -> Network -> Market -> Order Settlement，浏览可清算的文件并进行清算。如下图：
+用户可以进入[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/market/settlements) -> Network -> Market -> Order Settlement，浏览可清算的文件并进行清算。如下图：
 ![settlement](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/settlement.png)
 
 “Total Commission” 一栏显示了这笔清算操作可以获得的最终收益，也就是**文件的续费奖励+文件的清算奖励**。用户只需点击右边的“Settle”按钮来进行清算，并获得收益。（**注意：清算需要发起交易，并支付交易手续费，有些文件的总清算奖励可能低于手续费，这些文件的清算可能导致清算人负收益**）

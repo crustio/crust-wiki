@@ -27,7 +27,7 @@ Notices:
 
 ### 2.2 Create Group
 
-Enter [Crust APPS](https://apps.crust.network/#/explorer), select 'Extrinsics', select the Owner Controller account, select 'swork' in the submit group, select createGroup( ), and click on 'Submit Transaction' to send the transaction and create Group.
+Enter [Crust APPS](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), select 'Extrinsics', select the Owner Controller account, select 'swork' in the submit group, select createGroup( ), and click on 'Submit Transaction' to send the transaction and create Group.
 
 ![pic](assets/mining/create_group.png)
 
@@ -127,7 +127,7 @@ Copy the session key as shown below:
 
 ### 5.2  Set session key
 
-Enter [CRUST APPs](https://apps.crust.network/), click on "Staking" button under "Network" in the navigation bar, and go to "Accoung action". Click on "Session Key".
+Enter [CRUST APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer), click on "Staking" button under "Network" in the navigation bar, and go to "Accoung action". Click on "Session Key".
 
 ![pic](assets/mining/set_sessionkey1.png)
 

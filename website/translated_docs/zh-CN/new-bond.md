@@ -4,7 +4,7 @@ title: New Bond
 sidebar_label: New Bond
 ---
 
-Crust 账户是你链上的身份的体现，也是各类交易的主体。作为节点，你需要对应的账户来和节点进行绑定，从而获取区块奖励。Crust 账户作为标准的双账户模型 Controller/Stash，需要进行特定的账户绑定操作，通过操作 [Crust APPs](http://apps.crust.network/)，本节将说明如何创建账号和绑定账号关系。
+Crust 账户是你链上的身份的体现，也是各类交易的主体。作为节点，你需要对应的账户来和节点进行绑定，从而获取区块奖励。Crust 账户作为标准的双账户模型 Controller/Stash，需要进行特定的账户绑定操作，通过操作 [Crust APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)，本节将说明如何创建账号和绑定账号关系。
 
 ## 创建 Stash 账户
 在导航栏中点击 “账户” 下的 “账户”。然后点击“添加账户“

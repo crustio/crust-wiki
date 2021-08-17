@@ -8,7 +8,7 @@ Crust can be used in a wide range of scenarios, including:
 
 1. Serverless DApp/website hosting
 
-   Developers are able to deploy their own Dapps/websites based on Crust/IPFS Network. With this, developers are able to only focus on building Dapps/websites, no need for server management. Moreover, Crust Network incentivizes multiple nodes to store Dapp/website files and provide storage services, thus ensuring the high availability of Dapps/websites. [Crust Apps](https://apps.crust.network) is an example, it is hosted on Crust Network.
+   Developers are able to deploy their own Dapps/websites based on Crust/IPFS Network. With this, developers are able to only focus on building Dapps/websites, no need for server management. Moreover, Crust Network incentivizes multiple nodes to store Dapp/website files and provide storage services, thus ensuring the high availability of Dapps/websites. [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer) is an example, it is hosted on Crust Network.
 
 2. General off-chain data storage
 
