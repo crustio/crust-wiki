@@ -32,7 +32,7 @@ sudo crust reload smanager
 
 ### 1. Operations
 
-The collateral determines the upper limit for merchants to receive the order rewards. **The exchange rate is set at 10:1.** This means that a merchant can get an order reward of 1 CRU by staking a collateral of 10 CRUs.
+The collateral determines the upper limit for merchants to receive the order rewards. **The exchange rate is set at 1:1.** This means that a merchant can get an order reward of 1 CRU by staking a collateral of 1 CRUs.
 
 Merchants can log in the [Merchants](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/market) page to check relevant features and perform procedures including:
 
