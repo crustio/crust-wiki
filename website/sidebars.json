@@ -32,7 +32,8 @@
     ],
     "Build": [
       "buildGettingStarted",
-      "buildNode"
+      "buildNode",
+      "buildRockyGuidance"
     ],
     "Node": [
       "nodeOverview",
