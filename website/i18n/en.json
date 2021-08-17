@@ -144,6 +144,10 @@
       "manage-files-in-JS-APPS": {
         "title": "manage-files-in-JS-APPS"
       },
+      "marketBenefits": {
+        "title": "Storage Market Benefits",
+        "sidebar_label": "Storage Market Benefits"
+      },
       "memberNode": {
         "title": "Member Node",
         "sidebar_label": "Member Node"

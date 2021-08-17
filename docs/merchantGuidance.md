@@ -1,138 +1,68 @@
 ---
 id: merchantGuidance
 title: Merchant Guidance
-sidebar_label: Merchant Guidancex
+sidebar_label: Merchant Guidance
 ---
 
-## Overview
+Group Owners can register as merchants, who will receive two additional benefits:
+1. an increase in the stake limit for storing user data;
+2. order rewards from the storage market.
 
-You can get corresponding **order rewards** and **increase** your [stake limit](validator.md#staking-rewards) after having become a storage merchant and successfully stored user files.  
+> The storage market rewards mentioned in this document are order rewards only and do not include the increase in the stake limit for storing user files. To learn more about the rules for raising the stake limit, please refer to the [Economic White Paper](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
 
-## Order taking
+This document provides guidelines on how to register as merchants, how to configure order-taking strategies, and how to receive storage market rewards that will help new storage merchants navigate easily in the Crust Network.
 
-Storage Nodes (Member/Isolation) can take orders and report meaningful files to prove that they have successfully stored user files so as to obtain earnings and increase their stake limits by running [sManager(Storage Manager)](https://github.com/crustio/crust-smanager)  Technically, nodes can also have their own sManager order-taking strategies. The detailed development document is **upcoming**.
+## 1. To register as merchants
 
-### 1. Run the default sManager order-taking strategy
-
-```shell
-sudo crust tools upgrade-image smanager
-sudo crust reload smanager 
-```
-
-### 2. The default sManager order-taking strategy
-
-1. Group repetition removal strategy
-2. Automatic deletion of expired files
-3. Replica examination (files with over 70 replicas will not be accepted)
-4. Detection of full disk space
-5. Dynamic IPFS pulling timeout
-6. Order-taking upon probability
-
-## Collateral and order rewards
-
-### 1. Operations
-
-The collateral determines the upper limit for merchants to receive the order rewards. **The exchange rate is set at 1:5.** This means that a merchant can get an order reward of 1 CRU by staking a collateral of 5 CRUs.
-
-Merchants can log in the [Merchants](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/market) page to check relevant features and perform procedures including:
-
-1. Register
-
-Click on the "Register" button. The registration requires a threshold collateral of no less than 0.01 CRU.
+Go to [Crust Apps](apps.crust.network) -> DSM -> Storage Merchant and click on "Register" in the upper right corner, as shown below:
 
 ![register](assets/merchant/register.png)
 
-2. Add collateral
+> Note: Before the registration, it needs to be made sure that the Group Owner should have over 0.01 basic CRU [Collateral] (#31 - Collateral Lock) locked in the account.
 
-![add_c](assets/merchant/add_c.png)
+## 2. To configure order taking strategies
 
-3. Cut collateral
+Coming soon.
 
-![cut_c](assets/merchant/cut_c.png)
+## 3. To receive storage market rewards
 
-4. Collect rewards
+Storage market rewards are from storage orders. 20% of the fees paid by users for storage orders will be awarded to the first four nodes that complete the storage sealing (the term "seal" can be found in the [glossary](glossary.md). Yet, the storage market rewards will not go directly to the account balance of merchants. In order to receive the storage market rewards, the merchants will need to complete three actions: to lock in the collateral, to settle order rewards, and to receive the storage market rewards.
+ 
+### 3.1 Collateral lock
 
-![reward](assets/merchant/reward.png)
+After the [order settlement](orderSettlement.md), the order rewards are actually in a to-be-collected state. And there is an upper limit to the total amount of to-be-collected rewards which is equal to the total amount of locked collateral.
 
-> ⚠️ Please be sure to have sufficient collateral. Since anyone can settle order rewards, it is stipulated that rewards will not be issued if the collateral is insufficient when a reward settlement is done.
+> For example, if a merchant has locked in 10 CRUs, his storage order rewards will continue to grow as he keeps providing storage market services. New order rewards will be discarded till the total to-be-collected rewards reach 10 CRUs. At this point, the merchant will have two options.
 
-### 2. Settlement of order rewards
+    1. to collect the reward balance, after which the to-be-collected rewards will be cleared and can be re-accumulated;
+    2. to lock in more collateral, which will expand the accumulating upper limit of the to-be-collected rewards.
 
-#### Auto settlement tool
+The following involves a few collateral related actions:
 
-Please use [cst](https://www.npmjs.com/package/crust-storage-tool) to settle your order reward.
+#### 3.1.1 Add collateral
 
-#### Mannual settlement way
+Go to  [Crust Apps](apps.crust.network) -> DSM -> Storage Merchant, click on the "Add collateral" button with a '+' icon in the GroupOwner account bar and fill in the amount of to-be-increased collateral in the pop-up box.
 
-Order rewards **need to be settled before collection**. Currently, there are 3 ways for merchants to settle their order rewards:
+![addCollateral](assets/merchant/addCollaterall.png)
 
-1. Checking node order-taking information through [sPlorer](https://splorer.crust.network/home/mr)：
+After successfully adding the collateral, you will find that the user's "maximum to-be-collected income" has also increased accordingly.
 
-![splorer](assets/merchant/splorer.png)
+#### 3.1.1 Cut collateral
 
-2. **For any files (including unexpired files, settlement can also be carried out. Tips and basic fees will be distributed according to the proportion of the storage time to the total order time)**, sending the`claimReward` transaction in [Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi. crust.network%2F#/extrinsics) to settle order rewards：
+Also, merchants can reduce the amount of locked collateral by clicking on the "Cut collateral" button with a '-' icon in the GroupOwner account bar, and filling in the amount of to-be-reduced collateral in the pop-up box.
 
-![claimReward](assets/merchant/calculate.png)
+![cutCollateral](assets/merchant/cutCollaterall.png)
 
-3. For those settled order rewards, merchants can collect them (see [Collect rewards](#1-procedures)).
+![inputCutAmount](assets/merchant/inputCutAmount.png)
 
-### 3. Order reward description
+### 3.2 Order rewards settlement
 
-Merchants can receive 18% of an order's earnings, which are shared by the multiple order-taking merchants (ranked by their order of pulling), and are issued according to their effective duration of file storage. For specific order reward distribution strategies and the economic system design, please refer to the [Economic White Paper](https://crust.network/download/ecowhitepaper_en.pdf) for the description of Trading Market. Here are a few simple examples.
+The reward settlement is a pre-step for merchants to receive storage order rewards, after which the corresponding order rewards will be accumulated and added to the to-be-collected rewards of the merchants. The settlement conditions and steps can be found in the [Settlement Guide](orderSettlement.md).
 
-> If a user places an order `Qm123` and pays a total of 10 CRUs, among which 
->
-> - **1.8 CRUs** flow to the order reward pool as order rewards;
-> - **7.2 CRUs** flow to the stake reward pool as block generation and stake rewards in GPoS;
-> - **1 CRU** flows to the tax pool for the use by the entire network;
+### 3.3 Receive storage market rewards
 
-For newly placed orders:
+If merchants have gone through the previous guidelines (having locked in enough collateral, finished the order settlement, and received the to-be-collected rewards), they can follow the steps below to get rewards.
 
-- The initial order reward count (`expected_replica_count`): 4
-- File storage duration: 180 days
+Go to [Crust Apps](apps.crust.network) -> Network -> My merchant. The value in the "Income" column of your Merchant account represents the income of your storage market, and the rewards for order settlement will also be added to your "Income". You can click on "Get Reward" to obtain your storage market rewards.
 
-Therefore, the first 4 merchants that pull user files will receive order rewards which are affected by multiple factors:
-
-1. ***Work report*** is the only way to prove that you have stored user files. If the work is not reported or user files are deleted, you will lose the order rewards, and your reward entitlement will also be handed to the next storage node;
-2. Please do the [Order Reward Settlement](#2-settlement-of-order-rewards) and collect rewards timely. If the rewards are not collected for more than *15 days*, anyone can obtain them by sending `market.claimReward` transaction;
-3. Renewing an order (placing another order for the same file) will also trigger the settlement of order rewards.
-
-## Stake limit and Meaningful files
-
-Storing meaningful files (user files) will effectively increase the stake limit. **Extending the stake limit is not affected by the reward count (`expected_replica_count`), but the repetition of files in the same group will be removed**. Specifically, The relationship between the stake limit of storing meaningful files and SRD files can be summarized as:
-
-```shell
-Stake limit of meaningful files = File replica mapping function * Stake limit of SRD files
-```
-
-In Crust mainnet, the Stake Limit of SRD files is 1TB to 1CRU, and the **File replica mapping function** is:
-
-| Group file replica count | Multiple |
-|-----------------|------|
-| 1-10            | 2    |
-| 11-20           | 4    |
-| 21-30           | 6    |
-| 31-40           | 8    |
-| 41-70           | 10    |
-| 71-80           | 8    |
-| 81-90           | 6    |
-| 91-100          | 4    |
-| 101-200         | 2    |
-| > 200           | 0    |
-
- **Group file replica count refers to the same file stored by different groups**, which can be accessed from the `UsedInfo.groups` through `market.Files` of [Chain state](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi.crust.network%2F#/chainstate) in Apps.
-
-![usedInfo](assets/merchant/usedinfo.png)
-
-For example, if a merchant successfully stores the file `Qm123` (file size 100G), assuming that the count of Group replicas of `Qm123` in the entire network is 50, the corresponding stake limit is:
-
-```shell
-Stake limit of meaningful files = 10 * 0.1 CRU（Stake limit of SRD files）= 1 CRU
-```
-
-## For your references
-
-1. [Crust sManager](https://github.com/crustio/crust-smanager)
-2. [Decentralized Storage Market](DSM.md)
-3. [Crust Storage Explorer](crust-storage-explorer.md)
-4. [Economic White Paper](https://crust.network/download/ecowhitepaper_en.pdf)
+![getReward](assets/merchant/getReward.png)
