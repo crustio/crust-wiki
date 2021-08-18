@@ -22,7 +22,7 @@ Rocky network can be viewed on Crust Apps:
 - Centralized version: https://apps.crust.network
 - IPFS version: https://crustapps.net
 
-![apps-rocky](./assets/build/rocky-app.jpg)
+![apps-rocky](assets/build/rocky-app.jpg)
 
 And Rocky's public websocket endpoint is
 
