@@ -138,3 +138,7 @@ As long as you know the CID of a file, you can retrieve files through [Crust App
 
 ## 3. Developing storage features based on Crust SDK
 Coming soon.
+
+## 4. Order discount
+
+Storage users can obtain a maximum 10% discount on storage orders by locking CRUs as collateral in the storage market benefits module. For details, please refer to [Storage Market Benefits](marketBenefites.md).

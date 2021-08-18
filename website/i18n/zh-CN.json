@@ -145,6 +145,10 @@
         "title": "Isolation 节点",
         "sidebar_label": "Isolation 节点"
       },
+      "marketBenefits": {
+        "title": "存储市场权益",
+        "sidebar_label": "存储市场权益"
+      },
       "memberNode": {
         "title": "Member 节点",
         "sidebar_label": "Member 节点"
