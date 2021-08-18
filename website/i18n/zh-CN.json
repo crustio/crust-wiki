@@ -5,13 +5,9 @@
     "previous": "上一篇",
     "tagline": "Wiki for crust network",
     "docs": {
-      "buildDevGuidance": {
-        "title": "代码示例：使用Crust",
-        "sidebar_label": "代码示例：使用Crust"
-      },
-      "buildGettingStarted": {
-        "title": "开始",
-        "sidebar_label": "开始"
+      "buildFileStoringDemo": {
+        "title": "代码示例：使用Crust存储文件",
+        "sidebar_label": "代码示例：使用Crust存储文件"
       },
       "buildHelloCrust": {
         "title": "Hello Crust",
@@ -30,8 +26,8 @@
         "sidebar_label": "总览"
       },
       "buildIntegrationWebsiteHosting": {
-        "title": "部署和运行网站",
-        "sidebar_label": "部署和运行网站"
+        "title": "DApp的部署和运行",
+        "sidebar_label": "DApp的部署和运行"
       },
       "buildIntegrationNFTDataStorage": {
         "title": "NFT数据存储",

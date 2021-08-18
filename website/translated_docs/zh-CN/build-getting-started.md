@@ -1,39 +1,34 @@
 ---
 id: buildGettingStarted
-title: Getting Started
-sidebar_label: Getting Started
+title: Builder's Portal
+sidebar_label: Builder's Portal
 ---
 
-即将到来
-
-<!--
 Welcome to the builders section of the Crust Wiki!
 
 Here you will be able to find the most up-to-date information on the status of the development tools in the Crust ecosystem. We will keep adding new tools, frameworks and documents as we progress. If you are working on something that should be included please reach out to us on [Discord](https://discord.gg/D97GGQndmx).
 
-## How to Read
+This section of the wiki is divided into the following parts:
 
-**Developers** can start with [Hello Crust](build-hello-crust.md) and [Code Sample to Use Crust](build-developer-guidance.md), you'll go through a typical Crust use case, to learn how to use Crust CLI and Crust SDK.
+## Basics
 
-**Miners** can refer to the Miner Guide to learn how to optimize node operation and file handling strategies.
-
-You can read **Integration Guide** to learn how to leverage Crust in your applications for specific use cases.
-
-## Development Guide
-
-- [Hello Crust](build-hello-crust.md) - Tutorial on hosting a website on Crust, *this doc will help you understand Crust functions in a super intuitive way*.
-- [Code Sample to Use Crust](build-developer-guidance.md) - How to build a simple application with code sample.
-- [Crust SDK](build-crust-sdk.md) - Crust SDK and API document.
+- [Crust API](https://apps.crust.network/docs/) - The Crust API documentation.
+- [Crust Rocky](build-rocky-guidance.md) - An open and free test network.
+- [Crust JS-SDK](https://github.com/crustio/crust.js) - The javascript SDK access to Crust.
+- [File Storing Demo](build-file-storing-demo.md) - An E2E full code sample of storing file.
 
 ## Integration Guide
 
-- [Overview](build-integration-overview.md) - Overview of various scenarios based on the Crust Network.
-- [Website hosting](build-integration-website-hosting.md) - Hosting websites and DApp frontend on IPFS + Crust.
-- [Content storage & delivery](build-integration-content-storage-delivery.md) - Decentralized file storage and delivery solution.
-- [NFT Data Storage](build-integration-nft-data.md) - Store NFT files using IPFS + Crust.
+- [DApp Hosting](build-integration-website-hosting.md) - Hosting DApp or website frontend on IPFS and Crust.
+- [NFTs](build-integration-nft-data.md) - Store NFT files using IPFS and Crust.
+- [File Storage](build-integration-content-storage-delivery.md) - Decentralized file storage and delivery solution.
 
-## Miner Guide
+## Node Guide
 
-- [Storage Manager](build-smanager.md) - Storage manager interacts with Crust, IPFS and sWorker; it can be customized to apply different strategies to deal with storage orders and files.
-- [Crust Node](build-node.md) - Node operation program interacts with Chain, sWorker, API, IPFS and sManager; it can be customized to ease your node operation work.
--->
+- [Crust Node](build-node.md) - Node operation program interacts with Chain, sWorker, API, IPFS and sManager, it can be customized to ease your node operation work.
+- [Storage Manager](build-smanager.md) - Storage manager interacts with Crust, IPFS and sWorker, it can be customized to apply different strategies to deal with storage orders and files.
+
+## Toolkits
+
+- [Crust Github Action](https://github.com/crustio/ipfs-crust-action): For Github workflow users pining their DApp or Websites with Crust.
+- [Crust Pin Node Package](https://github.com/crustio/crust.js/tree/mainnet/packages/crust-pin): Crust pin service allows nodejs users store file on Crust

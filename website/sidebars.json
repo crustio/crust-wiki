@@ -32,8 +32,31 @@
     ],
     "Build": [
       "buildGettingStarted",
-      "buildNode",
-      "buildRockyGuidance"
+      {
+        "type": "subcategory",
+        "label": "Basics",
+        "ids": [
+          "buildRockyGuidance",
+          "buildFileStoringDemo"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Integration Guide",
+        "ids": [
+          "buildIntegrationWebsiteHosting",
+          "buildIntegrationNFTDataStorage",
+          "buildIntegrationContentStorageDelivery"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Node Guide",
+        "ids": [
+          "buildNode",
+          "buildSmanager"
+        ]
+      }
     ],
     "Node": [
       "nodeOverview",
