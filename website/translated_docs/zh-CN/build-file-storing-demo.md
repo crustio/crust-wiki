@@ -1,26 +1,26 @@
 ---
-id: buildDevGuidance
-title: Code Sample to Use Crust
-sidebar_label: Code Sample to Use Crust
+id: buildFileStoringDemo
+title: File Storing Code Sample
+sidebar_label: File Storing Code Sample
 ---
 
 This doc contains a code sample to demonstrate how to upload a file to IPFS, and place a storage order to get the file stored in Crust Network. After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in WebSite/DApp frontend hosting, content/media delivery, cloud storage, etc.
 
 The code sample is open source on GitHub repo: https://github.com/crustio/crust-demo
 
-## 1 Overview
+## Overview
 
-### 1.1 Storage process
+### 1. Storage process
 
 Using IPFS and Crust Network, developers can follow below process to upload, store and distribute files：
 
-- Upload the file to IPFS, and get the file `CID` (a unique identifier generated based on the content of each file) and file `Size` (the actual size of the file stored in IPFS, which is different from the original file size)
-- Use the `CID` and `Size` of the file to place a storage order on the Crust chain. The given size should be no smaller than the actual file size.
-- Obtain and monitor order status
+1. Upload the file to IPFS, and get the file `CID` (a unique identifier generated based on the content of each file) and file `Size` (the actual size of the file stored in IPFS, which is different from the original file size)
+2. Use the `CID` and `Size` of the file to place a storage order on the Crust chain. The given size should be no smaller than the actual file size.
+3. Obtain and monitor order status
 
-The process should be executed sequentially to ensure that the files are stored smoothly by the Crust network。
+The process should be executed sequentially to ensure that the files are stored smoothly by the Crust network.
 
-### 1.2 Dependencies
+### 2. Dependencies
 
 The code sample mainly depends on the following libraries:
 
@@ -28,8 +28,9 @@ The code sample mainly depends on the following libraries:
 - [@polkadot/api](https://github.com/polkadot-js/api) The polkadot api library provides a Promise-style interface for performing related operations on the Crust chain
 - [ipfs-core](https://github.com/ipfs/js-ipfs) ipfs library, contains all the functions of ipfs
 
-## 2 Description
-### 2.1 Upload files to IPFS
+## Let's Rock 🤟🏻
+
+### 1. Upload files to IPFS
 
 Before interacting with the IPFS network, an instance of `ipfs` needs to be instantiated. The code is as follows:
 
@@ -63,7 +64,7 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 }
 ```
 
-### 2.2 Initialize API instance and on-chain identity
+### 2. Initialize API instance and on-chain identity
 
 You need to initialize an instance of `api` to interact with the Crust network. The code is as follows:
 
@@ -99,7 +100,7 @@ const kr = new Keyring({
 const krp = kr.addFromUri(seeds);
 ```
 
-### 2.3 Place storage order
+### 3. Place storage order
 
 You can use the following code to determine whether the chain is synchronized to the latest block:
 
@@ -148,7 +149,7 @@ async function placeOrder(api: ApiPromise, krp: KeyringPair, fileCID: string, fi
 }
 ```
 
-### 2.4 Get order status
+### 4. Get order status
 
 In general, the order stauts is updated every half an hour. You can query the status of the order through `api.query.market.files()`
 
@@ -167,26 +168,28 @@ async function getOrderState(api: ApiPromise, cid: string) {
 
 If the order does not exist, it will return `none`. If the order exists, it will return the following data structure, where `expired_on` is compared with the current block height to determine whether it has expired. If `reported_replica_count` is 0, the order is still in progress, if it is greater than 0 , and if it has not expired, the order is successful.
 
-```json
+```
 {
-	"file_size": 186,
-	"expired_on": 12314,
-	"claimed_at": 12164,
-	"amount": 92812500,
-	"expected_replica_count": 2,
-	"reported_replica_count": 1,
-	"replicas": [
-		{
-			"who": "5Ck95aKKQHiFd2W8gfrbqiF8u7L4DSEYqBazA3iqbCgncj4H",
-			"valid_at": 12094,
-			"anchor": "0x9a59000c5a3e5f8f6261e09cc8b77c98d2c45bac0a2af7a151d97a392b927b074c6d580053e50f11325ca0dc3f2135eb4372b6f4e73329f99705208a31c4d728",
-			"is_reported": true
-		}
-	]
+    file_size: 23,710,
+    spower: 24,895,
+    expired_at: 2,594,488,
+    calculated_at: 2,488,
+    amount: 545.3730 nCRU,
+    prepaid: 0,
+    reported_replica_count: 1,
+    replicas: [
+    {
+        who: cTHATJrSgZM2haKfn5e47NSP5Y5sqSCCToxrShtVifD2Nfxv5,
+        valid_at: 2,140,
+        anchor: 0xd9aa29dda8ade9718b38681adaf6f84126531246b40a56c02eff8950bb9a78b7c459721ce976c5c0c9cd4c743cae107e25adc3a85ed7f401c8dde509d96dcba0,
+        is_reported: true,
+        created_at: 2,140
+    }
+    ]
 }
 ```
 
-## 3 Github Link
+## Resources
 
-Please refer to this [link](https://github.com/crustio/crust-demo)
-
+- [Code Demo](https://github.com/crustio/crust-demo)
+- [IPFS Core](https://github.com/ipfs/js-ipfs)

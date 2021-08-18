@@ -1,18 +1,18 @@
 ---
 id: buildIntegrationWebsiteHosting
-title: Website Hosting
-sidebar_label: Website Hosting
+title: DApp Hosting
+sidebar_label: DApp Hosting
 ---
 
-Crust provides 3 standard ways to host websites based on [Crust SDK](build-crust-sdk.md) and [IPFS SDK](https://github.com/ipfs/js-ipfs/):
+Currenly, Crust provides 3 ways to host DApps/websites:
 
-1. 💻 [Crust Command Line](https://github.com/crustio/crust-cli): Allow user to publish website to Crust Network through terminal command line.
-2. 📦 [Crust Pin Nodejs Package](https://github.com/crustio/crust.js/tree/main/packages/crust-pin): Allow user to write javascript code to publish website to Crust Network through javascript code.
-3. 🔗 [Crust IPFS Pin Github Action](https://github.com/crustio/ipfs-crust-action): Allow user to integrate standard [Github Action](https://github.com/features/actions) to publish website to Crust Network.
+1. 💻 [Crust Command Line](https://github.com/crustio/crust-cli): Allows user to publish website to Crust Network through terminal command line.
+2. 📦 [Crust Pin Nodejs Package](https://github.com/crustio/crust.js/tree/main/packages/crust-pin): Allows user to write javascript code to publish website to Crust Network through javascript code.
+3. 🔗 [Crust IPFS Pin Github Action](https://github.com/crustio/ipfs-crust-action): Allows user to integrate standard [Github Action](https://github.com/features/actions) to publish website to Crust Network.
 
-In this guide, we will host a simple React website as an example and show how to deploy and host it on Crust Network use 3 different ways.
+In this guide, we will **host a simple React website** as an example and show how to deploy and host it on Crust Network use 3 different ways.
 
-## Prerequisites
+## Create a Website
 
 1. Create a React app
 
@@ -147,15 +147,14 @@ Also, there is a [standard Github Workflow](https://github.com/crustio/ipfs-crus
 
 There's already some project used Crust Network to host their website application.
 
-- 🦄 [Uniswap](https://github.com/Uniswap/uniswap-interface/blob/main/.github/workflows/release.yaml#L57): Uses Crust IPFS Pin Github Action
+- 🦄 [Uniswap](https://github.com/Uniswap/uniswap-interface/blob/main/.github/workflows/release.yaml#L57): Use Crust IPFS Pin Github Action
 - 🟣 [Polkadot Apps](https://github.com/polkadot-js/apps/blob/master/scripts/ipfsUpload.cjs#L64-L65): Uses Crust Pin Nodejs package
-- 🟠 [Crust Apps](https://github.com/crustio/crust-apps/actions/workflows/release.yml): Uses Crust IPFS Pin Github Action
+- 🟠 [Crust Apps](https://github.com/crustio/crust-apps/actions/workflows/release.yml): Use Crust IPFS Pin Github Action
 - *More*
 
 ## Resources
 
 - [Uniswap](https://github.com/Uniswap/uniswap-interface)
-- [Polkadot Apps](https://github.com/polkadot-js/apps)
 - [Crust Apps](https://github.com/crustio/crust-apps/)
 - [crust-pin](https://github.com/crustio/crust.js/tree/main/packages/crust-pin)
 - [ipfs-crust-action](https://github.com/crustio/ipfs-crust-action)
