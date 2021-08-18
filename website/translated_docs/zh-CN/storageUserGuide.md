@@ -164,3 +164,7 @@ sidebar_label: User Guidance
 如果您当下使用的环境没有安装IPFS。您也可以通过任何一个IPFS Gateway来访问Crust网络中存储的文件。一些常用的IPFS Gateway可以在[这里](https://ipfs.github.io/public-gateway-checker/)找到。
 
 > 举个例子：如果我们通过Decoo Gateway来访问CID为`QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`的文件，可以直接访问URL:`https://ipfs.decoo.io/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`
+
+## 4. 订单折扣
+
+存储用户可以在存储市场权益模块中通过锁定CRU通证作为保障金来获得最大10%的存储订单折扣优惠。详情参考[存储市场权益](marketBenefites.md)。
