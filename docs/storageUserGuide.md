@@ -131,7 +131,7 @@ Enter [Crust](https://apps.crust.network/#/storage/market) and click on "Place a
 Fill in the CID and Size obtained from the previous step in the order generation page and click on "Confirm". Then you can place an order on Crust Network.
     ![order_independent](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/order_independent.png)
 
-For order status, please go back to [1.4 Checking order status](#14-Checking order status). 
+For order status, please go back to [1.4 Checking order status](#14-Checking order status).
 
 ### 2.3 Retrieving files
 As long as you know the CID of a file, you can retrieve files through [Crust Apps](https://apps.crust.network/#/storage/files). For details, please refer to [1.5 Retrieving files](#15-Retrieving files). You may also use [IPFS file retrieval](https://dweb-primer.ipfs.io/avenues-for-access/retrieve-from-peer).
@@ -141,4 +141,4 @@ Coming soon.
 
 ## 4. Order discount
 
-Storage users can obtain a maximum 10% discount on storage orders by locking CRUs as collateral in the storage market benefits module. For details, please refer to [Storage Market Benefits](marketBenefites.md).
+Storage users can obtain a maximum 10% discount on storage orders by locking CRUs as collateral in the storage market benefits module. For details, please refer to [Storage Market Benefits](marketBenefits.md).
