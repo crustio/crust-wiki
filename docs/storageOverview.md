@@ -3,9 +3,7 @@ id: storageOverview
 title: Overview
 sidebar_label: Overview
 ---
-Coming soon.
 
-<!--
 The Crust Network has built a [Decentralized Storage Market (DSM)](DSM.md) that allows everyone to access it. Storage users and merchants both can take what they need from the DSM.
 
 ## Storage Users
@@ -22,16 +20,10 @@ Merchants will be rewarded with the following benefits after successfully storin
 
 1. a corresponding storage income from the DSM.
 
-2. an extended effective data size. (The effective data size will contribute more storage hash power than SRD), which can effectively increase the stake limit of nodes and in turn help the nodes get higher staking rewards. 
+2. an extended effective data. (The effective data will contribute more stake limit than SRD), which can effectively increase the stake limit of nodes and in turn help the nodes get higher staking rewards.*The specific rules for the stake limit calculation can be found in the [Economic White Paper](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).*
 
-The specific rules for storage hash power calculation can be found in the [Economic White Paper](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).)
-
-Check out the [Storage Merchant Guide](merchantGuide.m'd) for more details.
-
-Storage merchants can also get **order settlement transaction fee exemptions** by locking CRUs as storage market collateral. Check [Storage Market Benefits](marketBenefits.md) for more details.
+Check out the [Storage Merchant Guide](merchantGuidance.md) for more details of being a storage merchant.
 
 ## Developers
 
 The Crust Network has provided necessary technical tools for developers to enable them to build DSM-based applications needed in varied business scenarios. Check out [how to build](build-getting-started.md).
--->
-Coming soon.

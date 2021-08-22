@@ -1,12 +1,10 @@
 ---
 id: buildIntegrationContentStorageDelivery
-title: File Storage
-sidebar_label: File Storage
+title: Content Storage & Delivery
+sidebar_label: Content Storage & Delivery
 ---
 
-Comming soon
-
-<!-- Crust provides standard file upload and download services based on the combination of IPFS. Developers can build cloud storage functions, file distribution and even standard S3-like services on Crust. This article will explain from the perspectives of file upload, file storage, and file download
+Crust provides standard file upload and download services based on the combination of IPFS. Developers can build cloud storage functions, file distribution and even standard S3-like services on Crust. This article will explain from the perspectives of file upload, file storage, and file download
 
 ## 1 IPFS
 
@@ -121,24 +119,22 @@ async function getOrderState(api: ApiPromise, cid: string) {
 
 If the order does not exist, it will return `none`. If the order exists, it will return the following data structure, where `expired_on` is compared with the current block height to determine whether it has expired. If `reported_replica_count` is 0, the order is still in progress, if it is greater than 0 , and if it has not expired, the order is successful.
 
-```
+```json
 {
-    file_size: 23,710,
-    spower: 24,895,
-    expired_at: 2,594,488,
-    calculated_at: 2,488,
-    amount: 545.3730 nCRU,
-    prepaid: 0,
-    reported_replica_count: 1,
-    replicas: [
-    {
-        who: cTHATJrSgZM2haKfn5e47NSP5Y5sqSCCToxrShtVifD2Nfxv5,
-        valid_at: 2,140,
-        anchor: 0xd9aa29dda8ade9718b38681adaf6f84126531246b40a56c02eff8950bb9a78b7c459721ce976c5c0c9cd4c743cae107e25adc3a85ed7f401c8dde509d96dcba0,
-        is_reported: true,
-        created_at: 2,140
-    }
-    ]
+	"file_size": 186,
+	"expired_on": 12314,
+	"claimed_at": 12164,
+	"amount": 92812500,
+	"expected_replica_count": 2,
+	"reported_replica_count": 1,
+	"replicas": [
+		{
+			"who": "5Ck95aKKQHiFd2W8gfrbqiF8u7L4DSEYqBazA3iqbCgncj4H",
+			"valid_at": 12094,
+			"anchor": "0x9a59000c5a3e5f8f6261e09cc8b77c98d2c45bac0a2af7a151d97a392b927b074c6d580053e50f11325ca0dc3f2135eb4372b6f4e73329f99705208a31c4d728",
+			"is_reported": true
+		}
+	]
 }
 ```
 
@@ -174,7 +170,6 @@ The third-party Gateways [list](https://ipfs.github.io/public-gateway-checker)
 You can use command line, HTTP request or [ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client) to operate IPFS. For details, please refer to [link](https:// github.com/ipfs/go-ipfs), the following takes HTTP request as an example.
 
 Download files, where 5001 is the default api port of ipfs：
-
 ```shell
 curl --request POST 'http://127.0.0.1:5001/api/v0/get?arg=QmcztAX232UrQ3VUg7MZXsHSrkaRzT3uACZMJSRN7ymjYV'
-``` -->
+```

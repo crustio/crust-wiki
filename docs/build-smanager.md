@@ -4,11 +4,7 @@ title: Crust Storage Manager
 sidebar_label: Crust Storage Manager
 ---
 
-> sManager v.mainnet is a break change version which has a big difference with maxwell sManager, you can check maxwell sManager [here](https://wiki-maxwell.crust.network/docs/en/buildSmanager).
-
-Comming soon
-
-<!-- sManager (Storage Manager) is a file picking robot which continuous picking and handling files from Crust Network. Node operators can customize this module to implement their own file handling strategy. Basically, sManager is divideds into the following parts:
+sManager (Storage Manager) is a file picking robot which continuous picking and handling files from Crust Network. Node operators can customize this module to implement their own file handling strategy. Basically, sManager is divideds into the following parts:
 
 1. **Picker**: Listen new files from chain, add a pulling task into `Pulling Queue`;
 2. **Puller**: Take task from `Pulling Queue`, pull the file from IPFS, when the file downloaded successfully, add a sealing task into `Sealing Queue`;
@@ -354,4 +350,4 @@ More customized decisions are welcomed to be contributed to sManager, and you of
 - `crust.js`: https://github.com/crustio/crust.js
 - `crust`: https://github.com/crustio/crust
 - `crust-sworker`: https://github.com/crustio/crust-sworker
-- `js-ipfs`: https://github.com/ipfs/js-ipfs -->
+- `js-ipfs`: https://github.com/ipfs/js-ipfs

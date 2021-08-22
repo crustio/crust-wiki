@@ -13,33 +13,41 @@
         "title": "Crust SDK",
         "sidebar_label": "Crust SDK"
       },
-      "buildFileStoringDemo": {
-        "title": "File Storing Code Sample",
-        "sidebar_label": "File Storing Code Sample"
+      "buildCrustJs": {
+        "title": "crust.js",
+        "sidebar_label": "crust.js"
+      },
+      "buildDevGuidance": {
+        "title": "Code Sample to Use Crust",
+        "sidebar_label": "Code Sample to Use Crust"
       },
       "buildGettingStarted": {
-        "title": "Builder's Portal",
-        "sidebar_label": "Builder's Portal"
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
       },
       "buildHelloCrust": {
         "title": "Hello Crust",
         "sidebar_label": "Hello Crust"
       },
       "buildIntegrationContentStorageDelivery": {
-        "title": "File Storage",
-        "sidebar_label": "File Storage"
+        "title": "Content Storage & Delivery",
+        "sidebar_label": "Content Storage & Delivery"
       },
       "buildIntegrationNFTDataStorage": {
-        "title": "NFTs",
-        "sidebar_label": "NFTs"
+        "title": "NFT Data Storage",
+        "sidebar_label": "NFT Data Storage"
       },
       "buildIntegrationOverview": {
         "title": "Overview",
         "sidebar_label": "Overview"
       },
       "buildIntegrationWebsiteHosting": {
-        "title": "DApp Hosting",
-        "sidebar_label": "DApp Hosting"
+        "title": "Website Hosting",
+        "sidebar_label": "Website Hosting"
+      },
+      "buildIPFSSDKs": {
+        "title": "IPFS SDKs",
+        "sidebar_label": "IPFS SDKs"
       },
       "buildNode": {
         "title": "Crust Node",
