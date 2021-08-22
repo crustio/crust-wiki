@@ -7,7 +7,9 @@ sidebar_label: Storage Merchant
 Storage merchants are nodes in the Crust network that provide storage space. Storage merchants need to run sWorker modules for consensus on workload,  hard disks, and network services, to support storage certification, storage services, and retrieval services.
 
 ### Storage incentives for merchants
+
 Storage merchants could receive the rewards after providing storage services. The rewards include two aspects:
+
 1. Staking rewards: Storage merchants can obtain higher storage power and higher stake limit by providing file storage. By participating in [GPoS](GPoS.md), you can obtain stake rewards from the Crust network.
 2. File storage rewards: Users need to pay the corresponding CRU for the storage amount of the storage order for the files stored in the Crust network. The portion of the stored amount can be directly obtained by the first four merchants who stored the file.
 
@@ -24,9 +26,9 @@ The process for storage merchants to obtain files and storage rewards is shown i
 3. After Crust storage merchants monitor new orders on the chain, they can catch the user files through the IPFS network.
 4. After the Crust storage merchant completes the storage proof, the new user files will be collected by the workload report, which will increase the effective staking limit of the node. At the same time, the first four storage merchants who have completed the document storage proof will be able to participate in the distribution of 20% of the deposit.
 
-
 ### File settlement
-Taking into account the TPS and performance reasons of the Crust Network, the Crust Network will not actively liquidate files. Merchants can actively liquidate files to obtain storage rewards. The release of the stored amount is linearly released with the validity period of the file, and the merchant can obtain the exemption of the transaction fee through the benefits funds amount.
+
+Taking into account the TPS and performance reasons of the Crust Network, the Crust Network will not actively liquidate files. Merchants can actively liquidate files to obtain storage rewards. The storage fee is linearly released with the validity period of the file, and the merchant can obtain the exemption of the transaction fee through the [DSM Benefits Module](marketBenefits.md).
 
 ### File reward collection and merchant collateral
 

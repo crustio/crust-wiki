@@ -4,64 +4,65 @@ title: Storage Market Benefits
 sidebar_label: Storage Market Benefits
 ---
 
-用户可以通过锁定CRU通证作为存储市场保障金来获得存储订单折扣优惠和订单清算手续费减免优惠。
+Users can receive storage order discounts and reductions for order settlement fees by locking in CRU tokens as storage market collateral.
 
-作为[存储商户](merchantGuidance.md)，保障金是领取存储订单奖励的必要条件，保障金可以获得同等金额的奖励领取上限，待领取的存储订单奖励累计到上限后将不会再增加，需要存储商户及时领取。
+For [storage merchants](merchantGuidance.md) to receive storage order rewards, the collateral is a necessity, with which merchants can get rewards equal to the collateral. This being said, the collateral represents the upper limit of the merchants’ to-be-collected storage order rewards, which will not increase any more when the limit is hit and merchants will need to collect them timely.
 
-## 存储订单折扣
+## **Benefit 1: Storage order discounts**
 
-用户可以在存储市场权益模块中通过锁定CRU通证作为保障金来获得最大10%的存储订单折扣优惠，折扣比例的计算公式为：
+Users can get a maximum 10% discount on storage orders by [locking in CRU tokens as collateral](#1-add-collateral) in the Storage Market Benefits module. The discount rate can be calculated as: 
 
-* 折扣比例=min（10%，用户保障金/存储市场总保障金）
+* Discount rate = min (10%, the user’s collateral / total storage market collateral).
 
->注意：折扣优惠不对小费生效
+  As shown in the example below,  a collateral of 0.1 CRU is locked in the Stash account (the total collateral of the whole network is 0.11, and the user's collateral takes up a big part of the collateral locked in the network). According to the above formula, the storage order discount rate obtained by the user is 10%, which can be known from [Crust Apps](https://apps.crust.network) -> "Account" -> "Benefits" -> "Storage Market".
 
-## 订单清算手续费减免
+  ![discount](assets/merchant/discount.png)
 
-用户可以在存储市场权益模块中通过锁定CRU通证作为保障金来获得订单清算手续费减免优惠，Crust网络将会在每个Era的区块奖励中预留0.2%作为清算手续费减免池，用户通过锁定保障金可以在减免池中得到一定的配额。用户在发起清算时产生的手续费，将优先从减免池配额中扣除。用户的减免配额计算公式为：
+>Note: The discount offer is not applicable for tips.
 
-* 用户减免配额 = （用户保障金/存储市场总保障金）* 减免池CRU总额
+## **Benefit 2: Reductions for order settlement fees**
 
->注意：清算手续费减免池每个Era将被重置，未消耗的减免池额度将不会被累计.
+Users can get reductions for order settlement fees by [locking in CRU tokens as collateral](#1-add-collateral) in the Storage Market Benefits module. The Crust Network will reserve 0.2% of each Era’s block rewards which will be used for the reduction pool of settlement fees, and users can get a certain reduction limit in the reduction pool by locking in collateral. The order settlement fees will first be deducted from the reduction pool. Users’ order settlement fee reduction limit can be calculated as:
 
-## 存储市场权益模块操作说明
+* A user's reduction limit for order settlement fees = (the user's collateral / total storage market collateral) * total CRUs of the reduction pool
 
-### 1. 注册成为商户
+  As shown in the example below,  a collateral of 0.1 CRU is locked in the Stash account (the total collateral of the whole network is 0.11, and the user's collateral takes up a big part of the collateral locked in the network). Since the balance of the "reduction pool of settlement fees" is 0, the current user's reduction limit for order settlement fees is 0.
 
-Group Owner需要先注册成为存储商户，才能获得存储市场收益进入Crust Apps ->账户 ->权益 ->存储市场，点击“注册”：
+  ![freeSettle](assets/merchant/freeSettle.png)
 
-![registerBenefits](assets/merchant/registerBenefits.png)
+>Note: The reduction pool for settlement fees will be reset each Era and unspent pool limits will not be accumulated.
 
-在对话框中输入初始的保障金数量，点击“绑定”，完成签名并提交。
+## Benefit 3: Storage merchants receive storage order rewards
 
-![bondBenefits](assets/merchant/bondBenefits.png)
+After the [order settlement](orderSettlement.md), order rewards belonging to storage merchants will not go directly to the merchants' balance, but are in a to-be-collected state. **There is a upper limit to the total amount of rewards to be collected, and this limit is equal to the total amount of [locked collateral](#1-add-collateral).**
 
-此时，页面将会显示商户所获得的存储市场权益：
+As shown in the example below: If a merchant locks in a collateral of 0.1 CRU, his storage order rewards will keep growing as he continues to provide storage market services. New order rewards will be discarded until his total to-be-collected rewards reach 0.1 CRU.
 
-![showBenefits](assets/merchant/showBenefits.png)
+![recivable](assets/merchant/recivable.png)
 
-### 2. 增加保障金
+To avoid storage order rewards being discarded, merchants will have two options:
 
-当存储商户希望获得更多的权益时，可以通过操作增加保障金，进入Crust Apps ->账户 ->权益 ->存储市场，点击“增加保障金”。
+       1. take the rewards, when the to-be-collected rewards will be cleared and can be re-accumulated;
+       2. [lock in more collateral](#1-add-collateral), which can increase the receivable value of the to-be-collected rewards.
 
-![addBenefits](assets/merchant/addBenefits.png)
+## **Instructions on Storage Market Benefits**
 
-在对话框中输入希望增加保障金的数量，点击“绑定”
+### 1. **Add collateral**
 
-![addConfirm](assets/merchant/addConfirm.png)
+Go to [Crust Apps](https://apps.crust.network) -> Accounts -> Benefits -> Storage Market. Select the Group Owner's Stash account, click on the "Add collateral" button and fill in the amount of to-be-added collateral in the dialog box.
 
-注意：订单折扣比例最高为10%，达到最大比例后，增加保障金也不能获得更高的订单折扣比例。
+![addCollateral](assets/merchant/addCollateral.png)
 
-### 3. 减少保障金
+![inputAddAmount](assets/merchant/inputAddAmount.png)
 
-进入Crust Apps ->账户 ->权益 ->存储市场，点击“减少保障金”。
+After the collateral is successfully added, it will show that the user's "maximum receivable income" has also increased.
 
-![removeBenefits](assets/merchant/removeBenefits.png)
+![addedCollateral](assets/merchant/addedCollateral.png)
 
-在对话框中输入希望解绑的数量，点击“解除绑定”
+### 2. **Cut collateral**
 
-![removeConfirm](assets/merchant/removeConfirm.png)
+Similarly, storage merchants can reduce the amount of the locked collateral by clicking on the "Cut collateral" button and fill in the amount of collateral to be reduced in the pop-up box.
 
-解除绑定的CRU需要28天后才能提取。
+![cutCollateral](assets/merchant/cutCollateral.png)
 
-![removeLocked](assets/merchant/removeLocked.png)
+>Note: The collected rewards will go to the account balance, but will first be locked for 28 days before any transfer can be made.
