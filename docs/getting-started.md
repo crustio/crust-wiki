@@ -36,6 +36,7 @@ Crust can be used in a wide range of scenarios, including:
    Developers are able to build P2P content delivery network (CDN) services with Crust/IPFS Network. Crust Network incentivizes the nodes to spontaneously distribute CDN data and play the role of CDN edge nodes to accelerate the data transmission for CDN users.
 
 4. Secured cloud storage
+
    Developers are able to build Cloud storage applications with Crust/IPFS Network. Without maintaining storage clusters, developers only need to integrate the SDK of Crust/IPFS into applications to provide users with stable storage services.
 
 A series of `Crust Grants` will be introduced to accelerate the application development and network adoption.
