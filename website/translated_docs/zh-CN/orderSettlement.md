@@ -1,7 +1,7 @@
 ---
 id: orderSettlement
-title: Order Settlement Guidance
-sidebar_label: Order Settlement Guidance
+title: Order Settlement
+sidebar_label: Order Settlement
 ---
 
 任意用户都可以对存储订单发起清算。存储订单清算除了作为[存储商户](storage-merchant.md)领取订单奖励的前置步骤以外，还可以**延续**有持续存储意愿的存储订单，**关闭**已到期且无续费意愿的存储订单，

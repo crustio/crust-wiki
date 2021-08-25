@@ -168,5 +168,4 @@ To retrieve files through IPFS, please go to the "Files" page, click on "Import"
 
 If your device does not have IPFS installed, you can also access files stored on the Crust Network through any IPFS Gateway. Some common IPFS Gateways can be found [here](https://ipfs.github.io/public-gateway-checker/).
 
-> An example: If we want to access the file whose CID is QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv through Decoo Gateway, we can directly go to URL:`https://ipfs.decoo.io/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv` 
-
+> An example: If we want to access the file whose CID is QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv through Crust Gateway, we can directly go to URL:`https://crustwebsites.net/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`
