@@ -1,7 +1,7 @@
 ---
 id: appsStorageIssue
-title: 使用Crust Apps存储的问题
-sidebar_label: 使用Crust Apps存储的问题
+title: Apps Strorage Issue
+sidebar_label: Apps Strorage Issue
 ---
 
 # 存储订单无节点响应的解决办法

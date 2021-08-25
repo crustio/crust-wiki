@@ -22,7 +22,7 @@ sidebar_label: User Guidance
 
 #### 1.1.1 在Apps中安装、配置并运行IPFS
 
-进入[Crust Apps](https://apps.crust.network) -> Storage User ->。*如果出现以下提示，则代表您需要安装IPFS并进行正确的配置*
+进入[Crust Apps](https://apps.crust.network) -> 存储市场 -> 存储用户 -> 文件。*如果出现以下提示，则代表您需要安装IPFS并进行正确的配置*
 
 ![uninstall](assets/storage/uninstall.png)
 
@@ -38,11 +38,11 @@ sidebar_label: User Guidance
 
 如果您安装的是原生[IPFS](https://ipfs.io/#install)，则需要进行一系列配置才能适配Crust Apps。 您可以点击页面中的下拉框，跟着提示步骤进行配置并重启IPFS。
 
-无论您是通过什么渠道安装的IPFS，只要进入到 Crust Apps -> Files 不再出现提示信息，则代表您的IPFS已经配置完毕。
+无论您是通过什么渠道安装的IPFS，只要进入到“文件”页不再出现提示信息，则代表您的IPFS已经配置完毕。
 
 #### 1.1.2 上传文件
 
-在 [Crust Apps](https://apps.crust.network) -> DSM -> Storage User中，选中“文件”栏，点击右上角的“导入”，点击“文件”或“文件夹”，在弹出窗口中选中您要上传的文件/文件夹，并确认。
+在 [Crust Apps](https://apps.crust.network) -> 存储市场 -> 存储用户，选中“文件”栏，点击右上角的“导入”，点击“文件”或“文件夹”，在弹出窗口中选中您要上传的文件/文件夹，并确认。
 
 ![appsUpload](assets/storage/appsUpload.png)
 
@@ -76,7 +76,7 @@ sidebar_label: User Guidance
 
 ### 2.1 在Crust Apps中对本地文件下单
 
-进入[Crust Apps](https://apps.crust.network/#/storage) -> IPFS -> Files，这里会列出用户已经上传的文件或文件夹。
+进入[Crust Apps](https://apps.crust.network/#/storage) -> -> 存储市场 -> 存储用户 -> 文件，这里会列出用户已经上传的文件或文件夹。
 点击任意文件右边的 “...” 按钮，点击弹出菜单中的“Order”按钮进入订单页。
 
 ![placeOrder](assets/storage/placeOrder.png)
@@ -90,7 +90,7 @@ sidebar_label: User Guidance
 ### 2.2 对远程文件下单
 
 如果您本地没有文件，已知文件的CID和大小，也同样可以在Crust网络下单。
-进入[Crust Apps](https://apps.crust.network/#/storage) -> DSM  -> Storage User -> Storage Orders，点击 “Place an order”。
+进入[Crust Apps](https://apps.crust.network/#/storage) -> 存储市场 -> 存储用户 -> 存储订单，点击 “Place an order”。
 
 ![storageOrder](assets/storage/storageOrder.png)
 
@@ -100,7 +100,7 @@ sidebar_label: User Guidance
 
 ### 2.3 查看订单
 
-在[Crust Apps](https://apps.crust.network/#/storage) -> DSM -> Storage User 中，用户可以通过“拉取”/"Fetch"功能查看指定账号的所有订单。
+在[Crust Apps](https://apps.crust.network/#/storage) -> 存储市场 -> 存储用户，用户可以通过“拉取”/"Fetch"功能查看指定账号的所有订单。
 ![fetch](assets/storage/fetch.png)
 
 点击“Fetch”，选择查询的目标账户以及数据源（开发者可以开发自己的数据源[并提交申请](https://github.com/crustio/crust-apps/issues/new)，通过审核的数据源将会显示在数据源列表中供用户访问），点击确认后所选账户的所有订单会被列出。
@@ -131,7 +131,7 @@ sidebar_label: User Guidance
 
 充值步骤如下：
 
-1. 进入Crust Apps -> DSM -> Storage User -> “存储订单页”/"Storage Orders"，查看文件列表，找到对应文件；
+1. 进入[Crust Apps](https://apps.crust.network) -> 存储市场 -> 存储用户 -> “存储订单”页/"Storage Orders"，查看文件列表，找到对应文件；
 
 2. 点击“充值”/“Add Balance”
 ![renewList](assets/storage/renewList.png)
@@ -147,7 +147,7 @@ sidebar_label: User Guidance
 
 您可以在Crust Apps里检索到任何存储在IPFS或Crust网络的文件。流程如下：
 
-进入 [Crust Apps](https://apps.crust.network/#/storage) -> DSM -> Storage User，进入“文件”列表，点击“导入”，弹出列表中选择“From IPFS”。
+进入 [Crust Apps](https://apps.crust.network/) -> 存储市场 -> 存储用户，进入“文件”列表，点击“导入”，弹出列表中选择“From IPFS”。
 
 ![retrievelApps](assets/storage/retrievalApps.png)
 
@@ -163,8 +163,8 @@ sidebar_label: User Guidance
 
 如果您当下使用的环境没有安装IPFS。您也可以通过任何一个IPFS Gateway来访问Crust网络中存储的文件。一些常用的IPFS Gateway可以在[这里](https://ipfs.github.io/public-gateway-checker/)找到。
 
-> 举个例子：如果我们通过Decoo Gateway来访问CID为`QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`的文件，可以直接访问URL:`https://ipfs.decoo.io/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`
+> 举个例子：如果我们通过Crust Gateway来访问CID为`QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`的文件，可以直接访问URL:`https://crustwebsites.net/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`
 
 ## 4. 订单折扣
 
-存储用户可以在存储市场权益模块中通过锁定CRU通证作为保障金来获得最大10%的存储订单折扣优惠。详情参考[存储市场权益](marketBenefites.md)。
+存储用户可以在存储市场权益模块中通过锁定CRU通证作为保障金来获得最大10%的存储订单折扣优惠。详情参考[存储市场权益](marketBenefits.md)。

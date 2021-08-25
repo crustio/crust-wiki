@@ -6,62 +6,62 @@ sidebar_label: Storage Market Benefits
 
 用户可以通过锁定CRU通证作为存储市场保障金来获得存储订单折扣优惠和订单清算手续费减免优惠。
 
-作为[存储商户](merchantGuidance.md)，保障金是领取存储订单奖励的必要条件，保障金可以获得同等金额的奖励领取上限，待领取的存储订单奖励累计到上限后将不会再增加，需要存储商户及时领取。
+作为[存储商户](merchantGuidance.md)，保障金是领取存储订单奖励的必要条件。保障金可以获得同等金额的存储市场收益累积上限，待领取的存储订单奖励累计到上限后将不会再增加，需要存储商户及时领取。
 
-## 存储订单折扣
+## 权益1：存储用户的订单折扣
 
-用户可以在存储市场权益模块中通过锁定CRU通证作为保障金来获得最大10%的存储订单折扣优惠，折扣比例的计算公式为：
+存储用户可以在存储市场权益模块中通过[锁定CRU通证作为保障金](#1-增加保障金)来获得最大10%的存储订单折扣优惠，折扣比例的计算公式为：
 
 * 折扣比例=min（10%，用户保障金/存储市场总保障金）
 
+如下图示例，Stash账号锁定的保障金为0.1（此时全网总保障金为0.11，此用户占全网保障金锁定量的大部分），此时根据公式得出该用户获得的存储订单折扣为10%。可在[Crust Apps](https://apps.crust.network) -> "账户" -> “权益” -> “存储市场”查看到：
+
+![discount](assets/merchant/discount.png)
+
 >注意：折扣优惠不对小费生效
 
-## 订单清算手续费减免
+## 权益2：订单清算手续费减免
 
-用户可以在存储市场权益模块中通过锁定CRU通证作为保障金来获得订单清算手续费减免优惠，Crust网络将会在每个Era的区块奖励中预留0.2%作为清算手续费减免池，用户通过锁定保障金可以在减免池中得到一定的配额。用户在发起清算时产生的手续费，将优先从减免池配额中扣除。用户的减免配额计算公式为：
+用户可以在存储市场权益模块中通过[锁定CRU通证作为保障金](#1-增加保障金)来获得订单清算手续费减免优惠，Crust网络将会在每个Era的区块奖励中预留0.2%作为清算手续费减免池，用户通过锁定保障金可以在减免池中得到一定的配额。用户在发起清算时产生的手续费，将优先从减免池配额中扣除。用户的减免配额计算公式为：
 
 * 用户减免配额 = （用户保障金/存储市场总保障金）* 减免池CRU总额
 
+如下图示例，Stash账号锁定的保障金为0.1（此时全网总保障金为0.11，此用户占全网保障金锁定量的大部分），但由于全网“清算手续费减免池”金额为0。因此用户当前Era清算减免额度为0：
+
+![freeSettle](assets/merchant/freeSettle.png)
+
 >注意：清算手续费减免池每个Era将被重置，未消耗的减免池额度将不会被累计.
+
+## 权益3：存储商户领取存储订单奖励
+
+在[订单清算](orderSettlement.md)后，属于存储商户的订单奖励不会直接进入商户余额，而是处于一种待领取的状态。**待领取的奖励总额有一个上限，这个上限跟[锁定的保障金](#1-增加保障金)总额相等。**
+
+举个例子：如果商户锁定了0.1个CRU的担保金，那么这个商户在不断提供存储市场服务的过程中将会不断累积存储订单奖励。直到总待领取奖励达到0.1CRU后，新的订单奖励将被丢弃。如下图示例
+
+![recivable](assets/merchant/recivable.png)
+
+为了避免存储订单奖励被丢弃，商户有两个选择：
+    1. **领取奖励带商户的余额**，此时待领取奖励变为0，可以重新积累；
+    2. **[锁定更多保障金](#1-增加保障金)**，这样可以增大待领取奖励金的累计值。
 
 ## 存储市场权益模块操作说明
 
-### 1. 注册成为商户
+### 1. 增加保障金
 
-Group Owner需要先注册成为存储商户，才能获得存储市场收益进入Crust Apps ->账户 ->权益 ->存储市场，点击“注册”：
+进入 [Crust Apps](https://apps.crust.network) -> "账户" -> “权益” -> “存储市场”。找到GroupOwner的Stash账号，点击“增加保障金”按钮，在弹出框中输入要增加的保障金金额。
 
-![registerBenefits](assets/merchant/registerBenefits.png)
+![addCollateral](assets/merchant/addCollateral.png)
 
-在对话框中输入初始的保障金数量，点击“绑定”，完成签名并提交。
+![inputAddAmount](assets/merchant/inputAddAmount.png)
 
-![bondBenefits](assets/merchant/bondBenefits.png)
+成功增加保障金后，我们可以看到用户的“最大可领取收益”也相应增加了。
 
-此时，页面将会显示商户所获得的存储市场权益：
+![addedCollateral](assets/merchant/addedCollateral.png)
 
-![showBenefits](assets/merchant/showBenefits.png)
+### 2 减少保障金
 
-### 2. 增加保障金
+同样的，存储商户可以减少锁定的保障金，只需要点击“减少保障金”按钮，在弹出框中输入要减少的保障金金额即可。
 
-当存储商户希望获得更多的权益时，可以通过操作增加保障金，进入Crust Apps ->账户 ->权益 ->存储市场，点击“增加保障金”。
+![cutCollateral](assets/merchant/cutCollateral.png)
 
-![addBenefits](assets/merchant/addBenefits.png)
-
-在对话框中输入希望增加保障金的数量，点击“绑定”
-
-![addConfirm](assets/merchant/addConfirm.png)
-
-注意：订单折扣比例最高为10%，达到最大比例后，增加保障金也不能获得更高的订单折扣比例。
-
-### 3. 减少保障金
-
-进入Crust Apps ->账户 ->权益 ->存储市场，点击“减少保障金”。
-
-![removeBenefits](assets/merchant/removeBenefits.png)
-
-在对话框中输入希望解绑的数量，点击“解除绑定”
-
-![removeConfirm](assets/merchant/removeConfirm.png)
-
-解除绑定的CRU需要28天后才能提取。
-
-![removeLocked](assets/merchant/removeLocked.png)
+>注意：领取的奖励将会进入账户余额，但会被锁定28天，28天后才能进行转账。

@@ -71,7 +71,12 @@
       "Q&AForMining"
     ],
     "Storage": [
-      "storageOverview"
+      "storageOverview",
+      "storageUserGuide",
+      "merchantGuidance",
+      "orderSettlement",
+      "marketBenefits",
+      "appsStorageIssue"
     ]
   }
 }

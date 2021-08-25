@@ -4,141 +4,168 @@ title: User Guidance
 sidebar_label: User Guidance
 ---
 
-Users can store files with Crust Network in three ways:
-* Users can store files by directly using [Crust Apps](https://apps.crust.network/#/storage);
-* Users can store files by adapting the standard IPFS to [Crust Apps](https://apps.crust.network/#/storage);
-* Developers can develop storage features based on Crust SDK;
+Users can store and access data on Crust by following three steps:
 
-## 1. File storage via Crust Apps
+1. Upload. Users upload files to IPFS;
 
-### 1.1 Installing, configuring, and launching IPFS
-If the following prompt appears after you entering [Crust Apps/IPFS](https://apps.crust.network/#/storage), you need to install and launch IPFS.
-![Install IPFS](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/installIPFS)
+2. Place orders. Users generate storage orders on the Crust Network;
+
+3. Retrieve. Users retrieve corresponding files through the IPFS Network.
+
+This guide describes the steps for ordinary Crust users to access data. Developers should go to [*Crust Developer Guide*](build-getting-started.md) for information.
+
+
+
+## 1. Upload
+
+The purpose of this step is to allow you to upload files to IPFS. You can upload files through [Crust Apps](#11-通过crust-apps上传文件) or [IPFS Desktop](#12-通过ipfs上传文件).
+
+If the file you want to store already exists on the IPFS Network and you have already obtained the CID of the file, you can skip this part and go directly to [2.2 Place orders for remote files](#22-对远程文件下单) to learn about more steps.
+
+### 1.1 Upload files via Crust Apps
+
+#### 1.1.1 Install, configure and run IPFS in Apps
+
+Enter [Crust Apps](https://apps.crust.network) -> Storage User ->.  *If the following prompt appears, you need to install and run IPFS.*
+
+![uninstall](assets/storage/uninstall.png)
+
 For this, you have two options:
 
-#### Option 1. Install Crust-specific version of IPFS
-You can click on the link to install and launch the Crust-specific version of IPFS. The specific version of IPFS differs from the standard IPFS in that it has been adapted to Crust Apps, so it can be used on Crust Apps upon installation with no more additional configuration.
+**Option 1: Install Crust-specific version of IPFS**
 
-#### Option 2. Install the standard version of IPFS
-If you have already installed the [Standard IPFS](https://ipfs.io/#install), you need to follow a few configuration steps to adapt it to Crust Apps.
-You can click on the "Fold" on the page and follow the prompts to configure accordingly.
+You can click on the prompt link to install and run the Crust-specific version of IPFS.
 
-![config IPFS](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/configIPFS.png)
+![install](assets/storage/installIPFS.png)
 
-### 1.2 Uploading files to IPFS Network
+**Option 2: Use standard version of IPFS**
 
-You can upload a file or folder to IPFS following the steps of launching IPFS, unfolding the "Files" column, clicking on "Import" in the upper right corner, and choosing "File" or "Folder".
-![upload](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/upload.png)
+If you have already installed the [Standard IPFS](https://ipfs.io/#install), you need to follow a few configuration steps to adapt it to Crust Apps. You can click on the "Fold" button on the page and follow the prompts to configure accordingly.
 
-You will find the file or folder you just uploaded appear in your file list.
+The ways you install your IPFS may differ, but as long as the prompt no longer appears when you go to Crust Apps -> Files, it means your IPFS has been well configured.
 
-**Note: The uploaded file/folder is still on your local IPFS, and currently no node is there to help you store it.**
+#### 1.1.2 Upload files
 
-### 1.3 Generating storage orders
-Then go to the file list to pick the file or folder you want to store on Crust Network, click on "..." to the right of the file/folder, and click on "Order" to open the order page.
-![order1](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/order_1.png)
+You can upload your files or folders to IPFS by going to [Crust Apps](https://apps.crust.network) -> DSM -> Storage User. You need to click on Files, click on "Import" in the upper right corner, choose "File" or "Folder", and confirm.
 
-![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/order_2.png)
+![appsUpload](assets/storage/appsUpload.png)
 
-Select the account for payment on the order page and ensure that the account balance is larger than the file price (at the bottom), and click on "Confirm".
-Then enter the account password to authorize the transaction and generate the storage order.
-![submit_order](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/submit_order.png)
+You will find the files or folders you just uploaded appear in your file list.
 
-### 1.4 Checking order status
+>Note: The uploaded files/folders are still on your local IPFS, and currently no node is there to help you store them.
 
-You can find the order you just generated in the list below after opening the storage order page. The initial state "Pending" means that the file is being pulled by Crust nodes.
-![orders](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/orders.png)
+### 1.2 Upload files via IPFS
+
+#### 1.2.1 Install IPFS
+
+You need to first install the [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/#windows) and start it.
+
+The IPFS icon will show in the upper right corner after being started. Please click on the IPFS icon and click on "File" to enter the IPFS file system interface.
+
+![openIPFS](assets/storage/openIPFS.png)
+
+#### 1.2.2 Upload files to IPFS
+
+After entering the IPFS interface, you need to click on "Import" in the upper right corner, click on "File" or "Folder", select the files/folders you want to upload from the pop-up window, and confirm.
+
+![importIPFS](assets/storage/importIPFS.png)
+
+You will find the files or folders you just uploaded appear in your file list.
+
+>Note: The uploaded files/folders are still on your local IPFS, and currently no node is there to help you store them.
+
+## 2. Place orders
+
+If you want to have Crust nodes to store your files, you need to first generate a storage order on the Crust Network. Users are enabled by the Crust Network to place orders for local files using Crust Apps and to generate orders for remote files only using file CIDs when the files are not locally available.
+
+### 2.1 Place orders for local files using Crust Apps
+
+The files or folders you have uploaded will be displayed here at [Crust Apps](https://apps.crust.network/#/storage) -> IPFS -> Files. You need to click on "..." to the right of the files/folders, and click on "Order" to open the order page.
+
+![placeOrder](assets/storage/placeOrder.png)
+
+Select the account for payment on the order page. The order page will calculate the size of the corresponding file and automatically displays the price to be paid. Please ensure that the account balance is larger than the File Price at the bottom, and click on "Confirm". Then enter the account password to authorize the transaction and generate the storage order.
+
+![orderPage](assets/storage/orderPage.png)
+
+> The "File Price" is the price that a user needs to pay for a file order, which includes the basic file fee, the fee for dynamic file adjustment and the tip. The basic file fee and the fee for dynamic file adjustment are mandatory, and the size of the tip is determined by the user which influences to what extent the order can be prioritized. Detailed descriptions on how order fees are calculated can be found in the [*Economic White Paper*](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).
+
+### 2.2 Place orders for remote files
+
+If your files are not available locally, you can place orders for your files on the Crust Network by using the CIDs and sizes of the files. To do so, you need to to go to [Crust Apps](https://apps.crust.network/#/storage) -> DSM  -> Storage User -> Storage Orders and click on "Place an order".
+
+![storageOrder](assets/storage/storageOrder.png)
+
+In the order page, you need to select an account for placing the order and fill in the file CID, file size and tip, and then click on “Confirm”. A storage order will be generated after you entering the password and confirming the action on the authorizing transaction page.
+
+![storageOrder](assets/storage/manuOrder.png)
+
+### 2.3 Check order status
+
+You can view all the storage orders of a given account through the "Fetch" feature nestled at [Crust Apps](https://apps.crust.network/#/storage) -> DSM -> Storage User.
+
+![fetch](assets/storage/fetch.png)
+
+After opening the Storage Orders page, you can click on "Fetch", select the account and data source for the query (developers can have their own data source for which they need to submit an application, and the approved data source will be displayed in the list for users to access) and click on the “Confirm”, and all orders of the account will be displayed.
+
+![fetchSource](assets/storage/fetchSource.png)
 
 The order statuses displayed in Crust Apps are detailed as follows:
 
-* "Pending" indicates that the file is being pulled by Crust nodes. Oftentimes, the status will be updated within 30 minutes. But you can improve storage fees to attract more nodes to prioritize the pulling.
-![renew_pending](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pending.png)
+* "Pending" indicates that the order file is being fetched by Crust nodes. Normally, the status will be updated within 30 minutes. But you can add storage fees to attract more nodes to prioritize the action.
+  ![renew_pending](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pending.png)
 
-    > **_Note 1:_** Please do not close IPFS or delete the file in IPFS during the "Pending" period. Otherwise, storage nodes may fail to pull the file.
+    > **_Note 1:_** Please do not close IPFS or delete the file in IPFS when the "Pending" is in progress. Otherwise, storage nodes may fail to fetch the file.
 
-    > **_Note 2:_** If the "Pending" status is there for more than 30 minutes, please refer to [solutions]().
+    > **_Note 2:_** If the "Pending" status remains for more than 30 minutes, please refer to [solutions](appsStorageIssue.md).
 
-* "Success" shows that the file has been stored by Crust nodes. You can click on "Renew" to renew the order (to postpone the expired date).
+  
+
+* "Success" shows that the order file has been successfully stored by Crust nodes. Users can click on "Renew" to renew orders of this type.
 ![renew_success](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_success.png)
 
-* "Failed" suggests that an error has occurred to this order. The most typical error occurs when you initiate an order but submit an improper order size, thus resulting in an insufficient payment. If this happens, you can click on "Retry" to re-generate an order. Remember to fill in the file size and prize correctly.
+* "Failed" suggests that an error has occurred to this order. The most common error occurs when you initiate an order but fill in an improper order size, thus resulting in an insufficient payment. If this happens, you can click on "Retry" button to re-generate an order. Please note to fill in the right file size and price this time. 
 ![renew_failed](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_failed.png)
 
-* "Expired" means that the order has expired. Under this circumstance, you will need to make sure that the file has a copy in IPFS Network and then click on "Renew" to re-generate the order.
+* "Expired" means that the order has expired. Under this circumstance, you will need to make sure that the file has a replica in the IPFS Network and then click on "Renew" to re-generate an order. 
 ![renew_expired](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_expired.png)
 
-### 1.5 Viewing all user orders
-The order information in [Crust Apps](https://apps.crust.network/#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" is locally cached. Users can view all orders of a given account through "Pulling"/"Fetching".
-1. Click on "Fetch My Orders";
-   ![order2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/fetch1.png)
+### 2.5 Renew the file pool balance
 
-2. Choose the account and data source (Developers can develop their data sources and [submit applications](https://github.com/crustio/crust-apps/issues/new) for review. Data sources that are approved will be displayed in the data source list for users to access.);
-   ![pich_source](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/pick_source1.png)
+The file renewal pool mechanism is designed to help renew file services in Crust decentralized storage market. After placing an order for a file, a user can additionally deposit any amount of CRUs to the file's renewal pool. If storage order of the file expires (a file order expires 180 days after it is placed) and there are enough deposit left in the file renewal pool, any user who initiates a settlement for the file will re-activate the file order (regain a 180-day period) and in the meantime, the settlement initiator will receive a reward from the pool. Thus, as long as the file renewal pool balance is sufficient, there will always be someone motivated to settle files and renew corresponding orders timely.
 
-3. Click "Confirm". The orders of the selected account will appear in the order list.
+The steps to add the pool balance are as follows:
 
-   
+1. Go to Crust Apps -> DSM -> Storage User -> Storage Orders page, check the file list and choose the file;
 
-### 1.6  Renewing pool balance
-The pool balance renewal mechanism is designed by [Crust DSM](DSM.md) to regularly renew files. After placing an order for a file, users can deposit an additional amount of any size into the file renewal pool. When the expiration of the file storage order is due (currently each file order expires 180 days after it is placed), and the balance of the file renewal pool is sufficient, users can initiate a [order settlement transaction](orderSettlement.md) for the file to renew the file order (regain 180 days of validity). Meanwhile, all settlement initiators will also receive a reward from the file renewal pool. The renewal steps include:
-   1. Enter [Crust Apps](https://apps.crust.network/#/storage) -> "IPFS" -> "Storage Order page"/"Storage Orders" to choose the file in the file list;
-   2. Click on "Renew"/"Add Balance"；
-    ![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pool1.png)
-   3. Choose the account, fill in the renewal amount and click on "Confirm" in the box that pops up.
-![Renew Pool](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/add_balance1.png)
+2. Click on "Add Balance";
+![renewList](assets/storage/renewList.png)
 
-### 1.7 Retrieving files
-Once you know the CID of a file, you can retrieve the file in [Crust Apps](https://apps.crust.network/#/storage/files) or in the standard IPFS Network (provided this file has been stored by nodes).
+3. Select the account, fill in the deposit amount and confirm in the pop-up box.
+![addBalance](assets/storage/addBalance.png)
 
-To retrieve files, please go back to the "Files" page, click on "Import" and select "From IPFS" as the import path, enter the CID of the file you want to retrieve in the page that pops up, and click on "Import".
+## 3. Retrieve
 
-![retrieval1](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/retrieval1.png)
+Once your files has been stored on Crust Network, you can access them via the file CIDs.
 
-![retrieval2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/retrieval2.png)
+### 3.1 Retrieve files using Crust Apps
 
-The file will be displayed in your file list when the retrieval is complete.
+You can retrieve any file stored on the IPFS or Crust Network using Crust Apps. The process is as follows.
 
-![retrieval2](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/retrieved.png)
+Go to [Crust Apps](https://apps.crust.network/#/storage) -> DSM -> Storage User, go to the "Files" list, click on "Import" and select "From IPFS" from the pop-up list.
 
-## 2. File storage via adapting standard IPFS to Crust Apps 
-### 2.1 Uploading files using the standard IPFS
-You can use IPFS desktop, IPFS Companion (website plug-in) or IPFS command line to import a file to IPFS Network and in return obtain the CID of the file. Additionally, you need to copy this CID, which will be used in the next step to generate Crust storage orders.
+![retrievelApps](assets/storage/retrievalApps.png)
 
-* The steps for importing files through IPFS desktop and IPFS Companion are largely the same.
-    ![add_file_desktop](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/add_file1.png)
+The file(s) will be displayed in your file list when the retrieval is complete.
 
-* You can also import files to IPFS Network through IPFS command lines, such as:
-    ```shell
-    ipfs add readme.md
-    ```
-    ![add_file_cli](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/add_file2.png)
+### 3.2 Retrieve files using IPFS Desktop
 
-The next step is for you to obtain the CID and file size of the newly uploaded file. The CID can be directly copied from the returned value of the command line or as shown below copied in the IPFS desktop.
-    ![copy_cid](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/copy_cid.png)
-The file size needs to be obtained through the command line below:
+To retrieve files through IPFS, please go to the "Files" page, click on "Import", select "From IPFS" as the import path, fill in the CIDs of the files you want to retrieve in the page that pops up, and click on "Import". IPFS will fetch the corresponding files from the Crust Network.
 
-```shell
-ipfs object stat QmXXXXX
-```
-The "QmXXXXX" in the command is the CID of your newly uploaded file. The value of "CumulativeSize" boxed with red in the figure below is the file size, which will be used together with CID in the next steps.
-    ![size](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/size.png)
+![importFromIPFS](assets/storage/importFromIPFS.png)
 
+### 3.3 Retrieve files using IPFS Gateway
 
+If your device does not have IPFS installed, you can also access files stored on the Crust Network through any IPFS Gateway. Some common IPFS Gateways can be found [here](https://ipfs.github.io/public-gateway-checker/).
 
-### 2.2 Generating storage orders with Crust Apps
-Enter [Crust](https://apps.crust.network/#/storage/market) and click on "Place an order".
-    ![place_order](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/place_order.png)
-Fill in the CID and Size obtained from the previous step in the order generation page and click on "Confirm". Then you can place an order on Crust Network.
-    ![order_independent](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/order_independent.png)
-
-For order status, please go back to [1.4 Checking order status](#14-Checking order status). 
-
-### 2.3 Retrieving files
-As long as you know the CID of a file, you can retrieve files through [Crust Apps](https://apps.crust.network/#/storage/files). For details, please refer to [1.5 Retrieving files](#15-Retrieving files). You may also use [IPFS file retrieval](https://dweb-primer.ipfs.io/avenues-for-access/retrieve-from-peer).
-
-## 3. Developing storage features based on Crust SDK
-Coming soon.
-
-## 4. Order discount
-
-Storage users can obtain a maximum 10% discount on storage orders by locking CRUs as collateral in the storage market benefits module. For details, please refer to [Storage Market Benefits](marketBenefites.md).
+> An example: If we want to access the file whose CID is QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv through Crust Gateway, we can directly go to URL:`https://crustwebsites.net/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`
