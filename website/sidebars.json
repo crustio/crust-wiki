@@ -57,6 +57,15 @@
           "buildNode",
           "buildSmanager"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Toolkits",
+        "ids": [
+          "buildCrustGhAction",
+          "buildCrustNpmPackage",
+          "buildIPFSWeb3AuthGW"
+        ]
       }
     ],
     "Node": [
