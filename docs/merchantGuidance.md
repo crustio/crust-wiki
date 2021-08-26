@@ -29,7 +29,7 @@ The amount of the collateral determines the amount of storage market rewards tha
 
 ## 2. **To configure order taking strategies**
 
-Coming soon.
+sManager (Storage Manager) is a file picking bot that continuously picking and handling files from Crust Network. Node operators can customize this module to implement their own file handling strategy. sManager maintains a local database to help to make the decision on pulling files. [Check sManager's GitHub repo to learn more](https://github.com/crustio/crust-smanager#readme)
 
 ## 3. **To receive storage market rewards**
 
