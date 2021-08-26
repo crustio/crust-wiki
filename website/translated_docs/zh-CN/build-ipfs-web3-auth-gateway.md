@@ -156,7 +156,7 @@ server {
 }
 ```
 
-## 🤟🏻 Usage
+## Usage
 
 The IPFS W3Auth Gateway is compatible with the official IPFS API. Same HTTP endpoints, flags, arguments. The only additional step you must take when interacting with the Infura API is to configure the correct Basic Authentication header.
 

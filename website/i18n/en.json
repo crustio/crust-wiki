@@ -9,6 +9,14 @@
         "title": "Apps Strorage Issue",
         "sidebar_label": "Apps Strorage Issue"
       },
+      "buildCrustGhAction": {
+        "title": "Crust Pinner Github Action",
+        "sidebar_label": "Crust Pinner Github Action"
+      },
+      "buildCrustNpmPackage": {
+        "title": "Crust Pinner NPM Package",
+        "sidebar_label": "Crust Pinner NPM Package"
+      },
       "buildCrustKits": {
         "title": "Crust SDK",
         "sidebar_label": "Crust SDK"
@@ -40,6 +48,10 @@
       "buildIntegrationWebsiteHosting": {
         "title": "DApp Hosting",
         "sidebar_label": "DApp Hosting"
+      },
+      "buildIPFSWeb3AuthGW": {
+        "title": "IPFS W3Auth Gateway",
+        "sidebar_label": "IPFS W3Auth Gateway"
       },
       "buildNode": {
         "title": "Crust Node",
