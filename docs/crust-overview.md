@@ -1,7 +1,7 @@
 ---
 id: crustOverview
-title: Crust Mainnet
-sidebar_label: Crust Mainnet
+title: Crust Overview
+sidebar_label: Crust Overview
 ---
 
 Crust's core functions include token staking, decentralized storage market DSM, and file retrieval mechanism. It is an application ecosystem as well as an economic ecosystem. There is 5 roles in Crust ecosystem: **validator, guarantor, storage user, storage merchant, and developer**

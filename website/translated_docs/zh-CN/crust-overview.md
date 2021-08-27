@@ -1,7 +1,7 @@
 ---
 id: crustOverview
-title: Crust Mainnet
-sidebar_label: Crust Mainnet
+title: Crust Overview
+sidebar_label: Crust Overview
 ---
 
 Crust的核心功能包含了代币质押、去中心化存储市场DSM、以及文件检索机制等，是一个应用系统，也是一个经济系统。Crust生态系统一共有五个角色：**验证人，担保人，存储用户，存储商户，开发者**
