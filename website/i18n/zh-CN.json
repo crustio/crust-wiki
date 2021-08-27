@@ -73,6 +73,10 @@
         "title": "民主指南",
         "sidebar_label": "民主指南"
       },
+      "cru18Guarantee": {
+        "title": "CRU18 担保",
+        "sidebar_label": "CRU18 担保"
+      }, 	
       "crustAccount": {
         "title": "账户",
         "sidebar_label": "账户"
