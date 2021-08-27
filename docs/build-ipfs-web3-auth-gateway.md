@@ -36,7 +36,7 @@ Lets say Alice wants to upload her file to IPFS, she only needs to do the follow
 After the Web3 Authenticator received Alice's request:
 
 - **Step1.** Parse the header, extract Pubkey(`0x123`) and Sig(`0x456`)
-- **Step2.** Parse Sig with Pubkey, then get the Msg(`0x123`), determine wether the Msg and Pubkey are the same
+- **Step2.** Parse Sig with Pubkey, then get the Msg(`0x123`), determine whether the Msg and Pubkey are the same
 
 ## Deploy
 
