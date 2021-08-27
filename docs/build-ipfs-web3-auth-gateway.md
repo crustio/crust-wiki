@@ -26,9 +26,9 @@ The whole process shows below:
 
 ### Client-side
 
-Lets say Alice want to upload her file to IPFS, she only needs to do the following steps:
+Lets say Alice wants to upload her file to IPFS, she only needs to do the following steps:
 
-- **Step1.** Sign her Pubkey(`0x123`) with her private key in any of Web3 wallet(Ethereum/Substrate-based chains/Filecoin/Solana ...), then she will get the Sig(`0x456`)
+- **Step1.** Sign her Pubkey(`0x123`) with her private key in any Web3 wallet(Ethereum/Substrate-based chains/Filecoin/Solana ...), then she will get the Sig(`0x456`)
 - **Step2.** Call original IPFS API(/api/v0/add) with basic auth header(`Basic 0x123:0x456`)
 
 ### Gateway-side
@@ -40,7 +40,7 @@ After the Web3 Authenticator received Alice's request:
 
 ## Deploy
 
-> Please make sure you have IPFS Gateway runnning locally, you can refer [this doc](https://docs.ipfs.io/concepts/ipfs-gateway/#overview) to config the gateway information.
+> Please make sure you have IPFS Gateway running locally, you can refer to [this doc](https://docs.ipfs.io/concepts/ipfs-gateway/#overview) to config the gateway.
 
 ### 1. Run IPFS W3Auth
 
@@ -70,7 +70,7 @@ PORT=5050 IPFS_ENDPOINT=http://localhost:5001 yarn start
 
 ### 2.1 With caddy
 
-- Auth both readable and writeable API
+- Auth both readable and writable API
 
 ```txt
 https://ipfs.example.com {
@@ -94,7 +94,7 @@ https://ipfs.example.com {
 
 ### 2.2 With nginx
 
-- Auth both readable and writeable API
+- Auth both readable and writable API
 
 ```conf
 server {
@@ -120,7 +120,7 @@ server {
 }
 ```
 
-- Auth only writeable API
+- Auth only writable API
 
 ```conf
 server {
@@ -158,7 +158,7 @@ server {
 
 ## Usage
 
-The IPFS W3Auth Gateway is compatible with the official IPFS API. Same HTTP endpoints, flags, arguments. The only additional step you must take when interacting with the Infura API is to configure the correct Basic Authentication header.
+The IPFS W3Auth Gateway is compatible with the official IPFS API, with the same HTTP endpoints, flags and arguments. The only additional step you must take when interacting with the Infura API is to configure the correct Basic Authentication header.
 
 ```curl
 Authorization: Basic <base64(PubKey:SignedMsg)>
