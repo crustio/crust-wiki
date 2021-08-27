@@ -4,19 +4,19 @@ title: IPFS W3Auth Gateway
 sidebar_label: IPFS W3Auth Gateway
 ---
 
-IPFS Public Gateways(aka. IPFS GW) provide an HTTP-based service that allows IPFS-ignorant browsers and tools to access IPFS content, it's like a bridge connecting Web2 and Web3 world.
+IPFS Public Gateways(aka. IPFS GW) provide an HTTP-based service that allows IPFS-ignorant browsers and tools to access IPFS content. It's like a bridge connecting Web2 and Web3 world.
 
 ## Background
 
-IPFS GWs support read-only and writeable API calls. However, the original GW configuration only support **public(open-to-all)** or **private(close-to-all)** way. If the GW providers want to limit access to requests with authentication, they may need to config a reverse proxy, develop a IPFS plugin or set a cache-layer in front of IPFS.
+IPFS GWs support read-only and writable API calls. However, the original GW configuration only support **public(open-to-all)** or **private(close-to-all)** way. If the GW providers want to limit the access only to the requests with authentication, they may need to config a reverse proxy, develop a IPFS plugin or set a cache-layer above IPFS.
 
-Reverse proxy is the most popular way for providers handling authentication. [This tutorial configuring private gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#private-gateways) includes a description of constraining access with Nginx. Reverse proxy can also keep the original IPFS API calls which can make GW adapt to all IPFS SDK/toolkits.
+Reverse proxy is the most popular way for providers handling authentication. [This tutorial configuring private gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#private-gateways) includes a description of controling access with Nginx. Reverse proxy can also keep the original IPFS API calls which makes GW adaptable to all IPFS SDK/toolkits.
 
 ![GW Web2 Arch](assets/build/build-gw-1.png)
 
-Infura provides a [Web2-authed](https://infura.io/docs/ipfs#section/Authentication/Overview) GW, which allows user use `PROJECT_ID` and `PROJECT_SECRET` after passed a centralized register service(**with email/phone**).
+Infura provides a [Web2-authed](https://infura.io/docs/ipfs#section/Authentication/Overview) GW, which allows user use `PROJECT_ID` and `PROJECT_SECRET` after passed a centralized registration service(**with email/phone**).
 
-For the Web3 users, they are more familiar with the web3 identities(**with wallet pubkey/privkey**). In this article, we will introduce a lightweight Web3-based authentication service basedon IPFS gateway and reverse proxy.
+For the Web3 users, they are more familiar with the web3 identities(**with wallet pubkey/privkey**). In this article, we will introduce a lightweight Web3-based authentication service based on IPFS gateway and reverse proxy.
 
 ## Solution
 
