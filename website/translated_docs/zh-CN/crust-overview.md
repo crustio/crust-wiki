@@ -4,27 +4,6 @@ title: Crust Mainnet
 sidebar_label: Crust Mainnet
 ---
 
-Crust主网正在稳步推进，目前主网上线进度为：
-
-1. CRU认领 - 已开放
-
-CRU是Crust网络的主要通证，CRU-ERC20指的是流通在以太坊智能合约上的CRU通证。CRU-ERC20的拥有者把CRU-ERC20映射到Crust主网上这一过程我们称为**认领**。认领包括[CRU的认领](claims.md)和[锁定CRU的认领](claims-locked-cru.md)。
-
-2. 节点加入 - 已开放
-
-节点和存储资源提供者可以在Crust主网中部署节点。部署节点流程参考[节点手册](node-overview.md)
-
-3. DSM（去中心化存储市场）- 未开放
-
-Crust的DSM（Decentralized Storage Market 去中⼼化存储市场）⽀持⽤户在链上下达存储订单，以将其数据存储和分发到Crust⽹络中。在整个Crust⽹络的⽀持下，⽤户可以随时随地检索数据。DSM用户指南即将发布。
-
-4. GPoS - 未开放
-
-Crust的 GPoS（Guaranteed Proof of Stake 担保权益证明）派⽣⾃PoS权益证明。GPoS要求节点提供存储资源作为担保，以获得质押额度，并⿎励⽤户通过担保操作将其Token质押给⾼质量节点以获得收益。现阶段GPoS奖励尚未开始发放。
-
-更多更详细的Crust主网上线进度可以[在这里查看](https://medium.com/crustnetwork/big-announcement-crust-mainnet-launch-timeline-c2bd2dc0d490)。
-
-<!--
 Crust的核心功能包含了代币质押、去中心化存储市场DSM、以及文件检索机制等，是一个应用系统，也是一个经济系统。Crust生态系统一共有五个角色：**验证人，担保人，存储用户，存储商户，开发者**
 ## 1 验证人（节点）
 
@@ -47,9 +26,30 @@ Crust的核心功能包含了代币质押、去中心化存储市场DSM、以及
 
 ## 4 存储商户
 
-验证人提供了节点资源，打开[存储市场](merchantGuidance.md)即可提供存储服务。这些提供服务的节点就是存储商户。
+验证人提供了节点资源，成为[存储商户](merchantGuidance.md)即可提供存储服务并获得额外收益。
 
 ## 5 开发者
 
 开发者可以基于Crust SDK开发存储应用。参考[开发者指南](build-getting-started.md)
+
+<!--
+Crust主网正在稳步推进，目前主网上线进度为：
+
+1. CRU认领 - 已开放
+
+    CRU是Crust网络的主要通证，CRU-ERC20指的是流通在以太坊智能合约上的CRU通证。CRU-ERC20的拥有者把CRU-ERC20映射到Crust主网上这一过程我们称为**认领**。认领包括[CRU的认领](claims.md)和[锁定CRU的认领](claims-locked-cru.md)。
+
+2. 节点加入 - 已开放
+
+    节点和存储资源提供者可以在Crust主网中部署节点。部署节点流程参考[节点手册](node-overview.md)
+
+3. DSM（去中心化存储市场）- 已开放
+
+    Crust的[DSM](DSM.md)（Decentralized Storage Market 去中⼼化存储市场）⽀持⽤户在链上下达存储订单，以将其数据存储和分发到Crust⽹络中。在整个Crust⽹络的⽀持下，⽤户可以随时随地检索数据。存储相关功能参考[存储总览](storageOverview.md)。
+
+4. GPoS - 已开放
+
+    Crust的 GPoS（Guaranteed Proof of Stake 担保权益证明）派⽣⾃PoS权益证明。GPoS要求节点提供存储资源作为担保，以获得质押额度，并⿎励⽤户通过担保操作将其Token质押给⾼质量节点以获得收益。关于GPoS详情参考[GPoS介绍](GPoS.md)。
+
+更多更详细的Crust主网上线进度可以[在这里查看](https://medium.com/crustnetwork/big-announcement-crust-mainnet-launch-timeline-c2bd2dc0d490)。
 -->
