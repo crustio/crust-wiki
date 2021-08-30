@@ -24,7 +24,9 @@
         "type": "subcategory",
         "label": "sWorker",
         "ids": [
-          "sWorkerOverview"
+          "sWorkerOverview",
+          "sWorkerEntryNetwork",
+          "sWorkerWorkload"
         ]
       },
       "DSM",
