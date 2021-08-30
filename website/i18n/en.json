@@ -220,9 +220,17 @@
         "title": "User Guidance",
         "sidebar_label": "User Guidance"
       },
+      "sWorkerEntryNetwork": {
+        "title": "Entry Network",
+        "sidebar_label": "Entry Network"
+      },
       "sWorkerOverview": {
         "title": "Overview",
         "sidebar_label": "Overview"
+      },
+      "sWorkerWorkload": {
+        "title": "Workload",
+        "sidebar_label": "Workload"
       },
       "teeTechnology": {
         "title": "TEE Technology",

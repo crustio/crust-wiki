@@ -129,6 +129,14 @@
         "title": "概览",
         "sidebar_label": "概览"
       },
+      "sWorkerEntryNetwork": {
+        "title": "入网",
+        "sidebar_label": "入网"
+      },
+      "sWorkerWorkload": {
+        "title": "工作量",
+        "sidebar_label": "工作量"
+      },
       "guarantorGuidance": {
         "title": "担保人指南",
         "sidebar_label": "担保人指南"
