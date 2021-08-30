@@ -15,7 +15,7 @@ sidebar_label: CRU Claims
 > 不用过分担心不熟悉这些工具的使用，我们会在下面的认领步骤中详细阐述每一个工具的使用流程。
 
 1. [MyEtherWallet](https://www.myetherwallet.com/wallet/access)
-2. [ImToken](https://token.im/)
+2. [ImToken](https://token.im/) 或者 [Metamask(小狐狸钱包)](https://metamask.io/download.html)
 3. [Crust Apps](https://apps.crust.network/)
 
 ## 步骤
@@ -86,6 +86,14 @@ sidebar_label: CRU Claims
 
 ![Connect Wallet5](assets/claims/connect_wallet5.jpg)
 
+**如果使用MetaMask(小狐狸钱包), 选择`Browser Extension`**
+
+![Connect Wallet7](assets/claims/connect_wallet7.jpg)
+
+![Connect Wallet8](assets/claims/connect_wallet8.jpg)
+
+![Connect Wallet9](assets/claims/connect_wallet9.jpg)
+
 3. 授权成功后，您将会在MyEtherWallet页面看到以下画面，这意味着您的钱包连接成功了
 
 ![Connect Wallet6](assets/claims/connect_wallet6.jpg)
@@ -102,9 +110,15 @@ sidebar_label: CRU Claims
 
 ![Sign Msg2](assets/claims/sign_msg2.png)
 
-3. 此时会在ImToken钱包端弹出**授权签名**的提示，请点击“确认”, **⚠️ 请注意，这一步有可能出现MyEtherWallet和ImToken通讯中断导致没有弹出授权信息，此时请重新执行**[步骤三](#三-登陆myetherwallet连接钱包)
+3. 钱包授权确认
 
-![Sign Msg3](assets/claims/sign_msg3.jpg)
+    -  此时会在ImToken钱包端弹出**授权签名**的提示，请点击“确认”, **⚠️ 请注意，这一步有可能出现MyEtherWallet和ImToken通讯中断导致没有弹出授权信息，此时请重新执行**[步骤三](#三-登陆myetherwallet连接钱包)
+
+    ![Sign Msg3](assets/claims/sign_msg3.jpg)
+
+    - 如果使用MetaMask(小狐狸钱包)，此时会在MetaMaskn钱包端弹出”Signature Request“的提示，点击”sign“签名
+
+    ![Sign mm](assets/claims/sign_msgmm.jpg)
 
 4. **复制签名**
 
