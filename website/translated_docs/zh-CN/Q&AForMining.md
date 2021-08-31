@@ -55,6 +55,67 @@ sidebar_label: Q&A
 用你的收益账户查询，"收益和罚金"中可以看到领取到的数量
 ![图片](assets/qa/subscanreward2.jpg)
 
+## sWorker
+
+### 安装错误
+
+#### 设置BIOS
+出现如下错误，需要查看是否设置好BIOS里面的相关项. 需要将secure boot和SGX都设置为**Enabled**。SGX无法设置为**Enabled**，可以设置为**software enabled**，在启动进入系统后，使用软件的方式激活SGX。
+![图片](assets/qa/sworker/install/setBios.png)
+
+![图片](assets/qa/sworker/install/secureBoot.png)
+
+![图片](assets/qa/sworker/install/SGXEnable.png)
+
+#### 网络错误
+如下图所示，是网络错误，需要检查网络连接是否有问题
+![图片](assets/qa/sworker/install/networkErr.png)
+
+#### 安装依赖库
+如下图所示错误，需要根据安装时候系统给出的错误提示，输入指定指令来修复错误
+![图片](assets/qa/sworker/install/aptErr.png)
+
+### 启动错误
+
+#### 升级BIOS
+如下图所示错误，需要BIOS固件进行升级或者降级，需要调整BIOS的版本号到合适版本(视具体情况进行升级或降级)
+![图片](assets/qa/sworker/start/4006upgradeBios.png)
+
+#### 网络不稳定
+出现4012和AES服务问题，说明网络不稳定，请调整网络
+![图片](assets/qa/sworker/start/4012networkUnstable.png)
+
+![图片](assets/qa/sworker/start/AESErr.png)
+出现IAS请求失败，是因为IAS服务器不稳定造成，请重试多次直到成功
+![图片](assets/qa/sworker/start/IASUnstable.png)
+
+#### 配置出错
+如下图所示错误，是因为用户更改了backup配置，导致无法重启，请使用第一次启动时配置的账户的backup
+![图片](assets/qa/sworker/start/AccountErr.png)
+如下图所示错误，是因为没有按照步骤进行设置，请严格按照节点手册进行相关操作
+![图片](assets/qa/sworker/start/configErr.png)
+
+#### 其他启动错误
+没有出现以上错误，却依然无法启动的，请尝试重启多次
+
+### 设备错误
+以下是几种常见的由于磁盘不稳定，或者权限没有配置好，导致的问题，出现如下错误请检查磁盘以及相关的读写权限
+![图片](assets/qa/sworker/device/4011openfileErr.png)
+
+![图片](assets/qa/sworker/device/4013deleteErr.png)
+
+![图片](assets/qa/sworker/device/4015mkdirErr.png)
+查看workload的时候卡住，说明某些磁盘的磁道存在问题，需要对磁盘进行检测
+![图片](assets/qa/sworker/device/diskErr.png)
+
+![图片](assets/qa/sworker/device/diskErrOrSlow.png)
+
+![图片](assets/qa/sworker/device/diskLost.png)
+
+![图片](assets/qa/sworker/device/inputoutputErr.png)
+
+![图片](assets/qa/sworker/device/readonlyfilesys.png)
+
 ## 其它
 
 ### guarantee fee如何改动？

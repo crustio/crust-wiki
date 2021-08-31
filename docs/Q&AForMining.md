@@ -48,6 +48,67 @@ Open [Subscan](https://crust.subscan.io/)
 Use your income account to query, you can see the amount received in "Profit and Penalty"
 ![pic](assets/qa/subscanrewarden.jpg)
 
+## sWorker
+
+### Install Error
+
+#### Set BIOS
+Following errors suggest that you should check if BIOS configurations are set well. Secure Boot and SGX should be set to **Enabled**. If your motherboard doesn't support SGX Enabled option, please set it to **Software Enabled**. And then restart and enable SGX by using software.
+![pic](assets/qa/sworker/install/setBios.png)
+
+![pic](assets/qa/sworker/install/secureBoot.png)
+
+![pic](assets/qa/sworker/install/SGXEnable.png)
+
+#### Network Error
+The figure below shows a network error, please check network connection.
+![pic](assets/qa/sworker/install/networkErr.png)
+
+#### Dependent library
+The error displayed in figure below can be fixed by executing command in suggestion.
+![pic](assets/qa/sworker/install/aptErr.png)
+
+### Start Error
+
+#### Upgrade BIOS
+The following error suggests that BIOS should be upgraded or downupgraded to the right version.
+![pic](assets/qa/sworker/start/4006upgradeBios.png)
+
+#### Network unstable
+The 4012 and AES errors shows that network is unstable, please check network connection.
+![pic](assets/qa/sworker/start/4012networkUnstable.png)
+
+![pic](assets/qa/sworker/start/AESErr.png)
+IAS service error is caused by IAS server unstable, please wait and try more times.
+![pic](assets/qa/sworker/start/IASUnstable.png)
+
+#### Configuration Error
+If you change the backup and reload sWorker, error showed below would happen. Changing it back will fix this error.
+![pic](assets/qa/sworker/start/AccountErr.png)
+Please follow Crust wiki strictly to avoid error below.
+![pic](assets/qa/sworker/start/configErr.png)
+
+#### Other Error
+If no errors mentioned above happen but sWorker still cannot start, please try more times.
+
+### Device Error
+The following errors generally result from unstable disk or wrong privilege, please check.
+![pic](assets/qa/sworker/device/4011openfileErr.png)
+
+![pic](assets/qa/sworker/device/4013deleteErr.png)
+
+![pic](assets/qa/sworker/device/4015mkdirErr.png)
+If it is stuck when checking workload, maybe some disks are damaged, please check and repair or remove bad disks.
+![pic](assets/qa/sworker/device/diskErr.png)
+
+![pic](assets/qa/sworker/device/diskErrOrSlow.png)
+
+![pic](assets/qa/sworker/device/diskLost.png)
+
+![pic](assets/qa/sworker/device/inputoutputErr.png)
+
+![pic](assets/qa/sworker/device/readonlyfilesys.png)
+
 ## Others 
 
 ### How to modify guarantee fee?
