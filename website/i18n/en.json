@@ -17,6 +17,10 @@
         "title": "BitSwap",
         "sidebar_label": "BitSwap"
       },
+      "bridge": {
+        "title": "Bridge",
+        "sidebar_label": "Bridge"
+      },
       "buildCrustKits": {
         "title": "Crust SDK",
         "sidebar_label": "Crust SDK"
