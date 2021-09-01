@@ -4,7 +4,7 @@ title: Bridge
 sidebar_label: Bridge
 ---
 
-Crust Maxwell provides an asset cross-chain bridge which allows users to transfer CRU on Maxwell to Ethereum, and CRU (ERC20) on Ethereum to Maxwell in real time. Please follow the steps below for CRU cross-chain transactions.
+Crust Maxwell provides an asset cross-chain bridge that allows users to transfer CRU on Maxwell to Ethereum, and CRU (ERC20) on Ethereum to Maxwell in real-time. Please follow the steps below for CRU cross-chain transactions.
 
 ## Preparation
 
@@ -19,7 +19,7 @@ Enter CRU in "Search", or enter the contract address of the CRU token in "Custom
 
 ![adding](assets/general/adding.png)
 
-Click “”Next” to add the token to your wallet. After successfully adding the token, CRU will appear in your wallet list.
+Click “Next” to add the token to your wallet. After successfully adding the token, CRU will appear in your wallet list.
 
 ![added](assets/general/added.png)
 
@@ -37,7 +37,7 @@ Please note that the transaction is automatically executed through a smart contr
 
 ![toEthCheck](assets/general/toEthCheck.png)
 
-After the cross-chain transaction is successfully completed, CRU tokens will appear in your the wallet.
+After the cross-chain transaction is completed, CRU tokens will appear in your wallet.
 
 ![toEthShow](assets/general/toEthShow.png)
 
@@ -62,4 +62,4 @@ Every cross-chain transaction requires users to complete:
 1. "Approve" signature authorization;
 2. "Submit" signature transaction.
 
-For users safety, Maxwell pages will automatically refresh at regular intervals. After refreshing, the "Approve" signature authorization needs to be performed again. Therefore,  please click "Submit" as soon as possible and complete the signature and transaction after the "Approve" authorization is completed to avoid wasting any transaction fees.
+For users' safety, Maxwell pages will automatically refresh at regular intervals. After refreshing, the "Approve" signature authorization needs to be performed again. Therefore,  please click "Submit" as soon as possible and complete the signature and transaction after the "Approve" authorization is completed to avoid wasting any transaction fees.
