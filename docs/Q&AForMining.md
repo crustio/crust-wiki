@@ -53,7 +53,7 @@ Use your income account to query, you can see the amount received in "Profit and
 ### Install Error
 
 #### Set BIOS
-Following errors suggest that you should check if BIOS configurations are set well. Secure Boot and SGX should be set to **Enabled**. If your motherboard doesn't support SGX Enabled option, please set it to **Software Enabled**. And then restart and enable SGX by using software.
+Following errors suggest that you should check if BIOS configurations are set well. Secure Boot should be set to **Disabled** while SGX is set to **Enabled**. If your motherboard doesn't support SGX Enabled option, please set it to **Software Enabled**. And then restart and enable SGX by using software.
 ![pic](assets/qa/sworker/install/setBios.png)
 
 ![pic](assets/qa/sworker/install/secureBoot.png)
