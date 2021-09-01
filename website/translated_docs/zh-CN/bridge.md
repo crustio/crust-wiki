@@ -58,3 +58,11 @@ Crust Maxwell 提供了一个可以实时到账的资产跨链桥，允许用户
 ![toMaxwellSign](assets/general/toMaxwellSign.png)
 
 每次跨链转账都需要用户完成：1.“Approve”签名授权；2.“Submit”签名转账。出于安全考虑，Maxwell页面会间隔一段时间后自动刷新，刷新后需要重新进行“Approve”签名授权，所以请在“Approve”授权完成后尽快点击“Submit”并完成签名转账，避免造成手续费的浪费。
+
+## 参考
+
+1. [ChainSafe Bridge](https://github.com/ChainSafe/ChainBridge)
+2. [Crust Maxwell Bridge Pallet](https://github.com/crustio/crust/tree/maxwell/cstrml/bridge)
+3. [Crust Maxwell ChainBridge Service](https://github.com/crustio/ChainBridge)
+4. [Crust Maxwell ChainBridge Types](https://github.com/crustio/chainbridge-substrate-events)
+5. [Crust Maxwell ETH Bridge Contract](https://github.com/crustio/chainbridge-solidity)

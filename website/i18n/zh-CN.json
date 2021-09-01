@@ -10,8 +10,8 @@
         "sidebar_label": "架构"
       },
       "bridge": {
-        "title": "跨链转账",
-        "sidebar_label": "跨链转账"
+        "title": "资产跨链桥",
+        "sidebar_label": "资产跨链桥"
       },
       "bitSwap": {
         "title": "BitSwap",

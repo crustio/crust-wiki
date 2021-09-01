@@ -63,3 +63,11 @@ Every cross-chain transaction requires users to complete:
 2. "Submit" signature transaction.
 
 For users' safety, Maxwell pages will automatically refresh at regular intervals. After refreshing, the "Approve" signature authorization needs to be performed again. Therefore,  please click "Submit" as soon as possible and complete the signature and transaction after the "Approve" authorization is completed to avoid wasting any transaction fees.
+
+## References
+
+1. [ChainSafe Bridge](https://github.com/ChainSafe/ChainBridge)
+2. [Crust Maxwell Bridge Pallet](https://github.com/crustio/crust/tree/maxwell/cstrml/bridge)
+3. [Crust Maxwell ChainBridge Service](https://github.com/crustio/ChainBridge)
+4. [Crust Maxwell ChainBridge Types](https://github.com/crustio/chainbridge-substrate-events)
+5. [Crust Maxwell ETH Bridge Contract](https://github.com/crustio/chainbridge-solidity)
