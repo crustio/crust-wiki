@@ -77,6 +77,10 @@
         "title": "Contributing",
         "sidebar_label": "Contributing"
       },
+      "cru18Guarantee": {
+        "title": "Use CRU18 Guarantee",
+        "sidebar_label": "Use CRU18 Guarantee"
+      },
       "crustAccount": {
         "title": "Account",
         "sidebar_label": "Account"
