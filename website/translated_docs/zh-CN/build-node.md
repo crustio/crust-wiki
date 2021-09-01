@@ -442,7 +442,10 @@ sudo crust config conn-chain ws://7.7.7.7:19944
 ```
 ![start](assets/node/connchain.png)
 
-**如果是已经在运行的节点，需要执行重启操作，配置才能生效**
+**如果是已经在运行的节点，需要执行如下命令进行重启操作，配置才能生效**
+```shell
+sudo crust reload
+```
 
 ## 9 控制SGX驱动自动安装
 

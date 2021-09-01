@@ -443,7 +443,10 @@ sudo crust config conn-chain ws://7.7.7.7:19944
 ```
 ![start](assets/node/connchain.png)
 
-**If it is a node that is already running, the node needs to be restarted for the configuration of the external source chain to take effect**
+**If it is a node that is already running, the node needs to  restarted for the configuration of the external source chain to take effect. As follow**
+```shell
+sudo crust reload
+```
 
 ## 9 Control SGX driver automatic installation
 
