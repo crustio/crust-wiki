@@ -2,9 +2,9 @@
   "docs": {
     "General": [
       "gettingStarted",
-      "crustOverview",
       "crustGrants",
       "ecosystemGrowth",
+      "bridge",
       "claims",
       "claimsLockedCRU",
       "crustWallet",

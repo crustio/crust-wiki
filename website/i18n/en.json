@@ -9,6 +9,10 @@
         "title": "Apps Strorage Issue",
         "sidebar_label": "Apps Strorage Issue"
       },
+      "bridge": {
+        "title": "Bridge",
+        "sidebar_label": "Bridge"
+      },
       "buildCrustGhAction": {
         "title": "Crust Pinner Github Action",
         "sidebar_label": "Crust Pinner Github Action"

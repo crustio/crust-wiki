@@ -4,23 +4,27 @@ title: User Guidance
 sidebar_label: User Guidance
 ---
 
-用户使用Crust存取数据分为以下三个步骤：
+使用Crust存取数据的用户分为安装了IPFS的用户，以及没有安装IPFS的用户。其中，[安装了IPFS的用户](#1-安装了ipfs的用户)使用Crust存取数据分为以下三个步骤：
 
-1. 上传。用户将文件上传到IPFS；
+1. 上传。用户将文件通过IPFS上传到Crust网络；
 2. 下单。用户在Crust网络上生成存储订单；
 3. 检索。用户可以通过IPFS网络检索到对应文件；
 
+对于[未安装IPFS的用户](#2-未安装ipfs的用户)使用Crust存取数据也是通过“上传”，“下单”，“检索”三个步。其中的差异在第一步“上传”，用户将文件通过Gateway上传到Crust网络。
+
 本文阐述的是普通用户使用Crust进行存取的操作指引。开发者请查阅[Crust开发者指南](build-getting-started.md)
 
-## 1. 上传
+## 1. 安装了IPFS的用户
 
-这一步的目的，是让用户把文件上传到IPFS。您可以[通过Crust Apps来上传文件](#11-通过crust-apps上传文件)，也可以[通过IPFS桌面版上传文件](#12-通过ipfs上传文件)。
+### 1.1 上传
+
+这一步的目的，是让用户把文件上传到IPFS。您可以[通过Crust Apps来上传文件](#111-通过crust-apps上传文件)，也可以[通过IPFS桌面版上传文件](#112-通过ipfs上传文件)。
 
 如果您要存储的文件已经存在于IPFS网络，并且您已经获得该文件的[CID](https://docs.ipfs.io/concepts/content-addressing/#identifier-formats)，您可以跳过此节，直接参考[远程下单](#22-对远程文件下单)进行操作。
 
-### 1.1 通过Crust Apps上传文件
+#### 1.1.1 通过Crust Apps上传文件
 
-#### 1.1.1 在Apps中安装、配置并运行IPFS
+1. 在Apps中安装、配置并运行IPFS
 
 进入[Crust Apps](https://apps.crust.network) -> 存储市场 -> 存储用户 -> 文件。*如果出现以下提示，则代表您需要安装IPFS并进行正确的配置*
 
@@ -40,7 +44,7 @@ sidebar_label: User Guidance
 
 无论您是通过什么渠道安装的IPFS，只要进入到“文件”页不再出现提示信息，则代表您的IPFS已经配置完毕。
 
-#### 1.1.2 上传文件
+2. 上传文件
 
 在 [Crust Apps](https://apps.crust.network) -> 存储市场 -> 存储用户，选中“文件”栏，点击右上角的“导入”，点击“文件”或“文件夹”，在弹出窗口中选中您要上传的文件/文件夹，并确认。
 
@@ -50,9 +54,9 @@ sidebar_label: User Guidance
 
 >注意：文件此时仅仅被上传到您本地的IPFS，并没有任何节点帮您保存文件。
 
-### 1.2 通过IPFS上传文件
+#### 1.1.2 通过IPFS上传文件
 
-#### 1.2.1 安装IPFS
+1. 安装IPFS
 
 您需要首先[安装IPFS客户端](https://docs.ipfs.io/install/ipfs-desktop/#windows)并启动。
 
@@ -60,7 +64,7 @@ sidebar_label: User Guidance
 
 ![openIPFS](assets/storage/openIPFS.png)
 
-#### 1.2.2 上传文件到IPFS
+2. 上传文件到IPFS
 
 进入IPFS界面后，点击右上角的“Import”，点击“File”或“Folder”，在弹出窗口中选您要上传的文件/文件夹，并确认。
 
@@ -70,11 +74,11 @@ sidebar_label: User Guidance
 
 >注意：文件此时仅仅被上传到您本地的IPFS，并没有任何节点帮您保存文件
 
-## 2. 下单
+### 1.2 下单
 
 要让Crust网络节点来保存您的文件，您需要在Crust网络生成一个存储订单。Crust网络支持用户使用Crust Apps对本地文件下单，也支持本地没有文件的情况下仅使用文件CID进行远程下单。
 
-### 2.1 在Crust Apps中对本地文件下单
+#### 1.2.1 在Crust Apps中对本地文件下单
 
 进入[Crust Apps](https://apps.crust.network/#/storage) -> -> 存储市场 -> 存储用户 -> 文件，这里会列出用户已经上传的文件或文件夹。
 点击任意文件右边的 “...” 按钮，点击弹出菜单中的“Order”按钮进入订单页。
@@ -87,7 +91,7 @@ sidebar_label: User Guidance
 
 > “File Price” 是用户将为文件订单支付的价格，它包括了文件基本费、文件动态调节费以及小费。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
 
-### 2.2 对远程文件下单
+#### 1.2.2 对远程文件下单
 
 如果您本地没有文件，已知文件的CID和大小，也同样可以在Crust网络下单。
 进入[Crust Apps](https://apps.crust.network/#/storage) -> 存储市场 -> 存储用户 -> 存储订单，点击 “Place an order”。
@@ -98,7 +102,7 @@ sidebar_label: User Guidance
 
 ![storageOrder](assets/storage/manuOrder.png)
 
-### 2.3 查看订单
+#### 1.2.3 查看订单
 
 在[Crust Apps](https://apps.crust.network/#/storage) -> 存储市场 -> 存储用户，用户可以通过“拉取”/"Fetch"功能查看指定账号的所有订单。
 ![fetch](assets/storage/fetch.png)
@@ -125,7 +129,7 @@ sidebar_label: User Guidance
 * 订单状态状态 -- “Expired”，代表订单过期。这时用户需要确保文件在IPFS网络内有副本的情况下，点击“Renew”重新发起订单。
 ![renew_expired](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_expired.png)
 
-### 2.5 为文件续费池充值
+#### 1.2.4 为文件续费池充值
 
 文件续费池机制是Crust的去中心化存储市场帮助文件续费的机制。用户在为文件下单后，可以额外为文件的续费池存入任意金额。当文件存储订单到期后（目前每个文件订单到期时间为180天），并且文件续费池剩余金额充足，此时当任意用户对该文件发起[清算](orderSettlement.md)，将使得文件订单重新生效（重新拥有180天的有效期），清算发起者也会获得一笔来自文件续费池的奖励。因此只要文件续费池金额充足，那么就会有人在利益的驱动下进行清算，从而让文件被按期续费。
 
@@ -139,11 +143,11 @@ sidebar_label: User Guidance
 3. 弹出框中选择充值账号、填写充值金额并确认
 ![addBalance](assets/storage/addBalance.png)
 
-## 3. 检索
+### 1.3 检索
 
 当您的文件被存储到Crust网络上后，您可以通过文件CID访问到该文件。
 
-### 3.1 使用Crust Apps检索文件
+#### 1.3.1 使用Crust Apps检索文件
 
 您可以在Crust Apps里检索到任何存储在IPFS或Crust网络的文件。流程如下：
 
@@ -153,18 +157,57 @@ sidebar_label: User Guidance
 
 在检索传输完毕后，检索到的文件将会显示在您的文件列表中。
 
-### 3.2 使用IPFS客户端检索文件
+#### 1.3.2 使用IPFS客户端检索文件
 
 打开IPFS 进入“Files”页面，点击 “Import”按钮，选择“From IPFS”。在弹出页面中输入您的文件CID，点击“Import”。IPFS会从Crust网络中拉取对应文件。
 
 ![importFromIPFS](assets/storage/importFromIPFS.png)
 
-### 3.3 使用IPFS Gateway检索文件
+#### 1.3.3 使用IPFS Gateway检索文件
 
 如果您当下使用的环境没有安装IPFS。您也可以通过任何一个IPFS Gateway来访问Crust网络中存储的文件。一些常用的IPFS Gateway可以在[这里](https://ipfs.github.io/public-gateway-checker/)找到。
 
 > 举个例子：如果我们通过Crust Gateway来访问CID为`QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`的文件，可以直接访问URL:`https://crustwebsites.net/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`
 
-## 4. 订单折扣
+## 2. 未安装IPFS的用户
+
+对于未安装IPFS的用户，需要通过Crust Gateway将文件上传到Crust。
+
+进入 [Crust Apps](https://apps.crust.network/) -> 存储市场 -> 存储用户，页面如下。
+
+![pageOverview](assets/storage/pageOverview.png)
+
+上图中，有5个标记的红框。
+
+1. 第一个框指示了本页面的入口；
+2. 第二个框是Gateway选择框，用户可以选择通过哪个Gateway将文件上传到Crust网络；
+3. 第三个框是上传按钮；
+4. 第四个框中包含“导入”、“导出”和“拉取”。由于Crust Apps是一个去中心化应用，文件目录是被用户浏览器缓存的。这里的导入和导出功能，可以将缓存的文件目录有效保存起来，而“拉取”功能则可以通过查询链上信息，获得用户自己下的订单。
+5. 第五个框中可以浏览用户下的历史订单状态，也可以导入任何文件以查看状态；
+
+### 2.1 上传
+
+在存储用户页面中，点击“上传文件”。 弹出窗口中选择一个文件并打开。
+![openFile](assets/storage/openFile.png)
+
+### 2.2 下单
+
+选中文件并上传后将弹出文件订单界面，输入对应的小费，点击确认即可生成订单。
+
+![userOrder](assets/storage/userOrder.png)
+
+> “File Price” 是用户将为文件订单支付的价格，它包括了文件基本费、文件动态调节费以及小费。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
+
+订单生成后，可以在下方查看到。
+
+![userViewOrders](assets/storage/userViewOrders.png)
+
+要查看订单，请参考[查看存储订单](#123-查看订单)
+
+### 2.3 检索
+
+用户对文件的检索参考[文件检索](#13-检索)
+
+## 3. 订单折扣
 
 存储用户可以在存储市场权益模块中通过锁定CRU通证作为保障金来获得最大10%的存储订单折扣优惠。详情参考[存储市场权益](marketBenefits.md)。

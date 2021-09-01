@@ -5,6 +5,10 @@
     "previous": "上一篇",
     "tagline": "Wiki for crust network",
     "docs": {
+      "bridge": {
+        "title": "跨链转账",
+        "sidebar_label": "跨链转账"
+      },
       "buildFileStoringDemo": {
         "title": "代码示例：使用Crust存储文件",
         "sidebar_label": "代码示例：使用Crust存储文件"
