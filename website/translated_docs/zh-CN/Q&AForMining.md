@@ -60,7 +60,7 @@ sidebar_label: Q&A
 ### 安装错误
 
 #### 设置BIOS
-出现如下错误，需要查看是否设置好BIOS里面的相关项. 需要将secure boot和SGX都设置为**Enabled**。SGX无法设置为**Enabled**，可以设置为**software enabled**，在启动进入系统后，使用软件的方式激活SGX。
+出现如下错误，需要查看是否设置好BIOS里面的相关项。需要将secure boot设置为**Disabled**，SGX设置为**Enabled**。若SGX无法设置为**Enabled**，可以设置为**software enabled**，并在启动进入系统后，使用软件的方式激活SGX。
 ![图片](assets/qa/sworker/install/setBios.png)
 
 ![图片](assets/qa/sworker/install/secureBoot.png)
