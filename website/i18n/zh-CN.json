@@ -9,6 +9,10 @@
         "title": "架构",
         "sidebar_label": "架构"
       },
+      "bridge": {
+        "title": "跨链转账",
+        "sidebar_label": "跨链转账"
+      },
       "bitSwap": {
         "title": "BitSwap",
         "sidebar_label": "BitSwap"
