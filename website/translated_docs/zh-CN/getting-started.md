@@ -1,7 +1,7 @@
 ---
 id: gettingStarted
-title: Getting Started
-sidebar_label: Getting Started
+title: Crust Overview
+sidebar_label: Crust Overview
 ---
 
 ## Crust 是什么
