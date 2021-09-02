@@ -18,7 +18,7 @@ sidebar_label: 锁定的CRU 解锁
 
 用户可以去到[质押页面](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/staking/actions)查看到自己全部CRU18资产（除 `1CRU`用于操作手续费外）处于绑定的状态，如下图所示：
 
-// TODO：截图说明
+![image](assets/unlock/bonded.png)
 
 **举例说明：**
 假如Alice拥有 `1800 CRU18` 资产，会在此页面看到自己有 `1799 CRU18` 资产处于绑定状态
@@ -29,9 +29,10 @@ sidebar_label: 锁定的CRU 解锁
 
 #### 1. 解绑(Unbond)
 
-解绑CRU18需要**提前28天**进行，即如果您想在10月31日取出相应CRU18资产，则首先需要在9月31日就进行解绑操作，您可以如下图输入需要解绑的金额进行操作：
+解绑CRU18需要**提前28天**进行，即如果您想在10月31日取出相应CRU18资产，则首先需要在10月2日就进行解绑操作，您可以如下图输入需要解绑的金额进行操作：
 
-// TODO：unbond截图
+![image](assets/unlock/unbond.png)
+![image](assets/unlock/unbond1.png)
 
 解绑金额可以输入任意值，但大于每月解绑金额的到期资产会继续处于绑定状态不予取出
 
@@ -42,13 +43,13 @@ sidebar_label: 锁定的CRU 解锁
 
 每个解锁周期到期后，用户可以如下图所示操作解锁已释放流动性的CRU：
 
-// TODO：unlock截图
+![image](assets/unlock/unlock.png)
 
 #### 3. 提款(Withdraw)
 
 在解绑的周期（**28天**）过后，用户可以如下图点击提款操作进行操作：
 
-// TODO：withdraw截图
+![image](assets/unlock/withdrow.png)
 
 ## Reference
 

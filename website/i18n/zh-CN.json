@@ -57,6 +57,10 @@
         "title": "锁定的CRU 认领",
         "sidebar_label": "锁定的CRU 认领"
       },
+      "lockedCRUUnlock": {
+        "title": "锁定的CRU 解锁",
+        "sidebar_label": "锁定的CRU 解锁"
+      },
       "claims": {
         "title": "CRU 认领",
         "sidebar_label": "CRU 认领"

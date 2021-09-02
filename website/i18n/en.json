@@ -153,6 +153,10 @@
         "title": "Isolation Node",
         "sidebar_label": "Isolation Node"
       },
+      "lockedCRUUnlock": {
+        "title": "LockedCRU Unlock",
+        "sidebar_label": "LockedCRU Unlock"
+      },
       "manage-files-in-JS-APPS": {
         "title": "manage-files-in-JS-APPS"
       },

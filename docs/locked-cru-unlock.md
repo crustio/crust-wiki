@@ -18,7 +18,7 @@ The unlocking cycle of the locked CRU18 is `43200` blocks (about 30 days), and i
 
 Users can go to [Staking Page](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/staking/actions) to view all their CRU18 assets (except `1 CRU` used for operating tx fees) is in bonding, as shown in the following figure:
 
-// TODO: 
+![image](assets/unlock/bonded.png)
 
 **For example:**
 
@@ -30,9 +30,10 @@ Unlock needs 3 sub-steps:
 
 #### 1. Unbond
 
-Unbonding CRU18 needs to be done **28 days in advance**. That is, if you want to withdraw the corresponding CRU18 asset on October 31, you need to unbond it on September 31. You can do the unbond operation as shown below:
+Unbonding CRU18 needs to be done **28 days in advance**. That is, if you want to withdraw the corresponding CRU18 asset on October 31, you need to unbond it on October 2. You can do the unbond operation as shown below:
 
-// TDOO:
+![image](assets/unlock/unbond.png)
+![image](assets/unlock/unbond1.png)
 
 You can enter any value for the unbonding amount, but expired assets greater than the monthly unbonding amount will continue to be in bond and will not allow to be withdrawn
 
@@ -44,13 +45,13 @@ If Alice owns `1800 CRU18` assets, she will unlock 100 CRU every month. If Alice
 
 After each unlocking period expires, users can unlock CRUs that have released liquidity as shown in the following figure:
 
-// TODO:
+![image](assets/unlock/unlock.png)
 
 #### 3. Withdraw
 
 After the unbonding period (**28 days**), users can click on the withdraw operation as shown below:
 
-// TODO：
+![image](assets/unlock/withdrow.png)
 
 ## Reference
 
