@@ -54,8 +54,8 @@
         "sidebar_label": "Crust Storage Manager"
       },
       "claimsLockedCRU": {
-        "title": "锁定CRU 认领",
-        "sidebar_label": "锁定CRU 认领"
+        "title": "锁定的CRU 认领",
+        "sidebar_label": "锁定的CRU 认领"
       },
       "claims": {
         "title": "CRU 认领",
