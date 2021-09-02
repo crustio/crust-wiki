@@ -42,7 +42,7 @@ class HomeNav extends React.Component {
         return (
             <NavContainer>
                 <NavItem
-                    href={this.props.docUrl("gettingStarted.html")}
+                    href={this.props.docUrl("crustOverview.html")}
                     title="General"
                     content="Crust provides a decentralized storage network of Web3 ecosystem."
                     aosDelay="0"

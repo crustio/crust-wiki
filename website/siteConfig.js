@@ -30,7 +30,7 @@ const siteConfig = {
   projectName: 'crust-wiki',
   organizationName: 'crust network',
   headerLinks: [
-    {doc: 'gettingStarted', label: 'Docs'},
+    {doc: 'crustOverview', label: 'Docs'},
     {href: 'https://wiki-maxwell.crust.network', label: 'Maxwell'},
     // {blog: true, label: 'Blog'},
     {search: true},
