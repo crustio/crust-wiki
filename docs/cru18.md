@@ -8,7 +8,7 @@ sidebar_label: Use CRU18 Guarantee
 
 CRU18 is locked and cannot be transferred, but the amount in the locked can be used as a guarantor to obtain income
 
-### Import the CRU18 account to[Mainnet_Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts)
+### Import the CRU18 account to [Mainnet_Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/accounts)
 
 #### Option 1. Import mnemonic
 Click "Add account",replace "mnemonic seed" with the mnemonic of CRU18 account, click "Next" to create
