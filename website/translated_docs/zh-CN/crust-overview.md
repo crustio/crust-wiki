@@ -1,55 +1,99 @@
 ---
 id: crustOverview
-title: Crust Mainnet
-sidebar_label: Crust Mainnet
+title: Crust Overview
+sidebar_label: Crust Overview
 ---
 
-Crust主网正在稳步推进，目前主网上线进度为：
+## Crust 是什么
 
-1. CRU认领 - 已开放
+Crust提供了Web3⽣态系统的去中⼼化存储⽹络，⽀持包括IPFS在内的多种存储层协议，并对应⽤层提供接⼝。Crust的技术栈还能够⽀持去中⼼化计算层。Crust旨在构建⼀个重视数据隐私和所有权的分布式云⽣态系统。
 
-CRU是Crust网络的主要通证，CRU-ERC20指的是流通在以太坊智能合约上的CRU通证。CRU-ERC20的拥有者把CRU-ERC20映射到Crust主网上这一过程我们称为**认领**。认领包括[CRU的认领](claims.md)和[锁定CRU的认领](claims-locked-cru.md)。
+## 如何使用 Crust
 
-2. 节点加入 - 已开放
+您可以按照3个简单的步骤来上传，存储和分发文件：
 
-节点和存储资源提供者可以在Crust主网中部署节点。部署节点流程参考[节点手册](node-overview.md)
-
-3. DSM（去中心化存储市场）- 未开放
-
-Crust的DSM（Decentralized Storage Market 去中⼼化存储市场）⽀持⽤户在链上下达存储订单，以将其数据存储和分发到Crust⽹络中。在整个Crust⽹络的⽀持下，⽤户可以随时随地检索数据。DSM用户指南即将发布。
-
-4. GPoS - 未开放
-
-Crust的 GPoS（Guaranteed Proof of Stake 担保权益证明）派⽣⾃PoS权益证明。GPoS要求节点提供存储资源作为担保，以获得质押额度，并⿎励⽤户通过担保操作将其Token质押给⾼质量节点以获得收益。现阶段GPoS奖励尚未开始发放。
-
-更多更详细的Crust主网上线进度可以[在这里查看](https://medium.com/crustnetwork/big-announcement-crust-mainnet-launch-timeline-c2bd2dc0d490)。
+1. 将文件添加到IPFS网络。
+2. 在Crust链上下达相应的存储订单。
+3. 在存储订单状态变为成功之后，您可以通过标准IPFS接口和网关从任何地方访问该文件。
 
 <!--
-Crust的核心功能包含了代币质押、去中心化存储市场DSM、以及文件检索机制等，是一个应用系统，也是一个经济系统。Crust生态系统一共有五个角色：**验证人，担保人，存储用户，存储商户，开发者**
-## 1 验证人（节点）
-
-验证人是Crust网络的维护人，要成为验证人，你需要：
-
-1. 节点搭建，请参考[节点概要](node-overview.md)
-2. 成为验证人，请参考[验证人指南](validatorGuidance.md)
-3. 了解验证人的奖励与罚没细则，请参考[验证人](validator.md)介绍
-
-## 2 担保人（持币用户）
-
-持币用户可以通过对验证人（节点）进行**担保**获得收益，成为担保人，你需要：
-
-1. 成为担保人，请参考[担保指南](guarantor-guidance.md)
-2. 了解担保人的奖励与罚没细则，请参考[担保人](guarantor.md)介绍
-
-## 3 存储用户
-
-存储用户通过标准IPFS协议存储文件，并通过Crust存储市场下单，让Crust网络帮您保存文件。参考[存储用户指南](storageUserGuide.md)
-
-## 4 存储商户
-
-验证人提供了节点资源，打开[存储市场](merchantGuidance.md)即可提供存储服务。这些提供服务的节点就是存储商户。
-
-## 5 开发者
-
-开发者可以基于Crust SDK开发存储应用。参考[开发者指南](build-getting-started.md)
+请参考[代码示例](build-developer-guidance.md)，其中说明了如何通过程序执行上述3个步骤。您也可以访问[Crust Apps](storageUserGuide.md)通过UI执行这些步骤。
 -->
+
+## Crust 的适用场景
+
+Crust Network 适用于多种场景，包括：
+
+1. 无服务器 DApp/网站托管
+开发人员能够基于Crust/IPFS网络部署自己的DApp/网站。这样，开发人员仅需专注于构建DApp/网站，而无需管理服务器。此外，Crust Network鼓励多个节点存储DApp/网站文件并提供存储服务，从而确保DApp/网站的高可用性。Crust Apps是一个示例，它托管在Crust Network上。
+
+2. 通用链下数据存储
+一些基于区块链的去中心化应用程序（例如NFT和去中心化社交平台）涉及大量数据，远远超出了链上存储能力。基于Crust/IPFS网络，开发人员可以为这些应用程序提供通用的链下数据存储服务。
+
+3. 加速内容分发
+开发人员能够使用Crust/IPFS网络构建P2P内容分发网络（CDN）服务。 Crust Network激励节点自发分发CDN数据，并扮演CDN边缘节点的角色，以加快CDN用户的数据传输速度。
+
+4. 安全的云存储
+开发人员能够使用Crust/IPFS网络构建云存储应用程序。在不维护存储集群的情况下，开发人员只需要将Crust/IPFS的SDK集成到应用程序中即可为用户提供稳定的存储服务。
+
+我们将引入一系列的[Crust Grants](https://github.com/crustio/Crust-Grants-Program/tree/main/applications)，以加速应用程序落地和生态构建。
+
+## 立即加入并开始使用 Crust
+
+您可以参考以下链接来加入或者使用Crust网络。
+
+- 节点提供者 - 请参考[节点指南](node-overview.md)以安装配置和运行Crust节点。
+- 通证持有者 - 请参考[担保人指南](guarantor-guidance.md)进行Staking及担保等相关操作。
+- 存储用户 - **存储用户指南**即将发布，敬请关注。
+- 开发人员 - 有关更多信息，请参见[构建](build-getting-started.md)页面。
+
+## Crust 如何工作
+
+Crust包含以下几层工作机制：
+
+1. MPoW（有意义工作证明）- 低信任/零信任存储证明层，用于检查和证明矿工的存储工作。
+2. GPoS（担保权益证明）- PoS衍生共识，GPoS要求节点提供存储证明以获取权益配额。
+3. DSM（去中心化存储市场）- DSM支持用户在链上下达存储订单，以将其数据存储和分发到 Crust Network。
+
+![arch](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/what_is_crust/arch.png)
+
+### MPoW
+
+MPoW是低信任存储证明层。 MPoW的总体功能是定期生成可信赖的存储工作报告并上传到链中。存储工作量报告包括特定节点上数据存储工作的增量信息。
+
+从技术上讲，当前MPoW的存储证明机制是基于TEE（可信执行环境）技术实现的。包含3个主要流程：存储流程，报告流程和验证流程。
+
+基于可信执行环境（TEE）技术，Crust网络中的节点可以执行非交互式存储证明。如下图所示，TEE将定期检查节点的存储状态并生成可被所有节点验证的工作量报告。
+
+![wiki-mpow](assets/mpow/wiki-mpow.png)
+
+零知识证明算法是实现MPoW的3个主要流程的替代技术方法。我们将在未来的技术方案中纳入此算法。
+
+### GPoS
+
+GPoS是PoS衍生的共识协议。像NPoS一样，用户可以对特定节点进行投票（我们将此投票行为定义为担保操作）。关键区别在于，每个节点都有自己的Staking配额，配额取决于其经过证明的存储资源和工作量。因此，GPoS鼓励节点提供更多的存储资源，以提高网络的安全性和鲁棒性。
+
+GPoS利用MPoW存储证明层生成的存储工作报告来计算与存储资源相关的参数。
+
+GPoS还鼓励用户通过担保操作将其代币Staking到高质量的节点上，以获取Staking收益。
+
+下图描述了与GPoS相关的概念和过程。
+
+![gpos](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/general/gpos.png)
+
+### DSM
+
+DSM（去中心化存储市场）允许存储用户在链上下达存储订单，订单中指定的文件（IPFS CID列表）将由Crust节点进行存储。DSM还负责激励存储节点提供检索服务。
+
+DSM包含3种主要机制：
+
+1. 定价机制。存储订单费用由网络根据文件大小，存储期限以及总体存储需求和供应量计算得出。
+<br/>
+2. 存储订单机制。存储订单按类似“存储池”的机制工作。用户下达存储订单后：
+a）一定数量的存储费将被添加到订单指定的文件支付池中，其余的将被放入整个网络权益池（Staking Pool）中。
+b）优先提交了相应存储证明的节点都将添加到该文件支付池的支付队列中，直到支付队列达到其限制为止。队列中的节点可以从此支付池中领取相应费用。
+c）任何提交了相应存储证明的节点都将获得Staking配额增加（取决于整个网络上的文件复制量，增加几倍）。
+<br/>
+3. 检索机制。作为去中心化存储系统，除了存储市场之外，DSM还承担了激励节点提供检索服务的责任。因此，DSM包括另一层激励机制，以鼓励节点支持数据检索：
+a）作为BitSwap策略的一部分，DSM增强了IPFS信用系统，该系统是一个非共识的本地节点排名系统。在Crust支持的BitSwap流程中，一个节点能够查询链上存储证明信息，以获取哪些块存储在哪些节点上；因此，如果无法从目标节点成功检索块，则目标节点的本地排名将降低。
+b）根据信用系统，提供更好的检索服务的节点将获得更高的排名，并且有更快获得文件的机会，从而获得更多的存储市场收入。另一方面，提供较低质量的检索服务的节点将不太可能从该系统中受益。

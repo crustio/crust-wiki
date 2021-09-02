@@ -10,7 +10,7 @@ sidebar_label: User Guidance
 2. 下单。用户在Crust网络上生成存储订单；
 3. 检索。用户可以通过IPFS网络检索到对应文件；
 
-对于[未安装IPFS的用户](#2-未安装ipfs的用户)使用Crust存取数据也是通过“上传”，“下单”，“检索”三个步。其中的差异在第一步“上传”，用户将文件通过Gateway上传到Crust网络。
+对于[未安装IPFS的用户](#2-未安装ipfs的用户)使用Crust存取数据也是通过“上传”，“下单”，“检索”三个步骤。其中的差异在第一步“上传”，用户将文件通过Gateway上传到Crust网络。
 
 本文阐述的是普通用户使用Crust进行存取的操作指引。开发者请查阅[Crust开发者指南](build-getting-started.md)
 
@@ -187,8 +187,24 @@ sidebar_label: User Guidance
 
 ### 2.1 上传
 
-在存储用户页面中，点击“上传文件”。 弹出窗口中选择一个文件并打开。
-![openFile](assets/storage/openFile.png)
+1. 选择Gateway
+
+    对于没有IPFS的用户，需要先将文件上传至Gateway。用户可以选择一个就近的Gateway。
+
+    ![pickGateway](assets/storage/pickGateway.png)
+
+2. 选择文件
+
+    在存储用户页面中，点击“上传文件”。 弹出窗口中选择一个文件并打开。
+    ![openFile](assets/storage/openFile.png)
+
+3. 文件上传授权
+
+    在文件上传之前，Gateway会验证用户的Crust账户，用户需要在弹出窗口使用Crust账号进行一次签名。
+
+    >这个签名不会消耗手续费
+
+    ![signUpload](assets/storage/signUpload.png)
 
 ### 2.2 下单
 

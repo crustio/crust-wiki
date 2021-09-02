@@ -189,8 +189,24 @@ There are 5 red-marked boxes in the above page.
 
 ### 2.1 Upload
 
-To upload files via the Storage User page, you need to click on "Upload", select a file in the pop-up window and open the file.
-![openFile](assets/storage/openFile.png)
+1. Selecet a Gateway
+
+    For users who do not have IPFS, they need to upload the file to Gateway first. Users can choose a nearby Gateway.
+
+    ![pickGateway](assets/storage/pickGateway.png)
+
+2. Select a file
+
+  To upload files via the Storage User page, you need to click on "Upload", select a file in the pop-up window and open the file.
+  ![openFile](assets/storage/openFile.png)
+
+3. File upload with wallet authorization
+
+    Before uploading the file, Gateway will verify the user's Crust account, and the user needs to sign with the Crust account in the pop-up window.
+
+    >This authorization will not cost any transaction fee
+
+    ![signUpload](assets/storage/signUpload.png)
 
 ### 2.2 Place orders
 
