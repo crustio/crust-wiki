@@ -20,7 +20,7 @@ sidebar_label: Q&A
 
 ### 1.4 1P的机器收益是多少？
 
-可以简单的用每天的CRU增发量去除以全网P数，全网P数可以在以下图中查看
+可以简单的用每天的CRU增发量去除以全网P数，全网P数可以在APPS中查看
 
 ![图片](assets/qa/total_storage.png)
 
