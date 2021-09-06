@@ -157,6 +157,14 @@ The IPFS W3Auth Gateway is compatible with the official IPFS API, with the same 
 Authorization: Basic <base64(PubKey:SignedMsg)>
 ```
 
+Let's take `cURL` as an example 😎
+
+```shell
+curl -X POST -F file=@myfile -u "PubKey:SignedMsg" "https://localhost:5050/api/v0/add"
+```
+
+Then you can get `PubKey` and `SignedMsg` by using the following web3-ways:
+
 ### 1. With Substrate
 
 #### Get `PubKey`
@@ -181,12 +189,34 @@ Just sign the `PubKey` with your private key to get the `SignedMsg`
 
 ### 2. With Ethereum
 
-> Comming soon
+#### Get `PubKey`
+
+`PubKey` is just the ethereum address(42-characters) start with `0x`
+
+### Get `SignedMsg`
+
+Just sign the `PubKey` with your eth private key to get the `SignedMsg`
+
+- With [MyEtherWallet](https://www.myetherwallet.com/wallet/sign)
+- With [MyCrypto](https://app.mycrypto.com/sign-message)
+
+### 3. With Solana
+
+> Comming Soon
+
+### 4. With Polygon
+
+> Comming Soon
+
+### 5. With Near
+
+> Comming Soon
 
 ## Resources
 
-- [IPFS W3Auth](https://github.com/crustio/ipfs-w3auth)
+- [IPFS W3Auth Github Repo](https://github.com/crustio/ipfs-w3auth)
 - [IPFS Gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#ipfs-gateway)
 - [Config IPFS Gateway](https://docs.ipfs.io/how-to/configure-node/#gateway)
 - [Sign message with Polkadot.js/api](https://apps.crust.network/docs/util-crypto/examples/encrypt-decrypt)
 - [Sign message with Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey)
+- [Sign message with Ethereum](https://programtheblockchain.com/posts/2018/02/17/signing-and-verifying-messages-in-ethereum/)
