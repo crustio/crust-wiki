@@ -163,7 +163,7 @@ Let's take `cURL` as an example 😎
 curl -X POST -F file=@myfile -u "PubKey:SignedMsg" "https://localhost:5050/api/v0/add"
 ```
 
-Then you can get `PubKey` and `SignedMsg` by using the following web3-ways:
+And you can get `PubKey` and `SignedMsg` by using the following web3-ways:
 
 ### 1. With Substrate
 
