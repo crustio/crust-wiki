@@ -193,7 +193,7 @@ Just sign the `PubKey` with your private key to get the `SignedMsg`
 
 `PubKey` is just the ethereum address(42-characters) start with `0x`
 
-### Get `SignedMsg`
+#### Get `SignedMsg`
 
 Just sign the `PubKey` with your eth private key to get the `SignedMsg`
 
@@ -202,7 +202,16 @@ Just sign the `PubKey` with your eth private key to get the `SignedMsg`
 
 ### 3. With Solana
 
-> Comming Soon
+#### Get `PubKey`
+
+`PubKey` is just the solana address
+
+#### Get `SignedMsg`
+
+You can sign the `PubKey` with your solana private key to get the `SignedMsg`
+
+- With [Solana Signer Sandbox](https://gateway.pinata.cloud/ipfs/QmYXnTQwKkup7yNLXZz2VyBvBj9eJB1knG8V8dnmjNuNnu/) (deploy with IPFS, source code is [here](https://github.com/zikunfan/solana-signer))
+- With [Phantom](https://docs.phantom.app/integrating/signing-a-message)
 
 ### 4. With Polygon
 
@@ -220,3 +229,4 @@ Just sign the `PubKey` with your eth private key to get the `SignedMsg`
 - [Sign message with Polkadot.js/api](https://apps.crust.network/docs/util-crypto/examples/encrypt-decrypt)
 - [Sign message with Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey)
 - [Sign message with Ethereum](https://programtheblockchain.com/posts/2018/02/17/signing-and-verifying-messages-in-ethereum/)
+- [Sign message with Phantom (Solana)](https://docs.phantom.app/integrating/signing-a-message)
