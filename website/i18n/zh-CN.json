@@ -54,8 +54,12 @@
         "sidebar_label": "Crust Storage Manager"
       },
       "claimsLockedCRU": {
-        "title": "锁定CRU 认领",
-        "sidebar_label": "锁定CRU 认领"
+        "title": "锁定的CRU 认领",
+        "sidebar_label": "锁定的CRU 认领"
+      },
+      "lockedCRUUnlock": {
+        "title": "锁定的CRU 解锁",
+        "sidebar_label": "锁定的CRU 解锁"
       },
       "claims": {
         "title": "CRU 认领",
@@ -194,8 +198,8 @@
         "sidebar_label": "参数表"
       },
       "crustOverview": {
-        "title": "Crust 主网",
-        "sidebar_label": "Crust 主网"
+        "title": "Crust 概述",
+        "sidebar_label": "Crust 概述"
       },
       "Q&AForMining": {
         "title": "Q&A",

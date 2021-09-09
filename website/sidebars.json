@@ -1,11 +1,12 @@
 {
   "docs": {
     "General": [
-      "gettingStarted",
+      "crustOverview",
       "crustGrants",
       "ecosystemGrowth",
       "claims",
       "claimsLockedCRU",
+      "lockedCRUUnlock",
       "crustWallet",
       "glossary",
       "cru18Guarantee",
