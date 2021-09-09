@@ -32,4 +32,5 @@ This section of the wiki is divided into the following parts:
 
 - [Crust Github Action](https://github.com/crustio/ipfs-crust-action): For Github workflow users pining their DApp or Websites with Crust.
 - [Crust Pin Node Package](https://github.com/crustio/crust.js/tree/mainnet/packages/crust-pin): Crust pin service allows nodejs users store file on Crust
-- [IPFS Web3 Auth Gateway](build-ipfs-web3-auth-gateway.md): IPFS W3Auth is a lightweight Web3-based authentication service basedon IPFS gateway and reverse proxy
+- [IPFS W3Auth Gateway](build-ipfs-web3-auth-gateway.md): IPFS W3Auth Gateway is a lightweight Web3-based authentication service basedon IPFS gateway and reverse proxy
+- [IPFS W3Auth Pinning Service](build-ipfs-w3auth-pinning-service.md): IPFS W3Aut Pinning Service is a lightweight Web3-based authentication service basedon IPFS remote pinning service and Crust Network
