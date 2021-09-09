@@ -58,10 +58,6 @@ body {
   max-width: 1400px !important;
 }
 
-.headerWrapper > header > a > img {
-  width: 300px;
-}
-
 @media only screen and (min-width: 1024px) {
   .fixedHeaderContainer {
     /* border-bottom: solid 1px transparent; */
