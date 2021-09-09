@@ -225,7 +225,16 @@ You can sign the `PubKey` with your solana private key to get the `SignedMsg`
 
 ### 4. With Polygon
 
-> Comming Soon
+#### Get PubKey
+
+`PubKey` is just the polygon address(42-characters) start with `0x`. It's compatiable with the ethereum.
+
+#### Get SignedMsg
+
+Just sign the `PubKey` with your polygon private key to get the `SignedMsg`
+
+- With [MyEtherWallet](https://www.myetherwallet.com/wallet/sign)
+- With [MyCrypto](https://app.mycrypto.com/sign-message)
 
 ### 5. With Near
 
