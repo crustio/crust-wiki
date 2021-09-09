@@ -160,10 +160,20 @@ Authorization: Basic <base64(PubKey:SignedMsg)>
 Let's take `cURL` as an example 😎
 
 ```shell
-curl -X POST -F file=@myfile -u "PubKey:SignedMsg" "https://localhost:5050/api/v0/add"
+curl -X POST -F file=@myfile -u "ChainType-PubKey:SignedMsg" "https://localhost:5050/api/v0/add"
 ```
 
+### Get ChainType
+
+`ChainType` now can be:
+
+1. `sub`(or `substrate`)
+2. `eth`(or `ethereum`)
+3. `sol`(or `solana`)
+
 And you can get `PubKey` and `SignedMsg` by using the following web3-ways:
+
+### Get Pubkey and SignedMsg
 
 ### 1. With Substrate
 
@@ -210,7 +220,7 @@ Just sign the `PubKey` with your eth private key to get the `SignedMsg`
 
 You can sign the `PubKey` with your solana private key to get the `SignedMsg`
 
-- With [Solana Signer Sandbox](https://gateway.pinata.cloud/ipfs/QmYXnTQwKkup7yNLXZz2VyBvBj9eJB1knG8V8dnmjNuNnu/) (deploy with IPFS, source code is [here](https://github.com/zikunfan/solana-signer))
+- With [Solana Signer Sandbox](https://bafybeiexn4chci4exl54hlispdhwste6mpdcvgnu5zei53r2yl24hq2kri.ipfs.dweb.link/) (deploy with IPFS(cid: `QmYXnTQwKkup7yNLXZz2VyBvBj9eJB1knG8V8dnmjNuNnu`), source code is [here](https://github.com/zikunfan/solana-signer), you can deploy yourself)
 - With [Phantom](https://docs.phantom.app/integrating/signing-a-message)
 
 ### 4. With Polygon
@@ -223,7 +233,7 @@ You can sign the `PubKey` with your solana private key to get the `SignedMsg`
 
 ## Resources
 
-- [IPFS W3Auth Github Repo](https://github.com/crustio/ipfs-w3auth)
+- [IPFS W3Auth Github Repo](https://github.com/crustio/ipfs-w3auth-gateway)
 - [IPFS Gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#ipfs-gateway)
 - [Config IPFS Gateway](https://docs.ipfs.io/how-to/configure-node/#gateway)
 - [Sign message with Polkadot.js/api](https://apps.crust.network/docs/util-crypto/examples/encrypt-decrypt)

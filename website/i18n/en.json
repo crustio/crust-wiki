@@ -49,6 +49,10 @@
         "title": "DApp Hosting",
         "sidebar_label": "DApp Hosting"
       },
+      "buildIPFSW3AuthPin": {
+        "title": "IPFS W3Auth Pinning Service",
+        "sidebar_label": "IPFS W3Auth Pinning Service"
+      },
       "buildIPFSWeb3AuthGW": {
         "title": "IPFS W3Auth Gateway",
         "sidebar_label": "IPFS W3Auth Gateway"

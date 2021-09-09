@@ -67,7 +67,8 @@
         "ids": [
           "buildCrustGhAction",
           "buildCrustNpmPackage",
-          "buildIPFSWeb3AuthGW"
+          "buildIPFSWeb3AuthGW",
+          "buildIPFSW3AuthPin"
         ]
       }
     ],
