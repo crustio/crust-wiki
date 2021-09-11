@@ -14,7 +14,7 @@ sidebar_label: Apps Strorage Issue
 
 因此，我们需要进行以下尝试：
 
-## 1，推荐文件大小小于64G
+## 1，推荐文件大小小于32G
 
 ## 2，确保IPFS开启
 
