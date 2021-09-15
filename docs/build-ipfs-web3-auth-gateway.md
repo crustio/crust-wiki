@@ -170,6 +170,8 @@ curl -X POST -F file=@myfile -u "ChainType-PubKey:SignedMsg" "https://localhost:
 1. `sub`(or `substrate`)
 2. `eth`(or `ethereum`)
 3. `sol`(or `solana`)
+4. `pol` (or `polygon`)
+5. `nea` (or `near`)
 
 And you can get `PubKey` and `SignedMsg` by using the following web3-ways:
 
@@ -238,7 +240,10 @@ Just sign the `PubKey` with your polygon private key to get the `SignedMsg`
 
 ### 5. With Near
 
-> Comming Soon
+You can sign the `PubKey` with one of your near private key associated with your account to get the `SignedMsg`
+
+- With [Near Wallet Example](https://bafybeie333fxe7yw44msi4khah7pjuhn7rlvg3odquoreysj6ejbjya2oy.ipfs.dweb.link/) (deploy with IPFS(cid: `QmYq6wg5NG6mRq6e8urhLTXLsf7QAzZ8RKcgyyiX5qH45b`), source code is [here](https://github.com/MyronFanQiu/wallet-example), you can deploy yourself)
+- With [Near-API-JS Example](https://github.com/near/near-api-js/blob/master/examples/cookbook/utils/verify-signature.js)
 
 ## Resources
 
