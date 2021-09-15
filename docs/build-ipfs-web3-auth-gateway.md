@@ -54,7 +54,7 @@ docker run -e PORT=5050 -e IPFS_ENDPOINT=http://localhost:5001 --network=host cr
 
 ```shell
 # 1. Clone repo
-git clone https://github.com/crustio/ipfs-web3-authenticator.git
+git clone https://github.com/crustio/ipfs-w3auth-gateway.git
 # 2. Install and build
 yarn && yarn build
 # 3. Run
