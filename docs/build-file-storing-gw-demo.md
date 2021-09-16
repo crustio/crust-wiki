@@ -1,7 +1,7 @@
 ---
 id: buildFileStoringWithGWDemo
-title: File Storing with Gateway Code Sample
-sidebar_label: File Storing with Gateway Code Sample
+title: File Storing with IPFS Gateway Code Sample
+sidebar_label: File Storing with IPFS Gateway Code Sample
 ---
 
 This doc contains a code sample to demonstrate how to upload a file to [IPFS W3Auth Gateway](build-ipfs-w3auth-gateway.md), and place a storage order to get the file stored in Crust Network through [IPFS W3Auth Pinning Service](build-ipfs-w3auth-pinning-service.md). After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in DApp  hosting, NFT file storing, content/media delivery, cloud storage, etc.
