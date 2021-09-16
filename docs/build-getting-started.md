@@ -15,7 +15,8 @@ This section of the wiki is divided into the following parts:
 - [Crust API](https://apps.crust.network/docs/) - The Crust API documentation.
 - [Crust Rocky](build-rocky-guidance.md) - An open and free test network.
 - [Crust JS-SDK](https://github.com/crustio/crust.js) - The javascript SDK access to Crust.
-- [File Storing Demo](build-file-storing-demo.md) - An E2E full code sample of storing file.
+- [Storing File with IPFS Demo](build-file-storing-demo.md) - An E2E full code sample of storing file with local IPFS.
+- [Storing File with IPFS gateway Demo](build-file-storing-gw-demo.md) - And E2E full code sample of storing file with [IPFS W3Auth Gateway](build-ipfs-web3-auth-gateway.md) and [IPFS W3Auth Pinning Service](build-ipfs-w3auth-pinning-service.md).
 
 ## Integration Guide
 

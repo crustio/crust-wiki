@@ -22,8 +22,12 @@
         "sidebar_label": "Crust SDK"
       },
       "buildFileStoringDemo": {
-        "title": "File Storing Code Sample",
-        "sidebar_label": "File Storing Code Sample"
+        "title": "File Storing Code with IPFS Sample",
+        "sidebar_label": "File Storing Code with IPFS Sample"
+      },
+      "buildFileStoringWithGWDemo": {
+        "title": "File Storing with IPFS Gateway Code Sample",
+        "sidebar_label": "File Storing with IPFS Gateway Code Sample"
       },
       "buildGettingStarted": {
         "title": "Builder's Portal",

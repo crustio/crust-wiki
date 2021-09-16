@@ -41,7 +41,8 @@
         "label": "Basics",
         "ids": [
           "buildRockyGuidance",
-          "buildFileStoringDemo"
+          "buildFileStoringDemo",
+          "buildFileStoringWithGWDemo"
         ]
       },
       {

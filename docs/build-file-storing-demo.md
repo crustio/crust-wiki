@@ -1,12 +1,12 @@
 ---
 id: buildFileStoringDemo
-title: File Storing Code Sample
-sidebar_label: File Storing Code Sample
+title: File Storing Code with IPFS Sample
+sidebar_label: File Storing Code with IPFS Sample
 ---
 
 This doc contains a code sample to demonstrate how to upload a file to IPFS, and place a storage order to get the file stored in Crust Network. After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in WebSite/DApp frontend hosting, content/media delivery, cloud storage, etc.
 
-The code sample is open source on GitHub repo: https://github.com/crustio/crust-demo
+The code sample is open source on GitHub repo: https://github.com/crustio/crust-demo/tree/main/store-file-with-ipfs
 
 ## Overview
 
