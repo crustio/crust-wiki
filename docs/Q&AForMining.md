@@ -257,6 +257,12 @@ Divided into the following four steps
 - Activate the new owner and get a new session key
 - Set a new session key and click again to verify
 
+### 5.6 Chain log error
+
+If the following error occurs, it means that the chain data is damaged, execute 'sudo rm -rf /opt/crust/data/chain/chains/crust/db/' command to delete the chain db, and then execute 'sudo crust reload chain' to resynchronize the chain data. If it appears again, indicating that the system disk has bad sectors, please replace the system disk immediately
+
+![Picture](assets/qa/chaindb.png)
+ 
 ## 6 Member node related
 
 ### 6.1 Error installing SGX driver
