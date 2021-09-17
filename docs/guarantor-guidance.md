@@ -15,7 +15,7 @@ Makesure you have finished [account setup steps](new-bond.md), and bonded your s
 
 ![gua](assets/gpos/copyaddress.png)
 
-> If a validator obtains 1000 CRU staking reward in one era, and if his own self-staking is 90% of the total staking amount of him (the other 10% is the guarantor's staking). If the guarantee fee set by the validator is 95%, the final guarantor will receive a total of 1000 * 10% * 95% = 95 CRUs, and the validator will get 905 CRUs.
+> If a validator obtains 1000 CRU staking reward in one era, and if his own self-staking is 90% of the total staking amount of him (the other 10% is the guarantor's staking). If the guarantee fee set by the validator is 30%, the final guarantor will receive a total of 1000 * 10% * 30% = 30 CRUs, and the validator will get 970 CRUs.
 
 ![change guaranteefee1](assets/gpos/guranteefee.png)
 

@@ -22,7 +22,7 @@ The guarantor obtains rewards from staking, which is influenced by the following
 - Effective Stake: The Effective Stake is **the amount of staking that actually generates incomes**, which is related to the stake limit of the validator that is guaranteed. An example is provided as follows:
 - Guarantee Fee: The proportion of reward obtained by the guarantor, which is set by the validator. **A higher guarantee fee does not mean higher guarantee income**. The guarantee income of any guarantor needs to consider the effective stake and his own staking amount.
 
-> For example, if the validator obtains 900 CRU staking rewards and 100 CRU authoring reward (block generation reward) in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtain (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belong to the validator.
+> For example, if the validator obtains 900 CRU staking rewards and 100 CRU authoring reward (block generation reward) in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 30%, then the guarantors finally obtain (900 + 100) * 10% * 30% = 30 CRUs income, and the remaining 905 CRUs belong to the validator.
 
 > If a validator’s stake limit is 1000 CRU, the self-staking is 900 CRU, and the guarantor staked 300 CRU. In this way, the total stake is 1200, and the total effective pledge is 1000. The effective stake of the validator is 1000 * (900/1200) = 750, and the effective stake of the guarantor is 1000 * (300/1200) = 250.
 
@@ -42,10 +42,10 @@ guarantor_effective_guarantee_amount = MIN (stake_limit, validator_total_staking
 
 Here is an example:
 
-If node A staked 1000 CRUs itself, for which you guaranteed 200 CRUs. The stake limit is 1000 CRUs, with the percentage of guarantee fee set at 95%, and the staking incomes generated per round are 600 CRUs. Supposing the effective staking amount of the network is 2000, we can work out the income of each Era:
+If node A staked 1000 CRUs itself, for which you guaranteed 200 CRUs. The stake limit is 1000 CRUs, with the percentage of guarantee fee set at 30%, and the staking incomes generated per round are 600 CRUs. Supposing the effective staking amount of the network is 2000, we can work out the income of each Era:
 
 1. Effective staking amount = minimum value (1000, 1200) * (200 / 1200) = 1000 * (200 / 1200) = 166.66 CRU
-2. Staking income = 600 * (166.66 / 2000) * 95% = 47.498 CRU
+2. Staking income = 600 * (166.66 / 2000) * 30% = 15 CRU
 
 #### 1.2 Withdraw rewards
 
