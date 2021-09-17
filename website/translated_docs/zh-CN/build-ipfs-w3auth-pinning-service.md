@@ -70,6 +70,7 @@ ipfs pin remote service add crustpinner http://localhost:3000/psa base64(ChainTy
 3. `sol` (or `solana`)
 4. `pol` (or `polygon`)
 5. `nea` (or `near`)
+6. `ava`(or `avalanche`)
 
 ### Get PubKey and SignedMsg
 
@@ -140,6 +141,12 @@ You can sign the `PubKey` with one of your near private key associated with your
 
 - With [Near Wallet Example](https://bafybeie333fxe7yw44msi4khah7pjuhn7rlvg3odquoreysj6ejbjya2oy.ipfs.dweb.link/) (deploy with IPFS(cid: `QmYq6wg5NG6mRq6e8urhLTXLsf7QAzZ8RKcgyyiX5qH45b`), source code is [here](https://github.com/MyronFanQiu/wallet-example), you can deploy yourself)
 - With [Near-API-JS Example](https://github.com/near/near-api-js/blob/master/examples/cookbook/utils/verify-signature.js)
+
+### 6. With Avalanche
+
+You can sign the `Address` **without** chainID prefix, such as `avax1se4e9lvhlfwhcqnzjr0vpswqcnhsy5atn5r0l3`, with your X- or P- chain private key associated with your account to get the `SignedMsg`.
+
+- With [Avalanche Wallet](https://wallet.avax.network/wallet/advanced)
 ## Deploy
 
 ### 1. Start MySQL

@@ -172,6 +172,7 @@ curl -X POST -F file=@myfile -u "ChainType-PubKey:SignedMsg" "https://localhost:
 3. `sol`(or `solana`)
 4. `pol` (or `polygon`)
 5. `nea` (or `near`)
+6. `ava`(or `avalanche`)
 
 And you can get `PubKey` and `SignedMsg` by using the following web3-ways:
 
@@ -245,6 +246,12 @@ You can sign the `PubKey` with one of your near private key associated with your
 - With [Near Wallet Example](https://bafybeie333fxe7yw44msi4khah7pjuhn7rlvg3odquoreysj6ejbjya2oy.ipfs.dweb.link/) (deploy with IPFS(cid: `QmYq6wg5NG6mRq6e8urhLTXLsf7QAzZ8RKcgyyiX5qH45b`), source code is [here](https://github.com/MyronFanQiu/wallet-example), you can deploy yourself)
 - With [Near-API-JS Example](https://github.com/near/near-api-js/blob/master/examples/cookbook/utils/verify-signature.js)
 
+### 6. With Avalanche
+
+You can sign the `Address` **without** chainID prefix, such as `avax1se4e9lvhlfwhcqnzjr0vpswqcnhsy5atn5r0l3`, with your X- or P- chain private key associated with your account to get the `SignedMsg`.
+
+- With [Avalanche Wallet](https://wallet.avax.network/wallet/advanced)
+
 ## Resources
 
 - [IPFS W3Auth Github Repo](https://github.com/crustio/ipfs-w3auth-gateway)
@@ -254,3 +261,5 @@ You can sign the `PubKey` with one of your near private key associated with your
 - [Sign message with Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey)
 - [Sign message with Ethereum](https://programtheblockchain.com/posts/2018/02/17/signing-and-verifying-messages-in-ethereum/)
 - [Sign message with Phantom (Solana)](https://docs.phantom.app/integrating/signing-a-message)
+- [Sign message with Near](https://github.com/near/near-api-js/blob/master/examples/cookbook/utils/verify-signature.js)
+- [Sign message with Avalanche](https://docs.avax.network/build/references/cryptographic-primitives#signed-messages)
