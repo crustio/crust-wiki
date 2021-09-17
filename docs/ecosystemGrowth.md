@@ -9,14 +9,18 @@ The Crust Ecosystem Growth Program is designed to provide technical, business an
 1. Technical Support
 
   For projects in the Crust Ecosystem Growth Program, our technical staff will provide answers/solutions to difficulties met by developers as soon as possible through Discord, and provide all the required development documentations.
+  
+  After the Crust ecosystem team review, **a discord group** will be created. The project developer will get technical support from this discord group.
 
 2. Marketing collaboration
 
   The projects in Crust Ecosystem Growth Program are able to be jointly promoted with Crust, and the promotion channels mainly include: co-hosting AMA, joint PR Announcement, and forwarding and promotion.
 
+  After the Crust ecosystem team review, **a discord group** will be created. The Crust marketing team will conduct market cooperation in the group
+
 3. Investment resources
 
-  If needed, Crust can help match projects in Crust Ecosystem Growth Program with external investment institutions.
+  If needed, Crust can help match projects in Crust Ecosystem Growth Program with external investment institutions. The investment institusions include but are not limited to: DFG, NGC ventrues, and IOSG.
 
 ## Process of Crust Ecosystem Growth Program
 
