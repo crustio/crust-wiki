@@ -20,7 +20,7 @@ The Crust Ecosystem Growth Program is designed to provide technical, business an
 
 3. Investment resources
 
-  If needed, Crust can help match projects in Crust Ecosystem Growth Program with external investment institutions. The investment institusions include but are not limited to: DFG, NGC ventrues, and IOSG.
+  If needed, Crust can help match projects in Crust Ecosystem Growth Program with external investment institutions. The investment institutions include but are not limited to DFG, NGC ventures, and IOSG.
 
 ## Process of Crust Ecosystem Growth Program
 
