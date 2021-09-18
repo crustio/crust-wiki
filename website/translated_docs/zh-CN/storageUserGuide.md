@@ -4,19 +4,23 @@ title: User Guidance
 sidebar_label: User Guidance
 ---
 
-使用Crust存取数据的用户分为安装了IPFS的用户，以及没有安装IPFS的用户。其中，[安装了IPFS的用户](#1-安装了ipfs的用户)使用Crust存取数据分为以下三个步骤：
+## 使用前请阅读
 
-1. 上传。用户将文件通过IPFS上传到Crust网络；
-2. 下单。用户在Crust网络上生成存储订单；
-3. 检索。用户可以通过IPFS网络检索到对应文件；
+这是一个关于[Crust Apps](https://apps.crust.network/)中**存储用户**模块的使用手册。
 
-对于[未安装IPFS的用户](#2-未安装ipfs的用户)使用Crust存取数据也是通过“上传”，“下单”，“检索”三个步骤。其中的差异在第一步“上传”，用户将文件通过Gateway上传到Crust网络。
+>注意： **存储用户** 是[Crust Apps](https://apps.crust.network/)内置的存储应用，用于为Crust用户提供原生的使用CRU支付创建存储订单并存储文件的功能。用户也可以在此处访问或取回所存储的文件。对于非Crust用户，我们推荐使用面向更广大Web3用户群的[Files](https://apps.crust.network/#/files)。
 
-本文阐述的是普通用户使用Crust进行存取的操作指引。开发者请查阅[Crust开发者指南](build-getting-started.md)
+第一次使用存储用户时，您需要在两种工作模式中进行选择，如下图所示：
 
-## 1. 安装了IPFS的用户
+![welcomepage](assets/storage/storageuser_welcomepage.png)
 
-### 1.1 上传
+根据提示选择适合您的模式。如果您没有本地IPFS客户端，请必须选择“使用Gateway上传文件”模式。
+
+>注意：无需担心选择了错误的模式。您可以在此后任何时候切换工作模式。
+
+## 1. IPFS的用户 / “使用IPFS上传文件”模式
+
+### 1.1 上传文件
 
 这一步的目的，是让用户把文件上传到IPFS。您可以[通过Crust Apps来上传文件](#111-通过crust-apps上传文件)，也可以[通过IPFS桌面版上传文件](#112-通过ipfs上传文件)。
 
@@ -72,7 +76,7 @@ sidebar_label: User Guidance
 
 上传完毕后，上传的文件会被显示在“Files”栏的列表中。
 
->注意：文件此时仅仅被上传到您本地的IPFS，并没有任何节点帮您保存文件
+>注意：文件此时仅仅被上传到您本地的IPFS，并没有任何Crust网络节点帮您保存文件。
 
 ### 1.2 下单
 
@@ -89,7 +93,7 @@ sidebar_label: User Guidance
 
 ![orderPage](assets/storage/orderPage.png)
 
-> “File Price” 是用户将为文件订单支付的价格，它包括了文件基本费、文件动态调节费以及小费。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
+> “File Price” 是用户将为文件订单支付的价格，它包括了**文件基本费**、**文件动态调节费**以及**小费**。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
 
 #### 1.2.2 对远程文件下单
 
@@ -113,7 +117,7 @@ sidebar_label: User Guidance
 
 以下是Crust Apps中显示的订单状态及背后含义：
 
-* 订单状态状态 -- “Pending”，代表这个订单文件正在被Crust节点拉取中，一般30分钟内状态会更新。您可以通过增加存储费用来吸引更多节点优先拉取文件。
+* 订单状态状态 -- “Waiting”，代表这个订单文件正在被Crust节点拉取中，一般30分钟内状态会更新。您可以通过增加存储费用来吸引更多节点优先拉取文件。
 ![renew_pending](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/storage/renew_pending.png)
 
     > **_注意 1:_** 在订单“Pending”期间内请不要关闭IPFS或在IPFS中删除该文件。否则可能导致存储节点拉取不到用户文件。
@@ -169,29 +173,25 @@ sidebar_label: User Guidance
 
 > 举个例子：如果我们通过Crust Gateway来访问CID为`QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`的文件，可以直接访问URL:`https://crustwebsites.net/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`
 
-## 2. 未安装IPFS的用户
+## 2. 非IPFS用户 / “使用Gateway上传文件”模式
 
-对于未安装IPFS的用户，需要通过Crust Gateway将文件上传到Crust。
+对于未安装IPFS的用户，需要通过IPFS Gateway将文件上传到IPFS并被Crust Network处理。对于此类用户，请选择“使用Gateway上传文件”模式，页面如图所示：
 
-进入 [Crust Apps](https://apps.crust.network/) -> 存储市场 -> 存储用户，页面如下。
+![storageuser_nonipfsuser](assets/storage/storageuser_nonipfsuser_page.png)
 
-![pageOverview](assets/storage/pageOverview.png)
+**切换模式**：您可以在任意时候切换使用IPFS上传文件、使用Gateway上传文件两种模式。
 
-上图中，有5个标记的红框。
+**选择Gateway**：选择一个Gateway来处理文件的上传下载以及钱包验证工作。出于性能考虑，我们推荐优先选择地理距离更近的Gateway。
 
-1. 第一个框指示了本页面的入口；
-2. 第二个框是Gateway选择框，用户可以选择通过哪个Gateway将文件上传到Crust网络；
-3. 第三个框是上传按钮；
-4. 第四个框中包含“导入”、“导出”和“拉取”。由于Crust Apps是一个去中心化应用，文件目录是被用户浏览器缓存的。这里的导入和导出功能，可以将缓存的文件目录有效保存起来，而“拉取”功能则可以通过查询链上信息，获得用户自己下的订单。
-5. 第五个框中可以浏览用户下的历史订单状态，也可以导入任何文件以查看状态；
+**文件列表区域**：文件列表是一个本地缓存的下单记录。在搜索框输入CID，也可以查询该文件在Crust网络中的状态。您可以使用导入、导出按钮来更新或移动文件列表（对应一个JSON格式本地缓存文件）。此外，您可以使用取回按钮来获取指定账户在Crust网络内的所有下单记录。
 
 ### 2.1 上传
 
 1. 选择Gateway
 
-    对于没有IPFS的用户，需要先将文件上传至Gateway。用户可以选择一个就近的Gateway。
+    首先需要先将文件上传至Gateway。用户可以选择一个就近的Gateway。
 
-    ![pickGateway](assets/storage/pickGateway.png)
+    ![pickGateway](assets/storage/storageuser_nonipfsuser_selectgateway.png)
 
 2. 选择文件
 
@@ -202,7 +202,7 @@ sidebar_label: User Guidance
 
     在文件上传之前，Gateway会验证用户的Crust账户，用户需要在弹出窗口使用Crust账号进行一次签名。
 
-    >这个签名不会消耗手续费
+    >这个签名不会消耗手续费。
 
     ![signUpload](assets/storage/signUpload.png)
 
@@ -212,7 +212,7 @@ sidebar_label: User Guidance
 
 ![userOrder](assets/storage/userOrder.png)
 
-> “File Price” 是用户将为文件订单支付的价格，它包括了文件基本费、文件动态调节费以及小费。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
+> “File Price” 是用户将为文件订单支付的价格，它包括了**文件基本费**、**文件动态调节费**以及**小费**。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
 
 订单生成后，可以在下方查看到。
 
@@ -222,8 +222,5 @@ sidebar_label: User Guidance
 
 ### 2.3 检索
 
-用户对文件的检索参考[文件检索](#13-检索)
+在**存储用户**页面的文件列表中，您可以直接点击“动作/Action”栏目下的“打开文件”以及“复制下载链接”图标来直接访问文件（通过您指定的Gateway）或者分享下载链接。
 
-## 3. 订单折扣
-
-存储用户可以在存储市场权益模块中通过锁定CRU通证作为保障金来获得最大10%的存储订单折扣优惠。详情参考[存储市场权益](marketBenefits.md)。
