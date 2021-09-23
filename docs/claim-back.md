@@ -8,7 +8,7 @@ If you want to **map Crust Maxwell CRU back to ERC20 CRU**, you can follow this 
 
 ## Attention
 
-1. Claim back **will not arrive in real time**, claim back cycle is: **7 days**
+1. Claim back **will not arrive in real time**, each claimback's date is: **15th of each month**
 2. **A certain amount of CRU will be deducted as  the Ethereum gas fee**, the claim back fee is: **1 CRU**
 
 > **The sum of multiple transfers in the same claim back cycle needs to be greater than claim back fee**, if your claim back amount is less than the fee, it will be judged as invalid and will not be executed
