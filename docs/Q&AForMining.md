@@ -412,6 +412,32 @@ No, the encapsulated computing power is related to the SGX module, and the hardw
 
 The account configured by the member is duplicated with other members
 
+### 6.12 Sworker log report "Input/output error"
+Disk failure, read and write errors, please check the hardware configuration of the disk, Raid card, power supply, etc.
+
+![Picture](assets/qa/sworker/device/inputoutputerror.png)
+
+### 6.13 Sworker log report "Get srd (hash) metadata failed ,please check your disk. Error code:4016"
+If the program fails to retrieve the packaged data, please check the disk read and write failure caused by the hardware configuration of the disk, Raid card, power supply, etc., or the hard disk is not mounted before restarting the computer
+
+![Picture](assets/qa/sworker/device/srdlost.png)
+
+Execute 'sudo crust tools workload' command to check if the sum of "srd_complete" and "disk_available_for_srd" is much smaller than disk_volume, it is recommended to re-srd
+
+The solution is as follows
+
+- Ensure that the disk reads and writes normally
+
+- Execute 'sudo crust stop sworker' command to stop the sworker program
+
+- Execute 'sudo rm -rf /opt/crust/data/sworker' to delete sworker metadata
+
+- Format the mechanical hard disk and remount it to /opt/crust/disks/1~128
+
+- Execute 'sudo crust reload sworker' command to restart the sworker program
+
+- Execute 'sudo crust tools change-srd xxx' command to issue the srd task
+
 ## 7 related groups
 
 ### 7.1 Why can't a member add a group?
