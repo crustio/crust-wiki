@@ -412,6 +412,33 @@ sudo crust logs sworker | grep 'WRE'
 
 Member配置的账户与其他member重复
 
+### 6.12 Sworker日志报“Input/output error”
+磁盘故障，读写报错，请检查磁盘，Raid卡，电源供电等硬件配置
+
+![图片](assets/qa/sworker/device/inputoutputerror.png)
+
+### 6.13 Sworker日志报"Get srd (hash) metadata failed ,please check your disk. Error code:4016"
+程序检索不到封装数据造成的报错，请排查磁盘，Raid卡，电源供电等硬件配置造成的磁盘读写故障，或者重启电脑之前未进行硬盘挂载
+
+![图片](assets/qa/sworker/device/srdlost.png)
+
+执行sudo crust tools workload 命令查询"srd_complete"和"disk_available_for_srd"之和如果远小于disk_volume，建议重新srd
+
+解决办法如下
+
+- 确保磁盘读写正常
+
+- 执行sudo crust stop sworker命令停止sworker程序
+
+- 执行sudo rm -rf /opt/crust/data/sworker删除sworker元数据
+
+- 格式化机械硬盘，重新挂载到/opt/crust/disks/1~128
+
+- 执行sudo crust reload sworker命令重启sworker程序
+
+- 执行sudo crust tools change-srd xxx命令下发封装任务
+
+
 ## 7 组相关
 
 ### 7.1 Member为啥加不了组?
