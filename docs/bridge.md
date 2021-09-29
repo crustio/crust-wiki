@@ -8,7 +8,7 @@ Crust provides an asset cross-chain bridge that allows users to transfer CRU on 
 
 ## Preparation
 
-1. Install an Ethereum wallet extension. Metamask is recommended. Please refer to the official Metamask website for download links: https://metamask.io
+1. Install Metamask. Please refer to the official Metamask website for download links: https://metamask.io
 2. Add CRU tokens in the wallet:
 
 Open Metamask, click “Add Token”.

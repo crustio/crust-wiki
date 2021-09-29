@@ -8,7 +8,7 @@ Crust提供了一个可以实时到账的资产跨链桥，允许用户将Crust�
 
 ## 准备工作
 
-1. 安装以太坊钱包插件，推荐使用Metamask，可参考Metamask官方网站进行相关操作。https://metamask.io/
+1. 安装以太坊插件钱包Metamask，可参考Metamask官方网站进行相关操作。https://metamask.io/
 2. 在钱包中导入CRU通证：
 
 打开Metamask钱包，点击“Add Token”进入导入页面
