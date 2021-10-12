@@ -438,6 +438,18 @@ The solution is as follows
 
 - Execute 'sudo crust tools change-srd xxx' command to issue the srd task
 
+### 6.14 Sworker log report "...swork.IllegalFilesTransition..."
+
+![Picture](assets/qa/sworker/device/illegalfiles.png)
+
+Reason:Unstable network causes the expected workload to be sent to be inconsistent with the actual workload
+
+The solution is as follows:
+- Keep sowkrer service online
+- git clone https://github.com/MyronFanQiu/Recover-Illegal-Files && cd Recover-Illegal-Files
+- yarn
+- yarn start
+
 ## 7 related groups
 
 ### 7.1 Why can't a member add a group?
