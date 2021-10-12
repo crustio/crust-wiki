@@ -438,6 +438,17 @@ Member配置的账户与其他member重复
 
 - 执行sudo crust tools change-srd xxx命令下发封装任务
 
+### 6.14 Sworker日志报"...swork.IllegalFilesTransition..."
+
+![图片](assets/qa/sworker/device/illegalfiles.png)
+
+原因：网络不稳定造成预期发送的工作量与实际发送的工作量不一致
+
+解决办法：
+- 保持sowkrer服务在线
+- git clone https://github.com/MyronFanQiu/Recover-Illegal-Files && cd Recover-Illegal-Files
+- yarn
+- yarn start
 
 ## 7 组相关
 
