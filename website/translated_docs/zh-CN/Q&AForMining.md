@@ -450,6 +450,16 @@ Member配置的账户与其他member重复
 - yarn
 - yarn start
 
+### 6.15 Sworker日志报"...Priority is too low..."
+
+![图片](assets/qa/sworker/device/priority.png)
+
+由于网络问题造成链同步不稳定，本地块高低于全网实际最高块
+
+解决办法：
+- 方法一：提升网络带宽，配置固定IP或者减少同一局域网Member节点数量
+- 方法二：[设置链P2P端口](buildNode#24-设置链p2p端口)，重启链服务并在路由器配置端口转发和[QoS](nodeQos)
+
 ## 7 组相关
 
 ### 7.1 Member为啥加不了组?

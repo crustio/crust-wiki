@@ -450,6 +450,16 @@ The solution is as follows:
 - yarn
 - yarn start
 
+### 6.15 Sworker log report "...Priority is too low..."
+
+![Picture](assets/qa/sworker/device/priority.png)
+
+The chain synchronization is unstable due to network problems, and the local block height is lower than the  maximum block of the main network
+
+The solution is as follows:
+- Option 1 : Increase network bandwidth, configure a fixed IP or reduce the number of member nodes in the same LAN
+- Option 2 : [Set the chain P2P port](buildNode#24-set-the-p2p-port-of-the-chain), restart the chain service and then configure port forwarding and [QoS](nodeQos) on the router 
+
 ## 7 related groups
 
 ### 7.1 Why can't a member add a group?
