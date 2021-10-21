@@ -79,8 +79,8 @@ You could check [smanager-config.example.json](https://github.com/crustio/crust-
   "scheduler": {
     "minSrdRatio": 30,
     "strategy": {
-      "dbFilesWeight": 10,
-      "newFilesWeight": 90
+      "dbFilesWeight": 0,
+      "newFilesWeight": 100
     }
   }
 }
