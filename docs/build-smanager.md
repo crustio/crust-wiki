@@ -174,8 +174,8 @@ Basically, the solution is built on top of [IPFS Private Network](https://docs.i
 
 - `IPFS`: Firstly, Storage Merchants create an `IPFS Private Network`, and configure there sManager to connect to these private IPFS nodes.
 - `sManager`: Storage Merchants customize their sManager to only pick up specific storage orders:
-  - Generate a unique `private network ID`, configure it in the sManager, and share it to their customers
-  - Customers place storage orders with this `private network ID` in the `_memo` field
+  - Generate a unique `private network Id`, configure it in the sManager, and share it to their customers
+  - Customers place storage orders with this `private network Id` in the `_memo` field
 
 > Please do note that, customer should upload file to one of the IPFS node in the `IPFS Private Network` before placing the order. Otherwise, file will be stored by other public storage merchants, but not the target storage merchants. 
 
@@ -200,18 +200,19 @@ For more information, please refer to [IPFS Docs](https://github.com/ipfs/go-ipf
 
 #### sManager Customization
 
-1. Add a `networkID` field to the config file.
+1. Add a `networkId` field to the config file.
 2. Disable `Chain Database Indexer`. This indexing job is no longer necessary, and besides, order `_memo` is not persisted into chain database.
-3. Update `Chain Event Indexer` to only pick orders with the configured `networkID` in the `_memo` field.
-
-> As a reference, you could check [decooio/crust-smanager](https://github.com/decooio/crust-smanager) for how to customize sManager for a `private network` built on top of Crust Network.
+3. Update `Chain Event Indexer` to only pick orders with the configured `networkId` in the `_memo` field.
 
 #### Order Memo
 
-When placing storage orders targeted at a `private DSM`, customer could place `private network ID` in the `_memo` field, as illustrated below:
+When placing storage orders targeted at a `private DSM`, customer could place `network Id` in the `_memo` field, as illustrated below:
 
 ![place-order-with-memo](assets/build/place-order-with-memo.png)
 
+### sManager Customization Sample
+
+As a reference, you could check [decooio/crust-smanager](https://github.com/decooio/crust-smanager) for how to customize sManager to build a `private DSM` on top of Crust Network.
 
 ## Resources
 
