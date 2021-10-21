@@ -78,8 +78,8 @@ sManager 的配置文件为 json 文件，使用环境变量 `SMANAGER_CONFIG` �
   "scheduler": {
     "minSrdRatio": 30,
     "strategy": {
-      "dbFilesWeight": 10,
-      "newFilesWeight": 90
+      "dbFilesWeight": 0,
+      "newFilesWeight": 100
     }
   }
 }
