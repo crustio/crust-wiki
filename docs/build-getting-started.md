@@ -17,6 +17,7 @@ This section of the wiki is divided into the following parts:
 - [Crust JS-SDK](https://github.com/crustio/crust.js) - The javascript SDK access to Crust.
 - [Storing File with IPFS Demo](build-file-storing-demo.md) - An E2E full code sample of storing file with local IPFS.
 - [Storing File with IPFS gateway Demo](build-file-storing-gw-demo.md) - And E2E full code sample of storing file with [IPFS W3Auth Gateway](build-ipfs-web3-auth-gateway.md) and [IPFS W3Auth Pinning Service](build-ipfs-w3auth-pinning-service.md).
+- [Crust Cross Chain Storage Solution](build-cross-chain-solution.md) - Crust's cross chain storage solution on both Polkadot ecosystem and other public platforms(Ethereum/Solana/Near/...)
 
 ## Integration Guide
 

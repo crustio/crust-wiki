@@ -13,6 +13,10 @@
         "title": "Bridge",
         "sidebar_label": "Bridge"
       },
+      "buildCrossChainSolution": {
+        "title": "Crust's cross-chain dStorage solution",
+        "sidebar_label": "Crust's cross-chain dStorage solution"
+      },
       "buildCrustGhAction": {
         "title": "Crust Pinner Github Action",
         "sidebar_label": "Crust Pinner Github Action"
