@@ -256,6 +256,10 @@
         "title": "Workload",
         "sidebar_label": "Workload"
       },
+      "sWorkerVersion": {
+        "title": "sWorker Version",
+        "sidebar_label": "sWorker Version"
+      },
       "teeTechnology": {
         "title": "TEE Technology",
         "sidebar_label": "TEE Technology"
