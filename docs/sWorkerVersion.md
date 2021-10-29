@@ -1,4 +1,9 @@
-# sWorker Version
+---
+id: sWorkerVersion
+title: sWorker Version
+sidebar_label: sWorker Version
+---
+
 
 This is a user guide of the sWorker Version section in Crust Apps.
 

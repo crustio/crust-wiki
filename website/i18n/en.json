@@ -252,13 +252,13 @@
         "title": "Overview",
         "sidebar_label": "Overview"
       },
-      "sWorkerWorkload": {
-        "title": "Workload",
-        "sidebar_label": "Workload"
-      },
       "sWorkerVersion": {
         "title": "sWorker Version",
         "sidebar_label": "sWorker Version"
+      },
+      "sWorkerWorkload": {
+        "title": "Workload",
+        "sidebar_label": "Workload"
       },
       "teeTechnology": {
         "title": "TEE Technology",

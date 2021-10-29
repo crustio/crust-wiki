@@ -1,4 +1,9 @@
-# sWorker版本
+---
+id: sWorkerVersion
+title: sWorker 版本
+sidebar_label: sWorker 版本
+---
+
 
 这是一个关于Crust Apps中“sWorker版本”功能页面的指引。
 
