@@ -1,7 +1,7 @@
 ---
 id: sWorkerOverview
-title: 概览
-sidebar_label: 概览
+title: Overview
+sidebar_label: Overview
 ---
 
 ## 什么是sWorker

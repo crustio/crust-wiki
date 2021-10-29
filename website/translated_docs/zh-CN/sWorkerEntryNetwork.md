@@ -1,7 +1,7 @@
 ---
 id: sWorkerEntryNetwork
-title: 入网
-sidebar_label: 入网
+title: Entry Network
+sidebar_label: Entry Network
 ---
 入网是节点进入Crust存储网络的前置步骤，本节将详细介绍入网的具体流程和相关概念。
 
