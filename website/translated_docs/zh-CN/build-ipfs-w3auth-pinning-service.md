@@ -139,7 +139,7 @@ Just sign the `PubKey` with your polygon private key to get the `SignedMsg`
 
 You can sign the `PubKey` with one of your near private key associated with your account to get the `SignedMsg`
 
-- With [Near Wallet Example](https://bafybeie333fxe7yw44msi4khah7pjuhn7rlvg3odquoreysj6ejbjya2oy.ipfs.dweb.link/) (deploy with IPFS(cid: `QmYq6wg5NG6mRq6e8urhLTXLsf7QAzZ8RKcgyyiX5qH45b`), source code is [here](https://github.com/MyronFanQiu/wallet-example), you can deploy yourself)
+- With [Near Wallet Example](https://bafybeifl55z3nnwr7c73fsimgbcpjjhx7psubzzh6gyfs3ynbwpkbkws4m.ipfs.dweb.link/) (deploy with IPFS(cid: `QmZupCTkUs6fDCAjYPfDqDtx85GekztfDa9u6Y8dsWhsvA`), source code is [here](https://github.com/MyronFanQiu/wallet-example), you can deploy yourself)
 - With [Near-API-JS Example](https://github.com/near/near-api-js/blob/master/examples/cookbook/utils/verify-signature.js)
 
 ### 6. With Avalanche
