@@ -1,7 +1,7 @@
 ---
 id: sWorkerVersion
-title: sWorker 版本
-sidebar_label: sWorker 版本
+title: sWorker Version
+sidebar_label: sWorker Version
 ---
 
 
