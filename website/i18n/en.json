@@ -252,6 +252,10 @@
         "title": "Overview",
         "sidebar_label": "Overview"
       },
+      "sWorkerVersion": {
+        "title": "sWorker Version",
+        "sidebar_label": "sWorker Version"
+      },
       "sWorkerWorkload": {
         "title": "Workload",
         "sidebar_label": "Workload"

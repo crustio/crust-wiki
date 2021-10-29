@@ -149,6 +149,10 @@
         "title": "工作量",
         "sidebar_label": "工作量"
       },
+      "sWorkerVersion": {
+        "title": "sWorker 版本",
+        "sidebar_label": "sWorker 版本"
+      },
       "guarantorGuidance": {
         "title": "担保人指南",
         "sidebar_label": "担保人指南"
