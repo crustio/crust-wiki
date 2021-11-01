@@ -199,6 +199,7 @@ Just sign the `PubKey` with your private key to get the `SignedMsg`
 - With [Polkadot Apps](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/signing)
 - With [Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey#signing-and-verifying-messages)
 - With [Node SDK](https://apps.crust.network/docs/util-crypto/examples/encrypt-decrypt)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/substrate.ts)
 
 ### 2. With Ethereum
 
@@ -212,6 +213,7 @@ Just sign the `PubKey` with your eth private key to get the `SignedMsg`
 
 - With [MyEtherWallet](https://www.myetherwallet.com/wallet/sign)
 - With [MyCrypto](https://app.mycrypto.com/sign-message)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/eth.ts)
 
 ### 3. With Solana
 
@@ -238,6 +240,7 @@ Just sign the `PubKey` with your polygon private key to get the `SignedMsg`
 
 - With [MyEtherWallet](https://www.myetherwallet.com/wallet/sign)
 - With [MyCrypto](https://app.mycrypto.com/sign-message)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/eth.ts)
 
 ### 5. With Near
 
@@ -245,6 +248,7 @@ You can sign the `PubKey` with one of your near private key associated with your
 
 - With [Near Wallet Example](https://bafybeifl55z3nnwr7c73fsimgbcpjjhx7psubzzh6gyfs3ynbwpkbkws4m.ipfs.dweb.link/) (deploy with IPFS(cid: `QmZupCTkUs6fDCAjYPfDqDtx85GekztfDa9u6Y8dsWhsvA`), source code is [here](https://github.com/MyronFanQiu/wallet-example), you can deploy yourself)
 - With [Near-API-JS Example](https://github.com/near/near-api-js/blob/master/examples/cookbook/utils/verify-signature.js)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/near.ts)
 
 ### 6. With Avalanche
 
@@ -263,3 +267,4 @@ You can sign the `Address` **without** chainID prefix, such as `avax1se4e9lvhlfw
 - [Sign message with Phantom (Solana)](https://docs.phantom.app/integrating/signing-a-message)
 - [Sign message with Near](https://github.com/near/near-api-js/blob/master/examples/cookbook/utils/verify-signature.js)
 - [Sign message with Avalanche](https://docs.avax.network/build/references/cryptographic-primitives#signed-messages)
+- [Workshop code sample](https://github.com/RoyTimes/crust-workshop)
