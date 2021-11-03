@@ -95,6 +95,7 @@ Just sign the `PubKey` with your private key to get the `SignedMsg`
 - With [Polkadot Apps](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/signing)
 - With [Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey#signing-and-verifying-messages)
 - With [Node SDK](https://apps.crust.network/docs/util-crypto/examples/encrypt-decrypt)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/substrate.ts)
 
 ### 2. With Ethereum
 
@@ -108,8 +109,25 @@ Just sign the `PubKey` with your eth private key to get the `SignedMsg`
 
 - With [MyEtherWallet](https://www.myetherwallet.com/wallet/sign)
 - With [MyCrypto](https://app.mycrypto.com/sign-message)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/eth.ts)
 
-### 3. With Solana
+### 3. With Moonriver
+
+Moonriver is fully compatiable with the Ethereum, you can just follow same steps with the Ethereum.
+
+#### Get `PubKey`
+
+`PubKey` is just the moonriver(ethereum) address(42-characters) start with `0x`
+
+#### Get `SignedMsg`
+
+Just sign the `PubKey` with your moonriver private key to get the `SignedMsg`
+
+- With [MyEtherWallet](https://www.myetherwallet.com/wallet/sign)
+- With [MyCrypto](https://app.mycrypto.com/sign-message)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/eth.ts)
+
+### 4. With Solana
 
 #### Get `PubKey`
 
@@ -122,7 +140,7 @@ You can sign the `PubKey` with your solana private key to get the `SignedMsg`
 - With [Solana Signer Sandbox](https://bafybeiexn4chci4exl54hlispdhwste6mpdcvgnu5zei53r2yl24hq2kri.ipfs.dweb.link/) (deploy with IPFS(cid: `QmYXnTQwKkup7yNLXZz2VyBvBj9eJB1knG8V8dnmjNuNnu`), source code is [here](https://github.com/zikunfan/solana-signer), you can deploy yourself)
 - With [Phantom](https://docs.phantom.app/integrating/signing-a-message)
 
-### 4. With Polygon
+### 5. With Polygon
 
 #### Get PubKey
 
@@ -134,15 +152,17 @@ Just sign the `PubKey` with your polygon private key to get the `SignedMsg`
 
 - With [MyEtherWallet](https://www.myetherwallet.com/wallet/sign)
 - With [MyCrypto](https://app.mycrypto.com/sign-message)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/eth.ts)
 
-### 5. With Near
+### 6. With Near
 
 You can sign the `PubKey` with one of your near private key associated with your account to get the `SignedMsg`
 
 - With [Near Wallet Example](https://bafybeifl55z3nnwr7c73fsimgbcpjjhx7psubzzh6gyfs3ynbwpkbkws4m.ipfs.dweb.link/) (deploy with IPFS(cid: `QmZupCTkUs6fDCAjYPfDqDtx85GekztfDa9u6Y8dsWhsvA`), source code is [here](https://github.com/MyronFanQiu/wallet-example), you can deploy yourself)
 - With [Near-API-JS Example](https://github.com/near/near-api-js/blob/master/examples/cookbook/utils/verify-signature.js)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/near.ts)
 
-### 6. With Avalanche
+### 7. With Avalanche
 
 You can sign the `Address` **without** chainID prefix, such as `avax1se4e9lvhlfwhcqnzjr0vpswqcnhsy5atn5r0l3`, with your X- or P- chain private key associated with your account to get the `SignedMsg`.
 
@@ -237,3 +257,4 @@ Then, you can just config the standard IPFS remote pinning service with `http://
 - [Sign message with Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey)
 - [Sign message with Ethereum](https://programtheblockchain.com/posts/2018/02/17/signing-and-verifying-messages-in-ethereum/)
 - [Sign message with Phantom (Solana)](https://docs.phantom.app/integrating/signing-a-message)
+- [Workshop code sample](https://github.com/RoyTimes/crust-workshop)
