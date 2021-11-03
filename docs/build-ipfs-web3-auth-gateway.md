@@ -215,7 +215,23 @@ Just sign the `PubKey` with your eth private key to get the `SignedMsg`
 - With [MyCrypto](https://app.mycrypto.com/sign-message)
 - With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/eth.ts)
 
-### 3. With Solana
+### 3. With Moonriver
+
+Moonriver is fully compatiable with the Ethereum, you can just follow the same steps with the Ethereum.
+
+#### Get `PubKey`
+
+`PubKey` is just the moonriver(ethereum) address(42-characters) start with `0x`
+
+#### Get `SignedMsg`
+
+Just sign the `PubKey` with your moonriver private key to get the `SignedMsg`
+
+- With [MyEtherWallet](https://www.myetherwallet.com/wallet/sign)
+- With [MyCrypto](https://app.mycrypto.com/sign-message)
+- With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/eth.ts)
+
+### 4. With Solana
 
 #### Get `PubKey`
 
@@ -228,7 +244,7 @@ You can sign the `PubKey` with your solana private key to get the `SignedMsg`
 - With [Solana Signer Sandbox](https://bafybeiexn4chci4exl54hlispdhwste6mpdcvgnu5zei53r2yl24hq2kri.ipfs.dweb.link/) (deploy with IPFS(cid: `QmYXnTQwKkup7yNLXZz2VyBvBj9eJB1knG8V8dnmjNuNnu`), source code is [here](https://github.com/zikunfan/solana-signer), you can deploy yourself)
 - With [Phantom](https://docs.phantom.app/integrating/signing-a-message)
 
-### 4. With Polygon
+### 5. With Polygon
 
 #### Get PubKey
 
@@ -242,7 +258,7 @@ Just sign the `PubKey` with your polygon private key to get the `SignedMsg`
 - With [MyCrypto](https://app.mycrypto.com/sign-message)
 - With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/eth.ts)
 
-### 5. With Near
+### 6. With Near
 
 You can sign the `PubKey` with one of your near private key associated with your account to get the `SignedMsg`
 
@@ -250,7 +266,7 @@ You can sign the `PubKey` with one of your near private key associated with your
 - With [Near-API-JS Example](https://github.com/near/near-api-js/blob/master/examples/cookbook/utils/verify-signature.js)
 - With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/near.ts)
 
-### 6. With Avalanche
+### 7. With Avalanche
 
 You can sign the `Address` **without** chainID prefix, such as `avax1se4e9lvhlfwhcqnzjr0vpswqcnhsy5atn5r0l3`, with your X- or P- chain private key associated with your account to get the `SignedMsg`.
 
