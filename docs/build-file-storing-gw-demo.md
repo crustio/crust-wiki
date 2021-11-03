@@ -30,7 +30,7 @@ The code sample mainly depends on the following libraries:
 
 ### 0. Build web3 authentication header with Crust
 
-> This demo only takes Crust(substrate-based chains) as an example, more web3 auth ways can be checked [here](https://wiki.crust.network/docs/en/buildIPFSWeb3AuthGW#usage). 
+> This demo only takes Crust(substrate-based chains) as an example, more web3 auth ways can be checked [here](https://wiki.crust.network/docs/en/buildIPFSWeb3AuthGW#usage).
 
 ```javascript
 const { Keyring } = require('@polkadot/keyring');
@@ -71,6 +71,8 @@ if (cid) {
 }
 ```
 
+> You can get full list of `ipfsGateway` address [here](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-gateway-endpoints/index.ts).
+
 ### 2. Pin file through IPFS Pinning Service
 
 ```javascript
@@ -92,6 +94,8 @@ const {body} = await got.post(
     }
 );
 ```
+
+> You can get the full list of `ipfsPinningService` [here](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-pinner/index.ts).
 
 Will return `body` like
 
@@ -173,3 +177,5 @@ After pinned success, the demo will return
 - [IPFS Http Client](https://github.com/crustio/crust-demo/tree/main/store-file-with-gateway)
 - [IPFS Gateway](https://docs.ipfs.io/concepts/ipfs-gateway/)
 - [IPFS Pinning Service](https://docs.ipfs.io/how-to/work-with-pinning-services/)
+- [IPFS W3Auth Gateway Full List](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-gateway-endpoints/index.ts)
+- [IPFS W3Auth Pinning Service Full List](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-pinner/index.ts)
