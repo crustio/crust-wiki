@@ -217,7 +217,7 @@ Just sign the `PubKey` with your eth private key to get the `SignedMsg`
 
 ### 3. With Moonriver
 
-Moonriver is fully compatiable with the Ethereum, you can just follow same steps with the Ethereum.
+Moonriver is fully compatiable with the Ethereum, you can just follow the same steps with the Ethereum.
 
 #### Get `PubKey`
 
