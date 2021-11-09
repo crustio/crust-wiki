@@ -250,12 +250,7 @@ Peers can't go up mainly because of network problems, such as no fixed IP, insuf
 
 ### 5.5 How to migrate owner
 
-Divided into the following four steps
-
-- Stop verification on APPS and wait for 1 era
-- Stop the original owner
-- Activate the new owner and get a new session key
-- Set a new session key and click again to verify
+Please follow this guide to migrate your owner. https://wiki.polkadot.network/zh-CN/docs/maintain-guides-how-to-upgrade
 
 ### 5.6 Chain log error
 
