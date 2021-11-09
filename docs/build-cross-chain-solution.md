@@ -159,6 +159,7 @@ Both XCMP-based pallet and native IPFS integration are already been used by seve
 - [Native IPFS] [Near](https://near.org/)
 - [Native IPFS] [Heco](https://www.hecochain.com/en-us/)
 - [Native IPFS] [Elrond](https://elrond.com/)
+- [Native IPFS] [Solana](https://solana.com/)
 
 Also, the IPFS W3Auth gateway(GW) and pinning service(PS) are integrated by several projects including:
 
