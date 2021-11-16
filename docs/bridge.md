@@ -33,7 +33,7 @@ Choose “Crust to Ethereum”, enter the Ethereum address to receive your CRU i
 
 ![toEthTransfer](assets/general/toEthTransfer.png)
 
-Please note that the transaction is automatically executed through a smart contract, and 5CRU is charged as a transaction fee. Please wait patiently as there might be a certain delay. You can click the link on the right side to check the transaction status.
+Please note that the transaction is automatically executed through a smart contract, and 10CRU is charged as a transaction fee. Please wait patiently as there might be a certain delay. You can click the link on the right side to check the transaction status.
 
 ![toEthCheck](assets/general/toEthCheck.png)
 
