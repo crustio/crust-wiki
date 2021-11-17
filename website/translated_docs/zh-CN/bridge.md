@@ -33,7 +33,7 @@ Crust Maxwell 提供了一个可以实时到账的资产跨链桥，允许用户
 
 ![toEthTransfer](assets/general/toEthTransfer.png)
 
-注意，转账通过智能合约自动执行，收取5CRU作为手续费。转账可能会存在一定的延时，请耐心等待，可以点击界面右边的链接查看转账状态。
+注意，转账通过智能合约自动执行，收取10CRU作为手续费。转账可能会存在一定的延时，请耐心等待，可以点击界面右边的链接查看转账状态。
 
 ![toEthCheck](assets/general/toEthCheck.png)
 
