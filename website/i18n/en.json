@@ -30,12 +30,12 @@
         "sidebar_label": "Crust SDK"
       },
       "buildFileStoringDemo": {
-        "title": "File Storing Code with IPFS Sample",
-        "sidebar_label": "File Storing Code with IPFS Sample"
+        "title": "Store file with Crust Storage API",
+        "sidebar_label": "Store file with Crust Storage API"
       },
       "buildFileStoringWithGWDemo": {
-        "title": "File Storing with IPFS Gateway Code Sample",
-        "sidebar_label": "File Storing with IPFS Gateway Code Sample"
+        "title": "Store file with Crust IPFS Pinning Service API",
+        "sidebar_label": "Store file with Crust IPFS Pinning Service API"
       },
       "buildGettingStarted": {
         "title": "Builder's Portal",

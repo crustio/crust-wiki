@@ -4,57 +4,58 @@ title: Crust Storage Manager
 sidebar_label: Crust Storage Manager
 ---
 
-sManager (Storage Manager) 是一个自动从 Crust 网络拉取和存储文件的程序，节点管理员可以根据自己的文件处理策略对它进行定制。
+sManager (Storage Manager) is a file picking bot which continuously picking and handling files from Crust Network. Node operators can customize this module to implement their own file handling strategy. 
 
-## 基本流程
+## Main Flow
 
-sManager 的主体由一组定时运行的任务组成，这些任务之间通过本地数据库和应用程序上下文 (Context) 交换数据和协同工作。sManger 的基本业务流程如下图所示：
+sManager consists of a bunch of recurring jobs exchanging data via local database and application context. The main workflow is illustrated as below: 
 
 ![smanager-flow](assets/build/smanager-mainnet-flow.png)
 
-- `Chain Event Indexer` 监听链上事件，将最新的文件存储订单存储到本地数据库
+- `Chain Event Indexer` subscribes chain event, and indexes latest file records to local database's `File Records Queue`
 
-- `Chain Database Indexer` 解析链上历史数据，将历史订单存储到本地数据库
+- `Chain Database Indexer` parses file records from Crust Network on-chain database, and indexes historical file records to local database's `File Records Queue`
 
-- `Pull Scheduler` 定时启动，根据预定义策略，从本地数据库选择文件存储订单进行处理。对选取的订单，从 IPFS 网络拉取到本地 IPFS 节点，并调用 sWorker API 进行封装
+- `Pull Scheduler` periodically picks file records from `File Records Queue` based on its picking strategy, pulls the file from IPFS network by *pinning* it to local IPFS node, and then seals the file by calling sWorker's seal API.
 
 
-## 使用
+## Usage
 
-1. 复制代码库
+1. Clone repo
 
 ```shell
 git clone https://github.com/crustio/crust-smanager.git
 ```
 
-2. 安装
+2. Installing
 
-建议使用 `volta` 管理本地 Node 版本，具体使用方法可以参考 [volta 文档](https://docs.volta.sh/guide/getting-started)。
+It's recommended to use `volta` as the node version manager. Please follow the [volta docs](https://docs.volta.sh/guide/getting-started) to install it.
 
 ```shell
 cd crust-smanager && npm i
 ```
 
-3. 调试
+3. Debug
 
 ```shell
 npm run dev
 ```
 
-4. 运行
+4. Run in Prod
 ```shell
 npm run build
 npm start
 ```
-建议使用 Docker 运行 sManager，运行时请使用 `restart=always` 的重启策略。
 
-如果不使用 Docker，那么运行 sManager 时建议搭配 Daemon 进程守护工具，比如 `pm2` 或者 `nodemon`。
+It's recommended to run sManager using Docker with the `restart=always` restart policy.
 
-## 配置
+A daemon guard should be configured if you want to run sManager natively without docker. Tools like `pm2` and `nodemon` could be used.
 
-sManager 的配置文件为 json 文件，使用环境变量 `SMANAGER_CONFIG` 指定，默认值为 `smanager-config.json`。
+## Configuration
 
-代码库中包含了一个示例文件 [smanager-config.example.json](https://github.com/crustio/crust-smanager/blob/mainnet/data/smanager-config.example.json) 供参考：
+sManager could be configured with a json format file, whose name is specified with environment variable `SMANAGER_CONFIG`. If not set, default file name `smanager-config.json` will be used.
+
+You could check [smanager-config.example.json](https://github.com/crustio/crust-smanager/blob/mainnet/data/smanager-config.example.json) as a sample config file:
 
 ```json
 {
@@ -85,136 +86,135 @@ sManager 的配置文件为 json 文件，使用环境变量 `SMANAGER_CONFIG` �
 }
 ```
 
-sManager 启动时会加载这些配置项，它们的定义如下：
+Those config items will be loaded in the sManager configuration setup process. The meaning of each item is as follows:
 
-- `chain.account`: Member 节点帐号
+- `chain.account`: your member account
 
-- `chain.endPoint`: 链节点的 RPC API 地址
+- `chain.endPoint`: your chain endpoint
 
-- `sworker.endPoint`: Worker API 地址
+- `sworker.endPoint`: your sWorker endpoint
 
-- `ipfs.endPoint`: IPFS API 地址
+- `ipfs.endPoint`: your IPFS endpoint
 
-- `dataDir`: 本地数据库存储k路径
+- `dataDir`: the directory of the database of sManager
 
-- `scheduler.minSrdRatio`: 节点开始接单的最小 SRD 比率
+- `scheduler.minSrdRatio`: a minimum ratio of SRD that one node can start to accept storage orders.
 
-    > 例如，如果该比率为 30，那么节点在 SRD 容量比率达到 30% 之后开始接收存储订单 
+    > For example, if the ratio is 30, your node will start to accept storage order once the ratio of SRD capacity is higher than 30%
 
-- `scheduler.strategy.dbFilesWeight`: 该节点用于接收和处理历史订单 (链上过去4个月的订单) 的算力权重
+- `scheduler.strategy.dbFilesWeight`: how much bandwidth of this node will be used to fetch and store the history storage orders (Storage orders in the past four months).
 
-- `scheduler.strategy.newFilesWeight`: 该节点用于接收和处理最新订单的算力权重
-
-
-## 组件
-
-sManager 包含几个独立运行的任务，有的按照一定间隔定时触发，有的由特定的链上事件触发。这些任务相互之间通过本地数据库交换数据和协同工作。
-
-当遇到错误时，sManager 会终止运行。所以，这些任务从机制设计上需要支持重启后继续执行后续步骤。
+- `scheduler.strategy.newFilesWeight`: how much bandwidth of this node will be used to fetch and store the newest storage orders.
 
 
-### 本地数据库
+## Components
 
-本地数据库存储以下信息：
+sManager is designed to have several tasks running independently. Tasks are either scheduled by the block event or by configured intervals. Each task plays as an actor which consumes/produces some information and communicate with other tasks through the local database or application context.
 
-1. **File Records**: Crust 网络上的文件元数据 (订单Tips、文件大小、副本数、到期时间、等等)
+sManager follows the **Fails Early** principle which means it will shutdown on any unexpected error. To support this principle, tasks are designed to be recoverable after application restarts.
 
-2. **File and Owner Relationship**: 文件和 Crust 帐号的关联信息，该信息可以辅助决策如何选择文件进行拉取
+### Local Database
 
-3. **Chain Metadata**: Crust 网络元数据，例如，某个 Block 对应的时间戳
+The local database stores below information:
 
-4. **Pin Records**: 文件 Pin 的历史记录
+1. **File Records**: The files metadata (tips, size, replicas count, expire time, etc) on Crust Network.
 
-5. **Cleanup Records**: 需要从本地文件系统清除的文件，通常在存储订单到期时触发
+2. **File and Owner Relationship**: sManager also maintains the relationship between a file and an on-chain account. This information will help making better pulling decision.
 
-具体可以参考 [数据库表结构定义](https://github.com/crustio/crust-smanager/blob/mainnet/db-schema.md)
+3. **Chain Metadata**: E.g. the block and time on chain.
 
+4. **Pin Records**: The pin history of files.
+
+5. **Cleanup Records**: The files needs to removed from local file system, normally this is triggered when a file expires on Crust Network.
+
+Checkout [Db Schema](https://github.com/crustio/crust-smanager/blob/mainnet/db-schema.md) for the schema details.
 
 ### Indexers
 
-`Indexers` 从不同的数据源索引信息并存储到数据库。目前 sManager 包括以下几个 `Indexer`：
+Indexers extract information into the local database from various data sources. Currently sManager has implemented below indexers:
 
-1. **Chain Database Indexer**: 从 Crust 链上索引历史订单
+1. **Chain Database Indexer**: Index file records from the Crust Network on-chain database.
 
-2. **Chain Event Indexer**:  监听 Crust 链上事件以索引最新存储订单
+2. **Chain Event Indexer**: Index file records by listening latest chain event.
 
-3. **Chain Time Indexer**: 索引链上最新区块及时间戳
+3. **Chain Time Indexer**: A simple indexer which pushes the latest block height and it's timestamp to the config table.
+
 
 ### Simple Tasks
 
-`Simple tasks` 是一组定时运行的任务。目前 sManager 包括以下 `Simple task`:
+Simple tasks are specialized tasks which runs periodically. Currently sManager has implemented below tasks:
 
-1. **Group Info Updater**: 调用 sWorker API 更新 sWorker 身份信息
+1. **Group Info Updater**: Update sworker identity information from sworker api.
 
-2. **Ipfs GC**: 定时触发 IPFS 节点的 GC 以释放空间
+2. **Ipfs Gc**: Schedule ipfs gc periodically.
 
-3. **Telemetry Reporting**: 向 Telemetry 上报 sManager 统计数据
+3. **Telemetry Reporting**: Report smanager statistics information to the telemetry server.
 
-4. **Pull Scheduler**: 定时拉取并封装文件
+4. **Pull Scheduler**: Schedule file pulling based on configured strategy.
 
-5. **Seal Status Updater**: 定时更新文件的封装状态
+5. **Seal Status Updater**: Update sealing status periodically.
 
-6. **File Retry Task**: 重试文件拉取
+6. **File Retry Task**: Retry pulling if possible.
 
-7. **File Cleanup Task**: 从本地文件系统清理到期的文件
+7. **File Cleanup Task**: Cleanup deleted files from local file system.
 
-## `Private DSM` 定制
+## Customize for Private DSM
 
-### 背景
+### Motivation
 
-从本质上讲，Crust [DSM](DSM.md) 是一个公开的去中心化存储市场。所有的存储订单会进行全网广播，理论上任意节点都可以接收任意订单进行存储。
+Essentially, Crust [DSM](DSM.md) is a public decentralized storage market. Storage orders are broadcast across the whole Crust Network, and any Node could possibly pick any order, pull the file to local IPFS node, and seal it.
 
-在某些情况下，[存储商户](storage-merchant.md)可能会希望基于 Crust 网络构建一个虚拟的 `私有 DSM`，只为自己的客户提供存储服务。该需求可以通过对 sManager 和 sManager 连接的 IPFS 节点进行定制来满足。
+In some cases, however, [Storage Merchants](storage-merchant.md) may prefer to build a virtual `private DSM` based on Crust Network, and provide storage service for their customers only. This is a reasonable requirement, and could be satisfied by a few customization to sManager and the IPFS node sManager connects to.
 
-### 如何定制
+### Howto
 
-#### 基本流程
+#### Basic Flow
 
-简单地讲，定制方案基于 [IPFS Private Network](https://docs.ipfs.io/concepts/privacy-and-encryption/#creating-a-private-network)，同时针对 sManager 进行一些代码级的定制，并约定客户下单时附加特定格式的 `_memo`。
+Basically, the solution is built on top of [IPFS Private Network](https://docs.ipfs.io/concepts/privacy-and-encryption/#creating-a-private-network), with additional customization to sManager, and some protocol agreements between Storage Merchants and their customers.
 
-- `IPFS`: 存储商户搭建一个 `IPFS Private Network`，并将 sManager 连接到该私有网络中的 IPFS 节点
-- `sManager`: 存储商户针对 sManager 进行定制，只接收符合特定要求的订单
-  - 生成一个唯一的 `network Id`, 配置在 sManager 中，并分享给自己的专属客户
-  - 客户下单时，在 `_memo` 字段附加上指定的 `network Id`
+- `IPFS`: Firstly, Storage Merchants create an `IPFS Private Network`, and configure there sManager to connect to these private IPFS nodes.
+- `sManager`: Storage Merchants customize their sManager to only pick up specific storage orders:
+  - Generate a unique `private network Id`, configure it in the sManager, and share it to their customers
+  - Customers place storage orders with this `private network Id` in the `_memo` field
 
-> 请务必注意，在下单之前，客户需要将文件上传到对应的 `IPFS Private Network` 的某个节点，以保证只有特定商户的 sManager 才能成功拉取和存储文件
+> Please do note that, customer should upload file to one of the IPFS node in the `IPFS Private Network` before placing the order. Otherwise, file will be stored by other public storage merchants, but not the target storage merchants. 
 
 
 #### IPFS Private Network
 
-`IPFS Private Network` 可以通过生成一个 `swarm key` 并保存到 `$IPFS_PATH` 来搭建。
+`IPFS Private Network` could be setup by simply generating a shared secret key and saving it to `$IPFS_PATH`.
 
-1. 使用 [ipfs-swarm-key-gen](https://github.com/Kubuxu/go-ipfs-swarm-key-gen) 生成 `swarm key`
+1. Generate a pre-shared-key using [ipfs-swarm-key-gen](https://github.com/Kubuxu/go-ipfs-swarm-key-gen)
 
 ```shell
 go get github.com/Kubuxu/go-ipfs-swarm-key-gen/ipfs-swarm-key-gen
 ipfs-swarm-key-gen > ~/.ipfs/swarm.key
 ```
 
-2. 加入已有的 `private network`
+2. Join a private network
 
-要加入已有的 `private network`，只需要获取对应的 `swarm key` 并保存到 `$IPFS_PATH` (默认为 `~/.ipfs/swarm.key`) 中即可。
+To join a given private network, get the key file from someone in the network and save it to ~/.ipfs/swarm.key (If you are using a custom $IPFS_PATH, put it in there instead).
 
-更多信息，可以参考 [IPFS 文档](https://github.com/ipfs/go-ipfs/blob/release-v0.9.0/docs/experimental-features.md#private-networks)。
+For more information, please refer to [IPFS Docs](https://github.com/ipfs/go-ipfs/blob/release-v0.9.0/docs/experimental-features.md#private-networks).
 
 
-#### 定制 sManager
+#### sManager Customization
 
-1. 在配置文件中添加 `networkId` 字段
-2. 禁止 `Chain Database Indexer` (订单的 `_memo` 字段不会保存在 Chain Database 中，故无须索引)
-3. 更新 `Chain Event Indexer` 只接收 `_memo` 字段中包含指定 `networkId` 的订单
+1. Add a `networkId` field to the config file.
+2. Disable `Chain Database Indexer`. This indexing job is no longer necessary, and besides, order `_memo` is not persisted into chain database.
+3. Update `Chain Event Indexer` to only pick orders with the configured `networkId` in the `_memo` field.
 
-#### 订单 Memo
+#### Order Memo
 
-当针对某个 `private DSM` 下单时，用户需要将 `network Id` 填充在 `_memo` 字段，如下图所示：
+When placing storage orders targeted at a `private DSM`, customer could place `network Id` in the `_memo` field, as illustrated below:
 
-![place-order-with-memo](assets/build/place-order-with-memo-zh.png)
+![place-order-with-memo](assets/build/place-order-with-memo.png)
 
-### sManager 定制参考
+### sManager Customization Sample
 
-关于 sManager 的定制，可以参考 [decooio/crust-smanager](https://github.com/decooio/crust-smanager) 
+As a reference, you could check [decooio/crust-smanager](https://github.com/decooio/crust-smanager) for how to customize sManager to build a `private DSM` on top of Crust Network.
 
-## 参考
+## Resources
 
 - `crust-smanager`: https://github.com/crustio/crust-smanager
 - `crust.js`: https://github.com/crustio/crust.js

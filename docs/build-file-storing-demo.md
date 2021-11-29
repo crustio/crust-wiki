@@ -1,7 +1,7 @@
 ---
 id: buildFileStoringDemo
-title: File Storing Code with IPFS Sample
-sidebar_label: File Storing Code with IPFS Sample
+title: Store file with Crust Storage API
+sidebar_label: Store file with Crust Storage API
 ---
 
 This doc contains a code sample to demonstrate how to upload a file to IPFS, and place a storage order to get the file stored in Crust Network.
@@ -54,7 +54,10 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 }
 ```
 
-- With IPFS W3Authed gateway
+- With [IPFS W3Authed Gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#authenticated-gateways)
+
+> You can find more `ipfsW3GW` endpoints on [LINK](https://github.com/crustio/ipfsscan/blob/main/lib/constans.ts#L29).
+> You can also find more `authHeader` web3 supports on [LINK](https://github.com/RoyTimes/crust-workshop/tree/master/src), the following exmaple just takes ethereum as example.
 
 ```typescript
 import { create } from 'ipfs-http-client'
@@ -68,10 +71,11 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
     const sig = await pair.signMessage(pair.address);
     const authHeaderRaw = `eth-${pair.address}:${sig}`;
     const authHeader = Buffer.from(authHeaderRaw).toString('base64');
+    const ipfsW3GW = 'https://crustipfs.xyz';
 
     // 1. Create IPFS instant
     const ipfs = create({
-        url: 'http://localhost:5001',
+        url: `${ipfsW3GW}/api/v0`,
         headers: {
             authorization: `Basic ${authHeader}`
         }
@@ -94,52 +98,88 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 
 Next, we need to send a transaction named `Place Storage Order` on Crust chain, this transaction will dispatch your storage requirement to each Crust IPFS nodes through blockchain. Then the IPFS nodes will start pulling your file with IPFS protocol.
 
-```typescript
-async function placeStorageOrder() {
+> You can find more `crustChainEndpoint` on [LINK](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/endpoints/production.ts#L9).
+> You can create your own account(`seeds`) on [LINK](https://wiki.crust.network/docs/en/crustAccount).
 
+```typescript
+import { ApiPromise, WsProvider } from '@polkadot/api';
+import { typesBundleForPolkadot, crustTypes } from '@crustio/type-definitions';
+import { Keyring } from '@polkadot/keyring';
+import { KeyringPair } from '@polkadot/keyring/types';
+
+// Create global chain instance
+const crustChainEndpoint = 'wss://rpc.crust.network';
+const api = new ApiPromise({
+    provider: new WsProvider(crustChainEndpoint),
+    typesBundle: typesBundleForPolkadot,
+});
+
+async function placeStorageOrder() {
+    // 1. Construct place-storage-order tx
+    const fileCid = 'Qm123'; // IPFS CID, take `Qm123` as example
+    const fileSize = 2 * 1024 * 1024 * 1024; // Let's say 2 gb(in byte)
+    const tips = 0;
+    const memo = '';
+    const tx = api.tx.market.placeStorageOrder(fileCid, fileSize, tips, memo);
+
+    // 2. Load seeds(account)
+    const seeds = 'xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx';
+    const kr = new Keyring({ type: 'sr25519' });
+    const krp = kr.addFromUri(seeds);
+
+    // 3. Send transaction
+    await api.isReadyOrError;
+    const unsub = await tx.signAndSend(krp, ({events = [], status}) => {
+        console.log(`💸 Tx status: ${status.type}, nonce: ${tx.nonce}.`);
+
+        if (status.isInBlock) {
+            events.forEach(({event: {method, section}}) => {
+                if (method === 'ExtrinsicSuccess') {
+                    console.log(`✅  Place storage order success!`);
+                    unsub();
+                }
+            });
+        } else {
+            // Pass it
+        }
+    });
 }
 ```
 
-### 4. Get order status
+### 3. Query order status
 
-In general, the order stauts is updated every half an hour. You can query the status of the order through `api.query.market.files()`
+Then, you can query the order `status{replica_count, storage_duration, ...}` by calling on-chain status.
 
 ```typescript
-/**
- * Get on-chain order information about files
- * @param api chain instance
- * @param cid the cid of file
- * @return order state
- */
-async function getOrderState(api: ApiPromise, cid: string) {
+async function getOrderState(cid: string) {
     await api.isReadyOrError;
     return await api.query.market.files(cid);
 }
 ```
 
-If the order does not exist, it will return `none`. If the order exists, it will return the following data structure, where `expired_on` is compared with the current block height to determine whether it has expired. If `reported_replica_count` is 0, the order is still in progress, if it is greater than 0 , and if it has not expired, the order is successful.
+And it'll return:
 
 ```json
 {
-    file_size: 23,710,
-    spower: 24,895,
-    expired_at: 2,594,488,
-    calculated_at: 2,488,
-    amount: 545.3730 nCRU,
-    prepaid: 0,
-    reported_replica_count: 1,
-    replicas: [
-    {
-        who: cTHATJrSgZM2haKfn5e47NSP5Y5sqSCCToxrShtVifD2Nfxv5,
-        valid_at: 2,140,
-        anchor: 0xd9aa29dda8ade9718b38681adaf6f84126531246b40a56c02eff8950bb9a78b7c459721ce976c5c0c9cd4c743cae107e25adc3a85ed7f401c8dde509d96dcba0,
-        is_reported: true,
-        created_at: 2,140
-    }
-    ]
+    "file_size": 23710,
+    "spower": 24895,
+    "expired_at": 2594488, // Storage duration
+    "calculated_at": 2488,
+    "amount": "545.3730 nCRU",
+    "prepaid": 0,
+    "reported_replica_count": 1, // Replica count
+    "replicas": [{
+        "who": "cTHATJrSgZM2haKfn5e47NSP5Y5sqSCCToxrShtVifD2Nfxv5",
+        "valid_at": 2140,
+        "anchor": "0xd9aa29dda8ade9718b38681adaf6f84126531246b40a56c02eff8950bb9a78b7c459721ce976c5c0c9cd4c743cae107e25adc3a85ed7f401c8dde509d96dcba0",
+        "is_reported": true,
+        "created_at": 2140
+    }] // Who stores the file
 }
 ```
 
 ## Resources
 
-- [Code Demo](https://github.com/crustio/crust-demo)
+- [Code Sample](https://github.com/crustio/crust-demo/tree/main/store-file)
+- [IPFS HTTP Client](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client)
+- [Crust Account](https://wiki.crust.network/docs/en/crustAccount)

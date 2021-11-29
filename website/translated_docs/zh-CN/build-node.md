@@ -4,134 +4,131 @@ title: Crust Node
 sidebar_label: Crust Node
 ---
 
-Crust Node是辅助搭建Crust节点的命令行工具，点击[连接](https://github.com/crustio/crust-node)查看源码。也可以基于此搭建自定义的工具。本文将介绍Crust Node的基本功能，以及基于node的一些常规操作
+Crust Node program is a set of integrated scripts to facilitate node operation. Crust Node program is open source on [Github](https://github.com/crustio/crust-node). You can refer to it for more technical details, and customize or create your own node scripts from there, to ease your own node operation.
 
-## 1 系统命令
+## 1 System commands
 
-### 1.1 获取帮助
+### 1.1 Help
 
-- 命令
+- Command
 ```shell
 sudo crust help
 ```
 
-- 实例
+- Instance
 
 ![start](assets/node/help.png)
 
-### 1.2 版本信息
+### 1.2 Version
 
-版本信息包括节点网络，类型和版本，Sworker的详细信息，Docker ImageID等信息
+Version information includes node network, type and version, sworker details, docker image ID and other information
 
-- 命令
+- Command
 ```shell
 sudo crust version
 ```
 
-- 实例
+- Instance
 ![start](assets/node/version.png)
 
-### 1.3 获取链的session key
+### 1.3 Generate session key
 
-- 命令
+- Command
 ```shell
 sudo crust tools rotate-keys
 ```
 
-- 实例
+- Instance
 
 ![start](assets/node/rotate-keys.png)
 
-## 2 配置命令
+## 2 Configuration command
 
-### 2.1 设置并生成配置文件
+### 2.1 Set up and generate configuration files
 
-配置节点名称，节点类型，账户的备份文件和密码
+Configure node name, node type, account backup file and password
 
-- 命令
+- Command
 ```shell
 sudo crust config set
 ```
-- 实例
-
+- Instance
 ![start](assets/node/set.png)
 
-### 2.2 生成配置文件
+### 2.2 Generate configuration files
 
-- 命令
+- Command
 ```shell
 sudo crust config generate
 ```
 
-手动修改了/opt/crust/crust-node/config.yaml配置文件
+Manually modified the /opt/crust/crust-node/config.yaml configuration file
 
 ```shell
 sudo vi /opt/crust/crust-node/config.yaml
 ```
 
-生成配置文件
+Generate configuration files
 
 ![start](assets/node/generate.png)
 
-### 2.3 设置外源链
+### 2.3 Set up to connect to other chains
 
-设置连接其他链，默认连接本地链（ws://127.0.0.1:19944）
+Set up to connect to other chains,default is "ws://127.0.0.1:19944"
 
-- 命令
+- Command
 ```shell
 sudo crust config conn-chain {ws}
 ```
-- 实例
 
-设置连接到ws://7.7.7.7:19944的链
+- Instance
+Set up a chain connected to "ws://7.7.7.7:19944"
 
 ```shell
 sudo crust config conn-chain ws://7.7.7.7:19944
 ```
 ![start](assets/node/connchain.png)
 
-### 2.4 设置链P2P端口
+### 2.4 Set the P2P port of the chain
 
-- 命令
+- Command
 ```shell
 sudo crust config chain-port {port}
 ```
 
-- 实例
+- Instance
+Change the default port 30888 of the chain to 30889
 
-将链的默认端口30888更改为30889
 ```shell
 sudo crust config chain-port 30889
 ```
 ![start](assets/node/chainport.png)
 
-### 2.5 查询配置文件
+### 2.5 Show configuration file
 
-- 命令
+- Command
 ```shell
 sudo crust config show
 ```
 
-- 实例
+- Instance
 ![start](assets/node/show.png)
 
-## 3 控制命令
+## 3 Control commands
 
-### 3.1 启动服务
-
-- 命令
+### 3.1 Start Crust service
+- Command
 
 ```shell
 sudo crust start {chain|api|sworker|smanager|ipfs}
 ```
+- Instance
 
-- 实例
-
-启动Crust所有服务
+Start all Crust service
  ```shell
 sudo crust start
  ```
-启动Crust单个服务
+Start one Crust service
  ```shell
 sudo crust start smanager
  ```
@@ -141,18 +138,18 @@ sudo crust start api
  ```
 ![start](assets/node/startapi.png)
 
-### 3.2 停止服务
+### 3.2 Stop Crust service
 
-- 命令
+- Command
 ```shell
 sudo crust stop {chain|api|sworker|smanager|ipfs}
 ```
-- 实例
+- Instance
 
-停止Crust所有服务
+Stop all Crust service
 ![start](assets/node/stop.png)
 
-停止Crust单个服务
+Stop one Crust service
 ```shell
 sudo crust stop api
 ```
@@ -162,206 +159,210 @@ sudo crust stop smanager
 ```
 ![start](assets/node/stopsmanager.png)
 
-### 3.3 重启服务
+### 3.3 Reload Crust service
 
-- 命令
+- Command
 ```shell
 sudo crust reload {chain|api|sworker|smanager|ipfs}
 ```
-- 实例
+- Instance
 
-重启crust所有服务
+Reload all Crust service
 
 ![start](assets/node/reload.png)
 
-重启crust单个服务
+Reload one Crust service
 
 ![start](assets/node/reloadapi.png)
 ![start](assets/node/reloadipfs.png)
 
-## 4 监控命令
+## 4 Monitor commands
 
-### 4.1 节点运行状态
+### 4.1 Query Crust node service status
 
-- 命令 
+- Command 
 ```shell
 sudo crust status {chain|api|sworker|smanager|ipfs}
 ```
-状态包括running,stop,exited三种状态
-|**状态**|**说明**|
+Includes three status: running, stop, and exited 
+|**Status**|**Description**|
 |-----|-----|
-|running |服务正常运行|
-|stop|服务停止状态|
-|exited|服务异常退出，查询日志分析|
+|running |Service is running normally|
+|stop|Service is stop|
+|exited|Service exits abnormally, query log analysis|
 
-- 实例
+- Instance
 
-查询节点所有服务状态
+Query Crust node's all service status
 ![start](assets/node/version.png)
-查询节点单个服务状态
+Query Crust node's one service status
 ![start](assets/node/version.png)
 
-### 4.2 节点日志
+### 4.2 Query node logs
 
-查询节点某个服务的日志，使用Ctrl+c 退出日志界面，使用“crust logs help”命令查询更多日志参数说明
+Track service logs, ctrl-c to exit. use 'crust logs help' for more details
 
-- 命令
+- Command
 ```shell
 sudo crust logs {chain|api|sworker|sworker-a|sworker-b|smanager|ipfs}
 ```
 
-- 实例
+- Instance
 
-查询节点sworker服务的最新5行日志
+Query the latest 5 log lines of the node sworker service
 ```shell
 sudo crust logs --tail 5 sworker
 ```
 ![start](assets/node/logs.png)
 
-### 4.3 硬盘情况
+### 4.3 Disk details
 
-- 命令
+Note:
+1. Base data folder is used to store chain and db, 2TB SSD is recommended, you can mount SSD on /opt/crust/data
+2. Please mount the hard disk to storage folders, paths is from: /opt/crust/disks/1 ~ /opt/crust/disks/128
+3. SRD will not use all the space, it will reserve 50G of space
+
+- Command
 ```shell
 sudo crust tools space-info
 ```
-- 实例
+- Instance
 
-已经将磁盘成功挂载在/opt/crust/data/disks/2,/opt/crust/data/disks/4,/opt/crust/data/disks/33这三个目录下
+The disk has been successfully mounted in the three directories /opt/crust/data/disks/2, /opt/crust/data/disks/4, /opt/crust/data/disks/33
 ![start](assets/node/space-info.png)
 
-## 5 升级命令
+## 5 Upgrade commands
 
-### 5.1 更新docker image
+### 5.1 Upgrade docker image
 
-- 命令
+- Command
 ```shell
 sudo crust tools upgrade-image {chain|api|smanager|ipfs|c-gen|sworker}
 ```
 
-- 实例
+- Instance
 
-升级chain的docker image
+Upgrade the chain's docker image
 ```shell
 sudo crust tools upgrade-image chain
 ```
 
-升级ipfs的docker image
+Upgrade the IPFS docker image
 ```shell
 sudo crust tools upgrade-image ipfs
 ```
 
-### 5.2 sworker的AB升级
+### 5.2 SWorker's AB upgrade
 
-- 命令
+- Command
 ```shell
 sudo crust tools sworker-ab-upgrade {code}
 ```
-参数code是需要升级目标版本唯一mrenclave code
+The parameter code is the only mrenclave code
 
-- 实例
+- Instance
 ```shell
 sudo crust tools sworker-ab-upgrade 032ceedd27918ddb4807c78ec5734a8a49878a2e7a7001381b90eae8d1d1c093
 ```
 ![start](assets/node/sworker-ab-upgrade.png)
 
-## 6 sWorker命令
+## 6 SWorker commands
 
-### 6.1 设置SRD容量
-
-- 命令
+### 6.1 Change sworker's srd capacity
+- Command
 ```shell
 sudo crust tools change-srd {number}
 ```
-- 实例
+- Instance
 
-增加1000Gb的srd容量
+Add 1000Gb srd capacity
 ![start](assets/node/changeaddsrd.png)
 
-减少 500Gb的srd容量
+Decrease 500Gb srd capacity
 ![start](assets/node/changedeletesrd.png)
 
-### 6.2 查询存储状态
+### 6.2 Query storage status
 
-- 命令
+- Command
 ```shell
 sudo crust tools workload
 ```
-文件参数说明
-|**参数**|**描述**|
+File parameter description
+|**Parameter**|**Description**|
 |----|----|
-|files-lost|丢失的文件|
-|files-pending|加载中的文件|
-|files-vaild|有效的文件|
+|files-lost|Lost files|
+|files-pending|Pending files|
+|files-vaild|Valid files|
 
-srd参数说明
-|**参数**|**描述**|
+Srd parameter description
+|**Parameter**|**Description**|
 |----|----|
-|srd_complete|已完成的srd容量，单位Gb|
-|srd_remaining_task|剩余的srd任务|
-|disk_available_for_srd|当前可用srd的磁盘容量|
-|disk_available|当前可用的磁盘容量|
-|disk_volume|磁盘总容量|
-|sys_disk_available|系统盘可用容量|
-|srd_detail|每个storage filder的使用详情|
+|srd_complete|Completed srd capacity, unit Gb|
+|srd_remaining_task|Remaining srd tasks|
+|disk_available_for_srd|Disk capacity of currently available srd|
+|disk_available|Disk capacity currently available|
+|disk_volume|Total disk capacity|
+|sys_disk_available|Available capacity of system disk|
+|srd_detail|Usage details of each storage filder|
 
-- 实例
+- Instance
 ![start](assets/node/workload.png)
 
-### 6.3 查询文件信息
+### 6.3 Query file information
 
-- 命令
+- Command
 ```shell
 sudo crust tools file-info {all/valid/lost/pending/{cid}} {output-file}
 ```
 
-- 实例
+- Instance
 
-查询所有订单的信息
+Query all order information
 ![start](assets/node/fileall.png)
-查询进行中的订单信息
+Query the order information in pending
 ![start](assets/node/filepending.png)
 
-### 6.4 删除文件
+### 6.4 Delete file
 
-- 命令
+- Command
 ```shell
 sudo crust tools delete-file {cid}
 ```
-- 实例
+- Instance
 
-删除cid为QmaK1Rbc4AYtDJoTLgZQNZx4JpDPYrN2DW269i54eA5Phk的文件
+Delete the file whose cid is QmaK1Rbc4AYtDJoTLgZQNZx4JpDPYrN2DW269i54eA5Phk
 ```shell
 sudo crust tools delete-file QmaK1Rbc4AYtDJoTLgZQNZx4JpDPYrN2DW269i54eA5Phk
 ```
 ![start](assets/node/delete.png)
 
 
-### 6.5 设置sworker日志级别
+### 6.5 Set sworker log level
 
-- 命令
+- Command
 ```shell
 sudo crust tools set-sworker-debug {true|false}
 ```
-- 实例
+- Instance
 
-开启DEBUG级别日志
+Enable DEBUG log
 ![start](assets/node/debugtrue.png)
-关闭DEBUG级别日志
+Disable DEBUG log
 ![start](assets/node/debugfalse.png)
 
 
-## 7 其他命令
+## 7 Other commands
 
-### 7.1 IPFS命令
+### 7.1 IPFS command
 
-- 命令
+- Command
 ```shell
 sudo crust tools ipfs {…}
 ```
 
-- 实例
+- Instance
 
-查看某个文件内容
+View the contents of a file
 ```shell
 sudo crust tools ipfs cat QmddN7QgY7RHtsGN8bnUqWJq4VpMam2HXrRDafe5pBt3eq
 ```
@@ -369,93 +370,92 @@ sudo crust tools ipfs cat QmddN7QgY7RHtsGN8bnUqWJq4VpMam2HXrRDafe5pBt3eq
 
 ### 7.2 Watch compose
 
-- 命令
+- Command
 ```shell
 sudo crust tools watch-chain
 ```
-在当前目录下生成一个“watch-chain.yaml”配置文件，并可以使用docker-compose启动watcher节点
+Generate a "watch-chain.yaml" configuration file in the current directory, and use docker-compose to start the watcher node
 
-- 实例
-启动：
+- Instance
+Start:
 ```shell
 sudo docker-compose -f watch-chain.yaml up -d
 ```
 
-监控：
+Monitor:
 ```shell
 sudo docker logs crust-watch
 ```
 
-## 8 配置外源链
+## 8 Configure external source chain
+The use of an external chain can make the member node more lightweight, and it can also make multiple members connect to the same watch chain node, thereby avoiding repeated chain synchronization to a certain extent. However, due to the single point of failure in this method, that is to say, the failure of the external source chain node will cause multiple members to fail to report the workload, so please try to use a better network device or cloud server to start the external source chain. At the same time, do not connect too many members to the same chain. It is recommended to have less than 10 members, otherwise the workload may not be reported due to congested transactions.
 
-使用外源链的方式可以使得Member节点更加轻量化，也可以使得多个Member连接同一个watch链节点，从而在一定程度上避免链的重复同步。但是由于这种方式存在单点故障的问题，也就是说外源链节点故障会导致多个Member无法上报工作量，所以请尽量使用网络比较好的设备或云服务器启动外源链。同时也不要将太多的Member连接同一个链，建议10个以下，否则可能会因为交易拥挤导致无法上报工作量。
+### 8.1 Configure watch chain service
 
-### 8.1 配置Watch链服务
+a Machine selection
 
-a 机器选择
+The requirements of the Watch machine are as follows:
+- The machine running the watch does not require SGX
+- 500GB solid state drive
+- It is recommended to use a stable network with public IP and fixed ports, which will directly affect the workload report of member nodes
+- Install Crust node
+- Recommend cloud server
 
-Watch机器的要求如下：
-- 运行watch的机器对SGX没有要求
-- 500GB的固态硬盘
-- 推荐使用有公网IP和固定端口的稳定网络，这会直接影响到member节点的工作量上报
-- 安装Crust node
-- 推荐云服务器
-
-b 生成docker compose文件
+b Generate docker compose file
 
 ```shell
 sudo crust tools watch-chain
 ```
-在当前目录下生成一个“watch-chain.yaml”配置文件
 
-c 启动watch节点
+Generate a "watch-chain.yaml" configuration file in the current directory
 
-启动：
+c Start watch chain
+
+Start:
 ```shell
 sudo docker-compose -f watch-chain.yaml up -d
 ```
 
-监控：
+Monitor:
 ```shell
 sudo docker logs crust-watch
 ```
 
-d 注意事项
+d Matters needing attention
 
-- 可以编辑“watch-chain.yaml”文件来定制watcher节点
-- watcher节点可以提供ws和rpc服务，默认端口为30888，19933，19944，注意开放端口
+- You can edit the "watch-chain.yaml" file to customize the watcher node
+- The watcher node can provide ws and rpc services, the default port is 30888, 19933, 19944, pay attention to open ports
 
-### 8.2 Member节点配置外源链
+### 8.2 Member node use external source chain
 
-设置连接其他链，默认连接本地链（ws://127.0.0.1:19944）
+Set up to connect to other chains,default is "ws://127.0.0.1:19944"
 
-- 命令
+- Command
 ```shell
 sudo crust config conn-chain {ws}
 ```
-- 实例
+- Instance
 
-设置连接到ws://7.7.7.7:19944的链
+Set up a chain connected to "ws://7.7.7.7:19944"
 
 ```shell
 sudo crust config conn-chain ws://7.7.7.7:19944
 ```
 ![start](assets/node/connchain.png)
 
-**如果是已经在运行的节点，需要执行重启操作，配置才能生效**
+**If it is a node that is already running, the node needs to be restarted for the configuration of the external source chain to take effect**
 
-## 9 控制SGX驱动自动安装
+## 9 Control SGX driver automatic installation
 
-- 关闭SGX驱动自动安装
+- Disable automatic installation of SGX driver
 
-节点启动之前执行如下命令：
+Execute the following commands before starting the node:
 ```shell
 sudo mv /opt/crust/crust-node/scripts/install_sgx_driver.sh /opt/crust/crust-node/scripts/install_sgx_driveroff.sh
 ```
+- Enable automatic installation of SGX driver
 
-- 开启SGX驱动自动安装
-
-节点启动之前执行如下命令：
+Execute the following commands before starting the node:
 
 ```shell
 sudo mv /opt/crust/crust-node/scripts/install_sgx_driveroff.sh /opt/crust/crust-node/scripts/install_sgx_driver.sh
