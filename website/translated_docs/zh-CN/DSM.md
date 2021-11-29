@@ -6,7 +6,7 @@ sidebar_label: DSM
 
 去中心化存储市场(Decentralized Storage Market, DSM)提供了一个去中心化的IPFS Pin服务。存储用户可以在链上发起订单，而订单对应文件则会相应的被Crust节点存储。DSM同时也针对文件的检索进行了激励，使得节点有意愿提供检索服务。
 
-DSM 包含 4个主要机制。详细机制请参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper.pdf):
+DSM 包含 4个主要机制。详细机制请参考[经济白皮书](https://ipfs-hk.decoo.io/ipfs/Qmdy2Hqdxoq2PuAkvoDZ5SqYjAKym58Gh39Lm5gPChyHwL):
 
 ### 1. 价格机制
 

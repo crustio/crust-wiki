@@ -16,7 +16,7 @@ Under the GPoS (Guaranteed Proof of Stake) consensus of Crust Network, validator
 
 The rewards of validators are composed of two parts: **authoring rewards and staking rewards**. Normally, validators will receive both the authoring and staking rewards, while candidates receive only staking rewards.
 
-**In Crust mainnet, each Era (6 hours) generates authoring and staking rewards**, more details about the reward decreasing refer to [economic whitepaper](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).
+**In Crust mainnet, each Era (6 hours) generates authoring and staking rewards**, more details about the reward decreasing refer to [economic whitepaper](https://ipfs-hk.decoo.io/ipfs/QmRYJN6V5BzwnXp7A2Avcp5WXkgzyunQwqP3Es2Q789phF).
 
 #### 1.1 Authoring rewards
 

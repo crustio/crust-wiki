@@ -9,7 +9,7 @@ sidebar_label: Merchant Guidance
 1. 存储用户数据带来质押上限的提升；
 2. 存储市场的订单奖励；
 
-> 本文中提到的存储市场奖励仅限订单奖励，不涉及存储用户文件后带来的质押上限的提升。想要了解质押上限提升规则请阅读[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
+> 本文中提到的存储市场奖励仅限订单奖励，不涉及存储用户文件后带来的质押上限的提升。想要了解质押上限提升规则请阅读[经济白皮书](https://ipfs-hk.decoo.io/ipfs/Qmdy2Hqdxoq2PuAkvoDZ5SqYjAKym58Gh39Lm5gPChyHwL)
 
 本文将提供以下指引：如何成为商户、如何配置接单策略、如何锁定保障金并获得存储市场收益，这些指引将帮助新的存储商户在Crust网络中平稳运营。
 

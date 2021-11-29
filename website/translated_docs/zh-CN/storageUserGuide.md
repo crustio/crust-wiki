@@ -93,7 +93,7 @@ sidebar_label: User Guidance
 
 ![orderPage](assets/storage/orderPage.png)
 
-> “File Price” 是用户将为文件订单支付的价格，它包括了**文件基本费**、**文件动态调节费**以及**小费**。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
+> “File Price” 是用户将为文件订单支付的价格，它包括了**文件基本费**、**文件动态调节费**以及**小费**。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://ipfs-hk.decoo.io/ipfs/Qmdy2Hqdxoq2PuAkvoDZ5SqYjAKym58Gh39Lm5gPChyHwL)
 
 #### 1.2.2 对远程文件下单
 
@@ -212,7 +212,7 @@ sidebar_label: User Guidance
 
 ![userOrder](assets/storage/userOrder.png)
 
-> “File Price” 是用户将为文件订单支付的价格，它包括了**文件基本费**、**文件动态调节费**以及**小费**。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
+> “File Price” 是用户将为文件订单支付的价格，它包括了**文件基本费**、**文件动态调节费**以及**小费**。文件基本费、文件动态调节费是必须支付的费用，小费金额可由用户自己决定。小费金额大小决定了订单被处理的优先度。订单费用的具体计算方式参考[经济白皮书](https://ipfs-hk.decoo.io/ipfs/Qmdy2Hqdxoq2PuAkvoDZ5SqYjAKym58Gh39Lm5gPChyHwL)
 
 订单生成后，可以在下方查看到。
 
