@@ -220,9 +220,41 @@
         "title": "Parameters",
         "sidebar_label": "Parameters"
       },
+      "Q&AForBasicknowledge": {
+        "title": "Basic Knowledge",
+        "sidebar_label": "Basic Knowledge"
+      },
+      "Q&AForVerifiersandCandidates": {
+        "title": "Verifiers and Candidates",
+        "sidebar_label": "Verifiers and Candidates"
+      },
+      "Q&AForBasicnodeproblems": {
+        "title": "Basic Node Problems",
+        "sidebar_label": "Basic Node Problems"
+      },
+      "Q&AForGuarantor": {
+        "title": "Guarantor",
+        "sidebar_label": "Guarantor"
+      },
+      "Q&AForMembernoderelated": {
+        "title": "Member Node Related",
+        "sidebar_label": "Member Node Related"
+      },
       "Q&AForMining": {
         "title": "Q&A",
-        "sidebar_label": "Q&A"
+        "sidebar_label": "For Node"
+      },
+      "Q&AForOther": {
+        "title": "Other",
+        "sidebar_label": "Other"
+      },
+      "Q&AForrelatedgroups": {
+        "title": "Related Groups",
+        "sidebar_label": "Related Groups"
+      },
+      "Q&AForRewardsandPunishments": {
+        "title": "Rewards and Punishments",
+        "sidebar_label": "Rewards and Punishments"
       },
       "Q&AForStorage": {
         "title": "Q&A",
@@ -283,7 +315,8 @@
       "Learn": "Learn",
       "Build": "Build",
       "Node": "Node",
-      "Storage": "Storage"
+      "Storage": "Storage",
+      "Q&A": "Q&A"
     }
   },
   "pages-strings": {

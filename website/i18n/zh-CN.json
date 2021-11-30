@@ -211,7 +211,39 @@
       },
       "Q&AForMining": {
         "title": "Q&A",
-        "sidebar_label": "Q&A"
+        "sidebar_label": "节点"
+      },
+      "Q&AForBasicknowledge": {
+        "title": "基础知识",
+        "sidebar_label": "基础知识"
+      },
+      "Q&AForVerifiersandCandidates": {
+        "title": "验证人和候选人",
+        "sidebar_label": "验证人和候选人"
+      },
+      "Q&AForGuarantor": {
+        "title": "担保人",
+        "sidebar_label": "担保人"
+      },
+      "Q&AForBasicnodeproblems": {
+        "title": "节点基本问题",
+        "sidebar_label": "节点基本问题"
+      },
+      "Q&AForMembernoderelated": {
+        "title": "Member节点相关",
+        "sidebar_label": "Member节点相关"
+      },
+      "Q&AForrelatedgroups": {
+        "title": "组相关",
+        "sidebar_label": "组相关"
+      },
+      "Q&AForOther": {
+        "title": "其它",
+        "sidebar_label": "其它"
+      },
+      "Q&AForRewardsandPunishments": {
+        "title": "奖励和惩罚",
+        "sidebar_label": "奖励和惩罚"
       },
       "Q&AForStorage": {
         "title": "Q&A",

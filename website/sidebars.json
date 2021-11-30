@@ -85,8 +85,7 @@
       "guarantorGuidance",
       "sWorkerVersion",
       "nodeBenefits",
-      "nodeQos",
-      "Q&AForMining"
+      "nodeQos"
     ],
     "Storage": [
       "storageOverview",
@@ -95,6 +94,16 @@
       "orderSettlement",
       "marketBenefits",
       "appsStorageIssue"
+    ],
+    "Q&A": [
+      "Q&AForBasicknowledge",
+      "Q&AForVerifiersandCandidates",
+      "Q&AForGuarantor",
+      "Q&AForRewardsandPunishments",
+      "Q&AForBasicnodeproblems",
+      "Q&AForMembernoderelated",
+      "Q&AForrelatedgroups",
+      "Q&AForOther"
     ]
   }
 }
