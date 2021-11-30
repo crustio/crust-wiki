@@ -1,7 +1,7 @@
 ---
 id: Q&AForMining
 title: Q&A
-sidebar_label: Q&A
+sidebar_label: Q&AForMining
 ---
 
 ## 1 基础知识
