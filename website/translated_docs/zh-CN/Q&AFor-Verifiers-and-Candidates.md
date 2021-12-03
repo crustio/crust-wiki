@@ -1,7 +1,7 @@
 ---
 id: Q&AForVerifiersandCandidates
-title: 验证人和候选人
-sidebar_label: 验证人和候选人
+title: Verifiers and Candidates
+sidebar_label: Verifiers and Candidates
 ---
 
 ## 1 什么是候选人和验证人？

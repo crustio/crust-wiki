@@ -1,7 +1,7 @@
 ---
 id: Q&AForBasicknowledge
-title: 基础知识
-sidebar_label: 基础知识
+title: Basic Knowledge
+sidebar_label: Basic Knowledge
 ---
 
 

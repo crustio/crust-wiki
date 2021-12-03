@@ -1,7 +1,7 @@
 ---
 id: Q&AForRewardsandPunishments
-title: 奖励和惩罚
-sidebar_label: 奖励和惩罚
+title: Rewards and Punishments
+sidebar_label: Rewards and Punishments
 ---
 
 ## 1 怎么领取质押和担保奖励？
