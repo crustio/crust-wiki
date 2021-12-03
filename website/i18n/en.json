@@ -232,6 +232,10 @@
         "title": "Basic Node Problems",
         "sidebar_label": "Basic Node Problems"
       },
+      "Q&AForFix": {
+        "title": "Fix unstable chain",
+        "sidebar_label": "Fix unstable chain"
+      },
       "Q&AForGuarantor": {
         "title": "Guarantor",
         "sidebar_label": "Guarantor"

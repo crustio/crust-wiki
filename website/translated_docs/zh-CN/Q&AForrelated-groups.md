@@ -1,7 +1,7 @@
 ---
 id: Q&AForrelatedgroups
-title: 组相关
-sidebar_label: 组相关
+title: Related Groups
+sidebar_label: Related Groups
 ---
 
 ## 1 Member为啥加不了组?

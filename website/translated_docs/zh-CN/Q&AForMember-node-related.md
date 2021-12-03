@@ -1,7 +1,7 @@
 ---
 id: Q&AForMembernoderelated
-title: Member节点相关
-sidebar_label: Member节点相关
+title: Member Node Related
+sidebar_label: Member Node Related
 ---
 
 ## 1 安装SGX驱动错误

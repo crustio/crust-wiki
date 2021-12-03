@@ -77,6 +77,10 @@
         "title": "贡献",
         "sidebar_label": "贡献"
       },
+      "Q&AForFix": {
+        "title": "修复不稳定链",
+        "sidebar_label": "修复不稳定链"
+      },
       "democracyGuide": {
         "title": "民主指南",
         "sidebar_label": "民主指南"

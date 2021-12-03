@@ -1,7 +1,7 @@
 ---
 id: Q&AForBasicnodeproblems
-title: 节点基本问题
-sidebar_label: 节点基本问题
+title: Basic Node Problems
+sidebar_label: Basic Node Problems
 ---
 
 ## 1 安装Node时出现apt update错误

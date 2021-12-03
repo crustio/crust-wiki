@@ -1,7 +1,7 @@
 ---
 id: Q&AForGuarantor
-title: 担保人
-sidebar_label: 担保人
+title: Guarantor
+sidebar_label: Guarantor
 ---
 
 ## 1 如何更换担保对象？

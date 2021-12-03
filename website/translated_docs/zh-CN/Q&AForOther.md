@@ -1,7 +1,7 @@
 ---
 id: Q&AForOther
-title: 其它
-sidebar_label: 其它
+title: Other
+sidebar_label: Other
 ---
 
 ## 1 质押上限为0是什么原因？
