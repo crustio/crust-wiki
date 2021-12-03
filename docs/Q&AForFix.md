@@ -6,18 +6,7 @@ sidebar_label: Fix unstable chain
 
 ## 1 Owner & Isolation node
 
-### 1.1 Update chain version
-
-Do the following to update the chain version:
-
-```shell
-sudo crust tools upgrade-image chain mainnetv1.1.0
-sudo crust reload chain
-```
-
-Please wait at least 10 minutes after restarting the chain to ensure the normal execution of the chain
-
-### 1.2 Confirm that the chain synchronization is normal
+### 1.1 Confirm that the chain synchronization is normal
 
 View the log of the chain with the following command:
 
@@ -29,9 +18,9 @@ If the best block reaches the highest block (the highest can be viewed on [APPs]
 
 ![pic](assets/qa/check_top.png)
 
-If there is still an abnormality, please shovel the data of the chain, resynchronize the block (it is recommended to use the db of the normal Owner node for synchronization acceleration), and set a new session key.
+If there is an abnormality, please shovel the data of the chain, resynchronize the block (it is recommended to use the db of the normal Owner node for synchronization acceleration), and set a new session key.
 
-### 1.3 Become a Validator again
+### 1.2 Become a Validator again
 
 Before performing this step, please double check whether the node is synchronized to the highest block, and the difference between finalized and best is less than 5 blocks. As shown below:
 
@@ -41,19 +30,6 @@ If the synchronization is normal, execute the validate operation in [APPs](https
 
 ## 2 Member
 
-### 2.1 Update chain version
-
-Do the following to update the chain version:
-
-```shell
-sudo crust tools upgrade-image chain mainnetv1.1.0
-sudo crust reload chain
-```
-
-Please wait at least 10 minutes after restarting the chain to ensure the normal execution of the chain
-
-### 2.2 Confirm that the chain synchronization is normal
-
 View the log of the chain with the following command:
 
 ```shell
@@ -64,4 +40,4 @@ If the best block reaches the highest block (the highest can be viewed on [APPs]
 
 ![pic](assets/qa/check_top.png)
 
-If there is an abnormality, please shovel the data of the chain and resynchronize the block (it is recommended to use the db of the Member node for synchronization acceleration).
+If there is an abnormality, please shovel **the data of the chain** and resynchronize the block (it is recommended to use the db of the Member node for synchronization acceleration).
