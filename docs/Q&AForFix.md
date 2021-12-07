@@ -18,7 +18,15 @@ If the best block reaches the highest block (the highest can be viewed on [APPs]
 
 ![pic](assets/qa/check_top.png)
 
-If there is an abnormality, please shovel the data of the chain, resynchronize the blocks (it is recommended to use the db of the normal Owner node for synchronization acceleration), and set a new session key.
+If there is an abnormality, **please shovel the chain data**, resynchronize the block, and set a new session key. It is recommended to use the db of the normal Owner node for synchronization acceleration, or you can use the following command to download the synchronized Owner db for replacement:
+
+```shell
+wget https://gw.crustapps.net/ipfs/QmdyD9QqAF9FLWFk1dvKzFnoQ4LH1nU4BrGQUtWu5bC3Q5
+sudo crust stop chain
+sudo rm -rf /opt/crust/data/chain/chains/crust/db/
+sudo tar -xvf QmdyD9QqAF9FLWFk1dvKzFnoQ4LH1nU4BrGQUtWu5bC3Q5 -C /opt/crust/data/chain/chains/crust/
+sudo crust start chain
+```
 
 ### 1.2 Become a Validator again
 
@@ -40,4 +48,12 @@ If the best block reaches the highest block (the highest can be viewed on [APPs]
 
 ![pic](assets/qa/check_top.png)
 
-If there is an abnormality, please shovel **the data of the chain** and resynchronize the blocks (it is recommended to use the db of the Member node for synchronization acceleration).
+If there is an abnormality, **please shovel the chain data**, resynchronize the block, and set a new session key. It is recommended to use the db of the normal Owner node for synchronization acceleration, or you can use the following command to download the synchronized Owner db for replacement:
+
+```shell
+wget https://gw.crustapps.net/ipfs/QmQT8nszrtJ4MNApFpKMXoo4D18c2F447txzKuxHDMaXER
+sudo crust stop chain
+sudo rm -rf /opt/crust/data/chain/chains/crust/db/
+sudo tar -xvf QmQT8nszrtJ4MNApFpKMXoo4D18c2F447txzKuxHDMaXER -C /opt/crust/data/chain/chains/crust/
+sudo crust start chain
+```

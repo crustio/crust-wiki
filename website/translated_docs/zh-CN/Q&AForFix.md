@@ -18,7 +18,15 @@ sudo crust logs chain
 
 ![pic](assets/qa/check_top.png)
 
-如果有异常，请铲掉链的数据，重新同步区块(建议用正常Owner节点的db进行同步加速)，并设置新的session key.
+如果有异常，**请铲掉链的数据**，重新同步区块，并设置新的session key。建议用正常Owner节点的db进行同步加速，或者可以利用以下命令下载已经同步好的Owner db来进行替换:
+
+```shell
+wget https://gw.crustapps.net/ipfs/QmdyD9QqAF9FLWFk1dvKzFnoQ4LH1nU4BrGQUtWu5bC3Q5
+sudo crust stop chain
+sudo rm -rf /opt/crust/data/chain/chains/crust/db/
+sudo tar -xvf QmdyD9QqAF9FLWFk1dvKzFnoQ4LH1nU4BrGQUtWu5bC3Q5 -C /opt/crust/data/chain/chains/crust/
+sudo crust start chain
+```
 
 ### 1.2 再次成为Validator
 
@@ -40,4 +48,12 @@ sudo crust logs chain
 
 ![pic](assets/qa/check_top.png)
 
-如果有异常，请**铲掉链的数据**，重新同步区块(建议用Member节点的db进行同步加速).
+如果有异常，**请铲掉链的数据**，重新同步区块，并设置新的session key。建议用正常Member节点的db进行同步加速，或者可以利用以下命令下载已经同步好的Member db来进行替换:
+
+```shell
+wget https://gw.crustapps.net/ipfs/QmQT8nszrtJ4MNApFpKMXoo4D18c2F447txzKuxHDMaXER
+sudo crust stop chain
+sudo rm -rf /opt/crust/data/chain/chains/crust/db/
+sudo tar -xvf QmQT8nszrtJ4MNApFpKMXoo4D18c2F447txzKuxHDMaXER -C /opt/crust/data/chain/chains/crust/
+sudo crust start chain
+```
