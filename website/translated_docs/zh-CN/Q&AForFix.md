@@ -18,7 +18,7 @@ sudo crust logs chain
 
 ![pic](assets/qa/check_top.png)
 
-如果有异常，**请铲掉链的数据**，重新同步区块，并设置新的session key。建议用正常Owner节点的db进行同步加速，或者可以利用以下命令下载已经同步好的Owner db来进行替换:
+如果有异常，**请铲掉链的数据**，建议用自己本地正常Owner节点的db进行同步加速，或者可以利用以下命令下载已经同步好的Owner db来进行替换:
 
 ```shell
 wget https://gw.crustapps.net/ipfs/QmdyD9QqAF9FLWFk1dvKzFnoQ4LH1nU4BrGQUtWu5bC3Q5
@@ -48,7 +48,7 @@ sudo crust logs chain
 
 ![pic](assets/qa/check_top.png)
 
-如果有异常，**请铲掉链的数据**，重新同步区块，并设置新的session key。建议用正常Member节点的db进行同步加速，或者可以利用以下命令下载已经同步好的Member db来进行替换:
+如果有异常，**请铲掉链的数据**，建议用自己本地正常Member节点的db进行同步加速，或者可以利用以下命令下载已经同步好的Member db来进行替换:
 
 ```shell
 wget https://gw.crustapps.net/ipfs/QmQT8nszrtJ4MNApFpKMXoo4D18c2F447txzKuxHDMaXER
