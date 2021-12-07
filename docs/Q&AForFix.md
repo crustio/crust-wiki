@@ -18,7 +18,7 @@ If the best block reaches the highest block (the highest can be viewed on [APPs]
 
 ![pic](assets/qa/check_top.png)
 
-If there is an abnormality, **please shovel the chain data**, resynchronize the block, and set a new session key. It is recommended to use the db of the normal Owner node for synchronization acceleration, or you can use the following command to download the synchronized Owner db for replacement:
+If there is an abnormality, **please shovel the chain data**. It is recommended to use the db of the normal Owner node for synchronization acceleration, or you can use the following command to download the synchronized Owner db for replacement:
 
 ```shell
 wget https://gw.crustapps.net/ipfs/QmdyD9QqAF9FLWFk1dvKzFnoQ4LH1nU4BrGQUtWu5bC3Q5
@@ -48,7 +48,7 @@ If the best block reaches the highest block (the highest can be viewed on [APPs]
 
 ![pic](assets/qa/check_top.png)
 
-If there is an abnormality, **please shovel the chain data**, resynchronize the block, and set a new session key. It is recommended to use the db of the normal Owner node for synchronization acceleration, or you can use the following command to download the synchronized Owner db for replacement:
+If there is an abnormality, **please shovel the chain data**.It is recommended to use the db of the normal Owner node for synchronization acceleration, or you can use the following command to download the synchronized Owner db for replacement:
 
 ```shell
 wget https://gw.crustapps.net/ipfs/QmQT8nszrtJ4MNApFpKMXoo4D18c2F447txzKuxHDMaXER
