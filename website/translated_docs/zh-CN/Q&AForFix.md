@@ -36,6 +36,8 @@ sudo crust start chain
 
 如同步正常，则在[APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/staking/actions)执行validate操作再次成为验证人
 
+> 注意：如果删除了链的完整文件夹"/opt/crust/data/chain/chains"，需要重新获取sessionkey并设置，等待链同步正常，执行validate操作再次成为验证人
+
 ## 2 Member
 
 通过以下命令查看链的log：
