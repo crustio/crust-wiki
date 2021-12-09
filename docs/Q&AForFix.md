@@ -36,6 +36,8 @@ Before performing this step, please double check whether the node is synchronize
 
 If the synchronization is completed successfully, execute the validate operation in [APPs](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/staking/actions) to become a validator again
 
+> Note: If you delete the complete chain folder "/opt/crust/data/chain/chains", need to re-acquire and set the sessionkey, wait for the chain to synchronize normally, and execute the validate operation again
+
 ## 2 Member
 
 View the log of the chain with the following command:
