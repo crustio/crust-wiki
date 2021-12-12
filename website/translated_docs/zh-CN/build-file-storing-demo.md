@@ -28,6 +28,8 @@ The code sample mainly depends on the following libraries:
 
 ### 1. Upload file to IPFS
 
+> If you want to learn how to upload **FOLERS/FILES** into IPFS, please refer this [STEP](https://wiki.crust.network/docs/en/buildFileStoringWithGWDemo#1-upload-files-to-ipfs-gateway)
+
 First, you need to put your file into IPFS, there's 2 ways to upload file to IPFS: local IPFS node or remote IPFS gateway:
 
 - With local IPFS node

@@ -98,8 +98,8 @@ async function pin(path: string): Promise<string> {
     const ipfs = IpfsHttpClient();
 
     // 2. Pin it
-    const { cid } = await ipfs.add(globSource(path, { recursive: true }));
-
+    const { cid } = await ipfs.add(globSource(path, '**/*'));
+    
     return cid;
 }
 
