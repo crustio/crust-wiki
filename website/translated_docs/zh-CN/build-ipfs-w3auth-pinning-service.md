@@ -52,7 +52,7 @@ The IPFS W3Auth Pinning Service(aka. W3Auth PS) is compatible with standard IPFS
 As for the **Access Token** of W3Auth PS, you can easily get it with several web3 ways.
 
 ```shell
-Authorization: Bear <base64(ChainType-PubKey:SignedMsg)>
+Authorization: Bearer <base64(ChainType-PubKey:SignedMsg)>
 ```
 
 Let's take `ipfs cli` as an example

@@ -135,7 +135,7 @@ Generally, this pinning service manages an order pool to send transactions on Cr
 Let's say Alice(EVM user) wants to pin her IPFS file(`cid:QM123`), she only needs to do the following steps:
 
 - **Step1.** Sign her Pubkey(`0x123`) with her private key in any Ethereum wallet, then she will get the Sig(`0x456`)
-- **Step2.** Call original IPFS pinning service with bear auth header(`Basic eth-0x123:0x456`) with `cid:QM123`
+- **Step2.** Call original IPFS pinning service with bearer auth header(`Basic eth-0x123:0x456`) with `cid:QM123`
 - **Step3**. Monitor IPFS file status with querying Crust chain or calling standard IPFS pinning service API
 
 ***Pinner-side***

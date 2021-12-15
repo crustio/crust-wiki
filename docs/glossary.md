@@ -30,7 +30,7 @@ sidebar_label: Glossary
 
 **Staking** - In the Crust network, nodes compete to become validators by staking, and Validators compete to generate blocks by staking. Nodes can increase their total staking amount by self-staking or obtaining guarantees from guarantors.
 
-**Guarantor** - The guarantor is an account provided by any one or more nodes in the Crust network. Accounts with CRU tokens can become guarantors, and their CRUs can be used as guaranty assets. The guarantor can obtain guarantee income from the node, and shall also bear the penalty risk of its guaranteed nodes in proportion. [Reference reading](guarantor.md).
+**Guarantor** - The guarantor is an account provided by any one or more nodes in the Crust network. Accounts with CRU tokens can become guarantors, and their CRUs can be used as guaranty assets. The guarantor can obtain guarantee income from the node, and shall also bearer the penalty risk of its guaranteed nodes in proportion. [Reference reading](guarantor.md).
 
 **Era** - A unit of time. In Crust network, an Era is a 6-hour interval. Validators will be re-elected and the rewards of the previous Era will be settled in each new Era.
 
