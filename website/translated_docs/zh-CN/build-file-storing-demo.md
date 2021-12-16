@@ -131,19 +131,23 @@ async function placeStorageOrder() {
 
     // 3. Send transaction
     await api.isReadyOrError;
-    const unsub = await tx.signAndSend(krp, ({events = [], status}) => {
-        console.log(`💸 Tx status: ${status.type}, nonce: ${tx.nonce}.`);
+    return new Promise((resolve, reject) => {
+        tx.signAndSend(krp, ({events = [], status}) => {
+            console.log(`💸  Tx status: ${status.type}, nonce: ${tx.nonce}`);
 
-        if (status.isInBlock) {
-            events.forEach(({event: {method, section}}) => {
-                if (method === 'ExtrinsicSuccess') {
-                    console.log(`✅  Place storage order success!`);
-                    unsub();
-                }
-            });
-        } else {
-            // Pass it
-        }
+            if (status.isInBlock) {
+                events.forEach(({event: {method, section}}) => {
+                    if (method === 'ExtrinsicSuccess') {
+                        console.log(`✅  Place storage order success!`);
+                        resolve(true);
+                    }
+                });
+            } else {
+                // Pass it
+            }
+        }).catch(e => {
+            reject(e);
+        })
     });
 }
 ```
@@ -177,6 +181,55 @@ And it'll return:
         "is_reported": true,
         "created_at": 2140
     }] // Who stores the file
+}
+```
+
+### 4. Add file assurance
+
+The default storage time for a single transaction(order) is 6 months. If you want to extend the storage duration, Crust provides an assurance pool for you to customize the file's storage time, it allows you to put some tokens and will automatically extend the file's storage time.
+
+```typescript
+import { ApiPromise, WsProvider } from '@polkadot/api';
+import { typesBundleForPolkadot, crustTypes } from '@crustio/type-definitions';
+import { Keyring } from '@polkadot/keyring';
+import { KeyringPair } from '@polkadot/keyring/types';
+
+// Create global chain instance
+const crustChainEndpoint = 'wss://rpc.crust.network';
+const api = new ApiPromise({
+    provider: new WsProvider(crustChainEndpoint),
+    typesBundle: typesBundleForPolkadot,
+});
+
+async function addPrepaid(fileCid: string, amount: number) {
+    // 1. Construct add-prepaid tx
+    const tx = api.tx.market.addPrepaid(fileCid, amount);
+
+    // 2. Load seeds(account)
+    const crustSeeds = 'xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx';
+    const kr = new Keyring({ type: 'sr25519' });
+    const krp = kr.addFromUri(crustSeeds);
+
+    // 3. Send transaction
+    await api.isReadyOrError;
+    return new Promise((resolve, reject) => {
+        tx.signAndSend(krp, ({events = [], status}) => {
+            console.log(`💸  Tx status: ${status.type}, nonce: ${tx.nonce}`);
+
+            if (status.isInBlock) {
+                events.forEach(({event: {method, section}}) => {
+                    if (method === 'ExtrinsicSuccess') {
+                        console.log(`✅  Add prepaid success!`);
+                        resolve(true);
+                    }
+                });
+            } else {
+                // Pass it
+            }
+        }).catch(e => {
+            reject(e);
+        })
+    });
 }
 ```
 
