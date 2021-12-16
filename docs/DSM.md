@@ -18,24 +18,24 @@ DSM contains 4 major mechanisms. For more details refer to [Crust economy whitep
 ## 2. Price Mechanism
 ### Component
 
-1. **Base Fee**: Crust Network need payout some network resource and neccessary compute resource to serve each file, thus a base fee would be charged.
+1. **Basic Fee**: Crust Network need payout some network resource and neccessary compute resource to serve each file, thus a base fee would be charged.
 2. **Byte Fee**: Each file has different size and would cost different space resource, thus a byte fee is reasonable. The unit for byte fee is CRU/MB.
 3. **Key Count Fee**: Crust Network need store on-chain data for each file. Too many on-chain data would decrease the performance of the whole Crust Network. The Key Count fee would be charged for on-chain state.
 4. **Tips**: User can give arbitrary tips for each file when he places a new order.
 
 ### Dynamic Adjustment Mechanism
 
-| **Fee**                 | **Resource Cost**                              | **Update Frequency** | **Speed of Variation**   ｜
+| **Fee**                 | **Resource Cost**                              | **Update Frequency** | **Speed of Variation**
 | :---------------------- | :--------------------------------------------- | :------------------- | :----------------------  |
-| **Base Fee**            | Network and computing resource                 | 1 hour               | Fast (-3% ~ 9%)          |
+| **Basic Fee**            | Network and computing resource                 | 1 hour               | Fast (-3% ~ 9%)          |
 | **Byte Fee**            | Disk space resource                            | 1 minute             | Low (-0.0005% ~ 0.0006%) |
 | **Key Count Fee**       | On-Chain db space and performance              | 1 minute             | Low (-0.0005% ~ 0.0006%) |
 
 Except for the tips, the other three components of the price will dynamically adjust according to the network/compute resource, storage usage and the on-chain state usage.
 
-**Base Fee**: In a period of time, the number of storage orders that can be served by Crust Network is limited due to the current network and compute resource. So if too much storage orders are placed in a limited period of time, the base fee would increase. If the Crust Network is not busy, the base fee would decrease. 
+**Basic Fee**: In a period of time, the number of storage orders that can be served by Crust Network is limited due to the current network and compute resource. So if too much storage orders are placed in a limited period of time, the base fee would increase. If the Crust Network is not busy, the base fee would decrease.
 
-If the Crust Network is not busy, according to the global network and compute resource, each file would be stored and have more than 50 replicas. If the Crust Network is busy right now, the whole network cannot serve all storage orders, then each file's replica would decrease.
+If Crust Network is not busy, according to the global network and compute resource, each file would be stored and have more than 50 replicas. If the Crust Network is busy right now, the whole network cannot serve all storage orders, then each file's replica would decrease.
 
 Specifically, the number of new storage order, denoted as alpha, in the last hour would be recorded. Meanwhile, the total number of replicas served by the Crust Network, denoted as beta, would be recorded as well. The ratio between beta and alpha would decide the base fee. If the ratio is larger than 50, the base fee would decrease. If the ratio is less than 30, the base fee would increase. The smaller the ratio, the faster the rise speed of the price.
 
@@ -54,7 +54,7 @@ The adjustment speed of byte fee is low. The byte fee only change when new stora
 ### Price Flow
 In order to maintain the interests of all parties and maintain the long-term and stable development of the crust network, different fee would be allocated to different parties.
 
-**Base Fee**: Base fee would enter the market revenue pot. No one can recieve the base fee directly. The democratic module will vote on the use of the revenue from the market revenue pot.
+**Basic Fee**: Base fee would enter the market revenue pot. No one can recieve the base fee directly. The democratic module will vote on the use of the revenue from the market revenue pot.
 
 **Byte Fee and Key Count Fee**: Part of the fee will enter the file reward pot, which would be allocated to the merchants who store the files. The remaining part will join the entire network staking reward pot. All validators and candidates would recieve this part.
 
