@@ -20,7 +20,7 @@ Merchants will be rewarded with the following benefits after successfully storin
 
 1. a corresponding storage income from the DSM.
 
-2. an extended effective data. (The effective data will contribute more stake limit than SRD), which can effectively increase the stake limit of nodes and in turn help the nodes get higher staking rewards.*The specific rules for the stake limit calculation can be found in the [Economic White Paper](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).*
+2. an extended effective data. (The effective data will contribute more stake limit than SRD), which can effectively increase the stake limit of nodes and in turn help the nodes get higher staking rewards.*The specific rules for the stake limit calculation can be found in the [Economic White Paper](https://ipfs-hk.decoo.io/ipfs/QmRYJN6V5BzwnXp7A2Avcp5WXkgzyunQwqP3Es2Q789phF).*
 
 Check out the [Storage Merchant Guide](merchantGuidance.md) for more details of being a storage merchant.
 

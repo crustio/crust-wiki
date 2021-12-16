@@ -94,7 +94,7 @@ Select the account for payment. The order page will calculate the size of the co
 
 ![orderPage](assets/storage/orderPage.png)
 
-> The "File price" is the cost that a user needs to pay for a file order on Crust Network, which is composed of **a basic file fee**, **a dynamic file adjustment fee** and **a tip**. The basic file fee and the fee for dynamic file adjustment are mandatory, while the tip is totally determined by the user depending on what extent the user wants the order to be prioritized in order list. Detailed descriptions on how order fees are calculated can be found in the [*Economic White Paper*](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).
+> The "File price" is the cost that a user needs to pay for a file order on Crust Network, which is composed of **a basic file fee**, **a dynamic file adjustment fee** and **a tip**. The basic file fee and the fee for dynamic file adjustment are mandatory, while the tip is totally determined by the user depending on what extent the user wants the order to be prioritized in order list. Detailed descriptions on how order fees are calculated can be found in the [*Economic White Paper*](https://ipfs-hk.decoo.io/ipfs/QmRYJN6V5BzwnXp7A2Avcp5WXkgzyunQwqP3Es2Q789phF).
 
 #### 1.2.2 Place orders for remote files
 
@@ -216,7 +216,7 @@ After the file has been selected and uploaded, a file order page will appear. Th
 
 ![userOrder](assets/storage/userOrder.png)
 
-> The "File price" is the cost that a user needs to pay for a file order on Crust Network, which is composed of **a basic file fee**, **a dynamic file adjustment fee** and **a tip**. The basic file fee and the fee for dynamic file adjustment are mandatory, while the tip is totally determined by the user depending on what extent the user wants the order to be prioritized in order list. Detailed descriptions on how order fees are calculated can be found in the [*Economic White Paper*](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).
+> The "File price" is the cost that a user needs to pay for a file order on Crust Network, which is composed of **a basic file fee**, **a dynamic file adjustment fee** and **a tip**. The basic file fee and the fee for dynamic file adjustment are mandatory, while the tip is totally determined by the user depending on what extent the user wants the order to be prioritized in order list. Detailed descriptions on how order fees are calculated can be found in the [*Economic White Paper*](https://ipfs-hk.decoo.io/ipfs/QmRYJN6V5BzwnXp7A2Avcp5WXkgzyunQwqP3Es2Q789phF).
 
 To check out the order, please go to [Check storage order](#123-check-order-status).
 

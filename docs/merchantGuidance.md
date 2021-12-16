@@ -9,7 +9,7 @@ sidebar_label: Merchant Guidance
 1. an increase in the stake limit for storing user data;
 2. order rewards from the storage market.
 
-> The storage market rewards mentioned in this document are order rewards only and do not include the increase in the stake limit for storing user files. To learn more about the rules for raising the stake limit, please refer to the [*Economic White Paper*](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).
+> The storage market rewards mentioned in this document are order rewards only and do not include the increase in the stake limit for storing user files. To learn more about the rules for raising the stake limit, please refer to the [*Economic White Paper*](https://ipfs-hk.decoo.io/ipfs/QmRYJN6V5BzwnXp7A2Avcp5WXkgzyunQwqP3Es2Q789phF).
 
 This document provides guidelines on how to register as new merchants, how to configure order-taking strategies, and how to lock in collateral and receive storage market rewards that will help new storage merchants navigate easily in the Crust Network.
 
