@@ -18,6 +18,7 @@ This section of the wiki is divided into the following parts:
 - [Crust Rocky](build-rocky-guidance.md) - An open and free test network.
 - [Crust JS-SDK](https://github.com/crustio/crust.js) - The javascript SDK access to Crust.
 - [Crust Cross Chain Storage Solution](build-cross-chain-solution.md) - Crust's cross chain storage solution on both Polkadot ecosystem and other public platforms(Ethereum/Solana/Near/...)
+- [Crust Pricing Mechanism](https://wiki.crust.network/docs/en/DSM#2-price-mechanism) - Crust's DSM pricing model
 
 ## Integration Guide
 
