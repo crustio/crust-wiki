@@ -37,6 +37,7 @@
     ],
     "Build": [
       "buildGettingStarted",
+      "build101",
       {
         "type": "subcategory",
         "label": "Basics",

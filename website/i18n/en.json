@@ -13,6 +13,10 @@
         "title": "Bridge",
         "sidebar_label": "Bridge"
       },
+      "build101": {
+        "title": "Crust Storage 101",
+        "sidebar_label": "Crust Storage 101"
+      },
       "buildCrossChainSolution": {
         "title": "Crust's cross-chain dStorage solution",
         "sidebar_label": "Crust's cross-chain dStorage solution"

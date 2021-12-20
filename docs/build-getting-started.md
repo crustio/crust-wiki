@@ -8,7 +8,7 @@ Welcome to the builders section of the Crust Wiki!
 
 Here you will be able to find the most up-to-date information on the status of the development tools in the Crust ecosystem. We will keep adding new tools, frameworks and documents as we progress. If you are working on something that should be included please reach out to us on [Discord](https://discord.gg/D97GGQndmx).
 
-This section of the wiki is divided into the following parts:
+This section of the wiki is divided into the following parts, or you can just learn [BUILD 101](build-101.md):
 
 ## Basics
 
