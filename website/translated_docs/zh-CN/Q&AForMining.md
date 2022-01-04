@@ -503,7 +503,28 @@ sudo crust tools file-info all
 ```
 - 如果接过有意义文件订单，调用如下命令将其删掉，并等待下一次上报工作量，大约1小时上报一次工作量
 ```shell
-sudo crust tools delete-file {cid}
+#!/bin/bash
+basedir=$(cd `dirname $0`; pwd)
+crust_base_url="http://localhost:12222/api/v0"
+
+### Delete files
+# Delete pending files
+for cid in $(sudo crust tools file-info pending); do
+    sudo crust tools delete-file $cid
+done
+# Delete valid and lost files
+cids=($(sudo crust tools file-info valid | jq -r "keys|.[]") $(sudo crust tools file-info lost | jq -r "keys|.[]"))
+recover_data='{"deleted_files":['
+if [ ${#cids[@]} -gt 0 ]; then
+    for cid in ${cids[@]}; do
+        recover_data="${recover_data}\"$cid\","
+    done
+    recover_data="${recover_data:0:len-1}]}"
+    curl -s -XPOST "$crust_base_url/file/recover_illegal" --header 'Content-Type: application/json' --data-raw "$recover_data"
+    for cid in ${cids[@]}; do
+        sudo crust tools delete-file $cid
+    done
+fi
 ```
 
 - 增加白名单
