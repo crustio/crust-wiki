@@ -1,7 +1,7 @@
 ---
 id: sWorkerWorkload
-title: 工作量
-sidebar_label: 工作量
+title: Workload
+sidebar_label: Workload
 ---
 sWorker的工作量有两个部分构成：SRD和有意义文件。本章节将详细介绍这两种工作量的生成、校验等过程。
 

@@ -9,6 +9,18 @@
         "title": "Apps Strorage Issue",
         "sidebar_label": "Apps Strorage Issue"
       },
+      "bridge": {
+        "title": "Bridge",
+        "sidebar_label": "Bridge"
+      },
+      "build101": {
+        "title": "Crust Storage 101",
+        "sidebar_label": "Crust Storage 101"
+      },
+      "buildCrossChainSolution": {
+        "title": "Crust's cross-chain dStorage solution",
+        "sidebar_label": "Crust's cross-chain dStorage solution"
+      },
       "buildCrustGhAction": {
         "title": "Crust Pinner Github Action",
         "sidebar_label": "Crust Pinner Github Action"
@@ -22,8 +34,12 @@
         "sidebar_label": "Crust SDK"
       },
       "buildFileStoringDemo": {
-        "title": "File Storing Code Sample",
-        "sidebar_label": "File Storing Code Sample"
+        "title": "Store file with Crust Storage API",
+        "sidebar_label": "Store file with Crust Storage API"
+      },
+      "buildFileStoringWithGWDemo": {
+        "title": "Store file with Crust IPFS Pinning Service API",
+        "sidebar_label": "Store file with Crust IPFS Pinning Service API"
       },
       "buildGettingStarted": {
         "title": "Builder's Portal",
@@ -48,6 +64,10 @@
       "buildIntegrationWebsiteHosting": {
         "title": "DApp Hosting",
         "sidebar_label": "DApp Hosting"
+      },
+      "buildIPFSW3AuthPin": {
+        "title": "IPFS W3Auth Pinning Service",
+        "sidebar_label": "IPFS W3Auth Pinning Service"
       },
       "buildIPFSWeb3AuthGW": {
         "title": "IPFS W3Auth Gateway",
@@ -204,9 +224,45 @@
         "title": "Parameters",
         "sidebar_label": "Parameters"
       },
+      "Q&AForBasicknowledge": {
+        "title": "Basic Knowledge",
+        "sidebar_label": "Basic Knowledge"
+      },
+      "Q&AForVerifiersandCandidates": {
+        "title": "Verifiers and Candidates",
+        "sidebar_label": "Verifiers and Candidates"
+      },
+      "Q&AForBasicnodeproblems": {
+        "title": "Basic Node Problems",
+        "sidebar_label": "Basic Node Problems"
+      },
+      "Q&AForFix": {
+        "title": "Fix unstable chain",
+        "sidebar_label": "Fix unstable chain"
+      },
+      "Q&AForGuarantor": {
+        "title": "Guarantor",
+        "sidebar_label": "Guarantor"
+      },
+      "Q&AForMembernoderelated": {
+        "title": "Member Node Related",
+        "sidebar_label": "Member Node Related"
+      },
       "Q&AForMining": {
         "title": "Q&A",
-        "sidebar_label": "Q&A"
+        "sidebar_label": "For Node"
+      },
+      "Q&AForOther": {
+        "title": "Other",
+        "sidebar_label": "Other"
+      },
+      "Q&AForrelatedgroups": {
+        "title": "Related Groups",
+        "sidebar_label": "Related Groups"
+      },
+      "Q&AForRewardsandPunishments": {
+        "title": "Rewards and Punishments",
+        "sidebar_label": "Rewards and Punishments"
       },
       "Q&AForStorage": {
         "title": "Q&A",
@@ -236,6 +292,10 @@
         "title": "Overview",
         "sidebar_label": "Overview"
       },
+      "sWorkerVersion": {
+        "title": "sWorker Version",
+        "sidebar_label": "sWorker Version"
+      },
       "sWorkerWorkload": {
         "title": "Workload",
         "sidebar_label": "Workload"
@@ -263,7 +323,8 @@
       "Learn": "Learn",
       "Build": "Build",
       "Node": "Node",
-      "Storage": "Storage"
+      "Storage": "Storage",
+      "Q&A": "Q&A"
     }
   },
   "pages-strings": {

@@ -12,7 +12,7 @@ Here are a few possible reasons for the long "pending" of a storage order:
 
 To address this, you may need to:
 
-## 1. Recommending file size is smaller than 64G
+## 1. Recommending file size is smaller than 32G
 
 ## 2. Make sure IPFS is enabled
 

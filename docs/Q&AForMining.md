@@ -1,7 +1,7 @@
 ---
 id: Q&AForMining
 title: Q&A
-sidebar_label: Q&A
+sidebar_label: For Node
 ---
 
 ## 1 Basic knowledge
@@ -97,13 +97,13 @@ The total number of validators will be dynamically adjusted. This setting is to 
 
 Guarantee fee (percentage of reward commission): the proportion of the guarantor's share, the greater the value, the higher the guarantor's revenue share
 
-The following is an example of a scenario: Suppose node A stakes 1000 CRU and is guaranteed 200 CRU, and its stake upper limit is 1000 CRU, and the guarantee fee is set to 95%. Assuming that each round of stake income is 600 CRU, if The effective stake amount of the whole network is 2000, then the income of each Era can be calculated as:
+The following is an example of a scenario: Suppose node A stakes 1000 CRU and is guaranteed 200 CRU, and its stake upper limit is 1000 CRU, and the guarantee fee is set to 30%. Assuming that each round of stake income is 600 CRU, if The effective stake amount of the whole network is 2000, then the income of each Era can be calculated as:
 
 -The validator’s effective stake = minimum value (1000, 1200) * (1000 / 1200) = 1000 * (1000 / 1200) = 833.3 CRU
 
 -Guarantor’s effective stake = minimum value (1000, 1200) * (200 / 1200) = 1000 * (200 / 1200) = 166.66 CRU
 
--Validator's income = 600 * (833.3 / 2000) + 600 * (166.66 / 2000) * 5% = 252.49
+-Validator's income = 600 * (833.3 / 2000) + 600 * (166.66 / 2000) * 70% = 285 CRU
 
 ### 2.7 Increase/decrease stake
 
@@ -250,13 +250,14 @@ Peers can't go up mainly because of network problems, such as no fixed IP, insuf
 
 ### 5.5 How to migrate owner
 
-Divided into the following four steps
+Please follow this guide to migrate your owner. https://wiki.polkadot.network/zh-CN/docs/maintain-guides-how-to-upgrade
 
-- Stop verification on APPS and wait for 1 era
-- Stop the original owner
-- Activate the new owner and get a new session key
-- Set a new session key and click again to verify
+### 5.6 Chain log error
 
+If the following error occurs, it means that the chain data is damaged, execute 'sudo rm -rf /opt/crust/data/chain/chains/crust/db/' command to delete the chain db, and then execute 'sudo crust reload chain' to resynchronize the chain data. If it appears again, indicating that the system disk has bad sectors, please replace the system disk immediately
+
+![Picture](assets/qa/chaindb.png)
+ 
 ## 6 Member node related
 
 ### 6.1 Error installing SGX driver
@@ -406,6 +407,54 @@ No, the encapsulated computing power is related to the SGX module, and the hardw
 
 The account configured by the member is duplicated with other members
 
+### 6.12 Sworker log report "Input/output error"
+Disk failure, read and write errors, please check the hardware configuration of the disk, Raid card, power supply, etc.
+
+![Picture](assets/qa/sworker/device/inputoutputerror.png)
+
+### 6.13 Sworker log report "Get srd (hash) metadata failed ,please check your disk. Error code:4016"
+If the program fails to retrieve the packaged data, please check the disk read and write failure caused by the hardware configuration of the disk, Raid card, power supply, etc., or the hard disk is not mounted before restarting the computer
+
+![Picture](assets/qa/sworker/device/srdlost.png)
+
+Execute 'sudo crust tools workload' command to check if the sum of "srd_complete" and "disk_available_for_srd" is much smaller than disk_volume, it is recommended to re-srd
+
+The solution is as follows
+
+- Ensure that the disk reads and writes normally
+
+- Execute 'sudo crust stop sworker' command to stop the sworker program
+
+- Execute 'sudo rm -rf /opt/crust/data/sworker' to delete sworker metadata
+
+- Format the mechanical hard disk and remount it to /opt/crust/disks/1~128
+
+- Execute 'sudo crust reload sworker' command to restart the sworker program
+
+- Execute 'sudo crust tools change-srd xxx' command to issue the srd task
+
+### 6.14 Sworker log report "...swork.IllegalFilesTransition..."
+
+![Picture](assets/qa/sworker/device/illegalfiles.png)
+
+Reason:Unstable network causes the expected workload to be sent to be inconsistent with the actual workload
+
+The solution is as follows:
+- Keep sowkrer service online
+- git clone https://github.com/MyronFanQiu/Recover-Illegal-Files && cd Recover-Illegal-Files
+- yarn
+- yarn start
+
+### 6.15 Sworker log report "...Priority is too low..."
+
+![Picture](assets/qa/sworker/device/priority.png)
+
+The chain synchronization is unstable due to network problems, and the local block height is lower than the  maximum block of the main network
+
+The solution is as follows:
+- Option 1 : Increase network bandwidth, configure a fixed IP or reduce the number of member nodes in the same LAN
+- Option 2 : [Set the chain P2P port](buildNode#24-set-the-p2p-port-of-the-chain), restart the chain service and then configure port forwarding and [QoS](nodeQos) on the router 
+
 ## 7 related groups
 
 ### 7.1 Why can't a member add a group?
@@ -450,7 +499,28 @@ sudo crust tools file-info all
 ```
 - If you have received a meaningful document order, call the following command to delete it, and wait for the next workload report, which will be reported every 1 hour
 ```shell
-sudo crust tools delete-file {cid}
+#!/bin/bash
+basedir=$(cd `dirname $0`; pwd)
+crust_base_url="http://localhost:12222/api/v0"
+
+### Delete files
+# Delete pending files
+for cid in $(sudo crust tools file-info pending); do
+    sudo crust tools delete-file $cid
+done
+# Delete valid and lost files
+cids=($(sudo crust tools file-info valid | jq -r "keys|.[]") $(sudo crust tools file-info lost | jq -r "keys|.[]"))
+recover_data='{"deleted_files":['
+if [ ${#cids[@]} -gt 0 ]; then
+    for cid in ${cids[@]}; do
+        recover_data="${recover_data}\"$cid\","
+    done
+    recover_data="${recover_data:0:len-1}]}"
+    curl -s -XPOST "$crust_base_url/file/recover_illegal" --header 'Content-Type: application/json' --data-raw "$recover_data"
+    for cid in ${cids[@]}; do
+        sudo crust tools delete-file $cid
+    done
+fi
 ```
 
 - Add whitelist

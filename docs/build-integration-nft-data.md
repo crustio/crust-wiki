@@ -8,6 +8,7 @@ sidebar_label: NFTs
 
 Non-fungible tokens (NFTs) are a way to prove ownership of digital art and collectibles.
 NFT assets, like artworks and collectibles which come to public eyes through multimedia files such as images and videos, are relatively expensive if stored on the blockchain and therefore need to be stored off-chain.
+[SwitchSwap](https://switchswap.io/#/home) is an [open sourced](https://github.com/switchswapbox/switchswap-nft) decentralized NFT minting platform based on IPFS, Crust and Polygon chain.
 
 **Note**
 
@@ -20,14 +21,16 @@ The NFT trading platform serves the storage needs of NFT files by integrating Cr
 
 1. Import NFT files into IPFS;
 2. Store and distribute NFT files through Crust Network;
-3. Monitor the storage status of NFT files in Crust Network.
-4. Users access NFT files in the NFT trading platform.
+3. Monitor the storage status of NFT files in Crust Network;
+4. Users access NFT files in the NFT trading platform;
+5. Add money to auto-extend expired time of your NFT file.
 
 ## Detailed process
 
 ### 1. Import NFT files into IPFS
 
 With the NFT platform running an IPFS node first, the platform can import NFT files into IPFS when NFT is generated.
+
 ```shell
 curl --request POST 'http://127.0.0.1:5001/api/v0/add' --form '=@"/home/crust/FireCloud.png"
 ```
@@ -42,7 +45,7 @@ Any file imported into IPFS will be given a unique CID (anyone can retrieve the 
 }
 ```
 
-From the returned value, we can find the CID is: QmbLmgLUR1VZNpttojd752fyng8Bz3ZbPqabQ76MVLXT7P
+From the returned value, we can find the CID is: `QmbLmgLUR1VZNpttojd752fyng8Bz3ZbPqabQ76MVLXT7P`
 
 ### 2. Store and distribute NFT files via Crust Network
 
@@ -123,6 +126,7 @@ A large number of nodes in the Crust network will obtain the corresponding NFT f
 ### 3. Monitor the storage status of NFT files in Crust Network
 
 NFT trading platform queries the storage status information of corresponding NFT files by integrating the following code.
+
 ```typescript
 /**
  * Get on-chain order information about files
@@ -166,7 +170,7 @@ where the value of `reported_replica_count` is the number of nodes that store th
 
 ### 4. NFT file retrieval and access
 
-The NFT trading platform provides [IPFS Getway](https://docs.ipfs.io/concepts/ipfs-gateway/#gateway-types) services, and it also integrates [Public IPFS Gateway](https://ipfs.github .io/public-gateway-checker/) services so that each NFT file can be accessed through a link that contains CID information. The front-end of the NFT trading platform builds on these links to present to users the multimedia information of the NFT.
+The NFT trading platform provides [IPFS Getway](https://docs.ipfs.io/concepts/ipfs-gateway/#gateway-types) services, and it also integrates [Public IPFS Gateway](https://ipfs.github.io/public-gateway-checker/) services so that each NFT file can be accessed through a link that contains CID information. The front-end of the NFT trading platform builds on these links to present to users the multimedia information of the NFT.
 
 For example, the NFT file: `Firecloud.png` can be accessed through the following ipfs public Gateway url:
 
@@ -185,6 +189,34 @@ http://localhost:8080/ipfs/QmbLmgLUR1VZNpttojd752fyng8Bz3ZbPqabQ76MVLXT7P
 ![pic](https://crust-data.oss-cn-shanghai.aliyuncs.com/wiki/build/local.png)
 
 Since a large number of nodes in Crust Network have stored the file, the user running IPFS locally can achieve multi-point accelerating effect when accessing the NFT file.
+
+### 5. Add money to your NFT file
+
+Crust's storage market is order-based, once you place a storage order, you'll get 6 month storage duration by default. But each order can be added money to extend the storage time, user can call `add_prepaid` on chain to extend the file order. With this design, **users can decide how long to store their NFT renewal, so that on the one hand, they can make reasonable use of the storage resources of the entire network (the storage of every storage network has a hard limit), and users can freely measure the value of assets to determine the storage duration**. User can easily calculate the prepaid price:
+
+```
+storage_time = each_order_amount * 6 month
+```
+
+And the following code can help easily call `on-chain` interface to add prepaid money.
+
+```js
+/**
+ * Add prepaid to an order
+ * @param api chain instance
+ * @param cid the cid of file
+ * @param amount adding money to prepaid
+ * @return send transaction true/false
+ */
+async function addPrepaid(api: ApiPromise, cid: string, amount: number) {
+    await api.isReadyOrError;
+    // Generate transaction
+    const ap = api.tx.market.addPrepaid(cid, amount);
+    // Send transaction
+    const txRes = JSON.parse(JSON.stringify((await sendTx(krp, ap))));
+    return JSON.parse(JSON.stringify(txRes));
+}
+```
 
 ### Resources
 

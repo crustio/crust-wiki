@@ -16,7 +16,7 @@ Under the GPoS (Guaranteed Proof of Stake) consensus of Crust Network, validator
 
 The rewards of validators are composed of two parts: **authoring rewards and staking rewards**. Normally, validators will receive both the authoring and staking rewards, while candidates receive only staking rewards.
 
-**In Crust mainnet, each Era (6 hours) generates authoring and staking rewards**, more details about the reward decreasing refer to [economic whitepaper](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf).
+**In Crust mainnet, each Era (6 hours) generates authoring and staking rewards**, more details about the reward decreasing refer to [economic whitepaper](https://ipfs-hk.decoo.io/ipfs/QmRYJN6V5BzwnXp7A2Avcp5WXkgzyunQwqP3Es2Q789phF).
 
 #### 1.1 Authoring rewards
 
@@ -46,7 +46,7 @@ Staking rewards refer to the validators or candidates who hold storage resources
 
 > When a Validator or Candidate adjusts its own guarantee fee, the guarantee fee of the first Era after the adjustment will be set to 100% compulsively, which means that all the income of the node except for its own effective stake will be distributed to the guarantor. After an Era, the guarantee fee is restored to the value set by the Validator/Candidate.
 
-> For example, if the validator obtains 900 CRU staking rewards and 100 CRU block generation reward in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 95%, then the guarantors finally obtains (900 + 100) * 10% * 95% = 95 CRUs income, and the remaining 905 CRUs belongs to the validator.
+> For example, if the validator obtains 900 CRU staking rewards and 100 CRU block generation reward in one era, and if his self-staking accounts for 90% of his total staking(The remaining 10% is contributed by guarantors). If the guarantee fee is 30%, then the guarantors finally obtains (900 + 100) * 10% * 30% = 30 CRUs income, and the remaining 970 CRUs belongs to the validator.
 
 The income obtained by the validator and candidate is calculated as following steps:
 
@@ -68,11 +68,11 @@ validator_rewards = total_staking_rewards * validator_effective_staking_amount /
 
 The following is an example:
 
-If node A staked 1000 CRUs itself, and was guaranteed with 200 CRUs. The staking upper limit is 1000 CRUs, with the guarantee fee set at 95%, and the staking income generated per round is 600 CRUs. Supposing the effective staking amount of the network is 2000 CRUs, we can work out the income of each Era:
+If node A staked 1000 CRUs itself, and was guaranteed with 200 CRUs. The staking upper limit is 1000 CRUs, with the guarantee fee set at 30%, and the staking income generated per round is 600 CRUs. Supposing the effective staking amount of the network is 2000 CRUs, we can work out the income of each Era:
 
 1. Validator's effective staking amount = MIN（1000， 1200）*（1000 / 1200） = 1000 * （1000 / 1200） = 833.3 CRU
 2. Guarantor's effective staking amount = MIN（1000，1200）* （200 / 1200）= 1000 * （200 / 1200） = 166.66 CRU
-3. Validator's rewards = 600 * （833.3 / 2000） + 600 * （166.66 / 2000） * 5% = 252.49
+3. Validator's rewards = 600 * （833.3 / 2000） + 600 * （166.66 / 2000） * 70% = 285 CRU
 
 #### 1.3 Withdraw rewards
 

@@ -9,6 +9,10 @@
         "title": "代码示例：使用Crust存储文件",
         "sidebar_label": "代码示例：使用Crust存储文件"
       },
+      "bridge": {
+        "title": "资产跨链桥",
+        "sidebar_label": "资产跨链桥"
+      },
       "buildHelloCrust": {
         "title": "Hello Crust",
         "sidebar_label": "Hello Crust"
@@ -72,6 +76,10 @@
       "contributing": {
         "title": "贡献",
         "sidebar_label": "贡献"
+      },
+      "Q&AForFix": {
+        "title": "修复不稳定链",
+        "sidebar_label": "修复不稳定链"
       },
       "democracyGuide": {
         "title": "民主指南",
@@ -145,6 +153,10 @@
         "title": "工作量",
         "sidebar_label": "工作量"
       },
+      "sWorkerVersion": {
+        "title": "sWorker 版本",
+        "sidebar_label": "sWorker 版本"
+      },
       "guarantorGuidance": {
         "title": "担保人指南",
         "sidebar_label": "担保人指南"
@@ -203,7 +215,39 @@
       },
       "Q&AForMining": {
         "title": "Q&A",
-        "sidebar_label": "Q&A"
+        "sidebar_label": "节点"
+      },
+      "Q&AForBasicknowledge": {
+        "title": "基础知识",
+        "sidebar_label": "基础知识"
+      },
+      "Q&AForVerifiersandCandidates": {
+        "title": "验证人和候选人",
+        "sidebar_label": "验证人和候选人"
+      },
+      "Q&AForGuarantor": {
+        "title": "担保人",
+        "sidebar_label": "担保人"
+      },
+      "Q&AForBasicnodeproblems": {
+        "title": "节点基本问题",
+        "sidebar_label": "节点基本问题"
+      },
+      "Q&AForMembernoderelated": {
+        "title": "Member节点相关",
+        "sidebar_label": "Member节点相关"
+      },
+      "Q&AForrelatedgroups": {
+        "title": "组相关",
+        "sidebar_label": "组相关"
+      },
+      "Q&AForOther": {
+        "title": "其它",
+        "sidebar_label": "其它"
+      },
+      "Q&AForRewardsandPunishments": {
+        "title": "奖励和惩罚",
+        "sidebar_label": "奖励和惩罚"
       },
       "Q&AForStorage": {
         "title": "Q&A",

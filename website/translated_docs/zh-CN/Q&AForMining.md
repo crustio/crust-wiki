@@ -1,7 +1,7 @@
 ---
 id: Q&AForMining
 title: Q&A
-sidebar_label: Q&A
+sidebar_label: Q&AForMining
 ---
 
 ## 1 基础知识
@@ -97,13 +97,13 @@ sidebar_label: Q&A
 
 担保费（奖励佣金百分比）：给担保人的分成比例，这个值越大，担保人收益分成越高
 
-下列以一个场景进行举例说明： 假如节点A质押了1000 CRU，并被担保了200 CRU，而其质押上限为1000 CRU，设置的担保费为95%，假设每轮产生质押收益为600 CRU，假如全网有效质押量为2000，那么可以算出每个Era的收益为：
+下列以一个场景进行举例说明： 假如节点A质押了1000 CRU，并被担保了200 CRU，而其质押上限为1000 CRU，设置的担保费为30%，假设每轮产生质押收益为600 CRU，假如全网有效质押量为2000，那么可以算出每个Era的收益为：
 
 - 验证人的有效质押 = 最小值（1000， 1200）*（1000 / 1200） = 1000 * （1000 / 1200） = 833.3 CRU
 
 - 担保人的有效质押 = 最小值（1000，1200）* （200 / 1200）= 1000 * （200 / 1200） = 166.66 CRU
 
-- 验证人收益 = 600 * （833.3 / 2000） + 600 * （166.66 / 2000） * 5% = 252.49
+- 验证人收益 = 600 * （833.3 / 2000） + 600 * （166.66 / 2000） * 70% = 285 CRU
 
 ### 2.7 增加/减少质押
 
@@ -250,12 +250,17 @@ peers上不去主要是因为网络问题, 如没有固定IP，带宽不够，�
 
 ### 5.5 如何迁移owner
 
-分为以下四步
+分为以下三步
 
-- APPS上停止验证，并等待1个era
-- 停止原先的owner
-- 启用新的owner，并获得新的session key
-- 设置新的session key，并重新点击验证
+- 在新的机器上，启用新的owner，等待链同步至最新块一切正常后，获得新的session key。**请注意旧的owner一定不要停止链服务或停机**
+- 设置新的session key。**请注意旧的owner一定不要停止链服务或停机**
+- 等待一个era后观察到链工作以及出块一切正常后，停止旧的owner。
+
+### 5.6 链日志报错
+
+如下图所示，表示链数据损坏，执行sudo rm -rf /opt/crust/data/chain/chains/crust/db/命令将链数据删除，然后执行sudo crust reload chain重新同步链数据，如果再次出现如下报错，说明系统盘有坏道，请立即更换系统盘
+
+![图片](assets/qa/chaindb.png)
 
 ## 6 Member节点相关
 
@@ -406,6 +411,54 @@ sudo crust logs sworker | grep 'WRE'
 
 Member配置的账户与其他member重复
 
+### 6.12 Sworker日志报“Input/output error”
+磁盘故障，读写报错，请检查磁盘，Raid卡，电源供电等硬件配置
+
+![图片](assets/qa/sworker/device/inputoutputerror.png)
+
+### 6.13 Sworker日志报"Get srd (hash) metadata failed ,please check your disk. Error code:4016"
+程序检索不到封装数据造成的报错，请排查磁盘，Raid卡，电源供电等硬件配置造成的磁盘读写故障，或者重启电脑之前未进行硬盘挂载
+
+![图片](assets/qa/sworker/device/srdlost.png)
+
+执行sudo crust tools workload 命令查询"srd_complete"和"disk_available_for_srd"之和如果远小于disk_volume，建议重新srd
+
+解决办法如下
+
+- 确保磁盘读写正常
+
+- 执行sudo crust stop sworker命令停止sworker程序
+
+- 执行sudo rm -rf /opt/crust/data/sworker删除sworker元数据
+
+- 格式化机械硬盘，重新挂载到/opt/crust/disks/1~128
+
+- 执行sudo crust reload sworker命令重启sworker程序
+
+- 执行sudo crust tools change-srd xxx命令下发封装任务
+
+### 6.14 Sworker日志报"...swork.IllegalFilesTransition..."
+
+![图片](assets/qa/sworker/device/illegalfiles.png)
+
+原因：网络不稳定造成预期发送的工作量与实际发送的工作量不一致
+
+解决办法：
+- 保持sowkrer服务在线
+- git clone https://github.com/MyronFanQiu/Recover-Illegal-Files && cd Recover-Illegal-Files
+- yarn
+- yarn start
+
+### 6.15 Sworker日志报"...Priority is too low..."
+
+![图片](assets/qa/sworker/device/priority.png)
+
+由于网络问题造成链同步不稳定，本地块高低于全网实际最高块
+
+解决办法：
+- 方法一：提升网络带宽，配置固定IP或者减少同一局域网Member节点数量
+- 方法二：[设置链P2P端口](buildNode#24-设置链p2p端口)，重启链服务并在路由器配置端口转发和[QoS](nodeQos)
+
 ## 7 组相关
 
 ### 7.1 Member为啥加不了组?
@@ -450,7 +503,28 @@ sudo crust tools file-info all
 ```
 - 如果接过有意义文件订单，调用如下命令将其删掉，并等待下一次上报工作量，大约1小时上报一次工作量
 ```shell
-sudo crust tools delete-file {cid}
+#!/bin/bash
+basedir=$(cd `dirname $0`; pwd)
+crust_base_url="http://localhost:12222/api/v0"
+
+### Delete files
+# Delete pending files
+for cid in $(sudo crust tools file-info pending); do
+    sudo crust tools delete-file $cid
+done
+# Delete valid and lost files
+cids=($(sudo crust tools file-info valid | jq -r "keys|.[]") $(sudo crust tools file-info lost | jq -r "keys|.[]"))
+recover_data='{"deleted_files":['
+if [ ${#cids[@]} -gt 0 ]; then
+    for cid in ${cids[@]}; do
+        recover_data="${recover_data}\"$cid\","
+    done
+    recover_data="${recover_data:0:len-1}]}"
+    curl -s -XPOST "$crust_base_url/file/recover_illegal" --header 'Content-Type: application/json' --data-raw "$recover_data"
+    for cid in ${cids[@]}; do
+        sudo crust tools delete-file $cid
+    done
+fi
 ```
 
 - 增加白名单
