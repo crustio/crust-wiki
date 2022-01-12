@@ -4,7 +4,7 @@ title: Node Overview
 sidebar_label: Node Overview
 ---
 
-This tutorial introduces how to build and organize nodes so that you can successfully join Crust preview network - Maxwell and get corresponding rewards from the network. This tutorial requires a certain Linux foundation, please follow the tutorial steps and do not skip any steps. If you have any questions, please contact the [Crust official telegram](https://t.me/CrustNetwork). If you have multiple devices, it is recommended to refer to section 2, If you only have one device, it is recommended to refer to section 3.
+This tutorial introduces how to build and organize nodes so that you can successfully join Crust and get corresponding rewards from the network. This tutorial requires a certain Linux foundation, please follow the tutorial steps and do not skip any steps. If you have any questions, please contact the [Crust official telegram](https://t.me/CrustNetwork). If you have multiple devices, it is recommended to refer to section 2, If you only have one device, it is recommended to refer to section 3.
 
 ## 1 Multiple Nodes (Recommended)
 
