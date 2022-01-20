@@ -34,4 +34,5 @@ GPoS基于Substrate框架的[BABE/GRANDPA](https://wiki.polkadot.network/docs/en
 <!--
 持币用户可以通过[担保](guarantor-guidance.md)节点来分享Crust网络的质押收益。用户可以浏览网络中的验证人并进行担保，从而增加该验证人的有效质押（最终验证人的总有效质押量不会超过其质押额度）
 -->
-即将发布。
+
+作为担保人参与网络请参考[担保人指南](guarantor-guidance.md)

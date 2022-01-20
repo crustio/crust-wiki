@@ -37,10 +37,12 @@ Users can join in as validator or as guarantors.
 <!--
 To join Crust Network as a validator, You can check [validator guidance](validatorGuidance.md).
 -->
-Coming soon.
+
+To be a validator, please refer to [Validator Guide](validatorGuidance.md).
 
 ### Join GPoS as Guarantor
 <!--
 Users can share the staking income of Crust network through [guarantee](guarantor-guidance.md). Users can browse the validators in the network and use CRUs to guarantee then, thereby increasing the validator’s effective stake (the final validator’s total effective stake amount will not exceed its stake limit).
 -->
-Coming soon.
+
+To be a guarantor, please refer to [Guarantor Guide](guarantor-guidance.md).
