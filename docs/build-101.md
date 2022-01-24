@@ -71,6 +71,7 @@ After you "told" Crust storage nodes, they're starting pulling the file through 
 
 The default storage time for a single transaction(order) **is 6 months**. If you want to extend the storage duration, Crust provides a **pre-paid pool for you to customize the file's storage time**, it allows you to add balance and automatically extend the file's expiry time. You can learn more details about the pre-paid pool below:
 
+- Crust storage price calculator on [LINK](https://crust.subscan.io/tools/storage_calculator)
 - Learn how to add balance to the pre-paid pool on [LINK](https://wiki.crust.network/docs/en/buildFileStoringDemo#4-add-file-assurance)
 - Learn more about Crust’s pricing model on [LINK](https://wiki.crust.network/docs/en/DSM#2-price-mechanism)
 - Get real-time Crust storage price on [LINK](https://crust.subscan.io/storage)
