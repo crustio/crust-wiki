@@ -33,7 +33,7 @@ Since the validator will have an independent income of 20%, and the guarantee ra
 
 ### 1.5 How many CRUs does the mainnet 1T need to stake?
 
-In the early stage of the main network, 1T can obtain a stake limit of 1CRU. Saving user data will increase the stake limit (up to 10 times), that is, 1 machine equals 10 machines.
+In the early stage of the main network, 1T can obtain a stake limit of 1CRU. Saving effective user data will increase the stake limit (up to 10 times), that is, 1 machine equals 10 machines.
 
 ### 1.6 How to transfer Maxwell preview network account to main network?
 
