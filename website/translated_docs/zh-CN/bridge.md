@@ -63,7 +63,7 @@ Crust提供了一个可以实时到账的资产跨链桥，允许用户将Crust�
 
 进入Crust Apps -->Accounts-->Bridge，此时浏览器会唤起以太坊钱包。从Crust主网跨链转账到Elrond可以不用连接以太坊钱包.
 
-选择“Crust to Elrond”，在对话框2中输入接收CRU的以太坊地址，在对话框3中输入希望跨链转账的数量，确认无误后点击“Transfer”，签名并完成转账。
+选择“Crust to Elrond”，在对话框2中输入接收CRU的Elrond地址，在对话框3中输入希望跨链转账的数量，确认无误后点击“Transfer”，签名并完成转账。
 
 ![toErlondTransfer](assets/general/toElrondTransfer.png)
 
