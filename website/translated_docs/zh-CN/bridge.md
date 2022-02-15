@@ -59,6 +59,20 @@ Crust提供了一个可以实时到账的资产跨链桥，允许用户将Crust�
 
 每次跨链转账都需要用户完成：1.“Approve”签名授权；2.“Submit”签名转账。出于安全考虑，Apps页面会间隔一段时间后自动刷新，刷新后需要重新进行“Approve”签名授权，所以请在“Approve”授权完成后尽快点击“Submit”并完成签名转账，避免造成手续费的浪费。
 
+## 从Crust主网跨链转账到Elrond
+
+进入Crust Apps -->Accounts-->Bridge，此时浏览器会唤起以太坊钱包。从Crust主网跨链转账到Elrond可以不用连接以太坊钱包.
+
+选择“Crust to Elrond”，在对话框2中输入接收CRU的Elrond地址，在对话框3中输入希望跨链转账的数量，确认无误后点击“Transfer”，签名并完成转账。
+
+![toErlondTransfer](assets/general/toElrondTransfer.png)
+
+注意，转账通过智能合约自动执行，但是目前并不是并不会实时到账。每周三后台程序会周期性执行，待功能稳定后会优化为实时到账。
+
+跨链转移成功后，CRU通证将会显示在Elrond钱包中。
+
+![toErlondShow](assets/general/toElrondShow.png)
+
 ## 参考
 
 1. [ChainSafe Bridge](https://github.com/ChainSafe/ChainBridge)

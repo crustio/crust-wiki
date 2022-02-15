@@ -64,6 +64,20 @@ Every cross-chain transaction requires users to complete:
 
 For users' safety, the apps page will automatically refresh at regular intervals. After refreshing, the "Approve" signature authorization needs to be performed again. Therefore,  please click "Submit" as soon as possible and complete the signature and transaction after the "Approve" authorization is completed to avoid wasting any transaction fees.
 
+## Cross-chain Transactions from Crust mainnet to Elrond
+
+Go to Crust Apps-->Accounts-->Bridge, the browser will open the Ethereum wallet at this time. It is not necessary to connect an Ethereum wallet for cross-chain transactions from Crust mainnet to Elrond.
+
+Choose “Crust to Elrond, enter the Elrond address to receive your CRU in frame 2, enter the amount that you want to transfer in frame 3, click “Transfer” after you confirm there are no mistakes above, then sign and complete the transaction.
+
+![toErlondTransfer](assets/general/toElrondTransfer.png)
+
+Please note that the transaction is automatically executed through a smart contract, but it's not real-time right now. Currently, the arrival time is every Wednesday. after the function is improved, it will be changed to real-time.
+
+After the cross-chain transaction is completed, CRU tokens will appear in your wallet.
+
+![toErlondShow](assets/general/toElrondShow.png)
+
 ## References
 
 1. [ChainSafe Bridge](https://github.com/ChainSafe/ChainBridge)
