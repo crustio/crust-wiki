@@ -111,7 +111,23 @@ At this point, the application, approval, and distribution process of tips is co
 Coming soon
  
 ## 4 Council
-Coming soon
+
+Members of council can express their opinions on the use of the treasury amount, the acceleration of the democratic module, and several on-chain transactions with important influence. This chapter mainly introduces how to become a member of council, vote for a member you support, and approve council-related proposals.
+### 4.1 Submit Candidacy
+The steps to apply to become a member of council are relatively simple, just click on it as shown in the figure below. It should be noted that applying to become a candidacy requires a certain amount of CRU to be locked as a guarantee, and if you are not successfully elected or have been elected but lose your seat, you **will lose this part of the locked CRU**, please choose carefully to become a candidacy.
+![candidacy_propose](assets/council/council_candidacy.png)
+
+![candidacy_bond](assets/council/council_candidacy_bond.png)
+
+### 4.2 Vote for Candidacy
+Becoming a member of council requires the support of the masses, each of whom can vote for any number of applicants. To vote for others, you first need to lock a certain amount of CRU as a guarantee, and the CRU in this part needs to be **transferable CRU**. At the same time, you can fill in the amount of CRU supported. The CRU in this part can be **CRU under pledge** or any CRU under other locked conditions such as CRU18.
+
+![candidacy_vote](assets/council/council_vote.png)
+
+![vote_bond](assets/council/council_vote_bond.png)
+
+### 4.3 Motions
+Coming Soon
  
 ## 5 Technical Committee
 Coming Soon

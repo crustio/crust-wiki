@@ -107,6 +107,21 @@ Comming Soon
 Comming Soon
 
 ## 4 议会制度
+议会议员可以对于国库金额使用，民主模块加速还有若干具有重要影响的链上交易提出自己的意见。本章节主要介绍如何成为议员，为支持的议员进行投票以及审批议议会相关提案。
+### 4.1 申请成为议员
+申请成为议员的操作步骤较为简单，如下图所示依次进行点击即可。需要注意的是，申请成为议员需要锁定一定数额的CRU作为担保，并且如果没有成功当选或者已经当选但是失去了议员席位，**将会损失此部分锁定的CRU**，请慎重选择成为议员。
+![candidacy_propose](assets/council/council_candidacy.png)
+
+![candidacy_bond](assets/council/council_candidacy_bond.png)
+
+### 4.2 为议员投票
+成为议员需要广大群众的支持，每个人均可以为任意数量的申请人投票。为他人投票首先需要锁定一定数额的CRU作为担保，这一部分的CRU需要是**可以转账的CRU**。同时可以填写支持的CRU数额，此部分的CRU可以为**质押状态下的CRU**或者处于其他锁定情况下的CRU，例如CRU18。
+
+![candidacy_vote](assets/council/council_vote.png)
+
+![vote_bond](assets/council/council_vote_bond.png)
+
+### 4.3 议员审批相关提案
 Comming Soon
 
 ## 5 技术委员会制度
