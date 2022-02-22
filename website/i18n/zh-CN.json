@@ -81,9 +81,9 @@
         "title": "修复不稳定链",
         "sidebar_label": "修复不稳定链"
       },
-      "democracyGuide": {
-        "title": "民主指南",
-        "sidebar_label": "民主指南"
+      "governanceGuide": {
+        "title": "链上治理指南",
+        "sidebar_label": "链上治理指南"
       },
       "cru18Guarantee": {
         "title": "CRU18 担保",

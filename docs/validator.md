@@ -108,7 +108,7 @@ where **k is the number of offline validators in one era and n is the overall nu
 
 4. Deduction time point for slash
 
-The slash will not take place instantly, rather, a delayed deduction comes after 108 Eras (27 days). A slash that does not actually occur can be canceled (applicable through the Democracy).
+The slash will not take place instantly, rather, a delayed deduction comes after 108 Eras (27 days). A slash that does not actually occur can be canceled (applicable through the Governance).
 
 ## To become a validator
 

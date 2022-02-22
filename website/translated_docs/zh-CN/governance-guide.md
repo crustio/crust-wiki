@@ -1,10 +1,10 @@
 ---
-id: democracyGuide
-title: Democracy Guide
-sidebar_label: Democracy Guide
+id: governanceGuide
+title: Governance Guide
+sidebar_label: Governance Guide
 ---
 
-民主模块是Crust网络里重要的一部分，充分体现了Crust链上治理的优势以及去中心化的程度。整个民主模块包含了以下若干模块:
+链上治理模块是Crust网络里重要的一部分，充分体现了Crust链上治理的优势以及去中心化的程度。整个链上治理模块包含了以下若干模块:
 
 1. [**民主提案**](#1-民主提案): 任意持币人均可发起提案并对他人发起的议案进行投票表决，对网络参数以及机制设置进行变更，从而优化Crust网络。
 2. [**国库与小费**](#2-国库与小费): 国库储存了网络运行中产生的交易费用以及惩罚资金，用以对议会同意的提案进行资金支持，并且提供了小费机制所需要的金额支出。
