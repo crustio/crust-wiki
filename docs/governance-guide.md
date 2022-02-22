@@ -1,19 +1,19 @@
 ---
-id: democracyGuide
-title: Democracy Guide
-sidebar_label: Democracy Guide
+id: governanceGuide
+title: Governance Guide
+sidebar_label: Governance Guide
 ---
 
-The Democracy module is an important part of Crust Network, reflecting the advantages of Crust on-chain governance and degree of decentralization. The whole picture of Democracy module contains the following parts:
+The Governance module is an important part of Crust Network, reflecting the advantages of Crust on-chain governance and degree of decentralization. The whole picture of Governance module contains the following parts:
 
-1. [**Proposals&Referenda**](#1-proposalsreferenda): General democracy module that everyone can submit a proposal and vote for the proposal to make Crust Network better.
+1. [**Proposals&Referenda**](#1-proposalsreferenda): General governance module that everyone can submit a proposal and vote for the proposal to make Crust Network better.
 2. [**Treasury&Tips**](#2-treasurytips): The Treasury is a pot of funds collected through transaction fees, slashing, staking inefficiencies, etc. The funds held in the Treasury can be spent by making a spending proposal that, if approved by the Council, will enter a waiting period before distribution. 
 3. [**Bounty**](#3-bounty): Bounties Spending proposals aim to delegate the curation activity of spending proposals to experts called Curators: They can be defined as addresses with the agency over a portion of the Treasury with the goal of fixing a bug or vulnerability, developing a strategy, or monitoring a set of tasks related to a specific topic: all for the benefit of the Crust ecosystem.
 4. [**Council**](#4-council): The council is an on-chain entity comprising a number of actors, each represented as an on-chain account. Along with controlling the treasury, the council is called upon primarily for three tasks of governance: proposing sensible referenda, canceling uncontroversially dangerous or malicious referenda, and electing the technical committee.
 5. [**Technical Committee**](#5-technical-committee): The Technical Committee can, along with the Council, produce emergency referenda, which are fast-tracked for voting and implementation. These emergency referenda are intended for use only under urgent circumstances.
 
 ## 1 Proposals&Referenda
-This part mainly focuses on the main processes, specific practices, rules, and parameters of the Democracy module for ease of reading.
+This part mainly focuses on the main processes, specific practices, rules, and parameters of the Governance module for ease of reading.
 
 ### 1.1 Main processes
 1. Create a preimage to decide on the code for execution with a request for voting;
@@ -25,10 +25,10 @@ This part mainly focuses on the main processes, specific practices, rules, and p
 ### 1.2 Practices
 1. Create a preimage
 ![democracy_entry_page](assets/democracy/democracy_entry_page.jpeg)
-As shown above, go to the Democracy page and then click on "Submit preimage".
+As shown above, go to the Governance page and then click on "Submit preimage".
 ![submit_preimage](assets/democracy/submit_preimage.png)
 You can select any transaction that can be executed by Sudo permission, such as taking.SetValidatorCount, in the transaction submission page. Creating a preimage requires a small number of CRUs, whose amount depends on the selected transaction.
-![democracy_entry_page](assets/democracy/democracy_entry_page.jpeg)
+![check_preimage_hash](assets/democracy/check_preimage_hash.jpeg)
 After the transaction is submitted, you can go to the event page and check the hash value of the newly created preimage and copy that value as does on the above page.
 
 2. Create and submit a proposal

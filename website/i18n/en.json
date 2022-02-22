@@ -129,10 +129,6 @@
         "title": "Crust Wallet",
         "sidebar_label": "Crust Wallet"
       },
-      "democracyGuide": {
-        "title": "Democracy Guide",
-        "sidebar_label": "Democracy Guide"
-      },
       "DSM": {
         "title": "DSM",
         "sidebar_label": "DSM"
@@ -152,6 +148,10 @@
       "glossary": {
         "title": "Glossary",
         "sidebar_label": "Glossary"
+      },
+      "governanceGuide": {
+        "title": "Governance Guide",
+        "sidebar_label": "Governance Guide"
       },
       "GPoS": {
         "title": "GPoS",

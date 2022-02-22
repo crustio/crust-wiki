@@ -8,7 +8,7 @@ LockedCRU(including CRU18/CRU24/CRU24D6) is ERC20 token **for the participants o
 
 ## Precautions
 
-This tutorial currently only suits the users already [claimed lockedCRU in Maxwell](https://wiki-maxwell.crust.network/docs/en/claimCRU18) before mainnet launched. **At present, maxwell's lockedCRU claim has ended, for those users who haven't claimed lockedCRU, please wait for the mainnet's democracy to open**.
+This tutorial currently only suits the users already [claimed lockedCRU in Maxwell](https://wiki-maxwell.crust.network/docs/en/claimCRU18) before mainnet launched. **At present, maxwell's lockedCRU claim has ended, for those users who haven't claimed lockedCRU, please wait for the mainnet's governance to open**.
 
 ## 1. Extension Wallets
 
