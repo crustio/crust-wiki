@@ -4,14 +4,15 @@ title: CRU18 Claim
 sidebar_label: CRU18 Claim
 ---
 
-This document is aimed at claiming the mainnet CRU18. The user signs it with an ETH account, and maps the CRU18 information in advance on the Maxwell preview network.After the mainnet goes online, the Maxwell address of your claimed CRU18 will be converted to the mainnet address.
+This document is aimed at claiming the CRU18. The user signs it with an ETH account, and maps the CRU18 information in advance on the Maxwell preview network.
 
 ## Attention
 
 1. <font color='red'>⚠️Please claim CRU18 as soon as possible⚠️</font>
-2. **On Maxwell,CRU18 cannot be staked to obtain income**,the stake function of CRU18 will only take effect after the mainnet is launched
-3. After the mainnet goes online, the **Maxwell address you claimed for CRU18 will be converted to the mainnet address**, <font color='red'>⚠️Be sure to keep your Maxwell address's mnemonic seed"/"backup file"&password⚠️</font> 
-4. CRU18 **Claim can only be done once**, please **be sure to choose your Maxwell address (main network address) and keep your private key information**, all information is recorded by the Maxwell chain and cannot be updated or changed
+2. **On Maxwell, the CRU18 is only a bill, and it is impossible to perform pledge and transfer**
+3. If the democratic voting of the main network CRU18 is successful, the mapping operation will be conducted at 4866666 blocks, please view [this link](https://apps.crust.network/#/Democracy) for more details.
+4. After the mapping operation, the **Maxwell address you claimed for CRU18 will be converted to the mainnet address**, <font color='red'>⚠️Be sure to keep your Maxwell address's mnemonic seed"/"backup file"&password⚠️</font> 
+5. CRU18 **Claim can only be done once**, please **be sure to choose your Maxwell address (main network address) and keep your private key information**, all information is recorded by the Maxwell chain and cannot be updated or changed
 
 ## Preparation for claiming
 
