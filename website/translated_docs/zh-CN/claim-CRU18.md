@@ -1,17 +1,18 @@
 ---
 id: claimCRU18
-title: Crust CRU18 Claim
-sidebar_label: Crust CRU18 Claim
+title: CRU18 Claim
+sidebar_label: CRU18 Claim
 ---
 
-该文档针对主网CRU18的认领，用户使用ETH账户进行签名，并在Maxwell预览网上**提前映射CRU18信息**，并在主网上线后映射到主网。
+该文档针对CRU18的认领，用户使用ETH账户进行签名，并在Maxwell预览网上**提前映射CRU18信息**
 
 ## 注意事项
 
 1. <font color='red'>⚠️请务必尽快认领⚠️</font>
-2. **在Maxwell上，CRU18无法进行质押获取收益**，CRU18的质押功能仅在主网上线后生效
-3. 主网上线后，会将您认领CRU18的**Maxwell地址转换为主网地址**，<font color='red'>⚠️务必保留好您的Maxwell地址助记词/backup file&密码⚠️</font>
-4. CRU18 **认领只能进行一次**，请**务必选择好您的Maxwell地址(主网地址)并保管好您的私钥信息**，所有信息都被Maxwell链记录，无法进行更新和更改
+2. **在Maxwell上，CRU18仅作为记账，无法进行质押和转账**
+3. 如果主网CRU18映射的民主投票成功，映射操作将在4866666块进行，具体提案请通过[这个链接](https://apps.crust.network/#/democracy)查看。
+4. 映射操作后，会将您认领CRU18的**Maxwell地址转换为主网地址**，<font color='red'>⚠️务必保留好您的Maxwell地址助记词/backup file&密码⚠️</font>
+5. CRU18 **认领只能进行一次**，请**务必选择好您的Maxwell地址(主网地址)并保管好您的私钥信息**，所有信息都被Maxwell链记录，无法进行更新和更改
 
 ## 认领准备工作
 
