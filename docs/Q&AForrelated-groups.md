@@ -52,7 +52,7 @@ crust_base_url="http://localhost:12222/api/v0"
 
 ### Delete files
 # Delete pending files
-for cid in $(sudo crust tools file-info pending); do
+for cid in $(sudo crust tools file-info pending | jq -r "keys|.[]"); do
     sudo crust tools delete-file $cid
 done
 # Delete valid and lost files
