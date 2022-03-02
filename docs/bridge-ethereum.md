@@ -6,8 +6,6 @@ sidebar_label: Ethereum Bridge
 
 Crust Ethereum Bridge provides a 2-way cross-chain service from Crust Mainnet CRU to Ethereum ERC20 CRU.
 
-![eth-bridge](assets/bridge/eth-bridge.png)
-
 ## Preparation
 
 1. Install Metamask. Please refer to the official Metamask website for download links: https://metamask.io
@@ -27,7 +25,7 @@ Click “Next” to add the token to your wallet. After successfully adding the 
 
 ## Crust Mainnet ➡️ Ethereum
 
-Go to Crust Apps -->Accounts-->Bridge, the browser will open the Ethereum wallet at this time. It is not necessary to connect an Ethereum wallet for cross-chain transactions from Crust mainnet to Ethereum, however, it is recommended to keep the extension open to easily confirm if the transaction was successful.
+Go to Crust Apps-->Accounts-->Bridge page(https://apps.crust.network/#/bridge), the browser will open the Ethereum wallet at this time. It is not necessary to connect an Ethereum wallet for cross-chain transactions from Crust mainnet to Ethereum, however, it is recommended to keep the extension open to easily confirm if the transaction was successful.
 
 ![toEthConnect](assets/general/toEthConnect.png)
 
@@ -45,7 +43,7 @@ After the cross-chain transaction is completed, CRU tokens will appear in your w
 
 ## Ethereum ➡️ Crust Mainnet
 
-Go to Crust Apps -->Accounts-->Bridge-->Ethereum to Crust. Please make sure to connect your Ethereum wallet if you want to transfer from Ethereum to Crust mainnet.
+Go to Crust Apps -->Accounts-->Bridge-->Ethereum to Crust(https://apps.crust.network/#/bridge). Please make sure to connect your Ethereum wallet if you want to transfer from Ethereum to Crust mainnet.
 
 Choose the Crust address to receive the CRU in frame 1, enter the number of CRU you want to transfer in frame 2, and click "Approve" for signature authorization.
 

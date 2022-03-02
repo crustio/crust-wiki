@@ -7,7 +7,14 @@
       "claims",
       "claimsLockedCRU",
       "lockedCRUUnlock",
-      "bridge",
+      {
+        "type": "subcategory",
+        "label": "Bridge",
+        "ids": [
+          "bridgeEth",
+          "bridgeElrond"
+        ]
+      },
       "crustWallet",
       "glossary",
       "cru18Guarantee",
