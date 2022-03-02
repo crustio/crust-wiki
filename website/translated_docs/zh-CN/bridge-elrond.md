@@ -4,7 +4,7 @@ title: Elrond Bridge
 sidebar_label: Elrond Bridge
 ---
 
-Crust Ethereum Bridge provides a 2-way cross-chain service from Crust Mainnet CRU to Elrond ESDT CRU.
+Crust Elrond Bridge provides a 2-way cross-chain service from Crust Mainnet CRU to Elrond ESDT CRU.
 
 ## Preparation
 
