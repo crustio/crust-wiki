@@ -23,7 +23,7 @@ Choose “Crust to Elrond", enter the Elrond address to receive your CRU in fram
 
 ![toErlondTransfer](assets/general/toElrondTransfer.png)
 
-Please note that the transaction is automatically executed through a smart contract, but it's not real-time right now. Currently, the arrival time is every Wednesday. after the function is improved, it will be changed to real-time.
+Please note that the transaction is automatically executed through a smart contract, waiting for the final confirmation block to arrive, which will take about a few minutes
 
 After the cross-chain transaction is completed, CRU tokens will appear in your wallet.
 
