@@ -1,7 +1,7 @@
 ---
-id: bridge
-title: Bridge
-sidebar_label: Bridge
+id: bridgeEth
+title: Ethereum Bridge
+sidebar_label: Ethereum Bridge
 ---
 
 Crust Maxwell 提供了一个可以实时到账的资产跨链桥，允许用户将Maxwell上的CRU跨链转账到以太坊上，也可以将以太坊上的CRU（ERC20）跨链转账到Maxwell上。CRU跨链转账请按照以下流程进行操作。

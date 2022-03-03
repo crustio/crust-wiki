@@ -5,6 +5,14 @@
       "previewNetworkMaxwell",
       "crustGrants",
       "bridge",
+      {
+        "type": "subcategory",
+        "label": "Bridge",
+        "ids": [
+          "bridgeEth",
+          "bridgeShadow"
+        ]
+      },
       "claims",
       "claimBack",
       "claimCRU18",
