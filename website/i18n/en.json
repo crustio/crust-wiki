@@ -17,9 +17,9 @@
         "title": "BitSwap",
         "sidebar_label": "BitSwap"
       },
-      "bridge": {
-        "title": "Bridge",
-        "sidebar_label": "Bridge"
+      "bridgeEth": {
+        "title": "Ethereum Bridge",
+        "sidebar_label": "Ethereum Bridge"
       },
       "buildCrustKits": {
         "title": "Crust SDK",
@@ -120,6 +120,10 @@
       "crustWallet": {
         "title": "Crust Wallet",
         "sidebar_label": "Crust Wallet"
+      },
+      "bridgeShadow": {
+        "title": "Shadow Bridge",
+        "sidebar_label": "Shadow Bridge"
       },
       "csmclaimback": {
         "title": "CSM Claim Back",

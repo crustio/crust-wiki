@@ -1,7 +1,7 @@
 ---
-id: bridge
-title: Bridge
-sidebar_label: Bridge
+id: bridgeEth
+title: Ethereum Bridge
+sidebar_label: Ethereum Bridge
 ---
 
 Crust Maxwell provides an asset cross-chain bridge that allows users to transfer CRU on Maxwell to Ethereum, and CRU (ERC20) on Ethereum to Maxwell in real-time. Please follow the steps below for CRU cross-chain transactions.
