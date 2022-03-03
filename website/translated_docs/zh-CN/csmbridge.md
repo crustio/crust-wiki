@@ -26,7 +26,7 @@ Shadow Bridge提供了一个可以实时到账的资产跨链桥，允许用户�
 
 ![toShadow](assets/csmbridge/csm2.png)
 
-等待一段时间之后，可以在Shadow网络上检查CSM是否到账。
+等待一段时间之后，可以在[Shadow网络](https://shadow-apps.crust.network/?rpc=wss%3A%2F%2Frpc2-shadow.crust.network#/accounts)上检查CSM是否到账。
 
 ![toShadow](assets/csmbridge/csm3.png)
 
