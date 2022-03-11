@@ -40,6 +40,8 @@ sudo crust logs sworker | grep 'Send work report'
 ![图片](assets/qa/quit1.png)
 ![图片](assets/qa/quit2.png)
 
+退出旧组之后工作量上报会暂时性出现错误“swork.IllegalFilesTransition”，请用下述脚本修复。
+
 - 执行如下命令查询该Member节点是否接过有意义文件订单
 ```shell
 sudo crust tools file-info all
@@ -68,6 +70,63 @@ if [ ${#cids[@]} -gt 0 ]; then
         sudo crust tools delete-file $cid
     done
 fi
+```
+
+如果上述脚本无法修复上报错误，请跑下述脚本。注意下述脚本需要网络环境支持，可能会失败，请重试。
+```shell
+#!/bin/bash
+basedir=$(cd `dirname $0`; pwd)
+### Get all valid cids
+tmpfile=$basedir/TMPFILE
+tmpfile2=$basedir/TMPFILE2
+
+crust_base_url="http://localhost:12222/api/v0"
+account=$(curl -s http://localhost:12222/api/v0/enclave/id_info | jq -r .account)
+if [ x"$account" = x"" ]; then
+    echo "ERROR: account cannot be empty!"
+    exit 1
+fi
+echo "INFO: account:$account"
+echo "INFO: get files from subsquid..."
+curl -s -XPOST 'https://app.gc.subsquid.io/beta/crust-v5/003/graphql' --data-raw '{"query": "query MyQuery {\n  accountById(id: \"'$account'\") {\n    workReports {\n      addedFiles\n      deletedFiles\n    }\n  }\n}"}' -H "content-type: application/json; charset=utf-8" > $tmpfile
+if ! cat $tmpfile | jq '.' &>/dev/null; then
+    echo "ERROR: get data from subsquid failed, please try later."
+    exit 1
+fi
+parameters=()
+acc=0
+maxLen=100
+flag=0
+recover_del_data='{"deleted_files":['
+cat $tmpfile | jq -r ".data.accountById.workReports|.[]|.addedFiles|.[]|.[0:1]|.[]" > $tmpfile2
+cat $tmpfile | jq -r ".data.accountById.workReports|.[]|.deletedFiles|.[]|.[0:1]|.[]" >> $tmpfile2
+for el in $(cat $tmpfile2); do
+    curl -s -XPOST "$crust_base_url/storage/delete" --data-raw '{"cid": "'$cid'"}'
+    cid=$(echo $el | xxd -r -p)
+    recover_del_data="$recover_del_data\"$cid\","
+    flag=1
+    ((acc++))
+    if [ $acc -ge $maxLen ]; then
+        recover_del_data="${recover_del_data:0:len-1}]}"
+        parameters[${#parameters[@]}]=$recover_del_data
+        recover_del_data='{"deleted_files":['
+        flag=0
+        acc=0
+    fi
+done
+if [ $flag -eq 1 ]; then
+    recover_del_data="${recover_del_data:0:len-1}]}"
+    parameters[${#parameters[@]}]=$recover_del_data
+fi
+if [ ${#parameters[@]} -gt 0 ]; then
+    for parameter in ${parameters[@]}; do
+        curl -s -XPOST "$crust_base_url/file/recover_illegal" --header 'Content-Type: application/json' --data-raw "$parameter"
+    done
+    echo "INFO: delete files successfully"
+else
+    echo "INFO: no files to delete"
+fi
+
 ```
 
 - 增加白名单
