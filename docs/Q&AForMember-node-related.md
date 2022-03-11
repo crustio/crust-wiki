@@ -179,6 +179,8 @@ The solution is as follows
 
 ## 14 Sworker log report "...swork.IllegalFilesTransition..."
 
+First of all, if you just quit the group, please check the section "How to change the group of Member nodes?" in this [page](Q&AForrelated-groups.md) instead of the current section
+
 ![Picture](assets/qa/sworker/device/illegalfiles.png)
 
 Reason:Unstable network causes the expected workload to be sent to be inconsistent with the actual workload
