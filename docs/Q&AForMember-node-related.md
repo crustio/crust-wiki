@@ -179,7 +179,7 @@ The solution is as follows
 
 ## 14 Sworker log report "...swork.IllegalFilesTransition..."
 
-First of all, if you just quit the group, please check the section "3 How to change the group of Member nodes?" in this [page](Q&AForrelated-groups.md) instead of the current section
+First of all, if you just quit the group, please check the section "How to change the group of Member nodes?" in this [page](Q&AForrelated-groups.md) instead of the current section
 
 ![Picture](assets/qa/sworker/device/illegalfiles.png)
 
