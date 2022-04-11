@@ -1,7 +1,7 @@
 ---
 id: claimCSM
-title: Crust CSM Claim
-sidebar_label: Crust CSM Claim
+title: CSM Claim
+sidebar_label: CSM Claim
 ---
 
 [CSM](https://ipfs.decoo.io/ipfs/QmdPsqY6W1v5KUYH8Q1m8SCJwFLXSwRJeeeft9WS6ct3JA)是Crust Shadow的原始通证，初始发行量为2亿个，并将免费投发社区。用户可提前将ERC20的CSM映射到Crust预览网Maxwell参与存储市场相关活动，通过本教程一步一步学习到如何进行Maxwell CSM的认领。

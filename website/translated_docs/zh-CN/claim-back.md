@@ -1,7 +1,7 @@
 ---
 id: claimBack
-title: Crust Claim Back
-sidebar_label: Crust Claim Back
+title: CRU Claim Back
+sidebar_label: CRU Claim Back
 ---
 
 如果您想将**Crust 预览网 Maxwell的代币重新映射回ERC20 CRU**，您可以通过本教程学习到如何进行ERC20 CRU的转回。
