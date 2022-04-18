@@ -159,7 +159,7 @@ Then, you can query the order `status{replica_count, storage_duration, ...}` by 
 ```typescript
 async function getOrderState(cid: string) {
     await api.isReadyOrError;
-    return await api.query.market.files(cid);
+    return await api.query.market.filesV2(cid);
 }
 ```
 
@@ -174,13 +174,16 @@ And it'll return:
     "amount": "545.3730 nCRU",
     "prepaid": 0,
     "reported_replica_count": 1, // Replica count
-    "replicas": [{
-        "who": "cTHATJrSgZM2haKfn5e47NSP5Y5sqSCCToxrShtVifD2Nfxv5",
-        "valid_at": 2140,
-        "anchor": "0xd9aa29dda8ade9718b38681adaf6f84126531246b40a56c02eff8950bb9a78b7c459721ce976c5c0c9cd4c743cae107e25adc3a85ed7f401c8dde509d96dcba0",
-        "is_reported": true,
-        "created_at": 2140
-    }] // Who stores the file
+    "remaining_paid_count": 3,
+    "replicas": {
+        "cTHATJrSgZM2haKfn5e47NSP5Y5sqSCCToxrShtVifD2Nfxv5": {
+            "who": "cTHATJrSgZM2haKfn5e47NSP5Y5sqSCCToxrShtVifD2Nfxv5",
+            "valid_at": 2140,
+            "anchor": "0xd9aa29dda8ade9718b38681adaf6f84126531246b40a56c02eff8950bb9a78b7c459721ce976c5c0c9cd4c743cae107e25adc3a85ed7f401c8dde509d96dcba0",
+            "is_reported": true,
+            "created_at": 2140
+        }
+    } // Who stores the file
 }
 ```
 
