@@ -89,6 +89,10 @@
         "title": "CSM 认领",
         "sidebar_label": "CSM 认领"
       },
+      "shadowClaimCSM": {
+        "title": "CSM 认领",
+        "sidebar_label": "CSM 认领"
+      },
       "csmclaimback": {
         "title": "CSM 转回",
         "sidebar_label": "CSM 转回"
@@ -268,7 +272,8 @@
       "Learn": "学习",
       "Build": "构建",
       "Node": "节点",
-      "Storage": "存储"
+      "Storage": "存储",
+      "Crust Shadow": "Crust Shadow 平行链"
     }
   },
   "pages-strings": {

@@ -85,6 +85,10 @@
         "title": "CSM Claim",
         "sidebar_label": "CSM Claim"
       },
+      "shadowClaimCSM": {
+        "title": "CSM Claim",
+        "sidebar_label": "CSM Claim"
+      },
       "claims": {
         "title": "CRU Claim",
         "sidebar_label": "CRU Claim"
@@ -263,7 +267,8 @@
       "Learn": "Learn",
       "Build": "Build",
       "Node": "Node",
-      "Storage": "Storage"
+      "Storage": "Storage",
+      "Crust Shadow": "Crust Shadow"
     }
   },
   "pages-strings": {

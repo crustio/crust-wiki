@@ -4,15 +4,7 @@
       "gettingStarted",
       "previewNetworkMaxwell",
       "crustGrants",
-      "bridge",
-      {
-        "type": "subcategory",
-        "label": "Bridge",
-        "ids": [
-          "bridgeEth",
-          "bridgeShadow"
-        ]
-      },
+      "bridgeEth",
       "claims",
       "claimBack",
       "claimCRU18",
@@ -86,6 +78,10 @@
       "appsStorageIssue",
       "crustStorageExplorer",
       "Q&AForStorage"
+    ],
+    "Crust Shadow": [
+      "bridgeShadow",
+      "shadowClaimCSM"
     ]
   }
 }
