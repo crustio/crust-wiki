@@ -12,9 +12,9 @@ sidebar_label: CSM Claim
 
 > 不用过分担心不熟悉这些工具的使用，我们会在下面的认领步骤中详细阐述每一个工具的。
 
-1. [MyEtherWallet](https://www.myetherwallet.com/interface/dashboard)
+1. [MyEtherWallet](https://v5.myetherwallet.com/)
 2. [imtoken](https://token.im/)
-3. [Crust Apps](https://apps.crust.network/)
+3. [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/explorer)
 
 
 ## 步骤
@@ -32,7 +32,7 @@ sidebar_label: CSM Claim
 > 3. ⚠️ 确认CSM ERC20的合约地址：[CSM](https://etherscan.io/token/0x2620638eda99f9e7e902ea24a285456ee9438861)
 > 4. ⚠️ Crust Maxwell认领地址为：[0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b](https://etherscan.io/address/0x17a9037cdfb24ffcc13697d03c3bcd4dff34732b)
 
-登陆[Crust Apps](https://apps.crust.network/#/claims/maxwellCsmClaims)的Claim CSM模块
+登陆[Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Fapi-maxwell.crust.network#/claims/maxwellCsmClaims)的Claim CSM模块
 
 向***Crust Maxwell认领地址***发起一笔**CSM的转账交易**
 
@@ -50,7 +50,7 @@ sidebar_label: CSM Claim
 
 ### 三. 登陆MyEtherWallet连接钱包
 
-1. 打开[MyEtherWallet](https://www.myetherwallet.com/access-my-wallet):
+1. 打开[MyEtherWallet](https://v5.myetherwallet.com/access-my-wallet):
     - 点击MEW wallet
     - 连接你**发送交易的钱包**（下列流程以ImToken举例）
 
