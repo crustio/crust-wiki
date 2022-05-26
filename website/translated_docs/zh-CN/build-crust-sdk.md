@@ -77,7 +77,7 @@ export type FileInfo = typeof crustTypes.market.types.FileInfoV2;
 
 ### Crust API
 
-Please visit [Crust Docs](https://apps.crust.network/docs/) to check all Crust API. You can check the [`Constants`](https://apps.crust.network/docs/crust/constants) to get all constants stored on chain. You can learn how the chain state organazied on [`Storage`](https://apps.crust.network/docs/crust/storage) page and all supported extrinsices on [`Extrinsics`](https://apps.crust.network/docs/crust/extrinsics). You can check the [`Events`](https://apps.crust.network/docs/crust/events) and [`Errors`](https://apps.crust.network/docs/crust/errors) as well if neccessary.
+Please visit [Crust Docs](https://docs.crust.network/) to check all Crust API. You can check the [`Constants`](https://docs.crust.network/crust/constants) to get all constants stored on chain. You can learn how the chain state organazied on [`Storage`](https://docs.crust.network/crust/storage) page and all supported extrinsices on [`Extrinsics`](https://docs.crust.network/crust/extrinsics). You can check the [`Events`](https://docs.crust.network/crust/events) and [`Errors`](https://docs.crust.network/crust/errors) as well if neccessary.
 
 ### PolkadotJS API 
 

@@ -82,5 +82,5 @@ services:
 
 ## Related resources
 
-- [Crust API Docs](https://apps.crust.network/docs)
+- [Crust API Docs](https://docs.crust.network)
 - [IPFS API Docs](https://docs.ipfs.io/reference/http/api/)
