@@ -15,7 +15,7 @@ This library provides additional typing information for users to access Crust Ne
 1. Install dependencies
 
 ```shell
-yarn add @polkadot/api @crustio/type-definitions
+yarn add @polkadot/api@4.2.2-4 @crustio/type-definitions
 ```
 
 2. Create API instance
