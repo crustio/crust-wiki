@@ -41,7 +41,7 @@ main();
 
 ```ts
 // Query file info
-const fileInfo = await api.query.market.files('QmRaknS23vXEcdJezkrVC5WrApQNUkUDdTpbRdvh5fuJHc');
+const fileInfo = await api.query.market.filesV2('QmRaknS23vXEcdJezkrVC5WrApQNUkUDdTpbRdvh5fuJHc');
 console.log(fileInfo.toHuman());
 ```
 
@@ -55,14 +55,14 @@ E2E code sample can be found [here](build-developer-guidance.md).
 import {crustTypes} from '@crustio/type-definitions';
 
 // Define FileInfo
-export type FileInfo = typeof crustTypes.market.types.FileInfo;
+export type FileInfo = typeof crustTypes.market.types.FileInfoV2;
 
 // Use FileInfo as `interface`
 ```
 
 - Types
 
-  - [DSM Types](https://github.com/crustio/crust.js/blob/main/src/market.ts): `FileInfo`, `MerchantLedger`, `Replica`, ...
+  - [DSM Types](https://github.com/crustio/crust.js/blob/main/src/market.ts): `FileInfoV2`, `MerchantLedger`, `Replica`, ...
   - [MPoW Types](https://github.com/crustio/crust.js/blob/main/src/swork.ts): `Identity`, `WorkReport`, ...
   - [GPoS Types](https://github.com/crustio/crust.js/blob/main/src/staking.ts): `Guarantee`, ...
 
@@ -77,7 +77,7 @@ export type FileInfo = typeof crustTypes.market.types.FileInfo;
 
 ### Crust API
 
-Please visit [Crust Docs](https://apps.crust.network/docs/) to check all Crust API. You can check the [`Constants`](https://apps.crust.network/docs/crust/constants) to get all constants stored on chain. You can learn how the chain state organazied on [`Storage`](https://apps.crust.network/docs/crust/storage) page and all supported extrinsices on [`Extrinsics`](https://apps.crust.network/docs/crust/extrinsics). You can check the [`Events`](https://apps.crust.network/docs/crust/events) and [`Errors`](https://apps.crust.network/docs/crust/errors) as well if neccessary.
+Please visit [Crust Docs](https://docs.crust.network/) to check all Crust API. You can check the [`Constants`](https://docs.crust.network/crust/constants) to get all constants stored on chain. You can learn how the chain state organazied on [`Storage`](https://docs.crust.network/crust/storage) page and all supported extrinsices on [`Extrinsics`](https://docs.crust.network/crust/extrinsics). You can check the [`Events`](https://docs.crust.network/crust/events) and [`Errors`](https://docs.crust.network/crust/errors) as well if neccessary.
 
 ### PolkadotJS API 
 

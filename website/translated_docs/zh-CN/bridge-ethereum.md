@@ -1,7 +1,7 @@
 ---
-id: bridge
-title: Bridge
-sidebar_label: Bridge
+id: bridgeEth
+title: Ethereum Bridge
+sidebar_label: Ethereum Bridge
 ---
 
 Crust提供了一个可以实时到账的资产跨链桥，允许用户将Crust主网上的CRU跨链转账到以太坊上，也可以将以太坊上的CRU（ERC20）跨链转账到Crust主网上。CRU跨链转账请按照以下流程进行操作。
@@ -59,7 +59,7 @@ Crust提供了一个可以实时到账的资产跨链桥，允许用户将Crust�
 
 每次跨链转账都需要用户完成：1.“Approve”签名授权；2.“Submit”签名转账。出于安全考虑，Apps页面会间隔一段时间后自动刷新，刷新后需要重新进行“Approve”签名授权，所以请在“Approve”授权完成后尽快点击“Submit”并完成签名转账，避免造成手续费的浪费。
 
-## 参考
+## References
 
 1. [ChainSafe Bridge](https://github.com/ChainSafe/ChainBridge)
 2. [Crust Bridge Pallet](https://github.com/crustio/crust/tree/mainnet/cstrml/bridge)

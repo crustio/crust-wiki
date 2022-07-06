@@ -94,7 +94,7 @@ Just sign the `PubKey` with your private key to get the `SignedMsg`
 - With [Crust Apps](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/signing)
 - With [Polkadot Apps](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/signing)
 - With [Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey#signing-and-verifying-messages)
-- With [Node SDK](https://apps.crust.network/docs/util-crypto/examples/encrypt-decrypt)
+- With [Node SDK](https://docs.crust.network/util-crypto/examples/encrypt-decrypt)
 - With [Code Sample](https://github.com/RoyTimes/crust-workshop/blob/master/src/substrate.ts)
 
 ### 2. With Ethereum
@@ -253,7 +253,7 @@ Then, you can just config the standard IPFS remote pinning service with `http://
 - [IPFS W3Auth Pinning Service](https://github.com/crustio/ipfs-w3auth-pinning-service)
 - [IPFS Pinning Service](https://docs.ipfs.io/how-to/work-with-pinning-services/#use-an-existing-pinning-service)
 - [IPFS Pinnning Service API](https://ipfs.github.io/pinning-services-api-spec/#section/Schemas/Objects)
-- [Sign message with Polkadot.js/api](https://apps.crust.network/docs/util-crypto/examples/encrypt-decrypt)
+- [Sign message with Polkadot.js/api](https://docs.crust.network/util-crypto/examples/encrypt-decrypt)
 - [Sign message with Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey)
 - [Sign message with Ethereum](https://programtheblockchain.com/posts/2018/02/17/signing-and-verifying-messages-in-ethereum/)
 - [Sign message with Phantom (Solana)](https://docs.phantom.app/integrating/signing-a-message)

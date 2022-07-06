@@ -179,6 +179,8 @@ Member配置的账户与其他member重复
 
 ## 14 Sworker日志报"...swork.IllegalFilesTransition..."
 
+如果执行过退组操作，请查看退换组相关[文章](Q&AForrelated-groups.md)并跳过下列文章！
+
 ![图片](assets/qa/sworker/device/illegalfiles.png)
 
 原因：网络不稳定造成预期发送的工作量与实际发送的工作量不一致

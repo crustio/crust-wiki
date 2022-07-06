@@ -18,11 +18,11 @@ You can install Crust Wallet in two ways.
 
 You can install Crust Wallet from the [Chrome Web Store](https://chrome.google.com/webstore/detail/crust-wallet/jccapkebeeiajkkdemacblkjhhhboiek).
 
-### 2. Install via Installation Package 
+### 2. Install via Installation Package
 
 You can follow steps below to download and install Crust Wallet package.
 
-  1. [Download installation package](https://github.com/crustio/crust-extension/releases/download/v1.1.1/crust-wallet-1.1.1.zip) and unpack.
+  1. [Download installation package](https://github.com/crustio/crust-extension/releases/download/v2.0.3/crust-wallet-2.0.3.zip) and unpack.
   2. Open the Chrome browser, enter `chrome://extensions/` in the address bar and press Enter;
   3. Open `Developer mode` in the top right corner of the page;
   4. Click on `Load unpacked extension`;

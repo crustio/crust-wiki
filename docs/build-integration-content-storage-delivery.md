@@ -8,4 +8,4 @@ Crust provides standard file upload and download services based on the combinati
 There are 2 ways to store file using `Node.js`:
 
 - [With Crust Storage API](build-file-storing-demo.md)
-- [With Crust IPFS Pining Service API](build-file-storing-gw-demo.md)
+- [With Crust IPFS Pinning Service API](build-file-storing-gw-demo.md)

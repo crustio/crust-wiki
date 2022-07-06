@@ -6,7 +6,7 @@ sidebar_label: Merchant Guidance
 
 [Group Owners](ownerNode.md) can register as merchants, who will receive two additional benefits:
 
-1. an increase in the stake limit for storing user data;
+1. an increase in the stake limit for storing effecitve user data;
 2. order rewards from the storage market.
 
 > The storage market rewards mentioned in this document are order rewards only and do not include the increase in the stake limit for storing user files. To learn more about the rules for raising the stake limit, please refer to the [*Economic White Paper*](https://ipfs-hk.decoo.io/ipfs/QmRYJN6V5BzwnXp7A2Avcp5WXkgzyunQwqP3Es2Q789phF).

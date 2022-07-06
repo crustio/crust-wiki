@@ -14,7 +14,7 @@ This section of the wiki is divided into the following parts, or you can just le
 
 - [Store file with Crust Storage API](build-file-storing-demo.md) - An E2E full code sample of storing file with local IPFS or IPFS gateway.
 - [Store file with Crust IPFS Pinning Service API](build-file-storing-gw-demo.md) - And E2E full code sample of storing file with [IPFS W3Auth Gateway](build-ipfs-web3-auth-gateway.md) and [IPFS W3Auth Pinning Service](build-ipfs-w3auth-pinning-service.md).
-- [Crust API](https://apps.crust.network/docs/) - The Crust API documentation.
+- [Crust API](https://docs.crust.network/) - The Crust API documentation.
 - [Crust Rocky](build-rocky-guidance.md) - An open and free test network.
 - [Crust JS-SDK](https://github.com/crustio/crust.js) - The javascript SDK access to Crust.
 - [Crust Cross Chain Storage Solution](build-cross-chain-solution.md) - Crust's cross chain storage solution on both Polkadot ecosystem and other public platforms(Ethereum/Solana/Near/...)

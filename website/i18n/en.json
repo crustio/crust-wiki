@@ -6,12 +6,16 @@
     "tagline": "Wiki for Crust Network",
     "docs": {
       "appsStorageIssue": {
-        "title": "Apps Strorage Issue",
-        "sidebar_label": "Apps Strorage Issue"
+        "title": "Apps Storage Issue",
+        "sidebar_label": "Apps Storage Issue"
       },
-      "bridge": {
-        "title": "Bridge",
-        "sidebar_label": "Bridge"
+      "bridgeElrond": {
+        "title": "Elrond Bridge",
+        "sidebar_label": "Elrond Bridge"
+      },
+      "bridgeEth": {
+        "title": "Ethereum Bridge",
+        "sidebar_label": "Ethereum Bridge"
       },
       "build101": {
         "title": "Crust Storage 101",
@@ -129,10 +133,6 @@
         "title": "Crust Wallet",
         "sidebar_label": "Crust Wallet"
       },
-      "democracyGuide": {
-        "title": "Democracy Guide",
-        "sidebar_label": "Democracy Guide"
-      },
       "DSM": {
         "title": "DSM",
         "sidebar_label": "DSM"
@@ -152,6 +152,10 @@
       "glossary": {
         "title": "Glossary",
         "sidebar_label": "Glossary"
+      },
+      "governanceGuide": {
+        "title": "Governance Guide",
+        "sidebar_label": "Governance Guide"
       },
       "GPoS": {
         "title": "GPoS",

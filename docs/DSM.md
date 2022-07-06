@@ -54,7 +54,7 @@ The adjustment speed of byte fee is low. The byte fee only change when new stora
 ### Price Flow
 In order to maintain the interests of all parties and maintain the long-term and stable development of the crust network, different fee would be allocated to different parties.
 
-**Basic Fee**: Base fee would enter the market revenue pot. No one can recieve the base fee directly. The democratic module will vote on the use of the revenue from the market revenue pot.
+**Basic Fee**: Base fee would enter the market revenue pot. No one can recieve the base fee directly. The governance module will vote on the use of the revenue from the market revenue pot.
 
 **Byte Fee and Key Count Fee**: Part of the fee will enter the file reward pot, which would be allocated to the merchants who store the files. The remaining part will join the entire network staking reward pot. All validators and candidates would recieve this part.
 
