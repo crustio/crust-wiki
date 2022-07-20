@@ -100,7 +100,8 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 
 Next, we need to send a transaction named `Place Storage Order` on Crust chain, this transaction will dispatch your storage requirement to each Crust IPFS nodes through blockchain. Then the IPFS nodes will start pulling your file with IPFS protocol.
 
-> You can find more `crustChainEndpoint` on [LINK](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/endpoints/production.ts#L9).
+> You can find more `crustChainEndpoint` on [LINK](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/endpoints/production.ts#L9). Greatly improve the speed of `ipfsW3GW` by configuring [Meson CDN](https://docs.meson.network/mcdn-101.html).
+
 > You can create your own account(`seeds`) on [LINK](https://wiki.crust.network/docs/en/crustAccount).
 
 ```typescript
