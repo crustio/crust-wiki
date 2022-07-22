@@ -73,10 +73,6 @@
         "title": "Crust Storage Manager",
         "sidebar_label": "Crust Storage Manager"
       },
-      "claims": {
-        "title": "CRU 认领",
-        "sidebar_label": "CRU 认领"
-      },
       "claimBack": {
         "title": "CRU 转回",
         "sidebar_label": "CRU 转回"

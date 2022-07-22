@@ -89,10 +89,6 @@
         "title": "CSM Claim",
         "sidebar_label": "CSM Claim"
       },
-      "claims": {
-        "title": "CRU Claim",
-        "sidebar_label": "CRU Claim"
-      },
       "community": {
         "title": "Community",
         "sidebar_label": "Community"
