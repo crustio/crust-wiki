@@ -154,7 +154,7 @@ There's already some project used Crust Network to host their website applicatio
 
 ## Considerations
 
-When using [React-router-dom](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md) BrowserRouter should be replace by [HashRouter](https://v5.reactrouter.com/web/api/HashRouter)
+- When using [React-router-dom](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md) BrowserRouter should be replace by [HashRouter](https://v5.reactrouter.com/web/api/HashRouter)
 
 ## Resources
 
