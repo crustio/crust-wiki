@@ -152,6 +152,10 @@ There's already some project used Crust Network to host their website applicatio
 - 🟠 [Crust Apps](https://github.com/crustio/crust-apps/actions/workflows/release.yml): Use Crust IPFS Pin Github Action
 - *More*
 
+## Considerations
+
+- When using [React-router-dom](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md) BrowserRouter should be replace by [HashRouter](https://v5.reactrouter.com/web/api/HashRouter)
+
 ## Resources
 
 - [Uniswap](https://github.com/Uniswap/uniswap-interface)
