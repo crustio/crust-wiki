@@ -58,7 +58,8 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 
 - With [IPFS W3Authed Gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#authenticated-gateways)
 
-> You can find more `ipfsW3GW` endpoints on [LINK](https://github.com/crustio/ipfsscan/blob/main/lib/constans.ts#L29).
+> You can find more `ipfsW3GW` endpoints on [LINK](https://github.com/crustio/ipfsscan/blob/main/lib/constans.ts#L29). Greatly improve the speed of `ipfsW3GW` by configuring [Meson CDN](https://docs.meson.network/mcdn-101.html).
+
 > You can also find more `authHeader` web3 supports on [LINK](https://github.com/RoyTimes/crust-workshop/tree/master/src), the following exmaple just takes ethereum as example.
 
 ```typescript
