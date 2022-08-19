@@ -81,10 +81,6 @@
         "title": "CRU18 Claim",
         "sidebar_label": "CRU18 Claim"
       },
-      "claimCSM": {
-        "title": "CSM Claim",
-        "sidebar_label": "CSM Claim"
-      },
       "shadowClaimCSM": {
         "title": "CSM Claim",
         "sidebar_label": "CSM Claim"
