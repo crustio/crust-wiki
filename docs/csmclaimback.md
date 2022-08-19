@@ -8,7 +8,7 @@ If you want to **map Crust Maxwell CSM back to ERC20 CSM**, you can follow this 
 
 ## Attention
 
-1. Claim back **will not arrive in real time**, each claimback's date is: **15th of each month**
+1. Claim back **will not arrive in real time**, each claimback's cycle is: **3 months**
 2. **A certain amount of CSM will be deducted as  the Ethereum gas fee**, the claim back fee is: **1000 CSM**
 
 > **The sum of multiple transfers in the same claim back cycle needs to be greater than claim back fee**, if your claim back amount is less than the fee, it will be judged as invalid and will not be executed
