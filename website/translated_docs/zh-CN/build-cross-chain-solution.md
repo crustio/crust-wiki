@@ -158,7 +158,7 @@ Both XCMP-based pallet and native IPFS integration are already been used by seve
 - [XCMP] [Bifrost Network](https://bifrost.finance/)
 - [XCMP] [Robonomics Network](https://robonomics.network/)
 - [XCMP] [Phala Network](https://www.phala.network/)
-- [XCMP] [Turing Network](https://oak.tech/turing/home/)
+- [XCMP] [OAK Network](https://oak.tech/turing/home/)
 - [XCMP] [Darwinia Network](https://darwinia.network/)
 - [Native IPFS] [Polygon](https://polygon.technology/)
 - [Native IPFS] [Near](https://near.org/)
