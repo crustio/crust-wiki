@@ -167,6 +167,18 @@ You can sign the `PubKey` with one of your near private key associated with your
 You can sign the `Address` **without** chainID prefix, such as `avax1se4e9lvhlfwhcqnzjr0vpswqcnhsy5atn5r0l3`, with your X- or P- chain private key associated with your account to get the `SignedMsg`.
 
 - With [Avalanche Wallet](https://wallet.avax.network/wallet/advanced)
+
+### 8. With Apots
+
+#### Get `PubKey`
+
+`PubKey` is the aptos's account pubkey, such as `0xaa79510150c3a6753f224ef47a315ea6ae9acd23f4506a866feb25f8995c60c`. Please pay attention that it's not the same as the address.
+
+#### Get `SignedMsg`
+
+You can sign the `PubKey` with your aptos private key to get the `SignedMsg`
+
+- With [Martian Wallet](https://chrome.google.com/webstore/detail/martian-aptos-wallet/efbglgofoippbgcjepnhiblaibcnclgk)
 ## Deploy
 
 ### 1. Start MySQL
