@@ -65,12 +65,13 @@ ipfs pin remote service add crustpinner http://localhost:3000/psa base64(ChainTy
 
 `ChainType` is:
 
-1. `sub` (or `substrate`)
-2. `eth` (or `ethereum`)
-3. `sol` (or `solana`)
-4. `pol` (or `polygon`)
-5. `nea` (or `near`)
-6. `ava`(or `avalanche`)
+1. [`sub`(or `substrate`)](#1-with-substrate)
+2. [`eth`(or `ethereum`)](#2-with-ethereum)
+3. [`sol`(or `solana`)](#4-with-solana)
+4. [`pol` (or `polygon`)](#5-with-polygon)
+5. [`nea` (or `near`)](#6-with-near)
+6. [`ava`(or `avalanche`)](#7-with-avalanche)
+7. [`apt`(or `aptos`)](#8-with-apots)
 
 ### Get PubKey and SignedMsg
 
