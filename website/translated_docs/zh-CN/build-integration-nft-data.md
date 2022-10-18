@@ -29,13 +29,17 @@ The NFT trading platform serves the storage needs of NFT files by integrating Cr
 
 ### 1. Import NFT files into IPFS
 
-With the NFT platform running an IPFS node first, the platform can import NFT files into IPFS when NFT is generated.
+Import NFT files into IPFS by Crust IPFS Gateway when NFT is generated
 
+- Choose an [IPFS W3Auth Gateways](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-gateway-endpoints/index.ts)
+
+- Use the following default Web3 Auth Header or create your own Web3 Auth Header by refering this doc:[Get a Basic Authentication header](https://wiki.crust.network/docs/zh-CN/buildIPFSWeb3AuthGW#usage)
+ 
 ```shell
-curl --request POST 'http://127.0.0.1:5001/api/v0/add' --form '=@"/home/crust/FireCloud.png"
+curl --location --request POST 'https://crustwebsites.net/api/v0/add?pin=true' --header 'Authorization: Basic c3Vic3RyYXRlLWNUTWo5NnlLUWZzM20yeWVZQjVQcGl6Sld5UFV1UkRmZnRNN2dnNkFMRG5xUjViSEs6MHhlNDU0NmM5Y2MwOWViODdiYzNkNGNjODcyMjk0YzA5MTAwNmMzZGJlYTI3ZTM0MWU3ZDc0Yzk3MjVhMGE1MzQ0NTM5ZDVkZGMwZDgxZGI5YWU3MDg4OTE0MTljNWFiM2NiM2YxYWNkYWQwMTk4MDc2MzVjNmU2ZTQzNmU4Njg4OQ==' --form 'file=@"/home/crust/FireCloud.png"'
 ```
 
-Any file imported into IPFS will be given a unique CID (anyone can retrieve the file on IPFS Network by this CID).
+Any file imported into IPFS gateway will be given a unique CID (anyone can retrieve the file on IPFS Network by this CID).
 
 ```json
 {
@@ -172,12 +176,14 @@ where the value of `reported_replica_count` is the number of nodes that store th
 
 ### 4. NFT file retrieval and access
 
-The NFT trading platform provides [IPFS Getway](https://docs.ipfs.io/concepts/ipfs-gateway/#gateway-types) services, and it also integrates [Public IPFS Gateway](https://ipfs.github.io/public-gateway-checker/) services so that each NFT file can be accessed through a link that contains CID information. The front-end of the NFT trading platform builds on these links to present to users the multimedia information of the NFT.
+The NFT trading platform provides [IPFS Gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#gateway-types) services, and it also integrates [Public IPFS Gateway](https://ipfs.github.io/public-gateway-checker/) services so that each NFT file can be accessed through a link that contains CID information. The front-end of the NFT trading platform builds on these links to present to users the multimedia information of the NFT.
 
-For example, the NFT file: `Firecloud.png` can be accessed through the following ipfs public Gateway url:
+For example, the NFT file: `Firecloud.png` can be accessed through [IPFS Scan](https://ipfs-scan.io/)
+
+![pic](assets/build/scan1.png)
 
 ```url
-https://ipfs.io/ipfs/QmbLmgLUR1VZNpttojd752fyng8Bz3ZbPqabQ76MVLXT7P
+https://crustwebsites.net/ipfs/QmbLmgLUR1VZNpttojd752fyng8Bz3ZbPqabQ76MVLXT7P
 ```
 
 ![pic](assets/build/ipfsio-nft.png)
