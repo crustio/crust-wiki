@@ -39,7 +39,7 @@ const siteConfig = {
   ],
 
   /* path to images for header/footer */
-  headerIcon: "img/logo_crust_wiki.svg",
+  headerIcon: "img/logo_crust_shadow_wiki.svg",
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
