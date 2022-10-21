@@ -4,9 +4,9 @@ title: Store file with Crust IPFS Pinning Service API
 sidebar_label: Store file with Crust IPFS Pinning Service API
 ---
 
-This doc contains a code sample to demonstrate how to upload a file to [IPFS W3Auth Gateway](build-ipfs-w3auth-gateway.md), and place a storage order to get the file stored in Crust Network through [IPFS W3Auth Pinning Service](build-ipfs-w3auth-pinning-service.md). After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in DApp  hosting, NFT file storing, content/media delivery, cloud storage, etc.
+This doc contains a code sample to demonstrate how to upload a file to [IPFS W3Auth Gateway](build-ipfs-web3-auth-gateway.md), and place a storage order to get the file stored in Crust Network through [IPFS W3Auth Pinning Service](build-ipfs-w3auth-pinning-service.md). After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in DApp  hosting, NFT file storing, content/media delivery, cloud storage, etc.
 
-The code sample is open source on GitHub repo: https://github.com/crustio/crust-demo/tree/main/store-file-with-gateway
+The code sample is open source on GitHub repo: https://github.com/crustio/crust-demo/tree/main/store-file-with-pinner
 
 ## Overview
 
@@ -174,7 +174,7 @@ After pinned success, the demo will return
 ## Resources
 
 - [Code Demo](https://github.com/crustio/crust-demo)
-- [IPFS Http Client](https://github.com/crustio/crust-demo/tree/main/store-file-with-gateway)
+- [IPFS Http Client](https://github.com/crustio/crust-demo/tree/main/store-file-with-pinner)
 - [IPFS Gateway](https://docs.ipfs.io/concepts/ipfs-gateway/)
 - [IPFS Pinning Service](https://docs.ipfs.io/how-to/work-with-pinning-services/)
 - [IPFS W3Auth Gateway Full List](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-gateway-endpoints/index.ts)
