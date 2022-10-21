@@ -8,7 +8,7 @@ sidebar_label: Glossary
 
 **Crust Mainnet/Crust主网** - Crust主网，节点可以按照技术白皮书和经济白皮书描述的机制和参数执行并获得对应的通证奖励。用户可以在Crust主网使用Crust的全部存储功能。[参考阅读](crust-overview.md)
 
-**Crust Maxwell** - Crust预览网，在主网启动前进行全功能的测试和模拟。拥有跟主网一样的功能，参数可能略有不同。[参考阅读](https://wiki-maxwell.crust.network/docs/zh-CN/previewNetworkMaxwell)。
+**Crust Maxwell** - Crust预览网，在主网启动前进行全功能的测试和模拟。拥有跟主网一样的功能，参数可能略有不同。[参考阅读](https://wiki-shadow.crust.network/docs/zh-CN/previewNetworkMaxwell)。
 
 **Crust Shadow** - Crust Shadow是一个Kusama版本的Crust网络，一个早期未经审核发布的可用代码，并拥有真正的经济价值。
 
