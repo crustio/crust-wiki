@@ -42,19 +42,19 @@ class HomeNav extends React.Component {
         return (
             <NavContainer>
                 <NavItem
-                    href={this.props.docUrl("gettingStarted.html")}
+                    href={this.props.docUrl("csmgettingStarted.html")}
                     title="General"
                     content="Crust provides a decentralized storage network of Web3 ecosystem."
                     aosDelay="0"
                 />
                 <NavItem
-                    href={this.props.docUrl("buildGettingStarted.html")}
+                    href={this.props.docUrl("buildcomming.html")}
                     title="Build"
                     content="Build your decentralized application on Crust Network."
                     aosDelay="300"
                 />
                 <NavItem
-                    href={this.props.docUrl("nodeOverview.html")}
+                    href={this.props.docUrl("nodecomming.html")}
                     title="Node"
                     content="Information and guides on how to deploy a node and run the network."
                     aosDelay="600"

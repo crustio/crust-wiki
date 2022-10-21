@@ -73,6 +73,10 @@
         "title": "Crust Storage Manager",
         "sidebar_label": "Crust Storage Manager"
       },
+      "buildcomming": {
+        "title": "Comming soon.",
+        "sidebar_label": "Comming soon."
+      },
       "claimBack": {
         "title": "CRU Claim Back",
         "sidebar_label": "CRU Claim Back"
@@ -81,9 +85,17 @@
         "title": "CRU18 Claim",
         "sidebar_label": "CRU18 Claim"
       },
+      "claimCSM": {
+        "title": "CSM Claim",
+        "sidebar_label": "CSM Claim"
+      },
       "shadowClaimCSM": {
         "title": "CSM Claim",
         "sidebar_label": "CSM Claim"
+      },
+      "claims": {
+        "title": "CRU Claim",
+        "sidebar_label": "CRU Claim"
       },
       "community": {
         "title": "Community",
@@ -116,6 +128,10 @@
       "crustWallet": {
         "title": "Crust Wallet",
         "sidebar_label": "Crust Wallet"
+      },
+      "csmgettingStarted": {
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
       },
       "bridgeShadow": {
         "title": "Shadow Bridge",
@@ -165,6 +181,10 @@
         "title": "Isolation Node",
         "sidebar_label": "Isolation Node"
       },
+      "learncomming": {
+        "title": "Comming soon.",
+        "sidebar_label": "Comming soon."
+      },
       "manage-files-in-JS-APPS": {
         "title": "manage-files-in-JS-APPS"
       },
@@ -187,6 +207,10 @@
       "nodeOverview": {
         "title": "Node Overview",
         "sidebar_label": "Node Overview"
+      },
+      "nodecomming": {
+        "title": "Comming soon.",
+        "sidebar_label": "Comming soon."
       },
       "orderSettlement": {
         "title": "Order Settlement",
@@ -224,6 +248,10 @@
         "title": "Storage Merchant",
         "sidebar_label": "Storage Merchant"
       },
+      "storagecomming": {
+        "title": "Comming soon.",
+        "sidebar_label": "Comming soon."
+      },
       "storageOverview": {
         "title": "Overview",
         "sidebar_label": "Overview"
@@ -260,7 +288,7 @@
       "Build": "Build",
       "Node": "Node",
       "Storage": "Storage",
-      "Crust Shadow": "Crust Shadow"
+      "Maxwell": "Maxwell"
     }
   },
   "pages-strings": {

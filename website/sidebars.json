@@ -1,6 +1,23 @@
 {
   "docs": {
     "General": [
+      "csmgettingStarted",
+      "bridgeShadow",
+      "shadowClaimCSM"
+    ],
+    "Learn": [
+      "learncomming"
+    ],
+    "Build": [
+      "buildcomming"      
+    ],
+    "Node": [
+      "nodecomming"
+    ],
+    "Storage": [
+      "storagecomming"
+    ],
+    "Maxwell": [
       "gettingStarted",
       "previewNetworkMaxwell",
       "crustGrants",
@@ -11,9 +28,7 @@
       "crustWallet",
       "glossary",
       "community",
-      "contributing"
-    ],
-    "Learn": [
+      "contributing",
       "crustAccount",
       "crustTokens",
       "newBond",
@@ -24,40 +39,17 @@
       "GPoS",
       "DSM",
       "bitSwap",
-      "democracyGuide"
-    ],
-    "Build": [
-      "buildGettingStarted",
-      {
-        "type": "subcategory",
-        "label": "Development Guide",
-        "ids": [
-          "buildHelloCrust",
-          "buildRockyGuidance",
-          "buildDevGuidance",
-          "buildCrustKits"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Integration Guide",
-        "ids": [
-          "buildIntegrationOverview",
-          "buildIntegrationWebsiteHosting",
-          "buildIntegrationContentStorageDelivery",
-          "buildIntegrationNFTDataStorage"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Miner Guide",
-        "ids": [
-          "buildSmanager",
-          "buildNode"
-        ]
-      }
-    ],
-    "Node": [
+      "democracyGuide",
+      "buildHelloCrust",
+      "buildRockyGuidance",
+      "buildDevGuidance",
+      "buildCrustKits",
+      "buildIntegrationOverview",
+      "buildIntegrationWebsiteHosting",
+      "buildIntegrationContentStorageDelivery",
+      "buildIntegrationNFTDataStorage",
+      "buildSmanager",
+      "buildNode",
       "nodeOverview",
       "nodeHardwareSpec",
       "ownerNode",
@@ -66,9 +58,7 @@
       "validatorGuidance",
       "guarantorGuidance",
       "parameters",
-      "Q&AForMining"
-    ],
-    "Storage": [
+      "Q&AForMining",
       "storageOverview",
       "storageUserGuide",
       "merchantGuidance",
@@ -76,10 +66,6 @@
       "appsStorageIssue",
       "crustStorageExplorer",
       "Q&AForStorage"
-    ],
-    "Crust Shadow": [
-      "bridgeShadow",
-      "shadowClaimCSM"
     ]
   }
 }
