@@ -18,54 +18,85 @@
       "storagecomming"
     ],
     "Maxwell": [
-      "gettingStarted",
-      "previewNetworkMaxwell",
-      "crustGrants",
-      "bridgeEth",
-      "claimBack",
-      "claimCRU18",
-      "csmclaimback",
-      "crustWallet",
-      "glossary",
-      "community",
-      "contributing",
-      "crustAccount",
-      "crustTokens",
-      "newBond",
-      "sWorkerGuide",
-      "guarantor",
-      "validator",
-      "storageMerchant",
-      "GPoS",
-      "DSM",
-      "bitSwap",
-      "democracyGuide",
-      "buildHelloCrust",
-      "buildRockyGuidance",
-      "buildDevGuidance",
-      "buildCrustKits",
-      "buildIntegrationOverview",
-      "buildIntegrationWebsiteHosting",
-      "buildIntegrationContentStorageDelivery",
-      "buildIntegrationNFTDataStorage",
-      "buildSmanager",
-      "buildNode",
-      "nodeOverview",
-      "nodeHardwareSpec",
-      "ownerNode",
-      "memberNode",
-      "isolationNode",
-      "validatorGuidance",
-      "guarantorGuidance",
-      "parameters",
-      "Q&AForMining",
-      "storageOverview",
-      "storageUserGuide",
-      "merchantGuidance",
-      "orderSettlement",
-      "appsStorageIssue",
-      "crustStorageExplorer",
-      "Q&AForStorage"
+      {
+        "type": "subcategory",
+        "label": "General",
+        "ids": [
+  	  "gettingStarted",
+    	  "previewNetworkMaxwell",
+     	  "crustGrants",
+       	  "bridgeEth",
+     	  "claimBack",
+      	  "claimCRU18",
+      	  "csmclaimback",
+     	  "crustWallet",
+          "glossary",
+          "community",
+          "contributing"
+        ]
+  	},
+      {
+        "type": "subcategory",
+        "label": "Learn",
+        "ids": [
+          "crustAccount",
+    	  "crustTokens",
+       	  "newBond",
+    	  "sWorkerGuide",
+    	  "guarantor",
+    	  "validator",
+    	  "storageMerchant",
+     	  "GPoS",
+	  "DSM",
+    	  "bitSwap",
+    	  "democracyGuide"
+	]
+	},
+      {
+        "type": "subcategory",
+        "label": "Build",
+        "ids": [
+	  "buildGettingStarted",
+    	  "buildHelloCrust",
+     	  "buildRockyGuidance",
+     	  "buildDevGuidance",
+   	  "buildCrustKits",
+     	  "buildIntegrationOverview",
+     	  "buildIntegrationWebsiteHosting",
+    	  "buildIntegrationContentStorageDelivery",
+     	  "buildIntegrationNFTDataStorage",
+    	  "buildSmanager",
+     	  "buildNode"
+	]
+	},
+      {
+        "type": "subcategory",
+        "label": "Node",
+        "ids": [
+    	  "nodeOverview",
+    	  "nodeHardwareSpec",
+    	  "ownerNode",
+    	  "memberNode",
+    	  "isolationNode",
+    	  "validatorGuidance",
+      	  "guarantorGuidance",
+    	  "parameters",
+    	  "Q&AForMining"
+	]
+	},
+      {
+        "type": "subcategory",
+        "label": "Storage",
+        "ids": [
+    	  "storageOverview",
+    	  "storageUserGuide",
+    	  "merchantGuidance",
+    	  "orderSettlement",
+   	  "appsStorageIssue",
+    	  "crustStorageExplorer",
+    	  "Q&AForStorage"
+	]	
+	}
     ]
   }
 }
