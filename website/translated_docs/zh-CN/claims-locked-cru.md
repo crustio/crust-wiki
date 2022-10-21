@@ -8,7 +8,7 @@ sidebar_label: LockedCRU Claims
 
 ## 注意
 
-这篇教程仅针对已经在[Maxwell进行过锁定CRU认领](https://wiki-maxwell.crust.network/docs/zh-CN/claimCRU18)的用户，**目前Maxwell上的锁定CRU认领已经结束，对于尚未在Maxwell进行认领的用户，请等待主网链上治理模块开放后进行操作**。
+这篇教程仅针对已经在[Maxwell进行过锁定CRU认领](https://wiki-shadow.crust.network/docs/zh-CN/claimCRU18)的用户，**目前Maxwell上的锁定CRU认领已经结束，对于尚未在Maxwell进行认领的用户，请等待主网链上治理模块开放后进行操作**。
 
 ## 1. 浏览器插件钱包
 
