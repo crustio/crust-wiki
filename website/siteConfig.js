@@ -30,7 +30,7 @@ const siteConfig = {
   projectName: 'crust-wiki',
   organizationName: 'crust network',
   headerLinks: [
-    {doc: 'gettingStarted', label: 'Docs'},
+    {doc: 'csmgettingStarted', label: 'Docs'},
     // {blog: true, label: 'Blog'},
     {href: 'https://wiki.crust.network', label: 'Mainnet'},
     {search: true},
@@ -39,7 +39,7 @@ const siteConfig = {
   ],
 
   /* path to images for header/footer */
-  headerIcon: "img/logo_crust_wiki.svg",
+  headerIcon: "img/logo_crust_shadow_wiki.svg",
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
