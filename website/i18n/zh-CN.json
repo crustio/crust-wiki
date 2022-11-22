@@ -45,6 +45,10 @@
         "title": "Crust SDK",
         "sidebar_label": "Crust SDK"
       },
+      "devforset": {
+        "title": "Develop for set",
+        "sidebar_label": "Develop for set"
+      },
       "buildCrustJs": {
         "title": "crust.js",
         "sidebar_label": "crust.js"

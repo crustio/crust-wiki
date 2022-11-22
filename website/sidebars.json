@@ -50,6 +50,7 @@
         "type": "subcategory",
         "label": "Basics",
         "ids": [
+	  "devforset",	
           "buildRockyGuidance",
           "buildFileStoringDemo",
           "buildFileStoringWithGWDemo",
