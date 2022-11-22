@@ -133,9 +133,9 @@
         "title": "Crust Wallet",
         "sidebar_label": "Crust Wallet"
       },
-      "devfaucet": {
-        "title": "Develop faucet",
-        "sidebar_label": "Develop faucet"
+      "developerfaucet": {
+        "title": "Developer faucet",
+        "sidebar_label": "Developer faucet"
       },
       "DSM": {
         "title": "DSM",

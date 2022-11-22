@@ -1,7 +1,7 @@
 ---
-id: devfaucet
-title: Develop faucet
-sidebar_label: Develop faucet
+id: developerfaucet
+title: Developer faucet
+sidebar_label: Developer faucet
 ---
 
 ## Description
