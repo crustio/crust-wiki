@@ -45,6 +45,10 @@
         "title": "Crust SDK",
         "sidebar_label": "Crust SDK"
       },
+      "developerfaucet": {
+        "title": "Developer faucet",
+        "sidebar_label": "Developer faucet"
+      },
       "buildCrustJs": {
         "title": "crust.js",
         "sidebar_label": "crust.js"

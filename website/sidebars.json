@@ -50,6 +50,7 @@
         "type": "subcategory",
         "label": "Basics",
         "ids": [
+	  "developerfaucet",	
           "buildRockyGuidance",
           "buildFileStoringDemo",
           "buildFileStoringWithGWDemo",
