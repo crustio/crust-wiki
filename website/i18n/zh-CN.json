@@ -45,9 +45,9 @@
         "title": "Crust SDK",
         "sidebar_label": "Crust SDK"
       },
-      "devforset": {
-        "title": "Develop for set",
-        "sidebar_label": "Develop for set"
+      "devfaucet": {
+        "title": "Develop faucet",
+        "sidebar_label": "Develop faucet"
       },
       "buildCrustJs": {
         "title": "crust.js",

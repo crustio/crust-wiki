@@ -1,7 +1,7 @@
 ---
-id: devforset
-title: Develop for set
-sidebar_label: Develop for set
+id: devfaucet
+title: Develop faucet
+sidebar_label: Develop faucet
 ---
 
 ## Description
