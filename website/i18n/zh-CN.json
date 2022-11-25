@@ -25,6 +25,14 @@
         "title": "内容存储与分发",
         "sidebar_label": "内容存储与分发"
       },
+      "buildXCMPBasedCrossChainSolution": {
+        "title": "基于XCMP的跨链存储解决方案",
+        "sidebar_label": "基于XCMP的跨链存储解决方案"
+      },
+      "buildNativeIPFSBasedCrossChainSolution": {
+        "title": "基于原生IPFS的跨链存储解决方案",
+        "sidebar_label": "基于原生IPFS的跨链存储解决方案"
+      },
       "buildIntegrationOverview": {
         "title": "总览",
         "sidebar_label": "总览"
