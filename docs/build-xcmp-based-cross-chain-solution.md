@@ -24,7 +24,7 @@ As the fundamental of Web3 ecosystem, dStorage is designed to serve the entire w
 There are many smart contract platforms such as Ethereum, Polkadot, Near, Polygon, Solana... Every platform has its own DApp ecosystem. Web3 users use different identities to call smart contracts on each blockchain. And providing dStorage to users on different blockchains becomes a basic requirement for dStorage projects.
 
 ## Solution
-As a dStorage project in the Polkadot ecosystem, Crust builds on top of S[ubstrate](https://github.com/paritytech/substrate) and provides a native cross-chain communication pallet based on [XCMP](https://wiki.polkadot.network/docs/learn-crosschain)(Cross-Chain Message Passing) called [***xStorage***](https://github.com/crustio/crust/tree/parachain/shadow/crust-collator/pallets/xstorage). The basic idea of xStorage shows below:
+As a dStorage project in the Polkadot ecosystem, Crust builds on top of [Substrate](https://github.com/paritytech/substrate) and provides a native cross-chain communication pallet based on [XCMP](https://wiki.polkadot.network/docs/learn-crosschain)(Cross-Chain Message Passing) called [***xStorage***](https://github.com/crustio/crust/tree/parachain/shadow/crust-collator/pallets/xstorage). The basic idea of xStorage shows below:
 
 ![xcmp](assets/build/build-cross-chain-xcmp.png)
 

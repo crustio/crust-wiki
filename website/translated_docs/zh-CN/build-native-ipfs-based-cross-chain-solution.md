@@ -127,5 +127,5 @@ Also, the IPFS W3Auth gateway(GW) and pinning service(PS) are integrated by seve
 
 - [PS] Uniswap: take it as release CD flow by using Github Action, details can be checked [here](https://github.com/Uniswap/interface/blob/main/.github/workflows/release.yaml#L58-L64)
 - [PS] Liquity: take it as the only decentralized frontend, details can be checked [here](https://github.com/liquity/frontend-registry/blob/main/frontends/liquity_crust.md)
-- [PS] Polkadot Apps: take it as release CD flow by using node.js script, details can be checked [here](https://github.com/polkadot-js/apps/blob/master/scripts/ipfsUpload.cjs)
+- [PS] Polkadot Apps: take it as release CD flow by using node.js script, details can be checked [here](https://github.com/polkadot-js/apps/blob/master/scripts/ipfsUpload.mjs)
 - [PS] IPFS Docs: host by using command-line tool, details can be checked [here](https://github.com/ipfs/ipfs-docs)
