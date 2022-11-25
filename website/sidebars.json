@@ -50,11 +50,18 @@
         "type": "subcategory",
         "label": "Basics",
         "ids": [
-	  "developerfaucet",	
+	        "developerfaucet",	
           "buildRockyGuidance",
           "buildFileStoringDemo",
-          "buildFileStoringWithGWDemo",
-          "buildCrossChainSolution"
+          "buildFileStoringWithGWDemo"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Crosschain Storage Solution",
+        "ids": [
+	        "buildXCMPBasedCrossChainSolution",	
+          "buildNativeIPFSBasedCrossChainSolution"
         ]
       },
       {
