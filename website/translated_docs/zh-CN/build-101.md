@@ -29,6 +29,8 @@ First, you need to upload the file to the IPFS network(cached on a long-running 
 - Learn the gateways' performance on [LINK](https://github.com/crustio/ipfs-w3auth-gateway/blob/main/docs/PERFORMANCE.md#summary)
 - More IPFS HTTP APIs on [LINK](https://docs.ipfs.io/reference/http/api/)
 
+Specially, [Cloud3](https://cloud3.cc) provides a different implementation of [authenticated gateway](https://docs.ipfs.tech/concepts/ipfs-gateway/#authenticated-gateways) based on [W3Bucket NFT](https://docs.cloud3.cc/w3bucket/aboutnft), which is also **100% compatible with standard IPFS HTTP interfaces**. Check the [LINK](https://docs.cloud3.cc/w3bucket/aboutnft) for more details.
+
 **For the 2nd way**, you need to install IPFS and keep it running background. More details can be referred to IPFS docs:
 
 - Learn how to install IPFS on [LINK](https://docs.ipfs.io/install/)
@@ -59,6 +61,8 @@ Then, you need to "tell" Crust storage nodes that the file is ready to be stored
     - All Ethereum-compatible chains: Polygon, Moonriver, BSC, ...
     - All substrate-compatible chains: Polkadot, Kusama, Acala, Clover, ...
     - Others: Elrond, Solana, Flow, and Near
+
+If you are using [Cloud3 W3Bucket](https://docs.cloud3.cc/w3bucket/aboutnft) on ethereum mainnet, check the [LINK](https://docs.cloud3.cc/w3bucket/uploadfile) to learn how to call Cloud3 storage API with [W3Auth Token](https://docs.cloud3.cc/w3auth).
 
 After you "told" Crust storage nodes, they're starting pulling the file through the IPFS network. After a few minutes, you can [query the file's storage status on-chain](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/chainstate):
 
@@ -113,6 +117,7 @@ That's a brief introduction to Crust's storage process, but in the Crust world, 
 2. [AAVE deploy process](https://github.com/aave/aave-ui/blob/master/.github/workflows/deploy_prod.yml#L28-L34) with Crust Pinner Github action
 3. [Polkadot deploy process](https://github.com/polkadot-js/apps/blob/master/scripts/ipfsUpload.mjs#L94-L97) with Crust Pinner node package
 4. [Crust Files](https://github.com/crustio/crust-files) - the E2E storage process
+5. [W3Bucket](https://github.com/decooio/w3bucket-contracts) - an NFT gated Web3 Cloud Storage solution provided by [Cloud3](https://cloud3.cc)
 
 **Demos/Code Tutorials**
 
