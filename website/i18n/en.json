@@ -93,6 +93,10 @@
         "title": "Crust Storage Manager",
         "sidebar_label": "Crust Storage Manager"
       },
+      "buildSmartContractBasedCrossChainSolution": {
+        "title": "Crust's Smart contract cross-chain dStorage solution",
+        "sidebar_label": "Crust's Smart contract cross-chain dStorage solution"
+      },
       "buildXCMPBasedCrossChainSolution": {
         "title": "Crust's XCMP-based cross-chain dStorage solution",
         "sidebar_label": "Crust's XCMP-based cross-chain dStorage solution"

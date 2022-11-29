@@ -25,6 +25,10 @@
         "title": "内容存储与分发",
         "sidebar_label": "内容存储与分发"
       },
+      "buildSmartContractBasedCrossChainSolution": {
+        "title": "基于智能合约的跨链存储解决方案",
+        "sidebar_label": "基于智能合约的跨链存储解决方案"
+      },
       "buildXCMPBasedCrossChainSolution": {
         "title": "基于XCMP的跨链存储解决方案",
         "sidebar_label": "基于XCMP的跨链存储解决方案"
