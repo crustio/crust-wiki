@@ -41,6 +41,7 @@ Storage Smart Contract is deployed by Crust Network on various blockchain platfo
 - [Ethereum](https://github.com/crustio/eth-storage-contract/blob/main/contracts/StorageOrder.sol)
 - [Arbitrum one](https://github.com/crustio/eth-storage-contract/blob/main/contracts/StorageOrderCompatible.sol)
 - [Polygon](https://github.com/crustio/eth-storage-contract/blob/main/contracts/StorageOrderCompatible.sol)
+- [Astar](https://github.com/crustio/eth-storage-contract/blob/main/contracts/StorageOrderAstar.sol)
 - [Aptos](https://github.com/crustio/aptos-storage-contract)
 - [Elrond](https://github.com/crustio/elrond-storage-contract)
 
@@ -105,5 +106,6 @@ Storage Smart Contract has already been used by several platforms including:
 - [Smart Contract] [Ethereum](https://etherscan.io/address/0x6e9469673257e21b3e75bb9292c9ab009bc481d4)
 - [Smart Contract] [Arbitrum one](https://arbiscan.io/address/0x6E9469673257E21B3E75bb9292c9aB009bc481D4)
 - [Smart Contract] [Polygon](https://polygonscan.com/address/0xE1E8ff8e51DA7066CB1009a4c1dE68AE2d095655)
+- [Smart Contract] [Astar](https://blockscout.com/shiden/address/0xd220d916c2C11E7322ee0a8C9648D186946d4210)
 - [Smart Contract] [Aptos](https://explorer.aptoslabs.com/account/0x59c6f5359735a27beba04252ae5fee4fc9c6ec0b7e22dab9f5ed7173283c54d0)
 - [Smart Contract] [Elrond](https://explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq9z44nz6t6nheyflvfh94syzky84gk0d8j3vss49tnh)
