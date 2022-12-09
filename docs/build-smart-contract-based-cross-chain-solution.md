@@ -106,6 +106,6 @@ Storage Smart Contract has already been used by several platforms including:
 - [Smart Contract] [Ethereum](https://etherscan.io/address/0x6e9469673257e21b3e75bb9292c9ab009bc481d4)
 - [Smart Contract] [Arbitrum one](https://arbiscan.io/address/0x6E9469673257E21B3E75bb9292c9aB009bc481D4)
 - [Smart Contract] [Polygon](https://polygonscan.com/address/0xE1E8ff8e51DA7066CB1009a4c1dE68AE2d095655)
-- [Smart Contract] [Astar](https://blockscout.com/shiden/address/0xd220d916c2C11E7322ee0a8C9648D186946d4210)
+- [Smart Contract] [Astar](https://blockscout.com/shiden/address/0x10f15729aEFB5165a90be683DC598070F91367F0)
 - [Smart Contract] [Aptos](https://explorer.aptoslabs.com/account/0x59c6f5359735a27beba04252ae5fee4fc9c6ec0b7e22dab9f5ed7173283c54d0)
 - [Smart Contract] [Elrond](https://explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq9z44nz6t6nheyflvfh94syzky84gk0d8j3vss49tnh)
