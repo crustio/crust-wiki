@@ -75,7 +75,7 @@ crust-cli status QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
 
 **Congrats**, you can now access your website via any standard IPFS interface and gateway, such as following public IPFS gateway that Crust contributes:
 
-https://crustwebsites.net/ipfs/QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
+https://gw.crustfiles.app/ipfs/QmYene5icko1cusFCG9D92YUyfonN4hmRPNdPkxvJkNjTb
 
 ![hello-crust](assets/build/hello-crust.png)
 

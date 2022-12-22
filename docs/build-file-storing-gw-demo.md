@@ -52,7 +52,7 @@ const authHeader = Buffer.from(`sub-${pair.address}:${sigHex}`).toString('base64
 const { create, globSource } = require('ipfs-http-client');
 
 // IPFS Web3 Authed Gateway address
-const ipfsGateway = 'https://crustwebsites.net';
+const ipfsGateway = 'https://gw.crustfiles.app';
 
 // 3. Create ipfs http client
 const ipfs = create({
