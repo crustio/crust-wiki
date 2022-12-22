@@ -36,7 +36,7 @@ Import NFT files into IPFS by Crust IPFS Gateway when NFT is generated
 - Use the following default Web3 Auth Header or create your own Web3 Auth Header by refering this doc:[Get a Basic Authentication header](https://wiki.crust.network/docs/zh-CN/buildIPFSWeb3AuthGW#usage)
  
 ```shell
-curl --location --request POST 'https://crustwebsites.net/api/v0/add?pin=true' --header 'Authorization: Basic c3Vic3RyYXRlLWNUTWo5NnlLUWZzM20yeWVZQjVQcGl6Sld5UFV1UkRmZnRNN2dnNkFMRG5xUjViSEs6MHhlNDU0NmM5Y2MwOWViODdiYzNkNGNjODcyMjk0YzA5MTAwNmMzZGJlYTI3ZTM0MWU3ZDc0Yzk3MjVhMGE1MzQ0NTM5ZDVkZGMwZDgxZGI5YWU3MDg4OTE0MTljNWFiM2NiM2YxYWNkYWQwMTk4MDc2MzVjNmU2ZTQzNmU4Njg4OQ==' --form 'file=@"/home/crust/FireCloud.png"'
+curl --location --request POST 'https://gw.crustfiles.app/api/v0/add?pin=true' --header 'Authorization: Basic c3Vic3RyYXRlLWNUTWo5NnlLUWZzM20yeWVZQjVQcGl6Sld5UFV1UkRmZnRNN2dnNkFMRG5xUjViSEs6MHhlNDU0NmM5Y2MwOWViODdiYzNkNGNjODcyMjk0YzA5MTAwNmMzZGJlYTI3ZTM0MWU3ZDc0Yzk3MjVhMGE1MzQ0NTM5ZDVkZGMwZDgxZGI5YWU3MDg4OTE0MTljNWFiM2NiM2YxYWNkYWQwMTk4MDc2MzVjNmU2ZTQzNmU4Njg4OQ==' --form 'file=@"/home/crust/FireCloud.png"'
 ```
 
 Any file imported into IPFS gateway will be given a unique CID (anyone can retrieve the file on IPFS Network by this CID).
@@ -183,7 +183,7 @@ For example, the NFT file: `Firecloud.png` can be accessed through [IPFS Scan](h
 ![pic](assets/build/scan1.png)
 
 ```url
-https://crustwebsites.net/ipfs/QmbLmgLUR1VZNpttojd752fyng8Bz3ZbPqabQ76MVLXT7P
+https://gw.crustfiles.app/ipfs/QmbLmgLUR1VZNpttojd752fyng8Bz3ZbPqabQ76MVLXT7P
 ```
 
 ![pic](assets/build/ipfsio-nft.png)

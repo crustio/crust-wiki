@@ -134,7 +134,7 @@ Crust also provides standard Github Action to help host website, you can refer [
 
 It uses 2 Github Actions provided by Crust Network:
 
-- [Crust IPFS Upload](https://github.com/marketplace/actions/crust-ipfs-upload): This action helps to upload website onto Public IPFS Gateway - [crustwebsites.net](https://crustwebsites.net/ipfs/bafybeifx7yeb55armcsxwwitkymga5xf53dxiarykms3ygqic223w5sk3m#x-ipfs-companion-no-redirect), this action also can be replaced by some pin services, such as [Pinata Workflow](https://github.com/marketplace/actions/ipfs-pinata-deploy-github-action), [IPFS Cluster Workflow](https://github.com/marketplace/actions/add-to-ipfs), ...
+- [Crust IPFS Upload](https://github.com/marketplace/actions/crust-ipfs-upload): This action helps to upload website onto Public IPFS Gateway - [gw.crustfiles.app](https://gw.crustfiles.app/ipfs/bafybeifx7yeb55armcsxwwitkymga5xf53dxiarykms3ygqic223w5sk3m#x-ipfs-companion-no-redirect), this action also can be replaced by some pin services, such as [Pinata Workflow](https://github.com/marketplace/actions/ipfs-pinata-deploy-github-action), [IPFS Cluster Workflow](https://github.com/marketplace/actions/add-to-ipfs), ...
 - [Crust IPFS Pin](https://github.com/marketplace/actions/crust-ipfs-pin): This action helps to place a storage order(IPFS CID) on Chain, then the storage nodes will pull the file from local/gateway's IPFS and decentralized stored by the whole network.
 
 ## [Optional] Link a domain

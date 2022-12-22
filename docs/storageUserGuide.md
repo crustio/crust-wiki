@@ -173,7 +173,7 @@ To retrieve files via IPFS, please go to the "Files" page, click on "Import", se
 
 If don't have IPFS installed, you can also access files through any IPFS Gateway. Some commonly used public IPFS Gateways can be found [here](https://ipfs.github.io/public-gateway-checker/).
 
-> An example: If we want to access the file with CID: QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv through Crust Gateway, we can directly go to URL:`https://crustwebsites.net/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`
+> An example: If we want to access the file with CID: QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv through Crust Gateway, we can directly go to URL:`https://gw.crustfiles.app/ipfs/QmZcHFJy8wMpCH3gr6mEojszEv3k2MrSCF31PCVRQq3NQv`
 
 ## 2. For non-IPFS users / "Upload files by Gateway"
 

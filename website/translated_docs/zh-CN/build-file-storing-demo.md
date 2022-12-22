@@ -99,7 +99,7 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 
 ### 2. Upload folder
 
-> For folder upload, refer to this [link](https://www.npmjs.com/package/ipfs-http-client) to build. It is recommended to use this gateway: `https://crustwebsites.net`, or build a local IPFS node with a good network for uploading. At the same time, during the upload process, you can record the cids value of the file in the folder or call the IPFS command to obtain the cids value contained in the folder after the upload is completed. The code is as follows:
+> For folder upload, refer to this [link](https://www.npmjs.com/package/ipfs-http-client) to build. It is recommended to use this gateway: `https://gw.crustfiles.app`, or build a local IPFS node with a good network for uploading. At the same time, during the upload process, you can record the cids value of the file in the folder or call the IPFS command to obtain the cids value contained in the folder after the upload is completed. The code is as follows:
 
 ```typescript
 import { create } from 'ipfs-http-client'
