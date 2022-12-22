@@ -58,7 +58,8 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 
 - With [IPFS W3Authed Gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#authenticated-gateways)
 
-> You can find more `ipfsW3GW` endpoints on [LINK](https://github.com/crustio/ipfsscan/blob/main/lib/constans.ts#L29).
+> You can find more `ipfsW3GW` endpoints on [LINK](https://github.com/crustio/ipfsscan/blob/main/lib/constans.ts#L29). Greatly improve the speed of `ipfsW3GW` by configuring [Meson CDN](https://docs.meson.network/mcdn-101.html).
+
 > You can also find more `authHeader` web3 supports on [LINK](https://github.com/RoyTimes/crust-workshop/tree/master/src), the following exmaple just takes ethereum as example.
 
 ```typescript
@@ -96,12 +97,35 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 }
 ```
 
-### 2. Place storage order
+### 2. Upload folder
+
+> For folder upload, refer to this [link](https://www.npmjs.com/package/ipfs-http-client) to build. It is recommended to use this gateway: `https://crustwebsites.net`, or build a local IPFS node with a good network for uploading. At the same time, during the upload process, you can record the cids value of the file in the folder or call the IPFS command to obtain the cids value contained in the folder after the upload is completed. The code is as follows:
+
+```typescript
+import { create } from 'ipfs-http-client'
+
+async function addFile(ipfs: IPFS.IPFS, rootCid: any) {
+    ...
+
+    // Get links from ipfs
+    for await (const link of this.ipfs.ls(rootCid)) {
+		console.log(link);
+    }
+	...
+}
+```
+
+In addition, after `Place storage order`, you can use the folder-analyzer service to obtain directly, see the 4 section for details.
+
+### 3. Place storage order
 
 Next, we need to send a transaction named `Place Storage Order` on Crust chain, this transaction will dispatch your storage requirement to each Crust IPFS nodes through blockchain. Then the IPFS nodes will start pulling your file with IPFS protocol.
 
 > You can find more `crustChainEndpoint` on [LINK](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/endpoints/production.ts#L9).
+
 > You can create your own account(`seeds`) on [LINK](https://wiki.crust.network/docs/en/crustAccount).
+
+> `If it's a folder, please set memo = 'folder'`
 
 ```typescript
 import { ApiPromise, WsProvider } from '@polkadot/api';
@@ -121,6 +145,7 @@ async function placeStorageOrder() {
     const fileCid = 'Qm123'; // IPFS CID, take `Qm123` as example
     const fileSize = 2 * 1024 * 1024 * 1024; // Let's say 2 gb(in byte)
     const tips = 0;
+    // If it's a folder, please set memo = 'folder'
     const memo = '';
     const tx = api.tx.market.placeStorageOrder(fileCid, fileSize, tips, memo);
 
@@ -152,7 +177,41 @@ async function placeStorageOrder() {
 }
 ```
 
-### 3. Query order status
+### 4. Folder information
+
+If you store a folder in Crust. Through the [folder analyzer service](https://github.com/crustio/folder-analyzer), you can obtain relevant information about the folder you placed the order in. There is a certain delay in updating this information, which is determined by the network environment.
+
+#### 4.1 Get the cids value contained in the folder
+
+- request
+```shell
+curl --request GET 'https://folderanalyzer.crustapps.net/api/v1/cids?root=QmQZYQaq48KkY7nWbpfWh8kyEh21yehwPk5xoofnLFVGtV'
+```
+- result:
+
+```json
+[
+    "QmcWkLckbnxFh3rAHqPFgAkCdTuHQjkDJwdNnMZEMmKWNP",
+    "QmbFEPbHcCVT5XHio78GfQBxT1WJhYB4dY9Bujbcjw9HEG",
+    "QmZPVr2ZWX96uA7cP6m7bAkJbKKSpu5Rd4wgb6EWtjcdFp"
+]
+```
+
+#### 4.2 Get the root of the folder to which the cid belongs
+
+- request
+```shell
+curl --request GET 'https://folderanalyzer.crustapps.net/api/v1/root?cid=QmZPVr2ZWX96uA7cP6m7bAkJbKKSpu5Rd4wgb6EWtjcdFp'
+```
+
+- result:
+```json
+QmQZYQaq48KkY7nWbpfWh8kyEh21yehwPk5xoofnLFVGtV
+```
+
+Additional information such as the number of copies can be obtained on the crust chain by using the root cid of the folder
+
+### 5. Query order status
 
 Then, you can query the order `status{replica_count, storage_duration, ...}` by calling on-chain status.
 
@@ -187,7 +246,7 @@ And it'll return:
 }
 ```
 
-### 4. Add file assurance
+### 6. Add file assurance
 
 The default storage time for a single transaction(order) is 6 months. If you want to extend the storage duration, Crust provides an assurance pool for you to customize the file's storage time, it allows you to put some tokens and will automatically extend the file's storage time.
 

@@ -25,6 +25,18 @@
         "title": "内容存储与分发",
         "sidebar_label": "内容存储与分发"
       },
+      "buildSmartContractBasedCrossChainSolution": {
+        "title": "基于智能合约的跨链存储解决方案",
+        "sidebar_label": "基于智能合约的跨链存储解决方案"
+      },
+      "buildXCMPBasedCrossChainSolution": {
+        "title": "基于XCMP的跨链存储解决方案",
+        "sidebar_label": "基于XCMP的跨链存储解决方案"
+      },
+      "buildNativeIPFSBasedCrossChainSolution": {
+        "title": "基于原生IPFS的跨链存储解决方案",
+        "sidebar_label": "基于原生IPFS的跨链存储解决方案"
+      },
       "buildIntegrationOverview": {
         "title": "总览",
         "sidebar_label": "总览"
@@ -44,6 +56,10 @@
       "buildCrustKits": {
         "title": "Crust SDK",
         "sidebar_label": "Crust SDK"
+      },
+      "developerfaucet": {
+        "title": "Developer faucet",
+        "sidebar_label": "Developer faucet"
       },
       "buildCrustJs": {
         "title": "crust.js",

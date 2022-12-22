@@ -77,6 +77,10 @@
         "title": "IPFS W3Auth Gateway",
         "sidebar_label": "IPFS W3Auth Gateway"
       },
+      "buildNativeIPFSBasedCrossChainSolution": {
+        "title": "Crust's Native IPFS cross-chain dStorage solution",
+        "sidebar_label": "Crust's Native IPFS cross-chain dStorage solution"
+      },
       "buildNode": {
         "title": "Crust Node",
         "sidebar_label": "Crust Node"
@@ -88,6 +92,14 @@
       "buildSmanager": {
         "title": "Crust Storage Manager",
         "sidebar_label": "Crust Storage Manager"
+      },
+      "buildSmartContractBasedCrossChainSolution": {
+        "title": "Crust's Smart contract cross-chain dStorage solution",
+        "sidebar_label": "Crust's Smart contract cross-chain dStorage solution"
+      },
+      "buildXCMPBasedCrossChainSolution": {
+        "title": "Crust's XCMP-based cross-chain dStorage solution",
+        "sidebar_label": "Crust's XCMP-based cross-chain dStorage solution"
       },
       "claimsLockedCRU": {
         "title": "LockedCRU Claims",
@@ -132,6 +144,10 @@
       "crustWallet": {
         "title": "Crust Wallet",
         "sidebar_label": "Crust Wallet"
+      },
+      "developerfaucet": {
+        "title": "Developer faucet",
+        "sidebar_label": "Developer faucet"
       },
       "DSM": {
         "title": "DSM",
@@ -319,7 +335,7 @@
     },
     "links": {
       "Docs": "Docs",
-      "Maxwell": "Maxwell",
+      "Shadow": "Shadow",
       "Contribute": "Contribute"
     },
     "categories": {

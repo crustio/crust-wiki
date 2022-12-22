@@ -153,7 +153,12 @@ With the pinning service, users on all the smart contract platforms can call Cru
 
 Both XCMP-based pallet and native IPFS integration are already been used by several platforms including:
 
+- [XCMP] [Moonbeam Network](https://moonbeam.network/)
 - [XCMP] [Acala Network](https://acala.network/)
+- [XCMP] [Bifrost Network](https://bifrost.finance/)
+- [XCMP] [Robonomics Network](https://robonomics.network/)
+- [XCMP] [Phala Network](https://www.phala.network/)
+- [XCMP] [OAK Network](https://oak.tech/turing/home/)
 - [XCMP] [Darwinia Network](https://darwinia.network/)
 - [Native IPFS] [Polygon](https://polygon.technology/)
 - [Native IPFS] [Near](https://near.org/)

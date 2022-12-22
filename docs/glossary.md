@@ -8,7 +8,7 @@ sidebar_label: Glossary
 
 **Crust Mainnet** - With Crust Mainnet, nodes can execute and obtain corresponding token rewards by following the mechanism and parameters described in the Technical White Paper and Economic White Paper. Users can utilize all the storage features of Crust on the mainnet. [Reference reading](crust-overview.md)
 
-**Crust Maxwell** - As a Crust preview network, Crust Maxwell is responsible for the full functional test and simulation before the main network launch. It is equipped with the same features as the main network, only with some parameters being slightly different. [Reference reading](https://wiki-maxwell.crust.network/docs/en/previewNetworkMaxwell).
+**Crust Maxwell** - As a Crust preview network, Crust Maxwell is responsible for the full functional test and simulation before the main network launch. It is equipped with the same features as the main network, only with some parameters being slightly different. [Reference reading](https://wiki-shadow.crust.network/docs/en/previewNetworkMaxwell).
 
 **Crust Shadow** - Crust Shadow is a "Kusama version" for Crust Network, an early unaudited release of the code that is available first and holds real economic value.
 

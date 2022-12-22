@@ -167,12 +167,13 @@ curl -X POST -F file=@myfile -u "ChainType-PubKey:SignedMsg" "https://localhost:
 
 `ChainType` now can be:
 
-1. `sub`(or `substrate`)
-2. `eth`(or `ethereum`)
-3. `sol`(or `solana`)
-4. `pol` (or `polygon`)
-5. `nea` (or `near`)
-6. `ava`(or `avalanche`)
+1. [`sub`(or `substrate`)](#1-with-substrate)
+2. [`eth`(or `ethereum`)](#2-with-ethereum)
+3. [`sol`(or `solana`)](#4-with-solana)
+4. [`pol` (or `polygon`)](#5-with-polygon)
+5. [`nea` (or `near`)](#6-with-near)
+6. [`ava`(or `avalanche`)](#7-with-avalanche)
+7. [`apt`(or `aptos`)](#8-with-apots)
 
 And you can get `PubKey` and `SignedMsg` by using the following web3-ways:
 
@@ -271,6 +272,18 @@ You can sign the `PubKey` with one of your near private key associated with your
 You can sign the `Address` **without** chainID prefix, such as `avax1se4e9lvhlfwhcqnzjr0vpswqcnhsy5atn5r0l3`, with your X- or P- chain private key associated with your account to get the `SignedMsg`.
 
 - With [Avalanche Wallet](https://wallet.avax.network/wallet/advanced)
+
+### 8. With Apots
+
+#### Get `PubKey`
+
+`PubKey` is the aptos's account pubkey, such as `0xaa79510150c3a6753f224ef47a315ea6ae9acd23f4506a866feb25f8995c60c`. Please pay attention that it's not the same as the address.
+
+#### Get `SignedMsg`
+
+You can sign the `PubKey` with your aptos private key to get the `SignedMsg`
+
+- With [Martian Wallet](https://chrome.google.com/webstore/detail/martian-aptos-wallet/efbglgofoippbgcjepnhiblaibcnclgk)
 
 ## Resources
 

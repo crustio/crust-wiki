@@ -1,7 +1,7 @@
 ---
-id: buildCrossChainSolution
-title: Crust's cross-chain dStorage solution
-sidebar_label: Crust's cross-chain dStorage solution
+id: buildNativeIPFSBasedCrossChainSolution
+title: Crust's Native IPFS cross-chain dStorage solution
+sidebar_label: Crust's Native IPFS cross-chain dStorage solution
 ---
 
 ## Introduction
@@ -25,45 +25,9 @@ There are many smart contract platforms such as Ethereum, Polkadot, Near, Polygo
 
 ## Solution
 
-Crust Network provides 2 integrated solutions:
+Crust Network provides Native ***[IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/)*** integrations for all smart contract platforms.
 
-- **xStorage pallet:** an XCMP-based Substrate pallet for all Polkadot parachains
-- Native ***[IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/)*** integrations for all smart contract platforms
-
-### I. XCMP-based substrate pallet
-
-As a dStorage project in the Polkadot ecosystem, Crust builds on top of S[ubstrate](https://github.com/paritytech/substrate) and provides a native cross-chain communication pallet based on [XCMP](https://wiki.polkadot.network/docs/learn-crosschain)(Cross-Chain Message Passing) called [***xStorage***](https://github.com/crustio/crust/tree/parachain/shadow/crust-collator/pallets/xstorage). The basic idea of xStorage shows below:
-
-![xcmp](assets/build/build-cross-chain-xcmp.png)
-
-***Parachain-side***
-
-This pallet allows all substrate-based parachains to:
-
-- Send storage request messages(Extrinsics) to Crust
-- Pay storage fees on Crust with native tokens by using the [xToken](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/xtokens) module
-
-*The XCM Transact of xStorage pallet*
-
-```rust
-let place_storage_order = (storage_pallet_id, method_id, cid, size).encode();
-
-let transact = Xcm::Transact {
-	origin_type: OriginKind::Superuser,
-	require_weight_at_most: 1_000,
-	call: place_storage_order.into()
-};
-
-T::XcmpMessageSender::send_xcm(MultiLocation::X2(Junction::Parent, Junction::Parachain(CrustChainId)), transact).map_err(|_| Error::<T>::FailedToSend)?;
-```
-
-***Crust-side***
-
-After Crust's collator received the XCMs, Crust's DSM(Decentralized Storage Market) protocol will respond with storage requests and charge the cross-chain storage fees. Then, all the IPFS nodes in Crust will start pulling the data and do the consensus.
-
-### II. Native IPFS integration
-
-The 2nd way is more general, it is a combination of:
+It is a combination of:
 
 - W3Auth: handling the web3 identity authentication and storage contract authentication
 - IPFS W3Auth gateway: an HTTP-compatible data uploading service
@@ -151,15 +115,8 @@ With the pinning service, users on all the smart contract platforms can call Cru
 
 ## Cases now
 
-Both XCMP-based pallet and native IPFS integration are already been used by several platforms including:
+Native IPFS integrations are already been used by several platforms including:
 
-- [XCMP] [Moonbeam Network](https://moonbeam.network/)
-- [XCMP] [Acala Network](https://acala.network/)
-- [XCMP] [Bifrost Network](https://bifrost.finance/)
-- [XCMP] [Robonomics Network](https://robonomics.network/)
-- [XCMP] [Phala Network](https://www.phala.network/)
-- [XCMP] [OAK Network](https://oak.tech/turing/home/)
-- [XCMP] [Darwinia Network](https://darwinia.network/)
 - [Native IPFS] [Polygon](https://polygon.technology/)
 - [Native IPFS] [Near](https://near.org/)
 - [Native IPFS] [Heco](https://www.hecochain.com/en-us/)
@@ -170,5 +127,5 @@ Also, the IPFS W3Auth gateway(GW) and pinning service(PS) are integrated by seve
 
 - [PS] Uniswap: take it as release CD flow by using Github Action, details can be checked [here](https://github.com/Uniswap/interface/blob/main/.github/workflows/release.yaml#L58-L64)
 - [PS] Liquity: take it as the only decentralized frontend, details can be checked [here](https://github.com/liquity/frontend-registry/blob/main/frontends/liquity_crust.md)
-- [PS] Polkadot Apps: take it as release CD flow by using node.js script, details can be checked [here](https://github.com/polkadot-js/apps/blob/master/scripts/ipfsUpload.cjs)
+- [PS] Polkadot Apps: take it as release CD flow by using node.js script, details can be checked [here](https://github.com/polkadot-js/apps/blob/master/scripts/ipfsUpload.mjs)
 - [PS] IPFS Docs: host by using command-line tool, details can be checked [here](https://github.com/ipfs/ipfs-docs)

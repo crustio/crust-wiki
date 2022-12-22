@@ -40,7 +40,8 @@
       },
       "DSM",
       "storageMerchant",
-      "identity"
+      "identity",
+      "governanceGuide"
     ],
     "Build": [
       "buildGettingStarted",
@@ -49,10 +50,19 @@
         "type": "subcategory",
         "label": "Basics",
         "ids": [
+	        "developerfaucet",	
           "buildRockyGuidance",
           "buildFileStoringDemo",
-          "buildFileStoringWithGWDemo",
-          "buildCrossChainSolution"
+          "buildFileStoringWithGWDemo"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Crosschain Storage Solution",
+        "ids": [
+	        "buildXCMPBasedCrossChainSolution",	
+          "buildNativeIPFSBasedCrossChainSolution",
+          "buildSmartContractBasedCrossChainSolution"
         ]
       },
       {
