@@ -49,85 +49,23 @@ sudo crust tools file-info all
 - If you have received a meaningful document order, call the following command to delete it, and wait for the next workload report, which will be reported every 1 hour
 ```shell
 #!/bin/bash
-basedir=$(cd `dirname $0`; pwd)
-crust_base_url="http://localhost:12222/api/v0"
-
-### Delete files
 # Delete pending files
 for cid in $(sudo crust tools file-info pending | jq -r "keys|.[]"); do
     sudo crust tools delete-file $cid
 done
 # Delete valid and lost files
 cids=($(sudo crust tools file-info valid | jq -r "keys|.[]") $(sudo crust tools file-info lost | jq -r "keys|.[]"))
-recover_data='{"deleted_files":['
-if [ ${#cids[@]} -gt 0 ]; then
-    for cid in ${cids[@]}; do
+i=0
+while [ $i -lt ${#cids[@]} ]; do
+    recover_data='{"deleted_files":['
+    for ((j = 0; j < 50 && i < ${#cids[@]}; i++, j++)); do
+        cid=${cids[$i]}
         recover_data="${recover_data}\"$cid\","
-    done
-    recover_data="${recover_data:0:len-1}]}"
-    curl -s -XPOST "$crust_base_url/file/recover_illegal" --header 'Content-Type: application/json' --data-raw "$recover_data"
-    for cid in ${cids[@]}; do
         sudo crust tools delete-file $cid
     done
-fi
-```
-
-If the above scripts cannot fix the error, please try the following scripts. It need the network support and might fail. Please retry until it succeed.
-
-```shell
-#!/bin/bash
-basedir=$(cd `dirname $0`; pwd)
-### Get all valid cids
-tmpfile=$basedir/TMPFILE
-tmpfile2=$basedir/TMPFILE2
-
-crust_base_url="http://localhost:12222/api/v0"
-account=$(curl -s http://localhost:12222/api/v0/enclave/id_info | jq -r .account)
-if [ x"$account" = x"" ]; then
-    echo "ERROR: account cannot be empty!"
-    exit 1
-fi
-echo "INFO: account:$account"
-echo "INFO: get files from subsquid..."
-curl -s -XPOST 'https://app.gc.subsquid.io/beta/crust-v5/003/graphql' --data-raw '{"query": "query MyQuery {\n  accountById(id: \"'$account'\") {\n    workReports {\n      addedFiles\n      deletedFiles\n    }\n  }\n}"}' -H "content-type: application/json; charset=utf-8" > $tmpfile
-if ! cat $tmpfile | jq '.' &>/dev/null; then
-    echo "ERROR: get data from subsquid failed, please try later."
-    exit 1
-fi
-parameters=()
-acc=0
-maxLen=100
-flag=0
-recover_del_data='{"deleted_files":['
-cat $tmpfile | jq -r ".data.accountById.workReports|.[]|.addedFiles|.[]|.[0:1]|.[]" > $tmpfile2
-cat $tmpfile | jq -r ".data.accountById.workReports|.[]|.deletedFiles|.[]|.[0:1]|.[]" >> $tmpfile2
-for el in $(cat $tmpfile2); do
-    curl -s -XPOST "$crust_base_url/storage/delete" --data-raw '{"cid": "'$cid'"}'
-    cid=$(echo $el | xxd -r -p)
-    recover_del_data="$recover_del_data\"$cid\","
-    flag=1
-    ((acc++))
-    if [ $acc -ge $maxLen ]; then
-        recover_del_data="${recover_del_data:0:len-1}]}"
-        parameters[${#parameters[@]}]=$recover_del_data
-        recover_del_data='{"deleted_files":['
-        flag=0
-        acc=0
-    fi
+    recover_data="${recover_data:0:len-1}]}"
+    curl -s -XPOST "http://localhost:12222/api/v0/file/recover_illegal" --header 'Content-Type: application/json' --data-raw "$recover_data"
 done
-if [ $flag -eq 1 ]; then
-    recover_del_data="${recover_del_data:0:len-1}]}"
-    parameters[${#parameters[@]}]=$recover_del_data
-fi
-if [ ${#parameters[@]} -gt 0 ]; then
-    for parameter in ${parameters[@]}; do
-        curl -s -XPOST "$crust_base_url/file/recover_illegal" --header 'Content-Type: application/json' --data-raw "$parameter"
-    done
-    echo "INFO: delete files successfully"
-else
-    echo "INFO: no files to delete"
-fi
-
 ```
 
 - Add whitelist
