@@ -70,10 +70,18 @@ const fileSize = 5246268;
 
 // Firstly get price in ETH with file size
 const StorageOrderABI = [
+  "function getPrice(uint size) public view returns (uint price)",
   "function placeOrder(string cid, uint size) external payable",
   "function placeOrderWithNode(string cid, uint size, address nodeAddress) public payable",
   "event Order(address customer, address merchant, string cid, uint size, uint price)",
 ]
+
+// Astar's ABI is different
+// const StorageOrderABI = [
+//   "function getPrice(uint size) public view returns (uint price)",
+//   "function placeOrder(string cid, uint64 size) external payable",
+// ]
+
 // Take Ethereum for example
 const StorageOrderAddress = "0x6e9469673257e21b3e75bb9292c9ab009bc481d4";
 const provider = new ethers.providers.JsonRpcProvider();
