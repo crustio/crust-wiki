@@ -93,6 +93,30 @@
         ]
       }
     ],
+    "Build With EVM": [
+      "evmBuild101",
+      {
+        "type": "subcategory",
+        "label": "Basics",
+        "ids": [
+          "evmBasicsOverview"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Chains",
+        "ids": [
+          "evmChainEthereum"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Toolkits",
+        "ids": [
+          "evmBuildSDK"
+        ]
+      }
+    ],
     "Node": [
       "nodeOverview",
       "nodeHardwareSpec",

@@ -318,6 +318,7 @@
       "General": "概览",
       "Learn": "学习",
       "Build": "构建",
+      "Build With EVM": "基于EVM构建",
       "Node": "节点",
       "Storage": "存储"
     }

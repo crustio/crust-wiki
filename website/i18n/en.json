@@ -157,6 +157,22 @@
         "title": "Crust Ecosystem Growth",
         "sidebar_label": "Crust Ecosystem Growth"
       },
+      "evmBasicsOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
+      "evmBuild101": {
+        "title": "Build With EVM 101",
+        "sidebar_label": "Build With EVM 101"
+      },
+      "evmBuildSDK": {
+        "title": "SDK",
+        "sidebar_label": "SDK"
+      },
+      "evmChainEthereum": {
+        "title": "Ethereum",
+        "sidebar_label": "Ethereum"
+      },
       "frequentlyAskedQuestions": {
         "title": "Editing How to submit bugs & feedbacks",
         "sidebar_label": "Editing How to submit bugs & feedbacks"
@@ -342,6 +358,7 @@
       "General": "General",
       "Learn": "Learn",
       "Build": "Build",
+      "Build With EVM": "Build With EVM",
       "Node": "Node",
       "Storage": "Storage",
       "Q&A": "Q&A"
