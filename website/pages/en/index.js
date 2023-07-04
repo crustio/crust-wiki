@@ -48,7 +48,7 @@ class HomeNav extends React.Component {
                     aosDelay="0"
                 />
                 <NavItem
-                    href={this.props.docUrl("evmBuild101.html")}
+                    href={this.props.docUrl("evmBuildOverview.html")}
                     title="EVM"
                     content="Now, Crust network is well adapted to EVM."
                     aosDelay="300"

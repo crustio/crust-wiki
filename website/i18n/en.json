@@ -165,13 +165,29 @@
         "title": "Build With EVM 101",
         "sidebar_label": "Build With EVM 101"
       },
+      "evmBuildOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
       "evmBuildSDK": {
         "title": "SDK",
         "sidebar_label": "SDK"
       },
+      "evmChainArbitrum": {
+        "title": "Arbitrum",
+        "sidebar_label": "Arbitrum"
+      },
       "evmChainEthereum": {
         "title": "Ethereum",
         "sidebar_label": "Ethereum"
+      },
+      "evmChainOptimism": {
+        "title": "Optimism",
+        "sidebar_label": "Optimism"
+      },
+      "evmChainzkSync": {
+        "title": "zkSync",
+        "sidebar_label": "zkSync"
       },
       "frequentlyAskedQuestions": {
         "title": "Editing How to submit bugs & feedbacks",
