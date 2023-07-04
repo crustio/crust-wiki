@@ -98,13 +98,6 @@
       "evmBuild101",
       {
         "type": "subcategory",
-        "label": "Basics",
-        "ids": [
-          "evmBasicsOverview"
-        ]
-      },
-      {
-        "type": "subcategory",
         "label": "Chains",
         "ids": [
           "evmChainEthereum",

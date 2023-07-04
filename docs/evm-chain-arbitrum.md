@@ -4,12 +4,6 @@ title: Arbitrum
 sidebar_label: Arbitrum
 ---
 
----
-id: evmChainEthereum
-title: Ethereum
-sidebar_label: Ethereum
----
-
 ## Contracts
 
 Storage order proxy address
