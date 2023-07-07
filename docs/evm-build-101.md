@@ -66,7 +66,27 @@ Details:
 
 More informatiom click [this](evm-chain-zksync.md)
 
-## IV. References
+## IV. Usage
+
+Functions for contract owner:
+```
+addSupportedToken: Add supported token.
+addOrderNode: Add order node which will order and pin files.
+removeSupportedToken: Remove supported token.
+removeOrderNode: Remove order node.
+setOrderPrice: Set price.
+setServicePriceRate: Set price rate which indicates service price rate.
+setSizeLimit: Set size limit.
+```
+
+Functions for users:
+```
+getPrice: Get price in ETH for file size specified by parameter "size".
+placeOrder: Place order with cid and size in ETH, msg.value indicates the price user should pay for pinning node.
+placeOrderWithNode: Same like placeOrder, the difference is that the pinning node is fixed by nodeAddress.
+```
+
+## V. References
 
 - [Crust Network github](https://github.com/crustio)
 - [Storage explorer](crust-storage-explorer.md)
