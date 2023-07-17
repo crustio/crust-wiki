@@ -93,6 +93,27 @@
         ]
       }
     ],
+    "Build With EVM": [
+      "evmBuildOverview",
+      "evmBuild101",
+      {
+        "type": "subcategory",
+        "label": "Chains",
+        "ids": [
+          "evmChainEthereum",
+          "evmChainOptimism",
+          "evmChainArbitrum",
+          "evmChainzkSync"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Toolkits",
+        "ids": [
+          "evmBuildSDK"
+        ]
+      }
+    ],
     "Node": [
       "nodeOverview",
       "nodeHardwareSpec",

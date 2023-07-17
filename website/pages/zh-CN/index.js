@@ -47,9 +47,9 @@ class HomeNav extends React.Component {
                     aosDelay="0"
                 />
                 <NavItem
-                    href={this.props.docUrl("buildGettingStarted.html")}
-                    title="构建"
-                    content="在Crust网络上构建你的去中心化应用"
+                    href={this.props.docUrl("evmBuild101.html")}
+                    title="EVM"
+                    content="现在，Crust网络很好的适配了EVM"
                     aosDelay="300"
                 />
                 <NavItem
