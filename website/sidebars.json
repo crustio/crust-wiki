@@ -114,6 +114,11 @@
         ]
       }
     ],
+    "Build With Algorand": [
+      "algorandBuildOverview",
+      "algorandBuild101",
+      "algorandApplications"
+    ],
     "Node": [
       "nodeOverview",
       "nodeHardwareSpec",
