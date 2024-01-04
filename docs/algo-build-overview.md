@@ -10,7 +10,7 @@ Crust Network is a decentralized storage platform in Web3 ecosystem. It has prov
 
 ## II. Crust Network Algorand storage protocol
 
-![Pic](./assets/build/algo-storage-protocol.png)
+![Pic](assets/build/algo-storage-protocol.png)
 
 1. Algorand storage smart contract
 [Algorand storage smart contract](https://github.com/crustio/algorand-storage-contract?tab=readme-ov-file#storage-order-smart-contract) is written in python with [Pyteal Beaker](https://algorand-devrel.github.io/beaker/html/index.html) library. User can place order with file cid(IPFS content id), file size and a boolean parameter called isPermanent indicated whether to store file permanently or not. Additionally, it features a payment settlement mechanism based on on-chain oracles. Anyone can be storage merchant by starting the [order service](https://github.com/crustio/storage-contract-node) and contacting crust team to register their algorand addresses to the storage smart contract.

@@ -10,9 +10,10 @@ This article will describe how to use Algorand storage smart contract(short for 
 
 ## II. Concepts
 
-1. **IPFS**
+### IPFS
 IPFS(InterPlanetary File System) is a p2p storage procotol, anyone can start an IPFS node to share files or pull files from others' nodes. The file stored in IPFS is divided into many pieces which are organized in the form of merkle tree. The root hash of this tree is the cid(content id) of the file, which represents the file itself. An IPFS node can search its wanted cid in IPFS network, when a node claims it has the cid, they can establish a connection and the file data would be sent to the searcher. For more information about IPFS, check [this document](https://docs.ipfs.tech/).
-1. **Crust Network**
+
+### Crust Network
 Crust Network is a decentralized storage platform built on IPFS protocol. It is an incentive layer to encourage storage nodes to store the ordered files. [MPOW](crust-overview.md#mpow) and [GPOS](GPoS.md) are the core protocols of Crust Network. With these protocols Crust Network builds the [DSM](DSM.md)(Decentralized Storage Market) to provide storage service for the whole Web3 ecosystem.
 
 ## III. Storage smart contract
@@ -49,7 +50,7 @@ import requests
 import json
 
 # IPFS Web3 Authed Gateway address
-ipfsGateway = 'https://gw.crustfiles.app';
+ipfsGateway = 'https://gw-seattle.crustcloud.io';
 
 # 2. Upload file to IPFS gateway
 headers = { "Authorization" : f"Basic {authHeader}" }
@@ -128,3 +129,5 @@ app_client.call(
   boxes=[(app_client.app_id, decode_address(order_node_address)),(app_client.app_id, "nodes")],
 )
 ```
+
+> You can check the source code [here](https://github.com/crustio/algorand-storage-contract/blob/main/scripts/storage_order_demo.py).

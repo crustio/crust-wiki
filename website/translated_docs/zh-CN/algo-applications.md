@@ -1,7 +1,7 @@
 ---
 id: algorandApplications
-title: Algorand applications with Crust Network
-sidebar_label: Algorand applications with Crust Network
+title: Algorand applications
+sidebar_label: Algorand applications
 ---
 
 ## I. Crust Files

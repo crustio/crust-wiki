@@ -6,8 +6,8 @@
     "tagline": "Wiki for Crust Network",
     "docs": {
       "algorandApplications": {
-        "title": "Algorand applications with Crust Network",
-        "sidebar_label": "Algorand applications with Crust Network"
+        "title": "Algorand applications",
+        "sidebar_label": "Algorand applications"
       },
       "algorandBuild101": {
         "title": "Build With Algorand 101",
