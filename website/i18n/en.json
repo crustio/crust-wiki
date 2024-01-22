@@ -300,6 +300,10 @@
         "title": "Basic Node Problems",
         "sidebar_label": "Basic Node Problems"
       },
+      "Q&AForCrustApplications": {
+        "title": "Applications",
+        "sidebar_label": "Applications"
+      },
       "Q&AForFix": {
         "title": "Fix unstable chain",
         "sidebar_label": "Fix unstable chain"
