@@ -269,6 +269,10 @@
         "title": "Q&A",
         "sidebar_label": "Q&A"
       },
+      "Q&AForCrustApplications": {
+        "title": "应用",
+        "sidebar_label": "应用"
+      },
       "setOnChainIdentity": {
         "title": "设置链上身份",
         "sidebar_label": "设置链上身份"
