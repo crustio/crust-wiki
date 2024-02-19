@@ -10,7 +10,7 @@ sidebar_label: Applications
 
 There are two signings needed for minting w3Bucket, one for payment, another for claiming the generated NFT asset. If user misses the second signing(sometimes error occurs because of network delay), the mint progress will fail. In this situation the bucket NFT has been generated, but have not been claimed by user. To get the bucket NFT, please follow the steps below.
 
-1. Find your mint transaction in [algorand explorer](https://algoexplorer.io/), for example:
+1. Find your mint transaction in [dapp flow apps](https://app.dappflow.org/explorer/home), for example:
 ![Pic](assets/qa/crustcloud-mint-1.png)
 
 2. In the mint transaction find the minted NFT asset id, in this example we can see the asset id is **1372958948**
