@@ -28,7 +28,7 @@ The code sample mainly depends on the following libraries:
 
 ### 1. Upload file to IPFS
 
-> If you want to learn how to upload **FOLERS/FILES** into IPFS, please refer this [STEP](https://wiki.crust.network/docs/en/buildFileStoringWithGWDemo#1-upload-files-to-ipfs-gateway)
+> If you want to learn how to upload **FOLDERS/FILES** into IPFS, please refer this [STEP](https://wiki.crust.network/docs/en/buildFileStoringWithGWDemo#1-upload-files-to-ipfs-gateway)
 
 First, you need to put your file into IPFS, there's 2 ways to upload file to IPFS: local IPFS node or remote IPFS gateway:
 
@@ -60,7 +60,7 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
 
 > You can find more `ipfsW3GW` endpoints on [LINK](https://github.com/crustio/ipfsscan/blob/main/lib/constans.ts#L29). Greatly improve the speed of `ipfsW3GW` by configuring [Meson CDN](https://docs.meson.network/mcdn-101.html).
 
-> You can also find more `authHeader` web3 supports on [LINK](https://github.com/RoyTimes/crust-workshop/tree/master/src), the following exmaple just takes ethereum as example.
+> You can also find more `authHeader` web3 supports on [LINK](https://github.com/RoyTimes/crust-workshop/tree/master/src), the following example just takes ethereum as example.
 
 ```typescript
 import { create } from 'ipfs-http-client'
