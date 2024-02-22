@@ -14,13 +14,19 @@ In this guide, we will **host a simple React website** as an example and show ho
 
 ## Create a Website
 
-1. Create a React app
+1. Instal the Crust CLI
+
+```shell
+sudo npm i -g @crustio/crust-cli
+```
+
+2. Create a React app
 
 ```shell
 npx create-react-app hello-crust
 ```
 
-2. Build it
+3. Build it
 
 ```shell
 cd hello-crust/
