@@ -32,7 +32,7 @@ There are two signings needed for minting w3Bucket, one for payment, another for
 
 5. Edit w3Bucket application Id. After the contract ABI loaded, you can see the ABIs.
   - click 'App ID:null' on the top right corner
-  - input the w3Bucket application Id: **1279692951** and save
+  - input the w3Bucket application Id: **1606796117** and save
 ![Pic](assets/qa/crustcloud-mint-5.png)
 
 6. Execute claim method:
