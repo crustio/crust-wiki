@@ -51,15 +51,15 @@ wget https://github.com/crustio/crust-node/releases/download/sgxenable-1.0.0/sgx
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v2.0.0.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v1.0.0.tar.gz
+tar -xvf v2.0.0.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-1.0.0
+cd crust-node-2.0.0
 ```
 ### 2.5 Install Crust Service
 
@@ -110,7 +110,13 @@ Enter the password for the Member backup file as prompted and press Enter to end
 
 ![pic](assets/mining/member_password_config.png)
 
-### 3.5 Config Hard Disks
+### 3.5 Config sWorker Attestation Mode
+
+Follow the prompts to enter the sworker attestation mode, generally use the default value is good to go (Refer to [EPID & ECDSA](Q&AForEPID-ECDSA.md) for more information), simply press Enter to end:
+
+![pic](assets/node/config-set-attestation-mode.png)
+
+### 3.6 Config Hard Disks
 
 > Disk organization solution is not unitary. If there is a better solution, you can optimize it yourself.
 

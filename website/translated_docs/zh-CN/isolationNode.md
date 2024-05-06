@@ -49,15 +49,15 @@ wget https://github.com/crustio/crust-node/releases/download/sgxenable-1.0.0/sgx
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v1.0.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v2.0.0.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v1.0.0.tar.gz
+tar -xvf v2.0.0.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-1.0.0
+cd crust-node-2.0.0
 ```
 ### 2.5 安装Crust服务
 
@@ -107,7 +107,13 @@ sudo crust config set
 
 ![图片](assets/mining/member_password_config.png)
 
-### 3.5 配置硬盘
+### 3.5 Config sWorker Attestation Mode
+
+按照提示输入sworker认证模式，一般来说使用默认值即可（参考[EPID & ECDSA](Q&AForEPID-ECDSA.md)了解更多信息），直接按回车键结束：
+
+![pic](assets/node/config-set-attestation-mode.png)
+
+### 3.6 配置硬盘
 
 > 硬盘组织方式不唯一，如果有更好的方案可以自行优化
 

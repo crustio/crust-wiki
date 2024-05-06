@@ -18,6 +18,13 @@ How to check if an application is running in SGX? To deal with this problem, Int
 
 ![sworker remote_attestation](assets/sworker/remoteAttestation.png)
 
+### ECDSA Attestation
+Intel plans to end of life (EOL) the Intel SGX Attestation Service Utilizing Intel EPID (IAS for short) April 2, 2025. Refer to [here](https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/resources/sgx-ias-using-epid-eol-timeline.html) for more information. 
+
+ECDSA-based attestation with Intel SGX DCAP allows providers to build and deliver their own attestation service instead of using the remote attestation service provided by Intel. This is a replacement for the IAS. Refer to [here](https://www.intel.com/content/www/us/en/developer/tools/software-guard-extensions/attestation-services.html) for more information. 
+
+Crust has developed a ECDSA-based attestation service with Intel SGX DCAP. The github repo is [crust-dcap](https://github.com/crustio/crust-dcap). sWorker version >= 2.0.0 supports ECDSA-based DCAP attestation. For more information, please refer to [here](Q&AForEPID-ECDSA.md).
+
 ### MREnclave
 MREnclave is another important concept. It can be treated as the hash of enclave code and stack data at runtime. An application can be checked if running in the right way through comparing runtime MREnclave with the indicated one. In this way can application protect its data from malware. By the way MREnclave is contained in Quote.
 
@@ -37,3 +44,5 @@ In crust network every sWorker has a unique identity which is contained in work-
 1. Entry network is successful if the identity passes Crust chain’s validation, failed if not.
 
 Note that the quote generated in step 3 contains enclave’s MREnclave. If enclave’s code changes, the MREnclave changes too. After Crust starting, IAS certificate and an indicated MREnclave code will be set in Crust chain by democratic vote. In step 8, public key A is parsed from report, which is used to verify the signature of report. Secondly, through IAS certificate in Crust chain, report can be checked if it is valid. Verification of Report signature prevents attackers from forging IAS signature. Report also contains the validation result of sWorker platform which could tell whether it runs within a valid SGX hardware, which completes SGX environment identification. Thirdly, comparing MREnclave in report with the one in Crust chain completes MREclave identification. Finally Crust chain will bond sWorker identity to corresponding crust chain account so that the reported workload can be calculated to the indicated chain account.
+
+PS: For sWorker version >= 2.0.0, sWorker will use ECDSA-based DCAP attestation instead of IAS.

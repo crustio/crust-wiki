@@ -19,6 +19,13 @@ SGX技术是Intel六代及之后芯片所拥有的信息安全技术。通过这
 
 ![sworker remote_attestation](assets/sworker/remoteAttestation.png)
 
+### ECDSA Attestation
+英特尔计划在2025年4月2日结束使用基于英特尔EPID的英特尔SGX认证服务（简称IAS）。请参考[此处](https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/resources/sgx-ias-using-epid-eol-timeline.html)了解更多信息。
+
+基于ECDSA的英特尔SGX DCAP认证允许提供商构建和交付自己的认证服务，而不是使用英特尔提供的远程认证服务。这是对IAS的替代方案。请参考[此处](https://www.intel.com/content/www/us/en/developer/tools/software-guard-extensions/attestation-services.html)了解更多信息。
+
+Crust已经开发了基于ECDSA的英特尔SGX DCAP认证服务。GitHub存储库位于[crust-dcap](https://github.com/crustio/crust-dcap)。sWorker版本>= 2.0.0支持基于ECDSA的DCAP认证。有关更多信息，请参阅[此处](Q&AForEPID-ECDSA.md)。
+
 ### MREnclave
 另外一个重要的概念是MREnclave，它可以理解为运行时Enclave部分的代码和堆栈数据的哈希值。通过MREnclave可以确保Enclave中运行的是指定的程序代码，防止攻击者运行恶意的Enclave程序。Quote中包含了MREnclave值。
 
@@ -40,3 +47,5 @@ SGX技术是Intel六代及之后芯片所拥有的信息安全技术。通过这
 注：App和Enclave是sWorker的两个组件
 
 步骤3生成的Quote中包含sWorker内部生成的公钥A和代码的MREnclave。如果代码发生了变动，生成的MREnclave也会变化。在Crust网络启动以后，Crust链上已经通过链上治理决议将IAS的公开证书和经过验证的MREnclave设置到链上。步骤8首先从Report中提取出公钥A，通过A可以验证签名Sa是否有效。其次通过链上的IAS证书，验证Report的签名来判断其是否有效。签名验证是为了防止攻击者伪造IAS签名。在Report中包含了对sWorker运行平台的校验结果：是否是有效的SGX硬件，因而能够判断发送Identity的sWorker是否运行在SGX环境中(环境验证)。然后验证Report中的MREnclave是否和链上设置的一致(代码认证)。最后将公钥A和账户C进行绑定(身份绑定)，之后A上报的工作量计入C的名下。
+
+PS: 版本>= 2.0.0的sWorker将使用基于ECDSA的DCAP认证，而不是IAS认证。

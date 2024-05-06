@@ -104,7 +104,22 @@ sudo crust config chain-port 30889
 ```
 ![start](assets/node/chainport.png)
 
-### 2.5 Show configuration file
+### 2.5 Set the attestation mode of the sworker
+
+- Command
+```shell
+sudo crust config attestation-mode {epid/ecdsa}
+```
+
+- Instance
+Change the attestation-mode to ecdsa
+
+```shell
+sudo crust config attestation-mode ecdsa
+```
+![start](assets/node/attestation-mode.png)
+
+### 2.6 Show configuration file
 
 - Command
 ```shell
