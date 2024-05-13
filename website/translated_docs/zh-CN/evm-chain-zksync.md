@@ -8,19 +8,19 @@ sidebar_label: zkSync
 
 Storage order proxy address
 
-- 0xfa866AbF8F0b8f154654DEd956B2467dFB6A4135
+- 0x61ecfA2C8dF06A4f941A8529E4B707488B74e3bE
 
 Storage order implementation address
 
-- 0x873fad73BF4099E1AB7ceE07C69684f2b992083A
+- 0xe5b1bd0cf16a3b6d4c096eeb0b6388dae2fae22a
 
 Price oracle proxy address
 
-- 0xF5aA6a13839aB7d6E0fe3E80DCE1A2440C791Cc8
+- 0x25da536a3FfedF57ef746ebb79f1fa82e60eA7D0
 
 Price oracle implementation address
 
-- 0xD0425F4DBf8A410eC9cC3de96F1cCfdFae5F4B08
+- 0x4a8e31f931fa2dec73f06ef8f6ed640b7766e409
 
 ## Demos
 

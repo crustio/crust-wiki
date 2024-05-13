@@ -18,10 +18,10 @@ Crust provides a decentralized storage network of Web3 ecosystem. It supports mu
 
 Contracts:
 
-- Storage order proxy address: 0xE391613d2056e47F74ED5eF1d443d4CDB21AAAd9
-- Storage order implementation address: 0xF7cE6623EEa6D4D0432156A78b5468325B8C04f3
-- Price oracle proxy address: 0xf8e6F7bb144D3475fcf39Bd879510Fa93C775ee2
-- Price oracle implementation address: 0x9AE6C9d00Fde0e0F774693Ca6099d06dfe2001C6
+- Storage order proxy address: 0xf063A29f03d0A02FD96f270EE4F59158EF3d4860
+- Storage order implementation address: 0x2c3b24b22f5a4516b3cf8cc1cb6ad758b6c0132d
+- Price oracle proxy address: 0xf878bea1de447d5330ab17f7a62f421695ba09a5
+- Price oracle implementation address: 0x370fb88ead3a3fca3f3150a45cbfb916563ced8d
 
 Details:
 
@@ -31,10 +31,10 @@ More informatiom click [this](evm-chain-ethereum.md)
 
 Contracts:
 
-- Storage order proxy address: 0xf8e6F7bb144D3475fcf39Bd879510Fa93C775ee2
-- Storage order implementation address: 0x9ae6c9d00fde0e0f774693ca6099d06dfe2001c6
-- Price oracle proxy contract address: 0x0411EC483F45e0784361e9c633C1b63ece9837a0
-- Price oracle implementation contract address: 0xe1e8ff8e51da7066cb1009a4c1de68ae2d095655
+- Storage order proxy address: 0xf063A29f03d0A02FD96f270EE4F59158EF3d4860
+- Storage order implementation address: 0x2c3b24b22f5a4516b3cf8cc1cb6ad758b6c0132d
+- Price oracle proxy contract address: 0xF878bEa1De447d5330ab17f7a62f421695ba09A5
+- Price oracle implementation contract address: 0x370fb88ead3a3fca3f3150a45cbfb916563ced8d
 
 Details:
 
@@ -44,10 +44,10 @@ More informatiom click [this](evm-chain-optimism.md)
 
 Contracts:
 
-- Storage order proxy address: 0x9ae6c9d00fde0e0f774693ca6099d06dfe2001c6
-- Storage order implementation address: 0xd220d916c2c11e7322ee0a8c9648d186946d4210
-- Price oracle proxy address: 0x0411ec483f45e0784361e9c633c1b63ece9837a0
-- Price oracle implementation address: 0xe1e8ff8e51da7066cb1009a4c1de68ae2d095655
+- Storage order proxy address: 0xf063A29f03d0A02FD96f270EE4F59158EF3d4860
+- Storage order implementation address: 0x2C3b24b22f5a4516B3cf8cc1CB6Ad758b6c0132d
+- Price oracle proxy address: 0xf878bea1de447d5330ab17f7a62f421695ba09a5
+- Price oracle implementation address: 0x370fb88ead3a3fca3f3150a45cbfb916563ced8d
 
 Details:
 
@@ -57,10 +57,10 @@ More informatiom click [this](evm-chain-arbitrum.md)
 
 Contracts:
 
-- Storage order proxy address:0xfa866AbF8F0b8f154654DEd956B2467dFB6A4135
-- Storage order implementation address:0x873fad73BF4099E1AB7ceE07C69684f2b992083A
-- Price oracle proxy address:0xF5aA6a13839aB7d6E0fe3E80DCE1A2440C791Cc8
-- Price oracle implementation address:0xD0425F4DBf8A410eC9cC3de96F1cCfdFae5F4B08
+- Storage order proxy address:0x61ecfA2C8dF06A4f941A8529E4B707488B74e3bE
+- Storage order implementation address:0xe5b1bd0cf16a3b6d4c096eeb0b6388dae2fae22a
+- Price oracle proxy address:0x25da536a3FfedF57ef746ebb79f1fa82e60eA7D0
+- Price oracle implementation address:0x4a8e31f931fa2dec73f06ef8f6ed640b7766e409
 
 Details:
 

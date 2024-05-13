@@ -8,19 +8,19 @@ sidebar_label: Optimism
 
 Storage order proxy address
 
-- 0xf8e6F7bb144D3475fcf39Bd879510Fa93C775ee2
+- 0xf063A29f03d0A02FD96f270EE4F59158EF3d4860
 
 Storage order implementation address
 
-- 0x9ae6c9d00fde0e0f774693ca6099d06dfe2001c6
+- 0x2c3b24b22f5a4516b3cf8cc1cb6ad758b6c0132d
 
 Price oracle proxy address
 
-- 0x0411EC483F45e0784361e9c633C1b63ece9837a0
+- 0xF878bEa1De447d5330ab17f7a62f421695ba09A5
 
 Price oracle implementation address
 
-- 0xe1e8ff8e51da7066cb1009a4c1de68ae2d095655
+- 0x370fb88ead3a3fca3f3150a45cbfb916563ced8d
 
 ## Demos
 

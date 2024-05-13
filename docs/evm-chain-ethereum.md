@@ -8,19 +8,19 @@ sidebar_label: Ethereum
 
 Storage order proxy address
 
-- 0xE391613d2056e47F74ED5eF1d443d4CDB21AAAd9
+- 0xf063A29f03d0A02FD96f270EE4F59158EF3d4860
 
 Storage order implementation address
 
-- 0xF7cE6623EEa6D4D0432156A78b5468325B8C04f3
+- 0x2c3b24b22f5a4516b3cf8cc1cb6ad758b6c0132d
 
 Price oracle proxy address
 
-- 0xf8e6F7bb144D3475fcf39Bd879510Fa93C775ee2
+- 0xf878bea1de447d5330ab17f7a62f421695ba09a5
 
 Price oracle implementation address
 
-- 0x9AE6C9d00Fde0e0F774693Ca6099d06dfe2001C6
+- 0x370fb88ead3a3fca3f3150a45cbfb916563ced8d
 
 ## Demos
 
