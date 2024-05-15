@@ -94,15 +94,15 @@ a. 下载
 
 确保安装包的版本号>=2.0.0
 ```plain
-wget https://github.com/crustio/crust-node/archive/v2.0.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v2.0.1.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v2.0.0.tar.gz
+tar -xvf v2.0.1.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-2.0.0
+cd crust-node-2.0.1
 ```
 
 ### 3.2 迁移升级

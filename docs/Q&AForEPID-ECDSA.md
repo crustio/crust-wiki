@@ -101,19 +101,19 @@ a. Download
 Make sure the version number of the installation package is >= 2.0.0
 
 ```shell
-wget https://github.com/crustio/crust-node/archive/v2.0.0.tar.gz
+wget https://github.com/crustio/crust-node/archive/v2.0.1.tar.gz
 ```
 
 b. Unzip
 
 ```shell
-tar -xvf v2.0.0.tar.gz
+tar -xvf v2.0.1.tar.gz
 ```
 
 c. Enter the installation directory
 
 ```shell
-cd crust-node-2.0.0
+cd crust-node-2.0.1
 ```
 
 ### 3.2 Migration Upgrade
