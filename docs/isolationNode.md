@@ -51,15 +51,15 @@ wget https://github.com/crustio/crust-node/releases/download/sgxenable-1.0.0/sgx
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v2.0.1.tar.gz
+wget https://github.com/crustio/crust-node/archive/v2.0.2.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v2.0.1.tar.gz
+tar -xvf v2.0.2.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-2.0.1
+cd crust-node-2.0.2
 ```
 ### 2.5 Install Crust Service
 

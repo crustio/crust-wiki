@@ -40,15 +40,15 @@ wget https://github.com/crustio/crust-node/releases/download/sgxenable-1.0.0/sgx
 a. 下载
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v2.0.1.tar.gz
+wget https://github.com/crustio/crust-node/archive/v2.0.2.tar.gz
 ```
 b. 解压
 ```plain
-tar -xvf v2.0.1.tar.gz
+tar -xvf v2.0.2.tar.gz
 ```
 c. 进入安装目录
 ```plain
-cd crust-node-2.0.1
+cd crust-node-2.0.2
 ```
 
 ### 2.4 安装Crust服务
