@@ -44,7 +44,7 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
     });
 
     // 2. Add file to ipfs
-    const { cid } = await ipfs.add(fileContent);
+    const cid = await ipfs.add(fileContent);
 
     // 3. Get file status from ipfs
     const fileStat = await ipfs.files.stat("/ipfs/" + cid.path);
@@ -85,7 +85,7 @@ async function addFile(ipfs: IPFS.IPFS, fileContent: any) {
     });
 
     // 2. Add file to ipfs
-    const { cid } = await ipfs.add(fileContent);
+    const cid = await ipfs.add(fileContent);
 
     // 3. Get file status from ipfs
     const fileStat = await ipfs.files.stat("/ipfs/" + cid.path);
