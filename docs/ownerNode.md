@@ -55,15 +55,15 @@ Enter the number of CRUs that **need to be added**, and sign the transaction, as
 a. Download
 
 ```plain
-wget https://github.com/crustio/crust-node/archive/v2.0.3.tar.gz
+wget https://github.com/crustio/crust-node/archive/v2.0.4.tar.gz
 ```
 b. Unzip
 ```plain
-tar -xvf v2.0.3.tar.gz
+tar -xvf v2.0.4.tar.gz
 ```
 c. Go to package directory
 ```plain
-cd crust-node-2.0.3
+cd crust-node-2.0.4
 ```
 ### 2.4 Install Crust Service
 
