@@ -376,6 +376,14 @@
         "title": "TEE Technology",
         "sidebar_label": "TEE Technology"
       },
+      "tonBuild101": {
+        "title": "Build With TON 101",
+        "sidebar_label": "Build With TON 101"
+      },
+      "tonBuildOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
       "validator": {
         "title": "Validator",
         "sidebar_label": "Validator"
@@ -396,6 +404,7 @@
       "Build": "Build",
       "Build With EVM": "Build With EVM",
       "Build With Algorand": "Build With Algorand",
+      "Build With TON": "Build With TON",
       "Node": "Node",
       "Storage": "Storage",
       "Q&A": "Q&A"

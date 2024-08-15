@@ -119,6 +119,10 @@
       "algorandBuild101",
       "algorandApplications"
     ],
+    "Build With TON": [
+      "tonBuildOverview",
+      "tonBuild101"
+    ],
     "Node": [
       "nodeOverview",
       "nodeHardwareSpec",

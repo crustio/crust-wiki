@@ -309,6 +309,10 @@
         "title": "TEE 技术",
         "sidebar_label": "TEE 技术"
       },
+      "tonBuildOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
       "validatorGuidance": {
         "title": "验证人指南",
         "sidebar_label": "验证人指南"
@@ -328,6 +332,7 @@
       "Build": "构建",
       "Build With EVM": "基于EVM构建",
       "Build With Algorand": "基于Algorand构建",
+      "Build With TON": "基于TON构建",
       "Node": "节点",
       "Storage": "存储"
     }
