@@ -376,6 +376,10 @@
         "title": "TEE Technology",
         "sidebar_label": "TEE Technology"
       },
+      "tonApplications": {
+        "title": "TON applications",
+        "sidebar_label": "TON applications"
+      },
       "tonBuild101": {
         "title": "Build With TON 101",
         "sidebar_label": "Build With TON 101"

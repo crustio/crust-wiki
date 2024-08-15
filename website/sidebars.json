@@ -121,7 +121,8 @@
     ],
     "Build With TON": [
       "tonBuildOverview",
-      "tonBuild101"
+      "tonBuild101",
+      "tonApplications"
     ],
     "Node": [
       "nodeOverview",
