@@ -6,7 +6,7 @@ sidebar_label: TON applications
 
 ## I. Telegram Mini Apps
 
-We have built a [Telegram Mini Apps](https://core.telegram.org/bots/webapps) for users to directly upload and store files to TONBags in telegram.
+We have built a [Telegram Mini Apps](https://core.telegram.org/bots/webapps) for users to directly upload and store files to CrustBags in telegram.
 
 1. In telegram, search and add TonBagsBot(Test)
 
