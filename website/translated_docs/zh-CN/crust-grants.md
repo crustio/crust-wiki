@@ -10,7 +10,7 @@ Crust Grants Program由Decentralized Cloud Foundation（DCF，去中心化云基
 
 对于成功通过申请Crust Grants的项目：
 
-1. 最高30,000 USDT的资金资助
+1. 最高30,000 USDT的资金资助(小资助1,000 USDT)
 2. 深度参与Crust技术社区，有机会获邀参加Crust生态活动，提升项目认知度
 3. 深度参与Web3生态，获得波卡，IPFS生态的支持
 4. 团队成员容易获得Crust大使的认证

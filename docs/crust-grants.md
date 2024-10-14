@@ -10,7 +10,7 @@ Crust Grants Program, launched by the Decentralized Cloud Foundation (DCF), rewa
 
 For projects whose Crust Grants application has been accepted:
 
-1. Funding support up to 30,000 USDT;
+1. Funding support up to 30,000 USDT(Small Grant $1,000 USDT);
 
 2. Deep participation in the Crust technology community and the opportunity to be invited to events of Crust ecology to enhance the profile and recognition of your project;
 
