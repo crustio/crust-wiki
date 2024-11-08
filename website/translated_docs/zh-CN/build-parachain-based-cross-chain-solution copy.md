@@ -35,7 +35,7 @@ There are two Crust Parachains, you can use either of them to interact with the 
 The xStorage pallet allows all users to:
 
 - Send storage request messages(Extrinsics) to Crust Parachain
-- Pay storage fees on Crust Parachain by $CRU token (or $CSM in Kusama)
+- Pay storage fees on Crust Parachain by \$CRU token (or \$CSM in Kusama)
 
 Next, we need to send a transaction named `Place Storage Order through Parachain` on Crust Parachain, this transaction will dispatch your storage requirement to each Crust IPFS nodes through blockchain. Then the IPFS nodes will start pulling your file with IPFS protocol.
 
