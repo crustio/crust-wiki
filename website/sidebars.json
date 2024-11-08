@@ -61,6 +61,7 @@
         "label": "Crosschain Storage Solution",
         "ids": [
 	        "buildXCMPBasedCrossChainSolution",	
+          "buildParachainBasedCrossChainSolution",
           "buildNativeIPFSBasedCrossChainSolution",
           "buildSmartContractBasedCrossChainSolution"
         ]

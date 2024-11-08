@@ -113,6 +113,10 @@
         "title": "Crust's XCMP-based cross-chain dStorage solution",
         "sidebar_label": "Crust's XCMP-based cross-chain dStorage solution"
       },
+      "buildParachainBasedCrossChainSolution": {
+        "title": "Crust's Parachain-based cross-chain dStorage solution",
+        "sidebar_label": "Crust's Parachain-based cross-chain dStorage solution"
+      },
       "claimsLockedCRU": {
         "title": "LockedCRU Claims",
         "sidebar_label": "LockedCRU Claims"

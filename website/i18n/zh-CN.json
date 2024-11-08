@@ -33,6 +33,10 @@
         "title": "基于XCMP的跨链存储解决方案",
         "sidebar_label": "基于XCMP的跨链存储解决方案"
       },
+      "buildParachainBasedCrossChainSolution": {
+        "title": "基于平行链的跨链存储解决方案",
+        "sidebar_label": "基于平行链的跨链存储解决方案"
+      },
       "buildNativeIPFSBasedCrossChainSolution": {
         "title": "基于原生IPFS的跨链存储解决方案",
         "sidebar_label": "基于原生IPFS的跨链存储解决方案"
