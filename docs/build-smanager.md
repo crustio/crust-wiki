@@ -78,6 +78,8 @@ You could check [smanager-config.example.json](https://github.com/crustio/crust-
   "dataDir": "data",
   "scheduler": {
     "minSrdRatio": 30,
+    "sealFailedRetryCount": 3,
+    "sealFailedRetryInterval": 3,
     "strategy": {
       "dbFilesWeight": 0,
       "newFilesWeight": 100
@@ -101,6 +103,10 @@ Those config items will be loaded in the sManager configuration setup process. T
 - `scheduler.minSrdRatio`: a minimum ratio of SRD that one node can start to accept storage orders.
 
     > For example, if the ratio is 30, your node will start to accept storage order once the ratio of SRD capacity is higher than 30%
+
+- `scheduler.sealFailedRetryCount`: retry count of failed seal tasks
+
+- `scheduler.sealFailedRetryInterval`: retry interval of failed seal tasks, unit in hours
 
 - `scheduler.strategy.dbFilesWeight`: how much bandwidth of this node will be used to fetch and store the history storage orders (Storage orders in the past four months).
 
