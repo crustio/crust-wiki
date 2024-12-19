@@ -75,7 +75,7 @@ Once the file is sent to the bot, you will be notified with following messages o
 
  ![Pic](assets/build/StorageExecuted.PNG) 
  
-Remember, if you don't have enough balance in your wallet (in `Ton Storage Mode`), your storage execution will fail, and you will get a error message. 
+Remember, if you don't have enough balance in your wallet (in `Ton Storage Mode`), your storage execution will fail, and you will get an error message. 
 
 ####  View Your Files 
 
