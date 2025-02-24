@@ -4,29 +4,38 @@ title: Crust Wallet
 sidebar_label: Crust Wallet
 ---
 
-Crust Wallet is a plug-in wallet. Users can manage their CRUs via Crust Wallet. It includes following features:
+## Crust Wallet Installation Guide
+The Polkadot ecosystem now supports multiple wallets that are compatible with the Crust Mainnet and Parachain. These wallets have been tested by thousands of community users to ensure high stability and reliability. Moreover, these wallets also support both Polkadot and Ethereum ecosystems, offering users an enhanced asset management and interaction experience.
 
-* Interact with Crust DApps such as [Crust Apps](https://apps.crust.network/#/accounts);
-* Manage accounts;
-* Transfer of tokens;
+To further optimize user experience, Crust will continue to support more wallets within the Polkadot ecosystem, contributing to the development of the ecosystem. Currently, we highly recommend the following three wallets for users:
 
-Please note that Crust Wallet **does NOT** support CRU tokens of ERC20. It is used to interact with Networks including Maxwell and MainNet.
+### 1) Subwallet
+Subwallet is a non-custodial wallet for both Polkadot and Ethereum, available as a browser extension, mobile app, and web dashboard. It supports the Polkadot mainnet and parachains and enables cross-chain operations, catering to users who require diversified digital asset management.
 
-You can install Crust Wallet in two ways.
+Download link: Click here to download [Subwallet](https://www.subwallet.app/download.html)
 
-### 1. Install via Chrome App Store
+### 2) Talisman
+Talisman is an innovative wallet within the Polkadot ecosystem, offering a clean interface and powerful cross-chain functionality, aiming to improve users' asset management and cross-chain interaction experience. Its design focuses on providing Polkadot users with a smoother and more secure operating environment, especially for interactions with DApps in the Polkadot ecosystem.
 
-You can install Crust Wallet from the [Chrome Web Store](https://chrome.google.com/webstore/detail/crust-wallet/jccapkebeeiajkkdemacblkjhhhboiek).
+Download link: Click here to download [Talisman](https://talisman.xyz/download)
 
-### 2. Install via Installation Package
+### 3) Crust Wallet
+Crust Wallet is a Google Chrome-based browser extension wallet, specifically designed for managing assets within the Crust Mainnet. Users can manage their CRU assets and interact with DApps on the Crust network, such as Crust Apps. 
 
-You can follow steps below to download and install Crust Wallet package.
+Please note that Crust Wallet only supports interaction with the Crust Mainnet and **does not support Crust Parachain or ERC20-based CRU tokens**.
 
-  1. [Download installation package](https://github.com/crustio/crust-extension/releases/download/v2.0.3/crust-wallet-2.0.3.zip) and unpack.
-  2. Open the Chrome browser, enter `chrome://extensions/` in the address bar and press Enter;
-  3. Open `Developer mode` in the top right corner of the page;
-  4. Click on `Load unpacked extension`;
-  5. Select the unpacked folder;
-  6. Installation complete;
+Download link: Click here to download [Crust Wallet](https://chromewebstore.google.com/detail/crust-wallet-v3/bhnjponmcdginfhpmfnplhoajoolcfhh)
 
-***Notice: When creating a new account on Crust Wallet, users need to keep the mnemonic words and backup files of the account safe lest they permanently lose assets of the account due to account loss.***
+**Important Note:**
+
+The latest version of the Crust Wallet plugin wallet is 'Crust Wallet V3'. The old version 'Crust Wallet' plugin in the Chrome Web Store has been invalid. Users who have installed the old version of Crust Wallet should follow the migration process below:
+
+  1. Export the mnemonic phrase from the old version of Crust Wallet and ensure it is safely backed up;
+  2. Remove the old version of Crust Wallet plugin from the Chrome browser;
+  3. Install the latest version of [Crust Wallet V3](https://chromewebstore.google.com/detail/crust-wallet-v3/ from the Chrome Web Store;
+  4. Import the mnemonic phrase exported in step 1;
+  5. Migration complete.
+
+**Account Security Reminder:**
+
+***When creating a new account in Crust Wallet, it is essential to securely store the account’s mnemonic phrase and backup files. Since Crust Wallet is non-custodial, if you lose your mnemonic or backup files, you will not be able to recover your account or access the assets within it. Please ensure that your backup information is stored safely.***
