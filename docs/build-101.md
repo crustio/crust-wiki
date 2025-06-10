@@ -21,7 +21,7 @@ First, you need to upload the file to the IPFS network(cached on a long-running 
 1. Upload the file to IPFS Gateway **through IPFS HTTP API**
 2. Pin the file to a local IPFS node **through** **IPFS P2P protocol**
 
-**For the 1st way,** Crust provides a [web3-oriented gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#authenticated-gateways), which is provided by Crust storage nodes **for free** and **100% compatible with standard IPFS HTTP interfaces**. More details in below:
+**For the 1st way,** Crust provides a [web3-oriented gateway](https://docs.ipfs.io/concepts/ipfs-gateway/#authenticated-gateways), which is provided by Crust storage nodes **for free** and **100% compatible with standard IPFS HTTP interfaces**. More details below:
 
 - Learn how to upload files through the Web3Auth gateway with code on [LINK](https://wiki.crust.network/docs/en/buildFileStoringDemo#1-upload-file-to-ipfs)
 - Learn the tech detail of the Web3Auth gateway on [LINK](https://wiki.crust.network/docs/en/buildIPFSWeb3AuthGW)
@@ -31,16 +31,16 @@ First, you need to upload the file to the IPFS network(cached on a long-running 
 
 Specially, [Cloud3](https://cloud3.cc) provides a different implementation of [authenticated gateway](https://docs.ipfs.tech/concepts/ipfs-gateway/#authenticated-gateways) based on [W3Bucket NFT](https://docs.cloud3.cc/w3bucket/aboutnft), which is also **100% compatible with standard IPFS HTTP interfaces**. Check the [LINK](https://docs.cloud3.cc/w3bucket/aboutnft) for more details.
 
-**For the 2nd way**, you need to install IPFS and keep it running background. More details can be referred to IPFS docs:
+**For the 2nd way**, you need to install IPFS and keep it running background. More details can be found in the IPFS docs:
 
 - Learn how to install IPFS on [LINK](https://docs.ipfs.io/install/)
 - Learn how to pin(add) file on [LINK](https://docs.ipfs.io/how-to/pin-files/)
 
 After uploading the file to IPFS, you will get a `cid`, which is the unique identity of the file. Crust storage nodes also use `cid` to retrieve the file.
 
-### STEP 2. Pin the file on-chain and add balance
+### STEP 2. Pin the file on-chain and add the balance
 
-Then, you need to "tell" Crust storage nodes that the file is ready to be stored! To accomplish that, you need to send a transaction on the Crust chain. There are 2 different ways:
+Then, you need to "tell" the Crust storage nodes that the file is ready to be stored! To accomplish that, you need to send a transaction on the Crust chain. There are 2 different ways:
 
 1. Directly send the transaction with Crust on-chain interface
 2. Send cross-chain transaction with Crust IPFS pinning service
@@ -48,14 +48,14 @@ Then, you need to "tell" Crust storage nodes that the file is ready to be stored
 **For the 1st way**, you can simply follow the steps below to communicate with the Crust chain:
 
 1. Create a Crust account on [LINK](https://wiki.crust.network/docs/en/crustAccount)
-2. Get free storage quota:
+2. Get a free storage quota:
     1. Join Crust [discord](https://discord.gg/WQQHnyKCmn)
     2. Follow the pinned message on `📦free-storage` channel
 3. Send a transaction with typescript code on [LINK](https://wiki.crust.network/docs/en/buildFileStoringDemo#2-place-storage-order)
 
-**The 2nd way is for cross-chain**, most public chains support directly calling Crust storage interface through standard IPFS pinning service, More details can be referred below:
+**The 2nd way is for cross-chain**, most public chains support directly calling Crust storage interface through the standard IPFS pinning service. More details can be found below:
 
-- Learn how to call Crust cross-chain storage API with code on [LINK](https://wiki.crust.network/docs/en/buildFileStoringWithGWDemo#2-pin-file-through-ipfs-pinning-service)
+- Learn how to call the Crust cross-chain storage API with code on [LINK](https://wiki.crust.network/docs/en/buildFileStoringWithGWDemo#2-pin-file-through-ipfs-pinning-service)
 - Learn Crust's cross-chain solution(How Crust IPFS pinning service work) on [LINK](https://medium.com/crustnetwork/crusts-cross-chain-dstorage-solution-f7ff837ed0ef)
 - Supported platforms:
     - All Ethereum-compatible chains: Polygon, Moonriver, BSC, ...
@@ -64,13 +64,13 @@ Then, you need to "tell" Crust storage nodes that the file is ready to be stored
 
 If you are using [Cloud3 W3Bucket](https://docs.cloud3.cc/w3bucket/aboutnft) on ethereum mainnet, check the [LINK](https://docs.cloud3.cc/w3bucket/uploadfile) to learn how to call Cloud3 storage API with [W3Auth Token](https://docs.cloud3.cc/w3auth).
 
-After you "told" Crust storage nodes, they're starting pulling the file through the IPFS network. After a few minutes, you can [query the file's storage status on-chain](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/chainstate):
+After you "told" Crust storage nodes, they're starting to pull the file through the IPFS network. After a few minutes, you can [query the file's storage status on-chain](https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/chainstate):
 
 ![apps](assets/build/build-101-apps.png)
 
-- How many replicas of the file exist on the IPFS through Crust Network
+- How many replicas of the file exist on the IPFS through the Crust Network
 - Which nodes are storing your file
-- How long will the file be guaranteed to be stored on Crust Network
+- How long will the file be guaranteed to be stored on the Crust Network
 - How much is the file valued
 
 The default storage time for a single transaction(order) **is 6 months**. If you want to extend the storage duration, Crust provides a **pre-paid pool for you to customize the file's storage time**, it allows you to add balance and automatically extend the file's expiry time. You can learn more details about the pre-paid pool below:
@@ -87,8 +87,8 @@ At last, you can visually check the file's storage states via [IPFS Scan](https:
 1. How is the file distributed in the world
 2. Where to retrieve the file
 3. Which nodes are storing the file
-4. In which incentive layers the file are stored(Crust/Filecoin/Arweave)
-5. How much the file valued
+4. In which incentive layer the file is stored(Crust/Filecoin/Arweave)
+5. How much is the file valued
 
 The 1st page of IPFS Scan shows ***1-2***
 
