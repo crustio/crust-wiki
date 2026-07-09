@@ -4,6 +4,10 @@
   "description": "The source of truth for Crust",
   "main": "index.js",
   "scripts": {
+    "build:site": "yarn --cwd website build",
+    "dev:cf": "npx wrangler dev",
+    "deploy:cf:dry-run": "npx wrangler deploy --dry-run",
+    "deploy:cf": "npx wrangler deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -5,23 +5,21 @@ on:
     branches: [ mainnet ]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Build and push docker
-        run: |
-          docker build -t crustio/crust-wiki:latest .
-          docker login -u ${{ secrets.DOCKER_HUB_USER_NAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
-          docker push crustio/crust-wiki:latest
-
-      - name: Upgrade wiki
-        uses: fifsky/ssh-action@master
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          command: |
-            sudo docker pull crustio/crust-wiki:latest
-            cd /usr/local/docker/crust-mainnet-wiki
-            sudo docker-compose up -d
-          host: ${{ secrets.SSH_PRD_HOST }}
-          user: ${{ secrets.SSH_PRD_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          node-version: 20
+          cache: yarn
+          cache-dependency-path: website/yarn.lock
+      - name: Install docs dependencies
+        run: yarn --cwd website install --frozen-lockfile
+      - name: Build static site
+        run: yarn --cwd website build
+      - name: Deploy to Cloudflare Workers (Assets)
+        run: npx wrangler deploy --name crust-wiki --assets website/build/crust-wiki --compatibility-date 2026-07-08
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

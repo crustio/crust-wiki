@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "crust-wiki",
+  "compatibility_date": "2026-07-09",
+  "assets": {
+    "directory": "./website/build/crust-wiki",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
