@@ -4,15 +4,15 @@ title: Store file with Crust Storage API
 sidebar_label: Store file with Crust Storage API
 ---
 
-This doc contains a code sample to demonstrate how to upload a file to IPFS, and place a storage order to get the file stored in Crust Network.
-After that, the file can be retrieved via standard IPFS interface and gateway from anywhere, and it'll be guaranteed stored by Crust's 7000+ IPFS nodes around the world.
-This scenario is simple but generic. It can be widely applied in Website/DApp hosting, NFT metadata storing, socialFi, gamingFi and decentralized cloud storage, etc.
+This doc contains a code sample to demonstrate how to upload a file to IPFS and place a storage order to get the file stored in Crust Network.
+After that, the file can be retrieved via the standard IPFS interface and gateway from anywhere, and it'll be guaranteed to be stored by Crust's 7000+ IPFS nodes around the world.
+This scenario is simple but generic. It can be widely applied in Website/DApp hosting, NFT metadata storing, socialFi, gamingFi, and decentralized cloud storage, etc.
 
 ## Overview
 
 ### 1. Storage process
 
-1. Put file to IPFS (`local IPFS or IPFS gateway`), get `CID` and `FileSize` back
+1. Put the file to IPFS (`local IPFS or IPFS gateway`), get `CID` and `FileSize` back
 2. Send `place storage order` transaction to Crust with `CID` and `FileSize`
 3. Query order status by `CID`
 
@@ -30,9 +30,9 @@ The code sample mainly depends on the following libraries:
 
 > If you want to learn how to upload **FOLDERS/FILES** into IPFS, please refer this [STEP](https://wiki.crust.network/docs/en/buildFileStoringWithGWDemo#1-upload-files-to-ipfs-gateway)
 
-First, you need to put your file into IPFS, there's 2 ways to upload file to IPFS: local IPFS node or remote IPFS gateway:
+First, you need to put your file into IPFS. There are 2 ways to upload a file to IPFS: a local IPFS node or a remote IPFS gateway:
 
-- With local IPFS node
+- With a local IPFS node
 
 ```typescript
 import { create } from 'ipfs-http-client'
@@ -117,9 +117,9 @@ async function addFile(ipfs: IPFS.IPFS, rootCid: any) {
 
 In addition, after `Place storage order`, you can use the folder-analyzer service to obtain directly, see the 4 section for details.
 
-### 3. Place storage order
+### 3. Place a storage order
 
-Next, we need to send a transaction named `Place Storage Order` on Crust chain, this transaction will dispatch your storage requirement to each Crust IPFS nodes through blockchain. Then the IPFS nodes will start pulling your file with IPFS protocol.
+Next, we need to send a transaction named `Place Storage Order` on the Crust chain. This transaction will dispatch your storage requirement to each Crust IPFS node through blockchain. Then the IPFS nodes will start pulling your file with IPFS protocol.
 
 > You can find more `crustChainEndpoint` on [LINK](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/endpoints/production.ts#L9).
 
@@ -209,11 +209,11 @@ curl --request GET 'https://folderanalyzer.crustapps.net/api/v1/root?cid=QmZPVr2
 QmQZYQaq48KkY7nWbpfWh8kyEh21yehwPk5xoofnLFVGtV
 ```
 
-Additional information such as the number of copies can be obtained on the crust chain by using the root cid of the folder
+Additional information, such as the number of copies, can be obtained on the crust chain by using the root cid of the folder
 
 ### 5. Query order status
 
-Then, you can query the order `status{replica_count, storage_duration, ...}` by calling on-chain status.
+Then, you can query the order `status{replica_count, storage_duration, ...}` by calling the on-chain status.
 
 ```typescript
 async function getOrderState(cid: string) {
@@ -248,7 +248,7 @@ And it'll return:
 
 ### 6. Add file assurance
 
-The default storage time for a single transaction(order) is 6 months. If you want to extend the storage duration, Crust provides an assurance pool for you to customize the file's storage time, it allows you to put some tokens and will automatically extend the file's storage time.
+The default storage time for a single transaction(order) is 6 months. If you want to extend the storage duration, Crust provides an assurance pool for you to customize the file's storage time. It allows you to put some tokens and will automatically extend the file's storage time.
 
 ```typescript
 import { ApiPromise, WsProvider } from '@polkadot/api';
